@@ -6,3 +6,5 @@ var suma = numero1+numero2;
 
 alert("la suma es: "+suma);
 console.log(suma);
+
+/* */
