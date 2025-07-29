@@ -1,6 +1,6 @@
 'use strict'
-var numero1 = 2;
-var numero2 = 4;
+var numero1 = Number(prompt("Ingrese el Primer Numero"));
+var numero2 = Number(prompt("Ingrese el segundo Numero"));
 
 var suma = numero1+numero2;
 
