@@ -5,3 +5,4 @@ var numero2 = Number(prompt("Ingrese el segundo Numero"));
 var suma = numero1+numero2;
 
 alert("la suma es: "+suma);
+console.log(suma);
