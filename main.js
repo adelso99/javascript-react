@@ -11,9 +11,7 @@ console.log(suma);
 Progresss .........1
 */
 
-/*
-Progresss .........2
-*/
+
 
 
 
