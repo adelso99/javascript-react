@@ -8,7 +8,7 @@ alert("la suma es: "+suma);
 console.log(suma);
 
 /*
-Progresss .........1
+Progresss .....1
 */
 
 
