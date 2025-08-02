@@ -1,1 +1,18 @@
 Primer Video 1-
+Analizo ----> Resuelvo ----> Programo
+
+
+Segundo Video 
+
+Cuadros de Diagrmas de flujo
+Assignment= Declar varibles o abrir espacios en memoria, 
+realiar operaciones arimeticas
+
+Call=
+Input=
+Output=
+Selection=
+Loop= 
+
+// Varibles necesitan saber 
+Numeros y texto
