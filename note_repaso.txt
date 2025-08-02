@@ -9,10 +9,18 @@ Assignment= Declar varibles o abrir espacios en memoria,
 realiar operaciones arimeticas
 
 Call=
-Input=
-Output=
+
+Input= sirve para la Introuccion de datos del usuario
+ desde el teclado
+
+Output= sirve para mandar mensajes desde el programa
+
 Selection=
+
 Loop= 
 
 // Varibles necesitan saber 
-Numeros y texto
+Numeros=0 y texto=""
+
+// signos de contenacion
++ para unir
