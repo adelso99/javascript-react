@@ -18,7 +18,8 @@ Output= sirve para mandar mensajes desde el programa
 Selection= //condicionales: es una instruccion donde 
 inidca el camino a eelgir
 
-Loop= 
+Loop= Ciclo o bucle: es una sentencia que se realiza repetidas veces
+hasta que la condicion asignacion deje de cumplirse
 
 // Varibles necesitan saber 
 Numeros=0 y texto=""
@@ -39,3 +40,19 @@ Numeros=0 y texto=""
 vamos :)
 
 ----Cuarto Video-----
+// Loop
+// Ciclo o bucle: es una sentencia que se realiza repetidas veces
+hasta que la condicion asignacion deje de cumplirse
+
+uso de var tipo texto con = ""
+uso de var tipo numerico con = 0
+
+Bucle --> proceso continuo
+
+variable veces = que es cuntas veces se repita en pantalla
+
+izquierda a derecha
+variable contador = determina en que vuelta va para que puede ser 
+igual a la variable veces, pero contador incia en 0
+
+insturccion para contador = + 1
