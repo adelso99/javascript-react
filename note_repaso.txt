@@ -15,7 +15,8 @@ Input= sirve para la Introuccion de datos del usuario
 
 Output= sirve para mandar mensajes desde el programa
 
-Selection=
+Selection= //condicionales: es una instruccion donde 
+inidca el camino a eelgir
 
 Loop= 
 
@@ -27,3 +28,5 @@ Numeros=0 y texto=""
 
 
 ----Tercer Video-----
+// uso de Selection
+//condicionales: es una instruccion donde inidca el camino a eelgir
