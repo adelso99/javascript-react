@@ -79,3 +79,45 @@ c) 0, 1, 1, 2, 3, 5, 8,...13_,21,...
 
 
 -------------Sexto Video---------------
+
+Sucesion de Fibonacci
+c) 0, 1, 1, 2, 3, 5, 8,...13_,21,...
+   a  b  c 
+espacios 
+
+funciona:
+realia suma de susesor con antesesor
+ 0 + 1 = 1     1 + 1 = 2   1 + 2 = 3
+ 
+
+representacion 0, 1:
+0 = 0 + 1      1 = 0 + 1      
+c = a + b      c = a + b      
+
+1 = 0 + 1 se realiza el recorido de izquiera a derecha
+c = a + b se realice un cambio borre lo de b y guarde la variable a en b seria a = b
+y que borre la variable a y que guarde la variable c en a seria c = a
+quedando asi
+
+new1 = c1 + a0      
+c = a + b  
+
+quedando asi 0, 1, 1,
+ 
+vuelvo a realizar otra vuelta donde a = b y a = c valores de izquierda a derecha
+new2 = c1 + a1      
+c = a + b  
+
+quedando asi 0, 1, 1, 2
+
+vuelvo a realizar otra vuelta donde a = b y a = c valores de izquierda a derecha
+new3 = c2 + a1      
+c = a + b  
+
+quedando asi 0, 1, 1, 2, 3
+
+vuelvo a realizar otra vuelta donde a = b y a = c valores de izquierda a derecha
+new5 = c3 + a2      
+c = a + b  
+
+quedando asi 0, 1, 1, 2, 3, 5
