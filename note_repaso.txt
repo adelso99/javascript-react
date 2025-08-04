@@ -57,6 +57,7 @@ igual a la variable veces, pero contador incia en 0
 
 insturccion para contador = + 1, esto es conocido como acumuladores
 
+
 ----Quinto Video-----
 //Series Numericas
 
@@ -75,3 +76,6 @@ c) 0, 1, 1, 2, 3, 5, 8,...13_,21,...
 > mayor
 <= menor o igual
 >= mayor o igual
+
+
+----Quinto Video-----
