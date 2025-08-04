@@ -121,3 +121,5 @@ new5 = c3 + a2
 c = a + b  
 
 quedando asi 0, 1, 1, 2, 3, 5
+
+----
