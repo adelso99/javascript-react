@@ -125,7 +125,7 @@ quedando asi 0, 1, 1, 2, 3, 5
 ---- aqui vamos x1
 ---- aqui vamos x2
 ---- aqui vamos x1
----- aqui vamos x2
+
 
 
 
