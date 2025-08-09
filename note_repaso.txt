@@ -177,6 +177,32 @@ c = a + b
 -------------Septimo Video---------------
 //Programacion Orientada a OBJETOS
 
+calculacion de un triangulo de tereno
+// se desea comprar este terreno y el precio es de 
+2500 por metro cuadrado
+
+            |  
+            | altura (15)
+            |
+ ----------
+ base (35)
+
+
+ metros cuadrados ?
+
+ mc = b * a //uso de 3 varibles 
+ ? = 35 * 15  //objeto de metros cuadros
+ 525 metros cuadrados
+
+ mc * 2500 (precio de metro cuadrado) // objeto precio de metro
+
+ 525 *2500 
+
+ //1,312.500 es el total a pagar 
+
+
+
+
 
 
 
