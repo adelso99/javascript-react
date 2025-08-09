@@ -104,25 +104,74 @@ c = a + b
 
 quedando asi 0, 1, 1,
  
-vuelvo a realizar otra vuelta donde a = b y a = c valores de izquierda a derecha
+vuelvo a realizar otra vuelta donde a = b y a = c valores de 
+izquierda a derecha
 new2 = c1 + a1      
 c = a + b  
 
 quedando asi 0, 1, 1, 2
 
-vuelvo a realizar otra vuelta donde a = b y a = c valores de izquierda a derecha
+vuelvo a realizar otra vuelta donde a = b y a = c valores de 
+izquierda a derecha
 new3 = c2 + a1      
 c = a + b  
 
 quedando asi 0, 1, 1, 2, 3
 
-vuelvo a realizar otra vuelta donde a = b y a = c valores de izquierda a derecha
+vuelvo a realizar otra vuelta donde a = b y a = c valores de 
+izquierda a derecha
 new5 = c3 + a2      
 c = a + b  
 
 quedando asi 0, 1, 1, 2, 3, 5
 
----- aqui vamos x1
+----Opcion 2 del ejericio-----
+a = 0
+b = 1
+c = 0
+
+ejecuccion:
+
+c = 0
+
+0, 
+
+V1-----
+a <-- b
+1
+
+b <-- c
+0     
+
+c = a + b
+1 = 1 + 0
+
+0, 1,  
+
+V3-----
+a <-- b
+0
+
+b <-- c
+1     
+
+c = a + b
+1 = 0 + 1
+
+0, 1, 1  
+
+V4-----
+a <-- b
+1
+
+b <-- c
+1     
+
+c = a + b
+2 = 1 + 1
+
+0, 1, 1, 2  
+  
 
 
 
