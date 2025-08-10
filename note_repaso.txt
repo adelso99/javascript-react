@@ -204,7 +204,7 @@ calculacion de un triangulo de tereno
  ---- vamos x2
  ---- vamos x3
  ---- vamos x4
- ---- vamos x5
+ 
 
 
 
