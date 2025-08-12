@@ -231,7 +231,17 @@ Ejemplo NOT: -¿Puedo ir a la fiesta?
 	     - No, puedes ir (Si, si puedes ir)
 
 
-Excelente
+Ejercicio 1: Cálculo de perímetro de figuras
+Realizar un programa que:
+
+No finalice hasta que el usuario indique que desea salir.
+
+Permita calcular el perímetro de un rectángulo y de un triángulo.
+
+Para el rectángulo, se ingresa la base y la altura, y se calcula el perímetro con la fórmula:
+Perímetro = 2 * (base + altura)
+
+Para el triángulo, se ingresan las tres longitudes de sus lados y se calcula el perímetro sumándolos.
 
 
 
