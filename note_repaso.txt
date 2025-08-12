@@ -203,17 +203,32 @@ calculacion de un triangulo de tereno
  
 
 -------------Oactavo Video---------------
- Operadores relacionales
+ //Operadores relacionales
 
-Operador    Nombre      	 Ejemplo      Significado
-   <	   Menor que    	 A < B      A es menor que B
-   >	   Mayor que     	 A > B      A es Mayor que B
-  ==	   Igual a       	 A == B     A es igual a B
-  !=	   Diferente     	 A != B     A es diferente de B
+Operador    Nombre      	    Ejemplo      Significado
+   <	   Menor que    	       A < B      A es menor que B
+   >	   Mayor que     	       A > B      A es Mayor que B
+  ==	   Igual a       	       A == B     A es igual a B
+  !=	   Diferente     	       A != B     A es diferente de B
   <=	   Menor que o igual a   A <= B     A es menor que o igual a B
   >=	   Mayor que o igual a   A >= B     A es mayor que o igual a B
 
- 
+ //Operadores Lógicos
+
+- && AND (el resultado es verdadero si ambas expresiones son verdaderas).
+- ||OR (el resultado es verdadero si alguna expresión es verdadera).
+- ! NOT (el resultado invierte la condición de la expresión).
+
+Ejemplos:
+Ejemplo AND: -¿Puedo ir a la fiesta?
+	    -Si sacas la basura "y" haces tú tarea puedes ir.
+
+Ejemplo OR: -¿Puedo ir a la fiesta?
+	    -Si sacas la basura "o" haces tú tarea puedes ir.
+
+Ejemplo NOT: -¿Puedo ir a la fiesta?
+	     -SI, puedes ir (No, no puedes ir)
+	     - No, puedes ir (Si, si puedes ir)
 
 
 
