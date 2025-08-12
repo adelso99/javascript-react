@@ -201,6 +201,8 @@ calculacion de un triangulo de tereno
  //1,312.500 es el total a pagar 
 
  -------- vamos x1
+ -------- vamos x1
+ -------- vamos x1
 
 
 
