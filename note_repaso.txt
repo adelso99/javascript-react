@@ -200,7 +200,18 @@ calculacion de un triangulo de tereno
 
  //1,312.500 es el total a pagar 
 
- -------- vamos x1
+ 
+
+-------------Oactavo Video---------------
+ Operadores relacionales
+
+Operador    Nombre      	 Ejemplo      Significado
+   <	   Menor que    	 A < B      A es menor que B
+   >	   Mayor que     	 A > B      A es Mayor que B
+  ==	   Igual a       	 A == B     A es igual a B
+  !=	   Diferente     	 A != B     A es diferente de B
+  <=	   Menor que o igual a   A <= B     A es menor que o igual a B
+  >=	   Mayor que o igual a   A >= B     A es mayor que o igual a B
 
  
 
