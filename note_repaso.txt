@@ -243,7 +243,9 @@ Perímetro = 2 * (base + altura)
 
 Para el triángulo, se ingresan las tres longitudes de sus lados y se calcula el perímetro sumándolos.
 
----- vamos  --1
+
+
+-------------Noveno Video---------------
 
 
 
