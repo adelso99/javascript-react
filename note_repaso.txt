@@ -249,7 +249,6 @@ Para el triángulo, se ingresan las tres longitudes de sus lados y se calcula el
 ------vamos -----1
 ------vamos -----2
 ------vamos -----3
-------vamos -----4
 
 
 
