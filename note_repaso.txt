@@ -277,6 +277,9 @@ jo
          
 
 -------------Decimo Video---------------
+Tipos de comportamiento en arreglos
+1. Arreglos dinamicos
+2. Arreglos estaticos -- movimiento manual
 
 
 
