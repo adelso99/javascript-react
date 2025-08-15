@@ -280,7 +280,7 @@ jo
 Tipos de comportamiento en arreglos
 
 1. Arreglos estaticos -- movimiento manual
-
+      Nombres y edades 
 
 
 2. Arreglos dinamicos -- movimiento automatico
