@@ -247,6 +247,34 @@ Para el triángulo, se ingresan las tres longitudes de sus lados y se calcula el
 
 -------------Noveno Video---------------
 //Vectores o arreglos
+  - Modificar
+  - Consultar
+  - Eliminar
+  - Insertar
+
+//Arreglos unidimensionales (posiciones)--solo se mueve de adelante asi atras
+ 0 1 2 3 4 5 6 7 8 9 
+ _ _ _ _ _ _ _ _ _ _
+      /|\
+atras  |   adelante
+       |
+
+//Arreglos bIdimensionales  (posiciones)-- parecido a las matrices
+// se mueve adelnate y atras y tambien arriba y abajo
+
+             |  
+      atras  |  adelante
+            \|/
+     0   1   2   3   4   5 
+arr 
+iba  1   2   3   4   5   6
+
+---> 2   3   4   5   6   7
+
+aba  3   4   5   6   7   8
+jo
+     5   6   7   8   9   10
+         
 
 
 
