@@ -246,8 +246,7 @@ Para el triángulo, se ingresan las tres longitudes de sus lados y se calcula el
 
 
 -------------Noveno Video---------------
-------vamos -----1
-
+//Vectores o arreglos
 
 
 
