@@ -286,6 +286,11 @@ Tipos de comportamiento en arreglos
 2. Arreglos dinamicos -- movimiento automatico
 
 -- vamos x1
+-- vamos x1
+-- vamos x1
+-- vamos x1
+-- vamos x1
+-- vamos x1
 
 
 
