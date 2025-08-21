@@ -294,7 +294,7 @@ Tipos de comportamiento en arreglos
 -- vamos x7
 -- vamos x8
 -- vamos x9
--- vamos x10
+
 
 
 
