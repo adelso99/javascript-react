@@ -287,14 +287,14 @@ Tipos de comportamiento en arreglos
 
 -- vamos x1
 -- vamos x2
--- vamos x2
--- vamos x2
--- vamos x2
--- vamos x2
--- vamos x2
--- vamos x2
--- vamos x2
--- vamos x2
+-- vamos x3
+-- vamos x4
+-- vamos x5
+-- vamos x6
+-- vamos x7
+-- vamos x8
+-- vamos x9
+-- vamos x10
 
 
 
