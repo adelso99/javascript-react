@@ -290,7 +290,6 @@ Tipos de comportamiento en arreglos
 -- vamos x3
 -- vamos x4
 -- vamos x5
--- vamos x6
 
 
 
