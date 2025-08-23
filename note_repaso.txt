@@ -287,6 +287,9 @@ Tipos de comportamiento en arreglos
 
 -- vamos x1
 -- vamos x2
+-- vamos x2
+-- vamos x2
+-- vamos x2
 
 
 
