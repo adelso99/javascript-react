@@ -305,6 +305,12 @@ definicio clara en la desicion
 -------------Decimosegundo Video---------------
 // Algoritmos de Ordenamiento
 
+- Bubble Sort
+- Insertion Sort
+- Shell Sort
+- Merge Sort
+- Quick Sort
+
 
 
 
