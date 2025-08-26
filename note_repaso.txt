@@ -277,7 +277,7 @@ jo
          
 
 -------------Decimo Video---------------
-Tipos de comportamiento en arreglos
+Tipos de comportamiento en arreglos unidimensionales
 
 1. Arreglos estaticos -- movimiento manual
       Nombres y edades 
@@ -287,6 +287,9 @@ Tipos de comportamiento en arreglos
 
 -- vamos x1
 
+
+-------------Decimoprimero Video---------------
+//Arreglos bIdimensionales 
 
 
 
