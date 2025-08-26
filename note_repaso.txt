@@ -312,10 +312,18 @@ definicio clara en la desicion
 - Quick Sort
 
 - Bubble Sort
-// se debe de cubrir 5 vueltas
+// Reglas:
+// 1. deben de ir al final y regresar si tiene 5 posiciones
+// se debe de cubrir 5 vueltas y si tiene 10p se dan 10 vueltas
+// 2. (a1 < a2 = cambio de apuntadores a la derecha )
+// se debe de cumplir el intercabio del apuntador 1 es menor 
+// al apuntador se cambian o corren 1 posicion ambos apuntadores a 
+// la derecha 
+// 3.  No se puede peder de vista los numeros por eso se usa un auxiliar
+
 // Apuntador 1= a1  &&  Apuntador 2= a3
  1   2   3   4   5            auxiliar
- 5   2   10  1   12            ______
+ 5   10  2   12  1            ______
 / \ / \
  |   |
  |   |
@@ -323,7 +331,7 @@ a1 a2
 
 vuelta 1
  1   2   3   4   5            auxiliar
- 5   2   10   12  1            _2_____
+ 5   2   10   1  12            _1_____
              / \  / \
               |    |
               |    |
@@ -332,14 +340,38 @@ vuelta 1
 
 vuelta 2
  1   2   3   4   5            auxiliar
- 5   2   10  1   12            ______
+ 2   5   1  10   12            ___1___
 / \ / \
- |   |
- |   |
-a1 a2
+ |   |     // como 10 > 12 se corren los apuntadores
+ |   |     // pero como no existe posicion 6 se reinicia
+ a1 a2
 
 
+vuelta 3
+ 1   2   3   4   5            auxiliar
+ 2   1   5  10   12            ___1___
+/ \ / \
+ |   |     // 10 > 12 = reinicio de a1 y a2
+ |   |     
+ a1 a2
 
+
+vuelta 4
+ 1   2   3   4   5            auxiliar
+ 1   2   5  10   12            ___1___
+/ \ / \
+ |   |     // 10 > 12 = reinicio de a1 y a2
+ |   |     
+ a1 a2
+
+
+vuelta 5
+ 1   2   3   4   5            auxiliar
+ 1   2   5  10   12            ___1___
+            / \ / \
+             |   |     
+             |   |     
+             a1  a2
 
 
 
