@@ -291,7 +291,7 @@ Tipos de comportamiento en arreglos unidimensionales
 -------------Decimoprimero Video---------------
 //Arreglos bIdimensionales 
 
-
+Crear 3 filas y 3 columnas
 
 
 
