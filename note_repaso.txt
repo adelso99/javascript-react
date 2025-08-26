@@ -290,8 +290,10 @@ Tipos de comportamiento en arreglos unidimensionales
 
 -------------Decimoprimero Video---------------
 //Arreglos bIdimensionales 
+Crear un arreglo bidimensional con Filas y Columnas que el usuario indique
+ y llenarlo de números consecutivos empezando desde 1.
 
-Crear 3 filas y 4 columnas
+Ejemplo con 3 filas y 4 columnas:
 
 1   2   3    4 
 5   6   7    8
