@@ -302,6 +302,8 @@ Ejemplo con 3 filas y 4 columnas:
 definicio clara en la desicion
 
 
+-------------Decimosegundo Video---------------
+// Algoritmos de Ordenamiento
 
 
 
