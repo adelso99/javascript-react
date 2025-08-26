@@ -321,6 +321,22 @@ definicio clara en la desicion
  |   |
 a1 a2
 
+vuelta 1
+ 1   2   3   4   5            auxiliar
+ 5   2   10   12  1            _2_____
+             / \  / \
+              |    |
+              |    |
+              a1   a2
+
+
+vuelta 2
+ 1   2   3   4   5            auxiliar
+ 5   2   10  1   12            ______
+/ \ / \
+ |   |
+ |   |
+a1 a2
 
 
 
