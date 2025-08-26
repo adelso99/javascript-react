@@ -313,8 +313,18 @@ definicio clara en la desicion
 
 - Bubble Sort
 // se debe de cubrir 5 vueltas
+// Apuntador 1= a1  &&  Apuntador 2= a3
  1   2   3   4   5            auxiliar
  5   2   10  1   12            ______
+/ \ / \
+ |   |
+ |   |
+a1 a2
+
+
+
+
+
 
 
 
