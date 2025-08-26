@@ -311,6 +311,11 @@ definicio clara en la desicion
 - Merge Sort
 - Quick Sort
 
+- Bubble Sort
+// se debe de cubrir 5 vueltas
+ 1   2   3   4   5            auxiliar
+ 5   2   10  1   12            ______
+
 
 
 
