@@ -285,7 +285,7 @@ Tipos de comportamiento en arreglos unidimensionales
 
 2. Arreglos dinamicos -- movimiento automatico
 
--- vamos x1
+
 
 
 -------------Decimoprimero Video---------------
