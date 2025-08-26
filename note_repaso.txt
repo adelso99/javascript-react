@@ -292,6 +292,7 @@ Tipos de comportamiento en arreglos unidimensionales
 //Arreglos bIdimensionales 
 
 Crear 3 filas y 3 columnas
+definicio clara en la desicion
 
 
 
