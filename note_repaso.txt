@@ -374,7 +374,10 @@ vuelta 5
              a1  a2
 
 
------vamos x1
+-----vamos x1 
+-----vamos x1 
+-----vamos x1 
+-----vamos x1 
 
 
 
