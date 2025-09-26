@@ -373,8 +373,10 @@ vuelta 5
              |   |     
              a1  a2
 
-
------vamos x1 
+definicion de 5 varibles 
+una etrada
+otra variable
+lopp
 
 
 
