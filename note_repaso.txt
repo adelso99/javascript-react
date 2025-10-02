@@ -379,9 +379,9 @@ otra variable
 lopp
 
 vamos ---------x1
-vamos ---------x1
-vamos ---------x1
-vamos ---------x1
+vamos ---------x2
+vamos ---------x3
+vamos ---------x4
 vamos ---------x1
 vamos ---------x1
 
