@@ -378,6 +378,7 @@ una etrada
 otra variable
 lopp
 
+
 vamos ---------x1
 vamos ---------x1
 vamos ---------x1
