@@ -329,7 +329,7 @@ definicio clara en la desicion
  |   |
 a1 a2
 
-vuelta 1
+vuelta #1
  1   2   3   4   5            auxiliar
  5   2   10   1  12            _1_____
              / \  / \
@@ -338,7 +338,7 @@ vuelta 1
               a1   a2
 
 
-vuelta 2
+vuelta #2
  1   2   3   4   5            auxiliar
  2   5   1  10   12            ___1___
 / \ / \
@@ -347,7 +347,7 @@ vuelta 2
  a1 a2
 
 
-vuelta 3
+vuelta #3
  1   2   3   4   5            auxiliar
  2   1   5  10   12            ___1___
 / \ / \
@@ -356,7 +356,7 @@ vuelta 3
  a1 a2
 
 
-vuelta 4
+vuelta #4
  1   2   3   4   5            auxiliar
  1   2   5  10   12            ___1___
 / \ / \
@@ -365,7 +365,7 @@ vuelta 4
  a1 a2
 
 
-vuelta 5
+vuelta #5
  1   2   3   4   5            auxiliar
  1   2   5  10   12            ___1___
             / \ / \
