@@ -381,6 +381,9 @@ lopp
 avacence 2 con exito
 verificar mas el video 
 
+-- avance 3 con exito
+verificar mas el video
+
 vamos ---------x1
 
 
