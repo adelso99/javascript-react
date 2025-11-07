@@ -401,7 +401,10 @@ Programado el Metodo de la Burbuja
 
 
 -------------DecimoCuarto Video---------------
-
+Programado el Metodo de la Burbuja, pero con un ejericio
+de calificaciones con asiganacion de
+8 con Beca
+menor que 8 Sin Beca
 
 
 
