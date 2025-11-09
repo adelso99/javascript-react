@@ -415,6 +415,9 @@ con ayuda del ejericio Burbuja
 -------------DecimoOctavo Video---------------
 Empaquetacion de Aplicaciones
 
+con Standalone que sirve para empaquetacion o ejecutable
+si necesidad de abrirlo con raptor
+
 
 
 
