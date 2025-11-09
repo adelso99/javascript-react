@@ -420,6 +420,8 @@ si necesidad de abrirlo con raptor
 
 -------------DecimoNoveno Video--------------- Ultimo Video :)
 Interfaces Graficas
+Uso de las Interfaces con llamdo de Callback
+y tambien comandos de raptor
 
 
 
