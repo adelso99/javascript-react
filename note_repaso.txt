@@ -408,6 +408,10 @@ Algoritmo de Busqueda
 explicacion de funcion 
 
 -------------DecimoSeptimo Video---------------
+Resolucion del Ejericio de Busqueda
+con ayuda del ejericio Burbuja
+3 selecion y la variable Bandera
+
 
 
 
