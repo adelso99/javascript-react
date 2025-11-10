@@ -5,5 +5,6 @@ link: https://stackoverflow.com/questions
 --Dejare unos 2 dias de pausa
 
 -- Repaso en HTML---
-
 -Video 12 de Archivos--
+-Video 13 de Elementos de encabezado HTML--
+-Video 14 de Elementos de parrafo HTML--
