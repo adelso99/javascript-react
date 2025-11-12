@@ -27,10 +27,11 @@ orden ordenado <ol></ol>
 -Video 18 de Listas detro de otras listas--
 <ul>
     <li>1</li>
-    <li>2</li>
+    <li>2
         <ul>
         <li>1</li>
         <li>2</li>
         </ul>
+    </li>
     <li>3</li>
 </ul>
