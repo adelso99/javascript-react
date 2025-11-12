@@ -24,7 +24,7 @@ orden ordenado <ol></ol>
     <li>2</li>
 </ol>
 
--Video 18 de Listas detro de otras listas--
+-Video 18 de Anidamiento y sangria (Listas detro de otras listas)--
 <ul>
     <li>1</li>
     <li>2
