@@ -42,5 +42,7 @@ orden ordenado <ol></ol>
 draggable="true" es con movimeinto
 
 
---Video 19 ------  
+--Video 19 Elemento de Imagen------  
+<img src="url /> es una etiqueda de autocierre o Elemento vacio por eso es < /> diferente al anclaje
+el alt="descripcion" es una forma alternativa de imagen 
 
