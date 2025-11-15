@@ -48,4 +48,4 @@ el alt="descripcion" es una forma alternativa de imagen
 
 vamos ----------x1
 vamos ----------x1
-vamos ----------x1
+
