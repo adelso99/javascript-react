@@ -49,6 +49,13 @@ el alt="descripcion" es una forma alternativa de imagen
 
 -SECCION 4---
 --Video 25 Ruta de Archivos Informaticos------  
+Ruta:
+Folder0
+  Folder1
+     Folder2 
+         bird.png
+
+<img src="../Folder1/Folder2/bird.png" alt="Imagen de un Pajaro" />
 
 
 
