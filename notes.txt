@@ -46,7 +46,7 @@ draggable="true" es con movimeinto
 <img src="url /> es una etiqueda de autocierre o Elemento vacio por eso es < /> diferente al anclaje
 el alt="descripcion" es una forma alternativa de imagen 
 
-vamos ----------x1
+
 
 
 
