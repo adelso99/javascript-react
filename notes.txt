@@ -47,7 +47,8 @@ draggable="true" es con movimeinto
 el alt="descripcion" es una forma alternativa de imagen 
 
 
-
+-SECCION 4---
+--Video 25 Ruta de Archivos Informaticos------  
 
 
 
