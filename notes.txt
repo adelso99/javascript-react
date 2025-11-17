@@ -75,6 +75,34 @@ Folder0
 
 
 -----Video 26 Plantillas de HTML------ 
+<!DOCTYPE html />
+<htm lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Mi web</title>
+    </head>
+
+    <body>
+        <h1>Hello word</h1>
+    </body>
+
+</html>
+
+<!DOCTYPE html />
+<bun topping="sesame">
+    <tomato>
+        <cheese></cheese>
+    </tomato>
+
+    <lettuce>
+        <sauce>
+            <meat></meat>
+        </sauce>
+    </lettuce>
+
+</bun>
+
+-----Video 26 Plantillas de HTML------ 
 
 
 
