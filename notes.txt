@@ -60,7 +60,21 @@ Folder0
 <img src="../Folder1/Folder2/bird.png" alt="Imagen de un Pajaro" />
 
 
------Paginas Web------ 
+-----Video 26 Paginas Web------ 
+<h1>Bienvenido a mi Pagina Web</h1>
+<!-- Add an image of yourself that links to the about page -->
+<p>Has Click en la Imagen para saber sobre mi :)</p>
+<a href="./public/about.html" >
+<img src="./assets/images/1.jpg" alt="Sobre mi" /></a>
+
+
+<hr />
+<!-- Add a link to your contact me page here -->
+<a href="./public/contact.html"> Contactame :)</a> 
+    <p>Sera un gusto atenderle</p>
+
+
+--Repasar el Video 25 y 26
 
 
 
