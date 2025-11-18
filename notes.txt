@@ -73,8 +73,10 @@ Folder0
 <a href="./public/contact.html"> Contactame :)</a> 
     <p>Sera un gusto atenderle</p>
 
+-----Video 26 Sitio web 1.Proyect Portafolio------ 
+creacion un proyecto usado los ejericicios anteriores
 
------Video 26 Plantillas de HTML------ 
+-----Video 27 Plantillas de HTML------ 
 <!DOCTYPE html >
 <html lang="es">
     <head>
@@ -103,7 +105,18 @@ v.2 Ejemplo de hamurgesa
 
 </bun>
 
------Video 26 Sitio web 1.Proyect Portafolio------ 
+
+-----Video 28------ 
+visto
+
+-----Video 29------ 
+visto
+
+-----Video 30------ 
+visto
+
+-----Video 31 Projecto Final 1------ 
+creacion de Proyecto usando todo el conocimiento ya adquirido carpeta de 4.SWeb -> ProyectoF1   
 
 
 
