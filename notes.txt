@@ -9,8 +9,8 @@ link: https://stackoverflow.com/questions
 -Video 13 de Elementos de encabezado HTML--
 -Video 14 de Elementos de parrafo HTML--
 -Video 15 de Etiquetas de cierre automatico--
-<hr /> separacion de linea
-<br /> Salto de linea
+<hr /> o <hr > separacion de linea
+<br /> o <br >Salto de linea
 -Video 16 de [Proyecto] Ranking de películas--
 -Video 17 de Elementos de Lista--
 
