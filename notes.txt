@@ -118,8 +118,10 @@ visto
 -----Video 31 Projecto Final 1------ 
 creacion de Proyecto usando todo el conocimiento ya adquirido carpeta de 4.SWeb -> ProyectoF1  
 
+
+
 ---------------SECCION 5-------------------
---Video 25 Ruta de Archivos Informaticos------
+--Video 32 Introduccion a CSS------
 
 
 
