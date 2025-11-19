@@ -123,6 +123,8 @@ creacion de Proyecto usando todo el conocimiento ya adquirido carpeta de 4.SWeb 
 ---------------SECCION 5-------------------
 --Video 32 Introduccion a CSS------
 
+--Video 33 Diseño con CSS------
+
 
 
 
