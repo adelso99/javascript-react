@@ -126,13 +126,14 @@ creacion de Proyecto usando todo el conocimiento ya adquirido carpeta de 4.SWeb 
 --Video 33 Diseño con CSS------
 3 Formas de agregar estilo CSS en HTML
 
-1. En linea: directamente desde una linea de HTML
+1. En linea: directamente a un Elemento de HTML
 <html style="css" ></html o <tag style="css" />
 
-2. Interno: directamente se agrega la etiqueta en HTML
+2. Interno: directamente se agrega a una unica pagina web en HTML
 <style>css</style>
 
-3. Externo: se agrega el link de referencia en HTML
+3. Externo: se agrega el link de referencia en HTML, del archivo de 
+    estilos externo
 <link href="style.css" />
 
 
