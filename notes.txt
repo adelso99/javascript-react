@@ -140,6 +140,8 @@ Excelente
 
 
 --Video 35 Selectores de CSS------
+✔ CSS siempre funciona así:
+selector { propiedad: valor; }
 
  1.   Selector: es la que selecciona el Elemento que se va colocar CSS
            |
@@ -155,7 +157,17 @@ class="tex-red" - seleciona todos los elementosc con clase text-red
 id de Elemento
 id="main" - seleciona todos los elementos con este id de main
 
+.text-red {
+  color: red;
+}
+
 pero el elemento "class" es para varios elementos
+
+
+#main {
+  background-color: yellow;
+}
+
 el "id" es solo para un elemento en especifio
 
 
@@ -176,3 +188,16 @@ p[draggable="false"]{
 *{
     color: blue;  // esto selecionara todo, no importa que "id, class y []" tenga
 }
+
+🧠 Resumen visual
+✔ Selectores básicos
+h1 { }    /* por etiqueta */
+.texto { } /* por clase */
+#main { }  /* por id */
+
+✔ Selector por atributo
+input[type="password"] { }
+a[target="_blank"] { }
+
+✔ Selector universal
+* { }
