@@ -139,7 +139,40 @@ creacion de Proyecto usando todo el conocimiento ya adquirido carpeta de 4.SWeb 
 Excelente
 
 
+--Video 35 Selectores de CSS------
+
+ 1.   Selector: es la que selecciona el Elemento que se va colocar CSS
+           |
+          \ /
+ <style>  h1 { |color: blue;| } </style>
+                / \     / \ 
+                 |       |
+           propiedad   valor        primero va la propieda despues de los ":" va el valor
+
+clases de alementos
+class="tex-red" - seleciona todos los elementosc con clase text-red
+
+id de Elemento
+id="main" - seleciona todos los elementos con este id de main
+
+pero el elemento "class" es para varios elementos
+el "id" es solo para un elemento en especifio
+
+
+2.Selector de Atributos
+p[draggable="true"]{
+    color:red     //seleciona todos los atributos de "p" o parrafo y
+ }                    aplicarle el atributo draggable
+
+
+p[draggable="false"]{
+    color:red     
+ }  
 
 
 
+3.Selector universala con un "*"
 
+*{
+    color: blue;  // esto selecionara todo, no importa que "id, class y []" tenga
+}
