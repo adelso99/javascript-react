@@ -162,6 +162,7 @@ id="main" - seleciona todos los elementos con este id de main
 }
 
 pero el elemento "class" es para varios elementos
+// uno define la clase se debe de escribir
 
 
 #main {
@@ -181,7 +182,7 @@ p[draggable="false"]{
     color:red     
  }  
 
-
+este es usado con los atributos que ya se definene en el HTML
 
 3.Selector universala con un "*"
 
@@ -196,7 +197,7 @@ h1 { }    /* por etiqueta */
 #main { }  /* por id */
 
 ✔ Selector por atributo
-input[type="password"] { }
+input[type="password"] { }    
 a[target="_blank"] { }
 
 ✔ Selector universal
