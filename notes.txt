@@ -242,6 +242,18 @@ h1 {
 em:	Del elemento padre
 rem:	Del elemento raíz <html>
 
+
+--Video 40 Inspeccion de CSS------
+Insepecionar desde la Web de desarrollador
+
+
+--Video 41 Modelo de Caja CSS: Margen, relleno y Borde------
+
+
+
+
+
+
 NOTA:
 
 Repasar:
