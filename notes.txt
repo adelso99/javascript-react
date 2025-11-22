@@ -208,3 +208,7 @@ a[target="_blank"] { }
     width: 200px; sirve para la anchura "width"
 
     excelente, repasar mas ingles
+
+
+---------------SECCION 6 PROPIEDADES DE CSS-------------------
+--Video 38 Colores de CSS------
