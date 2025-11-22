@@ -207,7 +207,7 @@ a[target="_blank"] { }
     height: 200px;  sirve para la altura "height"
     width: 200px; sirve para la anchura "width"
 
-    excelente, repasar mas ingles
+
 
 
 ---------------SECCION 6 PROPIEDADES DE CSS-------------------
@@ -230,3 +230,11 @@ background-attachment (scroll o fijo)
 
 
 --Video 39 Propiedad de Fuente------
+
+
+
+NOTA:
+
+Repasar:
+* https://learngitbranching.js.org/?locale=es_AR
+*  excelente, repasar mas ingles
