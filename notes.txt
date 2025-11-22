@@ -139,7 +139,7 @@ creacion de Proyecto usando todo el conocimiento ya adquirido carpeta de 4.SWeb 
 Excelente
 
 
---Video 35 Selectores de CSS------
+--Video 34 Selectores de CSS------
 ✔ CSS siempre funciona así:
 selector { propiedad: valor; }
 
@@ -202,3 +202,5 @@ a[target="_blank"] { }
 
 ✔ Selector universal
 * { }
+
+--Video 35 Proyecto de Seccion 5------
