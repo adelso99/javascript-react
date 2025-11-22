@@ -212,3 +212,16 @@ a[target="_blank"] { }
 
 ---------------SECCION 6 PROPIEDADES DE CSS-------------------
 --Video 38 Colores de CSS------
+background puede definir:
+
+background-color (color de fondo)
+
+background-image (imagen de fondo)
+
+background-repeat (si la imagen se repite)
+
+background-size (tamaño de la imagen)
+
+background-position (posición)
+
+background-attachment (scroll o fijo)
