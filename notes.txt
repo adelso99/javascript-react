@@ -239,6 +239,9 @@ h1 {
 }
 
 
+em:	Del elemento padre
+rem:	Del elemento raíz <html>
+
 NOTA:
 
 Repasar:
