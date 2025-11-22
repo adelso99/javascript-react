@@ -225,3 +225,8 @@ background-size (tamaño de la imagen)
 background-position (posición)
 
 background-attachment (scroll o fijo)
+
+
+
+
+--Video 39 Propiedad de Fuente------
