@@ -206,3 +206,5 @@ a[target="_blank"] { }
 --Video 35 Proyecto de Seccion 5------
     height: 200px;  sirve para la altura "height"
     width: 200px; sirve para la anchura "width"
+
+    excelente, repasar mas ingles
