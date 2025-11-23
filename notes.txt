@@ -272,6 +272,14 @@ Insepecionar desde la Web de desarrollador
 . para clase
 
 
+
+
+--Video 42 Projecto Final 2------ 
+creacion de Proyecto usando todo el conocimiento ya adquirido carpeta de 6.DiseñoCSS 2 -> 6.4 Motivation Meme Project
+
+
+
+
 NOTA:
 
 Repasar:
