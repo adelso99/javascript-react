@@ -248,10 +248,28 @@ Insepecionar desde la Web de desarrollador
 
 
 --Video 41 Modelo de Caja CSS: Margen, relleno y Borde------
+┌────────────────────────────┐  ← margin (margen)
+│   MARGEN (afuera)           │
+│  ┌────────────────────────┐ │  ← border (borde)
+│  │   BORDE                │ │
+│  │  ┌──────────────────┐  │ │  ← padding (relleno)
+│  │  │   PADDING        │  │ │
+│  │  │  ┌────────────┐  │  │ │  ← content (contenido)
+│  │  │  │ CONTENIDO  │  │  │ │
+│  │  │  └────────────┘  │  │ │
+│  │  └──────────────────┘  │ │
+│  └────────────────────────┘ │
+└────────────────────────────┘
 
 
+    height: 200px; esto es la altura
+    width: 200px; esto es la achura
 
+   border: 20px solid black; borde norml de los 4 lados
+    border-width: 20px 10px ; borde lado 1 y 3 20 px 2 y 4 10px
 
+# para id
+. para clase
 
 
 NOTA:

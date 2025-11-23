@@ -7,6 +7,64 @@
   <style>
     /* Write your CSS code here */
 
+  #cuadro1{
+     /*2. Set their sizes to 200px heigh by 200px wide.
+     Establezca sus tamaños en 200 px de alto por 200 px de ancho.*/
+    height: 200px;
+    width: 200px;
+   /*3. Set different background colors for each of the boxes 
+   (I used cadetblue, gold and indianred).
+   Establezca diferentes colores de fondo para cada uno de los cuadros*/
+    background-color: greenyellow;
+   /*5. Set the 1st div to have 20px padding all around with a 
+   black 10px border
+   Configura el primer div con un relleno de 20 px alrededor y un 
+   borde negro de 10 px*/
+   padding: 20px;
+   border: 10px solid black;
+
+  }
+
+  /*6. Fix the style of the <p> element to remove all margins.
+    Hint: Use the CSS inspector in Chrome.
+    Corrige el estilo del elemento <p> para eliminar todos los márgenes.
+Sugerencia: Usa el inspector de CSS en Chrome.*/
+  p {
+    margin: 0;
+  }
+
+  #cuadro2{
+    background-color: blue;
+    height: 200px;
+    width: 200px;
+
+    /*7. Set the 2nd div to have a 20px border on top and bottom 
+    and 10px border left and right. (See goal image)
+    Configura el segundo div con un borde de 20 px arriba y abajo, 
+    y de 10 px a la izquierda y a la derecha. 
+    (Ver imagen del objetivo).*/
+    border: solid black;
+    border-width: 20px 10px ;
+
+    /*9. Set the margins for the divs so that each 
+      box corner touches the other. (See the goal image)
+      Configura los márgenes de los divs de modo que las 
+      esquinas de los cuadros se toquen entre sí*/
+    margin-left: 260px;
+
+
+ 
+  }
+
+  #cuadro3{
+    background-color: red;
+    height: 200px;
+    width: 200px;
+    /*8. Set the 3rd div to have a 10px border
+      Configura el tercer div con un borde de 10 px.*/
+    border: 10px solid black;
+    margin-left: 40px;
+  }
   </style>
 </head>
 
@@ -15,19 +73,28 @@
 
   <!-- TODOs:
 1. Create 3 Boxes using the div element.
-2. Set their sizes to 200px heigh by 200px wide.
-3. Set different background colors for each of the boxes (I used cadetblue, gold and indianred).
-4. Add a paragraph <p> element into the first div and add the following words:
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at sapien porttitor urna elementum lacinia. In
-    id magna pulvinar, ultricies lorem id, vehicula elit. Aliquam eu luctus nisl, vitae pellentesque magna. Phasellus
-    dolor metus, laoreet ac convallis sit amet, efficitur sed dolor.
-5. Set the 1st div to have 20px padding all around with a black 10px border.
-6. Fix the style of the <p> element to remove all margins.
-Hint: Use the CSS inspector in Chrome.
-7. Set the 2nd div to have a 20px border on top and bottom and 10px border left and right. (See goal image)
-8. Set the 3rd div to have a 10px border 
-9. Set the margins for the divs so that each box corner touches the other. (See the goal image)
--->
+Cree 3 cuadros usando el elemento div.-->
+<div id="cuadro1">
+  <!--4. Add a paragraph <p> element into the first div and add the following words:
+    Agregue un elemento de párrafo <p> en el primer div y agregue las siguientes palabras
+    .-->
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+     Aliquam at sapien porttitor urna elementum lacinia. In
+    id magna pulvinar, ultricies lorem id, vehicula elit. 
+    Aliquam eu luctus nisl, vitae pellentesque magna. Phasellus
+    dolor metus, laoreet ac convallis sit amet, efficitur sed dolor</p>
+
+</div>
+
+<div id="cuadro2">
+
+</div>
+
+<div id="cuadro3">
+
+</div>
+
+
 
 </body>
 
