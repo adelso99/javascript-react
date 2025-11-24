@@ -18,7 +18,7 @@ body {
 
 h1 {
      /*Letra en Mayuscula*/
-    text-transform: uppercase;
+    text-transform: uppercase; /*texto en MAYUSCULA*/
     font-size: 3rem;
     font-style: italic ; /*texto en Cursuva*/
 }

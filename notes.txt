@@ -277,7 +277,8 @@ Insepecionar desde la Web de desarrollador
 --Video 42 Projecto Final 2------ 
 creacion de Proyecto usando todo el conocimiento ya adquirido carpeta de 6.DiseñoCSS 2 -> 6.4 Motivation Meme Project
 
-
+    font-style: italic ; /*texto en Cursuva*/
+    text-transform: uppercase; /*texto en MAYUSCULA*/
 
 
 NOTA:
