@@ -281,6 +281,13 @@ creacion de Proyecto usando todo el conocimiento ya adquirido carpeta de 6.Dise√
     text-transform: uppercase; /*texto en MAYUSCULA*/
 
 
+
+---------------SECCION 7 CSS INTERMEDIO-------------------
+--Video 43 La Cascada - Especificidad y Herencia------
+
+
+
+
 NOTA:
 
 Repasar:
