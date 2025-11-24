@@ -20,4 +20,5 @@ h1 {
      /*Letra en Mayuscula*/
     text-transform: uppercase;
     font-size: 3rem;
+    font-style: italic ; /*texto en Cursuva*/
 }
