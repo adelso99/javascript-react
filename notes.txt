@@ -310,6 +310,8 @@ Categorias del Modelo de Cascada
     color: red;
     color: green !important;     ---> 1
 
+    
+
 RESUMEN VISUAL            (de menor a mayor poder)
 Nivel	                          Ejemplo                             	¿Quién gana más?
 
