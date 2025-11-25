@@ -284,6 +284,7 @@ creacion de Proyecto usando todo el conocimiento ya adquirido carpeta de 6.Dise�
 
 ---------------SECCION 7 CSS INTERMEDIO-------------------
 --Video 43 La Cascada de Especificidad y Herencia------
+
 Categorias del Modelo de Cascada
 1. Posicion
     li {
@@ -297,7 +298,7 @@ Categorias del Modelo de Cascada
 
     css:
     li {color: blue;}                     ---> Elemento
-    .first-class {color: red;}             --> Clase
+    .first-class {color: red;}            ---> Clase
     li[draggable] { color: purple;}       ---> Atributo
     #first-id {color: orange;}            ---> Id
 
@@ -310,7 +311,7 @@ Categorias del Modelo de Cascada
     color: red;
     color: green !important;     ---> 1
 
-    
+
 
 RESUMEN VISUAL            (de menor a mayor poder)
 Nivel	                          Ejemplo                             	¿Quién gana más?
