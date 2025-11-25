@@ -284,6 +284,11 @@ creacion de Proyecto usando todo el conocimiento ya adquirido carpeta de 6.Dise√
 
 ---------------SECCION 7 CSS INTERMEDIO-------------------
 --Video 43 La Cascada de Especificidad y Herencia------
+Categorias del Modelo de Cascada
+1. Posicion
+2. Especificidad
+3. Tipo
+4. Importanacia
 
 
 
