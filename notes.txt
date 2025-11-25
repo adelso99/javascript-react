@@ -310,7 +310,13 @@ Categorias del Modelo de Cascada
     color: red;
     color: green !important;     ---> 1
 
+RESUMEN VISUAL            (de menor a mayor poder)
+Nivel	                          Ejemplo                             	¿Quién gana más?
 
+1. Posición	                     la última regla                           	↑
+2. Especificidad	     id > atributo > clase > elemento               	↑
+3. Tipo	                   en línea > interno > externo                 	↑
+4. !important	             color: red !important	                    GANA TODO
 
 
 
