@@ -286,9 +286,30 @@ creacion de Proyecto usando todo el conocimiento ya adquirido carpeta de 6.DiseÃ
 --Video 43 La Cascada de Especificidad y Herencia------
 Categorias del Modelo de Cascada
 1. Posicion
+    li {
+        color: red;         ---> 1
+        color: blue;        ---> 2
+    }
+
 2. Especificidad
+    html:
+    <li id="first-id" class="first-class" draggable>
+
+    css:
+    li {color: blue;}                     ---> Elemento
+    .first-class {color: red;}             --> Clase
+    li[draggable] { color: purple;}       ---> Atributo
+    #first-id {color: orange;}            ---> Id
+
 3. Tipo
+    <link rel="stylesheet" href="./style.css">  ---> Externo
+    <style> </style>                            ---> Interno 
+    <h1 style="">Hello</h1>                     ---> En Linea
+
 4. Importanacia
+    color: red;
+    color: green !important;     ---> 1
+
 
 
 
