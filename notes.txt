@@ -283,7 +283,7 @@ creacion de Proyecto usando todo el conocimiento ya adquirido carpeta de 6.Dise√
 
 
 ---------------SECCION 7 CSS INTERMEDIO-------------------
---Video 43 La Cascada - Especificidad y Herencia------
+--Video 43 La Cascada de Especificidad y Herencia------
 
 
 
