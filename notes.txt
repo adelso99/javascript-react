@@ -332,9 +332,21 @@ Ejericio excelente
     }
 
 2.Child
-selector > selector {    --> se usa ">" para selecionar un hijo del padre
-    color: firebrick;
+selector > selector {   --> se usa ">" para selecionar 
+    color: firebrick;        un hijo del padre
 }
+
+3. desenciente 
+selector selector {   --> se usa "espacio" aplica a un descendiente
+    color: blue;            del lado izquierdo
+}
+
+4.Encadenamiento de Selectores
+selectorselector {      --> No se usa "sin espacio" siempre el primer
+    color: seagreen;      elemento de la cadena es un elemento
+}
+
+5.combinando combinadores
 
 
 
