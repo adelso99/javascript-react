@@ -352,6 +352,12 @@ selctor selectorselector { -->No se usa "sin espacio" siempre
 }
 
 
+
+-----Video 445. Posicionamiento CSS------
+
+
+
+
 NOTA:
 
 Repasar:
