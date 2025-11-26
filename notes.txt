@@ -326,7 +326,10 @@ Ejericio excelente
 
 
 -----Video 44. Combinación de selectores CSS------
-
+1.Regla de Grupo
+    selector, selector {
+    color: bluevoilet;
+    }
 
 NOTA:
 
