@@ -327,9 +327,16 @@ Ejericio excelente
 
 -----Video 44. Combinación de selectores CSS------
 1.Regla de Grupo
-    selector, selector {
+    selector, selector {     --> se usa "," para agrupar
     color: blueviolet;
     }
+
+2.Child
+selector > selector {    --> se usa ">" para selecionar un hijo del padre
+    color: firebrick;
+}
+
+
 
 NOTA:
 
