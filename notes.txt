@@ -347,6 +347,9 @@ selectorselector {      --> No se usa "sin espacio" siempre el primer
 }
 
 5.combinando combinadores
+selectorselector {      --> No se usa "sin espacio" siempre el primer
+    color: seagreen;      elemento de la cadena es un elemento
+}
 
 
 
