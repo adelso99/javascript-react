@@ -353,8 +353,11 @@ selctor selectorselector { -->No se usa "sin espacio" siempre
 
 
 
------Video 445. Posicionamiento CSS------
-
+-----Video 45. Posicionamiento CSS------
+1.Estatico
+2.Relativo
+3.Absoluto
+4.Fijo
 
 
 
