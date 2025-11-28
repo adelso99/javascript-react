@@ -403,6 +403,13 @@ arriba, izquierda, derecha, abajo
 width:  Ancho
 height: Alto
 
+
+
+-----Video 46. Projecto de la Seccion------
+creacion de Proyecto usando todo el conocimiento ya adquirido carpeta de /.Diseño-CSS-3 -> 7.3 CSS Flag Project
+
+
+
 NOTA:
 
 Repasar:
