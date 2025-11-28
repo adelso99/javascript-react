@@ -355,11 +355,53 @@ selctor selectorselector { -->No se usa "sin espacio" siempre
 
 -----Video 45. Posicionamiento CSS------
 1.Estatico
+div {
+  position: static; /*Esto es lo que tienen todos por defecto*/
+}
+No se puede mover usando top, left, right, bottom
+
 2.Relativo
+div {
+  position: relative;
+  top: 20px;   /* baja */
+  left: 30px;  /* se mueve a la derecha */
+}
+sí se puede mover usando top, left, right, bottom.
+
 3.Absoluto
+div {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}
+Se posiciona respecto a su primer padre posicionado 
+(padre con position: relative).
+
+Necesita del otro Div o padre(Antesesor) que tenga 
+posicion relative ya que el absolute es coomo hijo
+delocontrario toma como padre al body de html
+
 4.Fijo
+div {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+}
+Se pega a la pantalla (viewport), no al contenido.
+Aunque el usuario haga scroll, el elemento se queda fijo.
 
+RESUMEN SUPER RÁPIDO
+Tipo    ¿Sigue el flujo normal?	 ¿Se puede mover?	¿A qué se pega?
+1.static	 ✔ Sí	            ❌ No	        Al contenido normal
+2.relative	 ✔ Sí	            ✔ Sí        	A su posición original
+3.absolute	❌ No	           ✔ Sí	        Al padre posicionado o al body
+4.fixed	    ❌ No	           ✔ Sí	        A la ventana del navegador
 
+top,    left,     right,   bottom
+arriba, izquierda, derecha, abajo
+
+width:  Ancho
+height: Alto
 
 NOTA:
 
