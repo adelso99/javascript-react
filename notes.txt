@@ -418,7 +418,18 @@ Ejericio extra por mi es la bandera de japon
 --Video 48 Visualización CSS------
 display
 elemento:
-<span>hello word</span>
+<span>conetido</span>
+
+Ejemplo:
+html
+<h2>Hello</h2>
+<h2>word</h2>
+
+css
+h2 {
+    display: inline;
+}
+
 
 
 
