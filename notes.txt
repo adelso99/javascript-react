@@ -418,9 +418,9 @@ Ejericio extra por mi es la bandera de japon
 --Video 48 Visualización CSS------
   Display:
 
-  1. block
-  2. inline
-  3. inline-block
+  1. block: bloque para que cada uno tenga su propia linea y se puede modificar alltura y anchura
+  2. inline: se ajustan a su contenido no se puede modificar alltura y anchura
+  3. inline-block: es una combinacion de los 2 anteriores
 
 
 
