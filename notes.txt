@@ -416,7 +416,14 @@ Ejericio extra por mi es la bandera de japon
 
 ---------------SECCION 8 CSS AVANZADO-------------------
 --Video 48 Visualización CSS------
-display
+  Display:
+
+  1. block
+  2. inline
+  3. inline-block
+
+
+
 elemento:
 <span>conetido</span>
 
@@ -429,6 +436,8 @@ css
 h2 {
     display: inline;      // quedara "Hello word"
 }                         // no asi: "hello" linea 1 y "word" linea 2
+
+
 
 
 
