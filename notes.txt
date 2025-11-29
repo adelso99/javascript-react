@@ -410,11 +410,15 @@ creacion de Proyecto usando todo el conocimiento ya adquirido carpeta de /.Dise√
 
 Excelente
 
+Ejericio extra por mi es la bandera de japon
+
 
 
 ---------------SECCION 8 CSS AVANZADO-------------------
 --Video 48 Visualizaci√≥n CSS------
-
+display
+elemento:
+<span>hello word</span>
 
 
 
