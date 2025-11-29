@@ -414,14 +414,17 @@ Ejericio extra por mi es la bandera de japon
 
 
 
+
+
+
+
 ---------------SECCION 8 CSS AVANZADO-------------------
---Video 48 Visualización CSS------
+-------Video 48 Visualización CSS "display"-------
   Display:
 
   1. block: bloque para que cada uno tenga su propia linea y se puede modificar alltura y anchura
   2. inline: se ajustan a su contenido no se puede modificar alltura y anchura
   3. inline-block: es una combinacion de los 2 anteriores
-
 
 
 elemento:
@@ -439,7 +442,7 @@ h2 {
 
 
 
-
+-------Video 49 CSS Flotante "float"-------
 
 
 NOTA:
