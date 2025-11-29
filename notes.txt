@@ -427,8 +427,8 @@ html
 
 css
 h2 {
-    display: inline;
-}
+    display: inline;      // quedara "Hello word"
+}                         // no asi: "hello" linea 1 y "word" linea 2
 
 
 
