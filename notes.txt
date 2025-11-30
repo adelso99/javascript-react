@@ -456,6 +456,9 @@ img {
 se usa left a la derecha
 se usar right a la izquierda
 
+con:
+clear: left;  //esto quita el embolvimiento del texto a la imagen 
+
 
 NOTA:
 
