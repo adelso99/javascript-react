@@ -449,7 +449,7 @@ float
 <p>texto...</p>
 
 img {
-    float: left    //esto lo que hara es envolver el texto a al rededor de la imagen  que 
+    float: left;    //esto lo que hara es envolver el texto a al rededor de la imagen  que 
 }                  // que en si es flotar la imagen a la derecha 
 
 
@@ -457,7 +457,12 @@ se usa left a la derecha
 se usar right a la izquierda
 
 con:
-clear: left;  //esto quita el embolvimiento del texto a la imagen 
+clear: left → evita elementos con float: left
+
+clear: right → evita elementos con float: right
+
+clear: both → evita cualquier elemento flotado, sin importar el lado
+
 
 
 NOTA:
