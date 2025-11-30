@@ -443,7 +443,14 @@ h2 {
 
 
 -------Video 49 CSS Flotante "float"-------
+float
 
+<img .../>
+<p>texto...</p>
+
+img {
+    float: left    //esto lo que hara es envolver el texto a al rededor de la imagen 
+}
 
 NOTA:
 
