@@ -449,8 +449,13 @@ float
 <p>texto...</p>
 
 img {
-    float: left    //esto lo que hara es envolver el texto a al rededor de la imagen 
-}
+    float: left    //esto lo que hara es envolver el texto a al rededor de la imagen  que 
+}                  // que en si es flotar la imagen a la derecha 
+
+
+se usa left a la derecha
+se usar right a la izquierda
+
 
 NOTA:
 
