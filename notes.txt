@@ -458,9 +458,7 @@ se usar right a la izquierda
 
 con:
 clear: left → evita elementos con float: left
-
 clear: right → evita elementos con float: right
-
 clear: both → evita cualquier elemento flotado, sin importar el lado
 
 
