@@ -465,7 +465,7 @@ clear: both → evita cualquier elemento flotado, sin importar el lado
 
 -------Video 50  Cómo crear sitios web responsivos-------
 
-
+Responsive
 
 NOTA:
 
