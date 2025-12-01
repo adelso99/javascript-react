@@ -467,6 +467,9 @@ clear: both → evita cualquier elemento flotado, sin importar el lado
 
 Responsive
 
+
+
+
 NOTA:
 
 Repasar:
