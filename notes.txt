@@ -467,12 +467,38 @@ clear: both → evita cualquier elemento flotado, sin importar el lado
 
 Responsive
 
-1. Mediante a Queries
+1. Media Query
 @media (maz-width: 600px) {
        /* CSS para pantallas de un ancho inferior o igual a 600 pc*/
 }
 
 2. CSS Grid
+<div class="grid-container"> 
+<div class="first card"></div>
+ <div class="card"></div> 
+ <div class="card"></div>
+ <div class="card"></div> 
+ <div class="card"></div> 
+</div>
+
+
+.grid-container {
+	display: grid;
+	grid-template-columns: 1fr 1fr; 
+	grid-template-rows: 100px 200px 200px;
+	gap: 30px;
+ }
+
+.first {
+	grid-column: span 2;
+ }
+
+.card {
+	background-color: blue;
+}
+
+
+
 3. CSS Flexbox
 4. External Frameworks e.g Booststrap
 
