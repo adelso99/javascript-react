@@ -468,6 +468,10 @@ clear: both → evita cualquier elemento flotado, sin importar el lado
 Responsive
 
 1. Mediante a Queries
+@media (maz-width: 600px) {
+       /* CSS para pantallas de un ancho inferior o igual a 600 pc*/
+}
+
 2. CSS Grid
 3. CSS Flexbox
 4. External Frameworks e.g Booststrap
