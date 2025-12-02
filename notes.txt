@@ -550,6 +550,23 @@ Responsive
 ✔ Frameworks → todo prehecho, rápido y responsivo
 
 
+
+
+-------Video 51 Media Query-------
+
+
+@media (max-width: 600px) }  //(max-width: 600px) conocido por ser el punto de interrupcion 
+	h1 {
+	  font-size: 15px
+	}
+}
+
+1. max-width: define cualquier tamaño de pantalla que le 
+             digamos en pixeles o inferior en este caso 600px
+
+1. min-width:
+
+
 NOTA:
 
 Repasar:
