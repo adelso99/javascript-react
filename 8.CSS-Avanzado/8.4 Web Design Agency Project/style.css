@@ -6,16 +6,79 @@ body {
   flex-direction: column;
   min-height: 95vh;
 }
+
 .main {
   flex: 1;
 }
 
+
 h1 {
   font-size: 5rem;
+  width: 50%;
+
 }
+
+.span {
+  color: #191970;
+}
+
+
+.card{
+    display: inline-block;
+    width: 45%;
+  } 
+
+
+.left {
+  float: left;
+
+}
+
+.right {
+  float: right;
+}
+
+
+.tile-image {
+  float: left;
+  height: 200px;
+  margin-right: 5%;
+}
+
+
+
 
 footer {
   text-align: right;
   color: midnightblue;
+  clear: both;
 }
 
+
+@media  (max-width: 680px) {
+
+      .logo {
+        width: 25%;
+      }
+  
+      h1 {
+        font-size: 3.5rem;
+         text-align: center;
+
+      }
+
+  
+      .card {
+        display: block;
+        width: 100%;
+        margin-bottom: 30px;
+        text-align: justify;
+      }
+
+      .card img {
+        margin-bottom: 10px;
+        width: 100%;
+        display: inline;
+        object-fit: cover;
+      }
+}
