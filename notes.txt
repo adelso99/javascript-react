@@ -500,7 +500,54 @@ Responsive
 
 
 3. CSS Flexbox
+<div class="flex-container"> 
+<div class="first card"></div>
+ <div class="second card"></div> 
+ <div class="card"></div>
+ <div class="card"></div> 
+</div>
+
+
+.card {
+	background: blue;
+	border: 30px solid white;
+	height: 100px;
+	flex: 1;
+ }
+
+.first {
+	flex:2;
+ }
+
+.second {
+	flex: 0.5;
+}
+
+
+
 4. External Frameworks e.g Booststrap
+
+<div class="container"> 
+  <div class="row">
+   <div class="card col-6"> 
+     Card 
+   </div>
+   <div class="card col-2">
+     Card
+   </div>
+   <div class="card_col-4">
+     Card
+   </div>
+  </div>
+</div>
+
+
+🧠 Resumen rápido
+
+✔ Media Queries → reglas que cambian según el tamaño del dispositivo
+✔ Flexbox → acomoda elementos en fila o columna
+✔ Grid → diseños completos y complejos
+✔ Frameworks → todo prehecho, rápido y responsivo
 
 
 NOTA:
