@@ -508,6 +508,11 @@ Responsive
 </div>
 
 
+.flex-container {
+  display: flex;
+}
+
+
 .card {
 	background: blue;
 	border: 30px solid white;
@@ -564,7 +569,7 @@ Responsive
 1. max-width: define cualquier tamaño de pantalla que le 
              digamos en pixeles o inferior en este caso 600px
 
-1. min-width:
+1. min-width: estilos que aplican cuando la pantalla es de 600px o MÁS
 
 
 NOTA:
