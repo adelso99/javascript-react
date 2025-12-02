@@ -572,6 +572,12 @@ Responsive
 1. min-width: estilos que aplican cuando la pantalla es de 600px o MÁS
 
 
+Resumen super fácil
+Regla	                          Significa
+max-width: 600px	    Aplica estilos para pantallas pequeñas (≤600px)
+min-width: 600px	    Aplica estilos para pantallas grandes (≥600px)
+Breakpoint	                El ancho donde cambia el diseño
+
 NOTA:
 
 Repasar:
