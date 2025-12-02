@@ -578,6 +578,18 @@ max-width: 600px	    Aplica estilos para pantallas pequeñas (≤600px)
 min-width: 600px	    Aplica estilos para pantallas grandes (≥600px)
 Breakpoint	                El ancho donde cambia el diseño
 
+
+
+
+
+-----Video 52. [Proyecto] Sitio web de agencia de diseño web------
+creacion de Proyecto usando todo el conocimiento ya adquirido carpeta de /.8.CSS-Avanzado -> 8.4 Web Design Agency Project
+
+
+
+
+
+
 NOTA:
 
 Repasar:
