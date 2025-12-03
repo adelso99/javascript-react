@@ -586,6 +586,14 @@ Breakpoint	                El ancho donde cambia el diseño
 creacion de Proyecto usando todo el conocimiento ya adquirido carpeta de /.8.CSS-Avanzado -> 8.4 Web Design Agency Project
 
 
+.card img {
+  display: block;        /* la imagen ocupa su línea propia */
+  width: 100%;           /* llena el ancho del .card */
+  height: 200px;         /* altura fija para que object-fit recorte */
+  object-fit: cover;     /* recorta sin deformar */
+  margin-bottom: 10px;   /* separa del siguiente elemento */
+}
+
 
 
 
