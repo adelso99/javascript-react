@@ -75,9 +75,9 @@ footer {
       }
 
       .card img {
-        margin-bottom: 10px;
-        width: 100%;
-        display: inline;
-        object-fit: cover;
+        margin-bottom: 10px;    /*margen inferior de la img al texto*/
+        width: 100%;   /*ocupa el 100 por ciento de la pantalla */
+        display: inline;  /*la imagen debe de respetar en elemento en linea*/ /*aunque es mejor usar block*/
+        object-fit: cover; /* esto se ajustan al ancho y altura que se le da */
       }
 }
