@@ -614,6 +614,14 @@ creacion de Proyecto usando todo el conocimiento ya adquirido carpeta de /.8.CSS
       }
 
 
+em = relativo al padre
+
+rem = relativo al html
+
+rem es más estable.
+
+em es más flexible cuando quieres que algo crezca según el contenedor.
+
 NOTA:
 
 Repasar:
