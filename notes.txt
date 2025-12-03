@@ -597,6 +597,12 @@ creacion de Proyecto usando todo el conocimiento ya adquirido carpeta de /.8.CSS
 
 
 
+---------------SECCION 9 FLEXBOX------------------
+-------Video 54 Display Flex-------
+
+
+
+
 
 NOTA:
 
