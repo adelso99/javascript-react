@@ -601,7 +601,17 @@ creacion de Proyecto usando todo el conocimiento ya adquirido carpeta de /.8.CSS
 -------Video 54 Display Flex-------
 
 
+<div class="container">
+    <div class="one"><p>...</p></div> 
+    <div class="two"><p>...</p></div> 
+    <div class="three"><p>...</p></div>
+</div>
 
+
+.container {
+        display: flex; 
+	    gap: 10px;
+      }
 
 
 NOTA:
