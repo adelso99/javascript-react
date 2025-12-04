@@ -695,8 +695,13 @@ justify-content: space-around;     // Los elementos tienen espacio alrededor
 justify-content: space-evenly;     // El espacio entre TODOS es igual
 
 
-aling-items: flex-start;
+aling-items: flex-start;   //muestra todos los elementos en la parte superior 
 height: 70vh;            // abrebiaura de la altura de la ventana grafica
+
+
+aling-items: flex-end;   //muestra todos los elementos en la parte inferior
+
+aling-items: center;   //muestra todos los elementos en la parte del centro o enmedio 
 
 
 NOTA:
