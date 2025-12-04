@@ -716,6 +716,15 @@ aling-items: stretch;   // Estira los elementos para que llenen todo el eje tran
                           Si hay espacio sobrante en el eje vertical, los items se alargan automáticamente.
                           SOLO funciona cuando a los hijos NO se les ha definido height o width.
 
+aling-self: 
+se suele colocar en un elelemto hijo para volverlo independiente
+
+aling-self: flex-start;  // este elemento independiente se esta en el inicio
+
+
+aling-content: 
+este es similar a align-items, pero este solo funcion cuando "flex-wrap:" esta establecido en 
+"wrap;" cuando se tiene asi "flex-wrap: wrap;"
 
 
 
