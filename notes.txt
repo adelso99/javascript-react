@@ -694,14 +694,29 @@ justify-content: space-around;     // Los elementos tienen espacio alrededor
 
 justify-content: space-evenly;     // El espacio entre TODOS es igual
 
+aling-items:
+es una propiedad de Flexbox que controla cómo se alinean los elementos hijos en el eje transversal (cross-axis).
 
-aling-items: flex-start;   //muestra todos los elementos en la parte superior 
+Si flex-direction: row; → el cross-axis es vertical (arriba/abajo).
+
+aling-items: flex-start;   //Se alinean arriba, no importa izquierda o derecha.
 height: 70vh;            // abrebiaura de la altura de la ventana grafica
 
 
-aling-items: flex-end;   //muestra todos los elementos en la parte inferior
+aling-items: flex-end;   //muestra todos los elementos en la parte inferior de la izqueirda
+                          Alinea todos los elementos al final del eje transversal.
 
-aling-items: center;   //muestra todos los elementos en la parte del centro o enmedio 
+aling-items: center;   //muestra todos los elementos en la parte del centro o enmedio  de la izqueirda
+                          Alinea los elementos en el centro del cross-axis.
+
+aling-items: baseline;   // Alinea los elementos según la línea base del texto.
+
+aling-items: stretch;   // Estira los elementos para que llenen todo el eje transversal.
+                          Significa:
+                          Si hay espacio sobrante en el eje vertical, los items se alargan automáticamente.
+                          SOLO funciona cuando a los hijos NO se les ha definido height o width.
+
+
 
 
 NOTA:
