@@ -649,7 +649,7 @@ flex-basis: 100px;  (altura)
 
 
 -------Video 56 Flex Layout-------
-child        //niño
+child        //hijo
 flexitem     //Flexible
 
 
@@ -661,14 +661,11 @@ order: 0;  //este es el orden en la que se organiazn
 }
 
 
-flex-wrap: nowrap;  // no se adapta la anchura de la pantlla 
-                        porque no se vera los elementos hijos
-                        del contenedor o el elemento padre
+flex-wrap: nowrap;  // NO permite que los ítems se vayan a otra fila.
+                        Si no caben, se encogen y se hacen pequeños
 
-flex-wrap: wrap;   // este se adapta a la anchura de la pantalla
-                      para que muestre todos los elementos hijos
-                      del contenedor padre si es necesario se va
-                      a una segunda fila
+flex-wrap: wrap;   // Permite que los hijos bajen a otra fila si no caben.
+                      Es lo que hace que un sitio sea más responsivo.
 
 flex-wrap: wrap-reverse;    // este realiza lo opuesto se va para la parte
                               inferior y tambien se adapta a la anchura de 
@@ -676,8 +673,30 @@ flex-wrap: wrap-reverse;    // este realiza lo opuesto se va para la parte
                               hijos del contenedor padre si es necesario se va
                                a una segunda fila
 
+justify-content:   // este se establece en el contenedor o elemento padre
+                    Esta propiedad se usa SOLO en el contenedor, no en los hijos.
+                    ➡️ Si flex-direction: row (por defecto):
+                    main-axis → izquierda → derecha
 
 
+justify-content: flex-start; // Alinea todos los elementos al inicio (izquierda).
+
+justify-content: flex-end; // Alinea todos los elementos al final (derecha).
+
+justify-content: center; // se establecera todo en el centro
+ 
+justify-content: space-between; //  Primer elemento → pegado a la izquierda
+                                    Último → pegado a la derecha
+                                    Los demás → espacio igual en medio
+
+justify-content: space-around;     // Los elementos tienen espacio alrededor 
+                                       (izquierda y derecha iguales)
+
+justify-content: space-evenly;     // El espacio entre TODOS es igual
+
+
+aling-items: flex-start;
+height: 70vh;            // abrebiaura de la altura de la ventana grafica
 
 
 NOTA:
