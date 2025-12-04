@@ -645,7 +645,37 @@ flex-basis: 100px;  (altura)
   }
 
 
+
+
+
 -------Video 56 Flex Layout-------
+child        //niño
+flexitem     //Flexible
+
+
+order: 0;  //este es el orden en la que se organiazn	
+
+
+.green {
+	order: 1;	
+}
+
+
+flex-wrap: nowrap;  // no se adapta la anchura de la pantlla 
+                        porque no se vera los elementos hijos
+                        del contenedor o el elemento padre
+
+flex-wrap: wrap;   // este se adapta a la anchura de la pantalla
+                      para que muestre todos los elementos hijos
+                      del contenedor padre si es necesario se va
+                      a una segunda fila
+
+flex-wrap: wrap-reverse;    // este realiza lo opuesto se va para la parte
+                              inferior y tambien se adapta a la anchura de 
+                              la pantalla para que muestre todos los elementos 
+                              hijos del contenedor padre si es necesario se va
+                               a una segunda fila
+
 
 
 
