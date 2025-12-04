@@ -624,7 +624,7 @@ em es más flexible cuando quieres que algo crezca según el contenedor.
 
 
 
--------Video 54 Flex Direction-------
+-------Video 55 Flex Direction-------
 esta propiedad puede ir en el padre del elemento
 
 eje principal (main-axis) de izquierda a derecha ----->:
@@ -637,6 +637,16 @@ eje transversal (cross-axis) de arriba a abajo |
 					       v:
 flex-direction: column;  //column: columna
 flex-basis: 100px;  (altura)
+
+//flex-basis: este solo funciona en elementos hijos, no elementos padres  
+
+  .container > * {       //" > *" seleciona todos los elementos hijos 
+    flex-basis: 100px ;             que tiene la clase -class="container"-
+  }
+
+
+-------Video 56 Flex Layout-------
+
 
 
 
