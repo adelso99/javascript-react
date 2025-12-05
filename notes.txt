@@ -787,6 +787,16 @@ Juego terminado :)
 content width < width < flex-basis < min-width/max-width
 
 
+max-width
+Buscar la linea mas larga posible del texto
+
+min-width
+Buscar la palabra mas larga para terminar la 
+anchura minima del texto
+
+
+flex-basis 200px;  //cuando se usa "flex-basis" este ignora completamente
+                    el "width" que se le da
 
 NOTA:
 
