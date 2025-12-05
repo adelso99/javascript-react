@@ -777,6 +777,14 @@ Propiedad	                                    Qué alinea
 align-items	         Alinea cada ítem en el eje cruzado (vertical normalmente).
 align-content	       Alinea las filas/columnas completas cuando hay varias.
 
+
+
+
+-------Video 57 Flex Sizing-------
+
+
+
+
 NOTA:
 
 Repasar:
