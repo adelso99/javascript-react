@@ -653,11 +653,11 @@ child        //hijo
 flexitem     //Flexible
 
 
-order: 0;  //este es el orden en la que se organiazn	
+order: 0;  //este es el orden en la que se organzian	
 
 
 .green {
-	order: 1;	
+	order: 1;	// tiene mayor orden por ende paasa a final
 }
 
 
@@ -696,11 +696,11 @@ justify-content: space-evenly;     // El espacio entre TODOS es igual
 
 aling-items:
 es una propiedad de Flexbox que controla cómo se alinean los elementos hijos en el eje transversal (cross-axis).
-
 Si flex-direction: row; → el cross-axis es vertical (arriba/abajo).
 
+
 aling-items: flex-start;   //Se alinean arriba, no importa izquierda o derecha.
-height: 70vh;            // abrebiaura de la altura de la ventana grafica
+height: 70vh;            // abrebiatura de la altura de la ventana grafica
 
 
 aling-items: flex-end;   //muestra todos los elementos en la parte inferior de la izqueirda
@@ -723,10 +723,39 @@ aling-self: flex-start;  // este elemento independiente se esta en el inicio
 
 
 aling-content: 
-este es similar a align-items, pero este solo funcion cuando "flex-wrap:" esta establecido en 
-"wrap;" cuando se tiene asi "flex-wrap: wrap;"
+align-content sirve para acomodar varias filas o columnas dentro de un contenedor 
+flex cuando los ítems se envuelven, es decir, cuando usas:
+flex-wrap: wrap;
+👉 Si no hay wrap, align-content NO hace nada.
+👉 No alinea ítems individualmente, sino las líneas completas.
 
 
+aling-content: flex-start; //Las filas se juntan arriba del contenedor.
+                            📍 Como si las “apretaras” hacia arriba.
+aling-content: flex-end;  //Las filas se juntan abajo del contenedor.
+                            📍 Como si las empujaras hacia el final vertical.
+
+aling-content: center;  //Todas las filas quedan centradas verticalmente.
+                          📍 Quedan en medio del contenedor.
+
+aling-content: space-between;   //Las filas se distribuyen dejando espacios iguales entre cada fila,
+                                  pero sin espacio arriba ni abajo.
+                                📍 Primera fila pegada arriba y última fila pegada abajo. 
+
+aling-content: space-around;  //Las filas tienen espacios iguales alrededor de cada una.
+                                📍 Hay espacio arriba, entre filas y abajo.
+
+aling-content: space-evenly;    //Los espacios entre filas y los bordes (arriba/abajo) son exactamente iguales.
+                                  📍 Todo perfectamente equilibrado.
+
+aling-content: stretch;  //Las filas se estiran para ocupar todo el espacio vertical disponible.
+                          📍 Se expanden para llenar el contenedor.
+
+
+Diferencia rápida:
+Propiedad	                                    Qué alinea
+align-items	         Alinea cada ítem en el eje cruzado (vertical normalmente).
+align-content	       Alinea las filas/columnas completas cuando hay varias.
 
 NOTA:
 
