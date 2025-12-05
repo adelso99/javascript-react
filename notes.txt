@@ -836,9 +836,33 @@ el primer valor es shrink
 el primer valor es basis
 
 
+grow   -> crecer 
+shrink -> encogerse
 
 
+solucion exitosa 
+1
+.container {
+display: flex;
+justify-content: space-between;
+}
+  
+.container > * {
+width: 200px;
 
+}
+
+.item1 {
+  flex: 0 1 1;
+}
+
+.item2 {
+   flex: 0 0 1;
+}
+
+.item3 {
+  flex: 0 0 400px;
+}
 
 
 
