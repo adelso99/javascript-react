@@ -785,7 +785,7 @@ Juego terminado :)
 
 -------Video 57 Flex Sizing-------
 content width < width < flex-basis < min-width/max-width
-
+       4          3          2                  1
 
 max-width
 Buscar la linea mas larga posible del texto
@@ -811,8 +811,24 @@ max-width:
 min-width:
 
 
-flex-grow: 0;    // para desactivar
-flex-shrink: 0;  // para desactivar
+flex-grow: 0;    // para desactivar el max-width
+
+flex-shrink: 0;  // para desactivar  el min-width
+
+
+forma abreviada
+
+flex: 1 1 0;
+el primer valor es grow 
+el primer valor es shrink
+el primer valor es basis
+
+
+
+
+
+
+
 
 NOTA:
 
