@@ -787,6 +787,18 @@ Juego terminado :)
 content width < width < flex-basis < min-width/max-width
        4          3          2                  1
 
+1️⃣ content width:
+→ El tamaño natural del contenido (texto, imagen, etc.)
+
+2️⃣ width:
+→ Si no hay Flexbox, width controla el ancho.
+
+3️⃣ flex-basis:
+→ En Flexbox, este manda más que width.
+
+4️⃣ min-width / max-width:
+→ Estos SON LOS MÁS FUERTES.
+
 max-width
 Buscar la linea mas larga posible del texto
 ejemplo:
