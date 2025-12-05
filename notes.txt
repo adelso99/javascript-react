@@ -784,7 +784,7 @@ Juego terminado :)
 
 
 -------Video 57 Flex Sizing-------
-
+content width < width < flex-basis < min-width/max-width
 
 
 
