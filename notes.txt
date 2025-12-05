@@ -805,6 +805,15 @@ programming
 flex-basis 200px;  //cuando se usa "flex-basis" este ignora completamente
                     el "width" que se le da
 
+
+max-width:
+
+min-width:
+
+
+flex-grow: 0;    // para desactivar
+flex-shrink: 0;  // para desactivar
+
 NOTA:
 
 Repasar:
