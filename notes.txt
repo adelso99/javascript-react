@@ -789,10 +789,17 @@ content width < width < flex-basis < min-width/max-width
 
 max-width
 Buscar la linea mas larga posible del texto
+ejemplo:
+the best programming school in the world
 
 min-width
 Buscar la palabra mas larga para terminar la 
 anchura minima del texto
+ejemplo:
+ the best
+programming 
+ school in 
+ the world
 
 
 flex-basis 200px;  //cuando se usa "flex-basis" este ignora completamente
