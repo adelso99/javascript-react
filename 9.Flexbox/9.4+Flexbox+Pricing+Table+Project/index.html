@@ -15,11 +15,46 @@
 
       .pricing-container {
         display: flex;
-        align-items: center;
-        flex-wrap: wrap;
-     
+        flex-wrap: wrap; /*bajan las cajas cuando no hay espacio*/
+        gap: 30px;  /*espacio entre cajas*/
+        
+       
+      }
+
+          
+      .pricing-plan{
+        background-color: #b1b1b1; /*color de cajas*/
+        width: 400px;  /*ancho de cajas*/
+        height: 330px;  /*alto de cajas*/
+        text-align: center; /*texto en el centro*/
+                
+      }
+
+      .pricing-plan > * {
+        align-content: center; /*centrado de texto en cajas*/
+        list-style-type: none; /*sin listado*/
+        
       
       }
+
+      
+      .pricing-plan > .plan-title {
+       font-weight: bold;  /*Fuente en negrita*/
+    
+      }
+
+      .pricing-plan > .plan-price {
+       font-size: 3rem;   /*fuente aumentada para el precio*/
+       font-weight: bold;  /*Fuente en negrita*/
+      }
+
+      .plan-button {
+        background-color: aquamarine;
+        border: 3px solid rgb(97, 97, 97);
+      }
+
+
+
 
 
       /* Hint: What can you do with a media query and flexbox? */
