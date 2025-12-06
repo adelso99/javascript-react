@@ -14,26 +14,31 @@
       }
 
       .pricing-container {
+        height: 100vh;
         display: flex;
         flex-wrap: wrap; /*bajan las cajas cuando no hay espacio*/
         gap: 30px;  /*espacio entre cajas*/
-        
-       
+        align-items: center;
+        justify-content: center;
+   
+               
       }
 
           
       .pricing-plan{
-        background-color: #b1b1b1; /*color de cajas*/
+        background-color: #cbcbcb; /*color de cajas*/
         border-radius: 10px; /*borde de esquinas*/
         width: 400px;  /*ancho de cajas*/
-        height: 330px;  /*alto de cajas*/
+        height: 300px;  /*alto de cajas*/
         text-align: center; /*texto en el centro*/
-                
+        align-content: center;  /*centrado de texto en cajas*/ 
+        
+                        
       }
 
       .pricing-plan > * {
-        align-content: center; /*centrado de texto en cajas*/
         list-style-type: none; /*sin listado*/
+        
               
       }
 
@@ -49,10 +54,12 @@
       }
 
       .plan-button {
+        height: 35px;
         background-color: aquamarine; /*color de fondo*/
         color: blue; /*color de letra*/
         border: 3px solid rgb(97, 97, 97); /*color de borde*/
         border-radius: 7px; /*borde circular*/
+        font-weight: bold;  /*Fuente en negrita*/
       }
 
 
