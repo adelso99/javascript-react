@@ -14,11 +14,11 @@
       }
 
       .pricing-container {
-        height: 100vh;
         display: flex;
+        height: 100vh;
         flex-wrap: wrap; /*bajan las cajas cuando no hay espacio*/
         gap: 30px;  /*espacio entre cajas*/
-        align-items: center;
+        align-items: center; 
         justify-content: center;
    
                
@@ -36,21 +36,22 @@
                         
       }
 
-      .pricing-plan > * {
-        list-style-type: none; /*sin listado*/
-        
-              
-      }
-
-      
+     
       .pricing-plan > .plan-title {
        font-weight: bold;  /*Fuente en negrita*/
-    
+       margin-bottom: 10px;
+       
       }
 
       .pricing-plan > .plan-price {
        font-size: 3rem;   /*fuente aumentada para el precio*/
        font-weight: bold;  /*Fuente en negrita*/
+       margin-bottom: 10px;
+      }
+
+      .plan-features li {
+        list-style-type: none; /*sin listado*/ 
+        margin-bottom: 10px;
       }
 
       .plan-button {
@@ -60,6 +61,7 @@
         border: 3px solid rgb(97, 97, 97); /*color de borde*/
         border-radius: 7px; /*borde circular*/
         font-weight: bold;  /*Fuente en negrita*/
+        margin-bottom: 10px;
       }
 
 
