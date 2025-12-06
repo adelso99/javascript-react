@@ -867,9 +867,15 @@ width: 200px;
 
 
 
-
 -----Video 58 [Proyecto] Tabla de precios------
 creacion de Proyecto usando todo el conocimiento ya adquirido en la carpeta de 9.Flexbox -> 9.4+Flexbox+Pricing+Table+Project
+
+
+
+
+
+---------------SECCION 10 GRID------------------
+-------Video 60 Display: Grid-------
 
 
 
