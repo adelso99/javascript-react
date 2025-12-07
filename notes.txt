@@ -890,13 +890,30 @@ Grid: sirve para definir en cuadricula del contenido de diseño bidimensional 2D
       <p>...</p>
   </div>
 
-    .conatiner {
+    .container {
         display: grid;
         grid-template-columns: 1fr 2fr; // 1fr: fraccion de 1  2fr: fraccion de 2 no de 1 
         grid-template-rows: 1fr 1fr;  // 1fr: ambos son dekl mismo tamaño de fraccion
         gap: 10px;
     }
 
+
+grid-template-columns: 1fr 2fr;
+            Esto crea dos columnas:
+            La primera columna ocupa 1 fracción
+            La segunda columna ocupa 2 fracciones
+            💡 “fr” = fracción del espacio disponible
+  La segunda columna es el doble de ancha que la primera.
+
+
+grid-template-rows: 1fr 1fr;
+            Esto crea dos filas, cada una con la misma fracción de espacio:
+            Fila 1 → 1fr y la Fila 2 → 1fr
+  Eso significa: las dos filas miden lo mismo, mitad y mitad.
+
+
+
+  
 
 NOTA:
 
