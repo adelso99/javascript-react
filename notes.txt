@@ -877,11 +877,25 @@ creacion de Proyecto usando todo el conocimiento ya adquirido en la carpeta de 9
 ---------------SECCION 10 GRID------------------
 -------Video 60 Display: Grid-------
 
-FlexBox: srive para definir en linea y columna contenido
+FlexBox: srive para definir en linea y columna del ontenido de diseño udimensionales 1D
 
-Grid: sirve para definir en cuadricula el contenido
+Grid: sirve para definir en cuadricula del contenido de diseño bidimensional 2D
 
 
+
+  <div class="container">
+      <p>...</p>
+      <p>...</p>
+      <p>...</p>
+      <p>...</p>
+  </div>
+
+    .conatiner {
+        display: grid;
+        grid-template-columns: 1fr 2fr; // 1fr: fraccion de 1  2fr: fraccion de 2 no de 1 
+        grid-template-rows: 1fr 1fr;  // 1fr: ambos son dekl mismo tamaño de fraccion
+        gap: 10px;
+    }
 
 
 NOTA:
