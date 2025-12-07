@@ -916,6 +916,66 @@ grid-template-rows: 1fr 1fr;
 
 -------------Video 61 Tamaño de la cuadricula o Grid Sizing-----------
 
+    <div class="grid-container">
+        <div class="grid-items">1</div>
+        <div class="grid-items">2</div>
+        <div class="grid-items">3</div>
+        <div class="grid-items">4</div>
+    </div>
+
+    .grid-container {
+        display: grid;
+        grid-template-rows: 100px 200px; 
+        grid-template-columns: 400px 800px;  
+    }
+
+columns -> columnas
+rows -> filas
+
+tambien se puede usar "rem" en vez de "px"
+
+tambien se puede combinar las filas y columnas y vez de colocar esto:
+        grid-template-rows: 100px 200px; 
+        grid-template-columns: 400px 800px; 
+
+se coloca esto:
+grid-template: 100px 200px / 400px 800px; 
+                  filas        columnas
+
+
+tambien se puede usar autocierre
+    .grid-container {
+        display: grid;
+        grid-template-rows: 100px auto;  // la fila se adapta al contenido que tiene
+        grid-template-columns: 200px auto;  // la segunda columna crece para alcanzar el 100% de pantalla
+    }
+
+tambien esta la la division de porciones
+    .grid-container {
+        display: grid;
+        grid-template-rows: 1fr 2fr;  // la primera fila tiene lamitad de la segunda --> altura
+        grid-template-columns: 1fr 2fr;  // la primera columna tiene lamitad de la segunda --> anchura
+    }
+
+para el ancho minimo y maximo de las columnas se puede usar lo siguiente
+    .grid-container {
+        display: grid;
+        grid-template-rows: 100px 200px; 
+        grid-template-columns: 200px minmax(400px 800px); // con minmax se define ancho minimo y maximo 
+    }                                                         de la segunda columna
+
+
+
+para no esta repidiendo columnas o filas: 1fr 1fr 1fr..., se pude usar "repeat"
+    .grid-container {
+        display: grid;
+        grid-template-rows: repeat(2, 100px); 
+        grid-template-columns: repeat(2, 200px); // el numero de repectiones "2"
+    }                                                y el tamaño de cada repection "200px"
+
+
+
+
 
 NOTA:
 
