@@ -961,7 +961,7 @@ para el ancho minimo y maximo de las columnas se puede usar lo siguiente
     .grid-container {
         display: grid;
         grid-template-rows: 100px 200px; 
-        grid-template-columns: 200px minmax(400px 800px); // con minmax se define ancho minimo y maximo 
+        grid-template-columns: 200px minmax(400px, 800px); // con minmax se define ancho minimo y maximo 
     }                                                         de la segunda columna
 
 
@@ -973,9 +973,24 @@ para no esta repidiendo columnas o filas: 1fr 1fr 1fr..., se pude usar "repeat"
         grid-template-columns: repeat(2, 200px); // el numero de repectiones "2"
     }                                                y el tamaño de cada repection "200px"
 
+para definir posibles cuadros a futuro se puede usar "grid-auto-rows" para filas y "grid-auto-columns" para columnas
+    .grid-container {
+        display: grid;
+        grid-template-rows: 100px 200px; 
+        grid-template-columns: 400px 800px;
+        grid-auto-rows: 300px;  //filas
+        grid-auto-columns: ;  //columnas
+    }
 
 
-
+ejericio completo:
+.grid-container {
+        display: grid;
+        grid-template-rows: repeat(2, 1fr) 2fr; 
+        grid-template-columns: auto 400px minmax(200px, 500px);
+        grid-auto-rows: 50px; 
+ 
+}
 
 NOTA:
 
