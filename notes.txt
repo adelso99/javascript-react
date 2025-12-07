@@ -877,6 +877,11 @@ creacion de Proyecto usando todo el conocimiento ya adquirido en la carpeta de 9
 ---------------SECCION 10 GRID------------------
 -------Video 60 Display: Grid-------
 
+FlexBox: srive para definir en linea y columna contenido
+
+Grid: sirve para definir en cuadricula el contenido
+
+
 
 
 NOTA:
