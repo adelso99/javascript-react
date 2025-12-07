@@ -913,7 +913,9 @@ grid-template-rows: 1fr 1fr;
 
 
 
-  
+
+-------------Video 61 Tamaño de la cuadricula o Grid Sizing-----------
+
 
 NOTA:
 
