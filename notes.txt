@@ -683,20 +683,18 @@ flex-wrap: wrap-reverse;    // este realiza lo opuesto se va para la parte
                               hijos del contenedor padre si es necesario se va
                                a una segunda fila
 
-justify-content:   // este se establece en el contenedor o elemento padre
-                    Esta propiedad se usa SOLO en el contenedor, no en los hijos.
-                    ➡️ Si flex-direction: row (por defecto):
-                    main-axis → izquierda → derecha
 
 ✅ ¿Qué es flex-flow?
 
 flex-flow es un shorthand (propiedad abreviada) que combina:
-
 flex-direction  +  flex-wrap
-
-
 Es decir, en una sola línea puedes escribir los dos valores.
 
+
+justify-content:   // este se establece en el contenedor o elemento padre
+                    Esta propiedad se usa SOLO en el contenedor, no en los hijos.
+                    ➡️ Si flex-direction: row (por defecto):
+                    main-axis → izquierda → derecha
 
 
 justify-content: flex-start; // Alinea todos los elementos al inicio (izquierda).
