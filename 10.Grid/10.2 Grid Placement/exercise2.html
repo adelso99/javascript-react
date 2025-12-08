@@ -38,8 +38,22 @@
     .astronaut {
       background-color: #03989E;
       order: 1;
-
+      
       /* TODO: Make the astronaut box look like the goal2 image. */
+      grid-column-start: span 2;
+      grid-column-end: auto;
+      
+      /* tambien pudo haber sido esto
+       background-color: #03989E;
+      grid-column-start: 1; Inicio columna 1
+      grid-column-end: 3;   fin columna 3
+      grid-row-start: 2;  inicio en la fila 2
+      grid-row-end: 3; fin en la fila 3
+
+      o
+      grid-area: 2 / 1 / 3 / 3 ;
+
+      */
 
     }
   </style>

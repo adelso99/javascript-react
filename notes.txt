@@ -1096,8 +1096,41 @@ Estás diciendo:
 
 
 span
-    grid-column-start: 1;
-    grid-column-end: -1;
+    grid-column-start: span 2;
+    grid-column-end: auto;
+
+
+se puede usar asi:
+    grid-column-start: span 2;
+    grid-column-end: auto;
+
+o tambien abreviado con:
+grid-column: span 2 / auto;
+
+
+en ves de colocar esto que especifio como coordenadas
+    .astronaut {
+      background-color: #03989E;
+      grid-column-start: 1; Inicio columna 1
+      grid-column-end: 3;   fin columna 3
+      grid-row-start: 2;  inicio en la fila 2
+      grid-row-end: 3; fin en la fila 3
+    }
+
+se puede usar esto:
+grid-area: 2 / 1 / 3 / 3 ;
+
+El primero es el inicio de la Fila: 2
+El segundo es el inicio de la columna: 1
+El tercero es el Fin de la Fila: 3
+El cuarto es el Fin de la Columna: 3
+
+
+grado de transparencia en colores con sistema hexadecimales:
+ .book {
+      background-color: #E5833180;  // el 80 al final es "80%"
+      grid-area: 1 / 2 / 3 / 4;         de transparencia del color
+ }
 
 NOTA:
 
