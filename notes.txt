@@ -997,11 +997,96 @@ ejericio completo:
 
 
 -------------Video 62 Colocacion de la cuadricula o Grid Placement-----------
+column tracks: una columna completa del grid.
+| 1 |     Track 1     | 2 |     Track 2     | 3 |
+
+grid-template-columns: 100px 200px;
+Tienes dos column tracks:
+Track de 100px
+Track de 200px
+
+
+row tracks:una fila completa del grid.
+
+grid-template-rows: 1fr 2fr;
+
+Tienes dos filas: Esas son row tracks.
+Fila 1 → 1fr
+Fila 2 → 2fr
+
+
+Grid Cell (Celda de Grid)
+Una grid cell es la intersección de un track de fila con un track de columna.
++----+----+
+| C1 | C2 |
++----+----+
+| C3 | C4 |
++----+----+
+Cada cuadrito = grid cell.
+
+
+Grid Lines (Líneas de Grid)
+Las líneas son los bordes imaginarios que forman las celdas.
+Column lines:
+|1|   2   |3|
+
+Row lines:
+—1—
+—2—
+—3—
+En un grid de dos columnas:
+Las líneas verticales son 1, 2, 3
+Entre 1–2 está el primer track
+Entre 2–3 está el segundo track
+
+
+Grid (la grilla completa)
+Es todo el sistema:
+las líneas             lines
+los tracks             tracks
+las celdas             cells
+el contenedor          container
+los items dentro       items
+Todo el tablero completo.
+
+
+RESUMEN RÁPIDO CON DIBUJO
+<div class="grid-container">
+  <div class="item"></div>  ← GRID ITEM
+  <div class="item"></div>  ← GRID ITEM
+  <div class="item"></div>  ← GRID ITEM
+</div>
+
+
+Grid Container
++-----------------------------------+
+|  Grid Lines                       |
+|  +----+----+----+                 |
+|  |    |    |    |  ← Grid Cells  |
+|  +----+----+----+                 |
+|  |    |    |    |                 |
+|  +----+----+----+                 |
+|  ^tracks^                         |
+|  items = los divs dentro          |
++-----------------------------------+
 
 
 
 
+    <div class="container">
+        <div class="item cowboy">🤠</div>
+        <div class="item astronaut">👨‍🚀</div>
+        <div class="item book">📖</div>
+    </div>
 
+    .container {
+        height: 100vh;
+        display: grid;
+        gap: 3rem;
+        grid-template-columns: 1fr 1fr 1.5fr;
+        grid-template-rows: 1fr 1fr;
+        
+    }
 
 
 NOTA:
