@@ -1087,6 +1087,18 @@ Grid Container
     }
 
 
+“Span” = abarcar / extenderse sobre varias columnas.
+Cuando escribes:
+grid-column: span 2;
+Estás diciendo:
+👉 Este elemento ocupará 2 columnas completas del grid.
+
+
+
+span
+    grid-column-start: 1;
+    grid-column-end: -1;
+
 NOTA:
 
 Repasar:
