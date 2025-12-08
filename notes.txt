@@ -992,6 +992,18 @@ ejericio completo:
  
 }
 
+
+
+
+
+-------------Video 62 Colocacion de la cuadricula o Grid Placement-----------
+
+
+
+
+
+
+
 NOTA:
 
 Repasar:
