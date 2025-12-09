@@ -1140,7 +1140,7 @@ definir mas la logica Grid
 Toaca la reacion de Proyecto usando todo el conocimiento ya adquirido en la carpeta de 10.Grid -> 10.3 Mondrian Project
 
 
-
+repasar toda la seccion de grid
 
 
 
