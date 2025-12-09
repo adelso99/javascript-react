@@ -1132,6 +1132,10 @@ grado de transparencia en colores con sistema hexadecimales:
       grid-area: 1 / 2 / 3 / 4;         de transparencia del color
  }
 
+
+definir mas la logica Grid
+
+
 NOTA:
 
 Repasar:
