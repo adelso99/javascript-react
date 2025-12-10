@@ -1177,6 +1177,15 @@ sized columns
     </div>
 
 
+Bootstrap Breakpoint	
+Extra small	
+Small               ->  Mobil
+Medium	            ->  Ipad
+Large		        ->  Laptop
+Extra large         ->  Desktop o PC de mesa
+Extra extra large   ->	TV o parecido
+
+Mix y Match
 
 
 NOTA:
