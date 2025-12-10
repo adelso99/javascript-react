@@ -1179,13 +1179,16 @@ sized columns
 
 Bootstrap Breakpoint	
 Extra small	
-Small               ->  Mobil
-Medium	            ->  Ipad
-Large		        ->  Laptop
-Extra large         ->  Desktop o PC de mesa
-Extra extra large   ->	TV o parecido
+Small               sm  ->  Mobil
+Medium	            md  ->  Ipad
+Large		        lg  ->  Laptop
+Extra large         xl  ->  Desktop o PC de mesa
+Extra extra large   xxl ->	TV o parecido
 
 Mix y Match
+
+Ejericio Completo de 
+https://appbrewery.github.io/bootstrap-layout/
 
 
 NOTA:
