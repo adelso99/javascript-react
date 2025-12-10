@@ -1140,7 +1140,7 @@ Listo :)
 
 ---------------SECCION 10 BOOTSTRAP------------------
 -----Video 64 ¿Qué es Bootstrap?------
-
+Mobil First
 
 
 
