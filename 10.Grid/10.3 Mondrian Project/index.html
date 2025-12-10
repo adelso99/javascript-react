@@ -21,36 +21,70 @@
     */
 
     body {
-  display: grid;
-  place-items: center;  /* centra vertical y horizontal */
-  height: 100vh;
-  margin: 0;
+      display: grid;
+      place-items: center;  /* centra vertical y horizontal */
+      height: 100vh;
+      margin: 0;
+      
    }
 
     .container {
     display: grid;
     height: 748px;
     width: 748px;
-    grid-template-rows: 414px 155px 20px;
-    grid-template-columns: 320px 1fr 1.5fr;
+    grid-template-rows: 414px 130px 155px 22px;
+    grid-template-columns: 320px 198px 153px 50px;
     gap: 9px;
     background-color: #000;   
-
   }
 
   .item {
       color: black;
-      font-size: 2rem;
+      font-size: 1rem;
       background-color: #F0F1EC; 
   }
 
   .one {
     background-color: #E72F24;
-    grid-column-start: 1; Inicio columna 1
-    grid-column-end: 3;   fin columna 3
-    grid-row-start: 2;  inicio en la fila 2
-    grid-row-end: 3; fin en la fila 3
   }
+
+  .two {
+    grid-column-start: span 3;
+  }
+
+  .three {
+    grid-area: 2 / 1 / 4 / 2 ;
+
+    /*El primero es el inicio de la Fila: 2
+    El segundo es el inicio de la columna: 1
+    El tercero es el Fin de la Fila: 4
+    El cuarto es el Fin de la Columna: 2*/
+  }
+
+  .four {
+    grid-column-start: span 2;
+    grid-row-start: 2;  /*inicio en la fila 2 */
+    grid-row-end: 4; /*fin en la fila 3*/
+  }
+
+  .five {
+    background-color: #004592;
+    border-bottom: 10px solid black;
+  }
+
+  .six {
+    grid-row-start: span 2;
+  }
+
+  .eight {
+    background-color: #F9D01E;
+  }
+
+  .nine {
+    background-color: #232629;
+  }
+
+
 
   </style>
 </head>
