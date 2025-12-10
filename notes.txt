@@ -1151,6 +1151,34 @@ Incluir con la via CDN (Content Delivery Network)
 
 
 
+
+-------Video 65 Diseño de Bootstrap---------
+12 column system
+1. un div con clase "container"
+2. un div con clase "fila"
+3. nuestros items
+
+
+    <div class="contariner" >
+        <div class=" row">
+            <div class="col">Hola</div>
+        </div>
+    </div>
+
+Auto Fit
+
+sized columns
+    <div class="contariner" >
+        <div class=" row">
+            <div class="col-2">Hola</div>
+            <div class="col-4">Hola</div>
+            <div class="col-6">Hola</div>
+        </div>
+    </div>
+
+
+
+
 NOTA:
 
 Repasar:
