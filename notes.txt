@@ -1191,6 +1191,16 @@ Ejericio Completo de
 https://appbrewery.github.io/bootstrap-layout/
 
 
+
+
+-------Video 66 Componentes de Bootstrap---------
+
+
+
+
+
+
+
 NOTA:
 
 Repasar:
