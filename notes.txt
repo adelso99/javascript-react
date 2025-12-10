@@ -1142,6 +1142,13 @@ Listo :)
 -----Video 64 ¿Qué es Bootstrap?------
 Mobil First
 
+Porpulares
+- Booststrap
+- Fundetion
+
+
+Incluir con la via CDN (Content Delivery Network)
+
 
 
 NOTA:
