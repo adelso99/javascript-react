@@ -1127,11 +1127,12 @@ grado de transparencia en colores con sistema hexadecimales:
  }
 
 
-definir mas la logica Grid
 
 
 -----Video 63 [Proyecto] Pintura de Mondrian------
 Toaca la reacion de Proyecto usando todo el conocimiento ya adquirido en la carpeta de 10.Grid -> 10.3 Mondrian Project
+
+Listo :)
 
 
 
