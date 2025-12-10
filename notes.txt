@@ -1197,9 +1197,13 @@ https://appbrewery.github.io/bootstrap-layout/
 Componentes Pre-Construidos
 Componentes Pre-Estilizados
 
+Componentes 
+1.Buttons o Botones
+2.Cards o Tarjetas
+3.Navs o Barras de Navegacion 
 
-Buttons o Botones
-Cards o Tarjetas
+
+
 
 
 NOTA:
