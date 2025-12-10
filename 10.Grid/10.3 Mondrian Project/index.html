@@ -20,6 +20,13 @@
     But grid lines are transparent!
     */
 
+    body {
+  display: grid;
+  place-items: center;  /* centra vertical y horizontal */
+  height: 100vh;
+  margin: 0;
+   }
+
     .container {
     display: grid;
     height: 748px;
@@ -32,10 +39,17 @@
   }
 
   .item {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      color: aliceblue; 
+      color: black;
+      font-size: 2rem;
+      background-color: #F0F1EC; 
+  }
+
+  .one {
+    background-color: #E72F24;
+    grid-column-start: 1; Inicio columna 1
+    grid-column-end: 3;   fin columna 3
+    grid-row-start: 2;  inicio en la fila 2
+    grid-row-end: 3; fin en la fila 3
   }
 
   </style>

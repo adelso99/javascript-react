@@ -1094,12 +1094,6 @@ Estás diciendo:
 👉 Este elemento ocupará 2 columnas completas del grid.
 
 
-
-span
-    grid-column-start: span 2;
-    grid-column-end: auto;
-
-
 se puede usar asi:
     grid-column-start: span 2;
     grid-column-end: auto;
