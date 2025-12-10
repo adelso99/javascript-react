@@ -1194,7 +1194,8 @@ https://appbrewery.github.io/bootstrap-layout/
 
 
 -------Video 66 Componentes de Bootstrap---------
-
+Componentes Pre-Construidos
+Componentes Pre-Estilizados
 
 
 
