@@ -1219,6 +1219,66 @@ para ajustar el contenedor o caja en centro
 
 
 
+ESPACIO
+
+Notación 
+Las utilidades de espaciado que se aplican a todos los puntos de interrupción, desde xshasta xxl, 
+no incluyen ninguna abreviatura. Esto se debe a que estas clases se aplican desde min-width: 0y hacia arriba, y por lo 
+tanto no están vinculadas por una consulta de medios. Sin embargo, los puntos de interrupción restantes sí incluyen una abreviatura.
+
+Las clases se nombran utilizando el formato {property}{sides}-{size}para xsy {property}{sides}-{breakpoint}-{size}para sm, md, lg, xl, y xxl.
+
+Cuando la propiedad es una de las siguientes:
+
+m- para clases que establecenmargin
+p- para clases que establecenpadding
+Donde lados es uno de:
+
+t- para clases que establecen margin-topopadding-top
+b- para clases que establecen margin-bottomopadding-bottom
+s- (inicio) para clases que se establecen margin-leften padding-leftLTR margin-righto padding-righten RTL
+e- (fin) para clases que se establecen margin-righten padding-rightLTR margin-lefto padding-leften RTL
+x- para clases que establecen ambos *-lefty*-right
+y- para clases que establecen ambos *-topy*-bottom
+en blanco - para clases que establecen un margino paddingen los 4 lados del elemento
+Donde el tamaño es uno de los siguientes:
+
+0- para clases que eliminan el margino paddingconfigurándolo en0
+1- (por defecto) para clases que establecen el margino paddingen$spacer * .25
+2- (por defecto) para clases que establecen el margino paddingen$spacer * .5
+3- (por defecto) para clases que establecen el margino paddingen$spacer
+4- (por defecto) para clases que establecen el margino paddingen$spacer * 1.5
+5- (por defecto) para clases que establecen el margino paddingen$spacer * 3
+auto- para clases que lo configuran marginen automático
+(Puede agregar más tamaños agregando entradas a la $spacersvariable del mapa Sass).
+
+Ejemplos 
+Aquí hay algunos ejemplos representativos de estas clases:
+
+
+.mt-0 {
+  margin-top: 0 !important;
+}
+
+.ms-1 {
+  margin-left: ($spacer * .25) !important;
+}
+
+.px-2 {
+  padding-left: ($spacer * .5) !important;
+  padding-right: ($spacer * .5) !important;
+}
+
+.p-3 {
+  padding: $spacer !important;
+}
+
+
+
+
+
+
+
 NOTA:
 
 Repasar:
