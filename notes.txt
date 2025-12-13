@@ -1339,6 +1339,8 @@ Un buen diseño UI no muestra todo, guía al usuario.
 
 
 
+
+
 NOTA:
 
 Repasar:
