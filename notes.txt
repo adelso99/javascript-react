@@ -1295,7 +1295,12 @@ Principios del Diseño Web
 
 -----Video 69 Comprensión de la teoría del color------
 
-
+Color	Sensación
+Azul	Confianza, seguridad
+Rojo	Urgencia, alerta
+Verde	Naturaleza, éxito
+Negro	Elegancia
+Blanco	Limpieza
 
 
 
