@@ -1304,7 +1304,13 @@ Blanco	Limpieza
 
 -----Video 70 Comprender la tipografía y cómo elegir una fuente------
 
+Reglas básicas que te salvan la vida
 
+✔ Máximo 2 fuentes
+✔ Texto normal ≈ 16px
+✔ Títulos más grandes
+✔ Buen contraste (oscuro sobre claro)
+✔ Nunca sacrifiques legibilidad
 
 
 
