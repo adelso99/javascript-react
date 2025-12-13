@@ -1138,7 +1138,7 @@ Listo :)
 
 
 
----------------SECCION 10 BOOTSTRAP------------------
+---------------SECCION 11 BOOTSTRAP------------------
 -----Video 64 ¿Qué es Bootstrap?------
 Mobil First
 
@@ -1275,8 +1275,29 @@ Aquí hay algunos ejemplos representativos de estas clases:
 
 
 
+-----Video 67 [Proyecto] Sitio web de inicio de TinDog------
+Toca la reacion de Proyecto usando todo el conocimiento ya adquirido en la carpeta de 11.Bootstrap -> 11.3 TinDog Project
 
-67. [Proyecto] Sitio web de inicio de TinDog
+Proyecto realizado con exito :)
+
+
+
+
+---------------SECCION 12 ESCUELA DE DISEÑO WEB------------------
+-----Video 68 Introducción al diseño web------
+Principios del Diseño Web
+1. Teoria del Color
+2. Tipografia
+3. Diseño de Interfaz de Usuario y el Diseño 
+3. Experiencia de Usuario
+
+
+
+-----Video 69 Comprensión de la teoría del color------
+
+
+
+
 
 
 NOTA:
