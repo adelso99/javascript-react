@@ -1230,8 +1230,8 @@ Las clases se nombran utilizando el formato {property}{sides}-{size}para xsy {pr
 
 Cuando la propiedad es una de las siguientes:
 
-m- para clases que establecenmargin
-p- para clases que establecenpadding
+m- para clases que establecen margin
+p- para clases que establecen padding
 Donde lados es uno de:
 
 t- para clases que establecen margin-topopadding-top
