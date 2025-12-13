@@ -1315,6 +1315,28 @@ Reglas básicas que te salvan la vida
 
 -----Video 71 Gestione la ATENCIÓN con un diseño de interfaz de usuario (UI) eficaz------
 
+Imagínate una página con:
+Un título grande
+Un texto pequeño
+Un botón llamativo
+Espacio alrededor
+
+👉 Tus ojos siguen este orden:
+Título
+Texto
+Botón
+Eso es gestión de atención.
+
+UI vs Atención 
+Elemento UI	        Controla
+1.Tamaño	   ->   Prioridad
+2.Color	       ->   Foco
+3.Espacio	   ->   Claridad
+4.Posición	   ->   Flujo
+5.Contraste	   ->   Visibilidad
+
+Un buen diseño UI no muestra todo, guía al usuario.
+
 
 
 NOTA:
