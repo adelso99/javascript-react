@@ -17,16 +17,23 @@ body {
 h1, h2, h3 {
     color: rgba(45, 161, 250, 0.832);
     font-style: italic;
-    margin: 0;
 }
     
 .inicio > h1 {
     font-size: 4rem;
+    margin: 0;
     padding-top: 5px;
 }
 
 .inicio > h2 {
     font-size: 2rem;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    font-size: 3rem;
+    padding: 10px;
 }
 
 hr {
@@ -45,12 +52,6 @@ hr {
     border-radius: 50%;
 }
 
-.educacion > h2 {
-    font-size: 2rem;
-    padding: 10px;
-    
-}
-
 p {
      font-size: 1.5rem;
      padding-left: 700px;
@@ -66,16 +67,10 @@ p {
     height: 500px;
 }
 
-.informacion > h2 {
-    font-size: 3rem;
-    padding: 10px;
-}
 
 .informacion h3 {
     font-size: 2rem;
     padding: 10px;
-    
-    
 }
 
 
@@ -91,9 +86,32 @@ p {
 .info1 {
     display: grid;
     grid-template-columns: 0.5fr 1fr;
-    grid-template-rows: repeat(1, 1fr);
+    grid-template-rows: 1fr;
     width: 50%;
     margin: 100px auto 0 auto;
     text-align: left;
     gap: 2rem;
+}
+
+button {
+    border-radius: 50%;
+}
+
+.contactame {
+    font-size: 1.5rem;
+    color: rgb(112, 112, 112);
+}
+
+.contactame li {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+}
+
+footer {
+    display: flex;
+    background-color: aqua;
+    height: 100px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
 }
