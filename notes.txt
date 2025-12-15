@@ -1362,6 +1362,16 @@ https://www.canva.com/design/DAG7iYg_9SE/BMilwmQZ74fD7K8IlsdZ_A/edit
 :) Listo
 
 
+
+---------------SECCION 13 PROYECTO FINAL 2 SITIO PERSONAL------------------
+-----Video 74 Introducción del Proyeto------
+Entregables
+Un archivo HTML para la estructura del sitio web
+Un archivo CSS para el estilo del sitio web
+Cualquier activo adicional (por ejemplo, imágenes) utilizado en el sitio web
+
+
+
 NOTA:
 
 Repasar:
