@@ -14,7 +14,7 @@ body {
     background-position: center; /*centra la imagen para que se vea maquetado*/
 }
 
-.inicio > h1, h2 {
+h1, h2, h3 {
     color: rgba(45, 161, 250, 0.832);
     font-style: italic;
     margin: 0;
@@ -65,5 +65,35 @@ p {
 .proyecto img {
     height: 500px;
 }
- 
 
+.informacion > h2 {
+    font-size: 3rem;
+    padding: 10px;
+}
+
+.informacion h3 {
+    font-size: 2rem;
+    padding: 10px;
+    
+    
+}
+
+
+.info1 img {
+    height: 200px;
+}
+
+.info1 p {
+  padding-left: 5px;
+  padding-right: 0;
+}
+
+.info1 {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    grid-template-rows: repeat(1, 1fr);
+    width: 50%;
+    margin: 100px auto 0 auto;
+    text-align: left;
+    gap: 2rem;
+}
