@@ -1338,6 +1338,11 @@ Elemento UI	        Controla
 Un buen diseño UI no muestra todo, guía al usuario.
 
 
+-----Video 72 Diseño de experiencia de usuario (UX)------
+
+
+
+
 
 
 
