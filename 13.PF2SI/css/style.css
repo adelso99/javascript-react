@@ -2,28 +2,63 @@ body {
     margin: 0;
 }
 .container {
-    font-family: monospace;
+    font-family: Copperplate;
     text-align: center;
 }
 
 .inicio{
-    color: blue;
     font-size: 2rem;
     background-image: url(../img/fondo.jpg);  /*carga de imagen*/
     height: 500px;
     background-size: cover; /*hace la imagen cubra todo el div*/
     background-position: center; /*centra la imagen para que se vea maquetado*/
-    }
+}
 
-.inicio > h1 {
-    font-size: 4rem;
-    font-weight: bold;
+.inicio > h1, h2 {
+    color: rgba(45, 161, 250, 0.832);
     font-style: italic;
     margin: 0;
+}
+    
+.inicio > h1 {
+    font-size: 4rem;
+    padding-top: 5px;
 }
 
 .inicio > h2 {
     font-size: 2rem;
-    margin: 0;
+}
+
+hr {
+    border: dotted rgba(45, 161, 250, 0.832) 6px;
+    border-bottom: none; 
+    width: 4%; 
+    margin: 100px auto;
+}
+
+.educacion {
+    margin-top: 50px;
+}
+
+.imgpersona {
+    height: 200px;
+    border-radius: 50%;
+}
+
+.educacion > h2 {
+    font-size: 2rem;
+    padding: 10px;
+    
+}
+
+p {
+     font-size: 1.5rem;
+     padding-left: 700px;
+     padding-right: 700px;
+}
+
+.proyecto {
+    font-size: 2rem;
+    padding: 10px;
 }
 
