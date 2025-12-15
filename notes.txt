@@ -1340,10 +1340,19 @@ Un buen diseño UI no muestra todo, guía al usuario.
 
 -----Video 72 Diseño de experiencia de usuario (UX)------
 
+UX NO es lo mismo que UI
+    UI	                       UX
+Cómo se ve	       ->     Cómo se siente
+Colores, botones   ->     Flujo, facilidad
+Diseño visual      ->     Experiencia total
 
+Resumen rápido
+UX = experiencia del usuario
+Importa cómo se siente
+Busca facilidad y claridad
+Menos es más
 
-
-
+UX es diseñar pensando en las personas, no en el diseñador.
 
 
 NOTA:
