@@ -52,10 +52,14 @@ hr {
     border-radius: 50%;
 }
 
+.educacion p {
+    font-size: 1.5rem;
+    width: 30%;
+    margin: auto;
+}
+
 p {
      font-size: 1.5rem;
-     padding-left: 700px;
-     padding-right: 700px;
 }
 
 .proyecto {
@@ -65,13 +69,21 @@ p {
 
 .proyecto img {
     height: 500px;
+    margin: auto;
 }
 
+.proyecto p {
+    font-size: 1.5rem;
+    width: 30%;
+    margin: auto;
+    padding-bottom: 20px;
+}
 
 .informacion h3 {
     font-size: 2rem;
     padding: 10px;
 }
+
 
 
 .info1 img {
