@@ -1,0 +1,28 @@
+.container {
+    font-family: monospace;
+    text-align: center;
+}
+
+.inicio{
+    color: blue;
+    font-size: 2rem;
+    background-image: url(../img/fondo.jpg);
+    object-fit: cover;  
+    width: 100%;           /* llena el ancho del .card */
+    height: 350px;  
+}
+
+
+
+.inicio > h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    font-style: italic;
+    margin: 0;
+}
+
+.inicio > h2 {
+    font-size: 2rem;
+    margin: 0;
+}
+
