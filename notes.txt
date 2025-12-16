@@ -1537,6 +1537,14 @@ var mi nombre = "Adelso"       //No
 var minombre = "Adelso"        //si
 
 
+las variables solo pueden tener
+
+abc -> letras
+123 -> numeros
+$   -> signo de dolar
+_   -> guion bajo
+
+
 
 NOTA:
 
