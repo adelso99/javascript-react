@@ -1522,7 +1522,7 @@ dar a las variables nombres siempes y significativos para que sean faciles
 de indentificar y entender
 
 
-
+el nombre de las variables no pueden empezar con un numero 
 
 
 NOTA:
