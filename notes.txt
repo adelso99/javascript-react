@@ -1529,6 +1529,13 @@ var var = "Adelso"          //No
 var mivar = "Adelso"        //Si
 
 el nombre de las variables no pueden empezar con un numero 
+var 123 = "Adelso"       //No
+var my123 = "Adelso"     //si
+
+el nombre de las variables no pueden tener espacios 
+var mi nombre = "Adelso"       //No
+var minombre = "Adelso"        //si
+
 
 
 NOTA:
