@@ -1431,6 +1431,62 @@ Boolean -> Solo existen dos valores Se usan para decisiones y condiciones
 
 -----Video 78 Variables de Javascript------
 
+promt(); // este permite introducir al usuario algo
+
+prompt("Cual es tu nombre");
+
+
+Variables
+var
+var nombre = "Adelso";
+nombre
+'Adelso'
+
+
+var nombre = "Adelso";
+
+var         -> palabra clave
+nombre      -> nombre de la variable
+=           -> establece que sea igual al valor
+"Adelso"    -> es el valor
+;           -> fin 
+
+alert(nombre);
+Adelso
+
+No se escriben comillas cuando llamas a la variable
+Si pones "nombre" → es texto
+Si pones nombre → es la variable
+
+la palabra "var" solo se usa a vez en la variable que se declara
+si quiere cambiar el valor despues solo se llama el nombre de la variable declarada
+
+nombre = "Juan";
+
+usar var con promt 
+var tunombre = prompt("Cual es tu nombre");
+
+erick
+
+nombre
+'erick'
+
+un alert combinado 
+alert("Hola mi nombres es "+nombre+" y el tuyo es "+tunombre+" bienvendio");
+Hola mi nombres es Adelso y el tuyo es Erick bienvendio
+
+
+para un juego 
+var nivel_de_juego = 1;
+nivel_de_juego = 2;
+nivel_de_juego = 3;
+alert("El nivel del juego es "+nivel_de_juego);
+
+El nivel del juego es 3
+
+
+
+-----Video 79 Ejercicio de variables de Javascript------
 
 
 
@@ -1438,6 +1494,7 @@ Boolean -> Solo existen dos valores Se usan para decisiones y condiciones
 
 
 NOTA:
+
 
 Repasar:
 * https://learngitbranching.js.org/?locale=es_AR
