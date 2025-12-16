@@ -1488,6 +1488,31 @@ El nivel del juego es 3
 
 -----Video 79 Ejercicio de variables de Javascript------
 
+    let a = "3";
+    let b = "8";
+    
+/***********Do not change the code above 👆*******/
+//Write your code on lines 7 - 9:
+var c = a;
+a = b;
+b = c;
+
+
+    
+/***********Do not change the code below 👇*******/
+
+    console.log("a is " + a);
+    console.log("b is " + b);
+
+'8'
+'3'
+'a is 8'
+'b is 3'
+
+
+
+-----Video 80 Solución del ejercicio 80. Variables de Javascript------
+
 
 
 
