@@ -1379,11 +1379,23 @@ Proyecto terminado y esta en la carpeta de 13.PF2SI
 ---------------SECCION 14 INTRODUCCION A JAVA SCRIPT------------------
 -----Video 75 Introducción a Javascript------
 
+Lenguaje de progrmacion Interpretado
+
+👉 HTML = estructura
+👉 CSS = diseño
+👉 JavaScript = comportamiento
+
+Ejemplo simple
+<script>
+  alert("Hola Mundo");
+</script>
+
+JavaScript es un lenguaje interpretado porque el navegador lee y ejecuta el código directamente, 
+línea por línea, sin necesidad de compilarlo antes.
 
 
 
-
-
+-----Video 76 Alertas de Javascript------
 
 
 
