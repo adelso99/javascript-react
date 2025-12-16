@@ -1410,11 +1410,28 @@ alert("hello");
 
 "Hello"  -> string
 123  -> Numbers
-true  y false   -> Boolean
+true/false   -> Boolean
 
 
 typeof
 este indica el tipo de dato que se esta usando 
+
+typeof(23);
+'number'
+typeof("Adelso");
+'string'
+typeof(true);
+'boolean'
+
+String -> Todo lo que esté entre comillas (" " o ' ') es un string, aunque parezca un número.
+Number -> No llevan comillas Sirven para operaciones matemáticas
+Boolean -> Solo existen dos valores Se usan para decisiones y condiciones
+
+
+
+-----Video 78 Variables de Javascript------
+
+
 
 
 
