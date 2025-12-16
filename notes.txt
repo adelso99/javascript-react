@@ -1521,6 +1521,9 @@ b = c;
 dar a las variables nombres siempes y significativos para que sean faciles
 de indentificar y entender
 
+var askadkñlskldaskl = "Adelso"     //No
+var nombre = "Adelso"               //si
+
 
 el nombre de las variables no pueden empezar con un numero 
 
