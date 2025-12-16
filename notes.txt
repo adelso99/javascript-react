@@ -1524,6 +1524,9 @@ de indentificar y entender
 var askadkñlskldaskl = "Adelso"     //No
 var nombre = "Adelso"               //si
 
+la variable no se puede llamar simplemente "var"
+var var = "Adelso"          //No
+var mivar = "Adelso"        //Si
 
 el nombre de las variables no pueden empezar con un numero 
 
