@@ -1512,8 +1512,12 @@ b = c;
 
 
 -----Video 80 Solución del ejercicio 80. Variables de Javascript------
+var c = a;
+a = b;
+b = c;
 
 
+-----Video 81 Nomenclatura y convenciones de nomenclatura para variables de Javascript------
 
 
 
