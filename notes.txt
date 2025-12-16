@@ -1468,7 +1468,7 @@ var tunombre = prompt("Cual es tu nombre");
 
 erick
 
-nombre
+tunombre
 'erick'
 
 un alert combinado 
@@ -1518,6 +1518,9 @@ b = c;
 
 
 -----Video 81 Nomenclatura y convenciones de nomenclatura para variables de Javascript------
+dar a las variables nombres siempes y significativos para que sean faciles
+de indentificar y entender
+
 
 
 
