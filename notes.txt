@@ -1396,6 +1396,26 @@ línea por línea, sin necesidad de compilarlo antes.
 
 
 -----Video 76 Alertas de Javascript------
+alert("hello");
+
+alert   ->  funcion
+("Hello")   ->  mensaje
+;   ->  fin
+
+
+
+-----Video 77 Tipos de datos------
+
+alert("hello");
+
+"Hello"  -> string
+123  -> Numbers
+true  y false   -> Boolean
+
+
+typeof
+este indica el tipo de dato que se esta usando 
+
 
 
 
