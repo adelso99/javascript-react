@@ -1546,6 +1546,12 @@ _   -> guion bajo
 
 var tu123$_name = "Adelso"
 
+camel casing // que es colocar primero las primeras letras minisculas de la variable y despues
+                cada palabras subsiguiente sera mayuscula
+
+var tuNombreEs = "Adelso"
+
+
 
 
 NOTA:
