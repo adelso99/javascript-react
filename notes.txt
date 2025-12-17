@@ -1544,6 +1544,8 @@ abc -> letras
 $   -> signo de dolar
 _   -> guion bajo
 
+var tu123$_name = "Adelso"
+
 
 
 NOTA:
