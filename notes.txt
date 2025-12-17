@@ -1521,20 +1521,20 @@ b = c;
 dar a las variables nombres siempes y significativos para que sean faciles
 de indentificar y entender
 
-var askadkñlskldaskl = "Adelso"     //No
-var nombre = "Adelso"               //si
+var askadkñlskldaskl = "Adelso";     //No
+var nombre = "Adelso";               //si
 
 la variable no se puede llamar simplemente "var"
-var var = "Adelso"          //No
-var mivar = "Adelso"        //Si
+var var = "Adelso";          //No
+var mivar = "Adelso";        //Si
 
 el nombre de las variables no pueden empezar con un numero 
-var 123 = "Adelso"       //No
-var my123 = "Adelso"     //si
+var 123 = "Adelso";       //No
+var my123 = "Adelso";     //si
 
 el nombre de las variables no pueden tener espacios 
-var mi nombre = "Adelso"       //No
-var minombre = "Adelso"        //si
+var mi nombre = "Adelso";       //No
+var minombre = "Adelso";        //si
 
 
 las variables solo pueden tener
@@ -1544,23 +1544,29 @@ abc -> letras
 $   -> signo de dolar
 _   -> guion bajo
 
-var tu123$_name = "Adelso"
+var tu123$_name = "Adelso":
 
 camelCase // La primera palabra en minúscula. cada palabra siguiente empieza en mayúscula
 
-var tuNombreEs = "Adelso"
+var tuNombreEs = "Adelso";
 var edadUsuario = 20;
 var nivelDeJuego = 3;
 
 
 
 -----Video 82 Concatenación de cadenas------
+String
 
+Concatenacion "+"// es usar el "+" para hacer una combinacion
 
+var nombre = "Adelso";
+var edad = 23;
 
-
-
-
+alert("Hola "+nombre+" tu tienes la edad de "+edad+" años")
+                |
+                |
+               \ / 
+Hola Adelso tu tienes la edad de 23 años
 
 
 
