@@ -1511,7 +1511,7 @@ b = c;
 
 
 
------Video 80 Solución del ejercicio 80. Variables de Javascript------
+-----Video 80 Solución del ejercicio, Variables de Javascript------
 var c = a;
 a = b;
 b = c;
@@ -1546,11 +1546,15 @@ _   -> guion bajo
 
 var tu123$_name = "Adelso"
 
-camel casing // que es colocar primero las primeras letras minisculas de la variable y despues
-                cada palabras subsiguiente sera mayuscula
+camelCase // La primera palabra en minúscula. cada palabra siguiente empieza en mayúscula
 
 var tuNombreEs = "Adelso"
+var edadUsuario = 20;
+var nivelDeJuego = 3;
 
+
+
+-----Video 82 Concatenación de cadenas------
 
 
 
