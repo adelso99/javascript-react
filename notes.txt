@@ -1553,6 +1553,9 @@ var edadUsuario = 20;
 var nivelDeJuego = 3;
 
 
+quiz finalizado con exito :)
+
+
 
 -----Video 82 Concatenación de cadenas------
 String
