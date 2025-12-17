@@ -1568,6 +1568,18 @@ alert("Hola "+nombre+" tu tienes la edad de "+edad+" años")
                \ / 
 Hola Adelso tu tienes la edad de 23 años
 
+ejemplo 2:
+var mensaje = "Hola";
+var nombre = prompt("Cual es tu nombre");
+
+alert(mensaje+" "+nombre+" Bienvenido");
+                |
+                |
+               \ / 
+Hola Adelso Bienvenido
+
+
+
 
 
 NOTA:
