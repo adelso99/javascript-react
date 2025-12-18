@@ -1583,9 +1583,12 @@ Hola Adelso Bienvenido
 
 
 -----Video 83 Longitudes de cadenas y recuperación del número de caracteres------
+length
 
+var nombre = "Adelso";
+nombre.length;
 
-
+6
 
 
 
