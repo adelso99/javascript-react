@@ -1590,6 +1590,20 @@ nombre.length;
 
 6
 
+ejericio de escribir un parrafo de 140 caracteres qeu te diga cuantos has escrito y cuantos te quedan
+ejemplo 1:
+var caracteres = 140;
+var parrafo = prompt("Escribe tu parrafo");
+var dato = caracteres - parrafo.length;
+
+alert("Has escrito "+parrafo.length+" caracteres de "+caracteres+", te quedan "+dato+" caracteres");
+
+
+ejemplo 2:
+var tweet = prompt("redacta tu tweet:");
+var tweetRecuento = tweet.length;
+alert("Tienes escritos "+tweetRecuento+" caracteres, tienes "+(140-tweetRecuento)+" caracteres restantes");
+
 
 
 
