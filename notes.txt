@@ -1630,6 +1630,13 @@ alert("Has escrito "+msj.length+" caracteres. Te quedan "+(caracteres-msj.length
 
 
 
+-----Video 84 Segmentar y extraer partes de una cadena------
+
+
+
+
+
+
 NOTA:
 
 
