@@ -1558,8 +1558,6 @@ quiz finalizado con exito :)
 
 
 -----Video 82 Concatenación de cadenas------
-String
-
 Concatenacion "+"// es usar el "+" para hacer una combinacion
 
 var nombre = "Adelso";
@@ -1580,6 +1578,14 @@ alert(mensaje+" "+nombre+" Bienvenido");
                 |
                \ / 
 Hola Adelso Bienvenido
+
+
+
+
+-----Video 83 Longitudes de cadenas y recuperación del número de caracteres------
+
+
+
 
 
 
