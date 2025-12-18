@@ -1591,6 +1591,7 @@ nombre.length;
 6
 
 ejericio de escribir un parrafo de 140 caracteres qeu te diga cuantos has escrito y cuantos te quedan
+
 ejemplo 1:
 var caracteres = 140;
 var parrafo = prompt("Escribe tu parrafo");
@@ -1604,6 +1605,27 @@ var tweet = prompt("redacta tu tweet:");
 var tweetRecuento = tweet.length;
 alert("Tienes escritos "+tweetRecuento+" caracteres, tienes "+(140-tweetRecuento)+" caracteres restantes");
 
+
+
+ejemplo 3:
+var tweet = prompt("redacta tu tweet:");
+
+alert("Tienes escritos "+tweet.length+" caracteres, tienes "+(140-tweet.length)+" caracteres restantes");
+
+
+
+ejericio Personal:
+Crea un programa en JavaScript que haga lo siguiente:
+Pida al usuario que escriba un mensaje usando prompt().
+El mensaje tiene un límite de 100 caracteres.
+Muestra un alert que diga:
+cuántos caracteres escribió
+cuántos caracteres le quedan
+
+var msj = prompt("redacta tu mensaje");
+var caracteres = 100;
+
+alert("Has escrito "+msj.length+" caracteres. Te quedan "+(caracteres-msj.length)+" caracteres restantes");
 
 
 
