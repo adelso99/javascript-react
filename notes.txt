@@ -1687,8 +1687,8 @@ alert(prompt("Escribe tu Mensaje").slice(0,140));
 
 
 -----Video 85 Desafío: Cambiar mayúsculas y minúsculas en el texto------
-
-
+var nombre = "Adelso";
+nombre.toUpperCase();
 
 
 
