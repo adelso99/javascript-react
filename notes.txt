@@ -1690,9 +1690,10 @@ alert(prompt("Escribe tu Mensaje").slice(0,140));
 var nombre = "Adelso";
 nombre.toUpperCase();
 
+'ADELSO'
 
-
-
+nombre
+'Adelso'
 
 
 
