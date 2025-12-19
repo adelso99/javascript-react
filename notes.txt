@@ -1657,6 +1657,42 @@ slice(x, y) corta texto desde x hasta antes de y
 
 
 
+Ejercicio 1:
+var msj = prompt("Escribe tu Mensaje");
+var caracteres = msj.slice(0,140);
+
+alert(caracteres);
+alert("Has ingresado "+msj.length+" caracteres, solo esta permitido 140 caracteres");
+
+
+Ejemplo 1:
+var msj = prompt("Escribe tu Mensaje");
+var caracteres = msj.slice(0,140);
+
+alert(caracteres);
+
+
+ejemplo 2:
+var msj = prompt("Escribe tu Mensaje");
+
+alert(msj.slice(0,140));
+
+
+ejemplo 3:
+alert(prompt("Escribe tu Mensaje").slice(0,140));
+
+
+
+
+
+
+-----Video 85 Desafío: Cambiar mayúsculas y minúsculas en el texto------
+
+
+
+
+
+
 
 
 
