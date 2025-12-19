@@ -1632,6 +1632,29 @@ alert("Has escrito "+msj.length+" caracteres. Te quedan "+(caracteres-msj.length
 
 -----Video 84 Segmentar y extraer partes de una cadena------
 
+slice(x,y)
+
+texto.slice(inicio, fin)
+inicio → desde qué posición empieza
+fin → hasta qué posición corta (no se incluye)
+Las posiciones empiezan en 0
+
+var palabra = "JavaScript";
+
+palabra.slice(0, 4);
+➡️ "Java"
+(empieza en 0, corta antes del 4)
+
+palabra.slice(4);
+➡️ "Script"
+Si no pones y, va hasta el final
+
+palabra.slice(1, 2);
+➡️ "a"
+
+
+slice(x, y) corta texto desde x hasta antes de y
+
 
 
 
