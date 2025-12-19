@@ -1696,6 +1696,15 @@ nombre
 'Adelso' //no se guarda ya que solo se modifico a MAYUSCULAS pero no se guardo el cambio
 
 
+si guardamos el camio de la variables seria de esta forma
+var nombre = "Adelso";
+nombre.toUpperCase(); 
+
+
+
+
+
+
 NOTA:
 
 
