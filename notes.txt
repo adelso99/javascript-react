@@ -1688,13 +1688,12 @@ alert(prompt("Escribe tu Mensaje").slice(0,140));
 
 -----Video 85 Desafío: Cambiar mayúsculas y minúsculas en el texto------
 var nombre = "Adelso";
-nombre.toUpperCase();
+nombre.toUpperCase();  //.toUpperCase(); -> este cambia a MAYUSCULAS todo el string  
 
 'ADELSO'
 
 nombre
-'Adelso'
-
+'Adelso' //no se guarda ya que solo se modifico a MAYUSCULAS pero no se guardo el cambio
 
 
 NOTA:
