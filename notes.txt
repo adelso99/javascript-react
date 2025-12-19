@@ -1698,9 +1698,14 @@ nombre
 
 si guardamos el camio de la variables seria de esta forma
 var nombre = "Adelso";
-nombre.toUpperCase(); 
+nombre = nombre.toUpperCase();   // aca se llama a la variable "nombre", para que guarde el cambio
+                                    de MAYUSCULAS que se le hizo al string con ".toUpperCase"
 
+'ADELSO'
 
+si, se llama a la variable "nombre entonces ya refleja el string en MAYUSCULAS
+nombre
+'ADELSO' 
 
 
 
