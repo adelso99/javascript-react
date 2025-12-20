@@ -1739,6 +1739,10 @@ alert("Hola "+may+min);
 
 
 
+-----Video 86 Desafío: Cambiar la solución de la carcasa de la cuerda------
+
+
+
 
 
 
