@@ -1793,6 +1793,20 @@ Saber si un número es par o impar
 
 
 
+var cost = 3 + 5 * 2
+
+pero es mejor aclarar las cosas aun sabiendo que operaciones se realicen primero
+var cost = 3 + (5 * 2)
+
+
+para definir que quiero hacer primero
+var cost = (3 + 5) * 2
+
+
+
+
+
+
 NOTA:
 
 
