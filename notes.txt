@@ -1778,6 +1778,10 @@ alert("Hola "+may+min);
 
 
 
+-----------------------Video 87 Aritmética básica y el operador módulo en Javascript----------------------
+
+
+
 
 
 
