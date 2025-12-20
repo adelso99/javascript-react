@@ -1764,6 +1764,19 @@ var capitalisedName = upperCaseFirstChar + restOfName;
 alert("Hello "+capitalisedName);
 
 
+solucion mia propuesta:
+var nombre = prompt("Dame un Nombre");
+
+var may = nombre.slice(0,1);
+var min = nombre.slice(1);
+
+may = may.toUpperCase();
+min = min.toLowerCase();
+
+alert("Hola "+may+min);
+
+
+
 
 
 
