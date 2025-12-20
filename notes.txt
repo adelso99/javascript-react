@@ -1784,8 +1784,12 @@ operaciones Aritméticas
 2. Resta            -> -
 3. Multiplicacion   -> *
 4. Division         -> /
+5. Modulo           -> %    // % = lo que sobra
 
-
+El módulo devuelve el residuo (lo que sobra) de una división.
+❗ NO devuelve el resultado de la división
+👉 devuelve lo que queda
+Saber si un número es par o impar
 
 
 
