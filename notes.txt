@@ -1779,7 +1779,11 @@ alert("Hola "+may+min);
 
 
 -----------------------Video 87 Aritmética básica y el operador módulo en Javascript----------------------
-
+operaciones Aritméticas
+1. suma             -> +
+2. Resta            -> -
+3. Multiplicacion   -> *
+4. Division         -> /
 
 
 
