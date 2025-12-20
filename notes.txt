@@ -1740,7 +1740,28 @@ alert("Hola "+may+min);
 
 
 -----Video 86 Desafío: Cambiar la solución de la carcasa de la cuerda------
+solucion propuesta:
+//1 crea una variable que almacena el nombre que el usuario ingresa a través del promt
+var name = promt("Dame un nombre");
 
+//2 Escribe con mayúscula la primera letra de su nombre.
+//a Aísla el primer carácter.
+var firstChar = name.slice(0,1);
+
+//b Convertir el primer carácter a mayúscula
+var upperCaseFirstChar = firstChar.toUpperCase();
+
+//c Aislar el resto del nombre
+var restOfName = name.slice(1,name.length);
+
+//d Cambiar el resto del nombre a minúscula
+restOfName = restOfName.toLowerCase();
+
+//e Concatenar el primer carácter con el resto del carácter
+var capitalisedName = upperCaseFirstChar + restOfName; 
+
+//3 Usamos la versión en mayúscula de su nombre para saludar al usar una alerta
+alert("Hello "+capitalisedName);
 
 
 
