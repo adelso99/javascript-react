@@ -1737,6 +1737,12 @@ min = min.toLowerCase();
 alert("Hola "+may+min);
 
 
+
+
+
+
+
+
 NOTA:
 
 
