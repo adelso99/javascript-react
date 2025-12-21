@@ -1824,7 +1824,7 @@ alert("La edad Humana de tu perro es de: "+humanoAge);
 
 
 -----------------------Video 88 Expresiones de incremento y decremento----------------------
-
+Expresion de Incremento
 var x = 5;
 x = x + 1;  //6 -> incrementa en 1 y pasa hacer 5 + 1 = 6 
 
@@ -1833,9 +1833,30 @@ var x = 5;
  x++;  //6 -> que hace lo mismo incrementa en 1 y pasa hacer 5 + 1 = 6 
 
 
+pero tambien se puede ir en decremento que seria negativo
+var x = 5;
+x = x - 1;  //4 -> decrementa en -1 y pasa hacer 5 - 1 = 4 
+
+tambien puede ser asi
+var x = 5;
+ x--;  //4 -> que hace lo mismo decrementa en -1 y pasa hacer 5 - 1 = 4  
 
 
+pero si quiero incrementar en el valor que sea mas de "1", puede ser asi
+var x = 5;
+x += 2;  //7 -> incrementa en 2 y pasa hacer 5 + 2 = 7 
 
+
+tambien se puede usar para aumentar el valor de otra variable
+var x = 5;
+var y = 3;
+x += y; //8 aumenta el valor de "x" con ayuda de la variable "y" al sumarla que da 5 + 3 = 8
+
+tambien funciona con
++=
+-=
+*=
+/=
 
 
 
