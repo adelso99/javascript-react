@@ -1825,8 +1825,12 @@ alert("La edad Humana de tu perro es de: "+humanoAge);
 
 -----------------------Video 88 Expresiones de incremento y decremento----------------------
 
+var x = 5;
+x = x + 1;  //6 -> incrementa en 1 y pasa hacer 5 + 1 = 6 
 
-
+tambien puede ser asi 
+var x = 5;
+ x++;  //6 -> que hace lo mismo incrementa en 1 y pasa hacer 5 + 1 = 6 
 
 
 
