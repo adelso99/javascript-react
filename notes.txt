@@ -1859,6 +1859,79 @@ tambien funciona con
 /=
 
 
+Ejemplos rápidos
+var x = 10;
+
+x -= 3; // 7
+x *= 2; // 14
+x /= 7; // 2
+
+
+Cada uno equivale a:  esta usado el valor que se esta quedando guarado en x
+x = x - 3;
+x = x * 2;
+x = x / 7;
+
+
+
+Quiz 3: Javascript Numbers Quiz
+
+----Inicio----
+¿Qué es y  igual?
+var x = 3 ; 
+var y  = x ++;
+y  += 1 ; 
+
+y = x;      // y toma el valor actual
+x = x + 1;  // luego x se incrementa
+
+Entonces:
+y = 3
+x = 4
+
+Paso 3: y += 1;
+Esto significa:
+y = y + 1;
+
+Entonces:
+y = 3 + 1 = 4
+
+📍 Estado final:
+x = 4
+y = 4
+
+-----Fin-----
+
+Caso 2: ++x
+var x = 3;
+var y = ++x;
+
+Resultado:
+x = 4
+y = 4
+
+
+🔍 Comparación rápida
+var x = 3;
+var y = x++;
+// y = 3, x = 4
+
+var x = 3;
+var y = ++x;
+// y = 4, x = 4
+
+
+Truco mental que funciona siempre
+x++ → “usa y luego suma”
+++x → “suma y luego usa”
+
+
+
+-----------------------Video 89 Funciones Parte 1: Creación y llamada de funciones----------------------
+
+
+
+
 
 
 
