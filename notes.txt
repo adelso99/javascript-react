@@ -1804,6 +1804,20 @@ var cost = (3 + 5) * 2
 
 
 
+Ejericicio 1:
+
+/*realice un codigo que pueda calcular la edad humana equivalante a la 
+edad de un perro*/
+
+//mensaje que pregunta la edad del perro
+var dogAge = prompt("Dame la edad del Perro");
+
+//calcular con esta formula la edad  humanoAge = (dogAge - 2) x 4 + 21
+var humanoAge = (dogAge - 2) * 4 + 21;
+
+//luego devuelve el resultado en una alerta
+alert("La edad Humana de tu perro es de: "+humanoAge);
+
 
 
 
