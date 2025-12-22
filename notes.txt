@@ -2226,11 +2226,80 @@ nombre de entrada
 
 function getMilk(botellas){     //el nombre de la entrada es "botellas"
     var cost = botellas * 1.5;   
-    //Haz algo con costo
+    //Haz algo con cost
 } 
 
 getMilk(2); //cuando hacemos uso de los parentesis en este caso le estamos indicando a el Robot
                 o progrma que se traiga "2 botellas de leche" que seria 2 * 1.5 --> 3
+
+
+Solucion 1:
+function obtenerLeche(botellas) {
+    var cost = botellas / 1.5;
+    var vuelto = botellas % 1.5; 
+    console.log("Salir de Casa");
+    console.log("Mover a la Derecha");
+    console.log("Mover a la Derecha");
+    console.log("Mover hacia arriba");
+    console.log("Mover hacia arriba");
+    console.log("Mover hacia arriba");
+    console.log("Mover hacia arriba"); 
+    console.log("Mover a la Derecha");
+    console.log("Mover a la Derecha");
+    console.log("Comprar "+Math.floor(cost)+" botellas de Leche con $"+botellas+" y su vuelto es de: $"+vuelto); 
+    console.log("Mover a la izquierda");
+    console.log("Mover a la izquierda");
+    console.log("Mover hacia abajo");
+    console.log("Mover hacia abajo"); 
+    console.log("Mover hacia abajo"); 
+    console.log("Mover hacia abajo"); 
+    console.log("Mover a la izquierda");
+    console.log("Mover a la izquierda");
+    console.log("Entrar a Casa");
+}
+
+obtenerLeche(12);
+
+
+Solucion 2:
+function obtenerLeche(botellas) {
+    var cost = Math.floor (botellas / 1.5);
+    var vuelto = botellas % 1.5; 
+    console.log("Salir de Casa");
+    console.log("Mover a la Derecha");
+    console.log("Mover a la Derecha");
+    console.log("Mover hacia arriba");
+    console.log("Mover hacia arriba");
+    console.log("Mover hacia arriba");
+    console.log("Mover hacia arriba"); 
+    console.log("Mover a la Derecha");
+    console.log("Mover a la Derecha");
+    console.log("Comprar "+cost+" botellas de Leche con $"+botellas+" y su vuelto es de: $"+vuelto); 
+    console.log("Mover a la izquierda");
+    console.log("Mover a la izquierda");
+    console.log("Mover hacia abajo");
+    console.log("Mover hacia abajo"); 
+    console.log("Mover hacia abajo"); 
+    console.log("Mover hacia abajo"); 
+    console.log("Mover a la izquierda");
+    console.log("Mover a la izquierda");
+    console.log("Entrar a Casa");
+}
+
+obtenerLeche(12);
+
+Metodo:
+Math.floor(); método redondea un número hacia abajo hasta el entero más cercano.
+
+ejemplos:
+let x = Math.floor(1.6);    --> 1
+let a = Math.floor(0.60);   --> 0
+let b = Math.floor(0.40);   --> 0
+let c = Math.floor(5);      --> 5
+let d = Math.floor(5.1);    --> 5
+let e = Math.floor(-5.1);   --> -6
+let f = Math.floor(-5.9);   --> -6
+
 
 
 
