@@ -2356,6 +2356,15 @@ function lifeInWeeks(age) {
 lifeInWeeks(23);  // edad asignada
 
 
+
+
+
+-----------------------Video 95 Funciones Parte 3: Salidas y valores de retorno----------------------
+
+
+
+
+
 NOTA:
 
 
