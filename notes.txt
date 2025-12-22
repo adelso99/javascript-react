@@ -2192,6 +2192,31 @@ función beepersLeft () {
 }
 
 
+
+
+
+-----------------------Video 92 Una nota rápida ----------------------
+función obtenerLeche () {    
+  consola .log ( "leaveHouse" ) ;
+  consola .log ( " moverDerecha" );
+  consola .log ( " moverDerecha" );
+  consola .log ( "moverArriba" ) ;
+  consola .log ( "moverArriba" ) ;
+  consola .log ( "moverArriba" ) ;
+  consola .log ( "moverArriba" ) ;
+  consola .log ( " moverDerecha" );
+  consola .log ( " moverDerecha" );
+  consola .log ( "moverIzquierda" ) ;
+  consola .log ( "moverIzquierda" ) ;
+  consola .log ( "moverAbajo" ) ;
+  consola .log ( "moverAbajo" ) ;
+  consola .log ( "moverAbajo" ) ;
+  consola .log ( "moverAbajo" ) ;
+  consola .log ( "moverIzquierda" ) ;
+  consola .log ( "moverIzquierda" ) ;
+  consola .log ( "entrarCasa" ) ;
+}
+
 NOTA:
 
 
