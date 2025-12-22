@@ -2217,6 +2217,18 @@ función obtenerLeche () {
   consola .log ( "entrarCasa" ) ;
 }
 
+
+
+-----------------------Video 93 Funciones Parte 2: Parámetros y argumentos----------------------
+
+
+
+
+
+
+
+
+
 NOTA:
 
 
