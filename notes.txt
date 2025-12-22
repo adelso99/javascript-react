@@ -1966,6 +1966,33 @@ palarbra parentesis
  clave      
 
 
+
+function obtenerLeche() {
+    alert("Salir de Casa");
+    alert("Mover a la Derecha");
+    alert("Mover a la Derecha");
+    alert("Mover hacia arriba");
+    alert("Mover hacia arriba");
+    alert("Mover hacia arriba");
+    alert("Mover hacia arriba"); 
+    alert("Mover a la Derecha");
+    alert("Mover a la Derecha");
+    alert("Comprar la Leche"); 
+    alert("Mover a la izquierda");
+    alert("Mover a la izquierda");
+    alert("Mover hacia abajo");
+    alert("Mover hacia abajo"); 
+    alert("Mover hacia abajo"); 
+    alert("Mover hacia abajo"); 
+    alert("Mover a la izquierda");
+    alert("Mover a la izquierda");
+    alert("Entrar a Casa");
+}
+
+
+la funciones en JavaScript no terminan con ";" si no que finalizan con la llave "}"
+
+
 NOTA:
 
 
