@@ -2396,12 +2396,12 @@ function obtenerLeche(dinero) {
     console.log("Mover a la izquierda");
     console.log("Entrar a Casa");
 
-    return dinero % 1.5;  //resto de esta división
+    return dinero % 1.5;  //resto de esta división --> esta es la salida de la funcion
 }
 
-obtenerLeche(12);
-
-
+se puede guardar la salida de la funcion en un variable asi osea se guarda el "return"
+var cambio = obtenerLeche(12);
+console.log(cambio);  //muestra esto en la consola
 
 
 creando la función
@@ -2415,12 +2415,50 @@ var change = getMilk(4);
 
 
 
+FUNCION VERSION  2.
+function obtenerLeche(dinero) {
+   
+    console.log("Salir de Casa");
+    console.log("Mover a la Derecha");
+    console.log("Mover a la Derecha");
+    console.log("Mover hacia arriba");
+    console.log("Mover hacia arriba");
+    console.log("Mover hacia arriba");
+    console.log("Mover hacia arriba"); 
+    console.log("Mover a la Derecha");
+    console.log("Mover a la Derecha");
 
+    console.log("Comprar "+calculoBotellas(dinero, 1.5)+" botellas de Leche con $"+dinero); //dinero: sera dineroIncialo y 1.5: sera costoBotellas 
 
+    console.log("Mover a la izquierda");
+    console.log("Mover a la izquierda");
+    console.log("Mover hacia abajo");
+    console.log("Mover hacia abajo"); 
+    console.log("Mover hacia abajo"); 
+    console.log("Mover hacia abajo"); 
+    console.log("Mover a la izquierda");
+    console.log("Mover a la izquierda");
+    console.log("Entrar a Casa");
 
+   return calculoCambio(dinero, 1.5);  //resto de esta división --> esta es la salida de la funcion
+}
 
+//creacion de funcion de calculo de botelllas
+function calculoBotellas(dineroIncial, costoBotellas){
+	var numeroDeBotellas = Math.floor(dineroIncial / costoBotellas);
 
+	return numeroDeBotellas;
+}
 
+function calculoCambio(montoIncial, costoBotellas){
+	var cambio = montoIncial % costoBotellas;
+
+	return cambio;
+}
+
+//lo que se devuelve o el return es la variable de cada funcion
+
+console.log("Hola maestro, este es tu ")+obtenerLeche(5)+" cambio";
 
 
 
