@@ -2458,7 +2458,61 @@ function calculoCambio(montoIncial, costoBotellas){
 
 //lo que se devuelve o el return es la variable de cada funcion
 
-console.log("Hola maestro, este es tu ")+obtenerLeche(5)+" cambio";
+console.log("Hola maestro, este es tu "+obtenerLeche(5)+" cambio");
+
+
+
+
+FUNCION VERSION  3.
+//ponemos colocar como entrada la cantidad de dinero y el coste por botella
+function obtenerLeche(dinero, costoBotellas) {
+   
+    console.log("Salir de Casa");
+    console.log("Mover a la Derecha");
+    console.log("Mover a la Derecha");
+    console.log("Mover hacia arriba");
+    console.log("Mover hacia arriba");
+    console.log("Mover hacia arriba");
+    console.log("Mover hacia arriba"); 
+    console.log("Mover a la Derecha");
+    console.log("Mover a la Derecha");
+
+    console.log("Comprar "+calculoBotellas(dinero, costoBotellas)+" botellas de Leche con $"+dinero); //dinero: sera dineroIncialo y 1.5: sera costoBotellas 
+
+    console.log("Mover a la izquierda");
+    console.log("Mover a la izquierda");
+    console.log("Mover hacia abajo");
+    console.log("Mover hacia abajo"); 
+    console.log("Mover hacia abajo"); 
+    console.log("Mover hacia abajo"); 
+    console.log("Mover a la izquierda");
+    console.log("Mover a la izquierda");
+    console.log("Entrar a Casa");
+
+   return calculoCambio(dinero, costoBotellas);  //resto de esta división --> esta es la salida de la funcion
+}
+
+//creacion de funcion de calculo de botelllas
+function calculoBotellas(dineroIncial, costoBotellas){
+	var numeroDeBotellas = Math.floor(dineroIncial / costoBotellas);
+
+	return numeroDeBotellas;
+}
+
+function calculoCambio(montoIncial, costoBotellas){
+	var cambio = montoIncial % costoBotellas;
+
+	return cambio;
+}
+
+//lo que se devuelve o el return es la variable de cada funcion
+
+console.log("Hola maestro, este es tu "+obtenerLeche(5, 1.5)+" cambio");
+
+
+
+Una función con return es como una máquina:
+le das algo → lo procesa → te devuelve algo
 
 
 
