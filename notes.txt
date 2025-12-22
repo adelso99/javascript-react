@@ -2023,7 +2023,39 @@ console.log // solo lo ven los desarrolladores en la consola
 
 
 
+-----------------------Video 90 Funciones Parte 1 Desafío - El Robot Karel----------------------
 
+Solucion 1:
+function main(){
+   move();
+   move();
+   move();
+   move();
+   turnLeft();
+   move();
+   move();
+   move();
+   move();
+   turnRight();
+}
+
+
+
+
+Solucion 2:
+function main(){
+   moverRapido();  // Funcion Aplicada
+   turnLeft();
+   moverRapido(); // Funcion Aplicada
+   turnRight();
+}
+
+function moverRapido(){ //hacemos uso de una funcion para que no sea repetitivo
+   move();
+   move();
+   move();
+   move();
+}
 
 
 
