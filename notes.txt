@@ -2567,6 +2567,38 @@ console.log("El reusltado de la suma es: "+resultado);
 
 
 
+-----------------------Video 96 Desafío: Crea una calculadora de IMC----------------------
+
+//Crea tu función debajo de esta línea.
+//El primer parámetro debe ser el peso y el segundo la altura.
+/* Si peso 65 kg y mido 1,8 m, debería poder llamar a tu función así:
+var bmi = bmiCalculator(65, 1.8);
+El bmi debe ser igual a 20 al redondearlo al número entero más cercano.
+*/
+
+function bmiCalculator(peso, altura){
+    var bmi = Math.round(peso / (altura ** 2)); //(altura ** 2) --> esto indica que primero se realice esta operacion antes de dividir
+
+    return bmi;
+}
+
+var resultado = bmiCalculator(65, 1.8);
+
+console.log("Tu Indice de Masa Corporal es: "+resultado);
+
+
+
+resultado:
+Tu Indice de Masa Corporal es: 20
+
+
+
+** --> es el operador de potencia
+altura ** 2 = altura al cuadrado
+
+
+
+
 
 
 NOTA:
