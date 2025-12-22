@@ -2361,6 +2361,68 @@ lifeInWeeks(23);  // edad asignada
 
 -----------------------Video 95 Funciones Parte 3: Salidas y valores de retorno----------------------
 
+creando la función
+fuction getMilk (botellas){
+	 var cost = botellas * 1.5;
+	//has algo con cost
+}
+
+llamando a la función
+getMilk(2);
+
+
+return(); //sirve para dar salidas
+
+FUNCION:
+function obtenerLeche(dinero) {
+    var botellas = Math.floor (dinero / 1.5);
+    console.log("Salir de Casa");
+    console.log("Mover a la Derecha");
+    console.log("Mover a la Derecha");
+    console.log("Mover hacia arriba");
+    console.log("Mover hacia arriba");
+    console.log("Mover hacia arriba");
+    console.log("Mover hacia arriba"); 
+    console.log("Mover a la Derecha");
+    console.log("Mover a la Derecha");
+    console.log("Comprar "+botellas+" botellas de Leche con $"+dinero); 
+    console.log("Mover a la izquierda");
+    console.log("Mover a la izquierda");
+    console.log("Mover hacia abajo");
+    console.log("Mover hacia abajo"); 
+    console.log("Mover hacia abajo"); 
+    console.log("Mover hacia abajo"); 
+    console.log("Mover a la izquierda");
+    console.log("Mover a la izquierda");
+    console.log("Entrar a Casa");
+
+    return dinero % 1.5;  //resto de esta división
+}
+
+obtenerLeche(12);
+
+
+
+
+creando la función
+fuction getMilk (money){
+	 var botellas = money % 1.5;
+}
+
+llamando a la función
+var change = getMilk(4);
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
