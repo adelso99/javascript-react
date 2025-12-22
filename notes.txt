@@ -2599,6 +2599,28 @@ altura ** 2 = altura al cuadrado
 
 
 
+-----------------------Video 97 Desafío: Solución de la calculadora de IMC----------------------
+
+function bmiCalculator(weight, height){
+    var bmi = weight / (height * height); 
+
+    return Math.round(bmi);
+}
+
+var bmi = bmiCalculator(65, 1.8);
+
+console.log("Tu Indice de Masa Corporal es: "+bmi);
+
+
+
+
+
+
+
+
+
+
+
 
 
 NOTA:
