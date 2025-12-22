@@ -1993,6 +1993,40 @@ function obtenerLeche() {
 la funciones en JavaScript no terminan con ";" si no que finalizan con la llave "}"
 
 
+
+function obtenerLeche() {
+    console.log("Salir de Casa");
+    console.log("Mover a la Derecha");
+    console.log("Mover a la Derecha");
+    console.log("Mover hacia arriba");
+    console.log("Mover hacia arriba");
+    console.log("Mover hacia arriba");
+    console.log("Mover hacia arriba"); 
+    console.log("Mover a la Derecha");
+    console.log("Mover a la Derecha");
+    console.log("Comprar la Leche"); 
+    console.log("Mover a la izquierda");
+    console.log("Mover a la izquierda");
+    console.log("Mover hacia abajo");
+    console.log("Mover hacia abajo"); 
+    console.log("Mover hacia abajo"); 
+    console.log("Mover hacia abajo"); 
+    console.log("Mover a la izquierda");
+    console.log("Mover a la izquierda");
+    console.log("Entrar a Casa");
+}
+
+alert(); // lo pueden ver los usuarios porque son ventanas
+console.log // solo lo ven los desarrolladores en la consola
+
+
+
+
+
+
+
+
+
 NOTA:
 
 
