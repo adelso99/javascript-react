@@ -2614,9 +2614,18 @@ console.log("Tu Indice de Masa Corporal es: "+bmi);
 
 
 
+-----------------------Video 98 Cuestionario----------------------
+
+Cuestionario terminado con exito :D
 
 
 
+
+
+
+
+---------------SECCION 15 JAVASCRIPT INTERMEDIO------------------
+-----------------------Video 99. Generación de números aleatorios en Javascript: Creando una calculadora del amor----------------------
 
 
 
