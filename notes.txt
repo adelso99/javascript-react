@@ -2516,6 +2516,56 @@ le das algo → lo procesa → te devuelve algo
 
 
 
+Ejemplo simple:
+function saludar(nombre){
+    console.log("Hola " + nombre);
+}
+
+🔹 nombre es el parámetro
+🔹 Llamar la función con un argumento
+saludar("Adelso");
+
+📌 "Adelso" es el argumento
+🧠 El programa hace:
+nombre = "Adelso"
+
+
+Resultado:
+Hola Adelso
+
+
+EJEMPLO 2:
+function botellas(dinero){
+    return Math.floor(dinero / 1.5);
+}
+
+function cambio(dinero){
+    return dinero % 1.5;
+}
+
+function comprar(dinero){
+    console.log("Compraste " + botellas(dinero));
+    return cambio(dinero);
+}
+
+console.log(comprar(5));
+
+
+
+
+EJEMPLO 3:
+function suma(n1, n2){
+    var sumar = n1 + n2;
+    return sumar
+}
+
+var resultado = suma(5, 1);
+console.log("El reusltado de la suma es: "+resultado);
+
+resultado = suma(10, 2);
+console.log("El reusltado de la suma es: "+resultado);
+
+
 
 
 
