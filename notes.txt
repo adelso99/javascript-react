@@ -2221,9 +2221,16 @@ función obtenerLeche () {
 
 -----------------------Video 93 Funciones Parte 2: Parámetros y argumentos----------------------
 
+nombre de entrada
 
 
+function getMilk(botellas){     //el nombre de la entrada es "botellas"
+    var cost = botellas * 1.5;   
+    //Haz algo con costo
+} 
 
+getMilk(2); //cuando hacemos uso de los parentesis en este caso le estamos indicando a el Robot
+                o progrma que se traiga "2 botellas de leche" que seria 2 * 1.5 --> 3
 
 
 
