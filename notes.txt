@@ -2301,8 +2301,59 @@ let e = Math.floor(-5.1);   --> -6
 let f = Math.floor(-5.9);   --> -6
 
 
+🔹 Parámetro
+Es una variable que va dentro de la función
+👉 Es como un espacio vacío que espera un valor
+
+function getMilk(botellas) {
+   // botellas es el PARÁMETRO
+}
+📌 botellas no tiene valor aún
+
+🔹 Argumento
+Es el valor real que envías cuando llamas la función
+getMilk(2);
+📌 Aquí:
+2 es el ARGUMENTO
+botellas = 2
 
 
+
+Ejercicio de codificación 2: La vida en semanas Ejercicio de codificación
+
+function lifeInWeeks(age) {
+    
+var añosActuales = 90 - age;
+var meses = añosActuales * 12;  //Meses
+var semanas = añosActuales * 52;  //Semanas
+var dias = añosActuales * 365; //Dias
+
+console.log("Te quedan "+ dias+ " dias, " + semanas + " semanas, y " + meses + " meses.")
+
+}
+
+lifeInWeeks(23);
+
+
+resultado:
+Te quedan 24455 días, 3484 semanas y 804 meses.
+
+
+
+
+-----------------------Video 94 La solución de la vida en semana----------------------
+Solucion:
+function lifeInWeeks(age) {
+    var yearsRemaining = 90 -age;
+    var days = yearsRemaining * 365;
+    var weeks = yearsRemaining * 52;
+    var months = yearsRemaining * 12;
+
+    console.log("yo have "+days+" days, "+weeks+" weeks, and "+months+" months left.");
+
+}
+
+lifeInWeeks(23);  // edad asignada
 
 
 NOTA:
