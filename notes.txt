@@ -1929,10 +1929,41 @@ x++ → “usa y luego suma”
 
 -----------------------Video 89 Funciones Parte 1: Creación y llamada de funciones----------------------
 
+fuctions
+el mpaquetado de las funciones se realizan con llaves "{}"
+
+function comprar_leche() {   //este seria el nombre de la funcion "comprar_leche()"
+    alert("Salir de Casa");
+    alert("Ir a la tienda");
+    alert("Comprar a leche");
+    alert("Regresar a casa");
+}
+
+  
+function comprar_leche() { <-- llave que Inicia la funcion
+   / \         / \
+    |           |
+    |           | 
+palarbra    Nombre de
+ clave      la funcion
+
+    alert("Salir de Casa");   //Inicio de introducciones de la funcion
+    alert("Ir a la tienda");
+    alert("Comprar a leche");
+    alert("Regresar a casa");  //Fin de introducciones de la funcion
+
+} <-- llave que Finaliza la funcion
 
 
+cuando se llama la funcion o se hace usa de ella se hace asi
+comprar_leche();
 
-
+comprar_leche(); <-- fin del llamado de la funcion con ";"
+   / \      / \
+    |        |
+    |        | 
+palarbra parentesis 
+ clave      
 
 
 NOTA:
