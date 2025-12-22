@@ -2098,7 +2098,98 @@ function colocarPunto(){
 
 -----------------------Video 91 La solución del tablero de ajedrez Karel----------------------
 
+left  --> izquierda
+right --> derecha
 
+solucion 1:
+function main(){
+   puntoDerecho();
+   moverIzquierda();
+   puntoIzquierdo();
+   move();
+   puntoIzquierdo();
+   moverDerecha();
+   turnRight();
+   puntoDerecho();
+   moverIzquierda();
+   puntoIzquierdo();
+   move();
+   puntoIzquierdo();
+   moverDerecha();
+   turnRight();
+   puntoDerecho();
+}
+
+function puntoDerecho(){
+   putBeeper();
+   move();
+   move();
+   putBeeper();
+   move();
+   move();
+   putBeeper();
+}
+function moverDerecha(){
+   move();
+   turnRight();
+   move();
+}
+
+function moverIzquierda(){
+   turnLeft();
+   move();
+   turnLeft();
+}
+
+function puntoIzquierdo(){
+   move();
+   putBeeper();
+}
+
+
+solucion 2:
+función principal (){
+   beepersRight ();
+   irArribaGirarIzquierda ();
+   beepersLeft ();
+   irArribaGirarDerecha ();
+      beepersRight ();
+   irArribaGirarIzquierda ();
+   beepersLeft ();
+   irArribaGirarDerecha ();
+      beepersRight ();
+}
+ 
+función goUpTurnRight () { 
+   Gire a la derecha ();
+   mover ();
+   Gire a la derecha ();
+}
+ 
+función goUpTurnLeft () { 
+   Gire a la izquierda ();
+   mover ();
+   Gire a la izquierda ();
+}
+ 
+función beepersRight () { 
+   ponerBeeper ();
+   mover ();
+   mover ();
+   ponerBeeper ();
+   mover ();
+   mover ();
+   ponerBeeper ();  
+}
+ 
+función beepersLeft () { 
+   mover ();
+   ponerBeeper ();
+   mover ();
+   mover ();
+   ponerBeeper ();
+   mover ();
+}
 
 
 NOTA:
