@@ -2684,6 +2684,69 @@ Caso	                    Fórmula
 
 -----------------------Video 100 Sentencias de control: uso de condicionales If-Else y lógica----------------------
 
+Condicionales: if y else
+
+Forma básica
+if (condición) {
+   // código si la condición es verdadera
+
+} else {
+   // código si la condición es falsa
+
+}
+
+Importante: ¿Qué es una condición?
+Una condición siempre devuelve:
+true (verdadero)
+false (falso)
+
+Ejemplos:
+5 > 3      // true
+10 < 2     // false
+n > 70     // depende del valor de n
+
+
+Flujo de Control
+condicionales
+1.if 
+2.else
+
+if (track === "clear"){goStrainght();}
+
+else {turnRight();}
+
+
+if (track === "clear"){
+	goStrainght();
+} else {
+	turnRight();
+}
+
+
+Ejemplo 1 de Simulacion de Probabilidad de amor en relacion de 1% a 100%:
+var nombre1 = prompt("Dame el Tu Nombre")
+var nombre2 = prompt("Dame el Nombre de Ella")
+
+var n = Math.random(); 
+n = n * 100;  // con el 100 se asigna un rango maximo de 100
+n = Math.floor(n) + 1;  //con el "+ 1" se asigana un rango minimo de 1
+
+if (n > 70) {
+    alert("Hola la probabilidad de amor de "+nombre1+" y "+nombre2+" es de: "+n+"% estan destinados a estar juntos") //Muestra en alerta
+}else {
+    alert("Hola la probabilidad de amor de "+nombre1+" y "+nombre2+" es de: "+n+"%")
+}
+
+
+
+
+
+
+
+-----------------------Video 101 Comparadores e igualdad----------------------
+
+
+
 
 
 
