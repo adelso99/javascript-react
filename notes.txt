@@ -2825,6 +2825,49 @@ if (n <= 30){
 }
 
 
+1️⃣ Operador && → AND (Y)
+👉 TODAS las condiciones deben ser verdaderas
+
+Ejemplo simple
+5 > 3 && 5 < 10   // true
+
+✔ 5 es mayor que 3
+✔ 5 es menor que 10
+👉 Resultado: true
+
+AND = todo debe cumplirse
+
+
+2️⃣ Operador || → OR (O)
+👉 Con que UNA condición sea verdadera, basta
+
+Ejemplo
+5 > 10 || 5 < 10   // true
+
+❌ 5 > 10 → falso
+✔ 5 < 10 → verdadero
+👉 Resultado: true
+
+OR = con que una sea verdadera
+
+
+
+3️⃣ Operador ! → NOT (NO / negación)
+👉 Invierte el resultado
+
+!true   // false
+!false  // true
+
+var estaLloviendo = false;
+
+if (!estaLloviendo) {
+    console.log("Puedes salir sin paraguas ☀️");
+}
+👉 !false se convierte en true
+
+
+
+
 
 NOTA:
 
