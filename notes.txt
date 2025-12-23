@@ -2627,6 +2627,65 @@ Cuestionario terminado con exito :D
 ---------------SECCION 15 JAVASCRIPT INTERMEDIO------------------
 -----------------------Video 99. Generación de números aleatorios en Javascript: Creando una calculadora del amor----------------------
 
+generación de números aleatorios con el Metodo --> Math.random();
+
+var n = Math.random();
+
+
+Ejemplo 1:
+var n = Math.random();  // 0.3647382746318429
+
+n = n * 6;  //2.18842964779
+
+n = Math.floor(n); //2
+
+
+
+Ejemplo 2 de Simulacion de Tiro de dados de 1 a 6:
+var n = Math.random(); 
+n = n * 6;  // con el 6 se asigna un rango maximo de 6
+n = Math.floor(n) + 1;  //con el "+ 1" se sumna 1 a la variable "n" y se asigana un rango minimo de 1
+
+console.log(n); //Muestra en consola
+
+
+Ejemplo 3 de Simulacion de Probabilidad de amor en relacion de 1% a 100%:
+var nombre1 = prompt("Dame el Tu Nombre")
+var nombre2 = prompt("Dame el Nombre de Ella")
+
+var n = Math.random(); 
+n = n * 100;  // con el 100 se asigna un rango maximo de 100
+n = Math.floor(n) + 1;  //con el "+ 1" se asigana un rango minimo de 1
+
+alert("Hola la probabilidad de amor de "+nombre1+" y "+nombre2+" es de: "+n+"%") //Muestra en alerta
+
+
+Ejemplo 3.1 de Simulacion de Probabilidad de amor en relacion de 1% a 100%:
+prompt("Dame el Tu Nombre")
+prompt("Dame el Nombre de Ella")
+
+var love = Math.random() * 100; 
+love = Math.floor(love) + 1;  
+
+alert("Hola la probabilidad de amor es de: "+love+"%") 
+
+
+Math.floor(Math.random() * MAX) + MIN
+
+Caso	                    Fórmula
+1–6	            Math.floor(Math.random() * 6) + 1
+1–100	        Math.floor(Math.random() * 100) + 1
+0–9	            Math.floor(Math.random() * 10)
+
+
+
+
+
+
+-----------------------Video 100 Sentencias de control: uso de condicionales If-Else y lógica----------------------
+
+
+
 
 
 
