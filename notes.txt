@@ -2744,13 +2744,60 @@ if (n > 70) {
 
 
 -----------------------Video 101 Comparadores e igualdad----------------------
+operadores comparativos 
+
+Operadores de Comparación (Devuelven true o false)
+Igualdad: Ambos comprueban la igualdad pero existe una diferencia
+==: Igualdad (con conversión de tipo).
+=== --> Igualdad estricta --> comprueba si que en cada lado sea igual
+
+ya que 3 iguales "===" comprueba que los tipos de datos concidan
+mientras que 2 iguales "==" no le importan los tipos de datos
+
+
+Desigualdad:
+!=: Desigualdad (con conversión de tipo).
+!== --> Desigualdad estricta --> comprueba si el lado izquierdo no es igual
+
+Mayor/Menor que:
+> --> Mayor que.
+< --> Menor que.
+>= --> Mayor o igual que.
+<= --> Menor o igual que. 
 
 
 
+5 == 5        // true
+5 == "5"     // true  ⚠️ convierte string a número
+A JavaScript no le importa el tipo, solo el valor.
+
+5 === 5       // true
+5 === "5"    // false ❌ (number ≠ string)
+📌 Por eso decimos:
+"===" es más seguro
+
+
+!= → Desigualdad NO estricta
+5 != "5"     // false (los convierte y ve que son iguales)
+
+!== → Desigualdad estricta ✅
+5 !== "5"    // true (number ≠ string)
+📌 También compara valor + tipo
+
+Tabla resumen 
+Operador    	    Significado         	¿Compara tipo?
+==	                 Igualdad	                ❌ No
+===	                 Igualdad estricta	        ✅ Sí
+!=	                 Desigualdad	            ❌ No
+!==	                 Desigualdad estricta	    ✅ Sí
+>	                 Mayor que	                    –
+<	                 Menor que	                    –
+>=	                 Mayor o igual	                –
+<=	                 Menor o igual	                    –
 
 
 
-
+-----------------------Video 102 Combinación de comparadores----------------------
 
 
 
