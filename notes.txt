@@ -2892,8 +2892,7 @@ function bmiCalculator(peso, altura){
 bmiCalculator(56, 1.5);
 
 
-version 2:
-
+VERSION 2:
 function bmiCalculator(peso, altura){
     var bmi = Math.round(peso / (altura ** 2));
     var resultado;
@@ -2914,12 +2913,59 @@ function bmiCalculator(peso, altura){
 bmiCalculator(56, 1.5);
 
 
+else if (bmi > 18.5 && bmi <= 24.9)  {
+👉 Caso 2: peso normal
+✔ Usas && correctamente
+✔ El rango está bien definido
+
+js
+Copy code
+else {
+👉 Caso 3: bajo peso
+
+✔ No necesita condición
+✔ Cubre automáticamente bmi <= 18.5
+
+
+
+VERSION 3:
+function bmiCalculator (weight, height) {
+                        // BMI = (weight / heigth ^ 2)
+                        let BMI = weight /  height ** 2
+                        let interpretation
+                        
+                        if(
+                            typeof(weight) != typeof(1) ||
+                            typeof(height) != typeof(1) ||
+                            weight < 0 ||
+                            height < 0
+                        ){
+                            interpretation = "Your IBM is: <b> x </b>.";
+                        }else{
+                            if (BMI > 24.9) {
+                                interpretation = "Your IBM is: <b>" + BMI + "</b>." + "<br>You're overweight";
+                            } else if (BMI < 24.9 && BMI >=18.5 ){
+                                interpretation = "Your IBM is: <b>" + BMI + "</b>." + "<br>You have a normal weight";
+                            } else{ // under 18.5
+                                interpretation = "Your IBM is: <b>" + BMI + "</b>." + "<br>You're underweight";
+                            }
+                        };
+    return interpretation;
+}
+
+
 
 5️⃣ Regla mental que te va a servir siempre 🧠
 🔹 Si los casos son excluyentes → usar else if
 🔹 Si pueden cumplirse varios → usar if separados
 
 
+
+
+
+
+
+-----------------------Video 103 Presentamos el desafío del código del año bisiesto----------------------
 
 
 
