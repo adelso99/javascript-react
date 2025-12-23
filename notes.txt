@@ -2868,6 +2868,67 @@ if (!estaLloviendo) {
 
 
 
+Ejercicio de codificación 4: Calculadora de IMC avanzada (IF/ELSE)
+
+function bmiCalculator(peso, altura){
+    var bmi = Math.round(peso / (altura ** 2)); //(altura ** 2) --> esto indica que primero se realice esta operacion antes de dividir
+    var resultado;
+
+    if (bmi > 24.9) {
+        resultado = "Su IMC es "+bmi+", por lo que tiene sobrepeso";
+    }
+
+    if (bmi > 18.5 && bmi <= 24.9) {
+        resultado = "Su IMC es "+bmi+", por lo que tiene un peso normal";
+    }
+
+    if (bmi <= 18.5){
+        resultado = "Su IMC es "+bmi+", por lo que tiene bajo peso";
+    }
+
+    return resultado;
+}
+
+bmiCalculator(56, 1.5);
+
+
+version 2:
+
+function bmiCalculator(peso, altura){
+    var bmi = Math.round(peso / (altura ** 2));
+    var resultado;
+
+    if (bmi > 24.9) {
+        resultado = "Su IMC es " + bmi + ", por lo que tiene sobrepeso";
+
+    } else if (bmi > 18.5 && bmi <= 24.9)  {
+        resultado = "Su IMC es " + bmi + ", por lo que tiene un peso normal";
+
+    } else {
+        resultado = "Su IMC es " + bmi + ", por lo que tiene bajo peso";
+    }
+
+    return resultado;
+}
+
+bmiCalculator(56, 1.5);
+
+
+
+5️⃣ Regla mental que te va a servir siempre 🧠
+🔹 Si los casos son excluyentes → usar else if
+🔹 Si pueden cumplirse varios → usar if separados
+
+
+
+
+
+
+
+
+
+
+
 
 NOTA:
 
