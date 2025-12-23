@@ -2799,6 +2799,31 @@ Operador    	    Significado         	¿Compara tipo?
 
 -----------------------Video 102 Combinación de comparadores----------------------
 
+&& and (y)
+|| or (o)
+! not (no)
+
+
+Ejemplo 1 de Simulacion de Probabilidad de amor en relacion de 1% a 100%:
+var nombre1 = prompt("Dame el Tu Nombre")
+var nombre2 = prompt("Dame el Nombre de Ella")
+
+var n = Math.random(); 
+n = n * 100;  // con el 100 se asigna un rango maximo de 100
+n = Math.floor(n) + 1;  //con el "+ 1" se asigana un rango minimo de 1
+
+if (n > 70) {
+    alert("Hola la probabilidad de amor de "+nombre1+" y "+nombre2+" es de: "+n+"% estan destinados a estar juntos") //Muestra en alerta
+}
+
+if (n > 30 && n <= 70) {
+	alert("Hola la probabilidad de amor de "+nombre1+" y "+nombre2+" es de: "+n+"%");
+}
+
+if (n <= 30){
+	alert("Hola la probabilidad de amor de "+nombre1+" y "+nombre2+" es de: "+n+"%"+" Van juntos como el aceite y el agua");
+}
+
 
 
 NOTA:
