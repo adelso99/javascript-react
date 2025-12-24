@@ -2967,9 +2967,41 @@ function bmiCalculator (weight, height) {
 
 -----------------------Video 103 Presentamos el desafío del código del año bisiesto----------------------
 
+Solucion 1:
+//Un año es bisiesto si es divisible exactamente por 4 ;
+//excepto si ese año también es divisible por 100 ;
+//a menos que ese año también sea divisible por 400 .
+
+function isLeap(year) {
+
+    /**************No cambies el código anterior***************/
+    
+    //Escribe tu código aquí.
+    
+    var resultado = "¿Es un Año Bisiesto?"; 
+
+    if (year % 4 != 0 ) {
+        resultado = "No es año bisiesto .";
+
+    } else if (year % 100 != 0){
+        resultado = "Año bisiesto .";
+
+    } else if (year % 400 === 0){
+        resultado = "Año bisiesto .";
+    } else {
+        resultado = "No es año bisiesto .";
+    }
 
 
+return resultado;
 
+    /**************No cambies el código siguiente****************/
+
+
+}
+
+
+isLeap(2100);
 
 
 
