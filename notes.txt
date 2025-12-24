@@ -3053,7 +3053,6 @@ isLeap(2100);
 -----------------------Video 105 Colecciones: Trabajar con matrices de Javascript----------------------
 Array
 
-
 var eggs [1, 2, 3, 4, 5, 6];
 // en teoria siempre un array empieza en 0
 
@@ -3143,6 +3142,24 @@ alert(verificacion(nombre));
 
 🔹 Quitamos === true porque:
 if (lista.includes(nombre)) // ya es true o false
+
+
+VERSION 3:
+var nombre = prompt("Dame tu nombre");
+var lista = ["Adelso", "Juan", "Antonio", "Jorge"];
+
+if(lista.includes(nombre)) {
+    console.log("Hola Bienvenido");
+} else {
+    console.log("Quizas en otra ocasion");
+}
+
+
+
+
+-----------------------Video 106 Adición de elementos y técnicas de matrices intermedias----------------------
+
+
 
 
 NOTA:
