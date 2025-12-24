@@ -3106,6 +3106,13 @@ true  // verdadero poque exite y esto seria un "Boolean" como salida
 
 
 
+RESUMEN IMPORTANTE
+Concepto        	Significado
+eggs[0]	            Primer elemento
+eggs[1]	            Segundo elemento
+eggs.length	        Total de elementos
+
+
 EJERCICIO 1:
 var nombre = prompt("Dame tu nombre");
 
