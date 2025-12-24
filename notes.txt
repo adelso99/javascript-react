@@ -3099,7 +3099,50 @@ resultado
 Victor   //recuerda que empieza a contar desde el "0"
 
 
+con la funcion ".includes()", se pude consultar algo que exite que sea verdadero(V) o Falso(F)
+lista.includes("Adelso");
 
+resultado
+true  // verdadero poque exite y esto seria un "Boolean" como salida 
+
+
+
+EJERCICIO 1:
+var nombre = prompt("Dame tu nombre");
+
+var lista = ["Adelso", "Juan", "Antonio", "Jorge"];
+
+function verificacion(nombre){
+    if(lista.includes(nombre) === true ) {
+        return "Hola "+nombre+" Bienvenido";
+        
+    } else {
+        return "Hola "+nombre+" Quizas en otra ocasion :(";
+    }
+
+}
+
+console.log(verificacion(nombre));
+
+
+VERSION 2:
+var nombre = prompt("Dame tu nombre");
+
+var lista = ["Adelso", "Juan", "Antonio", "Jorge"];
+
+function verificacion(nombre){
+    if (lista.includes(nombre)) {
+        return "Hola " + nombre + ", bienvenido";
+    } else {
+        return "Hola " + nombre + ", quizás en otra ocasión :(";
+    }
+}
+
+alert(verificacion(nombre));
+
+
+🔹 Quitamos === true porque:
+if (lista.includes(nombre)) // ya es true o false
 
 
 NOTA:

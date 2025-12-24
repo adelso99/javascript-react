@@ -18,6 +18,17 @@ Progresss .....2
 
 
 
+var nombre = prompt("Dame tu nombre");
+var lista = ["Adelso", "Juan", "Antonio", "Jorge"];
+
+if(lista.includes(nombre) === true ) {
+    return "Hola Bienvenido";
+} else {
+    return "Quizas en otra ocasion";
+}
+
+
+
 
 
 
