@@ -3086,8 +3086,17 @@ resultado
     de
  Elementos
 
+se puede consultar directamente cuantos elementos tenemos en nuestro array
+lista.length;
 
+resultado 
+4
 
+se puede recuperar el datoe de nuestro array, consultado las posiciones asi:
+console.log(lista[3]);
+
+resultado
+Victor   //recuerda que empieza a contar desde el "0"
 
 
 
