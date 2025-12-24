@@ -3004,9 +3004,60 @@ return resultado;
 isLeap(2100);
 
 
+1️⃣ 2100 % 4 = 0 → sigue
+2️⃣ 2100 % 100 = 0 → sigue
+3️⃣ 2100 % 400 = 100 → NO entra
+4️⃣ cae en el else
+
+📌 Resultado final:
+
+"No es año bisiesto ."
+✔ Correcto según la regla
+
+
+
+
+LO MÁS IMPORTANTE QUE DEBES RECORDAR
+✔ El orden de los "if" importa muchísimo
+✔ Cada "else if" solo se evalúa si el anterior falló
+✔ Tu lógica es correcta
+✔ Esta forma es la mejor para aprender
+
+
 
 
 -----------------------Video 104 Solución para el año bisiesto----------------------
+Solucion dada:
+function isLeap(year) {
+    
+    if (year % 4 === 0){
+        if (year % 100 === 0){
+            if (year % 400 === 0){
+                return "Año Bisiesto"
+            }else {
+                 return "No es Año Bisiesto"
+            }
+        }else {
+            return "Año Bisiesto"
+        }
+    }else {
+        return "No es Año Bisiesto"
+    }
+        
+}
+
+isLeap(2100);
+
+
+
+-----------------------Video 105 Colecciones: Trabajar con matrices de Javascript----------------------
+Array
+
+
+
+
+
+
 
 
 
