@@ -3059,8 +3059,34 @@ var eggs [1, 2, 3, 4, 5, 6];
 
 var myEgg = eggs[1]; // esto nos muestria el numero 1 del array que es el 2
 
-resultado
+si ejecutamos esta variabel este seria el resultado
 2   //porque porque un array como todo en la programacion emepiza a contar desde el 0
+
+
+tambien se puede consultar con length
+eggs.length; 
+
+el resultado seria
+6   //porque tenemos 6 elementos en la matris
+
+
+[] --> Los corchetes son siempre para crear MATRICES
+       //ello quiere decir que contiene varios datos dentro
+
+Ejemplo 1:
+var lista = ["Adel", "Juan", "Jorge", "Victor"];
+console.log(lista);
+
+resultado
+    (4) ['Adel', 'Juan', 'Jorge', 'Victor']
+    / \ 		       / \ 
+     |		            |
+     |		            |
+ Cantidad	     Elementos del Array
+    de
+ Elementos
+
+
 
 
 
