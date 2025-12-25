@@ -3170,7 +3170,7 @@ número y para los múltiplos de "live", escriba "Buzz". Para números múltiplo
 
 var lista = []; //array vacio
 
-con la funcion ".push"
+con la funcion ".push();"
 sirve para poder añadir elementos a un array
 
 lista.push(1);
@@ -3187,18 +3187,30 @@ lista.push(2);
  en el array estara
 [1, 2] // ya tendra 2 elementos ingreados
 
+push siempre agregara cada elemento al final del array
+nunca no lo hara al principio ni aleatoriamente
 
 
-la funcion ".pop"
+
+la funcion ".pop();"
 es usada para poder extraer elementos de la matriz
+esto busca el ultimo elementode del array y lo elimmina
 
+si tengo mi array asi
+[1,2]
 
+si le agrego otro
+lista.push(3);
+ 
+saldra asi
+[1, 2, 3]
 
+pero si la agreggo 
+lista.pop(); 
+3
 
-
-
-
-
+hara esto
+[1, 2]  // elimina el ultimo elemento ingresado de mi array
 
 
 

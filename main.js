@@ -17,16 +17,26 @@ Progresss .....2
 */
 
 
+var lista = []; 
 
-var nombre = prompt("Dame tu nombre");
-var lista = ["Adelso", "Juan", "Antonio", "Jorge"];
-
-if(lista.includes(nombre)) {
-    console.log("Hola Bienvenido");
-} else {
-    console.log("Quizas en otra ocasion");
+function fizzBuzz(){
+    if (lista === 1) {
+        
+    }else {
+        lista.push(1);
+    }
+   
+    console.log(lista);
 }
 
+
+if (condición) {
+    // código si la condición es verdadera
+ 
+ } else {
+    // código si la condición es falsa
+ 
+ }
 
 
 
