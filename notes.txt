@@ -3223,10 +3223,10 @@ function fizzBuzz(){
     if (lista.length === 0) {
         lista.push(1);
     }else {
-        var ultimoIndex = lista.length - 1
+        var ultimoIndex = lista.length - 1;
         var ultimoElemento = lista[ultimoIndex];
-        ultimoElemento = ultimoElemento + 1;
-        lista.push(ultimoElemento);
+        var nuevoElemento = ultimoElemento + 1;
+        lista.push(nuevoElemento);
     }
 
     
@@ -3239,7 +3239,16 @@ fizzBuzz();
 
 
 
+Solucion 2:
+var lista1 = [];
+var contar = 1;
 
+function fizzBuzz(){
+	lista1.push(contar);
+	contar++;
+
+	console.log(lista1);
+}
 
 
 NOTA:

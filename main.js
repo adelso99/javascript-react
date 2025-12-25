@@ -17,9 +17,32 @@ Progresss .....2
 */
 
 
+var lista = [];  // 1 , 2 , 3 , 4
+
+
+function fizzBuzz(){
+    
+    if (lista.length === 0) {
+        lista.push(1);
+    }else {
+        var ultimoIndex = lista.length - 1;
+        var ultimoElemento = lista[ultimoIndex];
+        var nuevoElemento = ultimoElemento + 1;
+        lista.push(nuevoElemento);
+    }
+
+    
+    console.log(lista);
+
+}
+
 
 fizzBuzz();
 fizzBuzz();
+fizzBuzz();
+
+
+
 
 
 
