@@ -3168,6 +3168,25 @@ if(lista.includes(nombre)) {
 Escriba un programa que imprima los números del 1 al 100. Pero para múltiplos de tres, escriba "Fizz" en lugar del 
 número y para los múltiplos de "live", escriba "Buzz". Para números múltiplos de tres y cinco, escriba "FizzBuzz".
 
+var lista = []; //array vacio
+
+con la funcion ".push"
+sirve para poder añadir elementos a un array
+
+lista.push(1);
+
+muestra 
+1
+
+pero en el array estara
+[1]
+
+si le agrego otro
+lista.push(2);
+
+ en el array estara
+[1, 2] // ya tendra 2 elementos ingreados
+
 
 
 la funcion ".pop"
