@@ -3165,6 +3165,24 @@ if(lista.includes(nombre)) {
 
 
 -----------------------Video 106 Adición de elementos y técnicas de matrices intermedias----------------------
+Escriba un programa que imprima los números del 1 al 100. Pero para múltiplos de tres, escriba "Fizz" en lugar del 
+número y para los múltiplos de "live", escriba "Buzz". Para números múltiplos de tres y cinco, escriba "FizzBuzz".
+
+
+
+la funcion ".pop"
+es usada para poder extraer elementos de la matriz
+
+
+
+
+
+
+
+
+
+
+
 
 
 
