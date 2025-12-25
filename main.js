@@ -17,26 +17,10 @@ Progresss .....2
 */
 
 
-var lista = []; 
 
-function fizzBuzz(){
-    if (lista === 1) {
-        
-    }else {
-        lista.push(1);
-    }
-   
-    console.log(lista);
-}
+fizzBuzz();
+fizzBuzz();
 
-
-if (condición) {
-    // código si la condición es verdadera
- 
- } else {
-    // código si la condición es falsa
- 
- }
 
 
 

@@ -3214,6 +3214,30 @@ hara esto
 
 
 
+Solucion 1:
+var lista = [];  // 1 , 2 , 3 , 4
+
+
+function fizzBuzz(){
+    
+    if (lista.length === 0) {
+        lista.push(1);
+    }else {
+        var ultimoIndex = lista.length - 1
+        var ultimoElemento = lista[ultimoIndex];
+        ultimoElemento = ultimoElemento + 1;
+        lista.push(ultimoElemento);
+    }
+
+    
+    console.log(lista);
+
+}
+
+
+fizzBuzz();
+
+
 
 
 
