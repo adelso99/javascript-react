@@ -28,11 +28,26 @@ function fizzBuzz(){
         var ultimoIndex = lista.length - 1;
         var ultimoElemento = lista[ultimoIndex];
         var nuevoElemento = ultimoElemento + 1;
+
+        if (nuevoElemento % 3 === 0){
+             nuevoElemento = "Fizz";
+        } else  if (nuevoElemento % 5 === 0){
+             nuevoElemento = "Buzz";
+        } else if (nuevoElemento % 3 === 0 && nuevoElemento % 5 === 0){
+             nuevoElemento = "FizzBuzz";
+        }
+
+
+
         lista.push(nuevoElemento);
     }
 
-    
+
+
+
     console.log(lista);
+
+    
 
 }
 
@@ -40,13 +55,6 @@ function fizzBuzz(){
 fizzBuzz();
 fizzBuzz();
 fizzBuzz();
-
-
-
-
-
-
-
-
-
+fizzBuzz();
+fizzBuzz();
 

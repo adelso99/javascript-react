@@ -3229,10 +3229,29 @@ function fizzBuzz(){
         lista.push(nuevoElemento);
     }
 
+        if (year % 4 === 0){
+        if (year % 100 === 0){
+            if (year % 400 === 0){
+                return "Año Bisiesto"
+            }else {
+                 return "No es Año Bisiesto"
+            }
+        }else {
+            return "Año Bisiesto"
+        }
+    }else {
+        return "No es Año Bisiesto"
+    }
+
+    
+
     
     console.log(lista);
 
 }
+
+
+
 
 
 fizzBuzz();
