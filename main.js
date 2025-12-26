@@ -17,58 +17,40 @@ Progresss .....2
 */
 
 
-var lista = [];  // 1 , 2 , 3 , 4
+var nombres = ["Angela" , "Ben" , "Jenny" , "Michael" , "Chloe"]; 
 
-
-function fizzBuzz(){
+function whosPaying(nombres) {
     
-    if (lista.length === 0) {
-        lista.push(1);
-    }else {
-        var ultimoIndex = lista.length - 1;
-        var ultimoElemento = ultimoIndex + 1;
-        var nuevoElemento = ultimoElemento + 1;
+    /******No cambies el código de arriba*******/
 
-        
+    //Escribe tu código aquí.
+    var n = Math.random(); 
+    n = n * nombres.length;  // con el 100 se asigna un rango maximo de 100
+    n = Math.floor(n) + 1;  //con el "+ 1" se asigana un rango minimo de 1
 
-        if (nuevoElemento % 3 === 0 && nuevoElemento % 5 === 0){
-             lista.push("FizzBuzz");
-        } else  if (nuevoElemento % 3 === 0){
-            lista.push("Fizz");
-        } else if (nuevoElemento % 5 === 0){
-            lista.push("Buzz");
-        } else {
-            lista.push(nuevoElemento);
-        }
-
-
+    if (n === 1){
+        return "¡"+nombres[0]+" va a comprar el almuerzo hoy !";
+    } else if (n === 2){
+        return "¡"+nombres[1]+" va a comprar el almuerzo hoy !";
+    } else if (n === 3){
+        return "¡"+nombres[2]+" va a comprar el almuerzo hoy !";
+    } else if (n === 4){
+        return "¡"+nombres[3]+" va a comprar el almuerzo hoy !";
+    } else {
+        return "¡"+nombres[4]+" va a comprar el almuerzo hoy !";
     }
 
-
-
-
-    console.log(lista);
-
-    
+    /******No cambies el código de abajo*******/
 
 }
 
+whosPaying(nombres);
+whosPaying(nombres);
+whosPaying(nombres);
+whosPaying(nombres);
+whosPaying(nombres);
+whosPaying(nombres);
+whosPaying(nombres);
+whosPaying(nombres);
 
-fizzBuzz(); //0
-fizzBuzz(); //1
-fizzBuzz(); //2
-fizzBuzz(); //3
-fizzBuzz(); //4
-fizzBuzz(); //5
-fizzBuzz(); //6
-fizzBuzz(); //7
-fizzBuzz(); //8
-fizzBuzz(); //9
-fizzBuzz(); //10
-fizzBuzz(); //11
-fizzBuzz(); //12
-fizzBuzz(); //13
-fizzBuzz(); //14
-fizzBuzz(); //15
-fizzBuzz(); //16
 

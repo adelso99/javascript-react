@@ -3309,7 +3309,53 @@ fizzBuzz(); //0
 
 
 
-repasar un poco el ultimo video
+EJERCICIO 1:
+Array.length
+".length" es una propiedad de los arrays (no es una función).
+NO se usan paréntesis
+✔ Porque NO es una función
+
+ejemplo:
+var cosas = ["Hola", 5, true, "Adelso"];
+console.log(cosas.length);
+Resultado:
+
+js
+Copy code
+4
+✔ No importa el tipo de dato
+
+
+Solucion 1:
+var nombres = ["Angela" , "Ben" , "Jenny" , "Michael" , "Chloe"]; 
+
+function whosPaying(nombres) {
+    
+    /******No cambies el código de arriba*******/
+
+    //Escribe tu código aquí.
+    var n = Math.random(); 
+    n = n * nombres.length;  // con el 100 se asigna un rango maximo de 100
+    n = Math.floor(n) + 1;  //con el "+ 1" se asigana un rango minimo de 1
+
+    if (n === 1){
+        return "¡"+nombres[0]+" va a comprar el almuerzo hoy !";
+    } else if (n === 2){
+        return "¡"+nombres[1]+" va a comprar el almuerzo hoy !";
+    } else if (n === 3){
+        return "¡"+nombres[2]+" va a comprar el almuerzo hoy !";
+    } else if (n === 4){
+        return "¡"+nombres[3]+" va a comprar el almuerzo hoy !";
+    } else {
+        return "¡"+nombres[4]+" va a comprar el almuerzo hoy !";
+    }
+
+    /******No cambies el código de abajo*******/
+
+}
+
+whosPaying(nombres);
+
 
 
 NOTA:
