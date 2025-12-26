@@ -3247,8 +3247,17 @@ var lista1 = [];
 var contar = 1;
 
 function fizzBuzz(){
-	lista1.push(contar);
-	contar++;
+    if (contar % 3 === 0 && contar % 5 === 0) {
+        lista.push("FizzBuzz");
+    } else if (contar % 3 === 0) {
+        lista.push("Fizz");
+    } else if (contar % 5 === 0) {
+        lista.push("Buzz");
+    } else {
+        lista.push(contar);
+    }
+
+    contar++;
 
 	console.log(lista1);
 }
