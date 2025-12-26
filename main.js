@@ -26,20 +26,22 @@ function fizzBuzz(){
         lista.push(1);
     }else {
         var ultimoIndex = lista.length - 1;
-        var ultimoElemento = lista[ultimoIndex];
+        var ultimoElemento = ultimoIndex + 1;
         var nuevoElemento = ultimoElemento + 1;
 
-        if (nuevoElemento % 3 === 0){
-             nuevoElemento = "Fizz";
-        } else  if (nuevoElemento % 5 === 0){
-             nuevoElemento = "Buzz";
-        } else if (nuevoElemento % 3 === 0 && nuevoElemento % 5 === 0){
-             nuevoElemento = "FizzBuzz";
+        
+
+        if (nuevoElemento % 3 === 0 && nuevoElemento % 5 === 0){
+             lista.push("FizzBuzz");
+        } else  if (nuevoElemento % 3 === 0){
+            lista.push("Fizz");
+        } else if (nuevoElemento % 5 === 0){
+            lista.push("Buzz");
+        } else {
+            lista.push(nuevoElemento);
         }
 
 
-
-        lista.push(nuevoElemento);
     }
 
 
@@ -52,9 +54,21 @@ function fizzBuzz(){
 }
 
 
-fizzBuzz();
-fizzBuzz();
-fizzBuzz();
-fizzBuzz();
-fizzBuzz();
+fizzBuzz(); //0
+fizzBuzz(); //1
+fizzBuzz(); //2
+fizzBuzz(); //3
+fizzBuzz(); //4
+fizzBuzz(); //5
+fizzBuzz(); //6
+fizzBuzz(); //7
+fizzBuzz(); //8
+fizzBuzz(); //9
+fizzBuzz(); //10
+fizzBuzz(); //11
+fizzBuzz(); //12
+fizzBuzz(); //13
+fizzBuzz(); //14
+fizzBuzz(); //15
+fizzBuzz(); //16
 
