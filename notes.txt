@@ -3427,6 +3427,62 @@ while(i<2) {
 }
 
 
+Ejemplo de FizzBuzz con While:
+var lista = [];  // 1 , 2 , 3 , 4
+
+function fizzBuzz(){
+   
+     while(lista.length <= 100){
+        if (lista.length === 0) {
+            lista.push(1);
+            }else {
+                    var ultimoIndex = lista.length - 1;
+                    var ultimoElemento = ultimoIndex + 1;
+                    var nuevoElemento = ultimoElemento + 1;
+
+                        if (nuevoElemento % 3 === 0 && nuevoElemento % 5 === 0){
+                            lista.push("FizzBuzz");
+                        } else  if (nuevoElemento % 3 === 0){
+                            lista.push("Fizz");
+                        } else if (nuevoElemento % 5 === 0){
+                            lista.push("Buzz");
+                        } else {
+                            lista.push(nuevoElemento);
+            }
+        }
+     }
+    console.log(lista);
+  
+}
+
+fizzBuzz(); // cuanto se llama muestra 101 datos
+
+
+
+Ejemplo 2 de FizzBuzz con while:
+var lista1 = [];
+var contar = 1;
+
+function fizzBuzz(){
+    if (contar % 3 === 0 && contar % 5 === 0) {
+        lista1.push("FizzBuzz");
+    } else if (contar % 3 === 0) {
+        lista1.push("Fizz");
+    } else if (contar % 5 === 0) {
+        lista1.push("Buzz");
+    } else {
+        lista1.push(contar);
+    }
+
+    contar++;
+
+	console.log(lista1);
+
+}
+
+fizzBuzz(); //0
+
+
 
 
 NOTA:
