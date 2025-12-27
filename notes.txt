@@ -3361,8 +3361,6 @@ whosPaying(nombres);
 
 -----------------------Video 107 Solución de ¿Quién compra el almuerzo?----------------------
 
-
-
 Solucion:
 
 var nombres = ["Angela" , "Ben" , "Jenny" , "Michael" , "Chloe"]; 
@@ -3385,7 +3383,34 @@ function whosPaying(nombres) {
 
 }
 
+Solucion 2:
+var nombres = ["Angela" , "Ben" , "Jenny" , "Michael" , "Chloe"]; 
 
+function whosPaying(nombres) {
+    
+    /******No cambies el código de arriba*******/
+
+    //Escribe tu código aquí.
+     
+       var numeroPersonas = nombres.length;
+       var posicionPersona = Math.random() * numeroPersonas;
+       var datoPersona = Math.floor(posicionPersona)
+       var personaRandom = nombres[datoPersona];
+
+       return "¡"+personaRandom+" va a comprar el almuerzo hoy !";
+
+
+
+    /******No cambies el código de abajo*******/
+
+}
+
+
+
+
+
+
+-----------------------Video 108 Declaraciones de control: Bucles While----------------------
 
 
 
