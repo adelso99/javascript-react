@@ -3487,6 +3487,24 @@ fizzBuzz(); // cuando se llama muestra 100 datos
 
 
 
+
+while (condición) {
+    // código que se repite
+}
+
+La condición debe ser true para que el código se ejecute
+Dentro del while algo debe cambiar, o se vuelve infinito
+Cuando la condición pasa a false, el bucle se detiene
+
+
+
+
+EJERICIO 1, CANCION DE BOTELLAS DE CERVESAS:
+
+
+
+
+
 NOTA:
 
 
