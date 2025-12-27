@@ -18,8 +18,6 @@ Progresss .....2
 
 
 var nombres = ["Angela" , "Ben" , "Jenny" , "Michael" , "Chloe"]; 
-var inicio = 1;
-var fin = nombres.length;
 
 function whosPaying(nombres) {
     
@@ -27,20 +25,13 @@ function whosPaying(nombres) {
 
     //Escribe tu código aquí.
      
-      // con el 100 se asigna un rango maximo de 100
+       var numeroPersonas = nombres.length;
+       var posicionPersona = Math.floor(Math.random() * numeroPersonas);
+       var personaRandom = nombres[posicionPersona];
+
+       return "¡"+personaRandom+" va a comprar el almuerzo hoy !";
 
 
-    if (n === 1){
-        return "¡"+nombres[0]+" va a comprar el almuerzo hoy !";
-    } else if (n === 2){
-        return "¡"+nombres[1]+" va a comprar el almuerzo hoy !";
-    } else if (n === 3){
-        return "¡"+nombres[2]+" va a comprar el almuerzo hoy !";
-    } else if (n === 4){
-        return "¡"+nombres[3]+" va a comprar el almuerzo hoy !";
-    } else {
-        return "¡"+nombres[4]+" va a comprar el almuerzo hoy !";
-    }
 
     /******No cambies el código de abajo*******/
 
