@@ -3358,6 +3358,23 @@ whosPaying(nombres);
 
 
 
+
+-----------------------Video 107 Solución de ¿Quién compra el almuerzo?----------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 NOTA:
 
 
