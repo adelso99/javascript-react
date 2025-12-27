@@ -3464,23 +3464,25 @@ var lista1 = [];
 var contar = 1;
 
 function fizzBuzz(){
-    if (contar % 3 === 0 && contar % 5 === 0) {
-        lista1.push("FizzBuzz");
-    } else if (contar % 3 === 0) {
-        lista1.push("Fizz");
-    } else if (contar % 5 === 0) {
-        lista1.push("Buzz");
-    } else {
-        lista1.push(contar);
-    }
+    while (contar <= 100){
+        if (contar % 3 === 0 && contar % 5 === 0) {
+            lista1.push("FizzBuzz");
+        } else if (contar % 3 === 0) {
+            lista1.push("Fizz");
+        } else if (contar % 5 === 0) {
+            lista1.push("Buzz");
+        } else {
+            lista1.push(contar);
+        }
 
-    contar++;
+        contar++;
+    }    
 
 	console.log(lista1);
 
 }
 
-fizzBuzz(); //0
+fizzBuzz(); // cuando se llama muestra 100 datos
 
 
 
