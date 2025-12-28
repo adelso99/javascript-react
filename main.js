@@ -42,26 +42,10 @@ function cervezas(){
 
 cervezas();
 
-/*
-99 botellas de cerveza en la pared, 99 botellas de cerveza.
-Toma una y pásala, 98 botellas de cerveza en la pared
 
-4 botellas de cerveza en la pared, 4 botellas de cerveza.
-Toma una y pásala, 3 botellas de cerveza en la pared.
 
-3 botellas de cerveza en la pared, 3 botellas de cerveza.
-Toma una y pásala, 2 botellas de cerveza en la pared.
 
-2 botellas de cerveza en la pared. 2 botellas de cerveza.
-Toma una y pásala. 1 botella de cerveza en la pared.
 
-1 botella de cerveza en la pared, 1 botella de cerveza.
-Toma una y pásala, no más botellas de cerveza en la pared.
 
-No más botellas de cerveza en la pared, no más botellas de cerveza.
-Ve a la tienda y compra más, 99 botellas de cerveza en la pared.
-*/
-
-     
 
 
