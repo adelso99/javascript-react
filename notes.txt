@@ -3587,9 +3587,11 @@ while (numberOfBottles >= 0) {
 
 -----------------------Video 110 Sentencias de control: bucles for----------------------
 
+Bucle For
 
-
-
+for (i = 0; i < 2; i++){
+	//Haz algo
+} 
 
 
 
