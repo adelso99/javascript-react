@@ -3581,6 +3581,24 @@ while (numberOfBottles >= 0) {
     console.log(numberOfBottles + " " + bottleWord + " of beer on the wall.");
 }
 
+
+
+
+
+-----------------------Video 110 Sentencias de control: bucles for----------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
 NOTA:
 
 
