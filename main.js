@@ -8,13 +8,7 @@ alert("la suma es: "+suma);
 console.log(suma);*/
 
 
-/*
-Progresss .....1
-*/
 
-/*
-Progresss .....2
-*/
 
 var cerveza = [];
 var botellas = 99;
