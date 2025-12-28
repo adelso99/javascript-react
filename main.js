@@ -17,10 +17,10 @@ Progresss .....2
 */
 
 var cerveza = [];
-var botellas = 6;
+var botellas = 99;
 
 function cervezas(){
-    while (botellas <= 1){
+    while (0 <= botellas){
         var total = cerveza.length;
         var contar = (botellas - 1); 
 
