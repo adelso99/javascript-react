@@ -3623,10 +3623,9 @@ for (var i = 1; i < 2; i++){
 
 EJEMPLO BUCLE FOR CON FIZBUZZ:
 var lista1 = [];
-var contar = 1;
 
 function fizzBuzz(){
-    while (contar <= 100){
+    for (var contar = 1; contar <= 100; contar++){
         if (contar % 3 === 0 && contar % 5 === 0) {
             lista1.push("FizzBuzz");
         } else if (contar % 3 === 0) {
@@ -3637,7 +3636,6 @@ function fizzBuzz(){
             lista1.push(contar);
         }
 
-        contar++;
     }    
 
 	console.log(lista1);
@@ -3645,6 +3643,17 @@ function fizzBuzz(){
 }
 
 fizzBuzz(); // cuando se llama muestra 100 datos
+
+
+
+
+-----------------------Video 111 Presentamos el desafío del código Fibonacci----------------------
+
+
+
+
+
+
 
 
 NOTA:
