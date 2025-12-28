@@ -3594,11 +3594,57 @@ for (i = 0; i < 2; i++){
 } 
 
 
+    for   (i = 0;   i < 2;    i++){
+    / \    / \       / \      / \
+     |      |         |        |
+     |      |         |        |
+  Palabra  punto    Punto    Cambio
+   Clave     de     Final
+          partida
 
 
 
+Bucle while normal
+var i = 1;
+
+while(i<2) {
+	console.log(i);  // 1
+	i++; // i = 2
+}
 
 
+ahora aplicando el bucle for
+
+for (var i = 1; i < 2; i++){
+    console.log(i);  
+}
+
+
+
+EJEMPLO BUCLE FOR CON FIZBUZZ:
+var lista1 = [];
+var contar = 1;
+
+function fizzBuzz(){
+    while (contar <= 100){
+        if (contar % 3 === 0 && contar % 5 === 0) {
+            lista1.push("FizzBuzz");
+        } else if (contar % 3 === 0) {
+            lista1.push("Fizz");
+        } else if (contar % 5 === 0) {
+            lista1.push("Buzz");
+        } else {
+            lista1.push(contar);
+        }
+
+        contar++;
+    }    
+
+	console.log(lista1);
+
+}
+
+fizzBuzz(); // cuando se llama muestra 100 datos
 
 
 NOTA:
