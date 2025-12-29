@@ -3657,7 +3657,37 @@ for (inicio; condición; cambio){
 
 -----------------------Video 111 Presentamos el desafío del código Fibonacci----------------------
 
+SOLUCION 1:
+function fibonacciGenerator (n) {
+        var lista = [];   //en una funcion es mejor agregar las varables que se usen dentro
+        var numero1 = 0;  //para que se puede recargar, no se acumule y empiece desde 0
+        var numero2 = 1; 
+        var suma = numero1+numero2;
 
+    for (var fibo = 1; fibo <= n; fibo++){
+           
+         if (fibo === 1) {
+            lista.push(numero1);
+            } else if (fibo === 2) {
+                lista.push(numero2);
+            } else if (fibo === 3){
+                lista.push(suma);
+            } else {
+        
+                numero1 = numero2;
+                numero2 = suma;
+                suma = numero1 + numero2;
+
+                lista.push(suma);
+            }
+
+    }    
+
+	return lista;
+
+}
+
+fibonacciGenerator(10); 
 
 
 
