@@ -3647,6 +3647,14 @@ fizzBuzz(); // cuando se llama muestra 100 datos
 
 
 
+Este for tiene 3 partes muy importantes:
+for (inicio; condición; cambio){
+    // código
+}
+
+
+
+
 -----------------------Video 111 Presentamos el desafío del código Fibonacci----------------------
 
 

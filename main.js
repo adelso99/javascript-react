@@ -10,31 +10,33 @@ console.log(suma);*/
 
 
 
-var cerveza = [];
-var botellas = 99;
 
-function cervezas(){
-    while (0 <= botellas){
-        var total = cerveza.length;
-        var contar = (botellas - 1); 
+var lista = []; var numero1 = 0; var numero2 = 1;
 
-        if (botellas === 1) {
-            cerveza.push(botellas+" botellas de cerveza en la pared, "+botellas+" botellas de cerveza. Toma una y pásala, no más botellas de cerveza en la pared.");
-        } else if (botellas === 0) {
-            cerveza.push("No más botellas de cerveza en la pared, no más botellas de cerveza. Ve a la tienda y compra más, "+total+" botellas de cerveza en la pared.");
+function fibonacciGenerator (n) {
+    for (var fibo = 1; fibo <= n; fibo++){
+        
+        
+         if (fibo === 1) {
+            lista.push(numero1);
+        } else if (fibo === 2) {
+            lista.push(numero2);
+        } else if (fibo === 3){
+            lista.push(numero1+numero2);
         } else {
-            cerveza.push(botellas+" botellas de cerveza en la pared, "+botellas+" botellas de cerveza. Toma una y pásala, "+contar+" botellas de cerveza en la pared.");
-        }
+            numero1 = numero2;
+            numero2 = numero1 + numero1;
 
-        botellas--;
+            lista.push(numero2);
+        }
 
     }    
 
-	console.log(cerveza);
+	console.log(lista);
 
 }
 
-cervezas();
+fibonacciGenerator(5); 
 
 
 
