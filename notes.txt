@@ -3693,6 +3693,33 @@ fibonacciGenerator(10);
 
 
 -----------------------Video 112 Solución de Fibonacci----------------------
+SOLUCION 2:
+
+function fibonacciGenerator (n) {
+    var lista = [];
+
+    if (n === 1) {
+        lista = [0];
+        } else if (n === 2) {
+            lista = [0, 1];
+        } else {
+            lista = [0, 1];
+            for (var i = 2; i < n; i++){
+            lista.push(lista[lista.length - 2] +lista[lista.length - 1]); 
+            }
+            
+        }
+
+     return lista;   
+
+}
+
+lista = fibonacciGenerator(5);
+console.log(lista);
+
+
+EJERCICIO CUMPLIDO CON EXITO :d
+
 
 
 
