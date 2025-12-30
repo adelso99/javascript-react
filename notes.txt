@@ -3728,11 +3728,21 @@ EJERCICIO CUMPLIDO CON EXITO :d
 ---------------------------------------SECCION 15 MODELO DE OBJETOS DE DOCUMENTOS (DOM)---------------------------------
 -----------------------Video 114 Agregar Javascript a sitios web----------------------
 
+FORMAS DE INCORPORAR JS EN MI WEB
 
+1. Escribiendo JavaScript en Linea desde el html
 onland="" --> este indica que cuando el sitio web se cargue tambien se carge el js que se tiene
 se hace uo de las comillas simples '' porque se tiene las dobles comillas en uso y eso es confuso para el html
 
+<body onload="alert('Hola');">
+    <h1>Hola</h1>
+    
+</body>
 
+esto muestra un alert al cargar la pagina
+
+
+2. JavaScript Interno
 
 
 
