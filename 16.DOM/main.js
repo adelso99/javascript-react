@@ -1,1 +1,1 @@
-alert("Hola");
+document.querySelector("h1").innerHTML = "Adios";
