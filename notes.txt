@@ -3729,7 +3729,8 @@ EJERCICIO CUMPLIDO CON EXITO :d
 -----------------------Video 114 Agregar Javascript a sitios web----------------------
 
 
-
+onland="" --> este indica que cuando el sitio web se cargue tambien se carge el js que se tiene
+se hace uo de las comillas simples '' porque se tiene las dobles comillas en uso y eso es confuso para el html
 
 
 
