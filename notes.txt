@@ -3739,6 +3739,9 @@ se hace uo de las comillas simples '' porque se tiene las dobles comillas en uso
     
 </body>
 
+onload es un evento
+Significa:
+👉 “cuando la página termine de cargarse”
 esto muestra un alert al cargar la pagina
 
 
@@ -3786,6 +3789,19 @@ RECORDATORIO
 </html>
 
 Esto para que la carga de codigo en la pagina se de manera ordenada
+
+
+1.1 JS en línea: dentro del HTML → solo ejemplos
+1.2 JS interno: <script> dentro del HTML
+1.3 JS externo: archivo .js → el más ordenado
+
+
+
+
+
+-----------------------Video 115 Introducción al Modelo de Objetos de Documento (DOM)----------------------
+
+
 
 
 
