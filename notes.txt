@@ -3743,9 +3743,20 @@ esto muestra un alert al cargar la pagina
 
 
 2. JavaScript Interno
+Esto se da al usar una etiqueta script
+
+<body >
+    <h1>Hola</h1>
 
 
 
+    <script type="text/javascript">  
+        alert("Hola");             // se usa js normal con doble comillas
+
+
+    </script>
+    
+</body> // se debe agregar casi en el cierre de body la etiqueta script y dentro todo el codigo js
 
 
 
