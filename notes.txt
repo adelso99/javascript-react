@@ -3730,7 +3730,7 @@ EJERCICIO CUMPLIDO CON EXITO :d
 
 FORMAS DE INCORPORAR JS EN MI WEB
 
-1. Escribiendo JavaScript en Linea desde el html
+1. JavaScript en Linea desde el html
 onland="" --> este indica que cuando el sitio web se cargue tambien se carge el js que se tiene
 se hace uo de las comillas simples '' porque se tiene las dobles comillas en uso y eso es confuso para el html
 
@@ -3759,6 +3759,31 @@ Esto se da al usar una etiqueta script
 </body> // se debe agregar casi en el cierre de body la etiqueta script y dentro todo el codigo js
 
 
+
+
+3. JavaScript Externo
+se crea un archivo externo de js y se importa al HTML
+<body>
+
+  
+  <script src="/.main.js" charset="UTF-8"></script>  //siempre el script se deja al final del body
+
+</body>
+
+
+RECORDATORIO
+<html lang="es">
+    <head>
+        <title>Mi sitio Web</title> // se reomienda siempre que vaya abajo del titulo de la web
+        <link rel="stylesheet" href="./style.css"> // La hoja de estilos siempre va en el head
+    </head>
+
+    <body >
+        <h1>Hola</h1>
+        <script src="./main.js" charset="UTF-8"></script>  // la hoja de js siempre va en el body
+    </body>
+
+</html>
 
 
 
