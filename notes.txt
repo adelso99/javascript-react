@@ -3818,6 +3818,20 @@ en el DOM se ve asi es un Modelo de Arbol y es normalmente se ve el DOM:
 
 
 
+propiedades
+.innerHTML
+.style
+.firstChild
+.lastChild
+
+Metodos  // todos los metodos tienen un cojunto de parentesis al final
+.click()
+.appendChild()
+setAttribute()
+
+
+
+
 
 
 
