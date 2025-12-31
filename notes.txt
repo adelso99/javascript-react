@@ -3800,9 +3800,21 @@ Esto para que la carga de codigo en la pagina se de manera ordenada
 
 
 -----------------------Video 115 Introducción al Modelo de Objetos de Documento (DOM)----------------------
+<html>
+    <head>
+        <title>Mi sitio Web</title>
+    </head>
+    <body >
+        <button>Alert</button>
+    </body>
+</html>
 
-
-
+en el DOM se ve asi:
+		document
+		  html
+	head		  body
+	title	   	  button
+ Mi sitio Web 	  Alert
 
 
 
