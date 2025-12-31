@@ -3809,7 +3809,7 @@ Esto para que la carga de codigo en la pagina se de manera ordenada
     </body>
 </html>
 
-en el DOM se ve asi:
+en el DOM se ve asi es un Modelo de Arbol y es normalmente se ve el DOM:
 		document
 		  html
 	head		  body
