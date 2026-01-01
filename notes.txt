@@ -3869,6 +3869,12 @@ VM1714:1 Uncaught SyntaxError: Unexpected token '{'Understand this error
 document.querySelector("input").click();
 
 
+Propiedades del DOM (NO llevan paréntesis)
+Las propiedades:
+Describen algo del elemento
+No ejecutan acciones
+NO usan ()
+
 .innerHTML
 👉 Contenido interno del elemento
 
@@ -3891,14 +3897,21 @@ font-size → fontSize
 
 
 .firstChild y .lastChild
-
-👉 Devuelven el primer o último hijo
+👉 Devuelven el primer y último hijo
 
 ⚠️ Importante:
 
 Pueden devolver texto, espacios o saltos de línea
-
 Por eso muchas veces se usa firstElementChild
+
+
+5️⃣ Métodos del DOM (SIEMPRE llevan paréntesis)
+Los métodos:
+Hacen acciones
+SIEMPRE usan ()
+
+
+
 
 NOTA:
 
