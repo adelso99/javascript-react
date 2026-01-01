@@ -3989,12 +3989,23 @@ HTMLCollection [button.btn]
 cuando se tiene un elemento que se singular(1) normalmente se recupera un "Element"
 .getElementById  // si se fija es ma ecato tambien porque en una pagina web solo debe exitir un element con el mismo ID
 
+document.getElementById("title");
+<h1 id=​"title">​Hello​</h1>​
+document.getElementById("title").innerHTML = "Hola Como vas :)";
+'Hola Como vas :)'
+
+  <body>
+
+    <h1 id="title">Hello</h1>  <!--Se cambia a Hello como vas :)-->  
+
+  </body>
 
 
+cuando se hace uno de metodos con selectores como es en este caso de ".querySelector()" se debe de colocar el
+elemento del selector que se desea seleccionar para que se pueda indentificar ya que en la hoja de HTML
+se tiene con clases es: class="list" --> .list  y con id: id="btn" --> #btn
 
-
-
-
+.querySelector() 
 
 
 NOTA:
