@@ -3910,6 +3910,38 @@ Los métodos:
 Hacen acciones
 SIEMPRE usan ()
 
+.click()
+👉 Simula un clic
+
+element.click();
+Es como si el usuario hiciera clic con el mouse.
+
+
+.appendChild()
+👉 Agrega un elemento hijo
+
+padre.appendChild(hijo);
+
+
+.setAttribute()
+👉 Cambia o agrega un atributo HTML
+
+element.setAttribute("class", "titulo");
+
+
+Resumen clave 
+El DOM es un árbol
+document es la raíz
+Propiedades → NO llevan ()
+Métodos → SI llevan ()
+
+JS puede:
+        leer
+        cambiar
+        estilizar
+        interactuar con el HTML
+
+
 
 
 
