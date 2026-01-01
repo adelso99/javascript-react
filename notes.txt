@@ -3869,7 +3869,14 @@ VM1714:1 Uncaught SyntaxError: Unexpected token '{'Understand this error
 document.querySelector("input").click();
 
 
+.innerHTML
+👉 Contenido interno del elemento
 
+Ejemplo:
+elementoh1.innerHTML = "Hola JS";
+
+Cambia el texto que está dentro del <h1>
+El HTML sigue existiendo, solo cambia el contenido
 
 
 
