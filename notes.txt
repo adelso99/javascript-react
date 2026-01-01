@@ -3957,6 +3957,46 @@ document.firstElementChild.lastElementChild.querySelector("ul").lastElementChild
 
 
 
+-----------------------Video 117 Seleccionar elementos HTML con Javascript----------------------
+
+cuando se tiene un elemento que se plural(2 o mas) normalmente se recupera un array "Elements"
+.getElementsByTagName
+
+document.getElementsByTagName("li")[2].style.color = "blue";
+
+  <body>
+    <ul>
+      <li class="list">
+        <a href="https://www.google.com">Google</a>
+      </li>
+      <li class="list">Second</li>
+      <li class="list">Third</li> <!--Este es el que cambia a color Azul porque se seleccion index [2]-->  
+    </ul>
+  </body>
+
+
+.getElementsByClassName
+document.getElementsByClassName("btn");
+HTMLCollection [button.btn]
+
+  <body>
+
+    <button class="btn" >Click Me</button>
+
+  </body>
+
+
+cuando se tiene un elemento que se singular(1) normalmente se recupera un "Element"
+.getElementById  // si se fija es ma ecato tambien porque en una pagina web solo debe exitir un element con el mismo ID
+
+
+
+
+
+
+
+
+
 NOTA:
 
 
