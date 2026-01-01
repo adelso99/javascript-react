@@ -3943,6 +3943,18 @@ JS puede:
 
 
 
+Ejercicio 1:
+var tres = document.firstElementChild.lastElementChild.lastElementChild.lastElementChild;
+undefined
+tres;
+<li class=​"list">​…​</li>​::marker​"Third"</li>​
+tres.innerHTML = "Texto Cambiado";
+'Texto Cambiado'
+
+Solucion 2:
+document.firstElementChild.lastElementChild.querySelector("ul").lastElementChild.innerHTML = "Texto Cambiado";
+
+
 
 
 NOTA:
