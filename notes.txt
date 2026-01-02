@@ -3957,6 +3957,8 @@ document.firstElementChild.lastElementChild.querySelector("ul").lastElementChild
 
 
 
+
+
 -----------------------Video 117 Seleccionar elementos HTML con Javascript----------------------
 
 cuando se tiene un elemento que se plural(2 o mas) normalmente se recupera un array "Elements"
