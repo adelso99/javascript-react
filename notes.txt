@@ -4008,6 +4008,9 @@ se tiene con clases es: class="list" --> .list  y con id: id="btn" --> #btn
 .querySelector() 
 
 
+
+
+
 NOTA:
 
 
