@@ -4215,11 +4215,23 @@ document.querySelector(".btn").style.backgroundColor = "yellow";
 
 -----------------------Video 119 La separación de preocupaciones: estructura vs. estilo vs. comportamiento----------------------
 
+classList
+con esta fomrma podemos agregar clases o mover clases 
+agregar clases
 
+estilo css
+.invisible {
+  visibility: hidden;
+}
 
+document.querySelector("button").classList.add("invisible");  
+undefined
 
+  <body>
 
+    <button class="btn invisible" >Click Me</button>  //se agrega la clase invisible y el boton desaparece de la web
 
+  </body>
 
 
 
