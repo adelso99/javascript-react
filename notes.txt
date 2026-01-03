@@ -4182,8 +4182,13 @@ document.querySelector("li a").style.color = "blue";
 
 -----------------------Video 118 Manipulación y cambio de estilos de elementos HTML con Javascript----------------------
 
+uso de css en js pero es camelCase
 
+document.querySelector("h1").style.fontSize = "5rem";
+'5rem'  //vuelve el h1 mas grande letra
 
+document.querySelector("h1").style.color = "blue";
+'blue'  //cambia el color de letra a azul
 
 
 
