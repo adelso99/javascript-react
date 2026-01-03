@@ -4191,6 +4191,36 @@ document.querySelector("h1").style.color = "blue";
 'blue'  //cambia el color de letra a azul
 
 
+  <body>
+
+    <h1 id="title">Hello</h1>
+
+  </body>
+
+
+document.querySelector(".btn").style.backgroundColor = "yellow";
+'yellow'  ///cambai el color de fondo de nuestro boton
+
+  <body>
+
+    <button class="btn" >Click Me</button>
+
+  </body>
+
+
+
+
+
+
+
+-----------------------Video 119 La separación de preocupaciones: estructura vs. estilo vs. comportamiento----------------------
+
+
+
+
+
+
+
 
 
 
