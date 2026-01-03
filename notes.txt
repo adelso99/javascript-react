@@ -4010,11 +4010,23 @@ se tiene con clases es: class="list" --> .list  y con id: id="btn" --> #btn
 
 .querySelector() 
 
+document.querySelector("h1");
+<h1 id=​"title">​Hello​</h1>​   //delueve el h1
+document.querySelector("#title");
+<h1 id=​"title">​Hello​</h1>​       //devuelve el id de #title
+document.querySelector(".btn"); 
+<button class="btn" style="color: purple;">Click Me</button>  //devuelve la clase .btn
+
+ <body>
+
+    <h1 id="title">Hello</h1>
+
+    <button class="btn" >Click Me</button>
+
+  </body>
 
 
-
-Repasar el video de la Seccion
-
+esto tambien se puede combinar 
 
 
 
