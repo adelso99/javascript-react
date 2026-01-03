@@ -4029,12 +4029,42 @@ document.querySelector(".btn");
 esto tambien se puede combinar 
 
 
+document.querySelector("li a");
+<a href=​"https:​/​/​www.google.com">​Google​</a>​  //me devuelve el link de que esta en la lista
+
+  <body>
+
+    <a href="https://www.youtube.com">Youtube</a>
+
+    <ul id="list" >
+      <li class="list">
+        <a href="https://www.google.com">Google</a>  //<--- este link
+      </li>
+      <li class="list">Second</li>
+      <li class="list">Third</li> <!--Texto cambiado con js-->
+    </ul>
+
+  </body>
 
 
 
+document.querySelector("a");
+<a href="https://www.youtube.com">Youtube</a>  // me delueve el link que encuentre primero
 
 
+  <body>
 
+    <a href="https://www.youtube.com">Youtube</a> //<--- este link
+
+    <ul id="list" >
+      <li class="list">
+        <a href="https://www.google.com">Google</a>  
+      </li>
+      <li class="list">Second</li>
+      <li class="list">Third</li> <!--Texto cambiado con js-->
+    </ul>
+
+  </body>
 
 
 
