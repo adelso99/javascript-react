@@ -4217,7 +4217,7 @@ document.querySelector(".btn").style.backgroundColor = "yellow";
 
 classList
 con esta fomrma podemos agregar clases o mover clases 
-agregar clases
+agregar clases con ".add"
 
 estilo css
 .invisible {
@@ -4232,6 +4232,65 @@ undefined
     <button class="btn invisible" >Click Me</button>  //se agrega la clase invisible y el boton desaparece de la web
 
   </body>
+
+
+como tambien se puede remover o quitar
+quitar clases con ".remove"
+document.querySelector("button").classList.remove("invisible");
+undefined
+
+  <body>
+
+    <button class="btn" >Click Me</button>  //se elimina la clase invisible y el boton aparece normal de la web
+
+  </body>
+
+pero la hoja de estilos de css esta igual ya que eso fue solo con JavaScript
+
+
+
+para alternar se uso el metodo "toggle"
+esta indica que si la clase esta aplicada entonces quitala  clase === on --> of
+pero si clase no esta aplicada entonces aplicada            clase === of --> on
+
+document.querySelector("button").classList.toggle("invisible");
+true                                                            // clase aplicada
+document.querySelector("button").classList.toggle("invisible");
+false                                                           // clase quitada
+
+
+Ejercicio crear un estilo de 10 rem y aplicarlo al h1
+.huge {
+  font-size: 10rem;
+}
+
+
+document.querySelector("#title").classList.toggle("huge");
+true
+document.querySelector("#title").classList.toggle("huge");
+false
+
+
+  <body>
+
+    <h1 id="title">Hello</h1>  // aca se aplicara el stilo segun toggle sea: on/of
+
+  </body>
+
+
+
+
+
+
+
+
+-----------------------Video 120 Manipulación de texto y la propiedad de contenido de texto----------------------
+
+
+
+
+
+
 
 
 
