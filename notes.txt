@@ -4111,10 +4111,76 @@ document.querySelector("#list a");
   </body>
 
 
+para obtener todos los elementos que comparten la misma clase seria de esta forma
+con el metodo ".querySelectorAll" ya que este es plura(2 o mas) y el anterior singular(1)
+
+document.querySelectorAll("#list .item");
+NodeList(3) [li.item, li.item, li.item]
+0: li.item
+1: li.item                       //devuele todos las clase .item que tiene en la lista
+2: li.item
+length: 3
+[[Prototype]]: NodeList
+
+  <body>
+
+    <ul id="list" >
+
+      <li class="item">    
+        <a href="https://www.google.com">Google</a>  
+      </li> 
+      <li class="item">Second</li>                                 //estas 3 clases con son 3 li
+      <li class="item">Third</li> <!--Texto cambiado con js--> 
+    </ul>
+
+  </body>
+
+
+tambien para manipular algun elemento del index o indice se espcifica cual posicion del array 
+document.querySelectorAll("#list .item")[1].style.color = "red";  //se seleccion el 1 que es el 2
+'red'
+ 
+  <body>
+
+    <ul id="list" >
+
+      <li class="item">    
+        <a href="https://www.google.com">Google</a>  
+      </li> 
+      <li class="item">Second</li>                               //este se cambia a color rojo
+      <li class="item">Third</li> <!--Texto cambiado con js--> 
+    </ul>
+
+  </body>
+
+
+
+Ejericio cambio de color al link de la lista a verde:
+document.querySelector("#list a").style.color = "green";
+'green'
+
+  <body>
+
+    <ul id="list" >
+
+      <li class="item">    
+        <a href="https://www.google.com">Google</a>   //este se cambia a color a verde
+      </li> 
+      <li class="item">Second</li>                               
+      <li class="item">Third</li> <!--Texto cambiado con js--> 
+    </ul>
+
+  </body>
+
+solucion 2:
+document.querySelector("li a").style.color = "blue";
+'blue'
 
 
 
 
+
+-----------------------Video 118 Manipulación y cambio de estilos de elementos HTML con Javascript----------------------
 
 
 
