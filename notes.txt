@@ -3980,10 +3980,11 @@ document.getElementsByTagName("li")[2].style.color = "blue";
 .getElementsByClassName
 document.getElementsByClassName("btn");
 HTMLCollection [button.btn]
+document.getElementsByClassName("btn")[0].style.color = "purple";
 
   <body>
 
-    <button class="btn" >Click Me</button>
+    <button class="btn" >Click Me</button>  //cambia a color purpura
 
   </body>
 
