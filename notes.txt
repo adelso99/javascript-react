@@ -3725,7 +3725,7 @@ EJERCICIO CUMPLIDO CON EXITO :d
 
 
 
----------------------------------------SECCION 15 MODELO DE OBJETOS DE DOCUMENTOS (DOM)---------------------------------
+---------------------------------------SECCION 16 MODELO DE OBJETOS DE DOCUMENTOS (DOM)---------------------------------
 -----------------------Video 114 Agregar Javascript a sitios web----------------------
 
 FORMAS DE INCORPORAR JS EN MI WEB
@@ -4378,6 +4378,32 @@ undefined                                                             //por lo q
     <a href="https://www.youtube.com">Youtube</a>  //este href es el que se estuvo manipulando
   
   </body>
+
+
+
+
+
+
+
+
+
+
+
+
+---------------------------------------SECCION 17 DESAFIO DE NIVEL JEFE -1 EL JUEGO DE DADOS- ---------------------------------
+-----------------------Video 123 Desafío: El desafío de Dice----------------------
+
+
+Desafio de dados 
+
+
+-----------------------Video 124 Desafío Dicee Paso 0: Descarga el proyecto Skeleton----------------------
+
+
+
+
+
+
 
 
 
