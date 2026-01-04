@@ -4343,7 +4343,16 @@ estos son
 src
 href
 type
-class
+class  --> para manipular clases es mejor .classList
+
+Un atributo es información extra que se le da a una etiqueta HTML.
+Ejemplos comunes:
+
+<a href="https://www.youtube.com">Youtube</a>
+<img src="foto.jpg">
+<input type="text">
+<button class="btn">
+
 
 con el metodo ".atributes"
 document.querySelector("a");
@@ -4355,16 +4364,20 @@ href: href
 length: 1
 [[Prototype]]: NamedNodeMap
 
-para recuperar un atributo se hace con el metod ".getAttribute"
+para recuperar un atributo se hace con el metod ".getAttribute" es Para leer el valor de un atributo específico.
 document.querySelector("a").getAttribute("href");
 'https://www.youtube.com'                      //devuele el link del href
 
 
-para poner cambiar un atributo se usa el metodo de ".setAttribute"
+para poner cambiar un atributo se usa el metodo de ".setAttribute" es Para crear o modificar un atributo.
 document.querySelector("a").setAttribute("href", "https://www.crunchyroll.com");
 undefined                                                             //por lo que el link del href ha sido cambiado de youtube --> crunchyroll
 
+  <body>
 
+    <a href="https://www.youtube.com">Youtube</a>  //este href es el que se estuvo manipulando
+  
+  </body>
 
 
 
