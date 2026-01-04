@@ -4280,11 +4280,65 @@ false
 
 
 
+Qué es classList?
+document.querySelector("button").classList
+
+classList es un objeto especial que:
+Lee las clases
+Agrega clases
+Quita clases
+Alterna clases
+
+📦 Piensa que las clases son interruptores (on / off)
+
+
+
 
 
 
 
 -----------------------Video 120 Manipulación de texto y la propiedad de contenido de texto----------------------
+
+manipulacion de texto con ".innerHTML"
+pero tambien se puede hacer con ".textContent"
+
+document.querySelector("#title").innerHTML = ("Hola como vas :)");
+'Hola como vas :)'
+
+document.querySelector("#title").textContent = ("Hola como va todo");
+'Hola como va todo'
+
+
+
+pero cuando exite otra etiqueta dentro de la clase que se esta llamando se ve asi
+document.querySelector("#title").innerHTML;
+' <strong>Hello</strong> '                   //este devuele la etica tambien
+
+document.querySelector("#title").textContent;
+' Hello '                                    //este solo devuele el texto
+
+
+pero cuando queremos agregar una etiqueta html directamente usando js
+document.querySelector("#title").innerHTML = "<em>Hola como va todo</em>";
+'<em>Hola como va todo</em>'                                                //muestra el texto con estilo aplicado en la web
+
+document.querySelector("#title").textContent = "<em>Hola como vasss</em>";
+'<em>Hola como vasss</em>'                                                //muestra el texto y las eticas <em> sin el estilo aplicado en la web
+
+
+Regla mental sencilla
+
+🟢 ¿Solo texto?
+👉 usa .textContent
+
+🟡 ¿Necesitas HTML?
+👉 usa .innerHTML
+
+
+
+
+
+-----------------------Video 121 Manipulación de atributos de elementos HTML----------------------
 
 
 
@@ -4298,7 +4352,6 @@ false
 
 
 NOTA:
-
 
 Repasar:
 * https://learngitbranching.js.org/?locale=es_AR
