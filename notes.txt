@@ -4339,12 +4339,30 @@ Regla mental sencilla
 
 
 -----------------------Video 121 Manipulación de atributos de elementos HTML----------------------
+estos son
+src
+href
+type
+class
+
+con el metodo ".atributes"
+document.querySelector("a");
+
+document.querySelector("a").attributes;
+NamedNodeMap {0: href, href: href, length: 1}
+0: href                                        //devuele el atributo de href
+href: href
+length: 1
+[[Prototype]]: NamedNodeMap
+
+para recuperar un atributo se hace con el metod ".getAttribute"
+document.querySelector("a").getAttribute("href");
+'https://www.youtube.com'                      //devuele el link del href
 
 
-
-
-
-
+para poner cambiar un atributo se usa el metodo de ".setAttribute"
+document.querySelector("a").setAttribute("href", "https://www.crunchyroll.com");
+undefined                                                             //por lo que el link del href ha sido cambiado de youtube --> crunchyroll
 
 
 
