@@ -4491,6 +4491,24 @@ clickBoton	                              Función que se ejecuta
 alert()	                                  Muestra mensaje
 
 
+
+
+
+document.querySelector("button").addEventListener("click", clickBoton);  // la funcion "clickBoton", va sin parentesis para que no sea directo el 
+                                                                           el llamado de la funcion si, no que unicamente cuando se haga click
+
+function clickBoton(){
+    alert("Has realizado un click: ");
+}
+
+esto tambien se puede hace como una funcion anonima que es cuando no se le coloca nombre a la funcion y va directo al evento
+FUNCION ANONIMA
+document.querySelector("button").addEventListener("click", function (){  //la funcion sin nombre y directo
+    alert("Has realizado un click: ");
+});
+
+
+
 NOTA:
 
 Repasar:
