@@ -4479,7 +4479,7 @@ else {
 
 
 ---------------------------------------SECCION 18 MANIPULACION AVANZADA DEL JS Y DOM- ---------------------------------
------------------------Video 134 Lo que haremos: Bateria----------------------
+-----------------------Video 136 Agregar oyentes de eventos a un botón----------------------
 
 
 
