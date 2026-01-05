@@ -4509,7 +4509,7 @@ document.querySelector("button").addEventListener("click", function (){  //la fu
 
 
 
-repasar mas bucle while y for
+repasar mas bucle while, for y arrays
 
 
 
