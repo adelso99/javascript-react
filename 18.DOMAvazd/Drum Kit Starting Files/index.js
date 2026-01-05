@@ -14,15 +14,15 @@ for (var i = 0; i < datoBotones; i++){
 }
 
 
+
 /*
-Solucion 1:
 document.querySelector(".set").addEventListener("click", clickBoton);
 
 function clickBoton(){
     alert("Has realizado un click: ");
 }
-
 */
+
 
 
 /*
