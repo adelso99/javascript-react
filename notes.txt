@@ -4481,7 +4481,14 @@ else {
 ---------------------------------------SECCION 18 MANIPULACION AVANZADA DEL JS Y DOM- ---------------------------------
 -----------------------Video 136 Agregar oyentes de eventos a un botón----------------------
 
-
+RESUMEN CLARO
+Parte	                                  Qué hace
+document	                              Accede al HTML
+querySelector("button")                	  Devuelve SOLO el primer botón
+addEventListener	                      Escucha eventos
+"click"	                                  Evento de mouse
+clickBoton	                              Función que se ejecuta
+alert()	                                  Muestra mensaje
 
 
 NOTA:
