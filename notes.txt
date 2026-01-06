@@ -4579,25 +4579,43 @@ function sum(n1, n2){
     return n1 + n2;
 }
 
+function rest(n1, n2){
+    return n1 - n2;
+}
+
 function multi(n1, n2){
     return n1 * n2;
 }
 
+function div(n1, n2){
+    return n1 / n2;
+}
+
 
 function calculadora(n1, n2, resultado){
-    return  resultado(n1 * n2);
+    return  resultado(n1, n2);
 }
 
 /* se llama a la funcion calculadora se ingresan los paramentos de los 2 numeros y se asigan el tercer
 parametro para que ese sea la desicion si es suma o es resta, de ahi ya es un llamado de funciones
 */
 
-calculadora(2, 3, sum) /* sera para llamar a la suma con "sum" */
-calculadora(2, 3, sum) /* sera para llamar a la multiplicacion con "multi" */
+calculadora(2, 3, sum); /* sera para llamar a la suma con "sum" */
+calculadora(5, 1, rest);/* sera para llamar a la resta con "rest" */
+calculadora(5, 3, multi); /* sera para llamar a la multiplicacion con "multi" */
+calculadora(10, 5, div); /* sera para llamar a la division con "div" */
 
 
 
 en el navegador web esta la funcion "debugger;" que sirve para depurar codigo o para ver que hace nuestro codigo paso a paso
+
+esto de tomar otras funciones como entradas es conocido como
+FUNCIONES DE ORDEN SUPERIOR
+
+
+
+
+
 
 
 
