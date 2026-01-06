@@ -1,5 +1,14 @@
 
-alert("Hola");
+var dato = document.querySelectorAll(".drum").length;
+
+for(var i = 0; i < dato; i++){
+    document.querySelectorAll(".drum")[i].addEventListener("click", clickBoton); //aca se va estar cargando cada boton del index del var dato
+}
+
+
+function clickBoton(){
+    alert("Has hecho un Click");
+}
 
 
 
