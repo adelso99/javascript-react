@@ -4575,7 +4575,29 @@ La función = se ejecuta solo cuando hay click.
 
 -----------------------Video 137 Funciones de orden superior y paso de funciones como argumentos----------------------
 
+function sum(n1, n2){
+    return n1 + n2;
+}
 
+function multi(n1, n2){
+    return n1 * n2;
+}
+
+
+function calculadora(n1, n2, resultado){
+    return  resultado(n1 * n2);
+}
+
+/* se llama a la funcion calculadora se ingresan los paramentos de los 2 numeros y se asigan el tercer
+parametro para que ese sea la desicion si es suma o es resta, de ahi ya es un llamado de funciones
+*/
+
+calculadora(2, 3, sum) /* sera para llamar a la suma con "sum" */
+calculadora(2, 3, sum) /* sera para llamar a la multiplicacion con "multi" */
+
+
+
+en el navegador web esta la funcion "debugger;" que sirve para depurar codigo o para ver que hace nuestro codigo paso a paso
 
 
 
