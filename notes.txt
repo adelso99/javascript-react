@@ -4483,6 +4483,9 @@ else {
 
 el metodo ".addEventListener" es una funcion de oyente
 
+addEventListener significa literalmente:
+“Escucha cuando pase algo y entonces haz algo”
+
 
 RESUMEN CLARO
 Parte	                                  Qué hace
@@ -4551,6 +4554,8 @@ document.querySelectorAll(".drum")[4].addEventListener("click", clickBoton); <--
 document.querySelectorAll(".drum")[5].addEventListener("click", clickBoton); <-- b6
 document.querySelectorAll(".drum")[6].addEventListener("click", clickBoton); <-- b7
 */
+
+
 
 
 
