@@ -4558,6 +4558,23 @@ document.querySelectorAll(".drum")[6].addEventListener("click", clickBoton); <--
 
 
 
+Resumen ultra claro
+
+addEventListener = pone un “sensor”.
+"click" = cuándo se activa el sensor.
+clickBoton = qué se ejecuta cuando se activa.
+El for = instala sensores en todos los botones.
+El navegador = detecta cuál botón se tocó.
+La función = se ejecuta solo cuando hay click.
+
+
+
+
+
+
+
+-----------------------Video 137 Funciones de orden superior y paso de funciones como argumentos----------------------
+
 
 
 
