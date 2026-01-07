@@ -4622,9 +4622,12 @@ Solucion Correcta :D
 
 -----------------------Video 139. Cómo reproducir sonidos en un sitio web----------------------
 
+para reproducir un sonido en js se realiza lo siguiente
+con el metodo de "new Audio" y despues se reproduce con ".play()"
 
-
-
+    var audio = new Audio("./sounds/tom-1.mp3");
+    
+    audio.play();
 
 
 
