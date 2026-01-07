@@ -4629,7 +4629,11 @@ con el metodo de "new Audio" y despues se reproduce con ".play()"
     
     audio.play();
 
+funcion "this"
+sirve para verificar que botom fue disparado del listener del evento
 
+
+verificacion de los colores 
 
 
 NOTA:
