@@ -4631,6 +4631,8 @@ con el metodo de "new Audio("ruta")" y despues se reproduce con ".play()" le dic
 
 funcion "this"
 sirve para verificar que botom fue disparado del listener del evento
+Qué es this aquí?
+👉 this es el botón exacto que el usuario tocó.
 
 
 verificacion de los colores 
