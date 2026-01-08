@@ -4634,6 +4634,19 @@ sirve para verificar que botom fue disparado del listener del evento
 
 
 verificacion de los colores 
+con esto se puede  cambiar el color en el momento de que haga click el usuario
+
+var dato = document.querySelectorAll(".drum").length;
+
+
+for(var i = 0; i < dato; i++){
+    document.querySelectorAll(".drum")[i].addEventListener("click", function(){
+
+        console.log(this.style.color = "white");  // esta de aca
+
+    }); 
+}
+
 
 
 NOTA:
