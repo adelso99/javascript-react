@@ -4634,6 +4634,15 @@ sirve para verificar que botom fue disparado del listener del evento
 Qué es this aquí?
 👉 this es el botón exacto que el usuario tocó.
 
+Si tienes estos botones:
+<button class="drum">w</button>
+<button class="drum">a</button>
+<button class="drum">s</button>
+
+
+Y haces click en el botón s, entonces:
+this === <button class="drum">s</button>
+
 
 verificacion de los colores 
 con esto se puede  cambiar el color en el momento de que haga click el usuario
