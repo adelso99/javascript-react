@@ -4659,6 +4659,20 @@ for(var i = 0; i < dato; i++){
 }
 
 
+Resumen 
+Parte	                                Qué hace
+querySelectorAll(".drum")	            Busca los botones
+.length	                                Cuenta cuántos hay
+for	                                    Instala eventos en todos
+addEventListener	                    Escucha el click
+this	                                Es el botón presionado
+.style.color	                        Cambia su color
+console.log()	                        Muestra info
+
+
+
+
+
 
 NOTA:
 
