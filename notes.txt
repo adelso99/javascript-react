@@ -4708,13 +4708,52 @@ switch (key) {
     // código si no coincide con ningún case
 }
 
+switch (key)
+Aquí va la variable que quieres evaluar.
+
+case "value": //el valor de la variable va entre comillas ""
+Significa: ejemplo
+caso "w":
+Si botonPresionado === "w" entonces ejecuta lo de abajo.
+
+break;
+Es súper importante.
+Le dice a JavaScript:
+“Ya terminé este caso, sal del switch”.
+Si no pones break, JS sigue ejecutando los demás casos aunque no coincidan
+
+
+default:
+Es como el else de los if.
+Se ejecuta si ningún case coincide.
+
+
+Ejemplo 1:
+case "w":
+  var crash = new Audio("./sounds/crash.mp3");
+  crash.play();
+break;
+  ||
+  \/
+Si presionaste el botón w:
+Se crea el sonido crash.mp3
+Se reproduce
+break → sale del switch
 
 
 
+Resumen 
+Lugar	                            Para qué sirve
+break en case	            Sale cuando ese caso se ejecuta
+break en default	        Sale cuando ningún caso coincidió
+switch	                    Decide qué camino tomar
+case	                    Cada opción
+default	                    Plan B
 
 
-
-
+🧠 Frase para que no se te olvide
+Cada case --> es un camino,
+cada break --> es la puerta de salida 🚪
 
 
 NOTA:
