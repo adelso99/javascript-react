@@ -5,7 +5,7 @@ var dato = document.querySelectorAll(".drum").length;
 for(var i = 0; i < dato; i++){
     document.querySelectorAll(".drum")[i].addEventListener("click", function(){
 
-        console.log(this.style.color = "white");
+        this.style.color = "blue";
 
     }); 
 }

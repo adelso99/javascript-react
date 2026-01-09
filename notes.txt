@@ -4674,6 +4674,16 @@ console.log()	                        Muestra info
 
 
 
+.innerHTML                              La letra del botón
+
+
+
+
+
+
+
+
+
 NOTA:
 
 Repasar:
