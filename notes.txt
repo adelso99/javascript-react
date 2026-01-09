@@ -4688,6 +4688,7 @@ Comparar una sola variable con muchos valores posibles
 y ejecutar una acción diferente según el valor.
 
 para no usar tanta sentencias if y escribir tanto codigo exite el metodo "switch"
+Ejemplo 1:
         switch (key) {
             case value: /*veritfica que sea verdad*/
                 
@@ -4697,8 +4698,15 @@ para no usar tanta sentencias if y escribir tanto codigo exite el metodo "switch
                 break;
         }
 
+Eejemplo 2:
+switch (key) {
+  case value:
+    // código si key === value
+    break;
 
-
+  default:
+    // código si no coincide con ningún case
+}
 
 
 
