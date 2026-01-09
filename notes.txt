@@ -4682,7 +4682,15 @@ console.log()	                        Muestra info
 
 
 -----------------------Video 140 Cómo usar sentencias Switch en Javascript----------------------
-
+para no usar tanta sentencias if y escribir tanto codigo exite el metodo "switch"
+        switch (key) {
+            case value: /*veritfica que sea verdad*/
+                
+                break; /*salida*/
+        
+            default:
+                break;
+        }
 
 
 
