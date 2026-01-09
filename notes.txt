@@ -4682,6 +4682,11 @@ console.log()	                        Muestra info
 
 
 -----------------------Video 140 Cómo usar sentencias Switch en Javascript----------------------
+
+switch es una estructura que sirve para:
+Comparar una sola variable con muchos valores posibles
+y ejecutar una acción diferente según el valor.
+
 para no usar tanta sentencias if y escribir tanto codigo exite el metodo "switch"
         switch (key) {
             case value: /*veritfica que sea verdad*/
