@@ -1,4 +1,5 @@
 
+
 var dato = document.querySelectorAll(".drum").length;
 
 
