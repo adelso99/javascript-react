@@ -16,6 +16,7 @@ footer {
   font-family: sans-serif;
 }
 
+
 .w {
   background-image: url(./images/crash.png);
   background-size: contain;
@@ -51,6 +52,7 @@ footer {
   background-repeat: no-repeat;
 }
 
+
 .k {
   background-image: url(./images/tom3.png);
   background-size: contain;
@@ -64,6 +66,7 @@ footer {
   background-position: center;
   background-repeat: no-repeat;
 }
+
 
 .set {
   margin: 10% auto;
