@@ -4813,8 +4813,18 @@ alert("Hola soy " +houseKeeper1.nombre+" y "+houseKeeper1.tecnicaLimpieza+" teng
 
 
 Funcion Constructora
+el nombre de la funcion tiene que ir con inicial MAYUSCULA por eso la funcion se llama "Empleado"
 
+function Empleado (nombre, edad, permisoTrabajo, lenguajes) {  
 
+    this.nombre = nombre;
+    this.edad = edad;
+    this.permisoTrabajo = permisoTrabajo;
+    this.lenguajes = lenguajes;
+ }
+
+inicializar objeto
+var emepleado1 = new Empleado("Adelso", 19, true, ["Español", "Ingles"]); //se ve es msa corto para hacer uso con ello en la funcion
 
 
 
