@@ -4828,13 +4828,32 @@ var emepleado1 = new Empleado("Adelso", 19, true, ["Español", "Ingles"]); //se 
                  / \
                   |
 la unica diferencia aca para el llamado y uso de la funcion "Empleado" es la palabra al princio que es "new"
+y que la funcion va en MAYUSCULA por eso empieza con "E" no "e"
+
+
+
+Ejemplo 2:
+function AmaLlaves (nombre, edad, experiencia, idiomas) {
+   this.nombre = nombre; 
+   this.edad = edad;
+   this.experiencia = experiencia;
+   this.idiomas = idiomas;
+}
+
+var empleada1 = new AmaLlaves ("Laura", 23, 3, ["Español"]);
+
+por consola
+console.log(empleada1.nombre);
+
+Laura
+
+
 
 
 
 en variables:
 [] ---> Para Arrays o matrices
 {} ---> Para Objetos
-
 
 
 
