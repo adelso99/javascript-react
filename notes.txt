@@ -4770,10 +4770,15 @@ cada break --> es la puerta de salida 🚪
 -----------------------Video 141 Una comprensión más profunda de los objetos de Javascript----------------------
 
 Objetos en JavaScript
+Un objeto es una forma de guardar muchos datos relacionados en una sola variable.
 
-var nommbrevar = {
-    //aca va el conjuto de objetos y esto se usa con llaves
-}
+Estructura de un objeto
+var nombreObjeto = {
+  propiedad: valor,
+  propiedad: valor,
+  propiedad: valor
+};
+
 
 ejemplo:
 var empleado1 = {
@@ -4782,6 +4787,7 @@ var empleado1 = {
     permisoTrabajo: true,
     lenguajes: ["español", "Ingles"]
  }
+ 
 
  alert("Hola, mi nombre es "+empleado1.nombre); //se usa el "." para acceder a la propiedad del objeto en este caso es "nombre"
                     ||
@@ -4789,6 +4795,11 @@ var empleado1 = {
                     ||
                     \/
         Hola, mi nombre es Adelso
+
+Se usa el punto . lo cual dice --> Del objeto empleado1, dame la propiedad nombre.
+
+
+
 
 
 ejemplo 2:
@@ -4812,9 +4823,12 @@ alert("Hola soy " +houseKeeper1.nombre+" y "+houseKeeper1.tecnicaLimpieza+" teng
 
 
 
+
+
 Funcion Constructora
 el nombre de la funcion tiene que ir con inicial MAYUSCULA por eso la funcion se llama "Empleado"
 
+Ejemplo 1:
 function Empleado (nombre, edad, permisoTrabajo, lenguajes) {  
 
     this.nombre = nombre;
@@ -4822,6 +4836,11 @@ function Empleado (nombre, edad, permisoTrabajo, lenguajes) {
     this.permisoTrabajo = permisoTrabajo;
     this.lenguajes = lenguajes;
  }
+
+ Qué significa esto?
+Empleado --→ es un molde
+this --→ representa el objeto que se va a crear
+Cada this.propiedad --→ se guarda dentro del nuevo objeto
 
 inicializar objeto
 var emepleado1 = new Empleado("Adelso", 19, true, ["Español", "Ingles"]); //se ve es msa corto para hacer uso con ello en la funcion
