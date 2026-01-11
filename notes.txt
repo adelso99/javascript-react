@@ -4783,12 +4783,39 @@ var empleado1 = {
     lenguajes: ["español", "Ingles"]
  }
 
- alert("Hola, mi nombre es "+empleado1.nombre);
+ alert("Hola, mi nombre es "+empleado1.nombre); //se usa el "." para acceder a la propiedad del objeto en este caso es "nombre"
+                    ||
+                    ||
+                    ||
+                    \/
+        Hola, mi nombre es Adelso
+
+
+ejemplo 2:
+var houseKeeper1 = {
+    nombre: "Laura", 
+    edad: 23,
+    experiencia: "3 años",
+    tecnicaLimpieza: "si", 
+    lavanderia: "no", 
+    ordenamiento: "si", 
+    huesped: "no",
+    idiomas: "Español"
+};
+
+alert("Hola soy " +houseKeeper1.nombre+" y "+houseKeeper1.tecnicaLimpieza+" tengo tecnicas de limpieza");
+                    ||
+                    ||
+                    ||
+                    \/
+        Hola soy Laura y si tengo tecnicas de limpieza
 
 
 
 
- 
+
+
+
 
 
 en variables:
