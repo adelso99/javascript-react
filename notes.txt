@@ -4812,6 +4812,7 @@ alert("Hola soy " +houseKeeper1.nombre+" y "+houseKeeper1.tecnicaLimpieza+" teng
 
 
 
+Funcion Constructora
 
 
 
