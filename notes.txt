@@ -4771,12 +4771,29 @@ cada break --> es la puerta de salida 🚪
 
 Objetos en JavaScript
 
+var nommbrevar = {
+    //aca va el conjuto de objetos y esto se usa con llaves
+}
+
+ejemplo:
+var empleado1 = {
+    nombre: "Adelso",
+    edad: 18,
+    permisoTrabajo: true,
+    lenguajes: ["español", "Ingles"]
+ }
+
+ alert("Hola, mi nombre es "+empleado1.nombre);
 
 
 
 
+ 
 
 
+en variables:
+[] ---> Para Arrays o matrices
+{} ---> Para Objetos
 
 
 

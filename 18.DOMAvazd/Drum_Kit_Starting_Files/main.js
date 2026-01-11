@@ -54,5 +54,12 @@ for(var i = 0; i < dato; i++){
 
 
 
+ var empleado1 = {
+    nombre: "Adelso",
+    edad: 18,
+    permisoTrabajo: true,
+    lenguajes: ["español", "Ingles"]
+ }
 
+ alert("Hola, mi nombre es "+empleado1.nombre);
 
