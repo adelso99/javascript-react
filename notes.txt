@@ -4825,13 +4825,19 @@ function Empleado (nombre, edad, permisoTrabajo, lenguajes) {
 
 inicializar objeto
 var emepleado1 = new Empleado("Adelso", 19, true, ["Español", "Ingles"]); //se ve es msa corto para hacer uso con ello en la funcion
-
+                 / \
+                  |
+la unica diferencia aca para el llamado y uso de la funcion "Empleado" es la palabra al princio que es "new"
 
 
 
 en variables:
 [] ---> Para Arrays o matrices
 {} ---> Para Objetos
+
+
+
+
 
 
 
