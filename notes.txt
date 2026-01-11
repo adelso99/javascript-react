@@ -4769,6 +4769,8 @@ cada break --> es la puerta de salida 🚪
 
 -----------------------Video 141 Una comprensión más profunda de los objetos de Javascript----------------------
 
+Objetos en JavaScript
+
 
 
 
