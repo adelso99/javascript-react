@@ -55,16 +55,12 @@ for(var i = 0; i < dato; i++){
 
 
 
-function AmaLlaves (nombre, edad, experiencia, idiomas) {
-    this.nombre = nombre; 
-    this.edad = edad;
-    this.experiencia = experiencia;
-    this.idiomas = idiomas;
-    this.hacerLimpieza = function () {
-        alert("Limpieza en Curso");
+function Audio (ubicacion){
+    this.ubicacion = ubicacion;
+    this.play = function () {
+        /*Acceda al hardware de audio.
+        Verifique que el archivo en la ubicación existe.
+        Verifique que el archivo en la ubicación es un archivo de sonido.
+        Reproduzca el archivo en la ubicación.*/
     }
- }
-
- var emepleada1 = new AmaLlaves("Sofi", 23, 4, ["Español"]);
-
- emepleada1.hacerLimpieza(); /*con eso se llama al metodo que en este caso es la funcion que da un alert que diga "Limpieza en Curso"*/
+}
