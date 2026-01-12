@@ -4800,8 +4800,6 @@ Se usa el punto . lo cual dice --> Del objeto empleado1, dame la propiedad nombr
 
 
 
-
-
 ejemplo 2:
 var houseKeeper1 = {
     nombre: "Laura", 
@@ -4820,8 +4818,6 @@ alert("Hola soy " +houseKeeper1.nombre+" y "+houseKeeper1.tecnicaLimpieza+" teng
                     ||
                     \/
         Hola soy Laura y si tengo tecnicas de limpieza
-
-
 
 
 
@@ -4889,6 +4885,15 @@ Cada etiqueta tiene un valor.
 Constructor =
 Una fábrica de cajas 🏭
 Hace muchas cajas iguales pero con datos diferentes.
+
+
+
+
+
+-----------------------Video 142 Objetos, sus métodos y la notación de puntos----------------------
+
+
+
 
 
 
