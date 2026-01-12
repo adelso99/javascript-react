@@ -4893,6 +4893,11 @@ Hace muchas cajas iguales pero con datos diferentes.
 -----------------------Video 142 Objetos, sus métodos y la notación de puntos----------------------
 
 Metodos
+Un método es simplemente:
+👉 una función que vive dentro de un objeto.
+Función sola → función normal
+Función dentro de un objeto → método
+
  ejemplo :
 
  function moveSuitcase {
@@ -4908,7 +4913,7 @@ var empleado1 = {
     edad: 18,
     permisoTrabajo: true,
     lenguajes: ["español", "Ingles"],
-    moveSuitcase: function () {             //Funcion anonima que esta asociada con un objeto  
+    moveSuitcase: function () {             //Funcion anonima que esta asociada con un objeto lo que es conocido como metodo  
         alert("¿Puedo llevarme tu maleta?");
         pickUpSuitcase(); //recoger Maleta 
         move(); //mover
@@ -4929,7 +4934,7 @@ function Empleado (nombre, edad, permisoTrabajo, lenguajes) {
     this.edad = edad;
     this.permisoTrabajo = permisoTrabajo;
     this.lenguajes = lenguajes;
-    this.moveSuitcase = function () {             //Funcion anonima que esta asociada con un objeto  
+    this.moveSuitcase = function () {             //Funcion anonima que esta asociada con un objeto lo que es conocido como metodo  
         alert("¿Puedo llevarme tu maleta?");
         pickUpSuitcase(); //recoger Maleta 
         move(); //mover
