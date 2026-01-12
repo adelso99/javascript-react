@@ -53,8 +53,18 @@ for(var i = 0; i < dato; i++){
 }
 
 
-function moveSuitcase {
-    alert("¿Puedo llevarme tu maleta?");
-    pickUpSuitcase(); /*recoger Maleta */
-    move(); /*mover*/
-} 
+
+
+function AmaLlaves (nombre, edad, experiencia, idiomas) {
+    this.nombre = nombre; 
+    this.edad = edad;
+    this.experiencia = experiencia;
+    this.idiomas = idiomas;
+    this.hacerLimpieza = function () {
+        alert("Limpieza en Curso");
+    }
+ }
+
+ var emepleada1 = new AmaLlaves("Sofi", 23, 4, ["Español"]);
+
+ emepleada1.hacerLimpieza(); /*con eso se llama al metodo que en este caso es la funcion que da un alert que diga "Limpieza en Curso"*/

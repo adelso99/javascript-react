@@ -4893,6 +4893,76 @@ Hace muchas cajas iguales pero con datos diferentes.
 -----------------------Video 142 Objetos, sus métodos y la notación de puntos----------------------
 
 Metodos
+ ejemplo :
+
+ function moveSuitcase {
+    alert("¿Puedo llevarme tu maleta?");
+    pickUpSuitcase(); /*recoger Maleta */
+    move(); /*mover*/
+} 
+
+
+ejemplo de nuestro objeto con metodo que por ahora es un funcion anonima:
+var empleado1 = {
+    nombre: "Adelso",
+    edad: 18,
+    permisoTrabajo: true,
+    lenguajes: ["español", "Ingles"],
+    moveSuitcase: function () {             //Funcion anonima que esta asociada con un objeto  
+        alert("¿Puedo llevarme tu maleta?");
+        pickUpSuitcase(); //recoger Maleta 
+        move(); //mover
+    } 
+ }
+
+
+empleado1.moveSuitcase(); /*con eso se llama al metodo que en este caso es la funcion
+                           para llamar un metodo se usan parentesis por eso ".moveSuitcase();"
+                           si fuera una propiedad seria "empleado1.nombre;" sin parentesis */
+
+
+
+ejemplo de nuestro metodo con una funcion constructora:
+function Empleado (nombre, edad, permisoTrabajo, lenguajes) {  
+
+    this.nombre = nombre;
+    this.edad = edad;
+    this.permisoTrabajo = permisoTrabajo;
+    this.lenguajes = lenguajes;
+    this.moveSuitcase = function () {             //Funcion anonima que esta asociada con un objeto  
+        alert("¿Puedo llevarme tu maleta?");
+        pickUpSuitcase(); //recoger Maleta 
+        move(); //mover
+    }
+ }
+
+ var emepleado1 = new Empleado("Adelso", 19, true, ["Español", "Ingles"]);
+
+empleado1.moveSuitcase(); /*con eso se llama al metodo que en este caso es la funcion
+                           para llamar un metodo se usan parentesis por eso ".moveSuitcase();"
+                           si fuera una propiedad seria "empleado1.nombre;" sin parentesis */
+
+
+Ejemplo 2:
+function AmaLlaves (nombre, edad, experiencia, idiomas) {
+    this.nombre = nombre; 
+    this.edad = edad;
+    this.experiencia = experiencia;
+    this.idiomas = idiomas;
+    this.hacerLimpieza = function () {
+        alert("Limpieza en Curso");
+    }
+ }
+
+ var emepleada1 = new AmaLlaves("Sofi", 23, 4, ["Español"]);
+
+ emepleada1.hacerLimpieza(); /*con eso se llama al metodo que en este caso es la funcion que da un alert que diga "Limpieza en Curso"*/
+
+
+
+
+
+ 
 
 
 
