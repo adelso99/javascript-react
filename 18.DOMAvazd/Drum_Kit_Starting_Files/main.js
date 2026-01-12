@@ -53,5 +53,8 @@ for(var i = 0; i < dato; i++){
 }
 
 
-
-var emepleado1 = new Empleado("Adelso", 19, true, ["Español", "Ingles"]);
+function moveSuitcase {
+    alert("¿Puedo llevarme tu maleta?");
+    pickUpSuitcase(); /*recoger Maleta */
+    move(); /*mover*/
+} 
