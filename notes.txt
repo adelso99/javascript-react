@@ -5020,6 +5020,19 @@ El punto es la forma de decir
 
 
 
+
+-----------------------Video 144 Uso de detectores de eventos del teclado para comprobar pulsaciones de teclas----------------------
+
+keydown 
+
+
+
+
+
+
+
+
+
 NOTA:
 
 Repasar:
