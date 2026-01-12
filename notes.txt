@@ -4985,7 +4985,10 @@ function Audio (ubicacion){
 
 
 
-
+Diferencia clave: propiedad vs método
+Tipo	                            Cómo se usa	Ejemplo
+Propiedad	sin paréntesis	---->   empleado1.nombre
+Método	con paréntesis	    ---->   empleado1.moveSuitcase()
 
 
 
