@@ -4892,6 +4892,8 @@ Hace muchas cajas iguales pero con datos diferentes.
 
 -----------------------Video 142 Objetos, sus métodos y la notación de puntos----------------------
 
+Metodos
+
 
 
 
