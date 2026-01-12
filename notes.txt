@@ -4934,6 +4934,7 @@ function Empleado (nombre, edad, permisoTrabajo, lenguajes) {
     this.edad = edad;
     this.permisoTrabajo = permisoTrabajo;
     this.lenguajes = lenguajes;
+
     this.moveSuitcase = function () {             //Funcion anonima que esta asociada con un objeto lo que es conocido como metodo  
         alert("¿Puedo llevarme tu maleta?");
         pickUpSuitcase(); //recoger Maleta 
@@ -4954,6 +4955,7 @@ function AmaLlaves (nombre, edad, experiencia, idiomas) {
     this.edad = edad;
     this.experiencia = experiencia;
     this.idiomas = idiomas;
+
     this.hacerLimpieza = function () {
         alert("Limpieza en Curso");
     }
@@ -4965,10 +4967,17 @@ function AmaLlaves (nombre, edad, experiencia, idiomas) {
 
 
 
-
-esto:
+Por qué esto se parece a new Audio().play() esto:
 var crash = new Audio("./sounds/crash.mp3");
                 crash.play();
+
+
+Audio es una función constructora
+new Audio(...) crea un objeto
+Ese objeto tiene:
+        - propiedades
+        - métodos
+
 
 es parecido a esto:             
 
@@ -4986,9 +4995,26 @@ function Audio (ubicacion){
 
 
 Diferencia clave: propiedad vs método
-Tipo	                            Cómo se usa	Ejemplo
-Propiedad	sin paréntesis	---->   empleado1.nombre
-Método	con paréntesis	    ---->   empleado1.moveSuitcase()
+Tipo	          Cómo se usa	               Ejemplo
+Propiedad -->	sin paréntesis	   --->   empleado1.nombre
+Método	  -->   con paréntesis	   --->   empleado1.moveSuitcase()
+
+
+
+
+
+Qué es la notación de punto
+La notación de punto . sirve para:
+        Uso	                                Ejemplo
+Acceder a una propiedad	   ------>     empleado1.nombre
+Ejecutar un método	       ------>     empleado1.moveSuitcase()
+Usar objetos del navegador ------> 	   document.querySelector()
+Usar objetos nativos	   ------>     audio.play()
+
+Regla simple:
+El punto es la forma de decir
+“dame esto que está dentro de ese objeto”.
+
 
 
 
