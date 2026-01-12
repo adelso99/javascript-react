@@ -4826,6 +4826,9 @@ alert("Hola soy " +houseKeeper1.nombre+" y "+houseKeeper1.tecnicaLimpieza+" teng
 
 
 Funcion Constructora
+Cuando necesitas crear muchos objetos parecidos, no quieres escribirlos uno por uno.
+Para eso existen las funciones constructoras.
+
 el nombre de la funcion tiene que ir con inicial MAYUSCULA por eso la funcion se llama "Empleado"
 
 Ejemplo 1:
@@ -4868,12 +4871,24 @@ Laura
 
 
 
-
-
 en variables:
 [] ---> Para Arrays o matrices
 {} ---> Para Objetos
 
+Ejemplo:
+var numeros = [1, 2, 3];        // array
+var persona = { nombre: "Ana" }; // objeto
+
+
+
+Resumen .....
+Objeto =
+Una caja con etiquetas 🧳
+Cada etiqueta tiene un valor.
+
+Constructor =
+Una fábrica de cajas 🏭
+Hace muchas cajas iguales pero con datos diferentes.
 
 
 
