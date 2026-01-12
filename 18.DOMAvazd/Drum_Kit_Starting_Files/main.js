@@ -54,13 +54,3 @@ for(var i = 0; i < dato; i++){
 
 
 
-
-function Audio (ubicacion){
-    this.ubicacion = ubicacion;
-    this.play = function () {
-        /*Acceda al hardware de audio.
-        Verifique que el archivo en la ubicación existe.
-        Verifique que el archivo en la ubicación es un archivo de sonido.
-        Reproduzca el archivo en la ubicación.*/
-    }
-}

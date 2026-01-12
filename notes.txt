@@ -4961,8 +4961,23 @@ function AmaLlaves (nombre, edad, experiencia, idiomas) {
 
 
 
+esto:
+var crash = new Audio("./sounds/crash.mp3");
+                crash.play();
 
- 
+es parecido a esto:             
+
+function Audio (ubicacion){
+    this.ubicacion = ubicacion;
+    this.play = function () {
+        /*Acceda al hardware de audio.
+        Verifique que el archivo en la ubicación existe.
+        Verifique que el archivo en la ubicación es un archivo de sonido.
+        Reproduzca el archivo en la ubicación.*/
+    }
+}
+
+
 
 
 
