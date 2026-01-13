@@ -5074,8 +5074,21 @@ Reproducir sonido	  -->   new Audio(...).play()
 
 -----------------------Video 145 Comprensión de las devoluciones de llamadas y cómo responder a los eventos----------------------
 
+1. Función normal
+function saludar() {
+  console.log("Hola");
+}
 
-Funciones de Orden superior
+saludar();
+
+
+👉 Aquí vos llamás la función cuando querés.
+No depende de nadie más.
+
+
+
+
+2. Funciones de Orden superior
 son cuando la funcion es capas de tomar otras funciones como entrada
 
 
@@ -5090,7 +5103,7 @@ function responde(event) {
 }
 
 
-Funcion de Devolucion 
+3. Funcion de Devolucion o de callback
 $0.addEventListener("click", function(event) {  // funcion de devolucion "function(event)" es una funcion anonima si se da cuenta
     console.log(event);    
 });
