@@ -5089,21 +5089,49 @@ No depende de nadie más.
 
 
 2. Funciones de Orden superior
+Una función que recibe otra función como parámetro.
 son cuando la funcion es capas de tomar otras funciones como entrada
-
+E1:
 
       Funcion de Orden Superior ".addEventListener"
                ||
                ||
                \/
-document.addEventListener("keydown", responde(event));  //<--- "responde" es la funcio que toma como entrada 
+document.addEventListener("keydown", responde);  //<--- "responde" es la funcio que toma como entrada 
 
 function responde(event) {           
     console.log("tecla presionada");
 }
 
 
+E2:
+function ejecutarFuncion(otraFuncion) {
+  otraFuncion();
+}
+
+function decirHola() {
+  console.log("Hola");
+}
+
+ejecutarFuncion(decirHola);
+
+¿Qué pasó aquí?
+ejecutarFuncion recibe una función
+
+Luego la ejecuta
+👉 Eso ya es función de orden superior.
+
+
+
 3. Funcion de Devolucion o de callback
+La función que se envía como parámetro y se ejecuta después.
+
+En el ejemplo anterior:
+decirHola
+es la callback.
+
+E1:
+
 $0.addEventListener("click", function(event) {  // funcion de devolucion "function(event)" es una funcion anonima si se da cuenta
     console.log(event);    
 });
@@ -5119,7 +5147,7 @@ function otroAddEventListener(tipoDeEvento, llamarDeVuelta) {
     var eventoASuceder = { 
         tipoEvento: "keydown", 
         key: "p",
-        duraciónDePresioneTecla: 2
+        duracionDePresionTecla: 2
     }
 
     if (eventoASuceder.eventType == tipoDeEvento) {
@@ -5134,8 +5162,87 @@ otroAddEventListener("keydown", function(event) {
 
 
 
+document.addEventListener("keydown", responde);
+
+Se lee así:
+    Parte	                Significa
+document	       -->      la página
+addEventListener   -->      escucha
+"keydown"	       -->      cuando presionen una tecla
+responde	       -->      función que se ejecutará después
+
+👉 addEventListener es una función de orden superior
+porque recibe otra función (responde).
+
+👉 responde es la callback.
 
 
+
+Ejemplo 2:
+/* CALLBACKS */
+
+function callback(eventDetail){
+    console.log("Hey me estan pasando esto");
+    console.log(eventDetail)
+
+    console.log("Ahora puedo hacer lo que sea con el eventDetail....");
+    return saludame
+}
+
+function imprimeDetail(eventDetail){
+    console.log("Hey me estan pasando esto");
+    console.log(eventDetail)
+
+    console.log("Ahora puedo hacer lo que sea con el eventDetail....");
+    
+}
+
+function saludame(eventDetail){
+    console.log("Hola Mundo");
+    
+}
+
+/* FUNCTION EVENT */
+function anotherAddEventListener(typeOfEvent, callback){
+    var eventThatHappend =  {
+        eventType : "keypress",
+        key: "p",
+        durationOfKeyPress: 2        
+    }
+    var eventLoqueSea =  {
+        eventType : "loqueSea"
+    }
+
+    if (eventThatHappend.eventType === typeOfEvent){
+        callback(eventThatHappend)
+    }if(eventLoqueSea.eventType === typeOfEvent){
+        callback(eventLoqueSea)
+    }
+
+}
+/* LLAMANDO FUNCION ENVENT */
+anotherAddEventListener("keypress", callback);
+anotherAddEventListener("keypress", callback());
+anotherAddEventListener("click", imprimeDetail);
+anotherAddEventListener("click", imprimeDetail());
+anotherAddEventListener("loqueSea", saludame);
+anotherAddEventListener("loqueSea", saludame());
+
+
+
+Ejemplo de Callback
+function hello(){
+    return "Hello, world!";
+}
+function print(
+    variable
+){
+    console.log(variable)
+}
+
+
+print(hello); // pasando funcion, estoy pasando un callback
+print(hello()); // pasando valor, estoy pasando un callback
 
 
 
