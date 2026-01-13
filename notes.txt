@@ -5082,14 +5082,18 @@ son cuando la funcion es capas de tomar otras funciones como entrada
       Funcion de Orden Superior ".addEventListener"
                ||
                ||
-               \/""
-document.addEventListener("keydown", reponde(event));  //<--- "responde" es la funcio que toma como entrada 
+               \/
+document.addEventListener("keydown", responde(event));  //<--- "responde" es la funcio que toma como entrada 
 
 function responde(event) {           
     console.log("tecla presionada");
 }
 
 
+Funcion de Devolucion 
+$0.addEventListener("click", function(event) {  // funcion de devolucion "function(event)" es una funcion anonima si se da cuenta
+    console.log(event);    
+});
 
 
 

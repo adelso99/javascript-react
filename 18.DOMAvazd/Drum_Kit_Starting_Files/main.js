@@ -65,3 +65,21 @@ function sonido(key) {
 }
 
 
+function otroAddEventListener(tipoDeEvento, llamarDeVuelta) {
+
+    //Detectar código de evento...
+
+    var eventoASuceder = { 
+        tipoEvento: "keydown", 
+        key: "p",
+        duraciónDePresioneTecla: 2
+    }
+
+    if (eventoASuceder.eventType == tipoDeEvento) {
+        llamarDeVuelta(eventoASuceder);
+    }
+}
+
+otroAddEventListener("keydown", function(event) {
+    console.log(event);
+});
