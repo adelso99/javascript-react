@@ -3,73 +3,64 @@
 var dato = document.querySelectorAll(".drum").length;
 
 
+// Aca se detecta los clicks con el mouse
 for(var i = 0; i < dato; i++){
     document.querySelectorAll(".drum")[i].addEventListener("click", function(){
 
-        var botonPresionado = this.innerHTML;
-
-        switch (botonPresionado) {
-            case "w":
-                var crash = new Audio("./sounds/crash.mp3");
-                crash.play();
-            break;
-
-            case "a":
-                var kick = new Audio("./sounds/kick-bass.mp3");
-                kick.play();
-            break;
-
-            case "s":
-                var snare = new Audio("./sounds/snare.mp3");
-                snare.play();
-            break;
-
-            case "d":
-                var tom1 = new Audio("./sounds/tom-1.mp3");
-                tom1.play();
-            break;
-
-            case "j":
-                var tom2 = new Audio("./sounds/tom-2.mp3");
-                tom2.play();
-            break;
-
-            case "k":
-                var tom3 = new Audio("./sounds/tom-3.mp3");
-                tom3.play();
-            break;
-
-            case "l":
-                var tom4 = new Audio("./sounds/tom-4.mp3");
-                tom4.play();
-            break;
-        
-            default:
-                console.log(botonPresionado);
-            break;
-        }
+        //var botonPresionado = this.innerHTML;  -->  sonido(botonPresionado); o mejor esto para resumir
+        return sonido(this.innerHTML);
 
     }); 
 }
 
-
+// Aca se detecta las teclas precionadas
 document.addEventListener("keydown", function(event){
 
-    let boton = event.key;
-
-
-    switch (boton) {
-        case "w":
-            var crash = new Audio("./sounds/crash.mp3");
-            crash.play();
-        break;
-    
-        default:
-            console.log(boton);
-        break;
-    }
+    return sonido(event.key);
 
 });
 
 
+function sonido(key) {
+    switch (key) {
+        case "w":
+            var crash = new Audio("./sounds/crash.mp3");
+            crash.play();
+        break;
+
+        case "a":
+            var kick = new Audio("./sounds/kick-bass.mp3");
+            kick.play();
+        break;
+
+        case "s":
+            var snare = new Audio("./sounds/snare.mp3");
+            snare.play();
+        break;
+
+        case "d":
+            var tom1 = new Audio("./sounds/tom-1.mp3");
+            tom1.play();
+        break;
+
+        case "j":
+            var tom2 = new Audio("./sounds/tom-2.mp3");
+            tom2.play();
+        break;
+
+        case "k":
+            var tom3 = new Audio("./sounds/tom-3.mp3");
+            tom3.play();
+        break;
+
+        case "l":
+            var tom4 = new Audio("./sounds/tom-4.mp3");
+            tom4.play();
+        break;
+    
+        default:
+            console.log(key);
+        break;
+    }
+}
 

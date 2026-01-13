@@ -5034,11 +5034,12 @@ document.addEventListener("keydown", function(){
 });
 
 
+event (o e) es un objeto que trae toda la información del evento.
 para saber que tecla se preciona ponemos usar un parametro "event" o "e"
 
 document.addEventListener("keydown", function(event){
 
-    let boton = event.key;
+    let boton = event.key;  //"event.key" Nos dice qué tecla exacta se presionó.
 
 
     switch (boton) {
@@ -5054,6 +5055,13 @@ document.addEventListener("keydown", function(event){
 
 });
 
+
+Diferencia clave que debes recordar
+        Acción	                    Cómo se escribe
+Detectar evento	      -->   addEventListener("keydown", ...)
+Saber qué tecla	      -->   event.key   
+Tomar decisiones	  -->   switch(...)
+Reproducir sonido	  -->   new Audio(...).play()
 
 
 
