@@ -53,5 +53,23 @@ for(var i = 0; i < dato; i++){
 }
 
 
+document.addEventListener("keydown", function(event){
+
+    let boton = event.key;
+
+
+    switch (boton) {
+        case "w":
+            var crash = new Audio("./sounds/crash.mp3");
+            crash.play();
+        break;
+    
+        default:
+            console.log(boton);
+        break;
+    }
+
+});
+
 
 
