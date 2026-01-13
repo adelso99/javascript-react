@@ -5075,8 +5075,19 @@ Reproducir sonido	  -->   new Audio(...).play()
 -----------------------Video 145 Comprensión de las devoluciones de llamadas y cómo responder a los eventos----------------------
 
 
+Funciones de Orden superior
+son cuando la funcion es capas de tomar otras funciones como entrada
 
 
+      Funcion de Orden Superior ".addEventListener"
+               ||
+               ||
+               \/""
+document.addEventListener("keydown", reponde(event));  //<--- "responde" es la funcio que toma como entrada 
+
+function responde(event) {           
+    console.log("tecla presionada");
+}
 
 
 
