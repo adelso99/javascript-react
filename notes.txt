@@ -5068,6 +5068,35 @@ Reproducir sonido	  -->   new Audio(...).play()
 
 
 
+
+
+
+
+-----------------------Video 145 Comprensión de las devoluciones de llamadas y cómo responder a los eventos----------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 NOTA:
 
 Repasar:
