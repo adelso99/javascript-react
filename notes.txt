@@ -5267,21 +5267,43 @@ print(hello()); // pasando valor, estoy pasando un callback
 -----------------------Video 146 Cómo añadir animación a sitios web----------------------
 
 Para añadir una animacion y luego quitarla que dura un ceirto tiempo
-pondemos usar el metodo "setTimeout()" que nos ayudara a poder definir el tiempo
+pondemos usar la función "setTimeout()" que nos ayudara a poder definir el tiempo
 
-setTimeout( 
-    
-    // instrucciones
+setTimeout() es una función de JavaScript que dice:
+“Ejecutá esto… pero después de X tiempo”.
 
-//tiempo); 
+Forma general
+setTimeout(función, tiempo);
 
+    Parte	          Qué significa
+función	  -->   Lo que querés que pase
+tiempo	  -->   Cuánto esperar (en milisegundos)
 
+Milisegundos
+1000 ms = 1 segundo
+2000 ms = 2 segundos
+500 ms = medio segundo
 
 Ejemplo 1 con Función anónima:
 
 setTimeout( function() {   // se define el metodo
   console.log("¡Hola después de 2 segundos!"); //que se espera en consola
 }, 2000); // 2000 milisegundos = 2 segundos  sera el tiempo que tardara en aparecer
+
+
+
+ejemplo completo:
+function botonAnimado(aniamcion){
+
+    var activaAnimacion = document.querySelector("."+aniamcion);
+
+   
+    activaAnimacion.classList.add("pressed");  // con ".classList.add" se agrega el estilo "pressed"
+    
+    setTimeout(function(){
+        activaAnimacion.classList.remove("pressed");
+    }, 100); // ese 100 son los milisegundos que se desea esperar para que se quite la clase añadida que es pressed
+}
 
 
 
