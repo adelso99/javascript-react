@@ -5268,7 +5268,29 @@ print(hello()); // pasando valor, estoy pasando un callback
 
 
 
+function otroAddEventListener(tipoDeEvento, llamarDeVuelta) {
 
+  var eventoASuceder = { 
+    tipoEvento: "keydown", 
+    key: "p",
+    duracionDePresionTecla: 2
+  }
+
+  if (eventoASuceder.tipoEvento == tipoDeEvento) {
+    llamarDeVuelta(eventoASuceder);
+  }
+}
+
+que pasa si mando esto
+otroAddEventListener("keydown", function(event) {
+  console.log(event);
+});
+
+
+o este 
+otroAddEventListener("click", function(event) {
+  console.log(event);
+});
 
 
 
