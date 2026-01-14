@@ -1,27 +1,49 @@
+/* CALLBACKS */
 
-var lista = [];
-var numero = 1;
+function callback(eventDetail){
+    console.log("Hey me estan pasando esto");
+    console.log(eventDetail)
 
-function repaso(dato){
-
-    for (var numero = 1; numero <= dato; numero++){
-        if (numero % 3 === 0 && numero % 5 === 0){
-            lista.push("FizzBuzz");
-        }else if (numero % 3 === 0){
-            lista.push("Fizz");
-        }else if (numero % 5 === 0){
-            lista.push("Buzz");
-        } else {
-            lista.push(numero)
-        }
-
-        
-
-    } 
-
-    console.log(lista);
-
+    console.log("Ahora puedo hacer lo que sea con el eventDetail....");
+    return saludame
 }
 
+function imprimeDetail(eventDetail){
+    console.log("Hey me estan pasando esto");
+    console.log(eventDetail)
 
-repaso(15);
+    console.log("Ahora puedo hacer lo que sea con el eventDetail....");
+    
+}
+
+function saludame(eventDetail){
+    console.log("Hola Mundo");
+    
+}
+
+/* FUNCTION EVENT */
+function anotherAddEventListener(typeOfEvent, callback){
+    var eventThatHappend =  {
+        eventType : "keypress",
+        key: "p",
+        durationOfKeyPress: 2        
+    }
+    var eventLoqueSea =  {
+        eventType : "loqueSea"
+    }
+
+    if (eventThatHappend.eventType === typeOfEvent){
+        callback(eventThatHappend)
+    }if(eventLoqueSea.eventType === typeOfEvent){
+        callback(eventLoqueSea)
+    }
+
+}
+/* LLAMANDO FUNCION ENVENT */
+anotherAddEventListener("keypress", callback);
+anotherAddEventListener("keypress", callback());
+anotherAddEventListener("click", imprimeDetail);
+anotherAddEventListener("click", imprimeDetail());
+anotherAddEventListener("loqueSea", saludame);
+anotherAddEventListener("loqueSea", saludame());
+

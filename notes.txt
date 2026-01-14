@@ -5130,7 +5130,19 @@ En el ejemplo anterior:
 decirHola
 es la callback.
 
+
 E1:
+$0.addEventListener("click", function() {   // el callback es la funcion anonima que se esta pasado en addEventListener
+    console.log("Hola");    
+});
+
+se hace click en la parte del "$0" y nos da:
+ Hola
+
+
+
+
+E2:
 
 $0.addEventListener("click", function(event) {  // funcion de devolucion "function(event)" es una funcion anonima si se da cuenta
     console.log(event);    
@@ -5150,7 +5162,7 @@ function otroAddEventListener(tipoDeEvento, llamarDeVuelta) {
         duracionDePresionTecla: 2
     }
 
-    if (eventoASuceder.eventType == tipoDeEvento) {
+    if (eventoASuceder.tipoEvento == tipoDeEvento) {
         llamarDeVuelta(eventoASuceder);
     }
 }
@@ -5243,6 +5255,25 @@ function print(
 
 print(hello); // pasando funcion, estoy pasando un callback
 print(hello()); // pasando valor, estoy pasando un callback
+
+
+
+
+
+
+
+
+
+-----------------------Video 146 Cómo añadir animación a sitios web----------------------
+
+
+
+
+
+
+
+
+
 
 
 
