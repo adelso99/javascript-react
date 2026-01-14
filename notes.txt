@@ -5307,6 +5307,13 @@ function botonAnimado(aniamcion){
 
 
 
+
+
+
+
+
+
+
 ----------------------------------------------SECCION 19 jQuery- ------------------------------------------------
 ----------------------------------Video 149. ¿Qué es jQuery?--------------------------
 
@@ -5344,8 +5351,21 @@ document.querySelector("h1").style.color = "red";
 jQuery
 $("h1").css("color", "red");
 
-
 👉 Menos código, misma acción.
+
+
+
+
+
+----------------------------------Video 150 Cómo incorporar jQuery en sitios web--------------------------
+
+
+
+
+
+
+
+
 
 
 NOTA:
