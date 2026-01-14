@@ -5266,10 +5266,22 @@ print(hello()); // pasando valor, estoy pasando un callback
 
 -----------------------Video 146 Cómo añadir animación a sitios web----------------------
 
+Para añadir una animacion y luego quitarla que dura un ceirto tiempo
+pondemos usar el metodo "setTimeout()" que nos ayudara a poder definir el tiempo
+
+setTimeout( 
+    
+    // instrucciones
+
+//tiempo); 
 
 
 
+Ejemplo 1 con Función anónima:
 
+setTimeout( function() {   // se define el metodo
+  console.log("¡Hola después de 2 segundos!"); //que se espera en consola
+}, 2000); // 2000 milisegundos = 2 segundos  sera el tiempo que tardara en aparecer
 
 
 

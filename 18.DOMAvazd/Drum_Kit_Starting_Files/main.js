@@ -7,8 +7,13 @@ var dato = document.querySelectorAll(".drum").length;
 for(var i = 0; i < dato; i++){
     document.querySelectorAll(".drum")[i].addEventListener("click", function(){
 
-        //var botonPresionado = this.innerHTML;  -->  sonido(botonPresionado); o mejor esto para resumir
-        return sonido(this.innerHTML);
+        //sonido(this.innerHTML); --> o mejor esto para resumir
+        var botonPresionado = this.innerHTML;  
+        
+        sonido(botonPresionado);   // verifica que boton fue
+
+        botonAnimado(botonPresionado);  // reraliza la aniamcion del boton que fue clickeado
+        
 
     }); 
 }
@@ -16,7 +21,9 @@ for(var i = 0; i < dato; i++){
 // Aca se detecta las teclas precionadas
 document.addEventListener("keydown", function(event){
 
-    return sonido(event.key);
+     sonido(event.key); //verifica el boton que fue precionado
+
+     botonAnimado(event.key);  // reraliza la aniamcion del boton que fue presionado
 
 });
 
@@ -59,9 +66,20 @@ function sonido(key) {
         break;
     
         default:
-            console.log(key);
+            console.log(botonPresionado);
         break;
     }
 }
 
 
+function botonAnimado(aniamcion){
+
+    var activaAnimacion = document.querySelector("."+aniamcion);
+
+   
+    activaAnimacion.classList.add("pressed");  // con ".classList.add" se agrega el estilo "pressed"
+    
+    setTimeout(function(){
+        activaAnimacion.classList.remove("pressed");
+    }, 100); // ese 100 son los milisegundos que se desea esperar para que se quite la clase añadida que es pressed
+}
