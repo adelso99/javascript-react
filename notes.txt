@@ -5311,12 +5311,41 @@ function botonAnimado(aniamcion){
 ----------------------------------Video 149. ¿Qué es jQuery?--------------------------
 
 
+jQuery es una librería de JavaScript que sirve para:
+Seleccionar elementos HTML más fácil
+Manipular el DOM más rápido
+Manejar eventos más simple
+Hacer animaciones con menos código
+
+En resumen:
+jQuery es como un atajo para escribir menos código JS.
+
+Normal en js seria:
+document.querySelector("h1");
+
+pero con jQuery seria:
+$("h1");  // usamos el signo de dolar que quiere decir que se usa jQuery
 
 
 
+Diferencia real entre JS y jQuery
+JavaScript puro	                       jQuery
+document.querySelector("h1")   -->     $("h1")
+addEventListener()	           -->     .click()
+classList.add()	               -->     .addClass()
+classList.remove()	           -->     .removeClass()
+setAttribute()	               -->     .attr()
+style.color = "red"	           -->     .css("color","red")
+
+Ejemplo 1:
+JavaScript puro
+document.querySelector("h1").style.color = "red";
+
+jQuery
+$("h1").css("color", "red");
 
 
-
+👉 Menos código, misma acción.
 
 
 NOTA:

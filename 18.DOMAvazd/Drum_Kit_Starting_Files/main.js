@@ -83,3 +83,4 @@ function botonAnimado(aniamcion){
         activaAnimacion.classList.remove("pressed");
     }, 100); // ese 100 son los milisegundos que se desea esperar para que se quite la clase añadida que es pressed
 }
+
