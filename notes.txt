@@ -5503,8 +5503,14 @@ $("h1").css("color", "green");
 
 
 Propiedades usando jQuery 
+Obtener un valor (LEER)
+
 //para obtener las propiedades usadas del color de css usando jQuery
 console.log($("h1").css("color"));
+
+Esto no cambia nada, solo:
+pregunta qué color tiene ahora el h1.
+
 
 //para obtener las propiedades usadas font-size con jQuery
 console.log($("h1").css("font-size"));
@@ -5515,8 +5521,43 @@ main.js:9 32px
 
 
 Resumen:
-console.log($("h1").css("color"));  -->  1 propiedad o "color" es para obtener propiedades
-$("h1").css("color", "green");      -->  2 propiedades o "color", "green" es para establecer valores
+console.log($("h1").css("color"));  -->  1 parametro -> "color" es para obtener propiedades
+$("h1").css("color", "green");      -->  2 parametros -> "color", "green" es para establecer valores
+
+Regla importante de .css()
+Forma	                        Qué hace
+.css("color")	        -->   lee el valor
+.css("color","green")	-->   cambia el valor
+
+
+
+
+//para añadir 1 clase que tengamos en nuestra hoja de style.css se hace de esta forma
+$("h1").addClass("big-title");  // con el metodo ".addClass" y dentro de los parentesis con comilla el nombre de la clase
+
+
+y para Remover una clase de usa el metodo "removeClass":
+$("h1").removeClass("big-title");
+
+
+//para añadir 2 o mas clase que tengamos en nuestra hoja de style.css se hace de esta forma
+$("h1").addClass("big-title margin-50");  // ".addClass" y dentro de los parentesis con comilla
+                                          // los nombres de las clases separadas con 1 espacion "big-title margin-50"
+
+
+Para verificar si nuestro elemento de HTML tiene o no tiene un clase de puede hacer con "hasClass" que quiere decir tieneClase
+$("h1").hasClass("margin-50"); 
+
+
+en consola muestra:
+true  --> Verdadero
+
+
+
+
+
+----------------------------------Video 154 Manipulación de texto con jQuery--------------------------
+
 
 
 

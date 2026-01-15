@@ -1,10 +1,7 @@
 
-//para cambiar color con css usando jQuery
-//$("h1").css("color", "green");
+//para añadir 2 o mas clase que tengamos en nuestra hoja de style.css se hace de esta forma
+$("h1").addClass("big-title margin-50");  // ".addClass" y dentro de los parentesis con comilla
+                                          // los nombres de las clases separadas con 1 espacion "big-title margin-50"
 
-//para obtener las propiedades usadas del color de css usando jQuery
-console.log($("h1").css("color"));
 
-//para obtener las propiedades usadas font-size con jQuery
-console.log($("h1").css("font-size"));
 
