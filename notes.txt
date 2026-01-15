@@ -5379,6 +5379,7 @@ Ejemplo:
 
 
 ya funcionado en js seria, en el Archivo main.js::
+//Forma 1: Normal el script de jQuery al final del body antes que este archivo js
 $("h1").css("color", "red");
 
 
@@ -5388,9 +5389,15 @@ archivo de JavaScript que estemos usando
 Ejemplo:
 
 Archivo main.js:
+/*
+Forma 2: el script de jQuery en el head, donde tambien esta el link de css:
 $(document).ready(function() {
     $("h1").css("color", "red");
-});
+});*/
+
+
+
+
 
 Archivo index.html:
 <head>
@@ -5424,10 +5431,62 @@ https://www.minifier.org/
 ----------------------------------Video 152 Seleccionar elementos con jQuery--------------------------
 
 
+//js normal para seleccionar el h1
+document.querySelector("h1");
+
+//jQuery para seleccionar el h1
+$("h1") //<--- en el parentesisi se espefifica si tuvieras que usar css
+
+//tambien podemos añadir clases, o añadido
+
+//el signo del dolar "$" hace referencia a "jQuery"
+jQuery("h1")
+Pero $ es más corto.
+
+/*si quisieramos sleccionar los bototnes en nuestro HTMl que en 
+ este caso son 5
+ con js normal seria asi:*/
+
+document.querySelector("button");  // un boton
+
+document.querySelectorAll("button");  // uno o mas botones
+
+//en jQuery seria asi:
+
+$("button"); //aca es automatico la selecion de mas de 1 boton si existieran
 
 
 
+¿Por qué dicen que dentro va CSS?
+Porque lo que escribís dentro de $() es un selector CSS.
 
+Ejemplos:
+Selector	Qué selecciona
+$("h1")	    todos los <h1>
+$(".btn")	elementos con clase btn
+$("#title")	elemento con id title
+$("div p")	<p> dentro de <div>
+
+
+
+Diferencia importante
+JavaScript
+document.querySelectorAll("button")[0].style.color = "red";
+
+jQuery
+$("button").css("color", "red");
+
+👉 En jQuery:
+No necesitas [0]
+No necesitas for
+Se aplica a todos.
+
+
+
+Resumen
+Seleccionar con jQuery es lo mismo que con JavaScript,
+pero usando $() en lugar de document.querySelector()
+y escribiendo el selector como en CSS.
 
 
 
