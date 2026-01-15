@@ -5372,8 +5372,39 @@ Ejemplo:
 
     <!--Carga de script de JavaScript del proyecto-->
     <script src="./main.js" ></script>
-    
+
 </body>
+
+
+
+ya funcionado en js seria, en el Archivo main.js::
+$("h1").css("color", "red");
+
+
+
+pero si incluimos nuestro script de jQuery en el head de nuestro HTML se tiene que hacer un llamado de Callback de nuestro
+archivo de JavaScript que estemos usando
+Ejemplo:
+
+Archivo main.js:
+$(document).ready(function() {
+    $("h1").css("color", "red");
+});
+
+Archivo index.html:
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery</title>
+
+    <!--Cargando el script de jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+
+    <!--Carga de estilos CSS-->
+    <link rel="stylesheet" href="./style.css"/>
+
+</head>
 
 
 
