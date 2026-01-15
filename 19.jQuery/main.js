@@ -1,7 +1,3 @@
 
-//para cambiar el texto de nuestro h1
-$("h1").text("Adios");  
-
-
-//Para anadir etiquetas con jQuery en nuestro HTML es con el metodo ".html"
-$("button").html("<em>Hola</em>");  // y tambien cambia el texto de nuestros botones a Hola
+//para establacer el valor del atrinuto se hace asi:
+$("a").attr("src", "https://www.crunchyroll.com/"); //con el segundo parametro Ingresado cambia el valor que se tiene en esa etiqueta

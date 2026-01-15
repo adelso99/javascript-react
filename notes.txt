@@ -5559,6 +5559,9 @@ true  --> Verdadero
 ----------------------------------Video 154 Manipulación de texto con jQuery--------------------------
 
 Para cambiar el texto de un elemento de HTML exiten varias formas:
+1. Con .text() --> Cambia solo el texto, no interpreta etiquetas HTML.
+2. Con .html() --> Cambia el contenido y sí interpreta etiquetas HTML.
+
 1. Con el Metodo ".text()"
 
 Ejemplo 1:
@@ -5571,6 +5574,7 @@ $("button").text("No me des Click");
 
 
 
+2. Con el Metodo ".html()"
 Añadir Etiquetas en HTML con jQuery con el metodo ".html()"
 
 Ejemplo 1:
@@ -5578,15 +5582,38 @@ Ejemplo 1:
 $("button").html("<em>Hola</em>");  // y tambien cambia el texto de nuestros botones a Hola
 
 
+El texto del botón será "Hola" en cursiva, porque <em> es una etiqueta HTML.
+
+
+Diferencia CLAVE entre .text() y .html()
+Método	    ¿Acepta HTML?	        ¿Qué hace?
+.text()	        ❌ No	        Solo cambia texto
+.html()	        ✅ Sí	        Cambia texto y etique
 
 
 
 
 ----------------------------------Video 155 Manipulación de atributos con jQuery--------------------------
+Para el metodo atributo en jQuery se usa ".attr()"
+
+Ejemplo 1:
+//para obtener el valor del atrinuto se hace asi:
+console.log($("img").attr("src"));
+
+
+Ejemplo 2:
+//para establacer el valor del atrinuto se hace asi:
+$("a").attr("src", "https://www.crunchyroll.com/"); //con el segundo parametro Ingresado cambia el valor que se tiene en esa etiqueta
+
+
+tambien se puede verificar que clases tiene nuestra etiquea usando el atributo ".attr()"
+Ejemplo 1:
+$("a").attr("class");  //esto nos dara las clases que cuenta esa etiqueta
 
 
 
 
+----------------------------------Video 156 Agregar oyentes de eventos con jQuery--------------------------
 
 
 
