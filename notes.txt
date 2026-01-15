@@ -5430,7 +5430,6 @@ https://www.minifier.org/
 
 ----------------------------------Video 152 Seleccionar elementos con jQuery--------------------------
 
-
 //js normal para seleccionar el h1
 document.querySelector("h1");
 
@@ -5487,6 +5486,23 @@ Resumen
 Seleccionar con jQuery es lo mismo que con JavaScript,
 pero usando $() en lugar de document.querySelector()
 y escribiendo el selector como en CSS.
+
+
+
+
+
+
+
+
+----------------------------------Video 153 Manipulación de estilos con jQuery--------------------------
+
+
+
+
+
+
+
+
 
 
 
