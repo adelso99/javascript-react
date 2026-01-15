@@ -5558,8 +5558,16 @@ true  --> Verdadero
 
 ----------------------------------Video 154 Manipulación de texto con jQuery--------------------------
 
+Para cambiar el texto de un elemento de HTML exiten varias formas:
+1. Con el Metodo ".text()"
 
+Ejemplo 1:
+$("h1").text("Adios");   //Esto cambiae el texto de nuestro h1 a Adios
+ 
 
+Ejemplo 2:
+//En varios botones seriaa asi
+$("button").text("No me des Click");
 
 
 
