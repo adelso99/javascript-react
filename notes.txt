@@ -5358,6 +5358,7 @@ $("h1").css("color", "red");
 
 
 ----------------------------------Video 150 Cómo incorporar jQuery en sitios web--------------------------
+
 Igual que Booststrap 
 en jQuery se puede descargar el paquete directamente y alojarlo en nuestro proyecto o tambien
 se puede usar un CND que es un script link
@@ -5405,6 +5406,26 @@ Archivo index.html:
     <link rel="stylesheet" href="./style.css"/>
 
 </head>
+
+
+
+
+
+
+
+----------------------------------Video 151 Cómo funciona la minificación para reducir el tamaño del archivo--------------------------
+
+Pagina para hacer mas pequeño o minificar el codigo puede ser js o css
+https://www.minifier.org/
+
+
+
+
+----------------------------------Video 152 Seleccionar elementos con jQuery--------------------------
+
+
+
+
 
 
 
