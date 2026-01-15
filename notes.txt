@@ -5571,6 +5571,26 @@ $("button").text("No me des Click");
 
 
 
+Añadir Etiquetas en HTML con jQuery con el metodo ".html()"
+
+Ejemplo 1:
+//Para anadir etiquetas con jQuery en nuestro HTML es con el metodo ".html"
+$("button").html("<em>Hola</em>");  // y tambien cambia el texto de nuestros botones a Hola
+
+
+
+
+
+
+----------------------------------Video 155 Manipulación de atributos con jQuery--------------------------
+
+
+
+
+
+
+
+
 
 
 
