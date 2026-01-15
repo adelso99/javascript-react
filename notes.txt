@@ -5594,6 +5594,14 @@ Método	    ¿Acepta HTML?	        ¿Qué hace?
 
 
 ----------------------------------Video 155 Manipulación de atributos con jQuery--------------------------
+
+En HTML
+src, href, class → son atributos
+
+.attr() sirve para:
+leer atributos
+cambiar atributos
+
 Para el metodo atributo en jQuery se usa ".attr()"
 
 Ejemplo 1:
@@ -5603,13 +5611,21 @@ console.log($("img").attr("src"));
 
 Ejemplo 2:
 //para establacer el valor del atrinuto se hace asi:
-$("a").attr("src", "https://www.crunchyroll.com/"); //con el segundo parametro Ingresado cambia el valor que se tiene en esa etiqueta
+$("a").attr("href", "https://www.crunchyroll.com/"); //con el segundo parametro Ingresado cambia el valor que se tiene en esa etiqueta
 
 
 tambien se puede verificar que clases tiene nuestra etiquea usando el atributo ".attr()"
 Ejemplo 1:
 $("a").attr("class");  //esto nos dara las clases que cuenta esa etiqueta
 
+
+Regla importante de .attr()
+Forma	                   Qué hace
+.attr("src")	        Lee el atributo
+.attr("src", "valor")	Cambia el atributo
+
+👉 1 parámetro = leer
+👉 2 parámetros = modificar
 
 
 
