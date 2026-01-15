@@ -5494,8 +5494,29 @@ y escribiendo el selector como en CSS.
 
 
 
+
 ----------------------------------Video 153 Manipulación de estilos con jQuery--------------------------
 
+Estableciendo Valores en jQuery
+//para cambiar color con css usando jQuery
+$("h1").css("color", "green");
+
+
+Propiedades usando jQuery 
+//para obtener las propiedades usadas del color de css usando jQuery
+console.log($("h1").css("color"));
+
+//para obtener las propiedades usadas font-size con jQuery
+console.log($("h1").css("font-size"));
+
+en Consola:
+rgb(0, 0, 0)
+main.js:9 32px
+
+
+Resumen:
+console.log($("h1").css("color"));  -->  1 propiedad o "color" es para obtener propiedades
+$("h1").css("color", "green");      -->  2 propiedades o "color", "green" es para establecer valores
 
 
 
