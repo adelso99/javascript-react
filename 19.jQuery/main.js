@@ -1,6 +1,6 @@
 
 
-//estamos etableciendo un detector de evento de pulsaciones o teclado a todo el HTML con jQuery
-$("body").keydown(function(event) {  // estamos regitrado cada vez que se preciona el teclado puede ser "body" o "document"
-    console.log(event.key);  // la funcion anonima nos pasara el event que sera el evento o la tecla que esta siendo presionada
-});                          // el ".key" es la palabra recebervada del evento para que solo nos devuelva la letra del teclado presionado
+//estamos usando el detector de eventos ".on()" en HTML con jQuery
+$("h1").on("mouseover", function() {  // estamos regitrado el evento con "mouseover" que es cada vez que pasemos sobre el h1
+    $("h1").css("color", "red");  // Selecionamos el h1 para que cuando pasemos sobre el, cambie de color de letra a rojo 
+});                         

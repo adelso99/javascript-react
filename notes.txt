@@ -5667,7 +5667,7 @@ para ello se usa el metodo "keydown"
 Ejemplo 1:
 //estamos etableciendo un detector de evento de pulsaciones o teclado de elementos del HTML con jQuery
 $("input").keydown(function(event) {  // estamos regitrado cada vez que se preciona el teclado dentro del "input"
-    console.log(event.key);  // la funcion anonima nos pasara el event que sera el evento o la tecla que esta siendo presionada
+    console.log(event.key);  // la funcion anonima nos pasara el event que sera la tecla que esta siendo presionada
 });                          // el ".key" es la palabra recebervada del evento para que solo nos devuelva la letra del teclado presionado
 
 
@@ -5676,10 +5676,34 @@ si quisieramos que detectete toda la web
 Ejemplo 1:
 //estamos etableciendo un detector de evento de pulsaciones o teclado a todo el HTML con jQuery
 $("body").keydown(function(event) {  // estamos regitrado cada vez que se preciona el teclado puede ser "$("body")" o "$(document)"
-    console.log(event.key);  // la funcion anonima nos pasara el event que sera el evento o la tecla que esta siendo presionada
+    console.log(event.key);  // la funcion anonima nos pasara el event que sera la tecla que esta siendo presionada
 });                          // el ".key" es la palabra recebervada del evento para que solo nos devuelva la letra del teclado presionado
 
 
+
+Ejemplo 2, un poco dinamico:
+//estamos etableciendo un detector de evento de pulsaciones o teclado a todo el HTML con jQuery
+$(document).keydown(function(event) {  // estamos regitrado cada vez que se preciona el teclado puede ser "body" o "document"
+    $("h1").text(event.key);  // Selecionamos el h1 para que cuando se haga click, entre la funcion anonima y replaze el texto con la letra 
+});                          //  que se esta precionado del teclado, el ".key" es la letra del teclado presionado
+
+
+
+
+existe un receptor de eventos que es el ".on()" y este toma 2 parametros dentro de los parentesis
+Ejemplo 1:
+//estamos usando el detector de eventos ".on()" en HTML con jQuery
+$("h1").on("mouseover", function() {  // estamos regitrado el evento con "mouseover" que es cada vez que pasemos sobre el h1
+    $("h1").css("color", "red");  // Selecionamos el h1 para que cuando pasemos sobre el, cambie de color de letra a rojo 
+});                         
+
+
+
+
+
+
+
+----------------------------------Video 157 Agregar y eliminar elementos con jQuery--------------------------
 
 
 
