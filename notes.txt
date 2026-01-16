@@ -5744,10 +5744,29 @@ $("button").remove(); //elimina todos los botones
 
 ----------------------------------Video 158 Animaciones de sitios web con jQuery--------------------------
 
+con el metod ".hide()"
 
+Ejemplo:
+$("button").on("click", function(){
+    $("h1").hide();  // al hacer click en cualquier boton desaparece el h1
+});
 
+// con el metodo ".show();" aparece nuevamente el h1
+$("h1").show();
 
+//con el metodo ".toggle" alterna o es "true" o "false"
+$("button").on("click", function(){
+    $("h1").toggle();  // el metodo alterna, si esta activo oculta el h1 y si no esta activo muestra el h1
+});
 
+Para que sea mas pogresivo en la desparicion esta el metodo ".fadeOut()" para su opasidad
+ejemplo:
+$("button").on("click", function(){
+    $("h1").fadeOut();  // este es mas progresivo en la desparcion del h1
+});
+
+Para aparecer tambien progresivo esta el metodo ".fadeIn()" en su opasidad tambien
+$("h1").fadeIn();
 
 
 
