@@ -5819,8 +5819,12 @@ $("button").on("click", function(){
 ----------------------------------------------SECCION 20 DESAFIO DE NIVEL 2-JUEGO DE SIMON-------------------------------------------------
 ----------------------------------Video 160 El juego de Simón--------------------------
 
+Valores para ".animate()"
 
-
+Valores correctos para opacidad
+1 → totalmente visible
+0.5 → medio transparente
+0 → invisible
 
 
 

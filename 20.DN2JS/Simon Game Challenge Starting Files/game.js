@@ -8,18 +8,19 @@ function nextSequence() {
     let randomChosenColour =  buttonColoursy[randomNumber];
 
     gamePattern.push(randomChosenColour);
+
+    //selecionar el boton que se esta generando
+    $("#"+randomChosenColour).animate({opacity: 0.5}).animate({opacity: 1});
+    
+
     return randomChosenColour;
 }
 
 //selecionar el id del boton aleatorio que se esta generando
-$("#"+buttonColoursy);
 
 
 
- /*
-console.log(nextSequence());
-console.log(nextSequence());
-console.log(nextSequence());
-console.log(nextSequence());
-console.log(gamePattern);
-*/
+
+ 
+
+
