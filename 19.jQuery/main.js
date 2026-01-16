@@ -1,6 +1,10 @@
 
+//".prepend()" 
+$("h1").prepend("<button>Prepend</button>") //selecionamos el h1 para que ese boton se agregue despues de la etiqueta de apertura del h1
+                                          // osea esta dentro de la etiqueta del h1, esta justo antes del texto del h1
 
-//estamos usando el detector de eventos ".on()" en HTML con jQuery
-$("h1").on("mouseover", function() {  // estamos regitrado el evento con "mouseover" que es cada vez que pasemos sobre el h1
-    $("h1").css("color", "red");  // Selecionamos el h1 para que cuando pasemos sobre el, cambie de color de letra a rojo 
-});                         
+
+
+//".append()"
+$("h1").append("<button>Append</button>") //selecionamos el h1 para que ese boton se agregue despues de la etiqueta de apertura del h1
+                                         // osea esta dentro de la etiqueta del h1, pero justo al finalizar del texto del h1

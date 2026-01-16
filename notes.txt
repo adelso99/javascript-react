@@ -5630,7 +5630,7 @@ Forma	                   Qué hace
 
 
 ----------------------------------Video 156 Agregar oyentes de eventos con jQuery--------------------------
-
+   o sea: cómo hacer que la página “escuche” clicks y teclas
 Detector de Eventos 
 click
 
@@ -5699,12 +5699,50 @@ $("h1").on("mouseover", function() {  // estamos regitrado el evento con "mouseo
 
 
 
+Comparación rápida
+Forma corta         	Forma universal
+.click()	    -->      .on("click")
+.keydown()	    -->      .on("keydown")
+.mouseover()	-->      .on("mouseover")
 
 
 
 
 ----------------------------------Video 157 Agregar y eliminar elementos con jQuery--------------------------
 
+Para añadir elementos con jQuery se usa el metodo ".before()"
+
+Ejemplo 1:
+//estamos usando ".before()" para agregar elemntos en HTML con jQuery
+$("h1").before("<button>Nuevo</button>") //selecionamos el h1 para que ese boton se agregue antes del h1
+
+
+Tambien este el elemento ".afeter()" que este crea el elelemto html despues de donde seleccionamos
+Ejemplo:
+$("h1").after("<button>Nuevo</button>") //selecionamos el h1 para que ese boton se agregue despues del h1
+
+
+
+
+tambien esta, ".prepend()" y ".append()"
+//".prepend()" 
+$("h1").prepend("<button>Prepend</button>") //selecionamos el h1 para que ese boton se agregue despues de la etiqueta de apertura del h1
+                                          // osea esta dentro de la etiqueta del h1, esta justo antes del texto del h1
+
+//".append()"
+$("h1").append("<button>Append</button>") //selecionamos el h1 para que ese boton se agregue despues de la etiqueta de apertura del h1
+                                         // osea esta dentro de la etiqueta del h1, pero justo al finalizar del texto del h1
+
+
+
+y para eliminar elementos esta el metodo ".remove()"
+$("button").remove(); //elimina todos los botones
+
+
+
+
+
+----------------------------------Video 158 Animaciones de sitios web con jQuery--------------------------
 
 
 
