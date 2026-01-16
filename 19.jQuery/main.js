@@ -1,4 +1,5 @@
-$("button").on("click", function(){
-    $("h1").fadeOut();  // este es mas progresivo en la desparcion del h1
-});
 
+
+$("button").on("click", function(){
+    $("h1").slideUp().slideDown().animate({opacity: 0.5});  //encadenacion de animaciones para la vista del h1
+});

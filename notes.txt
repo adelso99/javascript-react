@@ -5769,6 +5769,54 @@ Para aparecer tambien progresivo esta el metodo ".fadeIn()" en su opasidad tambi
 $("h1").fadeIn();
 
 
+tambien esta el metodo "fadeToggle" que tambien puede ser "true" o "false"
+ejemplo:
+$("button").on("click", function(){
+    $("h1").fadeToggle();  //alterna, si esta activo oculta el h1 y si no esta activo muestra el h1
+});
+
+
+
+ttambien estan los metodos de ".slideUp()" y "".slideDown()"
+con ".slideUp()" :
+ejemplo:
+
+$("button").on("click", function(){
+    $("h1").slideUp();  //este solo colapsa el h1 y lo oculta
+});
+
+"".slideDown()" lo muestra de nuevo:
+ $("h1").slideDown();
+
+
+tambien viene con su metodo alternado que es el ".slideToggle()" que es "true" o "false"
+$("button").on("click", function(){
+    $("h1").slideToggle();  //este alterna
+});
+
+
+
+para tener mejor control de animaciones esta en metodo ".animate({})" y permite definir estilos css 
+que van dentro de las llaves del parentesis, pero solo css que tiene un vaor numerico.
+
+ejemplo:
+$("button").on("click", function(){
+    $("h1").animate({opacity: 0.5});  //dentro de las llaves va el estilo css, esto aplica menos capacidad de vista del h1
+});
+
+
+tambien se pude encadenar varias animaciones para que sea mas dinamico
+ejemplo:
+
+$("button").on("click", function(){
+    $("h1").slideUp().slideDown().animate({opacity: 0.5});  //encadenacion de animaciones para la vista del h1
+});
+
+
+
+
+
+
 
 NOTA:
 
