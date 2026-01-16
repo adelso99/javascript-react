@@ -5631,10 +5631,44 @@ Forma	                   Qué hace
 
 ----------------------------------Video 156 Agregar oyentes de eventos con jQuery--------------------------
 
+Detector de Eventos 
+click
+
+Ejemplo 1, para 1 elemento:
+//estamos etableciendo un detector de evento con "click"
+$("h1").click(function () { //cuando se haga click se pasa una funcion anonima que cambia el color de letra
+    $("h1").css("color", "red");
+}); 
+
+pero esto funciona solo para un Elemento ya que solo seleciona al h1
 
 
 
+Estamos etableciendo un detector de evento con "click" para 2 o mas elementos del HTML con js normal
+Ejemplo 1:
+for(var i = 0; i<5; i++) {
+    document.querySelectorAll("button")[i].addEventListener("click", function(){ // en este caso para los botones que tengamos
+        document.querySelector("h1").style.color = "purple"; //cuando se precione un boton cambia el color del texto a mnorado
+    });
+}
 
+
+Pero usando jQuery seria de esta forma:
+Ejemplo 1:
+//estamos etableciendo un detector de evento con "click" para 2 o mas elementos del HTML con jQuery
+$("button").click(function(){  //no es necesario un bucle for porque jQuery que enecarga de devolver todos los botones 
+    $("h1").css("color", "red");  //cuando se cumple el click entra la funcion anonima de callback y hace el cambio de color del texto
+});
+
+
+Si queremos tambien capturar la entradas de tlecado o pulsaciones es de esta forma
+para ello se usa el metodo "keydown"
+
+Ejemplo 1:
+//estamos etableciendo un detector de evento de pulsaciones o teclado de elementos del HTML con jQuery
+$("input").keydown(function(event) {  // estamos regitrado cada vez que se preciona el teclado dentro del "input"
+    console.log(event.key);  // la funcion anonima nos pasara el event que sera el evento o la tecla que esta siendo presionada
+});                          // el ".key" es la palabra recebervada del evento para que solo nos devuelva la letra del teclado presionado
 
 
 
