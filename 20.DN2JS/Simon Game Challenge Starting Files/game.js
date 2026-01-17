@@ -13,8 +13,13 @@ $(".btn").on("click", function(){
     userClickedPattern.push(userChosenColour);
 
     //salida para callback llamada a otras funciones
+    //audio
     playSound(userChosenColour);
+    //animacion
     animatePress(userChosenColour);
+
+    //secuencia de juego
+    checkAnswer(userClickedPattern.length -1);
 
         
  });
@@ -60,6 +65,18 @@ function nextSequence() {
 }
 
 function checkAnswer(currentLevel) {
+
+    if(userClickedPattern[currentLevel] === gamePattern[currentLevel]){
+        if(userClickedPattern.length === gamePattern.length){
+            setTimeout( function(){
+                nextSequence();
+            }, 1000);
+
+            userClickedPattern = [];
+        }
+    } else {
+         console.log("Incorrecto");
+    }
 
 }
 
