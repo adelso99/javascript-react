@@ -2,6 +2,30 @@
 let buttonColoursy  = ["red", "blue", "green", "yellow"];
 let gamePattern = [];
 let userClickedPattern = [];
+let level = 0;
+
+
+//Funcion Anonima de Clicks
+$(".btn").on("click", function(){
+    let userChosenColour = $(this).attr("id");
+
+    userClickedPattern.push(userChosenColour);
+
+    //salida para callback llamada a otras funciones
+    playSound(userChosenColour);
+    animatePress(userChosenColour);
+
+        
+ });
+
+//Funcion anonima de precionar tecla para iniciar el juego
+$(document).keydown( function(){
+
+    //llamar a la funcion generar color    
+     nextSequence()
+});
+
+
 
 //funcion de generaddor de color
 function nextSequence() {
@@ -26,18 +50,6 @@ function nextSequence() {
 }
 
 
-//Funcion Anonima de Clicks
-$(".btn").on("click", function(){
-    let userChosenColour = $(this).attr("id");
-
-    userClickedPattern.push(userChosenColour);
-
-    //salida para callback llamada a otras funciones
-    playSound(userChosenColour);
-    animatePress(userChosenColour);
-
-        
- });
 
 
 //funcion de Audio
@@ -86,14 +98,15 @@ function animatePress(currentColor){
         }, 100);
     });
 
+}
 
 
 
 
 
 
-
-/* 
+/*
+Forma 2 de hacer la funcion de animacion de clicks en gris
 //1. Create a new function called animatePress(), it should take a single input parameter called currentColour.
 function animatePress(currentColor) {
 
@@ -104,7 +117,6 @@ function animatePress(currentColor) {
   setTimeout(function () {
     $("#" + currentColor).removeClass("pressed");
   }, 100);
-}
   
 */
 
