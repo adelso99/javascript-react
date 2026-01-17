@@ -3,7 +3,7 @@ let buttonColoursy  = ["red", "blue", "green", "yellow"];
 let gamePattern = [];
 let userClickedPattern = [];
 let level = 0;
-let incio = false;
+let inicio = false;
 
 
 //Funcion Anonima de Clicks
@@ -28,10 +28,10 @@ $(".btn").on("click", function(){
 $(document).keydown( function(){
 
     //llamar a la funcion generar color    
-     if (incio === false ){
+     if (inicio === false ){
         nextSequence()};
 
-    return incio = true;
+    return inicio = true;
 
 });
 
@@ -75,16 +75,17 @@ function checkAnswer(currentLevel) {
             userClickedPattern = [];
         }
     } else {
+        let wrong = new Audio("./sounds/wrong.mp3");
+        wrong.play();
+
         let error = $("body").addClass("game-over");
+
+        $("h1").text("Game Over, Press Any Key to Restart");
 
         setTimeout(function(){
             error.removeClass("game-over");
         }, 200);
 
-        let wrong = new Audio("./sounds/wrong.mp3");
-        wrong.play();
-
-        $("h1").text("Game Over, Press Any Key to Restart");
 
         //llamodo de funcion para reinciar el juego
         startOver();
@@ -96,7 +97,8 @@ function checkAnswer(currentLevel) {
 function startOver(){
     level = 0;
     gamePattern = [];
-    incio = false;
+    inicio = false;
+    userClickedPattern = [];
 
 }
 
