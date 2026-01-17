@@ -3,6 +3,7 @@ let buttonColoursy  = ["red", "blue", "green", "yellow"];
 let gamePattern = [];
 let userClickedPattern = [];
 let level = 0;
+let incio = false;
 
 
 //Funcion Anonima de Clicks
@@ -22,7 +23,11 @@ $(".btn").on("click", function(){
 $(document).keydown( function(){
 
     //llamar a la funcion generar color    
-     nextSequence()
+     if (incio === false ){
+        nextSequence()};
+
+    return incio = true;
+
 });
 
 
@@ -41,6 +46,11 @@ function nextSequence() {
     //Animacion de boton
     color.animate({opacity: 0.2}).animate({opacity: 1});
 
+     //aumento de valor de nivel
+    level++;
+
+    //cambio de texto de h1 segun el nivel
+    $("h1").text("Nivel "+level);
 
     //salida para callback llamada a otras funciones
     playSound(randomChosenColour);
@@ -49,6 +59,9 @@ function nextSequence() {
     
 }
 
+function checkAnswer(currentLevel) {
+
+}
 
 
 
@@ -119,7 +132,6 @@ function animatePress(currentColor) {
   }, 100);
   
 */
-
 
 
 
