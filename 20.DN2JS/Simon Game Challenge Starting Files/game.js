@@ -85,10 +85,20 @@ function checkAnswer(currentLevel) {
         wrong.play();
 
         $("h1").text("Game Over, Press Any Key to Restart");
+
+        //llamodo de funcion para reinciar el juego
+        startOver();
     }
 
 }
 
+//funcion para reinciar el juego
+function startOver(){
+    level = 0;
+    gamePattern = [];
+    incio = false;
+
+}
 
 
 //funcion de Audio
