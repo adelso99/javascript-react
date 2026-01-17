@@ -15,6 +15,7 @@ function nextSequence() {
     //Animacion de boton
     color.animate({opacity: 0.2}).animate({opacity: 1});
 
+    //Audio
     switch (randomChosenColour) {
         case "blue": let blue = new Audio("./sounds/blue.mp3");
         blue.play();
@@ -33,16 +34,18 @@ function nextSequence() {
             break;
     
         default:
-            let wrong = new Audio("./sounds/wrong.mp3");
-            wrong.play();
             break;
     }
+
+    /*forma mas facil del audio
+  var audio = new Audio("sounds/" + randomChosenColour + ".mp3");
+  audio.play();
+  */
     
 
     return randomChosenColour;
 }
 
-//selecionar el id del boton aleatorio que se esta generando
 
 
 
