@@ -75,7 +75,16 @@ function checkAnswer(currentLevel) {
             userClickedPattern = [];
         }
     } else {
-         console.log("Incorrecto");
+        let error = $("body").addClass("game-over");
+
+        setTimeout(function(){
+            error.removeClass("game-over");
+        }, 200);
+
+        let wrong = new Audio("./sounds/wrong.mp3");
+        wrong.play();
+
+        $("h1").text("Game Over, Press Any Key to Restart");
     }
 
 }
@@ -103,8 +112,7 @@ function checkAnswer(currentLevel) {
             yellow.play();
                 break;
         
-            default: let wrong = new Audio("./sounds/wrong.mp3");
-            wrong.play();
+            default: 
                 break;
         }
     
