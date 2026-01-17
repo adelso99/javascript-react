@@ -1,7 +1,7 @@
 
 let buttonColoursy  = ["red", "blue", "green", "yellow"];
 let gamePattern = [];
-let userClickedPattern = [];
+let usrClicekedPattern = [];
 let level = 0;
 let inicio = false;
 
