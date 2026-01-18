@@ -5,6 +5,12 @@ Script de interno osea va dentro de la hoja de HTML
 hacer que el codigo sea mas entedible y que tenga mejor rendimiento
 
 3. Varibles
- Var   --> Para definir variables
+ Var   --> Para definir variables, pero este ya casi no se usa
  let   --> Para definir Varibles
  const --> Para definir Varibles pero estas no se puede cambiar, pero si puden modificarse sus propiedades
+
+ En resumen rápido
+Palabra    ¿Se puede reasignar?	    ¿Se puede redeclarar?	    Alcance (scope)	        ¿Se usa hoy?
+var	             ✅ Sí	                   ✅ Sí	                    Función	            ❌ Evitar
+let	             ✅ Sí	                   ❌ No	                    Bloque {}	        ✅ Sí
+const	         ❌ No	                   ❌ No	                    Bloque {}	        ✅ Sí (por defecto)
