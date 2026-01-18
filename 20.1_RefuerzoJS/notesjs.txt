@@ -6,7 +6,7 @@ hacer que el codigo sea mas entedible y que tenga mejor rendimiento
 
 3. Varibles
  Var   --> Para definir variables, pero este ya casi no se usa
- let   --> Para definir Varibles
+ let   --> Para definir Varibles, no se reasigan y no se pude declarar de nuevo
  const --> Para definir Varibles pero estas no se puede cambiar, pero si puden modificarse sus propiedades
 
  En resumen rápido
