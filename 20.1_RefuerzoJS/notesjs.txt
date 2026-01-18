@@ -1,0 +1,2 @@
+1. Intro
+Script de interno osea va dentro de la hoja de HTML
