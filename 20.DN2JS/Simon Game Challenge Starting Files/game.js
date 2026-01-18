@@ -1,7 +1,7 @@
 
 let buttonColoursy  = ["red", "blue", "green", "yellow"];
 let gamePattern = [];
-let usrClicekedPattern = [];
+let userClicekedPattern = [];
 let level = 0;
 let inicio = false;
 
@@ -10,7 +10,7 @@ let inicio = false;
 $(".btn").on("click", function(){
     let userChosenColour = $(this).attr("id");
 
-    userClickedPattern.push(userChosenColour);
+    userClicekedPattern.push(userChosenColour);
 
     //salida para callback llamada a otras funciones
     //audio
@@ -19,7 +19,7 @@ $(".btn").on("click", function(){
     animatePress(userChosenColour);
 
     //secuencia de juego
-    checkAnswer(userClickedPattern.length -1);
+    checkAnswer(userClicekedPattern.length -1);
 
         
  });
@@ -66,13 +66,13 @@ function nextSequence() {
 
 function checkAnswer(currentLevel) {
 
-    if(userClickedPattern[currentLevel] === gamePattern[currentLevel]){
-        if(userClickedPattern.length === gamePattern.length){
+    if(userClicekedPattern[currentLevel] === gamePattern[currentLevel]){
+        if(userClicekedPattern.length === gamePattern.length){
             setTimeout( function(){
                 nextSequence();
             }, 1000);
 
-            userClickedPattern = [];
+            userClicekedPattern = [];
         }
     } else {
         let wrong = new Audio("./sounds/wrong.mp3");
@@ -98,7 +98,7 @@ function startOver(){
     level = 0;
     gamePattern = [];
     inicio = false;
-    userClickedPattern = [];
+    userClicekedPattern = [];
 
 }
 
