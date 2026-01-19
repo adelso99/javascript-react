@@ -64,9 +64,41 @@ heap --> se guardan los datos 2.De Referencia
 
 --------------------------------------------------------------------------------------
 
+Tipos de datos Primitivos
+
+let numero = 1; // 1.Tipo Number es de Numero
+
+let texto = "Hola"; // 2.Tipo String es de texto
+
+let verdadero = true; // 3.Tipo Boolean es verdadero o falso
+
+let falso = false; // 3.1 Tipo Boolean es falso o verdadero
+
+let noDefinido; // 4.dice any pero es undefined osea no tien un valor
+
+let undef = undefined; // 4.1 undefined pero es undefined osea no tiene un valor
+
+let nulo = null; // 5. tiene un valor pero el valor es nulo no undefined
+
+
+
 en una variable esta:
 
 let nombre = "Adelso";
 
 1.esta el tipo de dato que es valor que tiene: Number, String, Boolean, Undefined y Null pero la variable "nombre" es un "String"
 2.esta el valor que se le signa a la variable en este caso "Adelso" es el valor de la variable "nombre"
+
+
+
+-----------------------------------------------------------------------------------------------------------
+
+con la variable "let" se puede hacer lo siguiente
+
+let nombre = "Hola de Nuevo"; //las variables let puede reasignarse de nuevo
+nombre = "Hello :D"           //se reasigan un nuevo valor a la variable
+
+console.log(nombre);
+
+
+Con la variable "const" se puede hacer lo siguiente
