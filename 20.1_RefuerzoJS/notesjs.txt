@@ -121,5 +121,21 @@ y este ya se puede cambiar e valor
 
 
 
+typeof --> es para verficar el tipo de una varible
+
+Ejemplo;
+let numero = 42;
+let nombre = "Hola de Nuevo";
+let verdadero = true;
+let undef;
+let nula = null;
+
+
+console.log(typeof numero);   --> Number
+console.log(typeof nombre);   --> String
+console.log(typeof verdadero); --> Boolean
+console.log(typeof undef);    --> undefined
+console.log(typeof nula);    --> nula pero sale "Object" porque al final es un valor "0"   
+
 
 
