@@ -1,9 +1,15 @@
 1. Intro
 Script de interno osea va dentro de la hoja de HTML
 
+
+--------------------------------------------------------------------------------------
 2. Refactorizar
 hacer que el codigo sea mas entedible y que tenga mejor rendimiento
 
+
+
+
+--------------------------------------------------------------------------------------
 3. Varibles
  Var   --> Para definir variables, pero este ya casi no se usa
  let   --> Para definir Varibles, no se reasigan y no se pude declarar de nuevo
@@ -31,6 +37,11 @@ la que usare yo es la 2. camelCase porque me siento mas comodo :)
 JavaScript es "Case Sensitive" lo cual Distingue mayúsculas y minúsculas
 
 
+
+
+
+-------------------------------------------------------------------------------------------
+
 3.Tipos de datos
 1.Primitivos
 - Number
@@ -48,3 +59,7 @@ JavaScript es "Case Sensitive" lo cual Distingue mayúsculas y minúsculas
 
 stack --> se guardan los datos de 1. Primitivos
 heap --> se guardan los datos 2.De Referencia
+
+
+
+--------------------------------------------------------------------------------------
