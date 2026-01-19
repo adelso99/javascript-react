@@ -139,3 +139,8 @@ console.log(typeof nula);    --> nula pero sale "Object" porque al final es un v
 
 
 
+
+-----------------------------------------------------------------------------------------------------------
+
+Objetos 
+Estos son tipos de Referencia
