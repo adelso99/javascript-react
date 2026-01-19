@@ -63,3 +63,10 @@ heap --> se guardan los datos 2.De Referencia
 
 
 --------------------------------------------------------------------------------------
+
+en una variable esta:
+
+let nombre = "Adelso";
+
+1.esta el tipo de dato que es valor que tiene: Number, String, Boolean, Undefined y Null pero la variable "nombre" es un "String"
+2.esta el valor que se le signa a la variable en este caso "Adelso" es el valor de la variable "nombre"
