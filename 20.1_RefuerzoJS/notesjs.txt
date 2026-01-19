@@ -109,7 +109,15 @@ console.log(nombre);
 
 
 -----------------------------------------------------------------------------------------------------------
+Tipos de Lenguajes
+1. Tipado Estatico
+al momento de definir una varible se aplica el tipo de dato
+y este ya no puede cambiar e valor
 
+
+2. Tipado Dinamico
+no es necesario definir el tipo de dato
+y este ya se puede cambiar e valor
 
 
 
