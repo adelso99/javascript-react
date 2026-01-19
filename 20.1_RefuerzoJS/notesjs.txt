@@ -14,3 +14,18 @@ Palabra    ¿Se puede reasignar?	    ¿Se puede redeclarar?	    Alcance (scope)	
 var	             ✅ Sí	                   ✅ Sí	                    Función	            ❌ Evitar
 let	             ✅ Sí	                   ❌ No	                    Bloque {}	        ✅ Sí
 const	         ❌ No	                   ❌ No	                    Bloque {}	        ✅ Sí (por defecto)
+
+
+convenciones para definir variables
+1.UpperCamelCase --> la primera letra del nombre de la variable es Mayuscula y si existe otra palabra tambien 
+debe ser mayuscula la primera letra
+
+2.camelCase --> la primera letra del nombre de la variable es minuscula y si existe otra palabra debe ser mayuscula la primera 
+
+3.snake_case --> esta se separa las palabras por un guion bajo "_" y todas las palabra debe ser mayuscula
+
+
+la que usare yo es la 2. camelCase porque me siento mas comodo :)
+
+
+JavaScript es "Case Sensitive" lo cual Distingue mayúsculas y minúsculas
