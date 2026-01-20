@@ -12,14 +12,15 @@ hacer que el codigo sea mas entedible y que tenga mejor rendimiento
 --------------------------------------------------------------------------------------
 3. Varibles
  Var   --> Para definir variables, pero este ya casi no se usa
- let   --> Para definir Varibles, no se reasigan y no se pude declarar de nuevo
- const --> Para definir Varibles pero estas no se puede cambiar, pero si puden modificarse sus propiedades
+ let   --> Para definir Varibles, si se puede reasignar, pero no se pude declarar de nuevo
+ const --> Para definir Varibles pero estas no se puede reasignar, pero si puden modificarse sus propiedades
 
  En resumen rápido
-Palabra    ¿Se puede reasignar?	    ¿Se puede redeclarar?	    Alcance (scope)	        ¿Se usa hoy?
-var	             ✅ Sí	                   ✅ Sí	                    Función	            ❌ Evitar
-let	             ✅ Sí	                   ❌ No	                    Bloque {}	        ✅ Sí
-const	         ❌ No	                   ❌ No	                    Bloque {}	        ✅ Sí (por defecto)
+Palabra	      Reasignar	    Redeclarar	   Alcance (scope)		        Uso actual
+var	             ✅	          ✅	            Función	                  ❌ Evitar
+let	             ✅	          ❌	            Bloque {}	                ✅
+const	         ❌	          ❌	            Bloque {}	                ✅ (por defecto)
+
 
 
 convenciones para definir variables
@@ -264,4 +265,164 @@ console.log(resultado);
 -----------------------------------------------------------------------------------------------------------
 
 Declaraciones y Expresiones
+
+1.Declaraciones
+1.1 Declaration --> Declaracion oral
+1.2 Statement --> Declaracion escrita
+
+Las Declaraciones en JavaScript, es cuando se crea algo pero se referencia en un futuro
+
+1.1 Declaration --> Declaracion oral
+- let
+- const
+- funcion y funcion*
+- asyn funcion y asinc funcion*
+- class 
+- export / import
+
+
+1.2 Statement --> Declaracion escrita
+- if
+- elese 
+- for
+- switch
+
+
+
+
+2.Expresiones
+Expressious
+Es cualquier linea o expresion de codigo que evalua de un valor
+
+Ejemplo
+4 + 6 = 10
+
+x = 10
+
+miFuncion()
+
+Tambien
+una Declarcion no dejara hacer un console.log() --> let, const, for, if ...
+una Expresion si te dejara hacer un console.log() --> let, const, for, if ...
+
+
+
+
+-----------------------------------------------------------------------------------------------------------
+Operadores en JavaScript
+Sirven para poder crear Expresiones y con ello se crean algoritmos y solucionar problemas
+
+- Aritmeticos
+- Asignacion
+- Comparacion
+- Logicos
+- Bitwise
+
+
+
+
+Operadores Aritmeticos
+//Operadores Aritmeticos : Para realizar Operaciones Matematicas
+let a = 5; //Expresion
+
+let b = 7; //Expresion
+
+/*
+//Declaracioon
+console.log(a + b); //suma 
+console.log(a - b); //resta 
+console.log(a * b); //multiplicacion
+console.log(a / b); //Division
+console.log(a % b); //modulo o el residuo de la division
+console.log(a ** b); //potencia
+
+
+//funcionalidad de console al pasar un argumento string
+console.log(a + b, "suma"); 
+console.log(a - b, 'resta'); 
+*/
+
+
+//Operadores Incrementar
+console.log(++a); //Foma 1 incremento al instante refejado
+console.log(a++); //Foma 2 incremento en segunda llamada refelajada
+console.log(a); //valor de a
+
+
+//Operadores Decrementar
+console.log(--a); //Foma 1 decremento al instante refejado
+console.log(a--); //Foma 2 decremento en segunda llamada refelajada
+console.log(a); //valor de a
+
+
+
+
+
+Operadores de Asignacion
+//Operadores de asignacion +=
+let a = 5;
+a = a + 5; // estamos resignado para poner aumentar un valor
+
+a += 5;
+a -= 5;
+a *= 5;
+a /= 5;
+a %= 5;
+
+console.log(a);
+
+
+
+
+Operadores de Comparacion
+//Operaciones de Comparacion
+//relacionales
+let a = 10;
+
+console.log( a > 5); //mayor que a: comparar si es true o false
+console.log( a >= 5); //mayor o igual a:comparar si es true o false
+console.log( a < 5); //menor que a:comparar si es true o false
+console.log( a <= 5); //menor o igual a:comparar si es true o false
+
+
+//condicionales
+
+console.log(a == 10); // ==: es igual a 10
+console.log(a != 10); // !=: es distinto a 10
+console.log(a === '10'); // ===: es un igual estricto a '10'
+
+
+
+
+
+Operadores Logicos
+//Operadores Logicos
+// AND, OR, NOT
+// &&, ||,  !
+
+
+//AND --> &&
+//evalua lo que se encuntra en ambos lados
+//console.log(true && true); //Dara true porque ambos lados son true
+//console.log(true && false); //Dara false porque los lados no son iguales
+
+
+let mayor = false;
+let suscrito = true;
+
+console.log("Operador AND: ", mayor && suscrito);//false porque ambas no son iguales
+
+
+//OR
+// si no cumple una accion entonces puede cumplir otra
+console.log("Operador OR: ", mayor || suscrito);//true poque existe 2 acciones
+
+//NOT
+//Invierte el valor
+console.log("Operador NOT: ", !mayor); //true porque invierte el valor del false
+
+
+let catalogoInfantil = !mayor; // solo acceso a ese catalogo
+
+
 
