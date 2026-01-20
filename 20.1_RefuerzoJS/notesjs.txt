@@ -426,3 +426,7 @@ let catalogoInfantil = !mayor; // solo acceso a ese catalogo
 
 
 
+
+-----------------------------------------------------------------------------------------------------------
+Operadores de Short Circuit
+
