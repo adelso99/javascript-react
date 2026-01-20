@@ -19,3 +19,7 @@ ensalada.push("limon");
 
 console.log(ensalada);
 
+
+//para conseguir el tamaño de elementos que tiene mi array lo puedo hacer con ".length"
+
+console.log(ensalada.length);
