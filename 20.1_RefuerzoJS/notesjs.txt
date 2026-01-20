@@ -302,9 +302,9 @@ x = 10
 miFuncion()
 
 Tambien
-una Declarcion no dejara hacer un console.log() --> let, const, for, if ...
-una Expresion si te dejara hacer un console.log() --> let, const, for, if ...
 
+let, const, if, for → Declaraciones / Statements
+2 + 2, x = 5, miFuncion() → Expresiones
 
 
 
@@ -511,6 +511,20 @@ console.log(resultado);
 
 Operador ternario
 
+Operador ternario ? :
+El operador ternario tiene esta forma:
+condición ? valorSiEsTrue : valorSiEsFalse
+Es lo mismo que un if...else, pero en una sola línea.
+
+//Operador ternario
+//Expresion ? "si es true" : "si es false"
+
+let edad = 20;
+let acceso = edad > 17 ? 'Permitir Ingreso' : 'No puede Ingresar';
+
+console.log(acceso);
+
+//este cumple con condicion es true o false segun sea la desicion
 
 
 
@@ -518,3 +532,19 @@ Operador ternario
 
 
 -----------------------------------------------------------------------------------------------------------
+Control de Flujo
+
+//Condicion IF
+/*
+if (condicion) {
+    expresion
+    
+}
+*/
+
+
+let edad = 15;
+
+if (edad > 17){
+    alert("Es Mayor de Edad");
+}
