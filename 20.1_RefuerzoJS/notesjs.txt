@@ -585,7 +585,13 @@ LOOPS O BUCLES
 4- For In 
 5- For Of
 
-
+Tipos de loops
+Loop	              Uso
+while	              mientras
+do while	    ejecutar al menos 1 vez
+for	               contador clásico
+for of	            recorrer arrays
+for in	            recorrer objetos
 
 1. While
 //Condicion While
@@ -616,6 +622,7 @@ Cuidado con los Loops Infinitos
 
 
 2. Do While
+Se ejecuta al menos una vez, aunque la condición sea falsa.
 //Condicion Do While-- Evalua la condicion al final
 // do {} while ();
 //cuales son los numeros pares
@@ -635,8 +642,8 @@ do {
 3.For
 //Condicion For -- Se compone de 3 expresiones
 /*
-for (inicializacion;comparacion;exprsioninteraccion){
-
+for (inicio; condicion; incremento) {
+    // código
 }
 */
 
@@ -674,3 +681,83 @@ while (incremento < frutas.length){
 
 
 5.For In
+//For In -- Iterar las propiedades de un Objeto
+let usuario = {
+    id: 1,
+    name: "John",
+    edad: 20,
+
+};
+
+for (let propiedad in usuario){//uso de in
+    //console.log(propiedad); //Mostrara las propiedades no los valores "propiedad"
+    console.log(propiedad, usuario[propiedad]); //Mostrara las propiedades y valores "usuario[propiedad]""
+}
+
+propiedad = clave
+usuario[propiedad] = valor
+📌 NO recomendado para arrays, aunque funciona.
+
+
+//se puede con array pero es mejor for of
+let frutas = ["limon", "tomate", "Naranja"];
+
+for (let indice in frutas) { //aplicacion de in
+   
+    console.log(indice, frutas[indice]); //muestra en consola fruta por fruta
+
+}
+
+
+
+Breack y Continuo
+//Parar un Loop o Bucle
+//Break--> Permite Salir del Loop
+//Continue--> Permite Saltar una interaccion
+
+let i = 0;
+
+while(i < 6){
+    i++;
+    if(i === 2) {
+        continue; //uso de continue
+    }
+    
+    if ( i === 4){
+        break; //uso de break
+    }
+
+    console.log(i);
+}
+
+
+----------------------------------------------------------------------------------------
+switch
+
+// Uso de Switch -- permite indicar donde queremos que vaya
+//es parecido al if else, pero es msa corto
+
+let accion = "listar";
+
+switch (accion) {  
+    case "listar":  //comparacion con la variable accion 
+        console.log("Accion de Listar");
+        break; //es como la salida
+
+    case "guardar":  //comparacion con la variable accion
+        console.log("Accion a Guardar");
+        break;
+    default:  //es como el else es la salida final
+        console.log("Accion no reconocida");
+}
+
+
+CUÁNDO USAR CADA UNO
+Situación	                          Recomendación
+1 condición	                              if
+Varias condiciones	                if / else if / else
+Mismo valor, varias opciones	        switch
+Repeticiones conocidas	                for
+Repeticiones desconocidas	            while
+Arrays	                               for...of
+Objetos	                                for...in
