@@ -33,6 +33,6 @@ function nombreResolucion(ancho, alto){
 
 }
 
-let nombre = nombreResolucion(1366, 2000);
+let nombre = nombreResolucion(3840, 2160);
 
 console.log(nombre);
