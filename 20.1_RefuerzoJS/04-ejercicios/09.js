@@ -1,11 +1,42 @@
 
 
-//Ejercicio 8
+//Ejercicio 9
 /**
- * Crear un algoritmo que tome un array de
- * objeto y devuela un array de pares
+ * Crear un algoritmo que devuela un 
+ * array de objetos en base a pares
  */
 
+let pairs = [
+    [1, { name: "Nicolas" }],
+    [2, { name: "Felipe" }],
+    [3, { name: "John" }],
+];
+
+
+function toCollection(arr){
+
+    let pares = [];
+
+    for(let i = 0; i < arr.length; i++){
+        let dato =   {
+            id: arr[i][0], 
+            name: arr[i][1].name,
+        };
+
+        pares.push(dato);
+
+    }
+
+    return pares;
+
+}
+
+let resultado = toCollection(pairs);
+
+console.log(resultado);
+
+
+/*
 let array = [{
     id: 1,
     name: "Nicolas",
@@ -16,25 +47,4 @@ let array = [{
     id: 3,
     name: "John",
 }];
-
-
-function toPairs(arr){
-
-    let pares = [];
-
-    for(let i = 0; i < arr.length; i++){
-        let dato = [arr[i].id, arr[i]];
-
-        pares.push(dato);
-
-    }
-
-    return pares;
-
-
-}
-
-let resultado = toPairs(array);
-
-console.log(resultado);
-
+*/
