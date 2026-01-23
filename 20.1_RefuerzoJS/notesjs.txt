@@ -900,14 +900,14 @@ console.log(user1, user2);
 
 ---------------------------------------------------------------------------------------------------
 Funcion Constructora
-
+Una función especial que se usa para crear objetos usando new
 
 //Funcion Constructora en js
 
 //{id: 1, recuperarClave: funccton(){}}
 
 function Usuario(){ // se debe de usar la primera letra MAYUSCULA --UpperCamelCase
-    this.id = 1;
+    this.id = 1;  //this es el objeto que se está creando
     this.recuperarClave = function(){ //Metodo
         console.log("Recuperando Clave...");
     }
@@ -919,3 +919,76 @@ let usuario = new Usuario(); //con "new" se crea un onjeto {} y eso se le asigna
                              
 
 console.log(usuario);
+
+
+this NO crea objetos
+👉 new crea UN SOLO objeto
+👉 this es una referencia a ese mismo objeto
+
+new crea el objeto una vez, this solo lo referencia.
+
+---------------------------------------------------------------------------------------------------
+Atajos Constructores
+
+//objeto.construcctor
+
+
+let obj = {
+
+};
+
+let obj1 = new Object();
+
+/**
+ * new Array(); []
+ * new String(); "" '' ``
+ * new Number();
+ * new Boolean(); 
+ */
+
+
+function Usuario(){
+    this.name = "Hola";
+}
+
+let user = new Usuario();
+
+console.log(user.constructor);
+
+//eval() --> ejecuta código JavaScript que está escrito como TEXTO (string)
+Ejemplo ULTRA simple
+eval("2 + 2");
+JS ve esto como:
+2 + 2;
+
+👉 Resultado:
+4
+
+// uso de ".valeuOf()" para que devuela el valor real
+let x = new Number(10);
+
+console.log(x);          // Number {10}
+console.log(x.valueOf()); // 10
+📌 .valueOf() devuelve el valor real
+
+
+Resumen 
+    {} --> es un atajo de new Object()
+Todo objeto tiene un constructor
+    .constructor -->dice quién lo creó
+    new --> crea un solo "objeto"
+    .valueOf() --> devuelve el valor real
+
+
+
+Atajos constructores (ESTO ES ORO)
+Lo que escribes	        Lo que JS hace
+{}	                    new Object()
+[]	                    new Array()
+"hola"	                new String("hola")
+5	                    new Number(5)
+
+
+
+---------------------------------------------------------------------------------------------------
+Funciones
