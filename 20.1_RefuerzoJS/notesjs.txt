@@ -867,3 +867,55 @@ user1.name = "Hola"; //Intenando agregar nueva propiedad --> no dejara
 user1.id = 2; //Intenando cambiar un valor de una propiedad --> SI DEJA
 
 console.log(user1);
+
+
+
+---------------------------------------------------------------------------------------------------
+
+//Factory Functions
+//permite crear objetos pero de forma sensilla y no repetitiva
+
+function crearUsuario(name, email){
+
+    return {
+        email,  //email: email,
+        name: name,  //name,
+        activo: true,
+        recuperarClave: function(){
+            console.log("Recuperando Clave...");
+        },
+    };
+}
+
+let user1 = crearUsuario("Adelso", "adelso@gmail.com");
+let user2 = crearUsuario("John", "hola@gmail.com");
+
+console.log(user1, user2);
+
+
+
+
+
+
+
+---------------------------------------------------------------------------------------------------
+Funcion Constructora
+
+
+//Funcion Constructora en js
+
+//{id: 1, recuperarClave: funccton(){}}
+
+function Usuario(){ // se debe de usar la primera letra MAYUSCULA --UpperCamelCase
+    this.id = 1;
+    this.recuperarClave = function(){ //Metodo
+        console.log("Recuperando Clave...");
+    }
+} 
+
+let usuario = new Usuario(); //con "new" se crea un onjeto {} y eso se le asigna a "this"
+                             //despues se vincual el prototipo de la funcion "Usuario()"
+                             //esto returna de manera automatica this, sin colocarle el return manual
+                             
+
+console.log(usuario);
