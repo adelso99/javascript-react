@@ -6,8 +6,10 @@ function Usuario(nombre){
 }
 
 console.log(Usuario.name); // devuelve el nombre de la funcion
-console.log(Usuario.length); // Cantidad de argumentos que recibe la funcion
+console.log(Usuario.length); // cantidad de parámetros que recibe la función
 
+function suma(a, b, c){}
+console.log(suma.length); // 3
 
 const u = Usuario;
 let user = new u("Adelso");
