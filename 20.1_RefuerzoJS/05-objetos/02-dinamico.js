@@ -6,7 +6,7 @@ const usuario = {  //no se puede cambiar el valor a la variable
     
 };
 
-//Pero si se pueden modificar, agregar, eliminar, editar las propiedades
+//Pero si se pueden modificar, agregar y eliminar, las propiedades
 usuario.nombre = "Adelso";
 usuario.guardar = function (){
     console.log("Guardando: "+usuario.nombre);
