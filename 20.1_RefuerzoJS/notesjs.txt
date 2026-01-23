@@ -761,3 +761,64 @@ Repeticiones conocidas	                for
 Repeticiones desconocidas	            while
 Arrays	                               for...of
 Objetos	                                for...in
+
+
+
+
+
+
+----------------------------------------------------------------------------------------
+PROGRAMACION ORIENTA A OBJETOS 
+
+//Programacion orientada a objetos
+let usuario = {
+    email: "adelso@gmail.com",
+    nombre: "Adelso",
+    direccion: {
+        calle: "Hola",
+        numero: 15,
+    },
+    activo: true, 
+    recuperarClave: function(){ //funcion anonima
+        console.log("Recuperando clave");
+    },
+};
+
+
+Los objetos representan cosas reales
+Cada objeto tiene:
+    Propiedades (datos)
+    Métodos (acciones)
+
+👉 En la vida real:
+Un usuario tiene datos y hace cosas
+
+
+usuario
+├── email
+├── nombre
+├── activo
+├── direccion
+│   ├── calle
+│   └── numero
+└── recuperarClave()
+
+Acceso al objeto normal 
+usuario.email
+usuario.nombre
+usuario.activo
+
+
+Acceso a objeto dentro del objeto
+usuario.direccion.calle
+usuario.direccion.numero
+
+
+Modificar una propiedad
+usuario.activo = false;
+
+Agregar una nueva
+usuario.rol = "admin";
+
+Eliminar una
+delete usuario.email;
