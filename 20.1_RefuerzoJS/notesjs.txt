@@ -1026,4 +1026,152 @@ let saludo = returned();
 
 saludo();
 
+
+
+
 ---------------------------------------------------------------------------------------------------
+Funciones --> Function 
+
+function Punto(x,y){
+    this.x = x;
+    this.y = y;
+
+    this.dibujar = function(){
+        console.log("Dibujando....");
+    }
+}
+
+//para poder guardar el objeto se crea esta varible y se le asigna
+//valores random solo para despues ser sustiuidas por el objeto de la funcion
+//para poder extender objetos y funciones
+let punto = { z: 7};
+
+//el metodo ".call()"
+//Punto.call(punto, 1, 2);//el "punto" que estan dentro del parentesis seria "this"
+
+//tambien esta el metodo ".apply()"
+Punto.apply(punto, [1, 2]);//pero los parametros se deben de pasar en array []
+
+//ahora si dejara mostrarlo en consola
+console.log(punto);
+
+
+
+
+/* NO USAR
+const Point = new Function("x", "y", `
+    this.x = x;
+    this.y = y;
+
+    this.dibujar = function(){
+        console.log("Dibujando....");
+    }
+    `);
+
+const p = new Point(1, 2);
+
+console.log(p);
+
+*/
+
+
+Ejemplo 2:
+function activar(){
+    this.activo = true;
+}
+
+let user = {};
+activar.call(user);
+
+
+call y apply permiten ejecutar una función usando cualquier objeto como this
+
+
+
+---------------------------------------------------------------------------------------------------
+Valor y Referencia
+
+
+//Referencias 
+
+/* datos primitivos --> se pasan por VALOR
+let a = 1;
+let b = a;
+
+b++; 
+console.log(a , b);
+*/
+
+
+
+/* objetos --> se pasan por REFERENCIA
+let a = {};
+let b = a;
+
+b.prop = 1;
+
+console.log(a, b);
+*/
+
+
+//Funciones + primitivos
+/*
+let a = 1;
+
+function suma(n){ //n es otra variable que se crea internamente 
+    n++;
+}
+
+suma(a);
+console.log(a);  // por eso es que aca pasa "1" y no aumenta
+
+
+Qué pasa:
+a es primitivo → se copia el valor
+n es otra variable
+n++ NO afecta a a
+
+📤 Resultado:
+1
+👉 No se modifica el original
+
+
+
+*/
+
+//Funciones + objetos (el caso importante)
+let a = {
+    prop: 1,
+};
+
+function suma(n){ //n es la referencia del objeto 
+    n.prop++;  //entra a la referencia que se le pasa y aumenta el numero
+}
+
+suma(a);
+console.log(a);  // por eso es que aca pasa "2" y si aumenta
+
+
+Qué pasa paso a paso:
+1️⃣ a apunta a un objeto
+2️⃣ n recibe la misma referencia
+3️⃣ n.prop++ modifica el objeto
+4️⃣ a ve el cambio
+
+📤 Resultado:
+{ prop: 2 }
+
+🔥 La función puede modificar el objeto original
+
+
+
+Regla de ORO (aprendétela)
+🔑 Primitivos se copian, objetos se comparten
+
+O más técnica:
+JavaScript pasa primitivos por valor
+y objetos por referencia (compartida)
+
+
+-----------------------------------------------------------------------------------------------------
+Listar Propiedades

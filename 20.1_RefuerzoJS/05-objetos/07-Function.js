@@ -24,14 +24,6 @@ console.log(punto);
 
 
 
-
-
-
-
-
-
-
-
 /* NO USAR
 const Point = new Function("x", "y", `
     this.x = x;
