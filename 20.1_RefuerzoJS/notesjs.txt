@@ -1207,3 +1207,21 @@ for(let llave of Object.keys(punto)){
 for (let entry of Object.entries(punto)){
     console.log(entry);
 }
+
+
+Cuándo usar cada uno
+Método	                Cuándo usarlo
+in	                Verificar si existe una propiedad
+Object.keys()	    Solo nombres de propiedades
+Object.values()	    Solo valores
+Object.entries()	Clave + valor
+for...in	        Iterar propiedades (con cuidado)
+
+
+
+Resumen final
+Un objeto tiene propiedades y métodos
+in                  -> verifica existencia
+Object.keys()       → claves
+Object.entries()    → pares clave/valor
+Bracket notation permite acceso dinámico
