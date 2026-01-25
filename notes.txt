@@ -5853,9 +5853,13 @@ Atajos :)
 ----------------------------------Video 187 Técnicas de línea de comandos y navegación de directorios--------------------------
 
 ls --> Lista
+cd --> cambiar de directorios
+cd nombredirecotrio --> entra al directorios
+cd .. --> regresa al directorio anterior
 
 
 
+----------------------------------Video 188 Creación, apertura y eliminación de archivos mediante la línea de comandos--------------------------
  
 
  
