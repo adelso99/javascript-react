@@ -5852,7 +5852,7 @@ Atajos :)
 
 ----------------------------------Video 187 Técnicas de línea de comandos y navegación de directorios--------------------------
 
-
+ls --> Lista
 
 
 
