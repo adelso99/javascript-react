@@ -5861,8 +5861,12 @@ cd .. --> regresa al directorio anterior
 
 ----------------------------------Video 188 Creación, apertura y eliminación de archivos mediante la línea de comandos--------------------------
  
+mkdir --> crear una nueva carpeta
+touch --> crea un nuevo archivo y se le da manualmente que tipo de extension se desea que sea
+start --> abre el archivo creado directamente para editarlo
+rm --> elimina los archivos y se coloca el nombre del archivo que se desea borrar
+rm * --> borra todos los archivos del directorio actual
 
- 
 
 
 
