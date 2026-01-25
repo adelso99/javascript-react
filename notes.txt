@@ -5838,9 +5838,9 @@ Juego completo y terminado :D
 
 ----------------------------------------------SECCION 21 LINEA DE COMANDO UNIX-------------------------------------------------
 ----------------------------------Video 185 Instalar Git Bash en Windows--------------------------
+Listo
 
-
-
+----------------------------------Video 186 Entendiendo la línea de comandos. ¡Viva la línea de comandos!--------------------------
 
 
 
