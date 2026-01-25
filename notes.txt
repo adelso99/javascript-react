@@ -5873,6 +5873,17 @@ rm -r --> permite eliminar un directorio o carpeta
 
 
 
+----------------------------------------------SECCION 22 DESARROLLO WEB BACKEND-------------------------------------------------
+----------------------------------Video 190 Explicación del desarrollo web backend--------------------------
+
+
+
+
+
+
+
+
+
 NOTA:
 
 Repasar:
