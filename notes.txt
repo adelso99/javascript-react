@@ -5840,7 +5840,19 @@ Juego completo y terminado :D
 ----------------------------------Video 185 Instalar Git Bash en Windows--------------------------
 Listo
 
+
+
+
 ----------------------------------Video 186 Entendiendo la línea de comandos. ¡Viva la línea de comandos!--------------------------
+
+Atajos :)
+
+
+
+
+----------------------------------Video 187 Técnicas de línea de comandos y navegación de directorios--------------------------
+
+
 
 
 
