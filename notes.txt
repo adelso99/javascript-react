@@ -5866,6 +5866,7 @@ touch --> crea un nuevo archivo y se le da manualmente que tipo de extension se 
 start --> abre el archivo creado directamente para editarlo
 rm --> elimina los archivos y se coloca el nombre del archivo que se desea borrar
 rm * --> borra todos los archivos del directorio actual
+rm -r --> permite eliminar un directorio o carpeta 
 
 
 
