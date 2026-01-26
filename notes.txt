@@ -5881,7 +5881,17 @@ Back end --> servidor db, logica detras del usuario
 
 
 ----------------------------------Video 191 Herramientas y tecnologías de backend: ¿cuál aprender?--------------------------
+Node.js
 
+
+
+
+
+
+
+
+----------------------------------------------SECCION 23 NODE JS-------------------------------------------------
+----------------------------------Video 192 ¿Qué es Node.js?--------------------------
 
 
 
