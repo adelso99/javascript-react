@@ -5884,6 +5884,8 @@ rm -r --> permite eliminar un directorio o carpeta
 
 
 
+
+
 NOTA:
 
 Repasar:
