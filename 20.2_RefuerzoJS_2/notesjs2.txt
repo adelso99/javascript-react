@@ -1,2 +1,50 @@
+
 Refuerzo 2 JavaScript
 
+ -------------------------------------------LECCION 1 Fundamentos de JavaScript -------------------------------------------------------------------------
+
+Fundamentos de JavaScript
+    - dar instrucciones a una computadora (código)
+    - la computadora sigue nuestras instrucciones (ejecutar el código)
+
+
+Crear una alerta o pop con "alert()";
+
+Ejemplo 1;
+alert("Hola"); //el codigo entre comillas es lo que mostrara, tambien se puede usar comillas simples ''
+
+En esta lección:
+1. JavaScript da instrucciones a una computadora
+2. Escribió código JavaScript
+3. Ejecutó nuestro código usando la consola
+4. Sintaxis
+
+EJERCICIOS SUGERIDOS
+1a. Usa alert(...); para mostrar "¡Buenos días!" en una ventana emergente.   --> LISTO
+
+1b. Muestra tu nombre en una ventana emergente. --> LISTO
+
+1c. Usando matemáticas, calcula 10 + 5 en la consola. --> LISTO
+
+1d. Calcula 20 - 5 en la consola. --> LISTO
+
+1e. Calcula 2 + 2 - 5 en la consola --> LISTO
+
+1f. Usa document.body.innerHTML = ...; para mostrar "¡Buenos días!" en la página web.  --> LISTO
+
+1g. Muestra tu nombre en la página web.  --> LISTO
+
+Ejercicios de desafío
+
+1h. Pides una camiseta por 10 $, calcetines por 8 $ y platos para la cena por 20 $. Usa JavaScript para calcular el costo total de tu pedido.
+SOLUCION: 38
+
+1i. Tu cuenta bancaria tiene 100 $, gastas 20 $ en el almuerzo, 50 $ en la cena y ganas 200 $ en tu trabajo. Calcula cuánto dinero tienes.
+SOLUCION: 230
+
+1j. Usa document.body.innerHTML = ...; para dejar la página web en blanco
+SOLUCION: document.body.innerHTML = ""; //las comillas no se reflajan en la pagina por ende estara en blanco
+
+
+
+-------------------------------------------LECCION 2 Números y matemáticas-----------------------------------------------------------------------------
