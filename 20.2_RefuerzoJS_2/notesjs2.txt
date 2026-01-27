@@ -47,6 +47,8 @@ SOLUCION: document.body.innerHTML = ""; //las comillas no se reflajan en la pagi
 
 
 
+
+
 -------------------------------------------LECCION 2 Números y matemáticas-----------------------------------------------------------------------------
 
 + --> suma
@@ -229,3 +231,8 @@ SOLUCION: (86 - 32) * 5/9
 
 2n. La temperatura es de -5 °C. Calcula la temperatura en Fahrenheit. (23)
 SOLUCION: (-5 * 9/5) + 32
+
+
+
+
+-------------------------------------------LECCION 2 Strings-----------------------------------------------------------------------------
