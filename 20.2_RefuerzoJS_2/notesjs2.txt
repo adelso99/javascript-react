@@ -154,6 +154,13 @@ este siempre escoge el inferior mas cercano no importa si el decimal est mas cer
 Math.floor y Math.round son funciones de redondeo en programación 
 
 
+tambien  esta Math.ceil pero no es igual
+Math.ceil(x) 
+siempre redondea hacia arriba al entero superior más cercano 
+Math.ceil(2.2);
+3
+- 2.2 -> 3
+
 
 En esta lección:
 1. Números y matemáticas
@@ -201,8 +208,10 @@ SOLUCION 2: (2095 + 799 + 1899 + 499) / 100 + Math.round((2095 + 799 + 1899 + 49
 Finalizar: después de terminar 2i, retira la tostadora de tu carrito
 
 2j. Digamos que siempre queremos redondear un número hacia abajo (2.8 => 2). Usando Google o una herramienta de IA, busca el código para hacer esto.
+SOLUCION: Math.floor(2.8);
 
 2k. Siempre redondeemos un número hacia arriba (2.2 => 3). Busca cómo hacerlo.
+SOLUCION: Math.ceil(2.2);
 
 Ejercicios de desafío
 
@@ -213,7 +222,10 @@ Fahrenheit = (Celsius * 9/5) + 32
 Celsius = (Fahrenheit - 32) * 5/9
 
 21. La temperatura es de 25 °C. Calcula la temperatura en Fahrenheit. (77)
+SOLUCION: (25 * 9/5) + 32
 
 2m. La temperatura es de 86 °F. Calcula la temperatura en Celsius. (30)
+SOLUCION: (86 - 32) * 5/9
 
 2n. La temperatura es de -5 °C. Calcula la temperatura en Fahrenheit. (23)
+SOLUCION: (-5 * 9/5) + 32
