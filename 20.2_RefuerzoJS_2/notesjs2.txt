@@ -68,11 +68,152 @@ Orden de Operadores
 - Paréntesis: se resulven primero no importa si estan al principio, en medio o final 
 - Potencias / raíces: Se resuleven despues de no existan Paréntesis
 - Divison y multiplicacion: tienen el mismo nivel que se hacen primero y si ambas estan juntas siguen el orden se hacen de izquierda a derecha
-- Resta y Suma: se hacen despues
+- Resta y Suma: se hacen despues y tambien tiene la misma prioridad y el mismo orde de izquierda a derecha
 
+Ejemplo 1:
 1 + 1 * 3 / 2
 1 * 3 = 3
 1 + 3 / 2
 3 / 2 = 1.5
 1 + 1.5
  2.5 ✅
+
+
+Sintasis de Corchetes
+Se le da prioridad a lo que esta dentro de los parentesis
+
+Ejemplo 2:
+( 1 + 1 ) * 3  //parentesis primero 
+2 * 3
+ 6 ✅
+
+
+En programación:
+- 2, 3, 4 = números enteros
+- 2.2, 2.5 = números de punto flotante (floats)
+    - Las computadoras tienen un problema al trabajar con números flotantes
+
+
+  Humano        Computadora
+    2             1100011
+    10              0.2
+    99              ???
+
+
+Uso de los Floats en js
+
+
+En JavaScript no existe el tipo float o double como tal.
+👉 Todos los números son Number (decimales binarios).
+
+Eso provoca errores de precisión con decimales.
+Ejemplo clásico:
+0.1 + 0.2
+// 0.30000000000000004 😐
+
+Ejemplo 2:
+precio 20.95 y 79.9
+
+La solución correcta: trabajar con centavos
+En lugar de usar decimales, se usan enteros.
+Paso 1️⃣ Convertir a centavos
+20.95 → 2095
+7.99 → 799
+
+
+(2095+799) / 100  // se divide en 100 porque ahi 100 centavos en cada dolar 
+28.94
+
+
+Los cálculos con números flotantes a veces son inexactos.
+Al trabajar con dinero
+1. Haz el cálculo en centavos
+2. Convierte de nuevo a dólares o moneda a usar
+
+
+
+Para redeonder un decimal se usa "Math.round"
+Math.round(x) 
+redondea al entero más cercano, aplicando redondeo estándar si la parte decimal es > 0.5 
+Ejemplo:
+- 3.5 -> 4 
+- 3.4 -> 3. 
+
+sigue la logica por 3.5 esta mas puede incrementar a 4 y 3.4 no entonces se queda en 3
+
+
+tambien  esta Math.floor pero no es igual
+Math.floor(x) 
+siempre redondea hacia abajo al entero inferior más cercano 
+Ejemplo:
+- 3.7 -> 3 
+- -3.1 -> -4. 
+
+este siempre escoge el inferior mas cercano no importa si el decimal est mas cerca de ser un numero grande 
+
+Math.floor y Math.round son funciones de redondeo en programación 
+
+
+
+En esta lección:
+1. Números y matemáticas
+2. Orden de operaciones y paréntesis (...)
+3. Calculé los números en el proyecto final
+4. Los cálculos con puntos flotantes pueden ser inexactos
+5. Math.round()
+6. Cómo buscar código por nuestra cuenta
+
+
+Ejercicios de la lección 2: Números y matemáticas
+
+2a. En un restaurante, pides 1 sopa por 10 $, 3 hamburguesas por 8 $ cada una y 1 helado por 5 $. Usa JavaScript para calcular el costo del pedido.
+SOLUCION: 39
+
+2b. Estás en un restaurante con 2 amigos (3 personas en total) y haces el mismo pedido que en 2a. Calcula cuánto paga cada persona.
+SOLUCION: 13
+
+2c. Calcula el costo total de una tostadora (18.50 $) y 2 camisas (7.50 $ cada una).
+SOLUCION: 33.5
+
+2d. Calcula un impuesto del 10 % para el total del ejercicio 2c.
+SOLUCION: 3.35
+
+2e. Calcula un impuesto del 20 % para el total del ejercicio 2c (recuerda que el 1 % = 1 / 100, por lo que el 20 % = 20 / 100 = 0.2).
+SOLUCION: 6.7
+
+Configuración: en el proyecto de Amazon, ve a la página de inicio y agrega una tostadora ($18.99)
+ a tu carrito para tener 1 pelota de baloncesto, 1 camiseta y 1 tostadora.
+Elige $4.99 de envío para la tostadora.
+
+2f. Calcula el costo de los productos (antes de envío e impuestos). Sugerencia: calcula en centavos para evitar imprecisiones.
+SOLUCION: (2095 +799 +1899) / 100; --> 47.93
+
+2g. Calcula el total antes de impuestos.
+SOLUCION: (2095 +799 +1899 + 499) / 100;
+
+2h. Calcula el 10% de impuestos exactamente. Sugerencia: usa Math.round()
+SOLUCION: Math.round((2095 +799 +1899 + 499) * 0.10) / 100;
+
+2i. Calcula el total del pedido en la parte inferior.
+SOLUCION: Math.round(2095 +799 +1899 + 499 + 529) / 100;
+SOLUCION 2: (2095 + 799 + 1899 + 499) / 100 + Math.round((2095 + 799 + 1899 + 499) * 0.1) / 100
+
+Finalizar: después de terminar 2i, retira la tostadora de tu carrito
+
+2j. Digamos que siempre queremos redondear un número hacia abajo (2.8 => 2). Usando Google o una herramienta de IA, busca el código para hacer esto.
+
+2k. Siempre redondeemos un número hacia arriba (2.2 => 3). Busca cómo hacerlo.
+
+Ejercicios de desafío
+
+Usaremos JavaScript para convertir temperaturas de Celsius (°C) a Fahrenheit (°F). La fórmula es:
+
+Fahrenheit = (Celsius * 9/5) + 32
+
+Celsius = (Fahrenheit - 32) * 5/9
+
+21. La temperatura es de 25 °C. Calcula la temperatura en Fahrenheit. (77)
+
+2m. La temperatura es de 86 °F. Calcula la temperatura en Celsius. (30)
+
+2n. La temperatura es de -5 °C. Calcula la temperatura en Fahrenheit. (23)
