@@ -48,3 +48,31 @@ SOLUCION: document.body.innerHTML = ""; //las comillas no se reflajan en la pagi
 
 
 -------------------------------------------LECCION 2 Números y matemáticas-----------------------------------------------------------------------------
+
++ --> suma
+- --> resta
+* --> multiplicacion
+/ --> division
+
+podemos agregar varias operaciones al igual que matemáticas
+
+4+4+4 
+12
+
+o tambien numero decimales
+
+10.2 +1.2
+11.4
+
+Orden de Operadores
+- Paréntesis: se resulven primero no importa si estan al principio, en medio o final 
+- Potencias / raíces: Se resuleven despues de no existan Paréntesis
+- Divison y multiplicacion: tienen el mismo nivel que se hacen primero y si ambas estan juntas siguen el orden se hacen de izquierda a derecha
+- Resta y Suma: se hacen despues
+
+1 + 1 * 3 / 2
+1 * 3 = 3
+1 + 3 / 2
+3 / 2 = 1.5
+1 + 1.5
+ 2.5 ✅
