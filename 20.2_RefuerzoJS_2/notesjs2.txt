@@ -237,3 +237,20 @@ SOLUCION: (-5 * 9/5) + 32
 
 -------------------------------------------LECCION 2 Strings-----------------------------------------------------------------------------
 Seccion de Texto
+
++ --> el signo mas tambien es usado para concatenacion
+
+"Hola "+" de Nuevo";
+Hola de Nuevo
+
+para comprobar que tipo valor se esta usando se usa "typeof"
+typeof 2; --> Number --> numero
+typeof "Hello"; --> String --> Texto
+typeof true; --> Boolean --> Boleano puede ser falso o verdadero
+typeof [] --> Object --> es un array
+typeof {} --> Object --> es un objeto que guarda propiedades
+
+
+Al calcular dinero
+  1. Calcular en centavos
+  2. Convertir de nuevo a dólares
