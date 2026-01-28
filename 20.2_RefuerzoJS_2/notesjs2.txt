@@ -254,3 +254,53 @@ typeof {} --> Object --> es un objeto que guarda propiedades
 Al calcular dinero
   1. Calcular en centavos
   2. Convertir de nuevo a dólares
+
+Ejemplo:
+"Articuo ("+(1+1)+")" + " $"+((2095+799) / 100);
+'Articuo (2) $28.94'
+
+
+Ejemplo 2:
+"Impuesto estimado (10%) "+ "$"+(Math.round((2095+799) * 0.10) / 100)
+'Impuesto estimado (10%) $2.89'
+
+Ejemplo 3:
+"Total del Pedido: $"+((2095+799+289) /100);
+'Total del Pedido: $31.83'
+
+3 maneras de crear una cadena
+1. '...'
+2. "..."
+3. `...` = cadenas de plantilla --> Interpolación = insertar valor directamente en una cadena
+
+1 y 2. Comillas simples '' y Comillas dobles ""
+"Hello, I'am Adelso";
+
+Carácter de escape
+  carácter = 1 letra/número/símbolo
+
+Un carácter puede ser:
+1. letra (a, b, c)
+2. número (1, 2, 3)
+3. símbolo (!, @, #)
+4. Carácter de escape \ '
+
+Ejemplo del 4:
+'I\'m learning JavaScript' --> 'I'm learning JavaScript'
+
+tambien esta \n = carácter de nueva línea
+Ejemplo:
+alert('some\ntext');
+
+some
+text
+
+
+3. `...` = cadenas de plantilla  --> Interpolación = insertar valor directamente en una cadena
+tambien estan las comilas Invertidas ``
+
+$ {} = insertar valor directamente en la cadena
+
+Ejemplo:
+`Articulos (${1+1}): $${(2095+799)/100}`;
+'Articulos (2): $28.94'
