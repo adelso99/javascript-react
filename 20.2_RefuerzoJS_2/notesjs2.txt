@@ -415,3 +415,6 @@ SOLUCION: `Impuesto estimado (10%): $${Math.round((2095*2+799*2+499*2) * 0.10) /
 2. CSS = cambia la apariencia
 3. JavaScript = lo hace interactivo
 
+HTML
+Lenguaje de marcado de hipertexto
+- dar instrucciones a una computadora
