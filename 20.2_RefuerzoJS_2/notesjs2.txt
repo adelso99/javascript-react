@@ -304,3 +304,103 @@ $ {} = insertar valor directamente en la cadena
 Ejemplo:
 `Articulos (${1+1}): $${(2095+799)/100}`;
 'Articulos (2): $28.94'
+
+
+- Cadenas multilínea
+Ejemplo:
+`some
+text`
+
+'some\ntext'
+
+En esta lección:
+1. Cadena = texto
+2. Usar cadenas y números juntos
+3. Tres maneras de crear cadenas:
+"..."   '...'    `...`(cadenas de plantilla)
+4. Caracteres de escape: \' \n
+5. Interpolación, cadenas de varias líneas
+
+
+
+Ejercicios de la Lección 3 - Cadenas
+
+3a. Crea el texto "Mi nombre es:" como una cadena.
+SOLUCION: "Mi nombre es: " 
+          'Mi nombre es: 
+
+3b. Crea tu nombre como una cadena (por ejemplo: "Simón").
+SOLUCION: 'Adelso';
+          'Adelso'
+
+3c. Usando la concatenación, suma las 2 cadenas de 3a y 3b para crear el texto: "Mi nombre es: _" (reemplaza con tu nombre).
+SOLUCION: "Mi nombre es: " + "Adelso"
+          'Mi nombre es: Adelso'
+
+3d. En un restaurante, pides 1 café ($5) y 1 bagel ($3). Usando matemáticas, calcula el costo total y, usando la concatenación, 
+crea el texto: "Costo total: $___" (reemplaza con el total que calculaste).
+SOLUCION: "Costo Total: $" + (5+3);
+            'Costo Total: $8'
+
+3e. Haz lo mismo que en 3d, pero usa una cadena de plantilla e interpolación.
+SOLUCION: `Costo Total: $${(5+3)}`;
+              'Costo Total: $8'
+
+3f. Muestra el texto de 3e en una ventana emergente usando alert(...);
+SOLUCION: alert(`Costo Total: $"${(5+3)}`);
+
+3g. Pides 1 café ($5.99) y 1 bagel ($2.95). Usando matemáticas, calcula el costo total y, usando concatenación, crea el texto: 'Costo total: $___' 
+(pista: calcula en centavos para evitar imprecisiones)
+SOLUCION: "Costo Total: $"+(599+295) / 100;
+                'Costo Total: $8.94'
+
+3h. Haz lo mismo que en 3g, pero usa una cadena de plantilla e interpolación.
+SOLUCION: `Costo Total: $${(599+295)/100}`;
+                'Costo Total: $8.94'
+
+3i. Muestra el texto de 3h en una ventana emergente.
+SOLUCION: alert(`Costo Total: $${(599+295)/100}`);
+
+3j. Usando una cadena de varias líneas, crea el texto de 3h y agrega una línea de texto debajo: '¡Gracias, vuelve pronto!'. Muestra ambas líneas 
+en una ventana emergente.
+Costo total: $8.94
+¡Gracias, vuelve pronto!
+
+SOLUCION: alert(`Costo Total: $${(599+295)/100} \n ¡Gracias, vuelve pronto!`);
+
+SOLUCION 2: alert(`Total cost: $${(599 + 295) / 100}
+Thank you, come again!`);
+
+
+
+Ejercicios de desafío
+
+Configuración:
+En el proyecto de Amazon, actualiza el carrito a 2 pelotas de baloncesto (20,95 $ cada una) con 4,99 $ de envío y 2 camisetas 
+(7,99 $ cada una) con 4,99 $ de envío.
+
+Artículos (4):              $57.88
+Envío y manipulación:       $9.98
+
+Total antes de impuestos:   $67.86
+Impuesto estimado (10%):    $6.79
+
+Total del pedido:           $74.65
+
+
+3k. Usando interpolación, crea la primera línea de texto (usa matemáticas para calcular los números 4 y 57,88).
+SOLUCION: `Articulos (${(2+2)}): $${((2095 * 2) +(799 * 2)) / 100}`;
+                      'Articulos (4): $57.88'
+
+31. Crea la segunda línea de texto: «Envío y manipulación: 9,98 $» (usa matemáticas).
+SOLUCION: `Envio y manipulacion: $${(499*2) /100}`;
+              'Envio y manipulacion: $9.98'
+
+3m. Crea la tercera línea: «Total antes de impuestos: 67,86 $» (usa matemáticas).
+SOLUCION: `Total antes de impuesto: $${(2095 * 2 + 799 *2 + 499 *2) / 100}`;
+                      'Total antes de impuesto: $67.86'
+
+3n. Crea la cuarta línea de texto: «Impuesto estimado (10%): 6,79 $» (usa matemáticas y Math.round(...); para calcular la cantidad exacta).
+SOLUCION: `Impuesto estimado (10%): $${Math.round((2095*2+799*2+499*2) * 0.10) / 100}`;
+                    'Impuesto estimado (10%): $6.79'
+
