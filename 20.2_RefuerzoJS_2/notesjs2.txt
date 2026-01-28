@@ -235,7 +235,7 @@ SOLUCION: (-5 * 9/5) + 32
 
 
 
--------------------------------------------LECCION 2 Strings-----------------------------------------------------------------------------
+-------------------------------------------LECCION 3 Strings-----------------------------------------------------------------------------
 Seccion de Texto
 
 + --> el signo mas tambien es usado para concatenacion
@@ -403,4 +403,10 @@ SOLUCION: `Total antes de impuesto: $${(2095 * 2 + 799 *2 + 499 *2) / 100}`;
 3n. Crea la cuarta línea de texto: «Impuesto estimado (10%): 6,79 $» (usa matemáticas y Math.round(...); para calcular la cantidad exacta).
 SOLUCION: `Impuesto estimado (10%): $${Math.round((2095*2+799*2+499*2) * 0.10) / 100}`;
                     'Impuesto estimado (10%): $6.79'
+
+
+
+
+-------------------------------------------LECCION 4 Revisión de HTML y CSS, console.log----------------------------------------------------------------
+
 
