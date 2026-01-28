@@ -272,6 +272,9 @@ Ejemplo 3:
 1. '...'
 2. "..."
 3. `...` = cadenas de plantilla --> Interpolación = insertar valor directamente en una cadena
+Interpolación ${ }
+Sirve para insertar valores directamente en un texto.
+
 
 1 y 2. Comillas simples '' y Comillas dobles ""
 "Hello, I'am Adelso";
