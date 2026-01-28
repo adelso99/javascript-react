@@ -418,3 +418,10 @@ SOLUCION: `Impuesto estimado (10%): $${Math.round((2095*2+799*2+499*2) * 0.10) /
 HTML
 Lenguaje de marcado de hipertexto
 - dar instrucciones a una computadora
+
+se puede hacer una anidacion y es cuando existe un elemento dentro de otro elemento HTML
+Ejemplo:
+  | Elemento 1   | Elemento 2
+ \ /            \ /
+ <p>Esto es <button>Boton</button> Parrfo</p>
+
