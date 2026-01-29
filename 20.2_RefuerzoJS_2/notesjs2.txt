@@ -431,3 +431,9 @@ Ejemplo:
 Hojas de estilo en cascada
 - cambia la apariencia
 
+Selector de CSS
+button{ //selector
+  color: white; //color del Texto
+}
+
+<button>Boton</button>
