@@ -452,3 +452,4 @@ atributos --> es informacion sobre el elemento de HTML
 NOTA:
 <head> = contiene información sobre la página
 <body> = contiene todo lo que es visible en la página
+Consola = probar código JavaScript

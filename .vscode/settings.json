@@ -1,3 +1,4 @@
 {
-    "livePreview.defaultPreviewPath": "/9.Flexbox/9.0 Display Flex/index.html"
+    "livePreview.defaultPreviewPath": "/9.Flexbox/9.0 Display Flex/index.html",
+    "liveServer.settings.port": 5501
 }
