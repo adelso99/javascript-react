@@ -431,9 +431,19 @@ Ejemplo:
 Hojas de estilo en cascada
 - cambia la apariencia
 
-Selector de CSS
+Selector CSS
+-selecciona qué elementos cambiar
+
 button{ //selector
+  //Estilos CSS
+  //- cómo cambiar la apariencia
   color: white; //color del Texto
 }
 
 <button>Boton</button>
+
+atributos --> es informacion sobre el elemento de HTML
+
+<button title="informacion"> //el title es un atributo
+    Hello
+</button>
