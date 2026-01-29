@@ -447,3 +447,6 @@ atributos --> es informacion sobre el elemento de HTML
 <button class="informacion"> //el title es un atributo
     Hello
 </button>
+
+
+<body> = contiene todo lo que es visible en la página
