@@ -449,4 +449,6 @@ atributos --> es informacion sobre el elemento de HTML
 </button>
 
 
+NOTA:
+<head> = contiene información sobre la página
 <body> = contiene todo lo que es visible en la página
