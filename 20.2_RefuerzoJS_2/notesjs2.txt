@@ -444,6 +444,6 @@ button{ //selector
 
 atributos --> es informacion sobre el elemento de HTML
 
-<button title="informacion"> //el title es un atributo
+<button class="informacion"> //el title es un atributo
     Hello
 </button>
