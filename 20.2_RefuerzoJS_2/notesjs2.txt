@@ -453,3 +453,11 @@ NOTA:
 <head> = contiene información sobre la página
 <body> = contiene todo lo que es visible en la página
 Consola = probar código JavaScript
+
+
+En esta lección:
+1. Repaso de los conceptos básicos de HTML y CSS
+2. Configurar VSCode
+3. Cargar JavaScript dentro de un archivo HTML <script>, onclick=""
+4. Comentarios
+5. console.log
