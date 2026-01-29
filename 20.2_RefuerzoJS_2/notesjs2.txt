@@ -420,6 +420,7 @@ Lenguaje de marcado de hipertexto
 - dar instrucciones a una computadora
 
 se puede hacer una anidacion y es cuando existe un elemento dentro de otro elemento HTML
+Anidar significa poner un elemento dentro de otro.
 Ejemplo:
   | Elemento 1   | Elemento 2
  \ /            \ /
