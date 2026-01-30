@@ -621,6 +621,26 @@ se crea una variable con estas palabras resevadas
 let --> pude modificarse la variable en nombre y propiedad
 const --> Solo puede modificrse sus propíedades
 
-
-
 Reglas de sintaxis para variables
+
+Ejemplo 1:
+let nuevo = 3;
+console.log(nuevo); //esto mostrara el 3
+
+nuevo = 4;  //resignacion del valor de la varible
+console.log(nuevo); //esto mostrara el 4
+
+Ejemplo 2:
+const nuevo1 = 3;
+console.log(nuevo); //esto mostrara el 3
+
+nuevo = 4;  //Error
+console.log(nuevo); //esto mostrara el 3
+
+
+Ejemplo 3:
+const nuevo = { nombre: "hola"};  //esto es un objeto
+console.log(nuevo); //esto mostrara el { nombre: "hola"};
+
+nuevo.nombre = "Adelso";  //resignacion de la propiedad de la varible
+console.log(nuevo); //esto mostrara el { nombre: "hola"}; 
