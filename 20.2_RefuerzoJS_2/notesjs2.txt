@@ -461,3 +461,46 @@ En esta lección:
 3. Cargar JavaScript dentro de un archivo HTML <script>, onclick=""
 4. Comentarios
 5. console.log
+
+
+
+
+Ejercicios de la lección 4 - Repaso de HTML y CSS, console.log
+
+Nota: para realizar estos ejercicios, crea un archivo HTML (como 4a.html, 4b.html, ...)
+
+4a. Crea un botón con el texto «Clic» dentro.
+
+4b. Crea 2 botones. Uno con tu nombre y otro con tu comida favorita.
+
+4c. Crea un párrafo con el texto «¡Hola, mundo!» dentro.
+
+4d. Continuando con el ejercicio 4c, crea un párrafo debajo del párrafo anterior y escribe algo que hayas hecho hoy.
+¡Hola, mundo!
+Hoy fui al supermercado a comprar huevos y verduras
+
+4e. Crea 2 botones: «Añadir al carrito» y «Comprar ahora». Usa CSS para darles colores de fondo amarillo y naranja:
+
+4f. Agrega la estructura HTML al ejercicio 4e (agrega <!DOCTYPE html>, <html> <head>, <body>) y coloca los elementos en <head> o <body>. (Para más práctica, agrega la estructura HTML a los ejercicios 4a - 4d).
+
+4g. Continuando desde 4f, cambia el título en la parte superior de la pestaña a «Botones».
+
+4h. Continuando desde 4g, agrega un elemento <script> para que cuando la página se cargue, muestre el mensaje «¡Bienvenido!» en la consola
+
+
+Ejercicios de desafío
+
+Configuración: crea un nuevo archivo 4i.html para los ejercicios 4i y 4j.
+
+4i. Usando HTML y CSS, intenta copiar el diseño de la derecha. (Asegúrate de seguir la estructura HTML.)
+
+Camiseta de algodón lisa para adultos
+
+Precio: 7.99 $
+
+Añadir al carrito  Comprar ahora
+
+
+4j. Continuando desde 4i, añade los atributos onclick="..." a los dos botones:
+  - Al hacer clic en "Añadir al carrito", crea una ventana emergente con el texto "Añadido".
+  - Al hacer clic en "Comprar ahora", muestra el mensaje "Cargando..." en la consola y luego crea una ventana emergente con el texto "Comprado".
