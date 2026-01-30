@@ -558,16 +558,56 @@ SOLUCION: console.log("Bienvenido! :)");
 Ejercicios de desafío
 
 Configuración: crea un nuevo archivo 4i.html para los ejercicios 4i y 4j.
-
 4i. Usando HTML y CSS, intenta copiar el diseño de la derecha. (Asegúrate de seguir la estructura HTML.)
 
 Camiseta de algodón lisa para adultos
-
 Precio: 7.99 $
-
 Añadir al carrito  Comprar ahora
+
+SOLUCION:
+
+              .amarillo {
+                background-color: yellow;
+                color: black;
+                border-radius: 5px;
+              }
+
+              .naranja {
+                background-color: orange;
+                color: black;
+                border-radius: 5px;
+              }
+
+
+          <p>Camiseta de algodón lisa para adultos</p>
+          <p>Precio: $7.99</p>
+          <button class="amarillo">Añadir al carrito</button>
+          <button class="naranja">Comprar ahora</button>
+
 
 
 4j. Continuando desde 4i, añade los atributos onclick="..." a los dos botones:
   - Al hacer clic en "Añadir al carrito", crea una ventana emergente con el texto "Añadido".
   - Al hacer clic en "Comprar ahora", muestra el mensaje "Cargando..." en la consola y luego crea una ventana emergente con el texto "Comprado".
+
+  SOLUCION:   
+            <button class="amarillo" onclick="alerta()">Añadir al carrito</button>
+
+                  <script>
+                        function alerta(){
+                          alert("Añadido");
+                        }
+
+                        document.querySelector(".naranja").addEventListener("click", function (){
+                          console.log('Cargando...'); 
+                          alert('Comprado');
+                        });
+
+                    </script>
+
+
+
+
+
+
+-------------------------------------------LECCION 5 Variables----------------------------------------------------------------

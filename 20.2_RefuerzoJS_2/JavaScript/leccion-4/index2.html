@@ -7,17 +7,40 @@
 
   <!--Carga de Css-->
   <style>
+    .amarillo {
+      background-color: yellow;
+      color: black;
+      border-radius: 5px;
+    }
+
+    .naranja {
+      background-color: orange;
+      color: black;
+      border-radius: 5px;
+    }
 
   </style>
 
 
 </head>
 <body>
+  <p>Camiseta de algodón lisa para adultos</p>
+  <p>Precio: $7.99</p>
+  <button class="amarillo" onclick="alerta()">Añadir al carrito</button>
+  <button class="naranja" >Comprar ahora</button>
   
 
   <!--Carga de JavaScript-->
   <script>
-    
+    function alerta(){
+      alert("Añadido");
+    }
+
+    document.querySelector(".naranja").addEventListener("click", function (){
+      console.log('Cargando...'); 
+      alert('Comprado');
+    });
+
   </script>
 
 
