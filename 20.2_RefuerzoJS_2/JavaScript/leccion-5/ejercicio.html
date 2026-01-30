@@ -7,7 +7,7 @@
 
   <!--Carga de estilos CSS Interno-->
   <style>
-    button {
+    .evento {
       border-radius: 5px;
       color: black;
     }
@@ -46,17 +46,56 @@
 
   <h1>Cantidad del Carrito</h1>
   <br>
-  <button class="cantidad" >Mostrar Cantidad</button>
-  <button class="añadir" >Añadir al Carrito</button>
-  <button class="dos" >+2</button>
-  <button class="tres" >+3</button>
-  <button class="reinicio" >Reiniciar Carrito</button>
+  <button class="cantidad evento" >Mostrar Cantidad</button>
+  <button class="añadir evento" >Añadir al Carrito</button>
+  <button class="dos evento" >+2</button>
+  <button class="tres evento" >+3</button>
+  <button class="reinicio evento" >Reiniciar Carrito</button>
   
   <!--Carga de JavaScript Interno-->
   <script>
 
     let num = 0;
 
+    let dato = document.querySelectorAll(".evento");
+
+    for(let i = 0; i < dato.length; i++){
+        dato[i].addEventListener("click", function(){
+          switch (i) {
+            case 0:
+                console.log("Cantidad del Carrito es: "+num);
+              break;
+
+            case 1:
+              console.log("Cantidad del Carrito es: "+(num+1));
+              num+=1;
+            break;
+
+            case 2:
+              console.log("Cantidad del Carrito es: "+(num+2));
+              num+=2;
+            break;
+
+            case 3:
+              console.log("Cantidad del Carrito es: "+(num+3));
+              num+=3;
+            break;
+          
+            case 4:
+              num = 0;
+                console.log("Carro Reiniciado...");
+                alert("Carrito Reiniciado")
+              break;
+
+            default: 
+            alert("Ocurrio un Error");
+            break;
+          }
+        });
+    };
+
+
+   /*
     document.querySelector(".cantidad").addEventListener("click", function(){
         console.log("Cantidad del Carrito es: "+num);
 
@@ -82,6 +121,8 @@
       console.log("Carro Reiniciado...");
       alert("Carrito Reiniciado")
     });
+
+    */
 
   </script>
 
