@@ -470,22 +470,89 @@ Ejercicios de la lección 4 - Repaso de HTML y CSS, console.log
 Nota: para realizar estos ejercicios, crea un archivo HTML (como 4a.html, 4b.html, ...)
 
 4a. Crea un botón con el texto «Clic» dentro.
+SOLUCION: <button>Click</button>
 
 4b. Crea 2 botones. Uno con tu nombre y otro con tu comida favorita.
+SOLUCION:   <button>Adelso</button>
+            <button>Pollo Dorado</button>
 
 4c. Crea un párrafo con el texto «¡Hola, mundo!» dentro.
+SOLUCION: <P>¡Hola, mundo!</P>
 
 4d. Continuando con el ejercicio 4c, crea un párrafo debajo del párrafo anterior y escribe algo que hayas hecho hoy.
 ¡Hola, mundo!
 Hoy fui al supermercado a comprar huevos y verduras
 
+SOLUCION: <P>Hoy fui al Gym</P>
+
 4e. Crea 2 botones: «Añadir al carrito» y «Comprar ahora». Usa CSS para darles colores de fondo amarillo y naranja:
+SOLUCION:     <button class="amarillo">Añadir al carrito</button>
+              <button class="naranja">Comprar Ahora</button>
+
+                    .amarillo {
+                      background-color: yellow;
+                      color: black;
+                    }
+
+                    .naranja {
+                      background-color: orangered;
+                      color: white;
+                    }
+
 
 4f. Agrega la estructura HTML al ejercicio 4e (agrega <!DOCTYPE html>, <html> <head>, <body>) y coloca los elementos en <head> o <body>. (Para más práctica, agrega la estructura HTML a los ejercicios 4a - 4d).
+SOLUCION: 
+              <!DOCTYPE html>
+              <html lang="en">
+              <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Leccion 4</title>
+
+                <!--Carga de Estilos CSS-->
+                <style>
+                  .amarillo {
+                    background-color: yellow;
+                    color: black;
+                  }
+
+                  .naranja {
+                    background-color: orangered;
+                    color: white;
+                  }
+
+                </style>
+
+
+              </head>
+              <body>
+
+                <button>Click</button>
+                <button>Adelso</button>
+                <button>Pollo Dorado</button>
+
+                <P>¡Hola, mundo!</P>
+                <P>Hoy fui al Gym</P>
+
+                <button class="amarillo">Añadir al carrito</button>
+                <button class="naranja">Comprar Ahora</button>
+
+                <!--Carga de JavaScript-->
+                <script>
+
+                </script>
+                
+              </body>
+              </html>
+
 
 4g. Continuando desde 4f, cambia el título en la parte superior de la pestaña a «Botones».
+SOLUCION:                 <title>Leccion 4</title>
+
 
 4h. Continuando desde 4g, agrega un elemento <script> para que cuando la página se cargue, muestre el mensaje «¡Bienvenido!» en la consola
+SOLUCION: console.log("Bienvenido! :)");
+
 
 
 Ejercicios de desafío
