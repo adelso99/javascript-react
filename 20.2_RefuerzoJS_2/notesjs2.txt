@@ -612,3 +612,15 @@ SOLUCION:
 
 
 -------------------------------------------LECCION 5 Variables----------------------------------------------------------------
+
+¿Qué es una variable?
+variable = un contenedor
+podemos guardar un valor y usarlo más tarde
+
+se crea una variable con estas palabras resevadas
+let --> pude modificarse la variable en nombre y propiedad
+const --> Solo puede modificrse sus propíedades
+
+
+
+Reglas de sintaxis para variables
