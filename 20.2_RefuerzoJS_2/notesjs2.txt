@@ -660,3 +660,22 @@ Atajos de reasignación de variables
 ++     -->   variable = variable + 1
 
 --     -->   variable = variable -1
+
+
+
+Convenciones de nomenclatura
+CamelCase    -->   CartQuantity
+PascalCase   -->   CartQuantity
+KebabCase    -->   CartQuantity
+SnakeCase    -->   CartQuantity  
+
+
+
+
+En esta lección:
+1. Variables = una forma de guardar valores
+2. Reasignar una variable
+3. Creación de la función Cantidad del carrito
+4. Atajos para reasignar una variable
+5. Convenciones de nomenclatura y mejores prácticas
+6. 3 maneras de crear una variable: let, const, var
