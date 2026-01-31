@@ -700,14 +700,82 @@ SOLUCION: let costo = 5+(3*2)+9;
 SOLUCION:       console.log(`Costo de la comida: $${costo}`);
 
 5e. Digamos que el restaurante cobra un impuesto del 10%. Usando la variable «costo» de 5c, calcula el impuesto (pista: multiplica por 0,1) y guarda el resultado en una variable
+SOLUCION:       let impuesto = costo * 0.1;
 
 5f. Continuando desde 5e, muestra ‘Impuesto (10%): $${tax}’ en la consola.
+SOLUCION:       console.log(`Impuesto(10%) es: $${impuesto}`);
 
 5g. Continuando desde 5f, calcula el total (costo + impuestos), guárdalo en una variable llamada 'totalCost' y muestra el mensaje ‘Costo total: $${totalCost}’ en la consola.
+SOLUCION:       let costoTotal = costo +  impuesto;
+                console.log(`Costo Total es: $${costoTotal}`);
 
 5h. En el proyecto Cantidad del carrito, agrega 2 botones más, ‘+4’ y ‘+5’, que aumentan la cantidad en 4 y 5 al hacer clic en ellos. Intenta usar +=
+SOLUCION:   <button class="cuatro evento" >+4</button>
+            <button class="cinco evento" >+5</button>
+
+                let num = 0;
+
+    let dato = document.querySelectorAll(".evento");
+
+    for(let i = 0; i < dato.length; i++){
+        dato[i].addEventListener("click", function(){
+          switch (i) {
+            case 0:
+                console.log("Cantidad del Carrito es: "+num);
+              break;
+
+            case 1:
+              console.log("Cantidad del Carrito es: "+(num+1));
+              num++;
+            break;
+
+            case 2:
+              console.log("Cantidad del Carrito es: "+(num+2));
+              num+=2;
+            break;
+
+            case 3:
+              console.log("Cantidad del Carrito es: "+(num+3));
+              num+=3;
+            break;
+
+            case 4:
+              console.log("Cantidad del Carrito es: "+(num+4));
+              num+=4;
+            break;
+
+            case 5:
+              console.log("Cantidad del Carrito es: "+(num+5));
+              num+=5;
+            break;
+          
+            case 6:
+              num = 0;
+                console.log("Carro Reiniciado...");
+                alert("Carrito Reiniciado")
+              break;
+
+            default: 
+            alert("Ocurrio un Error");
+            break;
+          }
+        });
+    };
+
 
 5i. En el proyecto Cantidad del carrito, agrega un botón ‘Eliminar del carrito’, que disminuye la cantidad del carrito en 1.
+SOLUCION:    <button class="eliminar evento" >Eliminar del Carrito</button>
+             
+            case 6:
+                if (num <= 0){
+                  console.log("No existe nada en Carrito el valor es: " +num);
+                  } else {
+                    num-=1;
+                    console.log("Cantidad del Carrito es: "+num);
+                  }
+              break;
+
+
 
 5j. Agrega 2 botones, ‘-2’ y ‘-3’, que disminuyen la cantidad en 2 y 3.
 

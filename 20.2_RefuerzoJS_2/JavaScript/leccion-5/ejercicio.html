@@ -34,6 +34,19 @@
       background-color: rgb(248, 153, 0);
     }
 
+    .cuatro {
+      background-color: rgb(248, 145, 0);
+    }
+
+    .cinco {
+      background-color: rgb(248, 136, 0);
+    }
+
+    .eliminar {
+      background-color: blue;
+      color: white;
+    }
+
     .reinicio {
       background-color: red;
       color: white;
@@ -50,6 +63,9 @@
   <button class="añadir evento" >Añadir al Carrito</button>
   <button class="dos evento" >+2</button>
   <button class="tres evento" >+3</button>
+  <button class="cuatro evento" >+4</button>
+  <button class="cinco evento" >+5</button>
+  <button class="eliminar evento" >Eliminar del Carrito</button>
   <button class="reinicio evento" >Reiniciar Carrito</button>
   
   <!--Carga de JavaScript Interno-->
@@ -80,8 +96,27 @@
               console.log("Cantidad del Carrito es: "+(num+3));
               num+=3;
             break;
-          
+
             case 4:
+              console.log("Cantidad del Carrito es: "+(num+4));
+              num+=4;
+            break;
+
+            case 5:
+              console.log("Cantidad del Carrito es: "+(num+5));
+              num+=5;
+            break;
+
+            case 6:
+                if (num <= 0){
+                  console.log("No existe nada en Carrito el valor es: " +num);
+                  } else {
+                    num-=1;
+                    console.log("Cantidad del Carrito es: "+num);
+                  }
+              break;
+          
+            case 7:
               num = 0;
                 console.log("Carro Reiniciado...");
                 alert("Carrito Reiniciado")
