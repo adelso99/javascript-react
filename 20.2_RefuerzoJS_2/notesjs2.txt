@@ -644,3 +644,19 @@ console.log(nuevo); //esto mostrara el { nombre: "hola"};
 
 nuevo.nombre = "Adelso";  //resignacion de la propiedad de la varible
 console.log(nuevo); //esto mostrara el { nombre: "hola"}; 
+
+
+
+Atajos de reasignación de variables
+
++= 2   -->   variable = variable + 2
+
+-= 2   -->   variable = variable 2 -
+
+*= 2   -->   variable = variable * 2
+
+/= 2   -->   variable = variable / 2
+
+++     -->   variable = variable + 1
+
+--     -->   variable = variable -1
