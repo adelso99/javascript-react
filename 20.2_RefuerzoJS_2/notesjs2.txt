@@ -682,6 +682,7 @@ En esta lección:
 
 
 
+
 Ejercicios de la Lección 5 - Variables
 
 Nota: para realizar estos ejercicios, crea un archivo HTML (como 5a.html, 5b.html, ...)
