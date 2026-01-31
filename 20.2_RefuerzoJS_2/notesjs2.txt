@@ -688,12 +688,16 @@ Ejercicios de la Lección 5 - Variables
 Nota: para realizar estos ejercicios, crea un archivo HTML (como 5a.html, 5b.html, ...)
 
 5a. Crea un elemento <script>. Dentro del <script>, crea una variable llamada 'name' y guarda tu nombre en esta variable (como una cadena).
+SOLUCION:       let nombre = "Adelso";
 
 5b. Continuando con el paso 5a, muestra el mensaje "Mi nombre es: ${name}" en la consola (inserta la variable 'name' creada en el paso 5a en este mensaje).
+SOLUCION:       console.log(`Mi nombre es: ${nombre}`);
 
 5c. En un restaurante, pides 1 café (5 $), 2 bagels (3 $ cada uno) y 1 sopa (9 $). Calcula el coste y guárdalo en una variable llamada 'cost'.
+SOLUCION: let costo = 5+(3*2)+9;
 
 5d. Continuando con el paso 5c, muestra 'Costo de la comida: $${cost}' en la consola
+SOLUCION:       console.log(`Costo de la comida: $${costo}`);
 
 5e. Digamos que el restaurante cobra un impuesto del 10%. Usando la variable «costo» de 5c, calcula el impuesto (pista: multiplica por 0,1) y guarda el resultado en una variable
 
@@ -716,21 +720,24 @@ Ejercicios de desafío
 Construiremos una calculadora (no te preocupes, lo haremos paso a paso).
 
 1. Ve a ‘supersimple.dev/projects/calculator’ en tu navegador.
-
 2. Abre la consola y haz clic en los botones de la calculadora para ver cómo funciona.
-
 Configuración: crea un nuevo archivo calculator.html para este proyecto.
 
 51. Agrega la estructura HTML (<!DOCTYPE html>, <html>, <head>, <body>). Agrega un <title> con el texto ‘Calculator’
+SOLUCION: listo
 
 5m. Crea estos 5 botones:  1  2  3  +  =
+SOLUCION:   <button class="1 btn" >1</button>
+            <button class="dos btn" >2</button>
+            <button class="tres btn" >3</button>
+            <button class="mas btn" >+</button>
+            <button class="igual btn" >=</button>
 
 5n. Crea un <script>, crea una variable llamada ‘calculation’ y guarda una cadena vacía dentro: let calculate = ''; (Esta variable almacenará el cálculo como ‘1 + 2’ o ‘11 + 2 + 2’)
+     SOLUCION: let calulo = "";
 
 50. Cuando hacemos clic en el botón '1':
-
 Agregamos la cadena '1' a la variable de cálculo: cálculo += '1';
-
 Muestra el cálculo en la consola: console.log(calculation);
 
 5p. Haz lo mismo para los botones '2', '3' y '+' (añade '+' en lugar de '+').
