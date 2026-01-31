@@ -726,3 +726,28 @@ Configuración: crea un nuevo archivo calculator.html para este proyecto.
 5m. Crea estos 5 botones:  1  2  3  +  =
 
 5n. Crea un <script>, crea una variable llamada ‘calculation’ y guarda una cadena vacía dentro: let calculate = ''; (Esta variable almacenará el cálculo como ‘1 + 2’ o ‘11 + 2 + 2’)
+
+50. Cuando hacemos clic en el botón '1':
+
+Agregamos la cadena '1' a la variable de cálculo: cálculo += '1';
+
+Muestra el cálculo en la consola: console.log(calculation);
+
+5p. Haz lo mismo para los botones '2', '3' y '+' (añade '+' en lugar de '+').
+
+5q. Cuando hacemos clic en el botón '=', usamos el código: eval(calculation); (eval(...) convierte la cadena de cálculo en matemática real)
+
+Guardamos el resultado de nuevo en 'calculation': cálculo = eval(calculation);
+
+Muestramos el resultado en la consola: console.log(calculation);
+
+5r. Creamos el resto de los botones en la calculadora. Para crear varias filas de botones, colocamos los botones dentro de elementos <p> de esta manera:
+
+<p>
+  <button>1</button>
+  <button>2</button>
+</p>
+
+<p>
+  <button>4</button>
+  <button>5</button>
