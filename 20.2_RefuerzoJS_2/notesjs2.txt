@@ -679,3 +679,49 @@ En esta lección:
 4. Atajos para reasignar una variable
 5. Convenciones de nomenclatura y mejores prácticas
 6. 3 maneras de crear una variable: let, const, var
+
+
+
+Ejercicios de la Lección 5 - Variables
+
+Nota: para realizar estos ejercicios, crea un archivo HTML (como 5a.html, 5b.html, ...)
+
+5a. Crea un elemento <script>. Dentro del <script>, crea una variable llamada 'name' y guarda tu nombre en esta variable (como una cadena).
+
+5b. Continuando con el paso 5a, muestra el mensaje "Mi nombre es: ${name}" en la consola (inserta la variable 'name' creada en el paso 5a en este mensaje).
+
+5c. En un restaurante, pides 1 café (5 $), 2 bagels (3 $ cada uno) y 1 sopa (9 $). Calcula el coste y guárdalo en una variable llamada 'cost'.
+
+5d. Continuando con el paso 5c, muestra 'Costo de la comida: $${cost}' en la consola
+
+5e. Digamos que el restaurante cobra un impuesto del 10%. Usando la variable «costo» de 5c, calcula el impuesto (pista: multiplica por 0,1) y guarda el resultado en una variable
+
+5f. Continuando desde 5e, muestra ‘Impuesto (10%): $${tax}’ en la consola.
+
+5g. Continuando desde 5f, calcula el total (costo + impuestos), guárdalo en una variable llamada 'totalCost' y muestra el mensaje ‘Costo total: $${totalCost}’ en la consola.
+
+5h. En el proyecto Cantidad del carrito, agrega 2 botones más, ‘+4’ y ‘+5’, que aumentan la cantidad en 4 y 5 al hacer clic en ellos. Intenta usar +=
+
+5i. En el proyecto Cantidad del carrito, agrega un botón ‘Eliminar del carrito’, que disminuye la cantidad del carrito en 1.
+
+5j. Agrega 2 botones, ‘-2’ y ‘-3’, que disminuyen la cantidad en 2 y 3.
+
+5k. Usa los atajos -- y -= en 5i y 5j
+
+
+
+Ejercicios de desafío
+
+Construiremos una calculadora (no te preocupes, lo haremos paso a paso).
+
+1. Ve a ‘supersimple.dev/projects/calculator’ en tu navegador.
+
+2. Abre la consola y haz clic en los botones de la calculadora para ver cómo funciona.
+
+Configuración: crea un nuevo archivo calculator.html para este proyecto.
+
+51. Agrega la estructura HTML (<!DOCTYPE html>, <html>, <head>, <body>). Agrega un <title> con el texto ‘Calculator’
+
+5m. Crea estos 5 botones:  1  2  3  +  =
+
+5n. Crea un <script>, crea una variable llamada ‘calculation’ y guarda una cadena vacía dentro: let calculate = ''; (Esta variable almacenará el cálculo como ‘1 + 2’ o ‘11 + 2 + 2’)
