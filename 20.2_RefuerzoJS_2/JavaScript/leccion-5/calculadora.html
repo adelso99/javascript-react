@@ -14,24 +14,50 @@
   <body>
     <h1>Calculadora</h1>
 
-    <p></p>
-    <button class="uno btn" >1</button>
-    <button class="dos btn" >2</button>
-    <button class="tres btn" >3</button>
-    <button class="mas btn" >+</button>
-    <button class="igual btn" >=</button>
-    <!-- <button class="1 btn" >1</button> -->
+    <!--Section 1-->
+    <p>
+      <button class="uno btn" >1</button>
+      <button class="dos btn" >2</button>
+      <button class="tres btn" >3</button>
+      <button class="mas btn" >+</button>
+    </p>
+
+     <!--Section 2-->
+    <p>
+      <button class="cuatro btn" >4</button>
+      <button class="cinco btn" >5</button>
+      <button class="seis btn" >6</button>
+      <button class="menos btn" >-</button>
+    </p>
+
+     <!--Section 3-->
+    <p>
+      <button class="siete btn" >7</button>
+      <button class="ocho btn" >8</button>
+      <button class="nueve btn" >9</button>
+      <button class="multi btn" >*</button>
+    </p>
+
+     <!--Section 4-->
+    <p>
+      <button class="cero btn" >0</button>
+      <button class="punto btn" >.</button>
+      <button class="igual btn" >=</button>
+      <button class="div btn" >/</button>
+    </p>
+
+    <button class="reinicio btn" >Reinicio</button>
     
 
       <!--Carga de JavaScript interno-->
       <script>
 
         let calulo = "";
-
         let dato = document.querySelectorAll(".btn"); 
 
         for(let i = 0; i < dato.length; i++){
             dato[i].addEventListener("click", function(){
+              //Section 1
               switch (i) {
                 case 0:
                     calulo += "1";
@@ -49,13 +75,77 @@
                 break;
 
                 case 3:
-                  calulo += "+";
+                  calulo += " + ";
                   console.log(calulo);
                 break;
 
+              //Section 2
                 case 4:
+                    calulo += "4";
+                    console.log(calulo);
+                  break;
+
+                case 5:
+                  calulo += "5";
+                  console.log(calulo);
+                break;
+
+                case 6:
+                  calulo += "6";
+                  console.log(calulo);
+                break;
+
+                case 7:
+                  calulo += " - ";
+                  console.log(calulo);
+                break;
+
+                //Section 3
+                case 8:
+                  calulo += "7";
+                  console.log(calulo);
+                  break;
+
+                case 9:
+                  calulo += "8";
+                  console.log(calulo);
+                break;
+
+                case 10:
+                  calulo += "9";
+                  console.log(calulo);
+                break;
+
+                case 11:
+                  calulo += " * ";
+                  console.log(calulo);
+                break;
+
+
+                //Section 4
+                case 12:
+                  calulo += "0";
+                  console.log(calulo);
+                  break;
+
+                case 13:
+                  calulo += ".";
+                  console.log(calulo);
+                break;
+
+                case 14:
                   calulo = eval(calulo);
                   console.log(calulo);
+                break;
+
+                case 15:
+                  calulo += " / ";
+                  console.log(calulo);
+                break;
+
+                case 16:
+                  calulo = "";
+                  console.log("Calculadora Reiniciada");
                 break;
 
                 default: 
