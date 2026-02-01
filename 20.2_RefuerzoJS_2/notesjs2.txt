@@ -1117,3 +1117,17 @@ SOLUCION FINAL:
 
 
 -------------------------------------------LECCION 6 Booleanos y sentencias if----------------------------------------------------------------
+Los valores booleanos son otro tipo de valor 
+  -solo hay 2 valores booleanos:
+      - verdadero, falso
+
+
+Operadores de comparación
+>    -->  mayor que
+<    -->  menor que
+>=   -->  mayor o igual que
+<=   -->  menor o igual que
+===  -->  igual a
+!==  -->  distinto de
+
+ellos tambien tienen un orden de prioridad igual que las matemáticas
