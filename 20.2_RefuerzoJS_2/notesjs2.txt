@@ -1140,10 +1140,10 @@ false
 Sentencias if
 - nos permite escribir varios grupos de código y luego decidir qué código ejecutar
 
-if (desicion){
+if (condicion){
   codigo de ejecucion
 } else {
-  codigo de ejecucion, es otro camino de la desicion de no cumplirse la primera
+  codigo de ejecucion, es otro camino de desicion, si la condicion de la primera no se cumple
 }
 
 Ejemplo:
@@ -1153,3 +1153,30 @@ console.log('hello'); //   si es true la desicion muestra "hello"
 } else {
 console.log('else'); //   si es false la desicion muestra "else"
 }
+
+
+Ejemplo práctico
+Escribe código para comprobar si alguien tiene la edad suficiente para conducir
+
+    let edad = 17;
+
+    if (18 <= edad){
+      console.log("Pudes Conducir");
+    } else {
+      console.log("Conduccion No Autorizada :(");
+    }
+
+
+
+tambien se puede agregar otra desicion con condicion con otro "else if"
+Ejemplo:
+
+    let edad = 15;
+
+    if (18 <= edad){
+      console.log("Pudes Conducir");  //desicion 1
+    } else if (16 <= edad){
+      console.log("Casi puedes Conducir") //desicion 2 con condicion
+    }else {
+      console.log("Conduccion No Autorizada :("); //desicion 3
+    }
