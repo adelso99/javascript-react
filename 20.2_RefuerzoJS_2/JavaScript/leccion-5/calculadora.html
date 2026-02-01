@@ -1,33 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Calculadora</title>
-  
-  <!--Carga de estilos CSS interno-->
-  <style>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    
+    <!--Carga de estilos CSS interno-->
+    <style>
 
-  </style>
+    </style>
 
-</head>
-<body>
-  <h1>Calculadora</h1>
+  </head>
+  <body>
+    <h1>Calculadora</h1>
 
-  <button class="1 btn" >1</button>
-  <button class="dos btn" >2</button>
-  <button class="tres btn" >3</button>
-  <button class="mas btn" >+</button>
-  <button class="igual btn" >=</button>
-  <button class="1 btn" >1</button>
-  
+    <p></p>
+    <button class="uno btn" >1</button>
+    <button class="dos btn" >2</button>
+    <button class="tres btn" >3</button>
+    <button class="mas btn" >+</button>
+    <button class="igual btn" >=</button>
+    <!-- <button class="1 btn" >1</button> -->
+    
 
-    <!--Carga de JavaScript interno-->
-    <script>
+      <!--Carga de JavaScript interno-->
+      <script>
 
-      let calulo = "";
+        let calulo = "";
 
-    </script>
+        let dato = document.querySelectorAll(".btn"); 
 
-</body>
+        for(let i = 0; i < dato.length; i++){
+            dato[i].addEventListener("click", function(){
+              switch (i) {
+                case 0:
+                    calulo += "1";
+                    console.log(calulo);
+                  break;
+
+                case 1:
+                  calulo += "2";
+                  console.log(calulo);
+                break;
+
+                case 2:
+                  calulo += "3";
+                  console.log(calulo);
+                break;
+
+                case 3:
+                  calulo += "+";
+                  console.log(calulo);
+                break;
+
+                case 4:
+                  calulo = eval(calulo);
+                  console.log(calulo);
+                break;
+
+                default: 
+                alert("Ocurrio un Error");
+                break;
+              }
+            });
+        };
+
+
+
+      </script>
+
+  </body>
 </html>

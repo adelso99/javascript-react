@@ -844,14 +844,60 @@ SOLUCION:   <button class="1 btn" >1</button>
 50. Cuando hacemos clic en el botón '1':
 Agregamos la cadena '1' a la variable de cálculo: cálculo += '1';
 Muestra el cálculo en la consola: console.log(calculation);
+SOLUCION:         document.querySelector(".uno").addEventListener("click", function(){
+                    calulo += "1";
+                    console.log(calulo);
+                  });
+
 
 5p. Haz lo mismo para los botones '2', '3' y '+' (añade '+' en lugar de '+').
+SOLUCION:         let calulo = "";
+
+                  let dato = document.querySelector(".uno"); 
+
+        for(let i = 0; i < dato.length; i++){
+            dato[i].addEventListener("click", function(){
+              switch (i) {
+                case 0:
+                    calulo += "1";
+                    console.log(calulo);
+                  break;
+
+                case 1:
+                  calulo += "2";
+                  console.log(calulo);
+                break;
+
+                case 2:
+                  calulo += "3";
+                  console.log(calulo);
+                break;
+
+                case 3:
+                  calulo += "+";
+                  console.log(calulo);
+                break;
+
+                default: 
+                alert("Ocurrio un Error");
+                break;
+              }
+            });
+        };
+
 
 5q. Cuando hacemos clic en el botón '=', usamos el código: eval(calculation); (eval(...) convierte la cadena de cálculo en matemática real)
-
 Guardamos el resultado de nuevo en 'calculation': cálculo = eval(calculation);
-
 Muestramos el resultado en la consola: console.log(calculation);
+SOLUCION: 
+                case 4:
+                  calulo = eval(calulo);
+                  console.log(calulo);
+                break;
+
+      // Nota: eval() toma una cadena y la ejecuta como código.
+      // Evite usar eval() en proyectos reales, ya que podría generar código dañino.
+      // Use eval() solo con fines de aprendizaje.
 
 5r. Creamos el resto de los botones en la calculadora. Para crear varias filas de botones, colocamos los botones dentro de elementos <p> de esta manera:
 
