@@ -47,6 +47,16 @@
       color: white;
     }
 
+    .dosM  {
+      background-color:aqua;
+      color: black;
+    }
+
+    .tresM{
+      background-color:aqua;
+      color: black;
+    }
+
     .reinicio {
       background-color: red;
       color: white;
@@ -66,6 +76,8 @@
   <button class="cuatro evento" >+4</button>
   <button class="cinco evento" >+5</button>
   <button class="eliminar evento" >Eliminar del Carrito</button>
+  <button class="dosM evento" >-2</button>
+  <button class="tresM evento" >-3</button>
   <button class="reinicio evento" >Reiniciar Carrito</button>
   
   <!--Carga de JavaScript Interno-->
@@ -83,40 +95,60 @@
               break;
 
             case 1:
-              console.log("Cantidad del Carrito es: "+(num+1));
               num++;
+              console.log("Cantidad del Carrito es: "+num);
             break;
 
             case 2:
-              console.log("Cantidad del Carrito es: "+(num+2));
               num+=2;
+              console.log("Cantidad del Carrito es: "+num);
             break;
 
             case 3:
-              console.log("Cantidad del Carrito es: "+(num+3));
               num+=3;
+              console.log("Cantidad del Carrito es: "+num);
             break;
 
             case 4:
-              console.log("Cantidad del Carrito es: "+(num+4));
               num+=4;
+              console.log("Cantidad del Carrito es: "+num);
+
             break;
 
             case 5:
-              console.log("Cantidad del Carrito es: "+(num+5));
               num+=5;
+              console.log("Cantidad del Carrito es: "+num);
+
             break;
 
             case 6:
                 if (num <= 0){
-                  console.log("No existe nada en Carrito el valor es: " +num);
+                   datoMenor();
                   } else {
-                    num-=1;
+                    num--;
                     console.log("Cantidad del Carrito es: "+num);
                   }
               break;
-          
+            
             case 7:
+                if (num <= 0){
+                   datoMenor();
+                  } else {
+                  num-=2;
+                  console.log("Cantidad del Carrito es: "+num);
+                  }
+            break;
+
+            case 8:
+                if (num <= 0){
+                   datoMenor();
+                  } else {
+                  num-=3;
+                  console.log("Cantidad del Carrito es: "+num);
+                  }
+            break;
+          
+            case 9:
               num = 0;
                 console.log("Carro Reiniciado...");
                 alert("Carrito Reiniciado")
@@ -128,6 +160,11 @@
           }
         });
     };
+
+    function datoMenor(){
+        num = 0;
+        return console.log("No existe nada en Carrito el valor es: " +num);
+    }
 
 
    /*

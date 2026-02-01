@@ -778,8 +778,45 @@ SOLUCION:    <button class="eliminar evento" >Eliminar del Carrito</button>
 
 
 5j. Agrega 2 botones, ‘-2’ y ‘-3’, que disminuyen la cantidad en 2 y 3.
+SOLUCION:   <button class="dosM evento" >-2</button>
+            <button class="tresM evento" >-3</button>
+
+                      case 7:
+                if (num <= 0){
+                   datoMenor();
+                  } else {
+                  num-=2;
+                  console.log("Cantidad del Carrito es: "+num);
+                  }
+            break;
+
+            case 8:
+                if (num <= 0){
+                   datoMenor();
+                  } else {
+                  num-=3;
+                  console.log("Cantidad del Carrito es: "+num);
+                  }
+            break;
 
 5k. Usa los atajos -- y -= en 5i y 5j
+SOLUCION:             case 6:
+                if (num <= 0){
+                   datoMenor();
+                  } else {
+                    num--; //<--
+                    console.log("Cantidad del Carrito es: "+num);
+                  }
+              break;
+            
+            case 7:
+                if (num <= 0){
+                   datoMenor();
+                  } else {
+                  num-=2; //<---
+                  console.log("Cantidad del Carrito es: "+num);
+                  }
+            break;
 
 
 
