@@ -1131,3 +1131,25 @@ Operadores de comparación
 !==  -->  distinto de
 
 ellos tambien tienen un orden de prioridad igual que las matemáticas
+
+Ejemplo:
+console.log(3 < 5 -5);
+false
+
+
+Sentencias if
+- nos permite escribir varios grupos de código y luego decidir qué código ejecutar
+
+if (desicion){
+  codigo de ejecucion
+} else {
+  codigo de ejecucion, es otro camino de la desicion de no cumplirse la primera
+}
+
+Ejemplo:
+
+if (false) {
+console.log('hello'); //   si es true la desicion muestra "hello"
+} else {
+console.log('else'); //   si es false la desicion muestra "else"
+}
