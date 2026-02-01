@@ -909,3 +909,209 @@ SOLUCION:
 <p>
   <button>4</button>
   <button>5</button>
+
+SOLUCION FINAL:
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    
+    <!--Carga de estilos CSS interno-->
+    <style>
+      body{
+        background-color: black;
+        font-size: 2rem;
+      }
+
+      h1{
+        color: white;
+      }
+
+      .btn{
+        height: 60px;
+        width: 60px;
+        border-radius: 75%;
+        border: none;
+        font-size: 2rem;
+        cursor: pointer;
+        background-color: rgb(92, 92, 92);
+        color: white;
+      }
+
+      .signo {
+        background-color: orange;
+      }
+
+      .reinicio{
+        height: 80px;
+        width: 80px;
+        border-radius: 75%;
+        font-size: 1rem;
+        background-color: red;
+      }
+      
+      p{
+        margin-top: 16px;
+        margin-bottom: 16px;
+      }
+
+    </style>
+
+  </head>
+  <body>
+    <h1>Calculadora</h1>
+
+    <!--Section 1-->
+    <p>
+      <button class="uno btn" >1</button>
+      <button class="dos btn" >2</button>
+      <button class="tres btn" >3</button>
+      <button class="mas btn signo" >+</button>
+    </p>
+
+     <!--Section 2-->
+    <p>
+      <button class="cuatro btn" >4</button>
+      <button class="cinco btn" >5</button>
+      <button class="seis btn" >6</button>
+      <button class="menos btn signo" >-</button>
+    </p>
+
+     <!--Section 3-->
+    <p>
+      <button class="siete btn" >7</button>
+      <button class="ocho btn" >8</button>
+      <button class="nueve btn" >9</button>
+      <button class="multi btn signo" >*</button>
+    </p>
+
+     <!--Section 4-->
+    <p>
+      <button class="cero btn" >0</button>
+      <button class="punto btn" >.</button>
+      <button class="igual btn" >=</button>
+      <button class="div btn signo" >/</button>
+    </p>
+
+    <button class="reinicio btn" >Reinicio</button>
+    
+
+      <!--Carga de JavaScript interno-->
+      <script>
+
+        let calulo = "";
+        let dato = document.querySelectorAll(".btn"); 
+        let vista = document.querySelector("h1");
+
+        for(let i = 0; i < dato.length; i++){
+            dato[i].addEventListener("click", function(){
+              //Section 1
+              switch (i) {
+                case 0:
+                    calulo += "1";
+                   vista.innerHTML = calulo;
+                  break;
+
+                case 1:
+                  calulo += "2";
+                  vista.innerHTML = calulo;
+                break;
+
+                case 2:
+                  calulo += "3";
+                  vista.innerHTML = calulo;
+                break;
+
+                case 3:
+                  calulo += " + ";
+                  vista.innerHTML = calulo;
+                break;
+
+              //Section 2
+                case 4:
+                    calulo += "4";
+                    vista.innerHTML = calulo;
+                  break;
+
+                case 5:
+                  calulo += "5";
+                  vista.innerHTML = calulo;
+                break;
+
+                case 6:
+                  calulo += "6";
+                  vista.innerHTML = calulo;
+                break;
+
+                case 7:
+                  calulo += " - ";
+                  vista.innerHTML = calulo;
+                break;
+
+                //Section 3
+                case 8:
+                  calulo += "7";
+                  vista.innerHTML = calulo;
+                  break;
+
+                case 9:
+                  calulo += "8";
+                  vista.innerHTML = calulo;
+                break;
+
+                case 10:
+                  calulo += "9";
+                  vista.innerHTML = calulo;
+                break;
+
+                case 11:
+                  calulo += " * ";
+                  vista.innerHTML = calulo;
+                break;
+
+
+                //Section 4
+                case 12:
+                  calulo += "0";
+                  vista.innerHTML = calulo;
+                  break;
+
+                case 13:
+                  calulo += ".";
+                  vista.innerHTML = calulo;
+                break;
+
+                case 14:
+                  calulo = eval(calulo);
+                  vista.innerHTML = calulo;
+                break;
+
+                case 15:
+                  calulo += " / ";
+                  vista.innerHTML = calulo;
+                break;
+
+                case 16:
+                  calulo = "";
+                  vista.innerHTML = "Calculadora";
+                break;
+
+                default: 
+                alert("Ocurrio un Error");
+                break;
+              }
+            });
+        };
+
+
+
+      </script>
+
+  </body>
+</html>
+
+
+
+-------------------------------------------LECCION 6 Variables----------------------------------------------------------------
