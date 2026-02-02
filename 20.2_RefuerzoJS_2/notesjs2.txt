@@ -1297,7 +1297,79 @@ console.log("text" / 5); //esto es NaN porque en matemáticas no es valido
 
 
 undefined ---> Algo no tiene valor
+
+con let
 Ejemplo:
 let num1;
 console.log(num1);  // eso muestra "undefined" porque la variable no esta definida o no tienen un valor
 
+
+con const
+Ejemplo:
+const num1 = undefined;
+console.log(num1);  // eso muestra "undefined" porque la variable tiene valor undefined
+
+
+Atajos para sentencias if
+- Operador ternario? :
+- Operador de guardia &&
+- Operador predeterminado ||
+
+
+Operador ternario? :
+ true ? "truthy" : "falsy";
+
+ que es lo mismo que esto
+ if (true) {
+    "truthy";
+ }else {
+    "falsy";
+ }
+
+la ventaja de esto es que se puede guardar en una variable
+Ejemplo:
+const dato =  true ? "truthy" : "falsy";
+console.log(dato); --> Dara "truthy"
+
+const dato =  false ? "truthy" : "falsy";
+console.log(dato); --> Dara "falsy"
+
+
+Operador AND &&
+valor1 && valor2
+- comprueba si ambos lados son verdaderos --> true
+- si un lado no es verdadero es Falso --> false
+
+Ejemplo:
+false && console.log("Hola"); --> mostrara "false" en consola
+
+esto es un atajo a esto:
+if (condicion){
+  console.log("Hola");
+}
+
+
+Ejemplo 2:
+const msj = 4 && "hola";
+console.log(msj);
+
+es esto:
+let msj;
+
+if (condicion){
+  msj = "hola";
+}
+
+
+
+Operador OR ||
+valor1 || valor2
+- comprueba si al menos un lado es verdadero
+
+Ejemplo:
+
+const moneda = "EUR" || "USD";
+console.log(moneda); //muestra "EUR"
+
+const moneda = undefined || "USD";
+console.log(moneda); //muestra "USD"
