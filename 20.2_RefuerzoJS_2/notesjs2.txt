@@ -1373,3 +1373,73 @@ console.log(moneda); //muestra "EUR"
 
 const moneda = undefined || "USD";
 console.log(moneda); //muestra "USD"
+
+
+En esta lección:
+1. Valores booleanos (verdadero, falso)
+2. Sentencias if
+3. Operadores de comparación (>, <, >=, <=, ===, !==)
+   - Operadores lógicos (&&, ||, !)
+4. Algoritmos y piedra, papel o tijera creados
+5. Valores de verdad y falsedad
+6. Atajos para sentencias if (ternario, de guarda, predeterminado)
+
+
+
+Ejercicios de la lección 6: Booleanos y sentencias if
+Nota: para realizar estos ejercicios, cree un archivo HTML (como 6a.html, 6b.html, ...)
+
+6a. Cree una variable llamada "hora" y guarde la hora actual del día (use el formato de 24 horas y guárdela como un número entre 0 y 23).
+    - Si la hora está entre las 6 y las 12, muestre "¡Buenos días!" en la consola
+    - Si la hora está entre las 13 y las 17, muestre "¡Buenas tardes!" en la consola
+    - De lo contrario, muestre "¡Buenas noches!" en la consola
+
+6b. Continuando con el paso 6a, intente cambiar el valor de la variable "hora" para que muestre mensajes diferentes.
+
+6c. Continuando con el paso 6a, cree una variable llamada "nombre" y guarde su nombre dentro (como una cadena). Actualice la sentencia if 
+para mostrar su nombre en cada mensaje. Por ejemplo: "¡Buenos días ${nombre}!"
+
+
+6d. Imagina un parque de atracciones que ofrece descuentos para niños (de 6 años o menos) o personas mayores (de 65 años o más).
+    - Crea una variable 'edad' y guarda la edad de una persona dentro.
+    - Crea una sentencia if que compruebe si la persona cumple los requisitos para un descuento. Si es así, muestra 'Descuento' en la consola. 
+    De lo contrario, muestra 'Sin descuento' en la consola.
+    - Nota: intenta usar el operador || en tu solución.
+      -Intenta cambiar la variable 'edad' para mostrar mensajes diferentes.
+
+
+6e. Continuando con el ejercicio 6d, digamos que el descuento solo está disponible si no es un día festivo. Crea una variable: const isHoliday = true;
+    - Actualiza el código para que, para obtener un descuento, las personas deban cumplir con el requisito de edad y que tampoco sea un día festivo.
+    - Nota: && tiene mayor prioridad que ||, por lo que es posible que debas usar corchetes () para controlar qué código se realiza primero.
+    - Intenta cambiar el valor de isHoliday para mostrar mensajes diferentes
+
+
+
+Crearemos un juego de lanzamiento de moneda (crea 1 archivo HTML para los ejercicios 6f - 6j):
+
+6f. Genera un número aleatorio con Math.random(). Guárdalo en una variable.
+
+6g. Crea una sentencia if y comprueba:
+    - Si el número es menor que 0.5, muestra "cara" en la consola.
+    - De lo contrario, muestra "cruz" en la consola.
+
+6h. En lugar de mostrar "cara" o "cruz" en la consola, guarda el resultado en una variable llamada "resultado".
+
+6i. Digamos que estamos intentando adivinar el resultado. Crea una variable llamada "conjetura" y guarda tu conjetura ("cara" o "cruz").
+    - Si tu conjetura coincide con el resultado, muestra "¡Ganas!" en la consola.
+    - Si tu conjetura no coincide con el resultado, muestra "¡Pierdes!"
+
+6j. (Desafío) En lugar de usar sentencias if en los ejercicios anteriores, intenta convertirlas en operadores ternarios (condición: A: B).
+
+
+
+Ejercicios de desafío
+Configuración: mejoraremos el proyecto Cantidad del carrito. Primero, haz una copia del proyecto del ejercicio 5k (si no hiciste el 5k, revisa las soluciones).
+
+6k. Digamos que el carrito tiene una cantidad máxima de 10. Antes de actualizar la cantidad, verifica si la cantidad será mayor que 10:
+     - Si es así, muestra una ventana emergente que diga "El carrito está lleno" y no actualices la cantidad.
+     - De lo contrario, actualiza la cantidad y ejecuta console.log() como de costumbre.
+
+61. En los ejercicios 5i - 5k, creamos los botones "Eliminar del carrito", "-2" y "-3". Antes de actualizar la cantidad, verifica si será menor que 0:
+    - Si es así, crea una ventana emergente que diga "No hay suficientes artículos en el carrito" y no actualices la cantidad.
+    - De lo contrario, actualiza la cantidad y ejecuta console.log() como de costumbre
