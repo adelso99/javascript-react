@@ -1282,3 +1282,22 @@ if (cantidadCarrito){
 Cantidad del carrito = 5
 - Cantidad del carrito > 0 -->  verdadero
 - Cantidad del carrito  --> verdadero
+
+
+
+Atajos de Falso y verdadero tambien esta con los Operadores Logicos
+Ejemplo:
+console.log(!0); //se vuelve a falso porque el "!" cambia al 0 a otro numero
+
+
+
+NaN --> No es un número
+Ejemplo:
+console.log("text" / 5); //esto es NaN porque en matemáticas no es valido
+
+
+undefined ---> Algo no tiene valor
+Ejemplo:
+let num1;
+console.log(num1);  // eso muestra "undefined" porque la variable no esta definida o no tienen un valor
+
