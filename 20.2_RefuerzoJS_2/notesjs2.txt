@@ -1242,3 +1242,43 @@ Cuando hacemos clic en un botón:
     </script>
   
 </body>
+
+
+
+
+
+
+Valor de veracidad
+- se comporta igual que el verdadero
+Ejemplo:
+if (5) {  // verdadero muestra "truthy" en consola
+  console.log("truthy"); 
+}
+
+Valor falso
+- se comporta igual que falso
+Ejemplo:
+if (0) {  // Falso No muestra Nada en consola
+  console.log("truthy"); 
+}
+
+
+Valores falsos en JavaScript
+- false
+- 0 
+- NaN 
+- undefined
+- Null
+
+Cualquier valor que no esté en esta lista es verdadero
+
+Ejemplo:
+const cantidadCarrito = 5;
+
+if (cantidadCarrito){
+   console.log("El Carrito tiene Productos");
+}
+
+Cantidad del carrito = 5
+- Cantidad del carrito > 0 -->  verdadero
+- Cantidad del carrito  --> verdadero
