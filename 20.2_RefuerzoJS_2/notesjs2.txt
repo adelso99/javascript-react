@@ -1180,3 +1180,22 @@ Ejemplo:
     }else {
       console.log("Conduccion No Autorizada :("); //desicion 3
     }
+
+
+Estrategia para JavaScript
+1. Piensa en los pasos que necesitamos
+2. Convierte esos pasos en código
+
+
+
+Ámbito
+-Un ámbito limita dónde existe una variable
+
+
+Ejercicio Juego de Piedra, Papel y Tijeras:
+Pasos
+Cuando hacemos clic en un botón:
+1. La computadora selecciona un movimiento al azar
+2. Compara los movimientos para obtener el resultado
+3. Muestra el resultado en una ventana emergente
+

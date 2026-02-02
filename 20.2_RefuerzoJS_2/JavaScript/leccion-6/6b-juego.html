@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leccion 6 - Juego de Piedra, Papel y Tijeras</title>
+
+  <!--Carga de Estilos CSS Interno-->
+  <style>
+
+  </style>
+</head>
+<body>
+  <h1>Juego de Piedra, Papel y Tijeras</h1>
+
+  <button class="piedra btn">Piedra</button> 
+  <button class="papel btn">Papel</button>
+  <button class="tijera btn">Tijera</button>
+
+    <!--Carga de JavaScript Interno-->
+    <script>
+      //                GANO        PIERDO
+      // 0 piedra      0 = 2        0 = 1
+      // 1 papel       1 = 0        1 = 2 
+      // 2 tijera      2 = 1        2 = 0
+
+      let dato = document.querySelectorAll(".btn");
+
+
+      for(let i = 0; i < dato.length; i++){
+         dato[i].addEventListener("click", function(){
+
+          let numeroRandom = Math.floor(Math.random() * 3);
+          let resultado = "";
+
+          if (i === numeroRandom){
+              resultado = "Empate *_*";
+          } else if (i === 0 && numeroRandom === 2){
+            resultado = "GANASTE :D"
+          } else if (i === 1 && numeroRandom === 0){
+            resultado = "GANASTE :D"
+          } else if (i === 2 && numeroRandom === 1){
+            resultado = "GANASTE :D"
+          } else {
+            resultado = "Perdiste :("
+          }
+
+           alert("Has elejido: "+dato[i].innerHTML+" y la computadora "+dato[numeroRandom].innerHTML+" Entonces: "+resultado);
+         });
+      }
+
+      /*
+      Mayor que (\(>\)): Indica que el número de la izquierda es mayor que el de la derecha. Ejemplo: \(9>7\) (nueve es mayor que siete).
+      Menor que (\(<\)): Indica que el número de la izquierda es menor que el de la derecha. Ejemplo: \(5<10\) (cinco es menor que diez).
+      */
+      
+
+      
+    </script>
+  
+</body>
+</html>
+
