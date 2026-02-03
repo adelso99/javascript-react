@@ -16,9 +16,22 @@
     <!--Carga de JavaScript Interno-->
     <script>
       const numeroRandom = Math.random();
-      let resultado = "";
-      let conjetura = "cara";
 
+      console.log(numeroRandom)
+
+      let resultado = (numeroRandom < 0.5) ? "cara" : "cruz";
+      let conjetura = ("cara" === resultado) ? console.log("¡Ganas!") : console.log("¡Pierdes!");
+      /*
+            const randomNumber = Math.random();
+      const result = randomNumber < 0.5 ? 'heads' : 'tails';
+
+      const guess = 'heads';
+      console.log(guess === result ? 'You win!' : 'You lose!');
+
+
+      */
+
+      /*
       if(numeroRandom < 0.5){
         resultado = "cara";
       } else{
@@ -30,6 +43,7 @@
       } else{
         console.log("¡Pierdes!");
       }
+      */
 
     </script>
   

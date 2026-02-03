@@ -1588,6 +1588,13 @@ SOLUCION:       const numeroRandom = Math.random();
 
 
 6j. (Desafío) En lugar de usar sentencias if en los ejercicios anteriores, intenta convertirlas en operadores ternarios (condición: A: B).
+SOLUCION:       const numeroRandom = Math.random();
+
+      console.log(numeroRandom)
+
+      let resultado = (numeroRandom < 0.5) ? "cara" : "cruz";
+      let conjetura = ("cara" === resultado) ? console.log("¡Ganas!") : console.log("¡Pierdes!");
+
 
 
 
