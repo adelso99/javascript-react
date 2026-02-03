@@ -1786,4 +1786,4 @@ Configuración: mejoraremos el proyecto Cantidad del carrito. Primero, haz una c
 
 
 
--------------------------------------------LECCION 7 Booleanos y sentencias if----------------------------------------------------------------
+-------------------------------------------LECCION 7 Funciones----------------------------------------------------------------
