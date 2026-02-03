@@ -1787,3 +1787,20 @@ Configuración: mejoraremos el proyecto Cantidad del carrito. Primero, haz una c
 
 
 -------------------------------------------LECCION 7 Funciones----------------------------------------------------------------
+¿Qué es una función?
+Una función nos permite reutilizar el código
+
+se crea con la palabra resevada "function"
+
+function nombredelafuncion(){
+  //codigo a ejecutar cuando se llama a la funcion
+}
+
+Ejemplo:
+
+function nuevo(){
+  console.log("Hola desde una funcion");
+}
+
+nuevo(); //esto llama a la funcion y ejecuta lo que esta dentro de ella y sale "Hola desde una funcion"
+Se puede llamar a la funcion cuantas veces se desea
