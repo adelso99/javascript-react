@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leccion 7 - Funciones</title>
+
+  <!--Carga de Estilos CSS Interno-->
+  <style>
+
+  </style>
+</head>
+<body>
+  <h1>Funciones</h1>
+
+
+    <!--Carga de JavaScript Interno-->
+    <script>
+
+      function impuesto(parametro1, parametro2 = 0.1){ // uso de valor por defecto cuando parametro2 no es ingresado que sera 0.1
+        console.log(parametro1 * parametro2);
+
+      }
+
+      impuesto(2000, 0.2); 
+      impuesto(5000); 
+
+      /* y esto muestra en consola 
+          400         Llamada 1 de la funcion"impuesto(2000, 0.2);" 
+          500         Llamada 2 de la funcion"impuesto(5000);" no se ingresa el segundo parametro entonces entra el valor por defecto que es "0.1"
+      */
+  
+
+    </script>
+  
+</body>
+</html>

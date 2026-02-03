@@ -1866,3 +1866,104 @@ function hola(){
 }
 
 console.log(hola()); // solo muestra "num" en consola porque esta antes del "return" y tambien muestra "hola" que es la salida de la funcion y finaliza.
+
+
+Siguiendo el código línea por línea = Rastreando el código
+
+
+
+
+tambien exiten los parametros que recibe una funcion
+  - return = obtiene un valor de una función
+  - params = introduce un valor en una función
+
+  Un parámetro funciona de la misma manera que una variable.
+
+Ejemplo:
+      //Parámetro = coloca un valor en una función
+
+      function impuesto(parametro1){ // los 2000 que se le esta dando al llamar a la consola es el parametro1 puede modificarse
+        console.log(parametro1 * 0.1);
+
+      }
+
+      impuesto(2000);
+
+el parametro que esta en la funcion "impuesto" que es "parametro1" es una variable que se crea automaticamente
+pero esta solo sirve dentro de la funcion no se puede usar fuera 
+
+Se puede ingresar mas de 1 parametro en una funcion se debe separar con una "," cada parametro
+Ejemplo:
+   function impuesto(parametro1, parametro2){ // 2000 y 0.2 que se esta pasando al llamar a la consola es el parametro1 y parametro2 puede modificarse
+        console.log(parametro1 * parametro2);
+
+      }
+
+      impuesto(2000, 0.2); //2 argumentos ingresados es de "2000" que sera el parametro1 y "0.2" que es el "parametro2" en la funcion cuando se ejecute
+  
+
+    </script>
+
+
+se puede ingresar varios parametros pero JavaScript no exige que sean ingresados al llamar la funcion 
+Ejemplo:
+      function impuesto(parametro1, parametro2){ // 2000 y 0.2 que se esta pasando al llamar a la consola es el parametro1 y parametro2 puede modificarse
+        console.log(parametro2); //solo muestra en consola el parametro2
+        console.log(parametro1 * parametro2);
+
+      }
+
+      impuesto(2000, 0.2); //argumento ingresado es de "2000" que sera el parametro1 en la funcion cuando se ejecute
+      impuesto(5000); //argumento ingresado es de "5000" que sera el parametro1 en la funcion cuando se ejecute
+
+      /* y esto muestra en consola 
+          0.2         Llamada 1 de la funcion"impuesto(2000, 0.2);" es el primer console.log, muestra el valor de parametro2
+          400         Llamada 1 de la funcion"impuesto(2000, 0.2);" es el segundo console.log, resultado de 2000 * 0.2
+          undefined   Llamada 2 de la funcion"impuesto(5000);" como no se envió el parametro2, su valor es undefined
+          NaN         Llamada 2 de la funcion"impuesto(5000);"al multiplicar parametro1 (5000) por parametro2 (undefined), es NaN -> No es un número
+      */
+
+¿Por qué aparece undefined?
+console.log(parametro2);
+undefined
+
+📌 Estás imprimiendo una variable que no tiene valor asignado.
+
+
+  ¿Y por qué aparece NaN?
+console.log(parametro1 * parametro2);
+
+Eso se traduce a:
+5000 * undefined
+
+❌ Matemáticamente eso no se puede calcular.
+
+
+Resumen:
+JavaScript no falla si faltan parámetros
+Los parámetros faltantes valen undefined
+undefined en operaciones matemáticas → NaN
+Usa valores por defecto o validaciones
+
+
+
+
+Para evitar errores, se usa valores por defecto o validaciones
+Ejemplo:
+       function impuesto(parametro1, parametro2 = 0.1){ // uso de valor por defecto cuando parametro2 no es ingresado que sera 0.1
+        console.log(parametro1 * parametro2);
+
+      }
+
+      impuesto(2000, 0.2); 
+      impuesto(5000); 
+
+      /* y esto muestra en consola 
+          400         Llamada 1 de la funcion"impuesto(2000, 0.2);" 
+          500         Llamada 2 de la funcion"impuesto(5000);" no se ingresa el segundo parametro entonces entra el valor por defecto que es "0.1"
+      */
+  
+
+
+
+Los valores por defecto solo se usan cuando el argumento no es enviado.
