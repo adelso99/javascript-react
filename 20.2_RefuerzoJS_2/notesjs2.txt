@@ -1817,3 +1817,17 @@ Reglas para los nombres de funciones:
 
 Práctica recomendada: usar mayúsculas y minúsculas
 
+
+el return de una funcion es la salida de al funcion.
+Ejemplo:
+function hola(){
+  num = 2 + 3;
+  return "hola"; //Cuando se llame a la funcion, Obtendrá este valor de la función.
+}
+
+console.log(hola()); // muestra "hola" que es la salida de la funcion 
+
+tambien se puede returnar o devolver:
+  - return 2 + 2;
+  - return variable1;
+  - return Math.random();
