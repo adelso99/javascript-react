@@ -88,82 +88,114 @@
     let dato = document.querySelectorAll(".evento");
 
     for(let i = 0; i < dato.length; i++){
-        dato[i].addEventListener("click", function(){
-          switch (i) {
-            case 0:
-                console.log("Cantidad del Carrito es: "+num);
-              break;
 
-            case 1:
-              num++;
-              console.log("Cantidad del Carrito es: "+num);
-            break;
+      dato[i].addEventListener("click", function(){
+    
+                  switch (i) {
+                    case 0:
+                        console.log("Cantidad del Carrito es: "+num);
+                      break;
 
-            case 2:
-              num+=2;
-              console.log("Cantidad del Carrito es: "+num);
-            break;
+                    case 1:
+                      num++;
+                      if(num > 10){
+                        num--;
+                        datoMaximo()
+                      }else {
+                      console.log("Cantidad del Carrito es: "+num);
+                      }
+                    break;
 
-            case 3:
-              num+=3;
-              console.log("Cantidad del Carrito es: "+num);
-            break;
+                    case 2:
+                      num+=2;
+                      if(num > 10){
+                        num-=2;
+                        datoMaximo()
+                      }else {
+                      console.log("Cantidad del Carrito es: "+num);
+                      }
+                    break;
 
-            case 4:
-              num+=4;
-              console.log("Cantidad del Carrito es: "+num);
+                    case 3:
+                      num+=3;
+                      if(num > 10){
+                        num-=3;
+                        datoMaximo()
+                      }else {
+                      console.log("Cantidad del Carrito es: "+num);
+                      }
+                    break;
 
-            break;
+                    case 4:
+                    num+=4;
+                    if(num > 10){
+                        num-=4;
+                        datoMaximo()
+                      }else {
+                      console.log("Cantidad del Carrito es: "+num);
+                      }
+                    break;
 
-            case 5:
-              num+=5;
-              console.log("Cantidad del Carrito es: "+num);
+                    case 5:
+                       num+=5;
+                      if(num > 10){
+                        num-=5;
+                        datoMaximo()
+                      }else {
+                      console.log("Cantidad del Carrito es: "+num);
+                      }
 
-            break;
+                    break;
 
-            case 6:
-                if (num <= 0){
-                   datoMenor();
-                  } else {
-                    num--;
-                    console.log("Cantidad del Carrito es: "+num);
+                    case 6:
+                        if (num <= 0){
+                          datoMenor();
+                          } else {
+                            num--;
+                            console.log("Cantidad del Carrito es: "+num);
+                          }
+                      break;
+                    
+                    case 7:
+                        if (num <= 0){
+                          datoMenor();
+                          } else {
+                          num-=2;
+                          console.log("Cantidad del Carrito es: "+num);
+                          }
+                    break;
+
+                    case 8:
+                        if (num <= 0){
+                          datoMenor();
+                          } else {
+                          num-=3;
+                          console.log("Cantidad del Carrito es: "+num);
+                          }
+                    break;
+                  
+                    case 9:
+                      num = 0;
+                        console.log("Carro Reiniciado...");
+                        alert("Carrito Reiniciado")
+                      break;
+
+                    default: 
+                    alert("Ocurrio un Error");
+                    break;
                   }
-              break;
-            
-            case 7:
-                if (num <= 0){
-                   datoMenor();
-                  } else {
-                  num-=2;
-                  console.log("Cantidad del Carrito es: "+num);
-                  }
-            break;
 
-            case 8:
-                if (num <= 0){
-                   datoMenor();
-                  } else {
-                  num-=3;
-                  console.log("Cantidad del Carrito es: "+num);
-                  }
-            break;
-          
-            case 9:
-              num = 0;
-                console.log("Carro Reiniciado...");
-                alert("Carrito Reiniciado")
-              break;
+            });
 
-            default: 
-            alert("Ocurrio un Error");
-            break;
-          }
-        });
     };
 
     function datoMenor(){
         num = 0;
         return console.log("No existe nada en Carrito el valor es: " +num);
+    }
+
+    function datoMaximo(){
+      alert("Cantidad del Carrito Maximo no pude ser mayor a: "+num);
     }
 
   </script>

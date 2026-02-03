@@ -1604,6 +1604,118 @@ Configuración: mejoraremos el proyecto Cantidad del carrito. Primero, haz una c
 6k. Digamos que el carrito tiene una cantidad máxima de 10. Antes de actualizar la cantidad, verifica si la cantidad será mayor que 10:
      - Si es así, muestra una ventana emergente que diga "El carrito está lleno" y no actualices la cantidad.
      - De lo contrario, actualiza la cantidad y ejecuta console.log() como de costumbre.
+     
+     SOLUCION:
+                    for(let i = 0; i < dato.length; i++){
+
+                        dato[i].addEventListener("click", function(){
+                      
+                                    switch (i) {
+                                      case 0:
+                                          console.log("Cantidad del Carrito es: "+num);
+                                        break;
+
+                                      case 1:
+                                        num++;
+                                        if(num > 10){
+                                          num--;
+                                          datoMaximo()
+                                        }else {
+                                        console.log("Cantidad del Carrito es: "+num);
+                                        }
+                                      break;
+
+                                      case 2:
+                                        num+=2;
+                                        if(num > 10){
+                                          num-=2;
+                                          datoMaximo()
+                                        }else {
+                                        console.log("Cantidad del Carrito es: "+num);
+                                        }
+                                      break;
+
+                                      case 3:
+                                        num+=3;
+                                        if(num > 10){
+                                          num-=3;
+                                          datoMaximo()
+                                        }else {
+                                        console.log("Cantidad del Carrito es: "+num);
+                                        }
+                                      break;
+
+                                      case 4:
+                                      num+=4;
+                                      if(num > 10){
+                                          num-=4;
+                                          datoMaximo()
+                                        }else {
+                                        console.log("Cantidad del Carrito es: "+num);
+                                        }
+                                      break;
+
+                                      case 5:
+                                        num+=5;
+                                        if(num > 10){
+                                          num-=5;
+                                          datoMaximo()
+                                        }else {
+                                        console.log("Cantidad del Carrito es: "+num);
+                                        }
+
+                                      break;
+
+                                      case 6:
+                                          if (num <= 0){
+                                            datoMenor();
+                                            } else {
+                                              num--;
+                                              console.log("Cantidad del Carrito es: "+num);
+                                            }
+                                        break;
+                                      
+                                      case 7:
+                                          if (num <= 0){
+                                            datoMenor();
+                                            } else {
+                                            num-=2;
+                                            console.log("Cantidad del Carrito es: "+num);
+                                            }
+                                      break;
+
+                                      case 8:
+                                          if (num <= 0){
+                                            datoMenor();
+                                            } else {
+                                            num-=3;
+                                            console.log("Cantidad del Carrito es: "+num);
+                                            }
+                                      break;
+                                    
+                                      case 9:
+                                        num = 0;
+                                          console.log("Carro Reiniciado...");
+                                          alert("Carrito Reiniciado")
+                                        break;
+
+                                      default: 
+                                      alert("Ocurrio un Error");
+                                      break;
+                                    }
+
+                              });
+
+                      };
+
+                      function datoMenor(){
+                          num = 0;
+                          return console.log("No existe nada en Carrito el valor es: " +num);
+                      }
+
+                      function datoMaximo(){
+                        alert("Cantidad del Carrito Maximo no pude ser mayor a: "+num);
+                      }
 
 61. En los ejercicios 5i - 5k, creamos los botones "Eliminar del carrito", "-2" y "-3". Antes de actualizar la cantidad, verifica si será menor que 0:
     - Si es así, crea una ventana emergente que diga "No hay suficientes artículos en el carrito" y no actualices la cantidad.
