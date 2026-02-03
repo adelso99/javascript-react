@@ -1846,3 +1846,23 @@ console.log(holi()); // muestra "undefined" porque no tienen nada la salida de l
 
 
 Cuando usamos una declaración de retorno, finaliza la función inmediatamente.
+Ejemplo:
+function hola(){
+  num = 2 + 3;
+  return "hola"; //Cuando se llame a la funcion, Obtendrá este valor de la función.
+  
+  console.log(num); // esto no se muestra porque la funcion ya finalizo con el "return"
+}
+
+console.log(hola()); // solo muestra "hola" que es la salida de la funcion y finaliza lo demas ya no porque el return indica finalizacion de funcion
+
+
+Ejemplo 2:
+function hola(){
+  num = 2 + 3;
+  console.log(num); // esto tambien se muestra porque la funcion no ha finalizo porque el "return" esta despues
+
+  return "hola"; //Cuando se llame a la funcion, Obtendrá este valor de la función.
+}
+
+console.log(hola()); // solo muestra "num" en consola porque esta antes del "return" y tambien muestra "hola" que es la salida de la funcion y finaliza.
