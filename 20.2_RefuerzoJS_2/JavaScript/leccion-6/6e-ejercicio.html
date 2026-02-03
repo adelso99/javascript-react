@@ -147,8 +147,9 @@
 
                     break;
 
-                    case 6:
-                        if (num <= 0){
+                    case 6:         
+                        if (num - 1 < 0){
+                          num = 0;
                           datoMenor();
                           } else {
                             num--;
@@ -156,20 +157,22 @@
                           }
                       break;
                     
-                    case 7:
-                        if (num <= 0){
+                    case 7:                    
+                        if (num - 2 < 0){
+                          num = 0;
                           datoMenor();
-                          } else {
-                          num-=2;
+                          } else {        
+                            num-=2;                  
                           console.log("Cantidad del Carrito es: "+num);
                           }
                     break;
 
-                    case 8:
-                        if (num <= 0){
+                    case 8:                    
+                        if (num - 3 < 0){
+                          num = 0;
                           datoMenor();
-                          } else {
-                          num-=3;
+                          } else {    
+                            num-=3;                      
                           console.log("Cantidad del Carrito es: "+num);
                           }
                     break;
@@ -190,7 +193,7 @@
     };
 
     function datoMenor(){
-        num = 0;
+        //num = 0;
         return console.log("No existe nada en Carrito el valor es: " +num);
     }
 

@@ -1334,6 +1334,15 @@ console.log(dato); --> Dara "truthy"
 const dato =  false ? "truthy" : "falsy";
 console.log(dato); --> Dara "falsy"
 
+Ejemplo 2:
+9. OPERADOR TERNARIO
+condicion ? valorSi : valorNo;
+
+Ejemplo:
+let msj = edad >= 18 ? "Adulto" : "Menor";
+
+👉 Es un if en una línea.
+
 
 Operador AND &&
 valor1 && valor2
@@ -1373,6 +1382,7 @@ console.log(moneda); //muestra "EUR"
 
 const moneda = undefined || "USD";
 console.log(moneda); //muestra "USD"
+
 
 
 En esta lección:
@@ -1720,3 +1730,60 @@ Configuración: mejoraremos el proyecto Cantidad del carrito. Primero, haz una c
 61. En los ejercicios 5i - 5k, creamos los botones "Eliminar del carrito", "-2" y "-3". Antes de actualizar la cantidad, verifica si será menor que 0:
     - Si es así, crea una ventana emergente que diga "No hay suficientes artículos en el carrito" y no actualices la cantidad.
     - De lo contrario, actualiza la cantidad y ejecuta console.log() como de costumbre
+
+    SOLUCION: 
+                            if (num - 1 < 0){
+                          num = 0;
+                          datoMenor();
+                          } else {
+                            num--;
+                            console.log("Cantidad del Carrito es: "+num);
+                          }
+                      break;
+                    
+                    case 7:                    
+                        if (num - 2 < 0){
+                          num = 0;
+                          datoMenor();
+                          } else {        
+                            num-=2;                  
+                          console.log("Cantidad del Carrito es: "+num);
+                          }
+                    break;
+
+                    case 8:                    
+                        if (num - 3 < 0){
+                          num = 0;
+                          datoMenor();
+                          } else {    
+                            num-=3;                      
+                          console.log("Cantidad del Carrito es: "+num);
+                          }
+                    break;
+                  
+                    case 9:
+                      num = 0;
+                        console.log("Carro Reiniciado...");
+                        alert("Carrito Reiniciado")
+                      break;
+
+                    default: 
+                    alert("Ocurrio un Error");
+                    break;
+                  }
+
+            });
+
+    };
+
+    function datoMenor(){
+        //num = 0;
+        return console.log("No existe nada en Carrito el valor es: " +num);
+    }
+
+
+
+
+
+
+-------------------------------------------LECCION 7 Booleanos y sentencias if----------------------------------------------------------------
