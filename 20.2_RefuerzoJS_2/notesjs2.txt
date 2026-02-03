@@ -1831,3 +1831,18 @@ tambien se puede returnar o devolver:
   - return 2 + 2;
   - return variable1;
   - return Math.random();
+
+
+
+Si en una funcion el return no tiene nada este devolverá "undefined"
+Ejemplo:
+
+function holi(){
+  num = 2 + 3;
+  return; //Cuando se llame a la funcion, este devolverá "undefined".
+}
+
+console.log(holi()); // muestra "undefined" porque no tienen nada la salida de la funcion 
+
+
+Cuando usamos una declaración de retorno, finaliza la función inmediatamente.
