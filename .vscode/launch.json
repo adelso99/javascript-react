@@ -13,7 +13,7 @@
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${workspaceFolder}\\20.1_RefuerzoJS\\04-ejercicios\\08.js"
+            "program": "${workspaceFolder}"
         }
     ]
 }

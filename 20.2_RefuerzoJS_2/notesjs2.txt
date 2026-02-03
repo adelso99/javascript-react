@@ -1394,10 +1394,110 @@ Nota: para realizar estos ejercicios, cree un archivo HTML (como 6a.html, 6b.htm
     - Si la hora está entre las 13 y las 17, muestre "¡Buenas tardes!" en la consola
     - De lo contrario, muestre "¡Buenas noches!" en la consola
 
+    SOLUCION:
+    <body>
+  <h1>Hora actual</h1>
+
+ <input type="number" placeholder="Escribe la hora que deseas" />
+
+  <p>la hora es: <span></span></p>
+
+    <!--Carga de JavaScript Interno-->
+    <script>
+      
+      const dato = document.querySelector("span");
+
+      let numero = document.querySelector("input");
+
+      numero.addEventListener("input", function(){
+
+        let hora = Number(numero.value);
+
+        if(hora >= 6 && hora <= 12){
+        dato.innerHTML = "¡Buenos días!";
+      }else if (hora >= 13 && hora <= 17){
+        dato.innerHTML = "¡Buenas Tardes!";
+      } else {
+        dato.innerHTML = "¡Buenas Noches!";
+      }
+      
+        
+      });
+
+
+    </script>
+
 6b. Continuando con el paso 6a, intente cambiar el valor de la variable "hora" para que muestre mensajes diferentes.
+SOLUCION:
+          <body>
+              <h1>Hora actual</h1>
+
+            <input type="number" placeholder="Escribe la hora que deseas" />
+
+              <p>la hora es: <span></span></p>
+
+                <!--Carga de JavaScript Interno-->
+                <script>
+                  
+                  const dato = document.querySelector("span");
+
+                  let numero = document.querySelector("input");
+
+                  numero.addEventListener("input", function(){
+
+                    let hora = Number(numero.value);
+
+                    if(hora >= 6 && hora <= 12){
+                    dato.innerHTML = "¡Buenos días!";
+                  }else if (hora >= 13 && hora <= 17){
+                    dato.innerHTML = "¡Buenas Tardes!";
+                  } else {
+                    dato.innerHTML = "¡Buenas Noches!";
+                  }
+                  
+                    
+                  });
+
+
+                </script>
+              
+            </body>
+
 
 6c. Continuando con el paso 6a, cree una variable llamada "nombre" y guarde su nombre dentro (como una cadena). Actualice la sentencia if 
 para mostrar su nombre en cada mensaje. Por ejemplo: "¡Buenos días ${nombre}!"
+
+SOLUCION: <body>
+              <h1>Hora actual</h1>
+              <input type="text" placeholder="Escribe tu Nombre" />
+            <input type="number" placeholder="Escribe la hora que deseas" />
+              <p>la hora es: <span></span></p>
+
+                <!--Carga de JavaScript Interno-->
+                <script>
+                  
+                  const dato = document.querySelector("span");
+                  let nombre = document.querySelectorAll("input")[0];
+                  let numero = document.querySelectorAll("input")[1];
+
+                  numero.addEventListener("input", function(){
+
+                      let hora = Number(numero.value);
+                      let name = nombre.value;
+
+                            if(hora >= 6 && hora <= 12){
+                            dato.innerHTML = `¡Buenos días ${name}!`;
+                          }else if (hora >= 13 && hora <= 17){
+                            dato.innerHTML = `¡Buenas Tardes ${name}!`;
+                          } else {
+                            dato.innerHTML = `¡Buenas Noches ${name}!`;
+                          }
+                          
+                  });
+
+                </script>
+              
+            </body>
 
 
 6d. Imagina un parque de atracciones que ofrece descuentos para niños (de 6 años o menos) o personas mayores (de 65 años o más).
@@ -1406,6 +1506,13 @@ para mostrar su nombre en cada mensaje. Por ejemplo: "¡Buenos días ${nombre}!"
     De lo contrario, muestra 'Sin descuento' en la consola.
     - Nota: intenta usar el operador || en tu solución.
       -Intenta cambiar la variable 'edad' para mostrar mensajes diferentes.
+      SOLUCION:       let edad = 70;
+
+                  if (edad <= 6 || edad >= 65){
+                    console.log("Descuento");
+                  } else {
+                    console.log("Sin Descuento");
+                  }
 
 
 6e. Continuando con el ejercicio 6d, digamos que el descuento solo está disponible si no es un día festivo. Crea una variable: const isHoliday = true;
@@ -1413,21 +1520,72 @@ para mostrar su nombre en cada mensaje. Por ejemplo: "¡Buenos días ${nombre}!"
     - Nota: && tiene mayor prioridad que ||, por lo que es posible que debas usar corchetes () para controlar qué código se realiza primero.
     - Intenta cambiar el valor de isHoliday para mostrar mensajes diferentes
 
+    SOLUCION:       let edad = 5;
+                  let diaFestivo = false;
+
+                  if (edad <= 6 || edad >= 65) && !diaFestivo){
+                    console.log("Descuento");
+                  } else {
+                    console.log("Sin Descuento");
+                  }
+
 
 
 Crearemos un juego de lanzamiento de moneda (crea 1 archivo HTML para los ejercicios 6f - 6j):
 
 6f. Genera un número aleatorio con Math.random(). Guárdalo en una variable.
+SOLUCION:   let numeroRandom = Math.random();
 
 6g. Crea una sentencia if y comprueba:
     - Si el número es menor que 0.5, muestra "cara" en la consola.
     - De lo contrario, muestra "cruz" en la consola.
 
+    SOLUCION: 
+          let numeroRandom = Math.random();
+
+            console.log(numeroRandom);
+
+            if(numeroRandom < 0.5){
+              console.log("cara");
+            } else{
+              console.log("cruz");
+            }
+
 6h. En lugar de mostrar "cara" o "cruz" en la consola, guarda el resultado en una variable llamada "resultado".
+SOLUCION:       const numeroRandom = Math.random();
+              let resultado = "";
+
+              console.log(numeroRandom);
+
+              if(numeroRandom < 0.5){
+                resultado = "cara";
+              } else{
+                resultado = "cruz";
+              }
+
+              console.log(resultado);
+
 
 6i. Digamos que estamos intentando adivinar el resultado. Crea una variable llamada "conjetura" y guarda tu conjetura ("cara" o "cruz").
     - Si tu conjetura coincide con el resultado, muestra "¡Ganas!" en la consola.
     - Si tu conjetura no coincide con el resultado, muestra "¡Pierdes!"
+
+    SOLUCION:       const numeroRandom = Math.random();
+                    let resultado = "";
+                    let conjetura = "cara";
+
+                    if(numeroRandom < 0.5){
+                      resultado = "cara";
+                    } else{
+                      resultado = "cruz";
+                    }
+
+                    if(conjetura === resultado){
+                      console.log("¡Ganas!");
+                    } else{
+                      console.log("¡Pierdes!");
+                    }
+
 
 6j. (Desafío) En lugar de usar sentencias if en los ejercicios anteriores, intenta convertirlas en operadores ternarios (condición: A: B).
 

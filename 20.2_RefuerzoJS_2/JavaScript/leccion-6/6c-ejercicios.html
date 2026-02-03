@@ -11,10 +11,27 @@
   </style>
 </head>
 <body>
+  <h1>Hora actual</h1>
+
+  <input type="text" placeholder="Escribe tu Nombre" />
+
+ <input type="number" placeholder="Escribe la hora que deseas" />
+
+ 
+
+  <p>la hora es: <span></span></p>
 
     <!--Carga de JavaScript Interno-->
     <script>
-      
+      let edad = 5;
+      let diaFestivo = false;
+
+      if (diaFestivo === true && (edad <= 6 || edad >= 65)){
+        console.log("Descuento");
+      } else {
+        console.log("Sin Descuento");
+      }
+
     </script>
   
 </body>
