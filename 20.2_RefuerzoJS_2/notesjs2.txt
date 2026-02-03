@@ -1804,3 +1804,16 @@ function nuevo(){
 
 nuevo(); //esto llama a la funcion y ejecuta lo que esta dentro de ella y sale "Hola desde una funcion"
 Se puede llamar a la funcion cuantas veces se desea
+Llamar a la función
+(ejecutar la función)
+(ejecutar la función)
+
+
+
+Reglas para los nombres de funciones:
+1. No se pueden usar palabras especiales. Ejemplo: función
+2. No puede empezar con un número
+3. No se pueden usar caracteres especiales excepto: $ _
+
+Práctica recomendada: usar mayúsculas y minúsculas
+
