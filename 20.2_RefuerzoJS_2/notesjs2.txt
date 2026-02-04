@@ -1989,3 +1989,82 @@ En esta lección:
 2. return = obtener un valor de una función
 3. Parámetros = introducir valores en una función
 4. Se mejoró el código de Piedra, Papel o Tijera
+
+
+
+Ejercicios de la Lección 7 - Funciones
+
+7a. Crea una función llamada 'greet' que muestre el mensaje '¡Hola!' en la consola. Llama/ejecuta esta función varias veces usando: greet();
+SOLUCION:       function greet(){ 
+                  console.log("¡Hola!");
+
+                }
+
+                greet();
+                greet();
+
+
+7b. Continuando con el paso 7a, agrega un parámetro llamado 'name' a la función 'greet' y muestra el mensaje: '¡Hola ${name}!'. Llama a la función varias veces con nombres diferentes: greet('Simon');
+SOLUCION:       function greet(name){ 
+              console.log(`¡Hola! ${name}`);
+
+            }
+
+            greet("Adelso");
+            greet("John");
+
+
+7c. Intenta llamar a greet() sin un nombre (mostrará '¡Hola, indefinido!'). Modifica la función para que, si 'name' no está definido, muestre '¡Hola!' en su lugar.
+
+(Sugerencia: usa una sentencia if. Dado que undefined es un valor falso, puedes usar: if (!name) { ... } para comprobar si 'name' no está definido).
+
+7d. Crea una función 'convertToFahrenheit(celsius)' que tome un número en grados Celsius y devuelva un número en grados Fahrenheit.
+  - Fórmula: Fahrenheit = (Celsius * 9/5) + 32
+  - convertirAFahrenheit(25) => 77
+
+7e. Crea una función 'convertToCelsius(fahrenheit)' que tome un número en grados Fahrenheit y devuelva un número en grados Celsius.
+   - Fórmula: Celsius = (Fahrenheit - 32) * 5/9
+   - convertToCelsius(86) => 30
+
+7f. Crea una función 'convertTemperature(grados, unidad)' que tome un número y una unidad ('C' o 'F'), y la convierta a la otra unidad.
+   - convertTemperature(25, 'C') => '77F'
+   - convertTemperature(86, 'F') => '30C'
+    Nota: devuelve una cadena e intenta reutilizar las funciones de 7d y 7e
+
+
+7g. Cree una función convertLength(longitud, desde, hasta) que tome un número y una unidad ('km' o 'millas') y convierta la longitud a otra unidad ('km' o 'millas'). Nota: 1 milla = 1.6 km (aproximadamente).
+   - convertLength(50, 'millas', 'km') => '80 km'
+   - convertLength(32, 'km', 'millas') => '20 millas'
+   - convertLength(50, 'km', 'km') => '50 km'
+
+
+7h. Actualice convertLength para que admita la conversión entre km, millas y también pies. Nota: 1 milla = 5280 pies, 1 km = 3281 pies (aproximadamente).
+   - convertLength(5, 'millas', 'km') => '8 km'
+   - convertLength(5, 'millas', 'pies') => '26400 pies'
+   - convertLength(5, 'km', 'pies') => '16405 pies'
+
+
+7i. Actualiza convertLength para que, si le das una unidad no válida, devuelva `Unidad no válida: ${unit}`.
+   - convertLength(5, 'lbs', 'lbs') => 'Unidad no válida: Ibs'
+
+Ejercicios de desafío
+
+7j. Crea una copia del proyecto Calculadora del ejercicio 5r (si no hiciste el 5r, copia el código del 5r de las soluciones).
+    - Observa que hay mucho código duplicado en los botones.
+    - Crea una función ‘updateCalculation’ y reutiliza el código.
+
+7k. Crea una copia del proyecto Cantidad del carrito del ejercicio 61.
+    - Crea una función ‘updateCartQuantity’ y reutiliza el código.
+
+71. Modifica ‘updateCartQuantity’ para que, si la cantidad no es válida, alert(); y luego return; (esto se llama un retorno anticipado). Un retorno anticipado hace que nuestro código sea más limpio porque podemos eliminar ‘else-if’ / ‘else’.
+
+if (condición) {
+   alert('El carrito está lleno');
+} else {
+
+}
+
+if (condición) {
+    alert('El carrito está lleno');
+    return;
+}

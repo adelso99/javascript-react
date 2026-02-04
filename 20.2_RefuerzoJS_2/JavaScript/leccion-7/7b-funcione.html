@@ -17,18 +17,14 @@
     <!--Carga de JavaScript Interno-->
     <script>
 
-      function impuesto(parametro1, parametro2 = 0.1){ // uso de valor por defecto cuando parametro2 no es ingresado que sera 0.1
-        console.log(parametro1 * parametro2);
+      function greet(name){ 
+        console.log(`¡Hola! ${name}`);
 
       }
 
-      impuesto(2000, 0.2); 
-      impuesto(5000); 
+      greet("Adelso");
+      greet("John");
 
-      /* y esto muestra en consola 
-          400         Llamada 1 de la funcion"impuesto(2000, 0.2);" 
-          500         Llamada 2 de la funcion"impuesto(5000);" no se ingresa el segundo parametro entonces entra el valor por defecto que es "0.1"
-      */
   
 
     </script>
