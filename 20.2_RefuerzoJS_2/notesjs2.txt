@@ -1967,3 +1967,25 @@ Ejemplo:
 
 
 Los valores por defecto solo se usan cuando el argumento no es enviado.
+Ejemplo:
+     function impuesto(parametro1, parametro2 = 0.1){ // uso de valor por defecto cuando parametro2 no es ingresado que sera 0.1
+        console.log(parametro1 * parametro2);
+
+      }
+
+      impuesto(2000, 0.2); 
+      impuesto(5000); 
+
+      /* y esto muestra en consola 
+          400         Llamada 1 de la funcion"impuesto(2000, 0.2);" 
+          500         Llamada 2 de la funcion"impuesto(5000);" no se ingresa el segundo parametro entonces entra el valor por defecto que es "0.1"
+      */
+
+
+
+
+En esta lección:
+1. Funciones = reutilicemos el código
+2. return = obtener un valor de una función
+3. Parámetros = introducir valores en una función
+4. Se mejoró el código de Piedra, Papel o Tijera
