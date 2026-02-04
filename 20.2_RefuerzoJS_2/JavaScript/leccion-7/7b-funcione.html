@@ -17,14 +17,23 @@
     <!--Carga de JavaScript Interno-->
     <script>
 
-      function greet(name){ 
-        console.log(`¡Hola! ${name}`);
+      function convertToFahrenheit(celsius){
+        console.log((celsius * 9/5) + 32);
+      }
+
+      convertToFahrenheit(25);
+
+      function convertToCelsius(fahrenheit) {
+        console.log((fahrenheit - 32) * 5/9);
 
       }
 
-      greet("Adelso");
-      greet("John");
+      convertToCelsius(86);
 
+
+      function convertTemperature(grados, unidad) {
+        
+      }
   
 
     </script>

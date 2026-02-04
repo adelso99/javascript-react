@@ -2015,16 +2015,45 @@ SOLUCION:       function greet(name){
 
 
 7c. Intenta llamar a greet() sin un nombre (mostrará '¡Hola, indefinido!'). Modifica la función para que, si 'name' no está definido, muestre '¡Hola!' en su lugar.
-
 (Sugerencia: usa una sentencia if. Dado que undefined es un valor falso, puedes usar: if (!name) { ... } para comprobar si 'name' no está definido).
+SOLUCION: 
+          function greet(name){ 
+            if(name === undefined){
+              console.log(`¡Hola!`);
+            }else {
+              console.log(`¡Hola! ${name}`);
+              }
+          }
+
+          greet();
+          greet("Adelso");
+
 
 7d. Crea una función 'convertToFahrenheit(celsius)' que tome un número en grados Celsius y devuelva un número en grados Fahrenheit.
   - Fórmula: Fahrenheit = (Celsius * 9/5) + 32
   - convertirAFahrenheit(25) => 77
 
+  SOLUCION:       function convertToFahrenheit(celsius){
+                console.log((celsius * 9/5) + 32);
+              }
+
+              convertToFahrenheit(25); //da 77 en consola
+
+
+
 7e. Crea una función 'convertToCelsius(fahrenheit)' que tome un número en grados Fahrenheit y devuelva un número en grados Celsius.
    - Fórmula: Celsius = (Fahrenheit - 32) * 5/9
    - convertToCelsius(86) => 30
+
+SOLUCION: 
+        function convertToCelsius(fahrenheit) {
+          console.log((fahrenheit - 32) * 5/9);
+
+        }
+
+        convertToCelsius(86); //da 30 en consola
+  
+
 
 7f. Crea una función 'convertTemperature(grados, unidad)' que tome un número y una unidad ('C' o 'F'), y la convierta a la otra unidad.
    - convertTemperature(25, 'C') => '77F'
