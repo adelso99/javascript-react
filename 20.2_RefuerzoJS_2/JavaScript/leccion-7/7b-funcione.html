@@ -18,22 +18,31 @@
     <script>
 
       function convertToFahrenheit(celsius){
-        console.log((celsius * 9/5) + 32);
+        return (celsius * 9/5) + 32;
       }
-
-      convertToFahrenheit(25);
 
       function convertToCelsius(fahrenheit) {
-        console.log((fahrenheit - 32) * 5/9);
+        return (fahrenheit - 32) * 5/9;
 
       }
-
-      convertToCelsius(86);
 
 
       function convertTemperature(grados, unidad) {
+
+        if (unidad === "C"){
+          const result = convertToFahrenheit(grados);
+          return `"${result} C"`;
+          
+        } else {
+          const result = convertToCelsius(grados);
+          return `"${result} F"`;
+        }
         
+
       }
+      
+      console.log(convertTemperature(25, 'C')) // '77F'
+      console.log(convertTemperature(86, 'F')) // '30C'
   
 
     </script>

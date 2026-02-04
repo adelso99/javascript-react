@@ -2059,6 +2059,33 @@ SOLUCION:
    - convertTemperature(25, 'C') => '77F'
    - convertTemperature(86, 'F') => '30C'
     Nota: devuelve una cadena e intenta reutilizar las funciones de 7d y 7e
+    SOLUCION:
+                  function convertToFahrenheit(celsius){
+                      return (celsius * 9/5) + 32;
+                    }
+
+                    function convertToCelsius(fahrenheit) {
+                      return (fahrenheit - 32) * 5/9;
+
+                    }
+
+
+                    function convertTemperature(grados, unidad) {
+
+                      if (unidad === "C"){
+                        const result = convertToFahrenheit(grados);
+                        return `"${result} C"`;
+                        
+                      } else {
+                        const result = convertToCelsius(grados);
+                        return `"${result} F"`;
+                      }
+                      
+
+                    }
+                    
+                    console.log(convertTemperature(25, 'C')) // '77F'
+                    console.log(convertTemperature(86, 'F')) // '30C'
 
 
 7g. Cree una función convertLength(longitud, desde, hasta) que tome un número y una unidad ('km' o 'millas') y convierta la longitud a otra unidad ('km' o 'millas'). Nota: 1 milla = 1.6 km (aproximadamente).
