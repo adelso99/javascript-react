@@ -17,6 +17,48 @@
     <!--Carga de JavaScript Interno-->
     <script>
 
+function convertLength(longitud, from, to) {
+
+              if (from !== "km" && from !== "millas" && from !== "pies" ) {
+                return `Unidad no válida: ${from}`;
+              }
+
+              if (to !== "km" && to !== "millas" &&  to !== "pies" ) {
+                return `Unidad no válida: ${to}`;
+              }
+
+              if (from === "km" && to === "millas") {
+                return `${longitud / 1.6} millas`;
+
+              } else if (from === "millas" && to === "km") {
+                return `${longitud * 1.6} km`;
+
+              } else if (from === "millas" && to === "pies") {
+                return `${longitud * 5280} pies`;
+
+              } else if (from === "km" && to === "pies") {
+                return `${longitud * 3281} pies`;
+
+              } else if (from === to) {
+                return `${longitud} ${to}`;
+              }
+              }
+
+
+      convertLength(5, 'millas', 'km') // '8 km'
+      convertLength(5, 'millas', 'pies') // '26400 pies'
+      convertLength(5, 'km', 'pies')     // '16405 pies'
+      convertLength(5, 'lbs', 'lbs') // 'Unidad no válida: lbs
+      convertLength(5, ) // 'Unidad no válida: lbs
+
+
+      /*
+      
+      7i. Actualiza convertLength para que, si le das una unidad no válida, devuelva `Unidad no válida: ${unit}`.
+            - convertLength(5, 'lbs', 'lbs') => 'Unidad no válida: Ibs'
+
+
+            /*
       function convertLength(longitud, millas, km){
 
           if (millas === "km" && km === "millas" ){
@@ -27,32 +69,25 @@
             const dato = longitud * 1.6; 
             console.log(`"${dato} km"`);
 
-          } else {
+          } else if (millas === "millas" && km === "pies"){
+            const dato = longitud * 5280; 
+            console.log(`"${dato} pies"`);
+
+          }  else if (millas === "km" && km === "pies"){
+            const dato = longitud * 3281; 
+            console.log(`"${dato} pies"`);
+
+          } else if (millas === "km" && km === "km"){
             const dato = longitud; 
             console.log(`"${dato} km"`);
+
+          } else {
+           console.log(`"Unidad no Valida ${millas}"`);
+
           }
         
-
-        
-
-
       }
-
-      convertLength(50, 'millas', 'km') // '80 km'
-      convertLength(32, 'km', 'millas') // '20 millas'
-      convertLength(50, 'km', 'km')     // '50 km'
-
-      /*
-      
-      7g. Cree una función convertLength(longitud, desde, hasta) que tome un número y una unidad ('km' o 'millas') y 
-      convierta la longitud a otra unidad ('km' o 'millas'). Nota: 1 milla = 1.6 km (aproximadamente).
-        - convertLength(50, 'millas', 'km') => '80 km'
-        - convertLength(32, 'km', 'millas') => '20 millas'
-        - convertLength(50, 'km', 'km') => '50 km'
-
-        1 Milla = 1.6 Kilómetro
-        
-        1 Kilómetro = 0.6 Milla
+          */
 
 
         

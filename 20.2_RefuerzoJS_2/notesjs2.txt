@@ -2119,12 +2119,40 @@ SOLUCION:
    - convertLength(5, 'millas', 'km') => '8 km'
    - convertLength(5, 'millas', 'pies') => '26400 pies'
    - convertLength(5, 'km', 'pies') => '16405 pies'
+   SOLUCION:       function convertLength(longitud, millas, km){
+
+                    if (millas === "km" && km === "millas" ){
+                      const dato = longitud / 1.6; 
+                      console.log(`"${dato} millas"`);
+
+                    } else if (millas === "millas" && km === "km"){
+                      const dato = longitud * 1.6; 
+                      console.log(`"${dato} km"`);
+
+                    } else if (millas === "millas" && km === "pies"){
+                      const dato = longitud * 5280; 
+                      console.log(`"${dato} pies"`);
+
+                    }  else if (millas === "km" && km === "pies"){
+                      const dato = longitud * 3281; 
+                      console.log(`"${dato} pies"`);
+
+                    } else {
+                      const dato = longitud; 
+                      console.log(`"${dato} km"`);
+                    }
+                  
+                }
+
+                convertLength(5, 'millas', 'km') // '8 km'
+                convertLength(5, 'millas', 'pies') // '26400 pies'
+                convertLength(5, 'km', 'pies')     // '16405 pies'
 
 
 7i. Actualiza convertLength para que, si le das una unidad no válida, devuelva `Unidad no válida: ${unit}`.
    - convertLength(5, 'lbs', 'lbs') => 'Unidad no válida: Ibs'
 
-   
+
 
 Ejercicios de desafío
 
