@@ -19,6 +19,10 @@
 
 function convertLength(longitud, from, to) {
 
+              if (!from && !to ) {
+                            return `Unidades no Validas`;
+              }
+
               if (from !== "km" && from !== "millas" && from !== "pies" ) {
                 return `Unidad no válida: ${from}`;
               }
@@ -45,11 +49,8 @@ function convertLength(longitud, from, to) {
               }
 
 
-      convertLength(5, 'millas', 'km') // '8 km'
-      convertLength(5, 'millas', 'pies') // '26400 pies'
-      convertLength(5, 'km', 'pies')     // '16405 pies'
-      convertLength(5, 'lbs', 'lbs') // 'Unidad no válida: lbs
-      convertLength(5, ) // 'Unidad no válida: lbs
+      console.log(convertLength(5, 'lbs', 'lbs'));  // 'Unidad no válida: lbs
+      console.log(convertLength(5));  // Unidades no Validas
 
 
       /*
@@ -91,9 +92,7 @@ function convertLength(longitud, from, to) {
 
 
         
-      
-      
-      */
+  
   
 
     </script>

@@ -2152,6 +2152,41 @@ SOLUCION:
 7i. Actualiza convertLength para que, si le das una unidad no válida, devuelva `Unidad no válida: ${unit}`.
    - convertLength(5, 'lbs', 'lbs') => 'Unidad no válida: Ibs'
 
+   SOLUCION: function convertLength(longitud, from, to) {
+
+              if (!from && !to ) {
+                            return `Unidades no Validas`;
+              }
+
+              if (from !== "km" && from !== "millas" && from !== "pies" ) {
+                return `Unidad no válida: ${from}`;
+              }
+
+              if (to !== "km" && to !== "millas" &&  to !== "pies" ) {
+                return `Unidad no válida: ${to}`;
+              }
+
+              if (from === "km" && to === "millas") {
+                return `${longitud / 1.6} millas`;
+
+              } else if (from === "millas" && to === "km") {
+                return `${longitud * 1.6} km`;
+
+              } else if (from === "millas" && to === "pies") {
+                return `${longitud * 5280} pies`;
+
+              } else if (from === "km" && to === "pies") {
+                return `${longitud * 3281} pies`;
+
+              } else if (from === to) {
+                return `${longitud} ${to}`;
+              }
+              }
+
+
+      console.log(convertLength(5, 'lbs', 'lbs'));  // 'Unidad no válida: lbs
+      console.log(convertLength(5));  // Unidades no Validas
+
 
 
 Ejercicios de desafío
