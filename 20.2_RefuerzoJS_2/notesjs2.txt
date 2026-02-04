@@ -2093,6 +2093,27 @@ SOLUCION:
    - convertLength(32, 'km', 'millas') => '20 millas'
    - convertLength(50, 'km', 'km') => '50 km'
 
+   SOLUCION:       function convertLength(longitud, millas, km){
+
+                  if (millas === "km" && km === "millas" ){
+                    const dato = longitud / 1.6; 
+                    console.log(`"${dato} millas"`);
+
+                  } else if (millas === "millas" && km === "km"){
+                    const dato = longitud * 1.6; 
+                    console.log(`"${dato} km"`);
+
+                  } else {
+                    const dato = longitud; 
+                    console.log(`"${dato} km"`);
+                  }
+                
+              }
+
+                convertLength(50, 'millas', 'km') // '80 km'
+                convertLength(32, 'km', 'millas') // '20 millas'
+                convertLength(50, 'km', 'km')     // '50 km'
+
 
 7h. Actualice convertLength para que admita la conversión entre km, millas y también pies. Nota: 1 milla = 5280 pies, 1 km = 3281 pies (aproximadamente).
    - convertLength(5, 'millas', 'km') => '8 km'
@@ -2102,6 +2123,8 @@ SOLUCION:
 
 7i. Actualiza convertLength para que, si le das una unidad no válida, devuelva `Unidad no válida: ${unit}`.
    - convertLength(5, 'lbs', 'lbs') => 'Unidad no válida: Ibs'
+
+   
 
 Ejercicios de desafío
 

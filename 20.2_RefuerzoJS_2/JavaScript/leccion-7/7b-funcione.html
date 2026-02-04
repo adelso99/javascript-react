@@ -17,32 +17,48 @@
     <!--Carga de JavaScript Interno-->
     <script>
 
-      function convertToFahrenheit(celsius){
-        return (celsius * 9/5) + 32;
-      }
+      function convertLength(longitud, millas, km){
 
-      function convertToCelsius(fahrenheit) {
-        return (fahrenheit - 32) * 5/9;
+          if (millas === "km" && km === "millas" ){
+            const dato = longitud / 1.6; 
+            console.log(`"${dato} millas"`);
 
-      }
+          } else if (millas === "millas" && km === "km"){
+            const dato = longitud * 1.6; 
+            console.log(`"${dato} km"`);
 
-
-      function convertTemperature(grados, unidad) {
-
-        if (unidad === "C"){
-          const result = convertToFahrenheit(grados);
-          return `"${result} C"`;
-          
-        } else {
-          const result = convertToCelsius(grados);
-          return `"${result} F"`;
-        }
+          } else {
+            const dato = longitud; 
+            console.log(`"${dato} km"`);
+          }
         
 
+        
+
+
       }
+
+      convertLength(50, 'millas', 'km') // '80 km'
+      convertLength(32, 'km', 'millas') // '20 millas'
+      convertLength(50, 'km', 'km')     // '50 km'
+
+      /*
       
-      console.log(convertTemperature(25, 'C')) // '77F'
-      console.log(convertTemperature(86, 'F')) // '30C'
+      7g. Cree una función convertLength(longitud, desde, hasta) que tome un número y una unidad ('km' o 'millas') y 
+      convierta la longitud a otra unidad ('km' o 'millas'). Nota: 1 milla = 1.6 km (aproximadamente).
+        - convertLength(50, 'millas', 'km') => '80 km'
+        - convertLength(32, 'km', 'millas') => '20 millas'
+        - convertLength(50, 'km', 'km') => '50 km'
+
+        1 Milla = 1.6 Kilómetro
+        
+        1 Kilómetro = 0.6 Milla
+
+
+        
+      
+      
+      */
   
 
     </script>
