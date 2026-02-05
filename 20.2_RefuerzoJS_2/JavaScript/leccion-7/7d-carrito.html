@@ -11,10 +11,10 @@
           ">Mostrar cantidad</button>
 
           <button onclick="
-            if (cartQuantity + 1 > 10) {
-              alert('El carrito está lleno');
+           if (cartQuantity + 1 > 10) {
+             alert('El carrito está lleno');
             } else {
-               updateCartQuantity(cartQuantity++);
+               updateCartQuantity(1);
             }
           ">Añadir al Carrito</button>
 
@@ -22,7 +22,7 @@
             if (cartQuantity + 2 > 10) {
               alert('El carrito está lleno');
             } else {
-              updateCartQuantity(cartQuantity+=2);
+              updateCartQuantity(2);
              }
           ">+2</button>
 
@@ -30,7 +30,7 @@
             if (cartQuantity + 3 > 10) {
               alert('El carrito está lleno');
             } else {
-              updateCartQuantity(cartQuantity+=3);
+              updateCartQuantity(3);
             }
           ">+3</button>
 
@@ -38,7 +38,7 @@
             if (cartQuantity + 4 > 10) {
               alert('El carrito está lleno');
             } else {
-              updateCartQuantity(cartQuantity+=4);
+              updateCartQuantity(4);
             }
           ">+4</button>
 
@@ -46,7 +46,7 @@
             if (cartQuantity + 5 > 10) {
               alert('El carrito está lleno');
             } else {
-              updateCartQuantity(cartQuantity+=5);
+              updateCartQuantity(5);
             }
           ">+5</button>
 
@@ -55,7 +55,7 @@
             if (cartQuantity - 1 < 0) {
               alert('No hay suficientes artículos en el carrito');
             } else {
-              updateCartQuantity(cartQuantity--);
+              updateCartQuantity(-1);
             }
           ">Eliminar del Carrito</button>
 
@@ -63,7 +63,7 @@
             if (cartQuantity - 2 < 0) {
               alert('No hay suficientes artículos en el carrito');
             } else {
-              updateCartQuantity(cartQuantity-=2);
+              updateCartQuantity(-2);
             }
           ">-2</button>
 
@@ -71,7 +71,7 @@
             if (cartQuantity - 3 < 0) {
               alert('No hay suficientes artículos en el carrito');
             } else {
-              updateCartQuantity(cartQuantity-=3);
+              updateCartQuantity(-3);
             }
           ">-3</button>
           <!-- ^^^ This code was changed. ^^^ -->
@@ -86,13 +86,14 @@
             let cartQuantity = 0;
 
             function updateCartQuantity(dato){
-
-                if(dato > -1 && cartQuantity < 10){
-                  dato++;
-                  console.log(`Cantidad en el carrito: ${cartQuantity}`);
-                  } else if(dato < 0){
-                      dato--;
-                      console.log(`Cantidad en el carrito: ${dato}`);
+            
+              if(cartQuantity + dato > 10){
+                      cartQuantity+=dato;
+                      console.log(`Cantidad en el carrito: ${cartQuantity}`);
+                     
+                  } else if(cartQuantity + dato < 0){
+                      cartQuantity = cartQuantity + dato;
+                      console.log(`Cantidad en el carrito: ${cartQuantity}`);
                       }
 
             }
