@@ -11,11 +11,11 @@
           ">Mostrar cantidad</button>
 
           <button onclick="
-           if (cartQuantity + 1 > 10) {
-             alert('El carrito está lleno');
-            } else {
+          if (cartQuantity + 1 > 10) {
+            alert('El carrito está lleno');
+           } else {
                updateCartQuantity(1);
-            }
+          }
           ">Añadir al Carrito</button>
 
           <button onclick="
@@ -87,17 +87,19 @@
 
             function updateCartQuantity(dato){
         
-              if(cartQuantity + dato > 10){
+              if(dato > 0){
                       cartQuantity+=dato;
                       console.log(`Cantidad en el carrito: ${cartQuantity}`);
-                     
-                  } else if(cartQuantity + dato < 0){
-                      cartQuantity = cartQuantity + dato;
-                      console.log(`Cantidad en el carrito: ${cartQuantity}`);
-                      }
+              
+                    } else if(dato > 10){
+                          cartQuantity = cartQuantity + dato;
+                          console.log(`Cantidad en el carrito: ${cartQuantity}`);
+                          
+                    }
+
+                      
 
             }
-
 
             /*
             7k. Crea una copia del proyecto Cantidad del carrito del ejercicio 61.
