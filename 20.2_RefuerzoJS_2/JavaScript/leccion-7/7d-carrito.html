@@ -86,13 +86,12 @@
             let cartQuantity = 0;
 
             function updateCartQuantity(dato){
-
-              
-              if(cartQuantity + dato > 0 && cartQuantity + dato < 11){
+        
+              if(cartQuantity + dato > 10){
                       cartQuantity+=dato;
                       console.log(`Cantidad en el carrito: ${cartQuantity}`);
                      
-                  } else if(cartQuantity < -1){
+                  } else if(cartQuantity + dato < 0){
                       cartQuantity = cartQuantity + dato;
                       console.log(`Cantidad en el carrito: ${cartQuantity}`);
                       }
