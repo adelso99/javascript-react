@@ -2194,9 +2194,115 @@ Ejercicios de desafío
 7j. Crea una copia del proyecto Calculadora del ejercicio 5r (si no hiciste el 5r, copia el código del 5r de las soluciones).
     - Observa que hay mucho código duplicado en los botones.
     - Crea una función ‘updateCalculation’ y reutiliza el código.
+    SOLUCION: <body>  
+                    <p>
+                      <button onclick="
+                        updateCalculation('1');
+                      ">1</button>
+
+                      <button onclick="
+                        updateCalculation('2');
+                      ">2</button>
+
+                      <button onclick="
+                        updateCalculation('3');
+                      ">3</button>
+
+                      <button onclick="
+                        updateCalculation(' + ');
+                      ">+</button>
+                    </p>
+
+                    <p>
+                      <button onclick="
+                        updateCalculation('4');
+                      ">4</button>
+
+                      <button onclick="
+                        updateCalculation('5');
+                      ">5</button>
+
+                      <button onclick="
+                        updateCalculation('6');
+                      ">6</button>
+
+                      <button onclick="
+                        updateCalculation(' - ');
+                      ">-</button>
+                    </p>
+
+                    <p>
+                      <button onclick="
+                        updateCalculation('7');
+                      ">7</button>
+
+                      <button onclick="
+                        updateCalculation('8');
+                      ">8</button>
+
+                      <button onclick="
+                        updateCalculation('9');
+                      ">9</button>
+
+                      <button onclick="
+                        updateCalculation(' * ');
+                      ">*</button>
+                    </p>
+
+                    <p>
+                      <button onclick="
+                        updateCalculation('0');
+                      ">0</button>
+
+                      <button onclick="
+                        updateCalculation('.');
+                      ">.</button>
+
+                      <button onclick="
+                        // Note: eval() takes a string and runs it as code.
+                        // Avoid using eval() in real world projects since
+                        // it can potentially be given harmful code to run.
+                        // Only use eval() for learning purposes.
+                        calculation = eval(calculation);
+                        console.log(calculation);
+                      ">=</button>
+
+                      <button onclick="
+                        updateCalculation(' / ');
+                      ">/</button>
+                    </p>
+
+                    <p>
+                      <button onclick="
+                      updateCalculation('');
+                      ">Clear</button>
+                    </p>
+
+                    <script>
+                      let calculation = '';
+
+                      function updateCalculation(dato){
+
+                        if (dato === ''){
+                            calculation = '';
+                            console.log('Cleared.');
+
+                            }else {
+                              calculation += dato;
+                              console.log(calculation);
+                            }
+                        
+                      }
+ 
+                    </script>
+
+
 
 7k. Crea una copia del proyecto Cantidad del carrito del ejercicio 61.
     - Crea una función ‘updateCartQuantity’ y reutiliza el código.
+
+
+    
 
 71. Modifica ‘updateCartQuantity’ para que, si la cantidad no es válida, alert(); y luego return; (esto se llama un retorno anticipado). Un retorno anticipado hace que nuestro código sea más limpio porque podemos eliminar ‘else-if’ / ‘else’.
 
