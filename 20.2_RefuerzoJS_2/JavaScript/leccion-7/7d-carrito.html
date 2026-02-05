@@ -11,68 +11,40 @@
           ">Mostrar cantidad</button>
 
           <button onclick="
-          if (cartQuantity + 1 > 10) {
-            alert('El carrito está lleno');
-           } else {
+        //  if (cartQuantity + 1 > 10) {
+          //  alert('El carrito está lleno');
+         //  } else {
                updateCartQuantity(1);
-          }
+         // }
           ">Añadir al Carrito</button>
 
           <button onclick="
-            if (cartQuantity + 2 > 10) {
-              alert('El carrito está lleno');
-            } else {
               updateCartQuantity(2);
-             }
           ">+2</button>
 
           <button onclick="
-            if (cartQuantity + 3 > 10) {
-              alert('El carrito está lleno');
-            } else {
               updateCartQuantity(3);
-            }
           ">+3</button>
 
           <button onclick="
-            if (cartQuantity + 4 > 10) {
-              alert('El carrito está lleno');
-            } else {
               updateCartQuantity(4);
-            }
           ">+4</button>
 
           <button onclick="
-            if (cartQuantity + 5 > 10) {
-              alert('El carrito está lleno');
-            } else {
-              updateCartQuantity(5);
-            }
+              updateCartQuantity();
           ">+5</button>
 
           <!-- vvv This code was changed. vvv -->
           <button onclick="
-            if (cartQuantity - 1 < 0) {
-              alert('No hay suficientes artículos en el carrito');
-            } else {
               updateCartQuantity(-1);
-            }
           ">Eliminar del Carrito</button>
 
           <button onclick="
-            if (cartQuantity - 2 < 0) {
-              alert('No hay suficientes artículos en el carrito');
-            } else {
               updateCartQuantity(-2);
-            }
           ">-2</button>
 
           <button onclick="
-            if (cartQuantity - 3 < 0) {
-              alert('No hay suficientes artículos en el carrito');
-            } else {
               updateCartQuantity(-3);
-            }
           ">-3</button>
           <!-- ^^^ This code was changed. ^^^ -->
 
@@ -87,16 +59,17 @@
 
             function updateCartQuantity(dato){
         
-              if(dato > 0){
-                      cartQuantity+=dato;
-                      console.log(`Cantidad en el carrito: ${cartQuantity}`);
-              
-                    } else if(dato > 10){
-                          cartQuantity = cartQuantity + dato;
-                          console.log(`Cantidad en el carrito: ${cartQuantity}`);
-                          
-                    }
+              if(cartQuantity + dato > 10) {
+                alert('El carrito está lleno');
 
+              }else if(cartQuantity + dato < 0){
+                      console.log(`No hay suficientes artículos en el carrito`);
+              
+                } else {
+                      cartQuantity += dato;
+                      console.log(`Cantidad en el carrito: ${cartQuantity}`);
+                      
+                }
                       
 
             }
