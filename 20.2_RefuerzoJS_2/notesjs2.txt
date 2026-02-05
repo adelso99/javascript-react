@@ -2300,7 +2300,72 @@ Ejercicios de desafío
 
 7k. Crea una copia del proyecto Cantidad del carrito del ejercicio 61.
     - Crea una función ‘updateCartQuantity’ y reutiliza el código.
+    SOLUCION :
+            <body>
+                <button onclick="
+                  console.log(`Cantidad en el carrito: ${cartQuantity}`);
+                ">Mostrar cantidad</button>
 
+                <button onclick="
+                    updateCartQuantity(1);
+                ">Añadir al Carrito</button>
+
+                <button onclick="
+                    updateCartQuantity(2);
+                ">+2</button>
+
+                <button onclick="
+                    updateCartQuantity(3);
+                ">+3</button>
+
+                <button onclick="
+                    updateCartQuantity(4);
+                ">+4</button>
+
+                <button onclick="
+                    updateCartQuantity(5);
+                ">+5</button>
+
+                <!-- vvv This code was changed. vvv -->
+                <button onclick="
+                    updateCartQuantity(-1);
+                ">Eliminar del Carrito</button>
+
+                <button onclick="
+                    updateCartQuantity(-2);
+                ">-2</button>
+
+                <button onclick="
+                    updateCartQuantity(-3);
+                ">-3</button>
+                <!-- ^^^ This code was changed. ^^^ -->
+
+                <button onclick="
+                  cartQuantity = 0;
+                  console.log('El carrito fue reiniciado.');
+                  console.log(`Cantidad en el carrito: ${cartQuantity}`);
+                ">Carro Reiniciado</button>
+
+              <script>
+                    let cartQuantity = 0;
+
+                    function updateCartQuantity(dato){
+                
+                      if(cartQuantity + dato > 10) { //Verifica el numero no sobre pase a 10
+                        alert('El carrito está lleno');
+
+                          }else if(cartQuantity + dato < 0){  //Verifica el numero no sea menor de 0
+                                  console.log(`No hay suficientes artículos en el carrito`); 
+                          
+                                } else { //Si todo lo demas es false entonces suma o resta depediendo el numero del dato es positivo o negativo
+                                      cartQuantity += dato;
+                                      console.log(`Cantidad en el carrito: ${cartQuantity}`);
+                                      
+                                }
+                              
+                    }
+              </script>
+          </body>
 
     
 
