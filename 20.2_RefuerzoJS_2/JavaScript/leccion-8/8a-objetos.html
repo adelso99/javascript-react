@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Leccion 7 - Funciones</title>
+  <title>Leccion 8 - Objetos</title>
 
   <!--Carga de Estilos CSS Interno-->
   <style>
@@ -15,6 +15,18 @@
 
     <!--Carga de JavaScript Interno-->
     <script>
+
+      const producto = {
+        nombre: "Fresa",
+        precio: 1099
+      };
+
+      console.log(producto);
+      console.log(producto.nombre);
+      console.log(producto.precio);
+      
+      producto.nombre = "Mango"; //cambios de valor "Fresa" a "Mango" usando la propiedad de "nombre"
+      console.log(producto); // el objeto se actualiza
 
       
     </script>

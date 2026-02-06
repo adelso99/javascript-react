@@ -2416,3 +2416,22 @@ El retorno anticipado se llama también:
 
 
 -------------------------------------------LECCION 7 Objetos----------------------------------------------------------------
+¿Qué es un objeto?
+Un objeto agrupa varios valores
+esto tiene Propiedades y Valores
+
+Ejemplo:
+    <script>
+
+      const producto = {
+        nombre: "Fresa",  //propiedad es "nombre" y el valor es "fresa"
+        precio: 1099
+      };
+
+      console.log(producto); //acceso al objeto
+      console.log(producto.nombre); //acceso al valor "fresa" usando la propiedad "name" del objeto --> conocido como notacion de puntos
+
+      tambien se puede usar las propiedades del objeto para cambiar los valores 
+      Ejemplo:
+      producto.nombre = "Mango"; //cambios de valor "Fresa" a "Mango" usando la propiedad de "nombre"
+      console.log(producto); // el objeto se actualiza
