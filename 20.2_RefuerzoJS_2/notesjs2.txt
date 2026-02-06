@@ -2435,3 +2435,23 @@ Ejemplo:
       Ejemplo:
       producto.nombre = "Mango"; //cambios de valor "Fresa" a "Mango" usando la propiedad de "nombre"
       console.log(producto); // el objeto se actualiza
+
+
+      tambien se puede agregar una nueva propiedad y valor a nuestro objeto asignado, usando la notacion de puntos
+      Ejemplo
+      producto.estado = "Fresco"; //agrega ña propiedad "estado" con valor "Fresco"
+      console.log(producto); // el objeto se actualiza
+
+      
+      tambien podemos eliminar una propiedad y valor de nuestro objeto con la palabra "delete"
+      Ejemplo:
+      delete producto.estado; //elimina la propiedad "estado" junto a su valor 
+      console.log(producto); // el objeto se actualiza
+
+
+ Por qué usamos objetos
+-hacer que nuestro código esté más organizado
+
+Objetos
+-permítanos agrupar varios valores
+-permítanos usar varios valores juntos

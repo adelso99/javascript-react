@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leccion 8 - Objetos</title>
+
+  <!--Carga de Estilos CSS Interno-->
+  <style>
+
+  </style>
+</head>
+<body>
+  <h1>Juego de Piedra, Papel o Tijera</h1>
+  <button onclick="
+    playGame('piedra');
+  ">Piedra</button>
+
+  <button onclick="
+    playGame('papel');
+  ">Papel</button>
+
+  <button onclick="
+    playGame('tijera');
+  ">Tijera</button>
+
+  <script>
+    function playGame(playerMove) {
+      const computerMove = pickComputerMove();
+
+      let result = '';
+
+      if (playerMove === 'tijera') {
+        if (computerMove === 'piedra') {
+          result = 'Perdiste :(';
+        } else if (computerMove === 'papel') {
+          result = 'GANASTE :D';
+        } else if (computerMove === 'tijera') {
+          result = 'Empate *_*';
+        }
+
+      } else if (playerMove === 'papel') {
+        if (computerMove === 'piedra') {
+          result = 'GANASTE :D';
+        } else if (computerMove === 'papel') {
+          result = 'Empate *_*';
+        } else if (computerMove === 'tijera') {
+          result = 'Perdiste :(';
+        }
+        
+      } else if (playerMove === 'piedra') {
+        if (computerMove === 'piedra') {
+          result = 'Empate *_*';
+        } else if (computerMove === 'papel') {
+          result = 'Perdiste :(';
+        } else if (computerMove === 'tijera') {
+          result = 'GANASTE :D';
+        }
+      }
+
+      alert(`Tu Elejiste ${playerMove}. La Computadora Elijio ${computerMove}. ${result}`);
+    }
+
+    function pickComputerMove() {
+      const randomNumber = Math.random();
+
+      let computerMove = '';
+
+      if (randomNumber >= 0 && randomNumber < 1 / 3) {
+        computerMove = 'piedra';
+      } else if (randomNumber >= 1 / 3 && randomNumber < 2 / 3) {
+        computerMove = 'papel';
+      } else if (randomNumber >= 2 / 3 && randomNumber < 1) {
+        computerMove = 'tijera';
+      }
+
+      return computerMove;
+    }
+  </script>
+</body>
+</html>
