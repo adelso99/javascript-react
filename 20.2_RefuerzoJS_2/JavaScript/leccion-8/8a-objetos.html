@@ -36,7 +36,15 @@
       console.log(producto); // el objeto se actualiza
       */
 
-      
+      const producto2 = {
+        nombre: "Camisa",
+        [numero-producto]: "Dia 1" //Tambien los corchetes nos permiten crear propiedades que este separados con guiones "-"
+      };
+
+      console.log(producto2);
+      console.log(producto2.nombre);    //Notacion de punto
+      console.log(producto2["nombre"]);  //Notacion de Corchetes
+      console.log(producto2["numero-producto"]);  //Notacion de Corchetes Permite crear o verificar una propiedad separada con guiones y la de puntos no
 
       
     </script>

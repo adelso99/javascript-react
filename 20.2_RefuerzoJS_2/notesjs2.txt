@@ -2465,3 +2465,24 @@ Cuando hacemos clic en un botón:
     3. Actualizar una puntuación
   4. Muestra el resultado y la puntuación en una ventana emergente
 
+
+En objeto tambien se puede acceder con notacion de corchetes "[""]", se usan comillas "" dentro de los corchetes
+Ejemplo:
+     const producto2 = {
+        nombre: "Camisa"
+      };
+
+      console.log(producto2.nombre);    //Notacion de punto
+      console.log(producto2["nombre"]);  //Notacion de Corchetes
+
+
+Ejemplo 2:
+    const producto2 = {
+        nombre: "Camisa",
+        [numero-producto]: "Dia 1" //Tambien los corchetes nos permiten crear propiedades que este separados con guiones "-"
+      };
+
+      console.log(producto2);
+      console.log(producto2.nombre);    //Notacion de punto
+      console.log(producto2["nombre"]);  //Notacion de Corchetes
+      console.log(producto2["numero-producto"]);  //Notacion de Corchetes Permite crear o verificar una propiedad separada con guiones y la de puntos no
