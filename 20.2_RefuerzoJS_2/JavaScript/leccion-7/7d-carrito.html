@@ -57,15 +57,18 @@
         
               if(cartQuantity + dato > 10) {
                 alert('El carrito está lleno');
+                return;
 
-              }else if(cartQuantity + dato < 0){
-                      console.log(`No hay suficientes artículos en el carrito`);
+              }
               
-                } else {
+              if(cartQuantity + dato < 0){
+                      alert(`No hay suficientes artículos en el carrito`);
+                      return;
+                      
+                } 
+
                       cartQuantity += dato;
                       console.log(`Cantidad en el carrito: ${cartQuantity}`);
-                      
-                }
                       
             }
 
