@@ -2455,3 +2455,13 @@ Ejemplo:
 Objetos
 -permítanos agrupar varios valores
 -permítanos usar varios valores juntos
+
+
+
+Algoritmo (Piedra, papel o tijera)
+Cuando hacemos clic en un botón:
+  1. La computadora selecciona un movimiento al azar
+  2. Compara los movimientos para obtener el resultado
+    3. Actualizar una puntuación
+  4. Muestra el resultado y la puntuación en una ventana emergente
+

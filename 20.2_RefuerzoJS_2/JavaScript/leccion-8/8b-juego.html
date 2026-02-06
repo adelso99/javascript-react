@@ -24,7 +24,22 @@
     playGame('tijera');
   ">Tijera</button>
 
+  <button onclick="
+    puntuacion.victorias = 0;
+    puntuacion.derrotas = 0;
+    puntuacion.empates = 0;
+
+  ">Reiniciar Puntuacion</button>
+
   <script>
+
+    const puntuacion = {
+      victorias: 0,
+      derrotas: 0,
+      empates: 0
+    }
+
+
     function playGame(playerMove) {
       const computerMove = pickComputerMove();
 
@@ -58,7 +73,16 @@
         }
       }
 
-      alert(`Tu Elejiste ${playerMove}. La Computadora Elijio ${computerMove}. ${result}`);
+      if (result === "GANASTE :D"){
+        puntuacion.victorias += 1;
+      } else if( result === "Perdiste :("){
+        puntuacion.derrotas += 1;
+      } else {
+        puntuacion.empates += 1;
+      }
+
+      alert(`Tu Elejiste ${playerMove}. La Computadora Elijio ${computerMove}. ${result}
+      Victorias: ${puntuacion.victorias} -- Derrotas: ${puntuacion.derrotas} -- Empates: ${puntuacion.empates}`);
     }
 
     function pickComputerMove() {
