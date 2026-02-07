@@ -2755,3 +2755,10 @@ console.log("hola".length); // el string "hola" tambien tiene propiedades y leng
 pero tambien pude tener metodos 
 Ejemplo:
 console.log("hola".toUpperCase()); //string "hola" tambien tiene metodos, "toUpperCase()" nos da una copia de todas las letras en MAYUSCULA
+
+
+todo es posible por el caracter especial de JavaScript que es "Auto-Boxing"
+
+
+
+3. Los objetos son referencias (Objects are references)
