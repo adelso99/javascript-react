@@ -2746,3 +2746,12 @@ Ejemplo:
             console.log("metodo");
           }
         }
+
+
+pero Otros valores también tienen propiedades y métodos
+Ejemplo:
+console.log("hola".length); // el string "hola" tambien tiene propiedades y lengt nos indica cuantas letras tiene ese string en este caso 4
+
+pero tambien pude tener metodos 
+Ejemplo:
+console.log("hola".toUpperCase()); //string "hola" tambien tiene metodos, "toUpperCase()" nos da una copia de todas las letras en MAYUSCULA
