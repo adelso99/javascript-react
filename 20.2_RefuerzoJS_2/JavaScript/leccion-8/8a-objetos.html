@@ -38,13 +38,36 @@
 
       const producto2 = {
         nombre: "Camisa",
-        [numero-producto]: "Dia 1" //Tambien los corchetes nos permiten crear propiedades que este separados con guiones "-"
+        //["numero-producto"]: "Dia 1" //Tambien los corchetes nos permiten crear propiedades que este separados con guiones "-"
+        "numero-producto": "Dia 1", //Pero los corchetes no son estrictos al crear propiedades que este separados con guiones "-" en un objeto basta con ""
+        calificacion: {
+          estrellas: 4.5,
+          puntaje: 87
+        },
+        funcion: function funcion1(){
+          console.log("Funcion que esta en el Objeto");
+        }
       };
 
       console.log(producto2);
       console.log(producto2.nombre);    //Notacion de punto
       console.log(producto2["nombre"]);  //Notacion de Corchetes
       console.log(producto2["numero-producto"]);  //Notacion de Corchetes Permite crear o verificar una propiedad separada con guiones y la de puntos no
+
+      //acceso al objeto 2 dentro del objeto principal
+      console.log(producto2.calificacion.estrellas); // Acceso con notacion de puntos al valor de la propiedad 1 del segundo objeto
+      console.log(producto2["calificacion"]["puntaje"]); // Acceso con notacion de corchetes al valor de la propiedad 2 del segundo objeto
+
+      //Acceso a la funcion que esta dentro del objeto -- No es necesario colocarlo en un console porque es una funcion -- Es Conocido como Metodo
+      producto2.funcion(); //Metodo de notacion de puntos
+      producto2["funcion"](); //Metodo de Corchetes
+
+
+      console.log(JSON.stringify(producto2)); //se visualiza la conversion del JSON en consola y no la Funcion no esta porque no es permitida
+
+      const jsonCover = JSON.stringify(producto2);
+
+      console.log(JSON.parse(jsonCover)); //se visualiza la conversion a Objeto JS en consola y la Funcion no esta porque eso no existe en JSON
 
       
     </script>

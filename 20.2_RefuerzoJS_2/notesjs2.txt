@@ -2477,12 +2477,185 @@ Ejemplo:
 
 
 Ejemplo 2:
-    const producto2 = {
+      const producto2 = {
         nombre: "Camisa",
-        [numero-producto]: "Dia 1" //Tambien los corchetes nos permiten crear propiedades que este separados con guiones "-"
+        //["numero-producto"]: "Dia 1" //Tambien los corchetes nos permiten crear propiedades que este separados con guiones "-"
+        "numero-producto": "Dia 1" //Pero los corchetes no son estrictos al crear propiedades que este separados con guiones "-" en un objeto basta con ""
+        
       };
 
       console.log(producto2);
       console.log(producto2.nombre);    //Notacion de punto
       console.log(producto2["nombre"]);  //Notacion de Corchetes
       console.log(producto2["numero-producto"]);  //Notacion de Corchetes Permite crear o verificar una propiedad separada con guiones y la de puntos no
+
+
+tambien se puden agregar o anidar mas objetos a el objeto principal
+Ejemplo:
+     const producto2 = {
+        nombre: "Camisa",
+        "numero-producto": "Dia 1",
+        calificacion: {
+          estrellas: 4.5,
+          puntaje: 87,
+        }
+      };
+
+      //acceso al objeto 2 dentro del objeto principal
+      console.log(producto2.calificacion.estrellas); // Acceso con notacion de puntos al valor de la propiedad 1 del segundo objeto
+      console.log(producto2["calificacion"]["puntaje"]); // Acceso con notacion de corchetes al valor de la propiedad 2 del segundo objeto
+
+
+
+tambien se puden agregar funciones dentro de los objetos
+Conocido como: Función dentro del objeto = Método
+Ejemplo:
+     const producto2 = {
+        nombre: "Camisa",
+        "numero-producto": "Dia 1", 
+        calificacion: {
+          estrellas: 4.5,
+          puntaje: 87
+        },
+        funcion: function funcion1(){
+          console.log("Funcion que esta en el Objeto");
+        }
+      };
+
+      //Acceso a la funcion que esta dentro del objeto -- No es necesario colocarlo en un console porque es una funcion -- Es Conocido como Metodo
+      producto2.funcion(); //Metodo de notacion de puntos
+      producto2["funcion"](); //Metodo de Corchetes
+
+
+      producto2["funcion"]();     // correcto
+      producto2["funcion()"];     // incorrecto
+      No es un tema de comillas… es un tema de qué es el nombre de la propiedad y qué es la ejecución de la función.
+
+      El nombre de la propiedad es:
+      "funcion"
+      NO es:
+      "funcion()"
+      Los paréntesis no forman parte del nombre, sirven para ejecutar la función.
+
+
+
+      Qué significa cada forma
+        producto2["funcion"]();
+
+        JavaScript lo interpreta así:
+        Busca en el objeto la propiedad llamada "funcion"
+        Encuentra una función
+        Luego () la ejecuta
+
+
+        Regla de oro (MUY IMPORTANTE)
+        En objetos:
+        Dentro de comillas va el nombre exacto de la propiedad
+        Los paréntesis van afuera para ejecutar funciones
+
+        Ejemplo:
+        objeto["nombrePropiedad"](); 
+                ▲ nombre
+                                  ▲ ejecución
+
+
+
+
+
+Objetos integrados (los proporciona el lenguaje)
+esto son objetos con objetos matemáticos
+
+2 objetos integrados, ellos son:
+- JSON
+- almacenamiento local
+
+
+
+Objeto JSON integrado
+- nos ayuda a trabajar con JSON
+
+JSON
+Notación de objetos de JavaScript
+Sintaxis -a
+-similar al objeto de JavaScript
+-pero tiene menos funciones
+
+Usamos JSON
+-cuando enviamos datos entre ordenadores
+-cuando almacenamos datos
+
+Ejemplo:
+JSON:  //las propiedades y valores usan comillas dobles "", No se puede usar comillas simples ''
+
+      {
+        "nombre": "Camisa",
+        "numero-producto": "Dia 1", 
+        "calificacion": {
+          "estrellas": 4.5,
+          "puntaje": 87
+        }                   //los JSON no permiten agregar Funciones
+      }
+
+las sintaxis de los JSON es Universal
+
+Objeto Normal
+       {
+        nombre: "Camisa",
+        "numero-producto": "Dia 1", 
+        calificacion: {
+          estrellas: 4.5,
+          puntaje: 87
+        },
+        funcion: function funcion1(){
+          console.log("Funcion que esta en el Objeto");
+        }
+      }
+
+las sintaxis de los JSON es casi solo compatible con JavaScript
+
+
+Objeto JSON integrado
+Convertir:
+Objeto JavaScript  --> JSON
+
+Para convertir un Objeto de JavaScript a sintaxis JSON se usa el metodo "JSON.stringify()"
+Ejemplo:
+objeto normal de JavaScript:
+      const producto2 = {
+        nombre: "Camisa",
+        "numero-producto": "Dia 1", 
+        calificacion: {
+          estrellas: 4.5,
+          puntaje: 87
+        },
+        funcion: function funcion1(){
+          console.log("Funcion que esta en el Objeto");
+        }
+      };
+
+Objeto Convertido JSON
+JSON.stringify(producto2);
+
+usamos un console para verlo en consola
+console.log(JSON.stringify(producto2)); //se visualiza la conversion a JSON en consola y no la Funcion no esta porque no es permitida
+{"nombre":"Camisa","numero-producto":"Dia 1","calificacion":{"estrellas":4.5,"puntaje":87}}
+
+
+
+Para convertir un JSON a Objeto de JavaScript se usa el metodo "JSON.parse()"
+Ejemplo:
+
+const jsonCover = JSON.stringify(producto2); //guarda el Objeto a JSON Convertido
+
+console.log(JSON.parse(jsonCover)); //se visualiza la conversion a Objeto JS en consola y la Funcion no esta porque eso no existe en JSON
+{nombre: 'Camisa', numero-producto: 'Dia 1', calificacion: {…}}
+  calificacion:{estrellas: 4.5, puntaje: 87}
+  nombre:"Camisa"
+  numero-producto: "Dia 1"
+
+
+
+
+
+Siguiente objeto integrado: localStorage
+- guardar valores de forma más permanente
