@@ -2714,7 +2714,7 @@ esta parte tambien se pude hacer asi:
 
 Más detalles sobre los objetos
 
-1 Valor Nulo --> null
+1. Valor Nulo --> null
 estos son muy similares a los undefined ya que representan algo que no funciona 
 
 nulo vs indefinido
@@ -2730,3 +2730,19 @@ func();          => 'default' //si esta vacio hagarra el  parametro por "default
 func(undefined); => 'default' //hagarra el parametro por "default"
 
 func(null);       => null  //pero si el parametro es null entonces sigue siendo null
+
+null: representa algo intencionalmente que este vacio
+
+
+
+2. Boxeo automático (Auto-Boxing)
+los obejtos pueden tener propiedades y metodos 
+Ejemplo:
+      const producto3 = {
+          name: "camisa",  //propiedades
+          precio: 799,
+
+          metodo: function fun(){  //metodos
+            console.log("metodo");
+          }
+        }
