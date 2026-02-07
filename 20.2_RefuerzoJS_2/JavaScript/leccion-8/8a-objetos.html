@@ -83,8 +83,19 @@
 
       const objeto2 = objeto1; // esto no hace una copia del "objeto1" si no hace una copia de la referencia del objeto que se guardo
 
+      objeto1.mensaje = "Nuevo :)"; //Esto cambia el valor de la propiedad "mensaje" a "Nuevo :)"
+      console.log(objeto1); //actualiza el objeto  
+      console.log(objeto2); //El objeto2 tiene la misma referencia del objeto1 entonces eso automaticamente es lo mismo que el objeto1  
 
+      const obejto3 = {
+        mensaje: "Nuevo :)"
+      }
       
+      console.log(obejto3 === objeto1); //esto dara falso porque aunque tengan las mismas propiedades y valores, no son la misma referencia
+                                        // y un objeto guarda una referencia 
+
+      console.log(objeto2 === objeto1); // esto es true porque ambos guardan la misma referencia, No valores, referencia
+
     </script>
   
 </body>
