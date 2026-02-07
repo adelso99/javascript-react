@@ -2659,3 +2659,59 @@ console.log(JSON.parse(jsonCover)); //se visualiza la conversion a Objeto JS en 
 
 Siguiente objeto integrado: localStorage
 - guardar valores de forma más permanente
+
+para guardar un valor dentro del almacenamiento local "localStorage" es como el metodo ".setItem()"
+se le da 2 strings a este metodo el 1ro es un nombre y e 2do es el valor que se quiere guardar en localStorage
+Ejemplo: 
+localStorage.setItem("mensaje", "hola"); //se define para guardar el valor en el almacenamiento local con ".setItem();"
+
+ jugamos un poco el jeugo de piedra, papel o tijera que esta eb la leccion-8/8b.juego.html y luego ya seguimos con la verificacion
+
+  Para verficar cual fue ese valor almacenado localmente es con ".getItem();" con ayuda del nombre asigando que es "mensaje" 1er String
+  console.log(localStorage.getItem("mensaje")); //verificacion del valor almacenado local con "getItem();" 
+  En consola sale esto: hola
+
+  Para elimminar un localStorage usamos el metodo de ".removeItem();"
+  localStorage.removeItem('mensaje'); //elimina el valor almacenado
+
+
+
+
+Ejemplo 2:
+localStorage.removeItem('puntuacion'); //elimina el valor almacenado
+
+    let puntuacion = JSON.parse(localStorage.getItem("puntuacion"));
+
+    if(!puntuacion){ // es igual a esto "puntuacion === null"
+        puntuacion = {
+          victorias: 0,
+          derrotas: 0,
+          empates: 0
+          }
+    }
+
+
+localStorage.setItem("puntuacion", JSON.stringify(puntuacion));
+
+
+esta parte tambien se pude hacer asi:
+    let puntuacion = JSON.parse(localStorage.getItem("puntuacion")) 
+                    || {
+                        victorias: 0,
+                        derrotas: 0,
+                        empates: 0
+                        };
+    /*
+    if(!puntuacion){ // es igual a esto "puntuacion === null"
+        puntuacion = {
+          victorias: 0,
+          derrotas: 0,   //tambien todo ese if se puede agregar a la variable "puntuacion" con el operador "||" y seguido del objeto
+          empates: 0
+          }
+    }*/
+
+
+
+Más detalles sobre los objetos
+
+1 Valor Nulo --> null

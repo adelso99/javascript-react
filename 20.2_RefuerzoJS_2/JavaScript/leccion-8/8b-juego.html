@@ -29,16 +29,26 @@
     puntuacion.derrotas = 0;
     puntuacion.empates = 0;
 
+    localStorage.removeItem('puntuacion'); //elimina el valor almacenado
+
   ">Reiniciar Puntuacion</button>
 
   <script>
 
-    const puntuacion = {
-      victorias: 0,
-      derrotas: 0,
-      empates: 0
-    }
-
+    let puntuacion = JSON.parse(localStorage.getItem("puntuacion")) 
+                    || {
+                        victorias: 0,
+                        derrotas: 0,
+                        empates: 0
+                        };
+    /*
+    if(!puntuacion){ // es igual a esto "puntuacion === null"
+        puntuacion = {
+          victorias: 0,
+          derrotas: 0,   //tambien todo ese if se puede agregar a la variable "puntuacion" con el operador "||" y seguido del objeto
+          empates: 0
+          }
+    }*/
 
     function playGame(playerMove) {
       const computerMove = pickComputerMove();
@@ -82,6 +92,7 @@
       }
 
       //Almacenamiemnto Local
+      localStorage.setItem("puntuacion", JSON.stringify(puntuacion));
 
       alert(`Tu Elejiste ${playerMove}. La Computadora Elijio ${computerMove}. ${result}
       Victorias: ${puntuacion.victorias} -- Derrotas: ${puntuacion.derrotas} -- Empates: ${puntuacion.empates}`);
