@@ -2786,3 +2786,104 @@ Ejemplo:
                                         // y un objeto guarda una referencia 
       
       console.log(objeto2 === objeto1); // esto es true porque ambos guardan la misma referencia, No valores, referencia
+
+
+
+
+4. Atajos para objetos
+Ejemplo:
+      const obejto4 = {
+        mensaje: "Nuevo :)",
+        precio: 799
+      }
+
+      //const mensaje = obejto4.mensaje; //accede al valor de la propiedad mensaje y lo guarda en una variable llamada mensaje
+
+      //Un atajo para esto si la propiedad del objeto y la varible tiene el mismo nombre es:
+      const {mensaje, precio} = obejto4; //lo mismo pero entre llaves {} --> es conocido como desestructuracion y se puden agregar multiples propiedades
+
+      console.log(mensaje); //muestra en consola el valor de la propíedad mensaje del objeto
+      console.log(precio); //muestra en consola el valor de la propíedad precio del objeto
+ 
+desestructuración
+-una forma más sencilla de quitarle propiedades a un objeto
+
+
+5. Propiedad abreviada
+Ejemplo:
+      const obejto5 = {
+        //mensaje: mensaje, //esta tomando lo que se tiene en la variable mensaje y lo sistituye
+        mensaje //Propiedad abreviada: se pude dejar asi y funciona igual ya que "mensaje: mensaje"
+      };
+
+      console.log(obejto5); //Esto muestra en consola el {mensaje: 'Nuevo :)'}
+
+
+
+6. Método abreviado
+Ejemplo:
+
+      const obejto5 = {
+        mensaje, 
+        
+        /*metodo: function fun1(){
+          console.log("Metodo");
+        }*/
+
+        // pero se pude crear esat funcion asi tambien 
+        metodo() {
+          console.log("Metodo") //Método abreviado
+        }
+      };
+
+      obejto5.metodo(); //ejecucucion de funcion metodo y en consola muestra "Metodo"
+
+
+
+
+En esta lección:
+1. Objetos = agrupar valores relacionados
+2. Se añadió una puntuación a Piedra, Papel o Tijera
+3. Objetos integrados (JSON, almacenamiento local)
+4. Más detalles (null, autoboxing, referencias)
+5. Atajos (desestructuración, propiedad abreviada, método abreviado)
+
+
+
+
+Ejercicios de la Lección 8 - Objetos
+
+8a. Digamos que en el proyecto de Amazon tenemos un producto de baloncesto. Este producto se llama 'baloncesto' y tiene un precio de 2095 centavos. Crea un objeto para representar este producto y muéstralo en la consola.
+
+8b. Continuando con el paso 8a, digamos que queremos aumentar el precio en 500 centavos. Usa la notación de puntos para aumentar el precio y muestra el objeto actualizado en la consola.
+
+8c. Usando la notación de corchetes, agrega una propiedad 'tiempo de entrega' al objeto con el valor '3 días'. Muestra el objeto actualizado en la consola.
+
+8d. Crea una función 'comparePrice(producto1, producto2)', que tome 2 productos (con las propiedades 'nombre' y 'precio') y devuelva el producto menos costoso. Crea 2 productos y prueba la función
+
+8e. Crea una función ‘isSameProduct(product1, product2)’, que devuelve verdadero si 2 productos tienen los mismos valores dentro (‘nombre’ y ‘precio’). Si no, devuelve falso. Crea 2 productos y prueba la función. (Sugerencia: los objetos son referencias, por lo que no puedes compararlos directamente).
+
+8f. Usando Google o una herramienta de IA, busca cómo convertir una cadena a minúsculas con JavaScript ('Buenos días' => 'buenos días')
+
+8g. Busca cómo repetir una cadena muchas veces ('prueba' 2 veces => 'pruebaprueba')
+
+8h. Agregaremos localStorage al proyecto de la calculadora. Primero, haz una copia del proyecto del ejercicio 7j (consulta la solución para 7j si es necesario).
+  - Siempre que actualicemos el cálculo, guárdalo usando .setItem()
+  - Cuando la página se cargue por primera vez, obtén el cálculo usando .getItem()
+  - Usa un valor predeterminado de '' si un cálculo no existe en el almacenamiento local
+
+
+
+
+Ejercicios de desafío
+
+8i. Mejoraremos el juego de lanzamiento de moneda del ejercicio 6j para que sea como el juego de piedra, papel o tijera.
+    - Copia el código del ejercicio 6j (consulta la solución del 6j si es necesario).
+    - Crea 2 botones para jugar al juego:   cara cruz
+    - Al hacer clic en "cara", juega con guess = "cara".
+    - Al hacer clic en "cruz", juega con guess = "cruz".
+    - Crea una función 'playGame(guess)' para reutilizar el código.
+
+8j. Crea un objeto de puntuación { victorias: 0, derrotas: 0 }, actualiza la puntuación cada vez que juegues y muestra la puntuación en la consola.
+
+8k. Usa localStorage para guardar y cargar la puntuación (pista: necesitarás usar JSON.stringify() para convertir el objeto de puntuación en una cadena).

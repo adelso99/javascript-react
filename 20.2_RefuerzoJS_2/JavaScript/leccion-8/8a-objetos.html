@@ -96,6 +96,41 @@
 
       console.log(objeto2 === objeto1); // esto es true porque ambos guardan la misma referencia, No valores, referencia
 
+
+      const obejto4 = {
+        mensaje: "Nuevo :)",
+        precio: 799
+      };
+
+      //const mensaje = obejto4.mensaje; //accede al valor de la propiedad mensaje y lo guarda en una variable llamada mensaje
+
+      //Un atajo para esto si la propiedad del objeto y la varible tiene el mismo nombre es:
+      const {mensaje, precio} = obejto4; //lo mismo pero entre llaves {} --> es conocido como desestructuracion y se puden agregar multiples propiedades
+
+      console.log(mensaje); //muestra en consola el valor de la propíedad mensaje del objeto
+      console.log(precio); //muestra en consola el valor de la propíedad precio del objeto
+
+
+      const obejto5 = {
+        //mensaje: mensaje, //esta tomando lo que se tiene en la variable mensaje y lo sistituye
+        mensaje, //Propiedad abreviada: se pude dejar asi y funciona igual ya que "mensaje: mensaje"
+        
+        /*metodo: function fun1(){
+          console.log("Metodo");
+        }*/
+
+        // pero se pude crear esat funcion asi tambien 
+        metodo() {
+          console.log("Metodo") //Método abreviado
+        }
+      };
+
+      console.log(obejto5); //Esto muestra en consola el {mensaje: 'Nuevo :)'}
+
+      obejto5.metodo(); //ejecucucion de funcion metodo y en consola muestra "Metodo"
+
+
+ 
     </script>
   
 </body>
