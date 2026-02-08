@@ -2952,12 +2952,29 @@ SOLUCION: Con el metodo de ".repeat()" y dentro del parentesis van el numero de 
 
     console.log(prueba.repeat(5)); //Repite el String de Prueba 5 veces
 
-    
+
 
 8h. Agregaremos localStorage al proyecto de la calculadora. Primero, haz una copia del proyecto del ejercicio 7j (consulta la solución para 7j si es necesario).
   - Siempre que actualicemos el cálculo, guárdalo usando .setItem()
   - Cuando la página se cargue por primera vez, obtén el cálculo usando .getItem()
   - Usa un valor predeterminado de '' si un cálculo no existe en el almacenamiento local
+
+  SOLUCION:       let calculation = localStorage.getItem("calculo") || '';
+
+              function updateCalculation(dato){
+
+                if (dato === ''){
+                    calculation = '';
+                    console.log('Cleared.');
+
+                    }else {
+                      calculation += dato;
+                      console.log(calculation);
+                    }
+
+                  localStorage.setItem("calculo", calculation);
+                
+              }
 
 
 
