@@ -2875,6 +2875,38 @@ SOLUCION:       producto["tiempo-de-entrega"] = "3 dias";
 
 
 8d. Crea una función 'comparePrice(producto1, producto2)', que tome 2 productos (con las propiedades 'nombre' y 'precio') y devuelva el producto menos costoso. Crea 2 productos y prueba la función
+SOLUCION:       const productoUno = {
+                nombre: "Baloncesto",
+                precio: 2095
+              }; 
+
+              const productoDos = {
+                nombre: "Baloncesto",
+                precio: 2095
+              }; 
+
+              
+              function comparePrice(producto1, producto2){
+
+                if(producto1.precio > producto2.precio){
+                  return JSON.stringify(productoDos);
+                }
+
+                if(producto1.precio < producto2.precio){
+                  return JSON.stringify(productoUno);
+                }
+
+                if(producto1.precio === producto2.precio){
+                  return "Ambos productos tienen el Mismo Precio";
+                }
+
+              }
+
+            console.log(comparePrice(productoUno, productoDos));
+
+
+
+
 
 8e. Crea una función ‘isSameProduct(product1, product2)’, que devuelve verdadero si 2 productos tienen los mismos valores dentro (‘nombre’ y ‘precio’). Si no, devuelve falso. Crea 2 productos y prueba la función. (Sugerencia: los objetos son referencias, por lo que no puedes compararlos directamente).
 

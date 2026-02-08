@@ -15,18 +15,35 @@
 
     <!--Carga de JavaScript Interno-->
     <script>
-      const producto = {
+      const productoUno = {
         nombre: "Baloncesto",
         precio: 2095
       }; 
 
-      console.log(producto);
+      const productoDos = {
+        nombre: "Baloncesto",
+        precio: 2095
+      }; 
 
-      producto.precio = 500;
-      console.log(producto);
+      
+      function comparePrice(producto1, producto2){
 
-      producto["tiempo-de-entrega"] = "3 dias";
-      console.log(producto);
+        if(producto1.precio > producto2.precio){
+          return JSON.stringify(productoDos);
+        }
+
+        if(producto1.precio < producto2.precio){
+          return JSON.stringify(productoUno);
+        }
+
+        if(producto1.precio === producto2.precio){
+          return "Ambos productos tienen el Mismo Precio";
+        }
+
+      }
+
+    console.log(comparePrice(productoUno, productoDos));
+
 
 
  
