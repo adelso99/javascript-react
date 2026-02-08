@@ -19,12 +19,13 @@
     <!--Carga de JavaScript Interno-->
     <script>
       
-      let dato = "";
-      const puntuación = { 
-        victorias: 0, 
+      const ptj = JSON.parse(localStorage.getItem("puntuacion")) || { //luego de jugar un poco agregar "JSON.parse(localStorage.getItem("puntuacion")) ||"
+        victorias: 0,                                                 //para que guarde algo si no, dara error
         derrotas: 0 
       };
-     
+
+       
+
       function playGame(dato){
         const numeroRandom = Math.random();
         console.log(numeroRandom);
@@ -34,12 +35,14 @@
         console.log((dato === resultado) ? "¡Ganas!": "¡Pierdes!");
 
         if(dato === resultado){
-          puntuación.victorias += 1;
+          ptj.victorias++;
         }else {
-          puntuación.derrotas += 1;
+          ptj.derrotas++;
         }
 
-        console.log(puntuación);
+        console.log(ptj);
+
+        localStorage.setItem("puntuacion", JSON.stringify(ptj)); //para guardar y luego juega un poco
 
 
       }
