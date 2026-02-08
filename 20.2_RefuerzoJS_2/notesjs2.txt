@@ -2854,6 +2854,13 @@ En esta lección:
 Ejercicios de la Lección 8 - Objetos
 
 8a. Digamos que en el proyecto de Amazon tenemos un producto de baloncesto. Este producto se llama 'baloncesto' y tiene un precio de 2095 centavos. Crea un objeto para representar este producto y muéstralo en la consola.
+SOLUCION:       const producto = {
+        nombre: "Baloncesto",
+        precio: 2095
+      }; 
+
+      console.log(producto);
+      
 
 8b. Continuando con el paso 8a, digamos que queremos aumentar el precio en 500 centavos. Usa la notación de puntos para aumentar el precio y muestra el objeto actualizado en la consola.
 
