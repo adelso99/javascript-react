@@ -2936,8 +2936,23 @@ SOLUCION:    const productoUno = {
 
 
 8f. Usando Google o una herramienta de IA, busca cómo convertir una cadena a minúsculas con JavaScript ('Buenos días' => 'buenos días')
+SOLUCION: Con el metodo "toLowerCase()"
+
+    const mensaje = "Buenos días";
+
+    console.log(mensaje.toLowerCase()); //B mayuscula es b miniscula
+    console.log("HOLA".toLowerCase()); //todo a miniscula
+
+
 
 8g. Busca cómo repetir una cadena muchas veces ('prueba' 2 veces => 'pruebaprueba')
+SOLUCION: Con el metodo de ".repeat()" y dentro del parentesis van el numero de repeticiones
+
+    const prueba = "prueba";
+
+    console.log(prueba.repeat(5)); //Repite el String de Prueba 5 veces
+
+    
 
 8h. Agregaremos localStorage al proyecto de la calculadora. Primero, haz una copia del proyecto del ejercicio 7j (consulta la solución para 7j si es necesario).
   - Siempre que actualicemos el cálculo, guárdalo usando .setItem()
