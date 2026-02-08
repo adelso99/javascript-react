@@ -2909,6 +2909,31 @@ SOLUCION:       const productoUno = {
 
 
 8e. Crea una función ‘isSameProduct(product1, product2)’, que devuelve verdadero si 2 productos tienen los mismos valores dentro (‘nombre’ y ‘precio’). Si no, devuelve falso. Crea 2 productos y prueba la función. (Sugerencia: los objetos son referencias, por lo que no puedes compararlos directamente).
+SOLUCION:    const productoUno = {
+            nombre: "Baloncesto",
+            precio: 2095
+          }; 
+
+          const productoDos = {
+            nombre: "Baloncesto",
+            precio: 2095
+          }; 
+
+          function isSameProduct(product1, product2) {
+            if(product1.name === product2.name && product1.precio === product2.precio){
+              return  true;
+            }
+
+            if(product1 !== product2){
+              return false;
+            }
+
+          }
+
+
+        console.log(isSameProduct(productoUno, productoDos));
+
+
 
 8f. Usando Google o una herramienta de IA, busca cómo convertir una cadena a minúsculas con JavaScript ('Buenos días' => 'buenos días')
 
