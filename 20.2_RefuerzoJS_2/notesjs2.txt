@@ -2860,11 +2860,19 @@ SOLUCION:       const producto = {
       }; 
 
       console.log(producto);
-      
+
 
 8b. Continuando con el paso 8a, digamos que queremos aumentar el precio en 500 centavos. Usa la notación de puntos para aumentar el precio y muestra el objeto actualizado en la consola.
+SOLUCION: 
+            producto.precio = 500;
+            console.log(producto);
+
+
 
 8c. Usando la notación de corchetes, agrega una propiedad 'tiempo de entrega' al objeto con el valor '3 días'. Muestra el objeto actualizado en la consola.
+SOLUCION:       producto["tiempo-de-entrega"] = "3 dias";
+              console.log(producto);
+
 
 8d. Crea una función 'comparePrice(producto1, producto2)', que tome 2 productos (con las propiedades 'nombre' y 'precio') y devuelva el producto menos costoso. Crea 2 productos y prueba la función
 
