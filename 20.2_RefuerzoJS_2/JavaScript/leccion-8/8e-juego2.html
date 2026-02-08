@@ -13,15 +13,38 @@
 <body>
   <h1>Juego de Moneda -- Leccion 8</h1>
 
+  <button onclick=" playGame('cara') " >Cara</button>
+  <button onclick=" playGame('cruz') " >Cruz</button>
+
     <!--Carga de JavaScript Interno-->
     <script>
-      const numeroRandom = Math.random();
+      
+      let dato = "";
+      const puntuación = { 
+        victorias: 0, 
+        derrotas: 0 
+      };
+     
+      function playGame(dato){
+        const numeroRandom = Math.random();
+        console.log(numeroRandom);
 
-      console.log(numeroRandom)
+        let resultado = (numeroRandom < 0.5) ? "cara" : "cruz";
 
-      let resultado = (numeroRandom < 0.5) ? "cara" : "cruz";
-      const dato = "cara"
-      console.log(("cara" === resultado) ? "¡Ganas!" : "¡Pierdes!");
+        console.log((dato === resultado) ? "¡Ganas!": "¡Pierdes!");
+
+        if(dato === resultado){
+          puntuación.victorias += 1;
+        }else {
+          puntuación.derrotas += 1;
+        }
+
+        console.log(puntuación);
+
+
+      }
+      
+      
 
     </script>
   
