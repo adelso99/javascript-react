@@ -3091,3 +3091,19 @@ recordatorio:
 
 
 -------------------------------------------LECCION 9 Modelo de Objetos de Documento (DOM)----------------------------------------------------------------
+Objetos integrados (objetos proporcionados por JavaScript)
+    console.log('hello');
+    Math.random();
+    JSON.stringify(object);
+    localStorage.getItem('score');
+
+
+Pero el DOM tambien es otro objeto Incorporado
+Ejemplo:
+      //document.body.innerHTML = "Hola" //Cambia toda la pagina a un simple "HoLa"
+
+     // document.title = "Hola"  //Cambia el titulo de la pagina a un simple "HoLa
+
+
+con la palabra "document" se hace referencia a toda la pagina y despues ya se ingresa el elemento o elementosa modificar
+esto tambien tiene metodos
