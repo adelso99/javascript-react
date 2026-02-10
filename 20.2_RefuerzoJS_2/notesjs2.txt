@@ -3130,3 +3130,11 @@ console.log(document.querySelector("button")); //busca el primer button de la pa
 
 
 Cada elemento HTML tiene una propiedad .innerHTML
+Ejemplo:
+  <button>Hola</button>
+  <button class="boton">Boton 2</button>
+
+
+    console.log(document.querySelector("button").innerHTML = "Nuevo"); //busca el primer button de la pagina y lo muestra en consola
+
+    console.log(document.querySelector(".boton").innerHTML);  //muestra en consola el boton que tiene la clase "boton"
