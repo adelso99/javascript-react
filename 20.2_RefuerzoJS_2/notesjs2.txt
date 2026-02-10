@@ -3157,3 +3157,17 @@ Pasos:
 Cuando hacemos clic en el botón,
 1. Si el texto es "Suscribirse" => "Suscrito"
 2. De lo contrario, cámbialo de nuevo => "Suscribirse"
+
+Ejercicio Realizado:
+  <p>Suscribete a YouTube</p>
+  <button onclick=" 
+   const botonSuscribir = document.querySelector('.js-suscribir'); 
+
+   if(botonSuscribir.innerText === 'Suscribir'){ //El innerText nos da unicamente el texto que existe en ese elemento seleccionado
+         botonSuscribir.innerHTML = 'Suscrito';
+
+      }else if (botonSuscribir.innerText === 'Suscrito'){ //uso de innerText
+         botonSuscribir.innerHTML = 'Suscribir';
+      }
+  
+  " class="js-suscribir" >Suscribir</button>

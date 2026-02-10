@@ -18,10 +18,10 @@
   <button onclick=" 
    const botonSuscribir = document.querySelector('.js-suscribir'); 
 
-   if(botonSuscribir.innerHTML === 'Suscribir'){
+   if(botonSuscribir.innerText === 'Suscribir'){ //El innerText nos da unicamente el texto que existe en ese elemento seleccionado
          botonSuscribir.innerHTML = 'Suscrito';
 
-      }else if (botonSuscribir.innerHTML === 'Suscrito'){ 
+      }else if (botonSuscribir.innerText === 'Suscrito'){ //uso de innerText
          botonSuscribir.innerHTML = 'Suscribir';
       }
   
