@@ -3147,3 +3147,13 @@ Ejemplo 2:
 
 
 DOM combina JS y HTML juntos. Le da a JS control total de la página web.
+
+
+Proceso para JavaScript
+1. Determinar qué pasos necesitamos (algoritmo)
+2. Convertir estos pasos en código
+
+Pasos:
+Cuando hacemos clic en el botón,
+1. Si el texto es "Suscribirse" => "Suscrito"
+2. De lo contrario, cámbialo de nuevo => "Suscribirse"
