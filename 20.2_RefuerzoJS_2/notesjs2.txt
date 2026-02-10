@@ -3124,3 +3124,6 @@ método = función guardada dentro de un objeto
 
 document.querySelector();
 -nos permite obtener cualquier elemento de la página y ponerlo dentro de JavaScript
+
+Ejemplo:
+console.log(document.querySelector("button")); //busca el primer button de la pagina y lo muestra en consola
