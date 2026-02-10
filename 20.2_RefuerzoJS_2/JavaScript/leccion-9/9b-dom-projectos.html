@@ -16,20 +16,24 @@
 
   <p>Suscribete a YouTube</p>
   <button onclick=" 
-   const botonSuscribir = document.querySelector('.js-suscribir'); 
-
-   if(botonSuscribir.innerText === 'Suscribir'){ //El innerText nos da unicamente el texto que existe en ese elemento seleccionado
-         botonSuscribir.innerHTML = 'Suscrito';
-
-      }else if (botonSuscribir.innerText === 'Suscrito'){ //uso de innerText
-         botonSuscribir.innerHTML = 'Suscribir';
-      }
-  
+      botonDeSucribir()
   " class="js-suscribir" >Suscribir</button>
 
     <!--Carga de JavaScript Interno-->
     <script>
       //document.querySelector("");
+
+      function botonDeSucribir(){
+        const botonSuscribir = document.querySelector('.js-suscribir'); 
+
+        if(botonSuscribir.innerText === 'Suscribir'){ //El innerText nos da unicamente el texto que existe en ese elemento seleccionado
+              botonSuscribir.innerHTML = 'Suscrito';
+
+          }else if (botonSuscribir.innerText === 'Suscrito'){ //uso de innerText
+              botonSuscribir.innerHTML = 'Suscribir';
+          }
+
+      }
 
 
 
