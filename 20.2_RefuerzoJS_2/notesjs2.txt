@@ -3193,10 +3193,14 @@ Ejericio mas Limpio:
           }else if (botonSuscribir.innerText === 'Suscrito'){ //uso de innerText
               botonSuscribir.innerHTML = 'Suscribir';
           }
-
       }
 
-
-
-   
     </script>
+
+
+
+
+Ejercicio 2:
+Proceso para JavaScript
+1. Determinar qué pasos necesitamos (algoritmo)
+2. Convertir estos pasos en código
