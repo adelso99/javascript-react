@@ -24,11 +24,14 @@
     playGame('tijera');
   ">Tijera</button>
 
+  <p class="js-puntuacion"></p>
+
   <button onclick="
     puntuacion.victorias = 0;
     puntuacion.derrotas = 0;
     puntuacion.empates = 0;
 
+    actualizarPuntaje();
     localStorage.removeItem('puntuacion'); //elimina el valor almacenado
 
   ">Reiniciar Puntuacion</button>
@@ -41,6 +44,9 @@
                         derrotas: 0,
                         empates: 0
                         };
+
+    actualizarPuntaje(); //llamado de funcion para actualizar puntaje que se visualice en la pagina web
+
     /*
     if(!puntuacion){ // es igual a esto "puntuacion === null"
         puntuacion = {
@@ -94,8 +100,17 @@
       //Almacenamiemnto Local
       localStorage.setItem("puntuacion", JSON.stringify(puntuacion));
 
+      actualizarPuntaje(); //llamado de funcion para actualizar puntaje que se visualice en la pagina web
+
+
       alert(`Tu Elejiste ${playerMove}. La Computadora Elijio ${computerMove}. ${result}
       Victorias: ${puntuacion.victorias} -- Derrotas: ${puntuacion.derrotas} -- Empates: ${puntuacion.empates}`);
+    }
+
+
+    function actualizarPuntaje(){ ////funcion para actualizar puntaje que se visualice en la pagina web
+      document.querySelector(".js-puntuacion").innerHTML = `Victorias: ${puntuacion.victorias} -- Derrotas: ${puntuacion.derrotas} -- Empates: ${puntuacion.empates}`;
+
     }
 
     function pickComputerMove() {
