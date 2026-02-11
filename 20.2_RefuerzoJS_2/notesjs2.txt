@@ -3274,3 +3274,70 @@ En esta lección:
   4. 3 proyectos que utilizan el DOM
   5. onkeydown="..."
   6. Más detalles sobre las cadenas + objeto de ventana
+
+
+
+
+
+
+Ejercicios de la Lección 9 - Modelo de Objetos de Documento (DOM)
+
+9a. Cree un <button>9a</button>. Use document.querySelector('button') para obtener el botón de la página y luego muéstrelo en la consola.
+
+9b. Continuando con el paso 9a, cree otro botón <button>9b</button> a continuación. Usando JavaScript, cambie el texto del segundo botón a '9b done!' (pista: agregue una clase y use .querySelector).
+
+9c. Cree dos botones, 'heads' y 'tails', y un párrafo (<p></p>) debajo. Al hacer clic en el botón 'heads', muestre 'You chosen: heads' en el párrafo. Al hacer clic en el botón 'tails', muestre 'You chosen: tails'.
+
+heads  tails <-- click
+
+You chosen: tails
+
+
+9d. Crea un cuadro de texto (<input>) y un botón de envío. Al hacer clic en 'Enviar', muestra 'Tu nombre es: ${text}' en la página (${text} = el texto dentro del cuadro de texto) (pista: usa .value para obtener el texto dentro de un <input>).
+
+Nombre    Enviar
+
+
+9e. Modifica el ejercicio 9d para que cuando presiones 'Enter' en el <input>, también se muestre el mismo mensaje en la página (pista: usa onkeydown y el objeto de evento).
+
+9f. Continuando con el 9e, crea una función para reutilizar el código (si ya lo hiciste, omite este ejercicio).
+
+
+
+Ejercicios de desafío
+
+9g. Crea un archivo 9g.html y copia el código de 09-dom-projects.html en este archivo. En la Calculadora de envíos de Amazon, introduce un coste de 7,99 y haz clic en «Calcular». ¿Qué problema ves? Encuentra una solución para este problema.
+
+7.99  Calcular
+
+$17.990000000000002
+
+
+
+9h. Creemos el proyecto de la derecha:
+ - Siempre que escribamos en el cuadro de texto, actualizamos el texto de la página.
+ - Para ello, aprenderemos otro evento llamado <input onkeyup="...">.
+ - Esto ejecuta el código después de que presionemos una tecla y la soltemos (la tecla aparece).
+
+Escribir algo
+
+
+9i. Mejoraremos el proyecto de cantidad del carrito.
+ - Haz una copia del ejercicio 71 (consulta la solución del 71 si es necesario).
+ - Crea un párrafo (<p></p>) para mostrar la cantidad.
+ - Siempre que actualicemos la cantidad, se mostrará en la página en lugar de en la consola. Además, se mostrará la cantidad cuando la página se cargue   por primera vez.
+
+Mostrar cantidad Añadir al carrito +2 +3 +4 +5  Quitar del carrito -2 -3
+
+Cantidad del carrito: 1
+
+
+
+9j. Mejoraremos el proyecto de la calculadora.
+  - Haz una copia del ejercicio 8h.
+  - Siempre que actualicemos el cálculo, se mostrará en la página en lugar de en la consola.
+  - Cuando la página se cargue por primera vez, si existe un cálculo en localStorage, se mostrará en la página
+
+1
+
+1 2 3 +
