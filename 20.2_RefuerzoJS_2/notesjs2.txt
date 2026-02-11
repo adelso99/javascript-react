@@ -3204,3 +3204,8 @@ Ejercicio 2:
 Proceso para JavaScript
 1. Determinar qué pasos necesitamos (algoritmo)
 2. Convertir estos pasos en código
+    Pasos:
+      Al hacer clic en el botón:
+      1. Obtener el texto en el cuadro de texto
+      2. Si la cantidad es < 40 $, añadir 10 $
+      3. Mostrar el total en la página

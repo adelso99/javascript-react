@@ -26,12 +26,29 @@
   <p>Calculadora de Envios de Amazon</p>
   <p>Pedidos inferiores a $40 = +$10 de envío.</p>
   <p>Pedidos superiores a $40 = envío GRATIS.</p>
-  <input placeholder="Costo de Producto"/><button>Calcular</button>
+  <input placeholder="Costo de Producto" class="js-costo"/>
+  <button onclick="
+   calcularEnvio();
+  ">Calcular</button>
+  <p class="js-dato"></p>
 
 
     <!--Carga de JavaScript Interno-->
     <script>
-      //document.querySelector("");
+      
+      function calcularEnvio(){
+       let dato = document.querySelector(".js-costo").value;
+
+       if(dato < 40){
+         dato = Number(dato) + 10;
+       }
+
+       document.querySelector(".js-dato").innerHTML = `Total de Envio $${dato}`;
+
+      }
+
+
+
 
       function botonDeSucribir(){
         const botonSuscribir = document.querySelector('.js-suscribir'); 
