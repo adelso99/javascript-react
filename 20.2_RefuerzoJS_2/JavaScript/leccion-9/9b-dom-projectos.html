@@ -27,11 +27,7 @@
   <p>Pedidos inferiores a $40 = +$10 de envío.</p>
   <p>Pedidos superiores a $40 = envío GRATIS.</p>
   <input placeholder="Costo de Producto" class="js-costo" onkeydown="
-
-  if(event.key === 'Enter'){
-    calcularEnvio();
-  }
-   
+      calcularEnvioTeclado(event.key)
   "/>
   <button onclick="
    calcularEnvio();
@@ -41,6 +37,13 @@
 
     <!--Carga de JavaScript Interno-->
     <script>
+
+      function calcularEnvioTeclado(evento){
+        
+          if(evento === 'Enter'){
+            calcularEnvio();
+          }
+      }
       
       function calcularEnvio(){
        let dato = document.querySelector(".js-costo").value;

@@ -3234,11 +3234,7 @@ Ejercicio 2:
                     <p>Pedidos inferiores a $40 = +$10 de envío.</p>
                     <p>Pedidos superiores a $40 = envío GRATIS.</p>
                     <input placeholder="Costo de Producto" class="js-costo" onkeydown="
-
-                    if(event.key === 'Enter'){
-                      calcularEnvio();
-                    }
-                    
+                      calcularEnvioTeclado(event.key)
                     "/>
                     <button onclick="
                     calcularEnvio();
@@ -3248,7 +3244,14 @@ Ejercicio 2:
 
                       <!--Carga de JavaScript Interno-->
                       <script>
-                        
+
+                        function calcularEnvioTeclado(evento){
+                          
+                            if(event.key === 'Enter'){
+                              calcularEnvio();
+                            }
+                        }
+
                         function calcularEnvio(){
                         let dato = document.querySelector(".js-costo").value;
 
@@ -3259,3 +3262,15 @@ Ejercicio 2:
                         document.querySelector(".js-dato").innerHTML = `Total de Envio $${dato}`;
 
                         }
+
+
+
+
+
+En esta lección:
+  1. Modelo de Objetos de Documento (DOM)
+  2. document.querySelector(...)
+  3. .innerHTML
+  4. 3 proyectos que utilizan el DOM
+  5. onkeydown="..."
+  6. Más detalles sobre las cadenas + objeto de ventana
