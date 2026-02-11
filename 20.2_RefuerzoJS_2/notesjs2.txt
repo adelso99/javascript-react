@@ -3201,11 +3201,61 @@ Ejericio mas Limpio:
 
 
 Ejercicio 2:
-Proceso para JavaScript
-1. Determinar qué pasos necesitamos (algoritmo)
-2. Convertir estos pasos en código
-    Pasos:
-      Al hacer clic en el botón:
-      1. Obtener el texto en el cuadro de texto
-      2. Si la cantidad es < 40 $, añadir 10 $
-      3. Mostrar el total en la página
+      Proceso para JavaScript
+      1. Determinar qué pasos necesitamos (algoritmo)
+      2. Convertir estos pasos en código
+          Pasos:
+            Al hacer clic en el botón:
+            1. Obtener el texto en el cuadro de texto
+            2. Si la cantidad es < 40 $, añadir 10 $
+            3. Mostrar el total en la página
+
+
+      clics, pulsaciones de teclas => eventos
+      onclick, onkeydown => oyentes de eventos
+
+      Oyentes de eventos
+        onclick = clic
+        onkeydown = pulsación de tecla
+        onscroll = desplazamiento
+        onmouseenter = pasar el cursor sobre
+        onmouseleave = dejar de pasar el cursor sobre
+        ... y muchos más
+
+
+      Pasos:
+      Cuando presionamos una tecla:
+        1. Comprueba si la tecla es "Intro"
+        2. Si lo es, haz lo mismo que con el botón de calcular
+
+
+        solucione:
+                  <p>Calculadora de Envios de Amazon</p>
+                    <p>Pedidos inferiores a $40 = +$10 de envío.</p>
+                    <p>Pedidos superiores a $40 = envío GRATIS.</p>
+                    <input placeholder="Costo de Producto" class="js-costo" onkeydown="
+
+                    if(event.key === 'Enter'){
+                      calcularEnvio();
+                    }
+                    
+                    "/>
+                    <button onclick="
+                    calcularEnvio();
+                    ">Calcular</button>
+                    <p class="js-dato"></p>
+
+
+                      <!--Carga de JavaScript Interno-->
+                      <script>
+                        
+                        function calcularEnvio(){
+                        let dato = document.querySelector(".js-costo").value;
+
+                        if(dato < 40){
+                          dato = Number(dato) + 10;
+                        }
+
+                        document.querySelector(".js-dato").innerHTML = `Total de Envio $${dato}`;
+
+                        }
