@@ -24,6 +24,8 @@
     playGame('tijera');
   ">Tijera</button>
 
+  <p class="js-resultado"></p>
+  <p class="js-movimientos"></p>
   <p class="js-puntuacion"></p>
 
   <button onclick="
@@ -103,6 +105,9 @@
       actualizarPuntaje(); //llamado de funcion para actualizar puntaje que se visualice en la pagina web
 
 
+      document.querySelector(".js-movimientos").innerHTML = `Tu Elejiste ${playerMove} --- La Computadora Elijio ${computerMove}.`;
+      document.querySelector(".js-resultado").innerHTML = result;
+
       alert(`Tu Elejiste ${playerMove}. La Computadora Elijio ${computerMove}. ${result}
       Victorias: ${puntuacion.victorias} -- Derrotas: ${puntuacion.derrotas} -- Empates: ${puntuacion.empates}`);
     }
@@ -111,7 +116,10 @@
     function actualizarPuntaje(){ ////funcion para actualizar puntaje que se visualice en la pagina web
       document.querySelector(".js-puntuacion").innerHTML = `Victorias: ${puntuacion.victorias} -- Derrotas: ${puntuacion.derrotas} -- Empates: ${puntuacion.empates}`;
 
+      
+
     }
+
 
     function pickComputerMove() {
       const randomNumber = Math.random();
