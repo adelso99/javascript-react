@@ -13,8 +13,32 @@
 <body>
   <h1>Leccion 9 - DOM</h1>
 
+  <input placeholder="Name" onkeydown="
+    mjs(dato.event);
+  " />
+  <button onclick="
+  mensaje(dato.value);
+  ">Enviar</button>
+  <p class="js-name"></p>
+
     <!--Carga de JavaScript Interno-->
     <script>
+
+     let dato = document.querySelector("input");
+
+     function mjs(event){
+          if(event === "Enter"){
+          mensaje(event);
+          }
+     }
+     
+      function mensaje(event){
+         
+        document.querySelector(".js-name").innerHTML = `Tu nombre es: ${event}`;
+      }
+
+
+
 
       /*
 
@@ -49,15 +73,12 @@
         ">Enviar</button>
         <p class="js-name"></p>
 
-
              let dato = document.querySelector("input");
      
       function mensaje(event){
          
         document.querySelector(".js-name").innerHTML = `Tu nombre es: ${event}`;
       }
-
-
       
       */
       
