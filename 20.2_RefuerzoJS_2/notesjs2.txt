@@ -3393,6 +3393,7 @@ Listo
 
 
 
+
 Ejercicios de desafío
 
 9g. Crea un archivo 9g.html y copia el código de 09-dom-projects.html en este archivo. En la Calculadora de envíos de Amazon, introduce un coste de 7,99 y haz clic en «Calcular». ¿Qué problema ves? Encuentra una solución para este problema.
@@ -3400,6 +3401,53 @@ Ejercicios de desafío
 7.99  Calcular
 
 $17.990000000000002
+
+SOLUCION:
+
+        <p>Calculadora de Envios de Amazon</p>
+        <p>Pedidos inferiores a $40 = +$10 de envío.</p>
+        <p>Pedidos superiores a $40 = envío GRATIS.</p>
+        <input placeholder="Costo de Producto" class="js-costo" onkeydown="
+            calcularEnvioTeclado(event.key)
+        "/>
+        <button onclick="
+        calcularEnvio();
+        ">Calcular</button>
+        <p class="js-dato"></p>
+
+
+          <!--Carga de JavaScript Interno-->
+          <script>
+
+            function calcularEnvioTeclado(evento){
+              
+                if(evento === 'Enter'){
+                  calcularEnvio();
+                }
+            }
+            
+            function calcularEnvio(){
+            let dato = document.querySelector(".js-costo").value;
+
+            if(dato < 40){
+              dato = ((Number(dato) * 100) + 100 * 10) / 100;
+              /*
+              soluccion 2:
+              let dato = Number(inputElement.value) * 100;
+
+              if (dato < 4000) {
+                dato = dato + 1000;
+              }
+
+              // Convert back to dollars at the end.
+              document.querySelector('.js-costo').innerHTML = `$${dato / 100}`;
+              */
+            }
+
+            document.querySelector(".js-dato").innerHTML = `Total de Envio $${dato}`;
+
+            }
+
 
 
 

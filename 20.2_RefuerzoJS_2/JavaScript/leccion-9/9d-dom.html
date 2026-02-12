@@ -11,13 +11,51 @@
   </style>
 </head>
 <body>
-  <h1>Leccion 9 - DOM</h1>
+  <h1>Leccion 9 - DOM -- Ejericcio de Desafio</h1>
+
+  <p>Calculadora de Envios de Amazon</p>
+  <p>Pedidos inferiores a $40 = +$10 de envío.</p>
+  <p>Pedidos superiores a $40 = envío GRATIS.</p>
+  <input placeholder="Costo de Producto" class="js-costo" onkeydown="
+      calcularEnvioTeclado(event.key)
+  "/>
+  <button onclick="
+   calcularEnvio();
+  ">Calcular</button>
+  <p class="js-dato"></p>
 
 
     <!--Carga de JavaScript Interno-->
     <script>
 
+      function calcularEnvioTeclado(evento){
+        
+          if(evento === 'Enter'){
+            calcularEnvio();
+          }
+      }
+      
+      function calcularEnvio(){
+       let dato = document.querySelector(".js-costo").value;
 
+       if(dato < 40){
+         dato = ((Number(dato) * 100) + 100 * 10) / 100;
+         /*
+         soluccion 2:
+         let dato = Number(inputElement.value) * 100;
+
+        if (dato < 4000) {
+          dato = dato + 1000;
+        }
+
+        // Convert back to dollars at the end.
+        document.querySelector('.js-costo').innerHTML = `$${dato / 100}`;
+         */
+       }
+
+       document.querySelector(".js-dato").innerHTML = `Total de Envio $${dato}`;
+
+      }
    
     </script>
   
