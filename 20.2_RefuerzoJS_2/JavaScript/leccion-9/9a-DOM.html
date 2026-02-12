@@ -13,17 +13,24 @@
 <body>
   <h1>Leccion 9 - DOM</h1>
 
-  <button class="js-b1" onclick="
-   mensaje('.js-b1');
-  ">heads</button>
-  <button class="js-b2" onclick="
-   mensaje('.js-b2');
-  ">tails</button>
-  <p>Tu Elejiste: <span></span></p>
+
 
     <!--Carga de JavaScript Interno-->
     <script>
 
+
+
+      /*
+
+      Ejericio 3:
+        <button class="js-b1" onclick="
+        mensaje('.js-b1');
+        ">heads</button>
+        <button class="js-b2" onclick="
+        mensaje('.js-b2');
+        ">tails</button>
+        <p>Tu Elejiste: <span></span></p>
+        
       function mensaje(event){
 
         const botonElejido = document.querySelector(event).innerText;
@@ -38,6 +45,25 @@
             }
 
       }
+
+
+      Ejercicio 4:
+        <input placeholder="Name" />
+        <button onclick="
+        mensaje(dato.value);
+        ">Enviar</button>
+        <p class="js-name"></p>
+
+
+             let dato = document.querySelector("input");
+     
+            function mensaje(event){
+              
+              document.querySelector(".js-name").innerHTML = `Tu nombre es: ${event}`;
+            }
+
+      
+      */
       
       
 

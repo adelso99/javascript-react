@@ -3343,6 +3343,23 @@ SOLUCION:
 
 Nombre    Enviar
 
+SOLUCION:   <input placeholder="Name" />
+              <button onclick="
+              mensaje(dato.value);
+              ">Enviar</button>
+              <p class="js-name"></p>
+
+                <!--Carga de JavaScript Interno-->
+                <script>
+
+                let dato = document.querySelector("input");
+                
+                  function mensaje(event){
+                    
+                    document.querySelector(".js-name").innerHTML = `Tu nombre es: ${event}`;
+                  }
+
+
 
 9e. Modifica el ejercicio 9d para que cuando presiones 'Enter' en el <input>, también se muestre el mismo mensaje en la página (pista: usa onkeydown y el objeto de evento).
 
