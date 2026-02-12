@@ -3458,6 +3458,24 @@ SOLUCION:
 
 Escribir algo
 
+SOLUCION:   <input  placeholder="Escribe Algo" onkeyup="
+              escribir(texto.value);
+            " />
+            <p  class="js-msj"></p>
+
+
+                const texto = document.querySelector("input");
+
+                function escribir(evento){
+
+                    const dato = document.querySelector(".js-msj");
+
+                    dato.innerText = evento;
+
+                    return dato;
+                  
+                }
+
 
 9i. Mejoraremos el proyecto de cantidad del carrito.
  - Haz una copia del ejercicio 71 (consulta la solución del 71 si es necesario).

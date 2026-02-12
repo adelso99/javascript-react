@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leccion 9 - DOM</title>
+
+  <!--Carga de Estilos CSS Interno-->
+  <style>
+
+  </style>
+</head>
+<body>
+  <h1>Leccion 9 - DOM -- Ejericcio de Desafio</h1>
+
+  <input  placeholder="Escribe Algo" onkeyup="
+     escribir(texto.value);
+  " />
+  <p  class="js-msj"></p>
+
+
+    <!--Carga de JavaScript Interno-->
+    <script>
+      const texto = document.querySelector("input");
+
+      function escribir(evento){
+
+          const dato = document.querySelector(".js-msj");
+
+          dato.innerText = evento;
+
+          return dato;
+        
+      }
+   
+    </script>
+  
+</body>
+</html>
