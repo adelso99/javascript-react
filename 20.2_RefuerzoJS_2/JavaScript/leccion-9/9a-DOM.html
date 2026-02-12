@@ -13,14 +13,36 @@
 <body>
   <h1>Leccion 9 - DOM</h1>
 
-  <button>9a</button>
-  <button class="js-9b">9b</button>
+  <button class="js-b1" onclick="
+   mensaje('.js-b1');
+  ">heads</button>
+  <button class="js-b2" onclick="
+   mensaje('.js-b2');
+  ">tails</button>
+  <p>Tu Elejiste: <span></span></p>
 
     <!--Carga de JavaScript Interno-->
     <script>
-      console.log(document.querySelector("button").innerHTML); // en consola 9a
 
-      document.querySelector(".js-9b").innerHTML = "9b Nuevo!";
+      function mensaje(event){
+
+        const botonElejido = document.querySelector(event).innerText;
+       
+        let msj = document.querySelector("p span");
+
+        if(botonElejido === "heads"){
+           msj.innerText = "Heads";
+
+        } else {
+          msj.innerText = "Tails";
+        }
+
+ 
+        
+
+      }
+      
+      
 
 
 
