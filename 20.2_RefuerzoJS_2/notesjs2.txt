@@ -3388,6 +3388,8 @@ SOLUCION:
 
 
 9f. Continuando con el 9e, crea una función para reutilizar el código (si ya lo hiciste, omite este ejercicio).
+Listo
+
 
 
 
