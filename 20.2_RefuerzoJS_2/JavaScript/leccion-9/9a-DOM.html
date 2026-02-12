@@ -13,8 +13,8 @@
 <body>
   <h1>Leccion 9 - DOM</h1>
 
-  <input placeholder="Name" onkeydown="
-    mjs(dato.event);
+  <input placeholder="Name" class="js-input" onkeydown="
+    mjs(event.key);
   " />
   <button onclick="
   mensaje(dato.value);
@@ -28,7 +28,7 @@
 
      function mjs(event){
           if(event === "Enter"){
-          mensaje(event);
+            mensaje(dato.value);
           }
      }
      
@@ -80,6 +80,32 @@
         document.querySelector(".js-name").innerHTML = `Tu nombre es: ${event}`;
       }
       
+
+      Ejericicio 5:
+            <input placeholder="Name" class="js-input" onkeydown="
+        mjs(event.key);
+      " />
+      <button onclick="
+      mensaje(dato.value);
+      ">Enviar</button>
+      <p class="js-name"></p>
+
+
+        let dato = document.querySelector("input");
+
+        function mjs(event){
+              if(event === "Enter"){
+                mensaje(dato.value);
+              }
+        }
+        
+          function mensaje(event){
+            
+            document.querySelector(".js-name").innerHTML = `Tu nombre es: ${event}`;
+          }
+
+
+          
       */
       
       

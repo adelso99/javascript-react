@@ -3363,6 +3363,30 @@ SOLUCION:   <input placeholder="Name" />
 
 9e. Modifica el ejercicio 9d para que cuando presiones 'Enter' en el <input>, también se muestre el mismo mensaje en la página (pista: usa onkeydown y el objeto de evento).
 
+SOLUCION:
+      <input placeholder="Name" class="js-input" onkeydown="
+        mjs(event.key);
+      " />
+      <button onclick="
+      mensaje(dato.value);
+      ">Enviar</button>
+      <p class="js-name"></p>
+
+
+        let dato = document.querySelector("input");
+
+        function mjs(event){
+              if(event === "Enter"){
+                mensaje(dato.value);
+              }
+        }
+        
+          function mensaje(event){
+            
+            document.querySelector(".js-name").innerHTML = `Tu nombre es: ${event}`;
+          }
+
+
 9f. Continuando con el 9e, crea una función para reutilizar el código (si ya lo hiciste, omite este ejercicio).
 
 
