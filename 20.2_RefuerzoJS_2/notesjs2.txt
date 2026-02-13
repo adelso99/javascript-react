@@ -3090,6 +3090,7 @@ recordatorio:
       precio	        109
 
 
+
 -------------------------------------------LECCION 9 Modelo de Objetos de Documento (DOM)----------------------------------------------------------------
 Objetos integrados (objetos proporcionados por JavaScript)
     console.log('hello');
@@ -3485,7 +3486,84 @@ SOLUCION:   <input  placeholder="Escribe Algo" onkeyup="
 Mostrar cantidad Añadir al carrito +2 +3 +4 +5  Quitar del carrito -2 -3
 
 Cantidad del carrito: 1
-Solucionado :)
+SOLUCION:
+            <body>
+                <button onclick="
+                  datoInicial();
+                ">Mostrar cantidad</button>
+
+                <button onclick="
+                    updateCartQuantity(1);
+                ">Añadir al Carrito</button>
+
+                <button onclick="
+                    updateCartQuantity(2);
+                ">+2</button>
+
+                <button onclick="
+                    updateCartQuantity(3);
+                ">+3</button>
+
+                <button onclick="
+                    updateCartQuantity(4);
+                ">+4</button>
+
+                <button onclick="
+                    updateCartQuantity(5);
+                ">+5</button>
+
+                <!-- vvv This code was changed. vvv -->
+                <button onclick="
+                    updateCartQuantity(-1);
+                ">Eliminar del Carrito</button>
+
+                <button onclick="
+                    updateCartQuantity(-2);
+                ">-2</button>
+
+                <button onclick="
+                    updateCartQuantity(-3);
+                ">-3</button>
+                <!-- ^^^ This code was changed. ^^^ -->
+
+                <button onclick="
+                  cartQuantity = 0;
+                  alert('El carrito fue reiniciado.');
+                  datoInicial();
+                ">Carro Reiniciado</button>
+
+                <p class="js-carrito">Cantidad del carrito:<span></span></p>
+
+            <script>
+                  let cartQuantity = 0;
+                  const datoCarrito = document.querySelector(".js-carrito span");
+                  datoCarrito.innerHTML = ` ${cartQuantity}`;
+
+                  function updateCartQuantity(dato){
+              
+                    if(cartQuantity + dato > 10) {
+                      alert('El carrito está lleno');
+                      return;
+
+                    }
+                    
+                    if(cartQuantity + dato < 0){
+                            alert(`No hay suficientes artículos en el carrito`);
+                            return;
+                            
+                      } 
+
+                            cartQuantity += dato;
+                            datoInicial();
+                            
+                  }
+
+
+                  function datoInicial(){
+                    datoCarrito.innerHTML = ` ${cartQuantity}`;
+                  }
+            </script>
+        </body>
 
 
 9j. Mejoraremos el proyecto de la calculadora.
@@ -3497,4 +3575,127 @@ Solucionado :)
 
 1 2 3 +
 
-Solucionado :)
+SOLUCION:
+          <body>  
+            <h2 class="js-calculo"></h2>
+              <p>
+                <button onclick="
+                  updateCalculation('1');
+                ">1</button>
+
+                <button onclick="
+                  updateCalculation('2');
+                ">2</button>
+
+                <button onclick="
+                  updateCalculation('3');
+                ">3</button>
+
+                <button onclick="
+                  updateCalculation(' + ');
+                ">+</button>
+              </p>
+
+              <p>
+                <button onclick="
+                  updateCalculation('4');
+                ">4</button>
+
+                <button onclick="
+                  updateCalculation('5');
+                ">5</button>
+
+                <button onclick="
+                  updateCalculation('6');
+                ">6</button>
+
+                <button onclick="
+                  updateCalculation(' - ');
+                ">-</button>
+              </p>
+
+              <p>
+                <button onclick="
+                  updateCalculation('7');
+                ">7</button>
+
+                <button onclick="
+                  updateCalculation('8');
+                ">8</button>
+
+                <button onclick="
+                  updateCalculation('9');
+                ">9</button>
+
+                <button onclick="
+                  updateCalculation(' * ');
+                ">*</button>
+              </p>
+
+              <p>
+                <button onclick="
+                  updateCalculation('0');
+                ">0</button>
+
+                <button onclick="
+                  updateCalculation('.');
+                ">.</button>
+
+                <button onclick="
+                  // Note: eval() takes a string and runs it as code.
+                  // Avoid using eval() in real world projects since
+                  // it can potentially be given harmful code to run.
+                  // Only use eval() for learning purposes.
+                  calculation = eval(calculation);
+                  mostrarDato();
+                ">=</button>
+
+                <button onclick="
+                  updateCalculation(' / ');
+                ">/</button>
+              </p>
+
+              <p>
+                <button onclick="
+                updateCalculation('');
+                ">Limpiar</button>
+              </p>
+
+              <script>
+                let calculation = localStorage.getItem("calculo") || '';
+                let datoCalculado = document.querySelector(".js-calculo");
+
+                if(localStorage.getItem("calculo") !== ''){
+                  mostrarDato();
+                }
+
+                function updateCalculation(dato){
+
+                  if (dato === ''){
+                      calculation = '';
+                      datoCalculado.innerHTML = ':)';
+
+                      }else {
+                        calculation += dato;
+                        mostrarDato();
+                      }
+
+                    localStorage.setItem("calculo", calculation);
+                  
+                }
+
+                function mostrarDato(){
+                  datoCalculado.innerHTML = `${calculation}`;
+                }
+
+
+
+              </script>
+            </body>
+
+
+
+
+
+
+-------------------------------------------LECCION 9 Modelo de Objetos de Documento (DOM)----------------------------------------------------------------
