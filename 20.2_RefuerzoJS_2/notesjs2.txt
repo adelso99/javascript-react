@@ -3710,5 +3710,13 @@ SOLUCION:
 
 
  .classList = nos da el control del atributo de clase
+ 
+Una solución:
+Cuando hacemos clic en el botón,
+  1. Añadir una clase
+  2. Esta clase tendrá diferentes estilos
+
  Ejemplo:
           document.querySelector(".js-suscribir").classList.toggle("suscrito");
+
+Espacio exterior = margin
