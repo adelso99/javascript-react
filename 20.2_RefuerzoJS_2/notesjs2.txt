@@ -3699,3 +3699,7 @@ SOLUCION:
 
 
 -------------------------------------------LECCION 10 HTML, CSS, y JavaScript Juntos----------------------------------------------------------------
+3 idiomas
+ - HTML = crea el contenido
+ - CSS = cambia la apariencia
+ - JavaScript = lo hace interactivo
