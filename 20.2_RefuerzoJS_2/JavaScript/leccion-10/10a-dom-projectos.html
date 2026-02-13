@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leccion 10</title>
+
+  <!--Carga de Estilos CSS Interno-->
+  <style>
+
+  </style>
+</head>
+<body>
+  <h1>Leccion 10 - Proyectos </h1>
+
+
+  <p>Suscribete a YouTube</p>
+  <button onclick=" 
+      botonDeSucribir()
+  " class="js-suscribir" >Suscribir</button>
+  
+  <br>
+  <br>
+  <br>
+  
+  <p>Calculadora de Envios de Amazon</p>
+  <p>Pedidos inferiores a $40 = +$10 de envío.</p>
+  <p>Pedidos superiores a $40 = envío GRATIS.</p>
+  <input placeholder="Costo de Producto" class="js-costo" onkeydown="
+      calcularEnvioTeclado(event.key)
+  "/>
+  <button onclick="
+   calcularEnvio();
+  ">Calcular</button>
+  <p class="js-dato"></p>
+
+
+    <!--Carga de JavaScript Interno-->
+    <script>
+
+      function calcularEnvioTeclado(evento){
+        
+          if(evento === 'Enter'){
+            calcularEnvio();
+          }
+      }
+      
+      function calcularEnvio(){
+       let dato = document.querySelector(".js-costo").value;
+
+       if(dato < 40){
+         dato = Number(dato) + 10;
+       }
+
+       document.querySelector(".js-dato").innerHTML = `Total de Envio $${dato}`;
+
+      }
+
+
+
+
+      function botonDeSucribir(){
+        const botonSuscribir = document.querySelector('.js-suscribir'); 
+
+        if(botonSuscribir.innerText === 'Suscribir'){ //El innerText nos da unicamente el texto que existe en ese elemento seleccionado
+              botonSuscribir.innerHTML = 'Suscrito';
+
+          }else if (botonSuscribir.innerText === 'Suscrito'){ //uso de innerText
+              botonSuscribir.innerHTML = 'Suscribir';
+          }
+
+      }
+
+
+
+   
+    </script>
+  
+</body>
+</html>
