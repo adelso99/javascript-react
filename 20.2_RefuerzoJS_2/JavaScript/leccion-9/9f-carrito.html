@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrito</title>
+</head>
+      <body>
+          <button onclick="
+            datoInicial();
+          ">Mostrar cantidad</button>
+
+          <button onclick="
+               updateCartQuantity(1);
+          ">Añadir al Carrito</button>
+
+          <button onclick="
+              updateCartQuantity(2);
+          ">+2</button>
+
+          <button onclick="
+              updateCartQuantity(3);
+          ">+3</button>
+
+          <button onclick="
+              updateCartQuantity(4);
+          ">+4</button>
+
+          <button onclick="
+              updateCartQuantity(5);
+          ">+5</button>
+
+          <!-- vvv This code was changed. vvv -->
+          <button onclick="
+              updateCartQuantity(-1);
+          ">Eliminar del Carrito</button>
+
+          <button onclick="
+              updateCartQuantity(-2);
+          ">-2</button>
+
+          <button onclick="
+              updateCartQuantity(-3);
+          ">-3</button>
+          <!-- ^^^ This code was changed. ^^^ -->
+
+          <button onclick="
+            cartQuantity = 0;
+            alert('El carrito fue reiniciado.');
+            datoInicial();
+          ">Carro Reiniciado</button>
+
+          <p class="js-carrito">Cantidad del carrito:<span></span></p>
+
+       <script>
+            let cartQuantity = 0;
+            const datoCarrito = document.querySelector(".js-carrito span");
+            datoCarrito.innerHTML = ` ${cartQuantity}`;
+
+            function updateCartQuantity(dato){
+        
+              if(cartQuantity + dato > 10) {
+                alert('El carrito está lleno');
+                return;
+
+              }
+              
+              if(cartQuantity + dato < 0){
+                      alert(`No hay suficientes artículos en el carrito`);
+                      return;
+                      
+                } 
+
+                      cartQuantity += dato;
+                      datoInicial();
+                      
+            }
+
+
+            function datoInicial(){
+              datoCarrito.innerHTML = ` ${cartQuantity}`;
+            }
+      </script>
+   </body>
+</html>

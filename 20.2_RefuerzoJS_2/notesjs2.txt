@@ -3485,7 +3485,7 @@ SOLUCION:   <input  placeholder="Escribe Algo" onkeyup="
 Mostrar cantidad Añadir al carrito +2 +3 +4 +5  Quitar del carrito -2 -3
 
 Cantidad del carrito: 1
-
+Solucionado :)
 
 
 9j. Mejoraremos el proyecto de la calculadora.
