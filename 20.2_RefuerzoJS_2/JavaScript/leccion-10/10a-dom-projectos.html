@@ -7,6 +7,27 @@
 
   <!--Carga de Estilos CSS Interno-->
   <style>
+  button{
+    cursor: pointer;
+  }
+    .suscribir{
+      background-color: black;
+      color: white;
+      border-radius: 50px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-right: 15px;
+      padding-left: 15px;
+      font-weight: bold;
+    }
+
+    .suscrito{
+      background-color: rgb(223, 222, 222);
+      color: black;
+      border-radius: 25px;
+      padding: 10px;
+      font-weight: bold;
+    }
 
   </style>
 </head>
@@ -17,7 +38,7 @@
   <p>Suscribete a YouTube</p>
   <button onclick=" 
       botonDeSucribir()
-  " class="js-suscribir" >Suscribir</button>
+  " class="js-suscribir suscribir" >Suscribir</button>
   
   <br>
   <br>
@@ -61,12 +82,14 @@
 
       function botonDeSucribir(){
         const botonSuscribir = document.querySelector('.js-suscribir'); 
+        botonSuscribir.classList.toggle("suscrito");
 
         if(botonSuscribir.innerText === 'Suscribir'){ //El innerText nos da unicamente el texto que existe en ese elemento seleccionado
               botonSuscribir.innerHTML = 'Suscrito';
 
           }else if (botonSuscribir.innerText === 'Suscrito'){ //uso de innerText
               botonSuscribir.innerHTML = 'Suscribir';
+
           }
 
       }

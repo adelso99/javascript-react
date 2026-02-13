@@ -3703,3 +3703,12 @@ SOLUCION:
  - HTML = crea el contenido
  - CSS = cambia la apariencia
  - JavaScript = lo hace interactivo
+
+
+ CSS:
+ Espacio en el interior = Padding
+
+
+ .classList = nos da el control del atributo de clase
+ Ejemplo:
+          document.querySelector(".js-suscribir").classList.toggle("suscrito");
