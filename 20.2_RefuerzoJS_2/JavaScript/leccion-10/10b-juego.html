@@ -16,21 +16,30 @@
       font-weight: bold;
     }
 
+    .movimiento {
+      border-radius: 50%;
+      background-color: rgb(25, 25, 25);
+      border-color: white;
+      height: 60px;
+
+      
+    }
+
   </style>
 </head>
 <body>
   <h1 class="titulo">Juego de Piedra, Papel o Tijera</h1>
   <button onclick="
     playGame('piedra');
-  "><img src="./img/piedra.png" alt="Piedra Emoji"/></button>
+  "><img src="./img/piedra.png" class="movimiento" alt="Piedra Emoji"/></button>
 
   <button onclick="
     playGame('papel');
-  "><img src="./img/papel.png" alt="Papel Emoji"/></button>
+  "><img src="./img/papel.png" class="movimiento" alt="Papel Emoji"/></button>
 
   <button onclick="
     playGame('tijera');
-  "><img src="./img/tijera.png" alt="Tijera Emoji"/></button>
+  "><img src="./img/tijera.png" class="movimiento" alt="Tijera Emoji"/></button>
 
   <p class="js-resultado"></p>
   <p class="js-movimientos"></p>

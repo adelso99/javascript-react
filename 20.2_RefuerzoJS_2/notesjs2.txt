@@ -3723,3 +3723,5 @@ Espacio exterior = margin
 
 
 <img> no requiere una etiqueta de cierre (elemento void)
+src = source
+Le dice al ordenador qué archivo cargar
