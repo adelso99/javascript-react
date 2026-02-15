@@ -34,6 +34,12 @@
 
     .producto{
       font-size: 15px;
+      padding: 10px;
+    }
+
+    .btn-calcular{
+      background-color: green;
+      color: white;
     }
 
 
@@ -55,7 +61,7 @@
   <input placeholder="Costo de Producto" class="js-costo producto" onkeydown="
       calcularEnvioTeclado(event.key)
   "/>
-  <button onclick="
+  <button class="btn-calcular producto" onclick="
    calcularEnvio();
   ">Calcular</button>
   <p class="js-dato"></p>
