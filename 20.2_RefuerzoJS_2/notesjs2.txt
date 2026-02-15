@@ -3720,3 +3720,6 @@ Cuando hacemos clic en el botón,
           document.querySelector(".js-suscribir").classList.toggle("suscrito");
 
 Espacio exterior = margin
+
+
+<img> no requiere una etiqueta de cierre (elemento void)
