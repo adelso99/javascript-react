@@ -4026,3 +4026,13 @@ SOLUCION:
 
 
 Listo
+
+
+classList.contains()
+Sirve para verificar si un elemento tiene una clase.
+
+
+
+
+
+-------------------------------------------LECCION 11 Arrays(Matrices) y Loops(Bucles)----------------------------------------------------------------
