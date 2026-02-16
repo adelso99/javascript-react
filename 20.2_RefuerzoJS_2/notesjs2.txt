@@ -3746,6 +3746,22 @@ Crea los siguientes botones usando HTML y CSS. Los estilos no tienen que ser exa
 Añadir al carrito
 rgb(255, 216, 20)
 
+SOLUCION:
+    .carrito{
+      background-color: rgb(255, 216, 20);
+      border: none;
+      font-size: 1rem;
+      border-radius: 25px;
+      padding: 10px 20px;
+      font-family: Arial, Helvetica, sans-serif;
+      cursor: pointer;
+    }
+
+  </style>
+
+  <button class="carrito">Añadir al carrito</button>
+
+
 10b. Botones de Uber
 Solicitar ahora   Programar para más tarde
 rgb(230, 230, 230)
