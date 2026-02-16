@@ -3765,6 +3765,33 @@ SOLUCION:
 10b. Botones de Uber
 Solicitar ahora   Programar para más tarde
 rgb(230, 230, 230)
+SOLUCION:
+    .solicitar{
+      background-color: black;
+      color: white;
+      font-weight: bold;
+      border: none;
+      border-radius: 8px;
+      padding: 10px 20px;
+      cursor: pointer;
+      
+    }
+
+    .programar{
+      background-color: rgb(230, 230, 230);
+      color: black;
+      font-weight: bold;
+      border: none;
+      border-radius: 8px;
+      padding: 10px 20px;
+      cursor: pointer;
+
+    }
+
+  </style>
+
+  <button class="solicitar">Solicitar ahora</button>
+  <button class="programar">Programar para más tarde</button>
 
 
 
@@ -3772,6 +3799,16 @@ rgb(230, 230, 230)
  - Crea un botón: <button class="js-button">Test</button>
  - Usa document.querySelector() y classList.contains('js-button') para comprobar si este botón tiene la clase 'js-button'.
  - console.curso. el resultado
+SOLUCION:
+            <button class="js-button" onclick="
+              test();
+              ">Test</button>
+
+            function test(){
+              const dato = document.querySelector(".js-button");
+
+              console.log(dato.classList.contains("js-button"));
+            }
 
 
 
@@ -3781,10 +3818,125 @@ rgb(230, 230, 230)
 
       Juegos
 
+SOLUCION:
+          .solicitar{
+            background-color: black;
+            color: white;
+            font-weight: bold;
+            border: none;
+            border-radius: 8px;
+            padding: 10px 20px;
+            cursor: pointer;
+            
+          }
+
+          .programar{
+            background-color: rgb(230, 230, 230);
+            color: black;
+            font-weight: bold;
+            border: none;
+            border-radius: 8px;
+            padding: 10px 20px;
+            cursor: pointer;
+          }
+
+        <button onclick="
+        juego();
+        " class="js-juego">Juegos</button>
+
+            function juego(){
+                const dato = document.querySelector(".js-juego");
+
+                if(dato.classList.contains("solicitar") === false){
+                    dato.classList.remove("programar");
+                    dato.classList.add("solicitar");
+                  } else {
+                    dato.classList.remove("solicitar");
+                    dato.classList.add("programar");
+                  }       
+            }
+
+SOLUCION 2:
+
+    .toggle-button {
+        background-color: rgb(230, 230, 230);
+        border: none;
+        padding: 10px 15px;
+        border-radius: 5px;
+        margin-right: 10px;
+        font-size: 15px;
+        cursor: pointer;
+      }
+
+      .is-toggled {
+        background-color: black;
+        color: white;
+      }
+
+
+
+    <button class="toggle-button js-button" onclick="
+    const button = document.querySelector('.js-button');
+    if (!button.classList.contains('is-toggled')) {
+      button.classList.add('is-toggled');
+    } else {
+      button.classList.remove('is-toggled');
+    }
+    ">Gaming</button>
+
+
+    
+
 
 10e. Continuando con el paso 10d, crea 3 botones que se puedan activar o desactivar.
 
   Juegos   Música   Tecnología
+
+
+  SOLUCION:
+      .programar{
+            background-color: rgb(230, 230, 230);
+            color: black;
+            font-weight: bold;
+            border: none;
+            border-radius: 8px;
+            padding: 10px 20px;
+            cursor: pointer;
+
+          }
+
+          .solicitar1{
+            background-color: black;
+            color: white;
+          }
+
+
+
+          <button onclick="
+        juego(1);
+        " class="programar">Juegos</button>
+
+        <button onclick="
+        juego(2);
+        " class="programar">Música</button>
+
+        <button onclick="
+        juego(3);
+        " class="programar">Tecnología</button>
+
+
+      function juego(numero){
+          const dato = document.querySelectorAll(".programar")[numero];
+
+
+          if (!dato.classList.contains('solicitar1')) {
+                dato.classList.add('solicitar1');
+              } else {
+                dato.classList.remove('solicitar1');
+              }
+
+        
+      }
 
 
 10f. Continuando con el paso 10e, usa una función para reutilizar el código y separa cada idioma en su propio archivo (si aún no lo has hecho).
