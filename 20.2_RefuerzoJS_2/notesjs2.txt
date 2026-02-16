@@ -3941,6 +3941,19 @@ SOLUCION 2:
 
 10f. Continuando con el paso 10e, usa una función para reutilizar el código y separa cada idioma en su propio archivo (si aún no lo has hecho).
 
+Listo:       function juego(numero){
+          const dato = document.querySelectorAll(".programar")[numero];
+
+
+          if (!dato.classList.contains('solicitar1')) {
+                dato.classList.add('solicitar1');
+              } else {
+                dato.classList.remove('solicitar1');
+              }
+
+        
+      }
+
 
 
 
@@ -3948,6 +3961,26 @@ Ejercicios de desafío
 
 10g. Modifica 10f para que solo 1 botón pueda estar ENCENDIDO a la vez.
     Juegos  Música   Tecnología
+
+    SOLUCION:
+    function juego(numero){
+  const dato = document.querySelectorAll(".programar")[numero];
+
+  if(!document.querySelector(".solicitar1")){
+      if (!dato.classList.contains('solicitar1')) {
+        dato.classList.add('solicitar1');
+      } else {
+        dato.classList.remove('solicitar1');
+      }
+  }else {
+    dato.classList.remove('solicitar1');
+  }
+
+
+}
+
+
+
 
 10h. Crea un archivo 10h.html y copia el código de 10-dom-projects.html. En la Calculadora de envíos de Amazon, si escribimos un número menor que 0, se mostrará un mensaje de error rojo debajo del cuadro de texto:
 
