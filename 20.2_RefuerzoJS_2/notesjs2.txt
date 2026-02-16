@@ -3725,3 +3725,73 @@ Espacio exterior = margin
 <img> no requiere una etiqueta de cierre (elemento void)
 src = source
 Le dice al ordenador qué archivo cargar
+
+
+Cómo organizar nuestro código en diferentes archivos
+
+
+En esta lección:
+1. Revisé el CSS y lo añadí a los proyectos
+2. Lista de clases
+3. Terminé Piedra, papel o tijera
+4. Organicé el código JavaScript y CSS en archivos separados
+
+
+
+Ejercicios de la Lección 10: HTML, CSS y JavaScript juntos
+
+Crea los siguientes botones usando HTML y CSS. Los estilos no tienen que ser exactos (solo usa tu mejor criterio).
+
+10a. Botón de Amazon
+Añadir al carrito
+rgb(255, 216, 20)
+
+10b. Botones de Uber
+Solicitar ahora   Programar para más tarde
+rgb(230, 230, 230)
+
+
+
+10c. classList tiene otro método, classList.contains('class-name'), que comprueba si un elemento tiene una clase.
+ - Crea un botón: <button class="js-button">Test</button>
+ - Usa document.querySelector() y classList.contains('js-button') para comprobar si este botón tiene la clase 'js-button'.
+ - console.curso. el resultado
+
+
+
+10d. Crea el botón de la derecha. Al hacer clic en este botón, debería activarse o desactivarse. Consejos:
+ - Al hacer clic en el botón, añade o elimina la clase 'is-toggled' y úsala para cambiar el estilo.
+ - Usa if (classList.contains('is-toggled')) para decidir si añadir o eliminar la clase 'is-toggled'.
+
+      Juegos
+
+
+10e. Continuando con el paso 10d, crea 3 botones que se puedan activar o desactivar.
+
+  Juegos   Música   Tecnología
+
+
+10f. Continuando con el paso 10e, usa una función para reutilizar el código y separa cada idioma en su propio archivo (si aún no lo has hecho).
+
+
+
+
+Ejercicios de desafío
+
+10g. Modifica 10f para que solo 1 botón pueda estar ENCENDIDO a la vez.
+    Juegos  Música   Tecnología
+
+10h. Crea un archivo 10h.html y copia el código de 10-dom-projects.html. En la Calculadora de envíos de Amazon, si escribimos un número menor que 0, se mostrará un mensaje de error rojo debajo del cuadro de texto:
+
+-5  Calcular
+Error: el costo no puede ser menor que $0
+
+
+10i. Daremos estilo al proyecto de la calculadora usando CSS.
+  - Haz una copia del ejercicio 9j.
+  - En tu navegador, ve a:
+  - supersimple.dev/projects/calculator-final
+  - Este es el diseño final del proyecto.
+  - Usando CSS, dale estilo al proyecto de la calculadora para que se parezca al diseño final de la derecha.
+
+10j. Continuando con el ejercicio 10i, separa cada idioma en su propio archivo (si aún no lo has hecho).
