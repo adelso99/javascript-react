@@ -4078,3 +4078,22 @@ Ejemplo:
       const matriz = [10, 11, 12];
 
       console.log(matriz.length); //verificacion de cuantos elementos existen en el array
+
+
+Metodo ".push()" Añade un valor al final de la matriz
+Ejemplo:
+      const matriz = [10, 11, 12];
+
+      matriz.push(13); //añade el elemento 13 al final del array
+      console.log(matriz); //actualiza el array con el nuevo elemento añadido
+
+
+Metodo ".splice()" Elimina un valor de una matriz segun su indice
+    1. Índice que queremos eliminar
+    2. Número de valores a eliminar
+
+Ejemplo:
+     const matriz = [10, 11, 12];
+
+      matriz.splice(3, 1); //Elimina el elemento 13 del array porque es el indice 3 y solo le dimos 1 elemento a eliminar
+      console.log(matriz); //actualiza el array con el elemento eliminado
