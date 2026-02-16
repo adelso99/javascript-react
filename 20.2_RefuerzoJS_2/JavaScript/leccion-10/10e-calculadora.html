@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora en Leccion 8</title>
+
+    <!--Carga de Estilos CSS-->
+    <link rel="stylesheet" href="./10e-archivos/style.css" />
+
+</head>
+<body>  
+   <h2 class="js-calculo"></h2>
+    <p>
+      <button onclick="
+        updateCalculation('1');
+      " class="uno btn">1</button>
+
+      <button onclick="
+        updateCalculation('2');
+      " class="dos btn">2</button>
+
+      <button onclick="
+        updateCalculation('3');
+      " class="tres btn">3</button>
+
+      <button onclick="
+        updateCalculation(' + ');
+      " class="mas btn signo">+</button>
+    </p>
+
+    <p>
+      <button onclick="
+        updateCalculation('4');
+      " class="cuatro btn">4</button>
+
+      <button onclick="
+        updateCalculation('5');
+      "  class="cinco btn" >5</button>
+
+      <button onclick="
+        updateCalculation('6');
+      " class="seis btn">6</button>
+
+      <button onclick="
+        updateCalculation(' - ');
+      " class="menos btn signo">-</button>
+    </p>
+
+    <p>
+      <button onclick="
+        updateCalculation('7');
+      "  class="siete btn">7</button>
+
+      <button onclick="
+        updateCalculation('8');
+      " class="ocho btn">8</button>
+
+      <button onclick="
+        updateCalculation('9');
+      " class="nueve btn">9</button>
+
+      <button onclick="
+        updateCalculation(' * ');
+      " class="multi btn signo" >*</button>
+    </p>
+
+    <p>
+      <button onclick="
+        updateCalculation('0');
+      " class="cero btn">0</button>
+
+      <button onclick="
+        updateCalculation('.');
+      " class="punto btn" >.</button>
+
+      <button onclick="
+        // Note: eval() takes a string and runs it as code.
+        // Avoid using eval() in real world projects since
+        // it can potentially be given harmful code to run.
+        // Only use eval() for learning purposes.
+        calculation = eval(calculation);
+        mostrarDato();
+      " class="igual btn">=</button>
+
+      <button onclick="
+        updateCalculation(' / ');
+      " class="div btn signo">/</button>
+    </p>
+
+    <p>
+      <button onclick="
+      updateCalculation('');
+      " class="reinicio btn">Limpiar</button>
+    </p>
+
+    <!--Carga de JavaScript-->
+    <script src="./10e-archivos/main.js"> </script>
+  </body>
+</html>

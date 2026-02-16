@@ -1,0 +1,37 @@
+body{
+  background-color: black;
+  font-size: 2rem;
+  color: white;
+}
+
+h1{
+  color: white;
+}
+
+.btn{
+  height: 60px;
+  width: 60px;
+  border-radius: 75%;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  background-color: rgb(92, 92, 92);
+  color: white;
+}
+
+.signo {
+  background-color: orange;
+}
+
+.reinicio{
+  height: 80px;
+  width: 80px;
+  border-radius: 75%;
+  font-size: 1rem;
+  background-color: red;
+}
+
+p{
+  margin-top: 16px;
+  margin-bottom: 16px;
+}

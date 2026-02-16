@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leccion 10</title>
+
+  <!--Carga de Estilos CSS Interno-->
+  <style>
+    body{
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+  button{
+    cursor: pointer;
+  }
+
+    .producto{
+      font-size: 15px;
+      padding: 10px;
+    }
+
+    .btn-calcular{
+      background-color: green;
+      color: white;
+      border: none;
+      padding: 12px 15px;
+      font-size: 15px;
+  
+    }
+
+    .error{
+      color: red;
+    }
+
+
+  </style>
+</head>
+<body>
+  <h1>Leccion 10 - Ejercicios </h1>
+
+
+   
+  <p>Calculadora de Envios de Amazon</p>
+  <p>Pedidos inferiores a $40 = +$10 de envío.</p>
+  <p>Pedidos superiores a $40 = envío GRATIS.</p>
+  <input placeholder="Costo de Producto" class="js-costo producto" onkeydown="
+      calcularEnvioTeclado(event.key)
+  "/>
+  <button class="btn-calcular" onclick="
+   calcularEnvio();
+  ">Calcular</button>
+  <p class="js-dato"></p>
+
+
+    <!--Carga de JavaScript Interno-->
+    <script>
+
+      function calcularEnvioTeclado(evento){
+        
+          if(evento === 'Enter'){
+            calcularEnvio();
+          }
+      }
+      
+      function calcularEnvio(){
+       let dato = document.querySelector(".js-costo").value;
+
+       if( dato < 0 ){
+        document.querySelector(".js-dato").innerHTML = `Error: el costo del producto no puede ser menor a 0`;
+        document.querySelector(".js-dato").classList.add("error");
+        return;
+       } 
+
+        if(dato < 40){
+            dato = Number(dato) + 10;
+          }
+
+        document.querySelector(".js-dato").innerHTML = `Total de Envio $${dato}`;
+
+      
+
+      }
+
+
+
+
+   
+    </script>
+  
+</body>
+</html>

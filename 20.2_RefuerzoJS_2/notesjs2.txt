@@ -3963,22 +3963,27 @@ Ejercicios de desafío
     Juegos  Música   Tecnología
 
     SOLUCION:
-    function juego(numero){
-  const dato = document.querySelectorAll(".programar")[numero];
+      function juego(numero){
+        const dato = document.querySelectorAll(".programar")[numero];
 
-  if(!document.querySelector(".solicitar1")){
-      if (!dato.classList.contains('solicitar1')) {
-        dato.classList.add('solicitar1');
-      } else {
-        dato.classList.remove('solicitar1');
+            if (!dato.classList.contains('solicitar1')) {
+
+              botonEncendido();
+              dato.classList.add('solicitar1');
+            } else {
+              dato.classList.remove('solicitar1');
+            }
+
+
       }
-  }else {
-    dato.classList.remove('solicitar1');
-  }
 
+      function botonEncendido(){
+        const estiloon = document.querySelector(".solicitar1");
 
-}
-
+        if(estiloon){
+          estiloon.classList.remove('solicitar1');
+        }
+      }
 
 
 
@@ -3988,6 +3993,26 @@ Ejercicios de desafío
 Error: el costo no puede ser menor que $0
 
 
+SOLUCION:
+      function calcularEnvio(){
+       let dato = document.querySelector(".js-costo").value;
+
+       if( dato < 0 ){
+        document.querySelector(".js-dato").innerHTML = `Error: el costo del producto no puede ser menor a 0`;
+        document.querySelector(".js-dato").classList.add("error");
+        return;
+       } 
+
+        if(dato < 40){
+            dato = Number(dato) + 10;
+          }
+
+        document.querySelector(".js-dato").innerHTML = `Total de Envio $${dato}`;
+
+      
+
+
+
 10i. Daremos estilo al proyecto de la calculadora usando CSS.
   - Haz una copia del ejercicio 9j.
   - En tu navegador, ve a:
@@ -3995,4 +4020,9 @@ Error: el costo no puede ser menor que $0
   - Este es el diseño final del proyecto.
   - Usando CSS, dale estilo al proyecto de la calculadora para que se parezca al diseño final de la derecha.
 
+  Listo
+
 10j. Continuando con el ejercicio 10i, separa cada idioma en su propio archivo (si aún no lo has hecho).
+
+
+Listo
