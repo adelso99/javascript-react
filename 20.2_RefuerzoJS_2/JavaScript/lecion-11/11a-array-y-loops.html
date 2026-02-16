@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Leccion 11 - Arrays y Loops</title>
+  <title>Leccion 11</title>
 
   <!--Carga de Estilos CSS Interno-->
   <style>
@@ -11,14 +11,24 @@
   </style>
 </head>
 <body>
-  <h1>Leccion 10 - Proyectos </h1>
+  <h1>Leccion 11 - Arrays y Loops </h1>
 
 
 
 
     <!--Carga de JavaScript Interno-->
     <script>
-   
+      const matriz = [10, 11, 12];
+
+      console.log(matriz);
+      console.log(matriz[1]);  // en consola aparece el 11 porque es el indice 1 ya que el 10 es indice 0
+
+      matriz[0] = 5; //cambio del elemento del array segun el indice
+      console.log(matriz); //se actuzliza la matriz a [5, 11, 12]
+
+      console.log(matriz.length); //verificacion de cuantos elementos existen en el array
+
+
     </script>
   
 </body>

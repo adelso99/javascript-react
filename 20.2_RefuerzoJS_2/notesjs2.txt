@@ -4036,3 +4036,45 @@ Sirve para verificar si un elemento tiene una clase.
 
 
 -------------------------------------------LECCION 11 Arrays(Matrices) y Loops(Bucles)----------------------------------------------------------------
+Matrices
+  - otro tipo de valor
+  - representa una lista de valores
+  - en JavaScript una Matriz se represtar por [];
+
+Ejemplo: 
+      const matriz = [10, 11, 12];
+      console.log(matriz);
+
+
+en consola:
+(3) [10, 11, 12]
+  0: 10
+  1: 11
+  2: 12
+length: 3
+[[Prototype]]: Array(0)
+
+
+Para obtener un valor específico en una matriz se usa => [ ] y el numero de indice que siempre empieza desde 0 y continua dependiendo de la cantidad
+de elementos que contiene el array
+
+Ejemplo:
+      const matriz = [10, 11, 12];
+
+      console.log(matriz[1]);  // en consola aparece el 11 porque es el indice 1 ya que el 10 es indice 0
+
+
+con esto tambien se pude cambiar un valor dentro del array
+Ejemplo:
+
+      const matriz = [10, 11, 12];
+
+      matriz[0] = 5; //cambio del elemento del array segun el indice
+      console.log(matriz); //se actuzliza la matriz a [5, 11, 12]
+
+
+Para verificar cuantos elementos existen en el array es con ".lengt"
+Ejemplo:
+      const matriz = [10, 11, 12];
+
+      console.log(matriz.length); //verificacion de cuantos elementos existen en el array
