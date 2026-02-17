@@ -4163,3 +4163,32 @@ Ejemplo:
     }
 
     console.log(numeroRandom);
+
+
+
+
+Recorriendo una matriz
+  1. Recorre cada valor de una matriz uno por uno
+  2. Haz algo con cada valor
+
+Ejercicio resuelto:
+              const lista = [
+                "Ver Futbol",             //indice 0
+                "Programar JavaScript",   //indice 1
+                "Dormir 6 Horas"          //indice 2
+              ];
+
+              for (let i = 0; i < lista.length; i++){  //otra opcion en desicion <= lista.length -1
+                  console.log(lista[i]); //muestra cada elemento segun su indice con la variable i
+                  
+              }  
+
+              en consola muestra:
+                                  Ver Futbol           //indice 0
+                                  Programar JavaScript //indice 1 
+                                  Dormir 6 Horas       //indice 2 
+
+
+
+
+Patrón acumulador
