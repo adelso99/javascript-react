@@ -4251,3 +4251,123 @@ Pasos (Algoritmo)
   1. Recorrer la matriz
   2. Crear código HTML para cada tarea
   3. Colocar el HTML en la página web
+    
+
+uso del elemento "div" de HTML que es un contendor
+en un parrafo no se puede tener otro parrafo por eso el uso del div
+
+Ejercicio resuelto:
+                  <div class="js-elementos-lista"></div>
+
+                  const lista = ['Programar', 'Ir al Gym'];
+
+                  añadirHtml();// llamado de funcion para ver elementos en la web
+
+
+                  function añadirHtml(){
+                        let listaHtml = "";
+
+                        for(let i = 0; i < lista.length; i++){
+
+                            const elementoLista = lista[i];
+
+                            const datoHtml = `<p>${elementoLista}</p>`;
+
+                            listaHtml += datoHtml;
+                        }
+
+                        console.log(listaHtml);
+
+                        document.querySelector(".js-elementos-lista").innerHTML = listaHtml;
+
+                  }
+
+
+
+                  function añadirLista(){
+
+                        const dato = document.querySelector(".js-dato");
+                        const dato2 = dato.value;
+
+                        lista.push(dato2);
+
+                        console.log(lista);
+
+                        dato.value = "";
+
+                        añadirHtml();// llamado de funcion para ver actualice los elementos en la web
+
+
+                  }
+
+Idea principal de JavaScript
+1. Guardar los datos
+2. Generar el HTML
+3. Hacerlo interactivo
+
+
+
+
+Lección 11 Ejercicios - Matrices y bucles
+
+11a. Crea una matriz de números: const nums = [10, 20, 30]; Modifica el último valor de esta matriz y cámbialo a 99.
+
+
+11b. Crea una función getLastValue(array) que tome una matriz y devuelva el último valor de la matriz. Sugerencia: los índices de las matrices comienzan en 0, por lo que el último índice es el número de valores de la matriz menos 1 (lastIndex = array.length - 1).
+  - obtenerÚltimoValor([1, 20, 22, 24, 5]) => 5
+  - getLastValue(['hi', 'hello', 'good']) => 'good'
+
+
+11c. Crea una función arraySwap(array) que tome una matriz y devuelva una matriz donde el primer y el último valor se intercambian (o se conmutan).
+  - arraySwap([1, 20, 22, 24, 5]) => [5, 20, 22, 24, 1]
+  - arraySwap(['hola', 'hola', 'bien']) => ['bien', 'hola', 'hola']
+
+
+11d. Crea un bucle for que cuente de 0 a 10, pero que cuente de 2 en 2 (0, 2, 4, ..., 8, 10).
+
+11e. Crea un bucle for que cuente de 5 a 0 en 2.
+
+11f. Realiza los ejercicios 11d y 11e, pero usando bucles while.
+
+11g. Crea un bucle que tome una matriz de números y cree una nueva matriz donde cada número se incremente en 1.
+  - [1, 2, 3] => [2, 3, 4]
+
+
+11h. Crea una función addOne(array) que tome una matriz de números y devuelva una matriz donde cada número se incremente en 1.
+  - addOne([1, 2, 3]) => [2, 3, 4]
+  - addOne([-2, -1, 0, 99]) => [-1, 0, 1, 100]
+
+
+
+11i. Crea una función addNum(array, num) que tome un array de números y devuelva un array donde cada número se incrementa en 'num'.
+   - agregarNum([1, 2, 3], 2) => [3, 4, 5]
+   - agregarNum([1, 2, 3), 3) => [4, 5, 6]
+   - agregarNum([-2, -1, 0, 99], 2) => [0, 1, 2, 101]
+
+
+
+11j. Crea una función addArrays(array1, array2) que tome 2 arrays de números y sume cada número de los arrays.
+   - addArrays([1, 1, 2], [1, 1, 3]) => [2, 2, 5]
+   - addArrays([1, 2, 3], [4, 5, 6]) => [5, 7, 9]
+
+11k. Crea una función countPositive(nums) que tome un array de números y devuelva cuántos números del array son mayores que 0.
+    - countPositive([1, -3, 5]) => 2
+    - countPositive([-2, 3, -5, 7, 10]) => 3
+
+
+
+
+Ejercicios de desafío
+
+111. Crea una función minMax(nums) que tome un array de números y devuelva un objeto con los números mínimo y máximo del array (hazlo usando un bucle en lugar de usar algo como Math.min).
+   - minMax([1, -3, 5]) => { min: -3, max: 5 }
+   - minMax([-2, 3, -5, 7, 10]) => { min: -5, max: 10 }
+
+
+11m. Actualiza el ejercicio 111 para que también maneje estos casos:
+  - minMax([]) => { min: null, max: null }
+  - minMax([3]) => { min: 3, max: 3 }
+
+
+11n. Crea una función countWords(words) que tome un array de cadenas y devuelva un objeto con cuántas veces apareció cada cadena
+  countWords(['manzana', 'uva', 'manzana', 'manzana']) => { manzana: 3, uva: 1} (Sugerencia: puedes acceder a una propiedad usando una variable: object[variable]; esto usa el valor dentro de la variable como nombre de la propiedad).

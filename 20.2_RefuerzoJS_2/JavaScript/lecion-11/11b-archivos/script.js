@@ -1,15 +1,40 @@
-const lista = [];
+const lista = ['Programar', 'Ir al Gym'];
+
+añadirHtml();// llamado de funcion para ver elementos en la web
+
+
+function añadirHtml(){
+      let listaHtml = "";
+
+      for(let i = 0; i < lista.length; i++){
+
+          const elementoLista = lista[i];
+
+          const datoHtml = `<p>${elementoLista}</p>`;
+
+          listaHtml += datoHtml;
+      }
+
+      console.log(listaHtml);
+
+      document.querySelector(".js-elementos-lista").innerHTML = listaHtml;
+
+}
+
+
 
 function añadirLista(){
 
-  const dato = document.querySelector(".js-dato");
-  const dato2 = dato.value;
+      const dato = document.querySelector(".js-dato");
+      const dato2 = dato.value;
 
-  lista.push(dato2);
+      lista.push(dato2);
 
-  console.log(lista);
+      console.log(lista);
 
-  dato.value = "";
+      dato.value = "";
+
+      añadirHtml();// llamado de funcion para ver actualice los elementos en la web
 
 
 }
