@@ -4097,3 +4097,12 @@ Ejemplo:
 
       matriz.splice(3, 1); //Elimina el elemento 13 del array porque es el indice 3 y solo le dimos 1 elemento a eliminar
       console.log(matriz); //actualiza el array con el elemento eliminado
+
+
+
+Pasos (Algoritmo)
+  1. Crear una matriz para almacenar tareas pendientes
+  2. Cuando hacemos clic en "Añadir",
+  3. Obtener el texto del cuadro de texto
+  4. Añadirlo a la matriz
+  5. console.log() la matriz
