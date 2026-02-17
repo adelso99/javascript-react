@@ -13,3 +13,13 @@ function añadirLista(){
 
 
 }
+
+
+
+/*
+Pasos (Algoritmo)
+1. Recorrer la matriz
+2. Crear código HTML para cada tarea
+3. Colocar el HTML en la página web
+
+*/

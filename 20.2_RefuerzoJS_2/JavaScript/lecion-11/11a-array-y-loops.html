@@ -18,6 +18,32 @@
 
     <!--Carga de JavaScript Interno-->
     <script>
+
+      const numeros = [1, 1, 3];
+      let resultado = 0;
+
+      for(let i = 0; i < numeros.length; i++){
+        const num = numeros[i];
+
+        resultado += num;
+      }
+
+      console.log(resultado); //en consola muestra 5 --> 1+1 = 2 --> 2+3 = 5  
+
+      const numeroDobles = [];
+
+      for(let i = 0; i < numeros.length; i++){
+        const num2 = numeros[i];
+
+        numeroDobles.push(num2 * 2);
+
+      }
+
+      console.log(numeroDobles); // en consola muestra el array [2, 2, 6]
+
+
+
+      /*Array no estandarizada
       const lista = [
         "Ver Futbol",             //indice 0
         "Programar JavaScript",   //indice 1
@@ -28,7 +54,7 @@
           console.log(lista[i]); //muestra cada elemento segun su indice con la variable i
           
       }
-
+     /*
 
 
      
