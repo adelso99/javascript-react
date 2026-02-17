@@ -4106,3 +4106,60 @@ Pasos (Algoritmo)
   3. Obtener el texto del cuadro de texto
   4. Añadirlo a la matriz
   5. console.log() la matriz
+
+
+Version 1:
+            <p>Lista de Tareas</p>
+              <input placeholder="Nombre de la Tarea" class="js-dato" />
+              <button onclick="
+                añadirLista();
+              ">Añadir</button>
+
+            const lista = [];
+
+            function añadirLista(){
+
+              const dato = document.querySelector(".js-dato");
+              const dato2 = dato.value;
+
+              lista.push(dato2);
+
+              console.log(lista);
+
+              dato.value = "";
+
+
+            }
+
+
+Loops, es una repeticion de codigo con un fin
+Ejemplo:
+    let i = 1
+     
+    while( i <= 5){    //Bucle While
+      console.log(i);  // en consola muestra 1 2 3 4 5  de arriba a abajo
+      i++;          //incremento de bucle
+    }
+
+
+
+
+tambien existe el bucle for que es una version mas resumida de un bucle:
+Ejemplo:
+
+    for(let i = 1; i <= 5; i++){  //aca esta la declaracion de variable, condicion y incremento
+      console.log(i);  // en consola muestra 1 2 3 4 5 de arriba a abajo
+    }
+
+
+
+
+bucle  No estandarizado  --> cuando son bluces de este tipo es mejor usar el bucle "while"
+Ejemplo:
+    let numeroRandom = 0;
+
+    while(numeroRandom < 0.5){
+      numeroRandom = Math.random();
+    }
+
+    console.log(numeroRandom);
