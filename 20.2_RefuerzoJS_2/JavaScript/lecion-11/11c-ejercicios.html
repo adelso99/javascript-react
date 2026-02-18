@@ -19,7 +19,45 @@
     <!--Carga de JavaScript Interno-->
     <script>
 
-  
+      function arraySwap(array) {
+        let dato = array[0] 
+        array[0] = array[array.length -1];
+        array[array.length -1] = dato;
+
+        console.log(array);
+
+      }
+
+      arraySwap([1, 20, 22, 24, 5]) // [5, 20, 22, 24, 1]
+      arraySwap(['hola', 'hello', 'bien']) // ['bien', 'hello', 'hola']
+
+
+
+
+      /* Ejercicio 2
+      const nums = [10, 20, 30];
+    
+      function getLastValue(array){
+
+        console.log(array[array.length -1]);  // aca es donde se establece el index ultimo del array
+
+      }
+
+        getLastValue(nums); //muestra 30 en consola que es el index 2 del array nums
+        getLastValue([1, 20, 22, 24, 5]) // 5
+        getLastValue(['hi', 'hello', 'good']) //'good'
+        */
+
+
+
+      /*
+      Ejericio 1:
+      const nums = [10, 20, 30];
+
+      nums[2] = 50;
+      console.log(nums); //array actualizado en consola: [10, 20, 50]
+      
+      */
 
     </script>
   

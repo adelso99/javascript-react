@@ -4311,16 +4311,35 @@ Idea principal de JavaScript
 Lección 11 Ejercicios - Matrices y bucles
 
 11a. Crea una matriz de números: const nums = [10, 20, 30]; Modifica el último valor de esta matriz y cámbialo a 99.
+SOLUCION:
+      const nums = [10, 20, 30];
+
+      nums[2] = 50;
+      console.log(nums); //array actualizado en consola: [10, 20, 50]
+
 
 
 11b. Crea una función getLastValue(array) que tome una matriz y devuelva el último valor de la matriz. Sugerencia: los índices de las matrices comienzan en 0, por lo que el último índice es el número de valores de la matriz menos 1 (lastIndex = array.length - 1).
-  - obtenerÚltimoValor([1, 20, 22, 24, 5]) => 5
+  - getLastValue([1, 20, 22, 24, 5]) => 5
   - getLastValue(['hi', 'hello', 'good']) => 'good'
 
+SOLUCION:
+          const nums = [10, 20, 30];
+        
+          function getLastValue(array){
+
+            console.log(array[array.length -1]);  // aca es donde se establece el index ultimo del array
+
+          }
+
+        getLastValue(nums); //muestra 30 en consola que es el index 2 del array nums
+        getLastValue([1, 20, 22, 24, 5]) // 5
+        getLastValue(['hi', 'hello', 'good']) //'good'
+          
 
 11c. Crea una función arraySwap(array) que tome una matriz y devuelva una matriz donde el primer y el último valor se intercambian (o se conmutan).
-  - arraySwap([1, 20, 22, 24, 5]) => [5, 20, 22, 24, 1]
-  - arraySwap(['hola', 'hola', 'bien']) => ['bien', 'hola', 'hola']
+  - arraySwap([1, 20, 22, 24, 5]) // [5, 20, 22, 24, 1]
+  - arraySwap(['hola', 'hola', 'bien']) // ['bien', 'hola', 'hola']
 
 
 11d. Crea un bucle for que cuente de 0 a 10, pero que cuente de 2 en 2 (0, 2, 4, ..., 8, 10).
