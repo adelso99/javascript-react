@@ -4513,6 +4513,7 @@ SOLUCION:
 
 
 
+
 11k. Crea una función countPositive(nums) que tome un array de números y devuelva cuántos números del array son mayores que 0.
     - countPositive([1, -3, 5]) => 2
     - countPositive([-2, 3, -5, 7, 10]) => 3
