@@ -4340,17 +4340,83 @@ SOLUCION:
 11c. Crea una función arraySwap(array) que tome una matriz y devuelva una matriz donde el primer y el último valor se intercambian (o se conmutan).
   - arraySwap([1, 20, 22, 24, 5]) // [5, 20, 22, 24, 1]
   - arraySwap(['hola', 'hola', 'bien']) // ['bien', 'hola', 'hola']
+SOLUCION:
+      function arraySwap(array) {
+        /*
+        Necesitamos guardar los valores antes de intercambiarlos. 
+        De lo contrario, si intercambiamos directamente, perderíamos uno de los valores.
+        */
+        let dato = array[0]  //guarda el primer valor
+        array[0] = array[array.length -1];  //intercambia el valor 1 por el ultimo del array
+        array[array.length -1] = dato; //intercambia el ultimo valor por el primero que fue guardado
+
+        console.log(array); //muestra en consola el array actualizado
+
+      }
+
+      arraySwap([1, 20, 22, 24, 5]) // [5, 20, 22, 24, 1]
+      arraySwap(['hola', 'hello', 'bien']) // ['bien', 'hello', 'hola']
+
+
 
 
 11d. Crea un bucle for que cuente de 0 a 10, pero que cuente de 2 en 2 (0, 2, 4, ..., 8, 10).
+SOLUCION:
+        for(let i = 0; i <= 10; i+=2){
+            console.log(i);   //en consola 0 2 4 6 8 10 de arriba a abajo
+          }
+
+
 
 11e. Crea un bucle for que cuente de 5 a 0 en 2.
+SOLUCION:
+      for(let i = 5; i >= 0; i--){
+        console.log(i);
+      }
+
+
 
 11f. Realiza los ejercicios 11d y 11e, pero usando bucles while.
+SOLUCION:
+      let i = 0;
+
+      while(i <= 10){
+        console.log(i);   //en consola 0 2 4 6 8 10 de arriba a abajo
+        i+=2;   //incremento  
+      }
+
+      let i2 = 5
+
+      while(i2 >= 0){ //condicion
+        console.log(i2); 
+        i2--;     //decremento 
+      }
+
+
 
 11g. Crea un bucle que tome una matriz de números y cree una nueva matriz donde cada número se incremente en 1.
   - [1, 2, 3] => [2, 3, 4]
+  SOLUCION:
+            const lista = [1, 2, 3];
 
+          for(let i = 0; i < lista.length; i++){
+            lista[i] = lista[i]+1;  //incremento + 1 de cada elemento segun el index del array lista
+            
+          }
+
+          console.log(lista); //lista actualizada [2, 3, 4]
+
+SOLUCION 2:
+            const array = [1, 2, 3];
+            const result = [];
+
+            for (let i = 0; i < array.length; i++) {
+              result.push(array[i] + 1);
+            }
+
+            console.log(result);
+
+            
 
 11h. Crea una función addOne(array) que tome una matriz de números y devuelva una matriz donde cada número se incremente en 1.
   - addOne([1, 2, 3]) => [2, 3, 4]

@@ -19,17 +19,83 @@
     <!--Carga de JavaScript Interno-->
     <script>
 
-      function arraySwap(array) {
-        let dato = array[0] 
-        array[0] = array[array.length -1];
-        array[array.length -1] = dato;
+      function addOne(array){
 
-        console.log(array);
+      }
+
+
+
+      
+      /*Ejericio 6
+
+      const lista = [1, 2, 3];
+
+      for(let i = 0; i < lista.length; i++){
+        lista[i] = lista[i]+1;  //incremento + 1 de cada elemento segun el index del array lista
+        
+      }
+
+      console.log(lista); //lista actualizada [2, 3, 4]
+      */
+
+
+
+
+
+
+      /*Ejericio 5
+
+      let i = 0;
+
+      while(i <= 10){
+        console.log(i);   //en consola 0 2 4 6 8 10 de arriba a abajo
+        i+=2;   //incremento  
+      }
+
+      let i2 = 5
+
+      while(i2 >= 0){ //condicion
+        console.log(i2); 
+        i2--;     //decremento 
+      }
+      */
+
+
+
+      /*Ejercicio 5
+      for(let i = 5; i >= 0; i--){
+        console.log(i);
+      }
+      */
+
+
+
+      /*Ejericio 4
+      for(let i = 0; i <= 10; i+=2){
+        console.log(i);   //en consola 0 2 4 6 8 10 de arriba a abajo
+      }
+      */
+
+
+
+
+      /* Ejercicio 3
+      function arraySwap(array) {
+        
+        //Necesitamos guardar los valores antes de intercambiarlos. 
+        //De lo contrario, si intercambiamos directamente, perderíamos uno de los valores.
+        
+        let dato = array[0]  //guarda el primer valor
+        array[0] = array[array.length -1];  //intercambia el valor 1 por el ultimo del array
+        array[array.length -1] = dato; //intercambia el ultimo valor por el primero que fue guardado
+
+        console.log(array); //muestra en consola el array actualizado
 
       }
 
       arraySwap([1, 20, 22, 24, 5]) // [5, 20, 22, 24, 1]
       arraySwap(['hola', 'hello', 'bien']) // ['bien', 'hello', 'hola']
+      */
 
 
 
