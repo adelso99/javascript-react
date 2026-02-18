@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leccion 11</title>
+
+  <!--Carga de Estilos CSS Interno-->
+  <style>
+
+  </style>
+</head>
+<body>
+  <h1>Leccion 11 - Ejericicios </h1>
+
+
+
+
+    <!--Carga de JavaScript Interno-->
+    <script>
+      /*
+      11k. Crea una función countPositive(nums) que tome un array de números y devuelva cuántos números del array son mayores que 0.
+    - countPositive([1, -3, 5]) => 2
+    - countPositive([-2, 3, -5, 7, 10]) => 3
+      */
+
+      function countPositive(nums){
+        let dato = 0;
+
+        for(let i = 0; i < nums.length; i++){
+          if(nums[i] > 0){
+            dato++;
+          }
+
+        }
+
+        console.log(dato);
+
+      }
+
+      countPositive([1, -3, 5]); // 2
+      countPositive([-2, 3, -5, 7, 10]); // 3
+
+
+
+
+      /*Ejericio 8 
+
+      function addArrays(array1, array2){
+        const array3 = [];
+        
+        for(let i = 0; i < array1.length || i < array2.length; i++){
+          array3.push(array1[i] + array2[i]);
+        }
+
+        console.log(array3);
+
+      }
+      
+      addArrays([1, 1, 2], [1, 1, 3]); // [2, 2, 5]
+      addArrays([1, 2, 3], [4, 5, 6]); // [5, 7, 9]
+
+      */
+
+
+
+      /*Ejericio 7
+           function addNum(array, num){
+
+      for(let i = 0; i < array.length; i++){
+        array[i] = array[i] + num;
+      }
+
+      console.log(array);
+
+     }
+
+     addNum([1, 2, 3], 2); // [3, 4, 5]
+     addNum([1, 2, 3], 3); // [4, 5, 6]
+     addNum([-2, -1, 0, 99], 2); // [0, 1, 2, 101]      
+      
+      */
+
+
+
+
+      /*Ejericio 7
+
+      function addOne(array){
+
+        for(let i = 0; i < array.length; i++){
+          array[i] = array[i] + 1;
+        }
+
+        console.log(array);  
+
+      }
+
+      addOne([1, 2, 3]) // [2, 3, 4]
+      addOne([-2, -1, 0, 99]) // [-1, 0, 1, 100]
+      */
+
+
+
+
+      /*Ejericio 6
+
+      const lista = [1, 2, 3];
+
+      for(let i = 0; i < lista.length; i++){
+        lista[i] = lista[i]+1;  //incremento + 1 de cada elemento segun el index del array lista
+        
+      }
+
+      console.log(lista); //lista actualizada [2, 3, 4]
+      */
+
+
+
+
+
+
+      /*Ejericio 5
+
+      let i = 0;
+
+      while(i <= 10){
+        console.log(i);   //en consola 0 2 4 6 8 10 de arriba a abajo
+        i+=2;   //incremento  
+      }
+
+      let i2 = 5
+
+      while(i2 >= 0){ //condicion
+        console.log(i2); 
+        i2--;     //decremento 
+      }
+      */
+
+
+
+      /*Ejercicio 5
+      for(let i = 5; i >= 0; i--){
+        console.log(i);
+      }
+      */
+
+
+
+      /*Ejericio 4
+      for(let i = 0; i <= 10; i+=2){
+        console.log(i);   //en consola 0 2 4 6 8 10 de arriba a abajo
+      }
+      */
+
+
+
+
+      /* Ejercicio 3
+      function arraySwap(array) {
+        
+        //Necesitamos guardar los valores antes de intercambiarlos. 
+        //De lo contrario, si intercambiamos directamente, perderíamos uno de los valores.
+        
+        let dato = array[0]  //guarda el primer valor
+        array[0] = array[array.length -1];  //intercambia el valor 1 por el ultimo del array
+        array[array.length -1] = dato; //intercambia el ultimo valor por el primero que fue guardado
+
+        console.log(array); //muestra en consola el array actualizado
+
+      }
+
+      arraySwap([1, 20, 22, 24, 5]) // [5, 20, 22, 24, 1]
+      arraySwap(['hola', 'hello', 'bien']) // ['bien', 'hello', 'hola']
+      */
+
+
+
+
+      /* Ejercicio 2
+      const nums = [10, 20, 30];
+    
+      function getLastValue(array){
+
+        console.log(array[array.length -1]);  // aca es donde se establece el index ultimo del array
+
+      }
+
+        getLastValue(nums); //muestra 30 en consola que es el index 2 del array nums
+        getLastValue([1, 20, 22, 24, 5]) // 5
+        getLastValue(['hi', 'hello', 'good']) //'good'
+        */
+
+
+
+      /*
+      Ejericio 1:
+      const nums = [10, 20, 30];
+
+      nums[2] = 50;
+      console.log(nums); //array actualizado en consola: [10, 20, 50]
+      
+      */
+
+    </script>
+  
+</body>
+</html>
