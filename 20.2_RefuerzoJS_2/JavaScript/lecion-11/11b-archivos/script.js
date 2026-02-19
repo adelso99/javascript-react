@@ -17,8 +17,12 @@ function añadirHtml(){
       for(let i = 0; i < lista.length; i++){
 
           const elementoObject = lista[i];
+          /*esto es lo mismo
           const name = elementoObject.name;
           const fecha = elementoObject.fecha;
+          que lo de abajo solo que a eso se le llama destructuracion
+          */
+          const {name, fecha} = elementoObject;
 
           const datoHtml = `
           <p>
@@ -46,7 +50,18 @@ function añadirLista(){
       const dato = document.querySelector(".js-dato");
       const dato2 = dato.value;
 
-      lista.push(dato2);
+      const fechaInput = document.querySelector(".js-fecha");
+      const fechaElemento = fechaInput.value;
+
+      lista.push({
+            /*Los Objeto tambien tiene atajos hacer esto:
+            dato2: dato2,
+            fechaElemento: fechaElemento, 
+            es lo mismo que lo de abajo
+            */
+            dato2,
+            fechaElemento,
+      });
 
       console.log(lista);
 
