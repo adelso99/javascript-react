@@ -13,13 +13,16 @@
 
 
   <p>Lista de Tareas</p>
-  <input placeholder="Nombre de la Tarea" class="js-dato" />
-  <input type="date"  class="js-fecha" />
-  <button onclick="
-    añadirLista();
-  ">Añadir</button>
 
-  <div class="js-elementos-lista"></div>
+  <div class="todo-grid-2">
+      <input placeholder="Nombre de la Tarea" class="js-dato name-input" />
+      <input type="date"  class="js-fecha fecha-input" />
+      <button onclick="
+        añadirLista();
+      " class="btn-añadir">Añadir</button>
+  </div>
+
+  <div class="js-elementos-lista todo-grid"></div>
 
 
 

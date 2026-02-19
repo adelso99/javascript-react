@@ -25,19 +25,16 @@ function añadirHtml(){
           const {name, fecha} = elementoObject;
 
           const datoHtml = `
-          <p>
-            ${name} ${fecha} 
+          <div>${name}</div>
+          <div>${fecha}</div> 
             <button onclick="
                   lista.splice(${i}, 1);
                   añadirHtml();  
-            ">Eliminar</button>
-          </p>
+            " class="btn-eliminar" >Eliminar</button>
           `;
 
           listaHtml += datoHtml;
       }
-
-      console.log(listaHtml);
 
       document.querySelector(".js-elementos-lista").innerHTML = listaHtml;
 
@@ -62,8 +59,6 @@ function añadirLista(){
             name,
             fecha,
       });
-
-      console.log(lista);
 
       dato.value = "";
 

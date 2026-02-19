@@ -4766,5 +4766,3 @@ JavaScript real funciona así:
 
 -------------------------------------------LECCION 11 Parte 2 de Arrays(Matrices) y Loops(Bucles) --------------------------------------------------------
 
-esto es una prueba ..
-78888
