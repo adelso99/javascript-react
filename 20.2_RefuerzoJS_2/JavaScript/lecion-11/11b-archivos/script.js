@@ -48,19 +48,19 @@ function añadirHtml(){
 function añadirLista(){
 
       const dato = document.querySelector(".js-dato");
-      const dato2 = dato.value;
+      const name = dato.value;
 
       const fechaInput = document.querySelector(".js-fecha");
-      const fechaElemento = fechaInput.value;
+      const fecha = fechaInput.value;
 
       lista.push({
             /*Los Objeto tambien tiene atajos hacer esto:
-            dato2: dato2,
-            fechaElemento: fechaElemento, 
-            es lo mismo que lo de abajo
+            name: name,
+            fecha: fecha, 
+            es lo mismo que lo de abajo --> propiedad abreviada
             */
-            dato2,
-            fechaElemento,
+            name,
+            fecha,
       });
 
       console.log(lista);
