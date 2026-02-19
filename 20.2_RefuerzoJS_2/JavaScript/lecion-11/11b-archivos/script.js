@@ -1,4 +1,12 @@
-const lista = ['Programar', 'Ir al Gym'];
+const lista = [{
+      name: 'Programar', 
+      fecha: "22-03-2022"
+      },
+
+      {
+      name: 'Ir al Gym',
+      fecha: "23-03-2022"
+      }];
 
 añadirHtml();// llamado de funcion para ver elementos en la web
 
@@ -8,9 +16,19 @@ function añadirHtml(){
 
       for(let i = 0; i < lista.length; i++){
 
-          const elementoLista = lista[i];
+          const elementoObject = lista[i];
+          const name = elementoObject.name;
+          const fecha = elementoObject.fecha;
 
-          const datoHtml = `<p>${elementoLista}</p>`;
+          const datoHtml = `
+          <p>
+            ${name} ${fecha} 
+            <button onclick="
+                  lista.splice(${i}, 1);
+                  añadirHtml();  
+            ">Eliminar</button>
+          </p>
+          `;
 
           listaHtml += datoHtml;
       }
