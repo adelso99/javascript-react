@@ -4545,6 +4545,83 @@ Ejercicios de desafío
    - minMax([1, -3, 5]) => { min: -3, max: 5 }
    - minMax([-2, 3, -5, 7, 10]) => { min: -5, max: 10 }
 
+   SOLUCION:
+         function minMax(nums) {
+            const numeros = {
+              min: 0,
+              max: 0, 
+            };
+
+
+            for(let i = 0; i < nums.length; i++){
+              if(nums[i] > 0) {
+                for(let a = 0; a < nums.length; a++){
+                  if(nums[i] < nums[a]){
+                    numeros.max = nums[a];
+                  } else {
+                    numeros.max = nums[i];
+                  }
+                }
+              }
+            }
+
+
+            for(let i = 0; i < nums.length; i++){
+              if(nums[i] < 0) {
+                for(let a = 0; a < nums.length; a++){
+                  if(nums[i] > nums[a]){
+                    numeros.min = nums[a];
+                  } else {
+                    numeros.min = nums[i];
+                  }
+                }
+              }
+            }
+
+            return console.log(numeros);
+
+          }
+
+          minMax([1, -3, 5]); // { min: -3, max: 5 }
+          minMax([-2, 3, -5, 7, 10]) // { min: -5, max: 10 }
+
+          
+
+SOLUCION 2:
+      function minMax(nums) {
+        //Estableceremos los valores iniciales de min y max 
+        //como el primer valor del array. 
+        //(Esta es solo una forma de establecer los valores iniciales. 
+        //Puedes usar otra opción si lo deseas).
+        const result = {
+          min: nums[0],
+          max: nums[0]
+        };
+
+        for (let i = 0; i < nums.length; i++) {
+          const value = nums[i];
+
+          // Si el valor es menor que el mínimo,
+          // actualiza el mínimo.
+          if (value < result.min) {
+            result.min = value;
+          }
+
+          // Si el valor es mayor que el máximo,
+          // actualiza el máximo.
+          if (value > result.max) {
+            result.max = value;
+          }
+        }
+
+        return result;
+      }
+
+      console.log(minMax([1, -3, 5]));
+      console.log(minMax([-2, 3, -5, 7, 10]));
+
+
+
 
 11m. Actualiza el ejercicio 111 para que también maneje estos casos:
   - minMax([]) => { min: null, max: null }
