@@ -4655,7 +4655,39 @@ SOLUCION 2:
        console.log(minMax([])); // { min: null, max: null }
        console.log(minMax([3])); // { min: 3, max: 3 }
 
-       
+
+SOLUCION 2:
+      function minMax(nums) {
+        // Estableceremos los valores iniciales de min y max
+        // para anular esta vez.
+        const result = {
+          min: null,
+          max: null
+        };
+
+            for (let i = 0; i < nums.length; i++) {
+              const value = nums[i];
+
+              // Si el mínimo es nulo O el valor es
+              // menor que el mínimo, actualice el mínimo.
+              if (result.min === null || value < result.min) {
+                result.min = value;
+              }
+
+              // Si el máximo es nulo O el valor es
+              // mayor que el máximo, actualice el máximo.  
+              if (result.max === null || value > result.max) {
+                result.max = value;
+              }
+
+              // Tenemos que usar las 2 sentencias if anteriores en lugar de
+              // una declaración if-else. Esto asegura que tanto el
+              // min y max se establecen si son nulas.
+            }
+
+        return result;
+      }
+
 
 
 11n. Crea una función countWords(words) que tome un array de cadenas y devuelva un objeto con cuántas veces apareció cada cadena
