@@ -4753,5 +4753,15 @@ function countWords(words) {
 
 
 
+JavaScript real funciona así:
+      Guardar datos → Arrays
+      Procesar datos → Loops
+      Mostrar datos → HTML
+      Interacción → Eventos
+
+
+
+
+
 
 -------------------------------------------LECCION 11 Parte 2 de Arrays(Matrices) y Loops(Bucles) --------------------------------------------------------
