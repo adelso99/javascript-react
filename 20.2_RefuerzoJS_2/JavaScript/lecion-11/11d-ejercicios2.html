@@ -19,12 +19,56 @@
     <!--Carga de JavaScript Interno-->
     <script>
       /*
-      111. Crea una función minMax(nums) que tome un array de números y devuelva un objeto con los números mínimo y máximo del array (hazlo usando un bucle en lugar de usar algo como Math.min).
-        - minMax([1, -3, 5]) => { min: -3, max: 5 }
-        - minMax([-2, 3, -5, 7, 10]) => { min: -5, max: 10 }
-
+      11m. Actualiza el ejercicio 111 para que también maneje estos casos:
+  - minMax([]) => { min: null, max: null }
+  - minMax([3]) => { min: 3, max: 3 }
       */
 
+      function minMax(nums) {
+
+
+        if(nums.length === 0){
+            return {
+              min: null,
+              max: null,
+            }
+          }
+
+        const numeros = {
+          min: nums[0],
+          max: nums[0], 
+        };
+
+        if(1 === nums.length){
+           return numeros;
+          }
+
+
+        for(let i = 0; i < nums.length; i++){
+          const dato = nums[i];
+
+              if(dato > numeros.max) {
+                    numeros.max = dato;
+                  }
+
+              if(dato < numeros.min){
+                numeros.min = dato;
+              }
+        }
+
+        return numeros;
+
+      }
+
+       console.log(minMax([])); // { min: null, max: null }
+       console.log(minMax([3])); // { min: 3, max: 3 }
+
+
+
+
+
+
+      /* Ejericicio 9
       function minMax(nums) {
         const numeros = {
           min: nums[0],
@@ -51,7 +95,7 @@
 
       console.log(minMax([1, -3, 5])); // { min: -3, max: 5 }
       console.log(minMax([-2, 3, -5, 7, 10])); // { min: -5, max: 10 }
-
+      */
 
 
     </script>
