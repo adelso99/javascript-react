@@ -27,22 +27,32 @@
 
       function countWords(words) {
         const dato = words;
-        const objeto = {
+        const lista = {
 
         };
 
         for(let i = 0; i < words.length; i++){
           const elemento = words[i];
-          objeto.elemento = elemento[i];
+          lista.elemento = elemento[i];
 
-          if(elemento === )
+          if(elemento === lista.elemento[i]){
+              lista.elemento[i] = + 1;
+          }
+
+          if(elemento !== lista.elemento[i]){
+            lista.elemento = elemento[i];
+            lista.elemento[i] = +1;
+
+          }
 
         }
 
-        return objeto
+        return lista
 
 
       }
+
+      console.log(countWords(['manzana', 'uva', 'manzana', 'manzana'])); // { manzana: 3, uva: 1} 
 
 
 
