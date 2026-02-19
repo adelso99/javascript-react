@@ -33,15 +33,15 @@
 
         for(let i = 0; i < words.length; i++){
           const elemento = words[i];
-          lista.elemento = elemento[i];
+          lista.elemento = words[i];
 
-          if(elemento === lista.elemento[i]){
-              lista.elemento[i] = + 1;
+          if(elemento === lista.words[i]){
+              lista[elemento] = + 1;
           }
 
-          if(elemento !== lista.elemento[i]){
-            lista.elemento = elemento[i];
-            lista.elemento[i] = +1;
+          if(elemento !== lista.words[i]){
+            lista.elemento = words[i];
+            lista[elemento] = + 1;
 
           }
 
