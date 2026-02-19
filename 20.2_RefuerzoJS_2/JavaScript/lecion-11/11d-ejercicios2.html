@@ -26,28 +26,25 @@
       */
 
       function countWords(words) {
-        const dato = words;
         const lista = {
 
         };
+        
 
         for(let i = 0; i < words.length; i++){
           const elemento = words[i];
-          lista.elemento = words[i];
+          
 
-          if(elemento === lista.words[i]){
-              lista[elemento] = + 1;
+          if(lista[elemento]){
+              lista[elemento]++;
+          }else{
+            lista[elemento] = 1;
           }
 
-          if(elemento !== lista.words[i]){
-            lista.elemento = words[i];
-            lista[elemento] = + 1;
-
-          }
-
+          
         }
 
-        return lista
+        return lista;
 
       }
 

@@ -4692,3 +4692,66 @@ SOLUCION 2:
 
 11n. Crea una función countWords(words) que tome un array de cadenas y devuelva un objeto con cuántas veces apareció cada cadena
   countWords(['manzana', 'uva', 'manzana', 'manzana']) => { manzana: 3, uva: 1} (Sugerencia: puedes acceder a una propiedad usando una variable: object[variable]; esto usa el valor dentro de la variable como nombre de la propiedad).
+
+
+SOLUCION:
+      function countWords(words) {
+        const lista = {
+
+        };
+        
+
+        for(let i = 0; i < words.length; i++){
+          const elemento = words[i];
+          
+
+          if(lista[elemento]){
+              lista[elemento]++;
+          }else{
+            lista[elemento] = 1;
+          }
+
+          
+        }
+
+        return lista;
+
+      }
+
+      console.log(countWords(['manzana', 'uva', 'manzana', 'manzana'])); // { manzana: 3, uva: 1} 
+
+
+
+SOLUCION 2:
+function countWords(words) {
+          const result = {};
+
+          for (let i = 0; i < words.length; i++) {
+            const word = words[i];
+
+            // result[word] agrega o accede a una propiedad usando lo que esté
+            // guardado dentro de la variable 'word'.
+            // Si word = 'apple', result[word] hará result['apple']
+            // Si word = 'grape', result[word] hará result['grape']
+
+            // Si la palabra todavía NO existe dentro del objeto result
+            if (!result[word]) {
+              // se crea la propiedad y se inicializa en 1
+              result[word] = 1;
+            } else {
+              // si ya existe, se incrementa el contador en 1
+              result[word]++;
+            }
+          }
+
+          // devuelve el objeto final con el conteo de palabras
+          return result;
+        }
+
+        // ejemplo de uso
+        console.log(countWords(['apple', 'grape', 'apple', 'apple']));
+
+
+
+
+-------------------------------------------LECCION 11 Parte 2 de Arrays(Matrices) y Loops(Bucles) --------------------------------------------------------
