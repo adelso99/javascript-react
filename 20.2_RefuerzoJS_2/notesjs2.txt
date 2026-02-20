@@ -4906,3 +4906,4 @@ Ejemplo:
 
 Cómo usar bucles con funciones
 se tiene un array asi [1, 1, 3] --> pero se quiere crear un caopia y multiplicarla por 2 --> [2, 2, 6]
+Si vemos el número 0, detengamos este bucle antes
