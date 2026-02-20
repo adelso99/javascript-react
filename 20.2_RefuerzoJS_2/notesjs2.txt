@@ -4958,9 +4958,87 @@ Ejercicios de la Lección 11: Matrices y bucles
  - ['hello', 'world', 'search', 'good'] => console.log(2)
  - ['not', 'found'] => console.log(-1)
 
+ SOLUCION 1:
+            const lista = ['hello', 'world', 'search', 'good'];
+            const lista2 = ['not', 'found'];
+            let dato = -1
+
+            for(let i = 0; i < lista.length; i++){
+
+                if(lista[i] === "search"){
+                  dato = i;
+                  }
+                }
+
+            console.log(dato);
+            dato = -1;
+
+            for(let i = 0; i < lista2.length; i++){
+              if(lista2[i] === "search"){
+                dato = i;
+              }
+            }
+            
+            console.log(dato);
+            
+
+ SOLUCION 2:
+       let words = ['hello', 'world', 'search', 'good'];
+
+      // Set the index to -1 at the start (so we'll assume
+      // the string 'search' doesn't exist in the array).
+      // If we find the string 'search' in the array, we
+      // will update the index.
+      let index = -1;
+
+      for (let i = 0; i < words.length; i++) {
+        if (words[i] === 'search') {
+          index = i;
+        }
+      }
+
+      console.log(index);
+
+      words = ['not', 'found'];
+      index = -1;
+
+      for (let i = 0; i < words.length; i++) {
+        if (words[i] === 'search') {
+          index = i;
+        }
+      }
+
+      console.log(index);
+
 
 11p. Modifique 110 para que si 'search' aparece varias veces en la matriz, console.log() el índice de la primera aparición de 'search'. Use break;
  - ['hello', 'world', 'search', 'good', 'search'] => console.log(2)
+
+ SOLUCION:
+            const lista = ['hello', 'world', 'search', 'good', 'search'] 
+            const lista2 = ['not', 'found'];
+            let dato = -1
+
+            for(let i = 0; i < lista.length; i++){
+
+                if(lista[i] === "search"){
+                  dato = i;
+                  break;  //Uso de break
+                  }
+                }
+
+            console.log(dato);
+            dato = -1;
+
+            for(let i = 0; i < lista2.length; i++){
+              if(lista2[i] === "search"){
+                dato = i;
+                break;   //Uso de break
+              }
+            }
+            
+            console.log(dato);
+
 
 
 11p. Crea una función findIndex(matriz, palabra) que busque una cadena en una matriz (en el parámetro 'palabra') y devuelva el índice de la primera aparición de la cadena. Si no existe en la matriz, devuelve -1.

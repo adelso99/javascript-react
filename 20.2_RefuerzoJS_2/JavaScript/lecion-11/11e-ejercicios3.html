@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leccion 11.2</title>
+
+  <!--Carga de Estilos CSS Interno-->
+  <style>
+
+  </style>
+</head>
+<body>
+  <h1>Leccion 11 - Ejericicios Parte 2</h1>
+
+
+
+
+    <!--Carga de JavaScript Interno-->
+    <script>
+      /*
+        110. Cree una matriz de cadenas, recorra la matriz y compruebe si la cadena 'search' está dentro de la matriz. Si lo está, console.log() el índice de 'search' está dentro de la matriz. Si no, console.log '-1'.
+        - ['hello', 'world', 'search', 'good'] => console.log(2)
+        - ['not', 'found'] => console.log(-1)
+      */
+
+        const lista = ['hello', 'world', 'search', 'good', 'search'] 
+        const lista2 = ['not', 'found'];
+        let dato = -1
+
+        for(let i = 0; i < lista.length; i++){
+
+            if(lista[i] === "search"){
+              dato = i;
+              break;
+              }
+            }
+
+        console.log(dato);
+        dato = -1;
+
+        for(let i = 0; i < lista2.length; i++){
+          if(lista2[i] === "search"){
+            dato = i;
+            break;
+          }
+        }
+        
+        console.log(dato);
+         
+
+ /*
+  Ejercicio 1
+    const lista = ['hello', 'world', 'search', 'good'] 
+    const lista2 = ['not', 'found'];
+    let dato = -1
+
+    for(let i = 0; i < lista.length; i++){
+
+        if(lista[i] === "search"){
+          dato = i;
+          }
+        }
+
+    console.log(dato);
+    dato = -1;
+
+    for(let i = 0; i < lista2.length; i++){
+      if(lista2[i] === "search"){
+        dato = i;
+      }
+    }
+    
+    console.log(dato);
+
+
+        let words = ['hello', 'world', 'search', 'good'];
+
+        // Set the index to -1 at the start (so we'll assume
+        // the string 'search' doesn't exist in the array).
+        // If we find the string 'search' in the array, we
+        // will update the index.
+        let index = -1;
+
+        for (let i = 0; i < words.length; i++) {
+          if (words[i] === 'search') {
+            index = i;
+          }
+        }
+
+        console.log(index);
+
+        words = ['not', 'found'];
+        index = -1;
+
+        for (let i = 0; i < words.length; i++) {
+          if (words[i] === 'search') {
+            index = i;
+          }
+        }
+
+        console.log(index);
+     */       
+
+    
+    </script>
+  
+</body>
+</html>
