@@ -4907,3 +4907,45 @@ Ejemplo:
 Cómo usar bucles con funciones
 se tiene un array asi [1, 1, 3] --> pero se quiere crear un caopia y multiplicarla por 2 --> [2, 2, 6]
 Si vemos el número 0, detengamos este bucle antes
+
+Ejercicio resuelto:
+                    function arrayDoble(numeros){
+
+                          const numeroDobles = [];
+
+                            for(let i = 0; i < numeros.length; i++){
+                              const num = numeros[i];
+
+                              if(num === 0){
+                                break;
+                                //tambien puede usarse return numerosDobles; y eso sale de una vez
+                              }
+
+                              numeroDobles.push(num * 2);
+
+                              }
+
+                          return numeroDobles; // en consola muestra el array [2, 2, 6]
+
+                      }
+
+                      console.log(arrayDoble([1, 1, 3]));  //en consola [2, 2, 6]
+                      console.log(arrayDoble([2, 2, 5]));  //en consola [4, 4, 10]
+
+
+
+
+
+
+
+
+
+
+En esta lección:
+  1. Matrices = lista de valores
+  2. Bucles (bucle while, bucle for)
+  3. Patrón acumulador
+  4. Creación de un proyecto de lista de tareas pendientes
+  5. Las matrices son referencias, desestructuración
+  6. Más características de los bucles:
+      break, continue, bucles dentro de una función
