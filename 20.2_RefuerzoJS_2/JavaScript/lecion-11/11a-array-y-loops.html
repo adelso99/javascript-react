@@ -19,93 +19,124 @@
     <!--Carga de JavaScript Interno-->
     <script>
 
-      const numeros = [1, 1, 3];
-      let resultado = 0;
+      const array1 = [1, 2, 3]; //este array no es el que se guarda en memoria si no guarda la referencia de donde se guardo el array realmente 
 
-      for(let i = 0; i < numeros.length; i++){
-        const num = numeros[i];
-
-        resultado += num;
-      }
-
-      console.log(resultado); //en consola muestra 5 --> 1+1 = 2 --> 2+3 = 5  
-
-      const numeroDobles = [];
-
-      for(let i = 0; i < numeros.length; i++){
-        const num2 = numeros[i];
-
-        numeroDobles.push(num2 * 2);
-
-      }
-
-      console.log(numeroDobles); // en consola muestra el array [2, 2, 6]
+      //si se realiza una copia de del array1 ese no copia los el array de elementos
+      const array2 = array1; //aca guarda la referencia que tiene el array1 porque ese tambiene es una referencia entoneces hace una capia de la referencia
 
 
 
-      /*Array no estandarizada
-      const lista = [
-        "Ver Futbol",             //indice 0
-        "Programar JavaScript",   //indice 1
-        "Dormir 6 Horas"          //indice 2
-      ];
 
-      for (let i = 0; i < lista.length; i++){  //otra opcion en desicion <= lista.length -1
-          console.log(lista[i]); //muestra cada elemento segun su indice con la variable i
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      /*
+    
+            const numeros = [1, 1, 3];
+            let resultado = 0;
+
+            for(let i = 0; i < numeros.length; i++){
+              const num = numeros[i];
+
+              resultado += num;
+            }
+
+      */ 
+       // console.log(resultado); //en consola muestra 5 --> 1+1 = 2 --> 2+3 = 5 
+      
+        //    const numeroDobles = [];
+
+        //    for(let i = 0; i < numeros.length; i++){
+        //      const num2 = numeros[i];
+
+         //     numeroDobles.push(num2 * 2);
+
+          //  }
+        
+          //  console.log(numeroDobles); // en consola muestra el array [2, 2, 6]
+            
+        /*
+
+          //Array no estandarizada
+            const lista = [
+              "Ver Futbol",             //indice 0
+              "Programar JavaScript",   //indice 1
+              "Dormir 6 Horas"          //indice 2
+            ];
+
+            for (let i = 0; i < lista.length; i++){  //otra opcion en desicion <= lista.length -1
+                console.log(lista[i]); //muestra cada elemento segun su indice con la variable i
+                
+            }
           
-      }
-     /*
+
+       
+          
+          //Loops 
+          let i = 1
+          
+          while( i <= 5){  
+            console.log(i);
+            i++;          //incremento de bucle
+          }
+
+          //Bucle For
+
+          for(let i = 1; i <= 5; i++){  //aca esta la declaracion de variable, condicion y incremento
+            console.log(i);
+          }
 
 
-     
-    /*Loops 
-    let i = 1
-     
-    while( i <= 5){  
-      console.log(i);
-      i++;          //incremento de bucle
-    }
+          //bucle no estandarizado
 
-    //Bucle For
+          let numeroRandom = 0;
 
-    for(let i = 1; i <= 5; i++){  //aca esta la declaracion de variable, condicion y incremento
-      console.log(i);
-    }
+          while(numeroRandom < 0.5){
+            numeroRandom = Math.random();
+          }
+
+          console.log(numeroRandom);
+
+          
 
 
-    //bucle no estandarizado
+          // Arrays
+            const matriz = [10, 11, 12];
 
-    let numeroRandom = 0;
+            console.log(matriz);
+            console.log(matriz[1]);  // en consola aparece el 11 porque es el indice 1 ya que el 10 es indice 0
 
-    while(numeroRandom < 0.5){
-      numeroRandom = Math.random();
-    }
+            matriz[0] = 5; //cambio del elemento del array segun el indice
+            console.log(matriz); //se actuzliza la matriz a [5, 11, 12]
 
-    console.log(numeroRandom);
+            console.log(matriz.length); //verificacion de cuantos elementos existen en el array
 
-    */
-
-
-      /* Arrays
-      const matriz = [10, 11, 12];
-
-      console.log(matriz);
-      console.log(matriz[1]);  // en consola aparece el 11 porque es el indice 1 ya que el 10 es indice 0
-
-      matriz[0] = 5; //cambio del elemento del array segun el indice
-      console.log(matriz); //se actuzliza la matriz a [5, 11, 12]
-
-      console.log(matriz.length); //verificacion de cuantos elementos existen en el array
-
-      matriz.push(13); //añade el elemento 13 al final del array
-      console.log(matriz); //actualiza el array con el nuevo elemento añadido
+            matriz.push(13); //añade el elemento 13 al final del array
+            console.log(matriz); //actualiza el array con el nuevo elemento añadido
 
 
-      matriz.splice(3); //Elimina el elemento 13 del array porque es el indice 3
-      console.log(matriz); //actualiza el array con el elemento eliminado
+            matriz.splice(3); //Elimina el elemento 13 del array porque es el indice 3
+            console.log(matriz); //actualiza el array con el elemento eliminado
 
+    
       */
-
 
     </script>
   
