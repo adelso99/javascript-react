@@ -4879,3 +4879,30 @@ Ejericio resuelto:
           }
     
           En consola muestra 1 2 4 5 7 8 omite los dividendos de 3 y se finaliza en 8 por el break
+
+
+
+
+Contar del 1 al 10 usando un bucle while
+Omitir números que son divisibles por 3 (3, 6, 9)
+
+Ejemplo:
+          let i = 1;
+
+          while(i <= 10){
+            if(i % 3 === 0){
+              i++;             //debemos agregar manualmente el incremento porque si no se queda congelado el bucle son el while
+              continue;
+            }
+            console.log(i);
+            i++;
+            
+          }
+
+
+
+
+
+
+Cómo usar bucles con funciones
+se tiene un array asi [1, 1, 3] --> pero se quiere crear un caopia y multiplicarla por 2 --> [2, 2, 6]
