@@ -4939,8 +4939,6 @@ Ejercicio resuelto:
 
 
 
-
-
 En esta lección:
   1. Matrices = lista de valores
   2. Bucles (bucle while, bucle for)
@@ -4949,3 +4947,60 @@ En esta lección:
   5. Las matrices son referencias, desestructuración
   6. Más características de los bucles:
       break, continue, bucles dentro de una función
+
+
+
+
+
+Ejercicios de la Lección 11: Matrices y bucles
+
+110. Cree una matriz de cadenas, recorra la matriz y compruebe si la cadena 'search' está dentro de la matriz. Si lo está, console.log() el índice de 'search' está dentro de la matriz. Si no, console.log '-1'.
+ - ['hello', 'world', 'search', 'good'] => console.log(2)
+ - ['not', 'found'] => console.log(-1)
+
+
+11p. Modifique 110 para que si 'search' aparece varias veces en la matriz, console.log() el índice de la primera aparición de 'search'. Use break;
+ - ['hello', 'world', 'search', 'good', 'search'] => console.log(2)
+
+
+11p. Crea una función findIndex(matriz, palabra) que busque una cadena en una matriz (en el parámetro 'palabra') y devuelva el índice de la primera aparición de la cadena. Si no existe en la matriz, devuelve -1.
+ - findIndex(['verde', 'rojo', 'azul', 'rojo'], 'rojo') => 1
+ - findIndex(['verde', 'rojo', 'azul', 'rojo'], 'amarillo') => -1
+
+
+11r. Crea una función removeEgg(foods) que tome un array de cadenas y devuelva un array donde se elimina la cadena 'egg'. (Sugerencia: recorre el array y comprueba si cada cadena es 'egg'. Si es 'egg', usa 'continue;' para omitirlo. Si no es 'egg', añádelo al resultado).
+ -  removeEgg(['egg', 'apple', 'egg', 'egg', 'ham']) => ['apple', 'ham']
+
+
+11s. Actualiza el ejercicio 11r para eliminar solo los 2 primeros huevos del array.
+ - removeEgg(['egg', 'apple', 'egg', 'egg', 'ham']) => ['apple', 'egg', 'ham']
+
+
+11t. Los arrays tienen un método llamado .reverse(), que invierte el orden de los valores en el array. Usando .reverse(), actualiza el ejercicio 11s para eliminar solo los 2 últimos huevos del array.
+ - removeEgg(['egg', 'apple', 'egg', 'egg', 'ham']) => ['egg', 'apple', 'ham']
+
+
+11u. En el ejercicio 11t, un problema con .reverse() es que no crea una copia del array que está invirtiendo. Modifica el array original. Actualice el código para que la función no modifique el array original. (Sugerencia: use el método .slice() para crear una copia de los valores de un array).
+ - const foods = ['egg', 'apple', 'egg', 'egg', 'ham'];
+ - console.log(removeEgg(foods)) => ['egg', 'apple', 'ham']
+ - console.log(foods) => ['egg', 'apple', 'egg', 'egg', 'ham']
+
+
+
+
+Ejercicios de desafío
+
+11v. Haremos el famoso problema de FizzBuzz. Crea un bucle que muestre del 1 al 20 en la consola. Si el número es divisible entre 3, muestra 'Fizz' en lugar del número. Si es divisible entre 5, muestra 'Buzz' en su lugar. Si es divisible entre 3 y 5, muestra 'FizzBuzz' en su lugar. (Recordatorio: divisible entre 3 significa que núm % 3 === 0).
+   1, 2, Fizz, 4, Buzz, Fizz, 7, 8, ... 13, 14, FizzBuzz, 16, 17, ...
+
+
+  
+11w. Crea una copia del ejercicio 11q, donde creamos findIndex(). Debajo, crea una función unique(array) que tome un array de cadenas y devuelva un array donde cada cadena solo aparezca una vez (no hay duplicados). Intenta usar la función findIndex() en tu solución.
+ - unique(['green', 'red', 'blue', 'red']) => ['green', 'red', 'blue']
+ - unique(['red', 'green', 'green', 'red']) => ['red', 'green']
+
+
+11x. Crea 3 archivos: 11x.html, 11x.css y 11x.js, y copia el código del proyecto de la lista de tareas pendientes en estos archivos.
+  - Actualiza los elementos <link> y <script> para cargar 11x.css y 11x.js
+  - Actualiza la lista de tareas pendientes para usar localStorage (si modificamos la lista de tareas pendientes y actualizamos la página, la lista de    tareas pendientes debería permanecer igual).
+  - Consejo: recuerda que localStorage solo admite cadenas. Puedes usar JSON.stringify() para convertir una matriz en una cadena
