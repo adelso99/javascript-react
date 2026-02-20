@@ -4767,3 +4767,115 @@ JavaScript real funciona así:
 -------------------------------------------LECCION 11 Parte 2 de Arrays(Matrices) y Loops(Bucles) --------------------------------------------------------
 
 Aarrys de Referencia:
+Ejemplo:
+    const array1 = [1, 2, 3]; //este array no es el que se guarda en memoria si no guarda la referencia de donde se guardo el array realmente 
+
+      
+      /*
+      si se realiza una copia de del array1 ese no copia los el array de elementos
+      const array2 = array1; //aca guarda la referencia que tiene el array1 porque ese tambiene es una referencia entoneces hace una capia de la referencia
+      array2.push(4); //esta modifica ambos arrays porque ambas guardan la misma referencia
+      console.log(array1); //mismo que array2 --> [1, 2, 3, 4]
+      console.log(array2); //mismo que array1 --> [1, 2, 3, 4]
+      */
+      
+
+      //para que no guarda la referencia y cree una copia de los valores o elementos del array se usa el metodo ".slice()"
+      const array2 = array1.slice(); //aca crea una copia del array1 
+
+      array2.push(4); //esta modifica solo la copia del array2 porque ambas no guardan la misma referencia por el metodo slice
+      console.log(array1); //mismo que array2 --> [1, 2, 3]
+      console.log(array2); //mismo que array1 --> [1, 2, 3, 4]
+
+
+
+
+
+Atajo: Desestructuración
+Ejemplo:
+      const [valor1, valor2] = [3, 4, 5]; //esto obtiene el valor 0 y 1 del array y se una vez le asigan una variable con nombre la cual es lo que le
+                                          //definimos en este caso valor1 y valor2
+
+      console.log([valor1, valor2]);
+
+
+
+
+
+
+Más detalles sobre los bucles
+  1. romper = salir de un bucle antes de tiempo
+  Ejemplo:
+              for(let i = 1; i <= 10; i++){
+              
+              console.log(i);
+              if(i === 8){  //verifica que sea igual a 8 --> i
+                break;      // si es true termina el bucle ya no se repite mas
+              } 
+            }
+
+          en consola se ve 1 2 3 4 5 6 7 8  de arriba a abajo pero el 9 y 10 no esta porque el break termina la ejecucion
+
+
+
+  2. continuar
+  Ejemplo:
+            for(let i = 1; i <= 10; i++){
+
+            if(i === 3){  // verifica que i sea igual a 3
+              continue;   // si es true omite la salida del 3 y continua con el 4 hasta terminar 
+            }
+            console.log(i);  
+      
+          }
+
+          en consola se ve 1 2 4 5 6 7 8 9 10  de arriba a abajo pero el 3 no esta porque se lo salto
+
+
+
+
+
+Ejemplo Completo:
+        for(let i = 1; i <= 10; i++){
+
+        if(i === 3){
+          continue;  //omite el numero 3
+        }
+
+        console.log(i);
+        if(i === 8){  //termina en el numero 8 ya no llegas hasta el numero 10
+          break;
+        } 
+      }
+
+
+
+
+
+Omite un número si es divisible entre 3
+divisible entre 3 = se puede dividir exactamente entre 3
+
+  3       6
+ ---   --- ---    Si
+
+   7
+--- --- -         No
+                resto
+
+              7 % 3 => 1
+              6 % 3 => 0
+
+Ejericio resuelto:
+          for(let i = 1; i <= 10; i++){
+
+            if(i % 3 === 0){
+              continue;  //verifica los numeros dividendos del 3 y los omite
+            }
+
+            console.log(i);
+            if(i === 8){  //termina en el numero 8 ya no llegas hasta el numero 10
+              break;
+            } 
+          }
+    
+          En consola muestra 1 2 4 5 7 8 omite los dividendos de 3 y se finaliza en 8 por el break

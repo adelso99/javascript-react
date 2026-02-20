@@ -21,17 +21,39 @@
 
       const array1 = [1, 2, 3]; //este array no es el que se guarda en memoria si no guarda la referencia de donde se guardo el array realmente 
 
+      
       //si se realiza una copia de del array1 ese no copia los el array de elementos
-      const array2 = array1; //aca guarda la referencia que tiene el array1 porque ese tambiene es una referencia entoneces hace una capia de la referencia
+      //const array2 = array1; //aca guarda la referencia que tiene el array1 porque ese tambiene es una referencia entoneces hace una capia de la referencia
+      //array2.push(4); //esta modifica ambos arrays porque ambas guardan la misma referencia
+      //console.log(array1); //mismo que array2 --> [1, 2, 3, 4]
+      //console.log(array2); //mismo que array1 --> [1, 2, 3, 4]
+      
+
+      //para que no guarda la referencia y cree una copia de los valores o elementos del array se usa el metodo ".slice()"
+      const array2 = array1.slice(); //aca crea una copia del array1 
+
+      array2.push(4); //esta modifica solo la copia del array2 porque ambas no guardan la misma referencia por el metodo slice
+      console.log(array1); //mismo que array2 --> [1, 2, 3]
+      console.log(array2); //mismo que array1 --> [1, 2, 3, 4]
 
 
+      const [valor1, valor2] = [3, 4, 5]; //esto obtiene el valor 0 y 1 del array y se una vez le asigan una variable con nombre la cual es lo que le
+                                          //definimos en este caso valor1 y valor2
+
+      console.log([valor1, valor2]);
 
 
+      for(let i = 1; i <= 10; i++){
 
+        if(i % 3 === 0){
+          continue;  //omite el numero 3
+        }
 
-
-
-
+        console.log(i);
+        if(i === 8){  //termina en el numero 8 ya no llegas hasta el numero 10
+          break;
+        } 
+      }
 
 
 
