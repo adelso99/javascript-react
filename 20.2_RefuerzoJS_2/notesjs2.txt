@@ -5116,6 +5116,27 @@ SOLUCION 2:
 11s. Actualiza el ejercicio 11r para eliminar solo los 2 primeros huevos del array.
  - removeEgg(['egg', 'apple', 'egg', 'egg', 'ham']) => ['apple', 'egg', 'ham']
 
+ SOLUCION:
+          function removeEgg(foods){
+
+            let lista = [];
+            let huevosEliminados = 0;
+
+            for(let i = 0; i < foods.length; i++){
+              if(foods[i] === "egg" && huevosEliminados < 2){
+                huevosEliminados++;
+                continue;
+              }
+              lista.push(foods[i]);
+              
+            }
+
+            return lista;
+
+          } 
+
+          console.log(removeEgg(['egg', 'apple', 'egg', 'egg', 'ham'])); // ['apple', 'egg', 'ham']
+
 
 11t. Los arrays tienen un método llamado .reverse(), que invierte el orden de los valores en el array. Usando .reverse(), actualiza el ejercicio 11s para eliminar solo los 2 últimos huevos del array.
  - removeEgg(['egg', 'apple', 'egg', 'egg', 'ham']) => ['egg', 'apple', 'ham']

@@ -26,12 +26,15 @@
       function removeEgg(foods){
 
         let lista = [];
+        let huevosEliminados = 0;
 
         for(let i = 0; i < foods.length; i++){
-           if(foods[i] === "egg" && i > 1){
+           if(foods[i] === "egg" && huevosEliminados < 2){
+            huevosEliminados++;
             continue;
            }
            lista.push(foods[i]);
+           
         }
 
         return lista;
