@@ -5045,6 +5045,8 @@ Ejercicios de la Lección 11: Matrices y bucles
  - findIndex(['verde', 'rojo', 'azul', 'rojo'], 'rojo') => 1
  - findIndex(['verde', 'rojo', 'azul', 'rojo'], 'amarillo') => -1
 
+ 
+
 
 11r. Crea una función removeEgg(foods) que tome un array de cadenas y devuelva un array donde se elimina la cadena 'egg'. (Sugerencia: recorre el array y comprueba si cada cadena es 'egg'. Si es 'egg', usa 'continue;' para omitirlo. Si no es 'egg', añádelo al resultado).
  -  removeEgg(['egg', 'apple', 'egg', 'egg', 'ham']) => ['apple', 'ham']
