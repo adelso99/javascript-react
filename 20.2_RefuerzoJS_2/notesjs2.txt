@@ -5138,14 +5138,71 @@ SOLUCION 2:
           console.log(removeEgg(['egg', 'apple', 'egg', 'egg', 'ham'])); // ['apple', 'egg', 'ham']
 
 
+
+
+
 11t. Los arrays tienen un método llamado .reverse(), que invierte el orden de los valores en el array. Usando .reverse(), actualiza el ejercicio 11s para eliminar solo los 2 últimos huevos del array.
  - removeEgg(['egg', 'apple', 'egg', 'egg', 'ham']) => ['egg', 'apple', 'ham']
+
+ SOLUCION:
+      
+            function removeEgg(foods){
+              foods = foods.reverse();
+
+              let lista = [];
+              let huevosEliminados = 0;
+
+              for(let i = 0; i < foods.length; i++){
+                if(foods[i] === "egg" && huevosEliminados < 2){
+                  huevosEliminados++;
+                  continue;
+                }
+                lista.push(foods[i]);
+                
+              }
+
+              return lista.reverse();
+
+            } 
+
+            console.log(removeEgg(['egg', 'apple', 'egg', 'egg', 'ham'])); // ['egg', 'apple', 'ham']
+
+
+
 
 
 11u. En el ejercicio 11t, un problema con .reverse() es que no crea una copia del array que está invirtiendo. Modifica el array original. Actualice el código para que la función no modifique el array original. (Sugerencia: use el método .slice() para crear una copia de los valores de un array).
  - const foods = ['egg', 'apple', 'egg', 'egg', 'ham'];
  - console.log(removeEgg(foods)) => ['egg', 'apple', 'ham']
  - console.log(foods) => ['egg', 'apple', 'egg', 'egg', 'ham']
+
+ SOLUCION:
+            const foods = ['egg', 'apple', 'egg', 'egg', 'ham'];
+
+            function removeEgg(foods){
+              let nuevo = foods.slice();
+              foods = nuevo.reverse();
+              
+              let lista = [];
+              let huevosEliminados = 0;
+
+              for(let i = 0; i < foods.length; i++){
+                if(foods[i] === "egg" && huevosEliminados < 2){
+                  huevosEliminados++;
+                  continue;
+                }
+                lista.push(foods[i]);
+                
+              }
+
+              return lista.reverse();
+
+            } 
+
+            console.log(removeEgg(foods)) // ['egg', 'apple', 'ham']
+            console.log(foods); // ['egg', 'apple', 'egg', 'egg', 'ham']
+
+
 
 
 
