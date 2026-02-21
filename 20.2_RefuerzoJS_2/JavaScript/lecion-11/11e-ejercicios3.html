@@ -26,21 +26,24 @@
 
 
       function  findIndex(matriz, palabra){
-        let dato = -1;
+          let dato = -1;
 
-        for(let i = 0; i < matriz.length; i++){
-            if(matriz[i] === "rojo"){
-               dato = i;
-               return dato;
-              break;
-            }
-        }
+          for(let i = 0; i < matriz.length; i++){
+              if(matriz[i] === palabra){
+                dato = i;
+                return dato;
+                break;
+              }
+          }
+
+          return dato;
 
 
       }
 
 
       console.log(findIndex(['verde', 'rojo', 'azul', 'rojo'], 'rojo')); // 1
+      console.log(findIndex(['verde', 'rojo', 'azul', 'rojo'], 'amarillo')); // -1
 
 
 
