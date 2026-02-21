@@ -5045,7 +5045,47 @@ Ejercicios de la Lección 11: Matrices y bucles
  - findIndex(['verde', 'rojo', 'azul', 'rojo'], 'rojo') => 1
  - findIndex(['verde', 'rojo', 'azul', 'rojo'], 'amarillo') => -1
 
- 
+ SOLUCION:
+          function  findIndex(matriz, palabra){
+              let dato = -1;
+
+              for(let i = 0; i < matriz.length; i++){
+                  if(matriz[i] === palabra){
+                    dato = i;
+                    return dato;
+                  }
+              }
+
+              return dato;
+
+
+          }
+
+          console.log(findIndex(['verde', 'rojo', 'azul', 'rojo'], 'rojo')); // 1
+          console.log(findIndex(['verde', 'rojo', 'azul', 'rojo'], 'amarillo')); // -1
+
+
+
+SOLUCION 2:
+            function findIndex(array, word) {
+              for (let i = 0; i < array.length; i++) {
+                if (array[i] === word) {
+                  // Instead of creating an accumulator
+                  // variable and updating it in the loop,
+                  // we can just return i directly, when
+                  // we find it since this is a function.
+                  return i;
+                }
+              }
+
+              // If the function has not returned by now,
+              // logically that means the word must not
+              // exist in the array, so we'll return -1.
+              return -1;
+            }
+
+
+
 
 
 11r. Crea una función removeEgg(foods) que tome un array de cadenas y devuelva un array donde se elimina la cadena 'egg'. (Sugerencia: recorre el array y comprueba si cada cadena es 'egg'. Si es 'egg', usa 'continue;' para omitirlo. Si no es 'egg', añádelo al resultado).
