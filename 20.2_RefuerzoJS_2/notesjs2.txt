@@ -5091,6 +5091,27 @@ SOLUCION 2:
 11r. Crea una función removeEgg(foods) que tome un array de cadenas y devuelva un array donde se elimina la cadena 'egg'. (Sugerencia: recorre el array y comprueba si cada cadena es 'egg'. Si es 'egg', usa 'continue;' para omitirlo. Si no es 'egg', añádelo al resultado).
  -  removeEgg(['egg', 'apple', 'egg', 'egg', 'ham']) => ['apple', 'ham']
 
+ SOLUCION:
+          function removeEgg(foods){
+
+            let lista = [];
+
+            for(let i = 0; i < foods.length; i++){
+              if(foods[i] === "egg"){
+                continue;
+              }
+              lista.push(foods[i]);
+            }
+
+            return lista;
+
+          } 
+
+          console.log(removeEgg(['egg', 'apple', 'egg', 'egg', 'ham'])); // ['apple', 'ham']
+
+
+
+
 
 11s. Actualiza el ejercicio 11r para eliminar solo los 2 primeros huevos del array.
  - removeEgg(['egg', 'apple', 'egg', 'egg', 'ham']) => ['apple', 'egg', 'ham']

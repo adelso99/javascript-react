@@ -19,11 +19,43 @@
     <!--Carga de JavaScript Interno-->
     <script>
       /*
-      11p. Crea una función findIndex(matriz, palabra) que busque una cadena en una matriz (en el parámetro 'palabra') y devuelva el índice de la primera aparición de la cadena. Si no existe en la matriz, devuelve -1.
-      - findIndex(['verde', 'rojo', 'azul', 'rojo'], 'rojo') => 1
-      - findIndex(['verde', 'rojo', 'azul', 'rojo'], 'amarillo') => -1
+          11s. Actualiza el ejercicio 11r para eliminar solo los 2 primeros huevos del array.
+        - removeEgg(['egg', 'apple', 'egg', 'egg', 'ham']) => ['apple', 'egg', 'ham']
       */
 
+      function removeEgg(foods){
+
+        let lista = [];
+
+        for(let i = 0; i < foods.length; i++){
+           if(foods[i] === "egg" && i > 1){
+            continue;
+           }
+           lista.push(foods[i]);
+        }
+
+        return lista;
+
+      } 
+
+      console.log(removeEgg(['egg', 'apple', 'egg', 'egg', 'ham'])); // ['apple', 'egg', 'ham']
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      /*Ejercicio 3
 
       function  findIndex(matriz, palabra){
           let dato = -1;
@@ -44,20 +76,7 @@
       console.log(findIndex(['verde', 'rojo', 'azul', 'rojo'], 'rojo')); // 1
       console.log(findIndex(['verde', 'rojo', 'azul', 'rojo'], 'amarillo')); // -1
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+      */
 
 
 
