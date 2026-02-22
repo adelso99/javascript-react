@@ -19,11 +19,41 @@
     <!--Carga de JavaScript Interno-->
     <script>
       /*
-      11u. En el ejercicio 11t, un problema con .reverse() es que no crea una copia del array que está invirtiendo. Modifica el array original. Actualice el código para que la función no modifique el array original. (Sugerencia: use el método .slice() para crear una copia de los valores de un array).
-      - const foods = ['egg', 'apple', 'egg', 'egg', 'ham'];
-      - console.log(removeEgg(foods)) => ['egg', 'apple', 'ham']
-      - console.log(foods) => ['egg', 'apple', 'egg', 'egg', 'ham']
+      11v. Haremos el famoso problema de FizzBuzz. Crea un bucle que muestre del 1 al 20 en la consola. Si el número es divisible entre 3, muestra 'Fizz' en lugar del número. Si es divisible entre 5, muestra 'Buzz' en su lugar. Si es divisible entre 3 y 5, muestra 'FizzBuzz' en su lugar. (Recordatorio: divisible entre 3 significa que núm % 3 === 0).
+        1, 2, Fizz, 4, Buzz, Fizz, 7, 8, ... 13, 14, FizzBuzz, 16, 17, ...
+
       */
+
+      function fizzBuzz(limite){
+
+        for(let i = 1; i <= limite; i++){
+
+            if(i % 3 === 0 && i % 5 === 0){
+              console.log("FizzBuzz");            
+            }else if(i % 3 === 0){
+              console.log("Fizz");
+            }else if(i % 5 === 0){
+              console.log("Buzz");
+            }
+
+            console.log(i);
+
+          }
+  
+      }
+
+
+      fizzBuzz(20);
+
+
+
+
+
+
+
+      
+
+      /*Ejericio 4
 
       const foods = ['egg', 'apple', 'egg', 'egg', 'ham'];
 
@@ -49,20 +79,7 @@
 
       console.log(removeEgg(foods)) // ['egg', 'apple', 'ham']
       console.log(foods); // ['egg', 'apple', 'egg', 'egg', 'ham']
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+      */
 
 
       /*Ejercicio 3

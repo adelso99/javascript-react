@@ -5212,11 +5212,57 @@ Ejercicios de desafío
 11v. Haremos el famoso problema de FizzBuzz. Crea un bucle que muestre del 1 al 20 en la consola. Si el número es divisible entre 3, muestra 'Fizz' en lugar del número. Si es divisible entre 5, muestra 'Buzz' en su lugar. Si es divisible entre 3 y 5, muestra 'FizzBuzz' en su lugar. (Recordatorio: divisible entre 3 significa que núm % 3 === 0).
    1, 2, Fizz, 4, Buzz, Fizz, 7, 8, ... 13, 14, FizzBuzz, 16, 17, ...
 
+   SOLUCION :
+              function fizzBuzz(limite){
+
+              for(let i = 1; i <= limite; i++){
+
+                  if(i % 3 === 0 && i % 5 === 0){
+                    console.log("FizzBuzz");            
+                  }else if(i % 3 === 0){
+                    console.log("Fizz");
+                  }else if(i % 5 === 0){
+                    console.log("Buzz");
+                  }
+                  console.log(i);
+
+                }
+        
+            }
+
+
+            fizzBuzz(20);
+
+
+            
+
+   SOLUCION 2:
+            for (let i = 1; i <= 20; i++) {
+            // The trick to this problem is to check if
+            // the number is divisible by 3 and 5 first.
+            // Otherwise, it will always display 'Fizz'.
+            if (i % 3 === 0 && i % 5 === 0) {
+              console.log('FizzBuzz');
+
+            } else if (i % 3 === 0) {
+              console.log('Fizz');
+
+            } else if (i % 5 === 0) {
+              console.log('Buzz');
+              
+            } else {
+              console.log(i);
+            }
+          }
+
+
 
   
 11w. Crea una copia del ejercicio 11q, donde creamos findIndex(). Debajo, crea una función unique(array) que tome un array de cadenas y devuelva un array donde cada cadena solo aparezca una vez (no hay duplicados). Intenta usar la función findIndex() en tu solución.
  - unique(['green', 'red', 'blue', 'red']) => ['green', 'red', 'blue']
  - unique(['red', 'green', 'green', 'red']) => ['red', 'green']
+
+
 
 
 11x. Crea 3 archivos: 11x.html, 11x.css y 11x.js, y copia el código del proyecto de la lista de tareas pendientes en estos archivos.
