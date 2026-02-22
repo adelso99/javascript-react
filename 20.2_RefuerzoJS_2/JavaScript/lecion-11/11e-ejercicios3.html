@@ -19,10 +19,61 @@
     <!--Carga de JavaScript Interno-->
     <script>
       /*
-      11v. Haremos el famoso problema de FizzBuzz. Crea un bucle que muestre del 1 al 20 en la consola. Si el número es divisible entre 3, muestra 'Fizz' en lugar del número. Si es divisible entre 5, muestra 'Buzz' en su lugar. Si es divisible entre 3 y 5, muestra 'FizzBuzz' en su lugar. (Recordatorio: divisible entre 3 significa que núm % 3 === 0).
-        1, 2, Fizz, 4, Buzz, Fizz, 7, 8, ... 13, 14, FizzBuzz, 16, 17, ...
+      11w. Crea una copia del ejercicio 11q, donde creamos findIndex(). Debajo, crea una función unique(array) que tome un array de cadenas y devuelva un array donde cada cadena solo aparezca una vez (no hay duplicados). Intenta usar la función findIndex() en tu solución.
+      - unique(['green', 'red', 'blue', 'red']) => ['green', 'red', 'blue']
+      - unique(['red', 'green', 'green', 'red']) => ['red', 'green']
 
       */
+
+      function  findIndex(matriz, palabra){
+          let dato = -1;
+
+          for(let i = 0; i < matriz.length; i++){
+              if(matriz[i] === palabra){
+                dato = i;
+                return dato;
+              }
+          }
+
+          return dato;
+
+      }
+
+      function unique(array){
+        let lista = array[0];
+        let colores = [];
+        let color = "";
+        let colorRepetido = [];
+
+        for(let i = 0; i < array.length; i++){
+          if(lista === array[i]){
+            color = array[i];
+            colorRepetido[i]++;
+          }
+
+        }
+        
+      }
+
+
+      console.log(findIndex(['verde', 'rojo', 'azul', 'rojo'], 'rojo')); // 1
+      console.log(findIndex(['verde', 'rojo', 'azul', 'rojo'], 'amarillo')); // -1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      /*Ejericio 5
 
       function fizzBuzz(limite){
 
@@ -44,6 +95,8 @@
 
 
       fizzBuzz(20);
+
+      */
 
 
 
