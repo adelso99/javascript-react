@@ -8,6 +8,17 @@ const lista = [{
       fecha: "23-03-2022"
       }];
 
+
+const datosGuardados = localStorage.getItem("tareas");
+
+if(!datosGuardados === null){
+      JSON.parse(datosGuardados);
+}
+
+
+localStorage.getItem("tareas");
+
+
 añadirHtml();// llamado de funcion para ver elementos en la web
 
 
@@ -41,8 +52,6 @@ function añadirHtml(){
 }
 
 
-localStorage.getItem("tareas", JSON.stringify(lista));
-
 
 function añadirLista(){
 
@@ -64,7 +73,7 @@ function añadirLista(){
 
       dato.value = "";
 
-      localStorage.setItem("tareas", JSON.stringify(lista))
+      localStorage.setItem("tareas", JSON.stringify(lista));
 
       añadirHtml();// llamado de funcion para ver actualice los elementos en la web
 
