@@ -41,7 +41,7 @@ function añadirHtml(){
 }
 
 
-localStorage.getItem("tareas");
+localStorage.getItem("tareas", JSON.stringify(lista));
 
 
 function añadirLista(){
@@ -63,6 +63,8 @@ function añadirLista(){
       });
 
       dato.value = "";
+
+      localStorage.setItem("tareas", JSON.stringify(lista))
 
       añadirHtml();// llamado de funcion para ver actualice los elementos en la web
 
