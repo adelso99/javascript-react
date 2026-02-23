@@ -41,6 +41,8 @@ function añadirHtml(){
 }
 
 
+localStorage.getItem("tareas");
+
 
 function añadirLista(){
 
@@ -70,9 +72,9 @@ function añadirLista(){
 
 
 /*
-Pasos (Algoritmo)
-1. Recorrer la matriz
-2. Crear código HTML para cada tarea
-3. Colocar el HTML en la página web
 
+11x. Crea 3 archivos: 11x.html, 11x.css y 11x.js, y copia el código del proyecto de la lista de tareas pendientes en estos archivos.
+  - Actualiza los elementos <link> y <script> para cargar 11x.css y 11x.js
+  - Actualiza la lista de tareas pendientes para usar localStorage (si modificamos la lista de tareas pendientes y actualizamos la página, la lista de    tareas pendientes debería permanecer igual).
+  - Consejo: recuerda que localStorage solo admite cadenas. Puedes usar JSON.stringify() para convertir una matriz en una cadena
 */

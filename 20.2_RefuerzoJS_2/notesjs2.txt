@@ -5261,6 +5261,39 @@ Ejercicios de desafío
 11w. Crea una copia del ejercicio 11q, donde creamos findIndex(). Debajo, crea una función unique(array) que tome un array de cadenas y devuelva un array donde cada cadena solo aparezca una vez (no hay duplicados). Intenta usar la función findIndex() en tu solución.
  - unique(['green', 'red', 'blue', 'red']) => ['green', 'red', 'blue']
  - unique(['red', 'green', 'green', 'red']) => ['red', 'green']
+ 
+SOLUCION:
+          function  findIndex(matriz, palabra){
+            let dato = -1;
+
+            for(let i = 0; i < matriz.length; i++){
+                if(matriz[i] === palabra){
+                  dato = i;
+                  return dato;
+                }
+            }
+
+            return dato;
+
+          }
+
+          function unique(array){
+          let lista = [];
+
+          for(let i = 0; i < array.length; i++){
+            if(findIndex(lista, array[i]) === -1){
+              lista.push(array[i]);
+            }
+          }
+
+          return lista;
+          }
+
+
+          console.log(unique(['green', 'red', 'blue', 'red'])); // ['green', 'red', 'blue']
+          console.log(unique(['red', 'green', 'green', 'red'])); // ['red', 'green']
+
+
 
 
 
