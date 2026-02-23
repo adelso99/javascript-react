@@ -38,16 +38,17 @@ function añadirHtml(){
           <div>${fecha}</div> 
             <button onclick="
                   lista.splice(${i}, 1);
+                  localStorage.setItem('tareas', JSON.stringify(lista));
                   añadirHtml();  
             " class="btn-eliminar" >Eliminar</button>
           `;
 
           listaHtml += datoHtml;
 
-          localStorage.setItem("tareas", JSON.stringify(lista));
       }
 
       document.querySelector(".js-elementos-lista").innerHTML = listaHtml;
+
 
 }
 
@@ -73,9 +74,10 @@ function añadirLista(){
 
       dato.value = "";
 
-      localStorage.setItem("tareas", JSON.stringify(lista));
 
       añadirHtml();// llamado de funcion para ver actualice los elementos en la web
+
+      localStorage.setItem("tareas", JSON.stringify(lista));
 
 
 }
