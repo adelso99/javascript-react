@@ -11,7 +11,7 @@ let lista = [{
 
 const datosGuardados = localStorage.getItem("tareas");
 
-if(!datosGuardados === null){
+if(datosGuardados !== null){
       lista = JSON.parse(datosGuardados);
 }
 
@@ -43,6 +43,8 @@ function añadirHtml(){
           `;
 
           listaHtml += datoHtml;
+
+          localStorage.setItem("tareas", JSON.stringify(lista));
       }
 
       document.querySelector(".js-elementos-lista").innerHTML = listaHtml;
@@ -79,11 +81,3 @@ function añadirLista(){
 }
 
 
-
-/*
-
-11x. Crea 3 archivos: 11x.html, 11x.css y 11x.js, y copia el código del proyecto de la lista de tareas pendientes en estos archivos.
-  - Actualiza los elementos <link> y <script> para cargar 11x.css y 11x.js
-  - Actualiza la lista de tareas pendientes para usar localStorage (si modificamos la lista de tareas pendientes y actualizamos la página, la lista de    tareas pendientes debería permanecer igual).
-  - Consejo: recuerda que localStorage solo admite cadenas. Puedes usar JSON.stringify() para convertir una matriz en una cadena
-*/
