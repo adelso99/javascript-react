@@ -1,4 +1,4 @@
-const lista = [{
+let lista = [{
       name: 'Programar', 
       fecha: "22-03-2022"
       },
@@ -12,11 +12,9 @@ const lista = [{
 const datosGuardados = localStorage.getItem("tareas");
 
 if(!datosGuardados === null){
-      JSON.parse(datosGuardados);
+      lista = JSON.parse(datosGuardados);
 }
 
-
-localStorage.getItem("tareas");
 
 
 añadirHtml();// llamado de funcion para ver elementos en la web
