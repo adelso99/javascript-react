@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leccion 12</title>
+
+  <!--Carga de Estilos CSS Interno-->
+  <link rel="stylesheet" href="./12b-arh/style.css">
+
+</head>
+<body>
+  <h1 class="titulo">Juego de Piedra, Papel o Tijera</h1>
+  <button onclick="
+    playGame('piedra');
+  " class="btn-movimiento"><img src="./12b-arh/img/piedra.png" class="movimiento" alt="Piedra Emoji"/></button>
+
+  <button onclick="
+    playGame('papel');
+  " class="btn-movimiento"><img src="./12b-arh/img/papel.png" class="movimiento" alt="Papel Emoji"/></button>
+
+  <button onclick="
+    playGame('tijera');
+  " class="btn-movimiento"><img src="./12b-arh/img/tijera.png" class="movimiento" alt="Tijera Emoji"/></button>
+
+  <p class="js-resultado resultado"></p>
+  <p class="js-movimientos"></p>
+  <p class="js-puntuacion puntaje"></p>
+
+  <button onclick="
+    puntuacion.victorias = 0;
+    puntuacion.derrotas = 0;
+    puntuacion.empates = 0;
+
+    actualizarPuntaje();
+    localStorage.removeItem('puntuacion'); //elimina el valor almacenado
+
+  " class="reinicio">Reiniciar Puntuacion</button>
+
+  <button class="btn-auto" onclick="
+    autoPlay();
+  ">Juego Automatico</button>
+
+
+
+  <script src="./12b-arh/main.js"></script>
+</body>
+</html>

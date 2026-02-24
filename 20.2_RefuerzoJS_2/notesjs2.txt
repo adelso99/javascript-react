@@ -5535,3 +5535,21 @@ Ventaja:
 
 
 funcion de "setInterval()"
+este tambien toma 2 parametros igual que el setTimeout
+    1. Una función que queremos ejecutar en el futuro
+    2. ¿Cuánto tiempo hay que esperar antes de ejecutar esta función? --> (un número en milisegundos)
+
+    pero
+    Seguirá ejecutando la función cada 3 segundos.
+
+Ejemplo:
+        setInterval(function(){
+          console.log("setinterval"); //cada 3 sendos se muestra el string en consola no solo sera 1 vez
+        }, 5000);
+
+        console.log("Siguiente Linea 2");
+
+
+
+setInterval()
+- seguirá ejecutando una función en el futuro
