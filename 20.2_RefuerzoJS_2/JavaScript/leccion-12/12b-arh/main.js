@@ -18,11 +18,22 @@ empates: 0
 }*/
 
 
+let juegoAuto = false;
+let interaloId;
 
 function autoPlay(){
-    setInterval(function(){
-       
-    }, 1000);
+    if(!juegoAuto){
+       interaloId = setInterval(function(){
+        const playerMove = pickComputerMove();
+        playGame(playerMove);
+        }, 1000);
+
+        juegoAuto = true;
+    }else {
+        clearInterval(interaloId);
+
+        juegoAuto = false;
+    }
 
 }
 

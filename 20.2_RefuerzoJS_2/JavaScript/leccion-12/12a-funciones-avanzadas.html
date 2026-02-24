@@ -72,14 +72,13 @@
 
     nuevo3(function(){       //se esta pasando una funcion como parametro a otra funcion  
       console.log("Hola 5");  
+      
     });
 
-    */
-
-
-    setTimeout(function(){    //1. Parametro --> estamos usando un funcion como valor
+        
+    setTimeout(function(){    //1. Parametro: estamos usando un funcion como valor
       console.log("timeout"); 
-    }, 3000);  //2. Parametro --> es el tiempo de espera en ejecutar la funcion --> 3000 milisegundos son 3 segundos de espera para que muestre el msj
+    }, 3000);  //2. Parametro: es el tiempo de espera en ejecutar la funcion: 000 milisegundos son 3 segundos de espera para que muestre el msj
 
     console.log("Siguiente Linea");
 
@@ -90,6 +89,20 @@
 
 
     console.log("Siguiente Linea 2");
+
+
+    */
+
+
+  [
+    "Ver Youtube",
+    "Ir al Gym",
+    "Comer Tacos"    
+  ].forEach(function(value){ //pero a este se le pasa un parametro
+    console.log(value);  //recorre cada elemento del array y lo muestra en consola 
+  });
+
+    
 
 
 

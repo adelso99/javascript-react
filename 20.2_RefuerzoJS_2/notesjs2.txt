@@ -5552,4 +5552,53 @@ Ejemplo:
 
 
 setInterval()
-- seguirá ejecutando una función en el futuro
+  - seguirá ejecutando una función en el futuro
+
+setInterval()
+  - devuelve un número
+  - podemos usarlo para detener el intervalo
+
+
+Ejemplo 2 usando setInterval:
+                      let juegoAuto = false;
+                      let interaloId;
+
+                      function autoPlay(){
+                          if(!juegoAuto){
+                            interaloId = setInterval(function(){
+                              const playerMove = pickComputerMove();
+                              playGame(playerMove);
+                              }, 1000);
+
+                              juegoAuto = true;
+                          }else {
+                              clearInterval(interaloId);
+
+                              juegoAuto = false;
+                          }
+
+                      }
+
+
+
+Recorrer una matriz
+for (let i = 0; i < array.length; i++) {
+...
+}
+
+Otra forma:
+.forEach()
+Pasar una función a otra función
+
+Ejemplo:
+        [
+          "Ver Youtube",
+          "Ir al Gym",
+          "Comer Tacos"    
+        ].forEach(function(value){ //pero a este se le pasa un parametro
+          console.log(value);  //recorre cada elemento del array y lo muestra en consola 
+        });
+
+
+
+.forEach() es la forma preferida de recorrer una matriz
