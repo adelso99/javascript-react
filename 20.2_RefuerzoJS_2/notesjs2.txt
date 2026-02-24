@@ -5398,6 +5398,8 @@ SOLUCION:
 
 -------------------------------------------LECCION 12 Funciones Avanzadas --------------------------------------------------------
 
-
-
 Las funciones son valores
+
+
+Tipos de valores:
+números (numbers), cadenas (strings), booleanos (buleanos)
