@@ -5599,6 +5599,152 @@ Ejemplo:
           console.log(value);  //recorre cada elemento del array y lo muestra en consola 
         });
 
-
-
 .forEach() es la forma preferida de recorrer una matriz
+
+Más fácil de leer que: que es lo mismo que en el forEach
+                      for (let i = 0; i <= array.length; i++) {
+                      const value = array[i];
+                      console.log(value);
+                      }
+
+
+tambien se puede usar asi con 2 parametros.
+Ejemplo:
+      [
+        "Ver Youtube",
+        "Ir al Gym",
+        "Comer Tacos"    
+      ].forEach(function(value, index){ //pero a este se le pasa un parametro de valor "value" que verifica cada elemento del array
+        console.log(index);     //tambien se le puede pasar un 2do parametro del indice "index" para verificar que inidce corresponde del array
+        console.log(value);  //recorre cada elemento del array y lo muestra en consola 
+      });
+
+
+Ejemplo 2 de uso real:
+              lista.forEach(function(elementoObject, index){
+                    const {name, fecha} = elementoObject;
+          
+                    const datoHtml = `
+                    <div>${name}</div>
+                    <div>${fecha}</div> 
+                      <button onclick="
+                            lista.splice(${index}, 1);
+                            localStorage.setItem('tareas', JSON.stringify(lista));
+                            añadirHtml();  
+                      " class="btn-eliminar" >Eliminar</button>
+                    `;
+          
+                    listaHtml += datoHtml;
+                    
+              });
+
+              //for normal
+              for(let i = 0; i < lista.length; i++){
+
+                  const elementoObject = lista[i];
+                  const {name, fecha} = elementoObject;
+
+                  const datoHtml = `
+                  <div>${name}</div>
+                  <div>${fecha}</div> 
+                    <button onclick="
+                          lista.splice(${i}, 1);
+                          localStorage.setItem('tareas', JSON.stringify(lista));
+                          añadirHtml();  
+                    " class="btn-eliminar" >Eliminar</button>
+                  `;
+
+                  listaHtml += datoHtml;
+
+              }     
+
+
+
+Ejemplo 3 usando "continue":
+  [
+    "Ver Youtube",
+    "Comer Tacos",
+    "Ir al Gym"    
+  ].forEach(function(value, index){ //2 parametros valor y index
+  if(value === "Comer Tacos"){ 
+    return;  //funciona casi como continue porque salta este elemento del array
+  }
+    console.log(index);     
+    console.log(value);  
+  });
+
+
+si quisieramos usar como el "break" para salir de un bucle es mejor usar un bucle for porque en forEach es dificil salir
+
+
+
+
+
+Lección 12 Ejercicios - Funciones avanzadas
+
+12a. Crea una variable llamada 'add' y guarda una función dentro. Esta función ejecutará la función dos veces.
+
+12b. Continuando con el ejercicio 12a, crea una función runTwice(fun) que tome una función (como parámetro) y la ejecute dos veces.
+ - runTwice(function() { console.log('12b'); }); => console.log('12b') dos veces
+ - runTwice(add); => console.log(5) dos veces
+
+12c. Crea el botón de abajo. Al hacer clic en el botón, después de 1 segundo, el texto dentro del botón cambia a '¡Terminado!'.
+(Sugerencia: usa setTimeout() y el DOM)
+
+  ¡Terminado!
+
+
+12d. Continuando con el ejercicio 12c, modifica el botón para que, al hacer clic en él, el texto cambie inmediatamente a 'Cargando...' y, después de 1 segundo, cambie a '¡Terminado!'.
+
+inicio --> Cargando... --> Fin
+
+
+12e. Crea el botón 'Añadir al carrito' que aparece a continuación. Al hacer clic en este botón, muestra el mensaje 'Añadido' debajo del botón. Luego, después de 2 segundos, elimina el mensaje.
+
+        Añadir al carrito
+        Añadido
+
+
+
+
+Ejercicios de desafío
+
+12f. Continuando con 12e, si hacemos clic en el botón, esperamos de 1 a 1.5 segundos y luego volvemos a hacer clic en el botón, observe que la segunda vez, el mensaje desaparece muy rápidamente (porque el primer setTimeout todavía se está ejecutando y hará que el mensaje desaparezca muy pronto).
+  - Modifique el código para que cuando hagamos clic en el botón, se “actualice” el tiempo de espera de 2 segundos (espera 2 segundos de nuevo y elimina el mensaje).
+  - Sugerencia: puede cancelar el setTimeout anterior usando clearTimeout()
+
+Añadir al carrito
+Añadido
+
+Incorrecto
+
+
+Añadir al carrito
+Añadido
+
+Correcto
+
+
+
+12g. Imagina que estamos creando una aplicación de mensajería. Usa setInterval() y document.title para crear la función de la derecha (el título cambia cada 1 segundo).
+
+Aplicación
+127.0.0.1:5500/1-exercise
+
+
+
+12h. Continuando desde 12g, en lugar de mostrar "(2) Mensajes nuevos" cada vez, guarda el número de mensajes en una variable: let messages = 2;
+  - Usa el número en la variable para determinar qué título mostrar.
+  - Crea 2 botones 'Añadir' / 'Eliminar' que aumenten o disminuyan la variable 'mensajes' en 1.
+
+Aplicación
+127.0.0.1:5500
+
+Añadir  Eliminar
+
+
+
+12i. Continuando desde 12h:
+  -  No dejes que 'mensajes' baje de 0.
+  -  Si messages === 0, deja de cambiar el título y muestra 'App' como título.
+  -  Cuando messages > 0, empieza a cambiar el título de nuevo

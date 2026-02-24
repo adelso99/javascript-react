@@ -96,10 +96,14 @@
 
   [
     "Ver Youtube",
-    "Ir al Gym",
-    "Comer Tacos"    
-  ].forEach(function(value){ //pero a este se le pasa un parametro
-    console.log(value);  //recorre cada elemento del array y lo muestra en consola 
+    "Comer Tacos",
+    "Ir al Gym"    
+  ].forEach(function(value, index){ //2 parametros valor y index
+  if(value === "Comer Tacos"){ 
+    return;  //funciona casi como continue porque salta este elemento del array
+  }
+    console.log(index);     
+    console.log(value);  
   });
 
     
