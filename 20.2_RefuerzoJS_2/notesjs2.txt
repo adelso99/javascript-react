@@ -5495,3 +5495,11 @@ Pasar un valor a una función
 
 
 También podemos pasar una función a una función
+Ejemplo:
+    function nuevo3(param) { //funcion revise la funcion que se le esta psanndo como parametro
+      param();  // se ejecuta la funcion del parametro
+    }
+
+    nuevo3(function(){       //se esta pasando una funcion como parametro a otra funcion  
+      console.log("Hola 5");  
+    });

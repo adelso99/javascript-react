@@ -64,6 +64,14 @@
       display("Hola 4"); //entra en la funcion  y muestra el parametro ingresado en este caso "Hola 4"
 
 
+    function nuevo3(param) { //funcion revise la funcion que se le esta psanndo como parametro
+      param();  // se ejecuta la funcion del parametro
+    }
+
+    nuevo3(function(){       //se esta pasando una funcion como parametro a otra funcion  
+      console.log("Hola 5");  
+    });
+
     </script>
   
 </body>
