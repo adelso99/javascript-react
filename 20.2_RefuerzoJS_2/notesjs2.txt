@@ -5416,3 +5416,38 @@ Ejemplo:
 tambien podemos gaurdar funciones dentro de las variables
 Ejemplo:
 
+          const funcion1 = function funVar(){
+            console.log("Hola 2");
+
+          }; //se le coloca punto y coma al final porque se esta guardando dentro de una variable
+
+          console.log(funcion1);
+          /* En consola muestra la funcion de la variable
+          ƒ funVar(){
+            console.log("Hola 2");
+
+          }
+          */
+
+          console.log(typeof funcion1); //muestra que es una funcion 
+
+          //tambien podemos llamar a la funcion que esta siendo guardad dentro de una variable de esta forma
+          funcion1(); // llama a la funcion tambien
+          
+
+limpia de codigo:
+       Con Función anónima  -> (función sin nombre):
+                                                    const funcion1 = function(){ //funcion anonima
+                                                      console.log("Hola 2");
+
+                                                    }; //se le coloca punto y coma al final porque se esta guardando dentro de una variable
+
+
+
+
+
+¿Qué más podemos hacer con un valor?
+- guardar un valor en un objeto
+se puede guarda funciones dentro de un objeto 
+
+Ejemplo:

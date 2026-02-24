@@ -27,7 +27,7 @@
 
       const num1 = 20;
 
-      const funcion1 = function funVar(){
+      const funcion1 = function(){  //funcion anonima
         console.log("Hola 2");
 
       }; //se le coloca punto y coma al final porque se esta guardando dentro de una variable
@@ -45,6 +45,18 @@
       //tambien podemos llamar a la funcion que esta siendo guardad dentro de una variable de esta forma
       funcion1(); // llama a la funcion tambien
       
+      const objeto1 = {
+        num: 1,
+        fun: function funNueva(){
+          console.log("Hola 3");
+        }
+      };
+
+      //accedemos a la funcion del objeto con el metodo de puntos
+      objeto1.fun(); //muestra el msj que esta en la funcion con el llamado
+
+
+
 
     </script>
   
