@@ -5521,3 +5521,17 @@ Ejemplo:
       console.log("timeout"); 
     }, 3000);  //2. Parametro --> es el tiempo de espera en ejecutar la funcion --> 3000 milisegundos son 3 segundos de espera para que muestre el msj
 
+    console.log("Siguiente Linea");
+
+
+
+Código asíncrono
+-no esperará a que termine una línea antes de pasar a la siguiente
+esto es muy parecido a temporizador
+
+Ventaja:
+-no bloquea nuestro código durante 3
+
+
+
+funcion de "setInterval()"
