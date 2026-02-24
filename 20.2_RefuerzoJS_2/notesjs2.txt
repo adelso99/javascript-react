@@ -5451,3 +5451,47 @@ limpia de codigo:
 se puede guarda funciones dentro de un objeto 
 
 Ejemplo:
+          const objeto1 = {
+            num: 1,
+            fun: function funNueva(){
+              console.log("Hola 3");
+            }
+          };
+
+          //accedemos a la funcion del objeto con el metodo de puntos
+          objeto1.fun(); //muestra el msj que esta en la funcion con el llamado
+
+
+
+esto se conoce como método --> (función guardada dentro de un objeto)
+
+tambien podemos optimizar el codigo usando funciones anonimas:
+      const objeto1 = {
+        num: 1,
+        fun: function(){
+          console.log("Hola 3");
+        }
+      };
+
+      //accedemos a la funcion del objeto con el metodo de puntos
+      objeto1.fun(); //muestra el msj que esta en la funcion con el llamado
+
+
+
+
+¿Qué más podemos hacer con un valor?
+-pasar un valor a una función
+Ejemplo:
+      function display(param){
+          console.log(param);
+      }
+
+      display("Hola 4"); //entra en la funcion  y muestra el parametro ingresado en este caso "Hola 4"
+
+
+Pasar un valor a una función
+
+
+
+
+También podemos pasar una función a una función
