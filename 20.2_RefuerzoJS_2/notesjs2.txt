@@ -5496,10 +5496,28 @@ Pasar un valor a una función
 
 También podemos pasar una función a una función
 Ejemplo:
-    function nuevo3(param) { //funcion revise la funcion que se le esta psanndo como parametro
-      param();  // se ejecuta la funcion del parametro
-    }
+        function nuevo3(param) { //funcion revise la funcion que se le esta psanndo como parametro
+          param();  // se ejecuta la funcion del parametro
+        }
 
-    nuevo3(function(){       //se esta pasando una funcion como parametro a otra funcion  
-      console.log("Hola 5");  
-    });
+        nuevo3(function(){       //se esta pasando una funcion como parametro a otra funcion  
+          console.log("Hola 5");  
+        });
+  
+Pasar una función a otra función
+
+
+
+
+
+caratesistica de JavaScript que es "setTimeout()"
+-nos permite ejecutar una función en el futuro
+este toma 2 parametros:
+      1. Una función que queremos ejecutar en el futuro
+      2. ¿Cuánto tiempo hay que esperar antes de ejecutar esta función? --> (un número en milisegundos)
+
+Ejemplo:
+    setTimeout(function(){    //1. Parametro --> estamos usando un funcion como valor
+      console.log("timeout"); 
+    }, 3000);  //2. Parametro --> es el tiempo de espera en ejecutar la funcion --> 3000 milisegundos son 3 segundos de espera para que muestre el msj
+
