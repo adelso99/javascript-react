@@ -5402,4 +5402,17 @@ Las funciones son valores
 
 
 Tipos de valores:
-números (numbers), cadenas (strings), booleanos (buleanos)
+números (numbers), cadenas (strings), booleanos (booleans)
+
+Ejemplo:
+      function nuevo(){
+        console.log("Hola");
+      }
+
+      nuevo();
+
+
+
+tambien podemos gaurdar funciones dentro de las variables
+Ejemplo:
+
