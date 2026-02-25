@@ -5683,10 +5683,67 @@ si quisieramos usar como el "break" para salir de un bucle es mejor usar un bucl
 Lección 12 Ejercicios - Funciones avanzadas
 
 12a. Crea una variable llamada 'add' y guarda una función dentro. Esta función ejecutará la función dos veces.
+SOLUCION:
+        function nuevo(){
+          console.log("Hola");
+        }
+
+
+        let add = function(){
+          nuevo();
+          nuevo();
+        };
+
+        add(); //muestra en cosola el llamdo de la funcion y ejecuta el llamado 2 veces la funcion anterior
+
+
+SOLUCION 2:
+      const add = function() {
+        console.log(2 + 3);
+      };
+
+      add();
+      add();
+
+
 
 12b. Continuando con el ejercicio 12a, crea una función runTwice(fun) que tome una función (como parámetro) y la ejecute dos veces.
  - runTwice(function() { console.log('12b'); }); => console.log('12b') dos veces
  - runTwice(add); => console.log(5) dos veces
+
+ SOLUCION:
+            let add = function(){
+              console.log("Hola");
+            };
+
+            function runTwice(fun){
+              for(let i = 0; i < 2; i++){
+                fun();
+              }
+            }
+
+            runTwice(function(){ 
+              console.log('12b'); 
+            }); // console.log('12b') 1 vece
+
+
+            runTwice(add); //console.log("Hola") dos veces
+
+
+SOLUCION 2:
+            function runTwice(fun) {
+              fun();
+              fun();
+            }
+
+            runTwice(function() {
+              console.log('12b');
+            });
+            
+            runTwice(add);
+
+
+
 
 12c. Crea el botón de abajo. Al hacer clic en el botón, después de 1 segundo, el texto dentro del botón cambia a '¡Terminado!'.
 (Sugerencia: usa setTimeout() y el DOM)
