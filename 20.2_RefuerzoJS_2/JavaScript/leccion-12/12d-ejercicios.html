@@ -13,7 +13,9 @@
 <body>
   <h1>Leccion 12 - Ejercicios</h1>
 
-  <button>Inicio</button>
+  <button class="js-btn" onclick="
+      interruptor();
+  ">Inicio</button>
 
 
 
@@ -27,6 +29,15 @@
           ¡Terminado!
       */
 
+
+      function interruptor(){
+        const dato = document.querySelector('.js-btn')
+
+          setTimeout(function() {
+            dato.innerHTML = 'Terminado';     
+          }, 1000);
+
+      }
 
 
 

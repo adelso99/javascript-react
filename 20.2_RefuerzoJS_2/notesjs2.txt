@@ -5750,6 +5750,13 @@ SOLUCION 2:
 
   ¡Terminado!
 
+SOLUCION 1:
+           <button class="js-btn" onclick="
+                  setTimeout(function encender(){
+                  document.querySelector('.js-btn').innerHTML = 'Terminado';     
+                }, 1000);
+            ">Inicio</button>
+
 
 12d. Continuando con el ejercicio 12c, modifica el botón para que, al hacer clic en él, el texto cambie inmediatamente a 'Cargando...' y, después de 1 segundo, cambie a '¡Terminado!'.
 
