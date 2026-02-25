@@ -13,9 +13,10 @@
 <body>
   <h1>Leccion 12 - Ejercicios</h1>
 
-  <button class="js-btn" onclick="
-      interruptor();
-  ">Inicio</button>
+  <button onclick="
+      estado();
+  ">Añadir al Carrito</button>
+  <p class="js-p"></p>
 
 
 
@@ -23,19 +24,21 @@
     <!--Carga de JavaScript Interno-->
     <script>
       /*
-        12c. Crea el botón de abajo. Al hacer clic en el botón, después de 1 segundo, el texto dentro del botón cambia a '¡Terminado!'.
-        (Sugerencia: usa setTimeout() y el DOM)
+      12e. Crea el botón 'Añadir al carrito' que aparece a continuación. Al hacer clic en este botón, muestra el mensaje 'Añadido' debajo del botón. Luego, después de 2 segundos, elimina el mensaje.
 
-          ¡Terminado!
+        Añadir al carrito
+        Añadido
       */
 
 
-      function interruptor(){
-        const dato = document.querySelector('.js-btn')
+      function estado(){
+        const dato = document.querySelector('.js-p');
+
+            dato.innerHTML = 'Añadido';     
 
           setTimeout(function() {
-            dato.innerHTML = 'Terminado';     
-          }, 1000);
+            dato.innerHTML = '';     
+          }, 2000);
 
       }
 
@@ -51,6 +54,40 @@
 
 
       /*
+
+        <button class="js-btn" onclick="
+            interruptor();
+        ">Inicio</button>
+
+
+            function interruptor(){
+        const dato = document.querySelector('.js-btn');
+
+            dato.innerHTML = 'Cargando...';     
+
+          setTimeout(function() {
+            dato.innerHTML = 'Terminado';     
+          }, 1000);
+
+      }
+
+
+
+
+        <button class="js-btn" onclick="
+            interruptor();
+        ">Inicio</button>
+
+
+            function interruptor(){
+        const dato = document.querySelector('.js-btn');
+
+          setTimeout(function() {
+            dato.innerHTML = 'Terminado';     
+          }, 1000);
+
+      }
+
 
       let add = function(){
         console.log("Hola");

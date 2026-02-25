@@ -5758,9 +5758,40 @@ SOLUCION 1:
             ">Inicio</button>
 
 
+SOLUCION 2 correcta llamar con funcion no dejar suelto del setTimeout:
+                  <button class="js-btn" onclick="
+                      interruptor();
+                  ">Inicio</button>
+
+                      function interruptor(){
+                        const dato = document.querySelector('.js-btn')
+
+                          setTimeout(function() {
+                            dato.innerHTML = 'Terminado';     
+                          }, 1000);
+
+                      }
+
+
+
 12d. Continuando con el ejercicio 12c, modifica el botón para que, al hacer clic en él, el texto cambie inmediatamente a 'Cargando...' y, después de 1 segundo, cambie a '¡Terminado!'.
 
 inicio --> Cargando... --> Fin
+
+SOLUCION:
+
+
+      function interruptor(){
+        const dato = document.querySelector('.js-btn')
+
+            dato.innerHTML = 'Cargando...';     
+
+          setTimeout(function() {
+            dato.innerHTML = 'Terminado';     
+          }, 1000);
+
+      }
+
 
 
 12e. Crea el botón 'Añadir al carrito' que aparece a continuación. Al hacer clic en este botón, muestra el mensaje 'Añadido' debajo del botón. Luego, después de 2 segundos, elimina el mensaje.
@@ -5768,6 +5799,23 @@ inicio --> Cargando... --> Fin
         Añadir al carrito
         Añadido
 
+SOLUCION:
+          <button onclick="
+              estado();
+          ">Añadir al Carrito</button>
+          <p class="js-p"></p>
+
+
+              function estado(){
+                const dato = document.querySelector('.js-p');
+
+                    dato.innerHTML = 'Añadido';     
+
+                  setTimeout(function() {
+                    dato.innerHTML = '';     
+                  }, 2000);
+
+              }
 
 
 
