@@ -14,9 +14,12 @@
   <h1>Leccion 12 - Ejercicios</h1>
 
   <button onclick="
-      estado();
-  ">Añadir al Carrito</button>
-  <p class="js-p"></p>
+    mensajes++;
+  ">Añadir</button>
+
+  <button onclick="
+    mensajes--;
+  ">Eliminar</button>
 
 
 
@@ -24,12 +27,47 @@
     <!--Carga de JavaScript Interno-->
     <script>
       /*
-      12f. Continuando con 12e, si hacemos clic en el botón, esperamos de 1 a 1.5 segundos y luego volvemos a hacer clic en el botón, observe que la segunda vez, el mensaje desaparece muy rápidamente (porque el primer setTimeout todavía se está ejecutando y hará que el mensaje desaparezca muy pronto).
-        - Modifique el código para que cuando hagamos clic en el botón, se “actualice” el tiempo de espera de 2 segundos (espera 2 segundos de nuevo y elimina el mensaje).
-        - Sugerencia: puede cancelar el setTimeout anterior usando clearTimeout()
+      12h. Continuando desde 12g, en lugar de mostrar "(2) Mensajes nuevos" cada vez, guarda el número de mensajes en una variable: let messages = 2;
+        - Usa el número en la variable para determinar qué título mostrar.
+        - Crea 2 botones 'Añadir' / 'Eliminar' que aumenten o disminuyan la variable 'mensajes' en 1.
+
+      Aplicación
+      127.0.0.1:5500
+
+      Añadir  Eliminar
       */
 
-     let tiempo;
+      let mensajes = 2;
+
+      setInterval(function(){
+          if(mensajes === 0){
+            document.title = "App"; 
+          }else if(document.title === "App" && mensajes > 0){
+            document.title = `(${mensajes}) Mensajes nuevos`;
+          }else {
+            document.title = "App";
+          }
+
+      }, 1000);
+
+
+
+
+
+
+
+
+
+
+
+
+      /*
+        <button onclick="
+            estado();
+        ">Añadir al Carrito</button>
+        <p class="js-p"></p>
+
+             let tiempo;
 
 
       function estado(){
@@ -52,13 +90,6 @@
 
 
 
-
-
-
-
-
-
-      /*
         <button onclick="
             estado();
         ">Añadir al Carrito</button>

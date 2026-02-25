@@ -5889,6 +5889,16 @@ Simplemente no genera error.
 Aplicación
 127.0.0.1:5500/1-exercise
 
+SOLUCION:
+          setInterval(function(){
+              if(document.title === "App"){
+                document.title = "(2) New messages"; 
+              }else {
+                document.title = "App";
+              }
+
+          }, 1000);
+
 
 
 12h. Continuando desde 12g, en lugar de mostrar "(2) Mensajes nuevos" cada vez, guarda el número de mensajes en una variable: let messages = 2;
@@ -5900,9 +5910,142 @@ Aplicación
 
 Añadir  Eliminar
 
+SOLUCION:
+        <button onclick="
+          mensajes++;
+        ">Añadir</button>
+
+        <button onclick="
+          mensajes--;
+        ">Eliminar</button>
+
+
+            let mensajes = 2;
+
+            setInterval(function(){
+                if(mensajes === 0){
+                  document.title = "App"; 
+                }else if(document.title === "App" && mensajes > 0){
+                  document.title = `(${mensajes}) Mensajes nuevos`;
+                }else {
+                  document.title = "App";
+                }
+
+            }, 1000);
+
+SOLUCION 2:
+          <button onclick="
+            messages++;
+          ">Add</button>
+
+          <button onclick="
+            messages--;
+          ">Remove</button>
+
+
+            let messages = 2;
+
+            setInterval(function() {
+              if (document.title === 'App') {
+                document.title = `(${messages}) New messages`;
+              } else {
+                document.title = 'App';
+              }
+            }, 1000);
+
 
 
 12i. Continuando desde 12h:
   -  No dejes que 'mensajes' baje de 0.
   -  Si messages === 0, deja de cambiar el título y muestra 'App' como título.
   -  Cuando messages > 0, empieza a cambiar el título de nuevo
+
+
+
+SOLUCION:
+        <button onclick="
+          mensajes++;
+        ">Añadir</button>
+
+        <button onclick="
+          mensajes--;
+        ">Eliminar</button>
+
+
+            let mensajes = 2;
+
+            setInterval(function(){
+                if(mensajes === 0){
+                  document.title = "App"; 
+                }else if(document.title === "App" && mensajes > 0){
+                  document.title = `(${mensajes}) Mensajes nuevos`;
+                }else {
+                  document.title = "App";
+                }
+
+            }, 1000);
+
+
+SOLUCION 2:
+            <!--
+              Nota: Esta es solo una solución de ejemplo.
+              Otras soluciones son posibles, así que no te preocupes
+              si tu solución se ve diferente.
+            -->
+
+            <button onclick="
+              messages++;
+              displayNotification();
+            ">Add</button>
+
+            <button onclick="
+              if (messages > 0) {
+                messages--;
+
+                // Si no hay mensajes nuevos, dejar de mostrar
+                // la notificación en la pestaña.
+                if (messages === 0) {
+                  stopNotification();
+                }
+              }
+            ">Remove</button>
+
+            <script>
+              let messages = 2;
+
+              // Guardamos el ID del intervalo por si necesitamos cancelarlo.
+              let intervalId;
+
+              // Usaremos esta variable para llevar el control
+              // de si estamos mostrando la notificación o no.
+              let isDisplayingNotification;
+
+              // Empezar a mostrar la notificación en la pestaña
+              // cuando la página se cargue por primera vez.
+              displayNotification();
+
+              function displayNotification() {
+                // Si ya estamos mostrando la notificación,
+                // detener esta función porque no queremos
+                // crear 2 intervalos al mismo tiempo.
+                if (isDisplayingNotification) {
+                  return;
+                }
+
+                isDisplayingNotification = true;
+
+                intervalId = setInterval(function() {
+                  if (document.title === 'App') {
+                    document.title = `(${messages}) New messages`;
+                  } else {
+                    document.title = 'App';
+                  }
+                }, 1000);
+              }
+
+              function stopNotification() {
+                isDisplayingNotification = false;
+
+                clearInterval(intervalId);
+                document.title = 'App';
+              }
