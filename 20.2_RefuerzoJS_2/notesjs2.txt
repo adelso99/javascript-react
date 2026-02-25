@@ -5819,6 +5819,8 @@ SOLUCION:
 
 
 
+
+
 Ejercicios de desafío
 
 12f. Continuando con 12e, si hacemos clic en el botón, esperamos de 1 a 1.5 segundos y luego volvemos a hacer clic en el botón, observe que la segunda vez, el mensaje desaparece muy rápidamente (porque el primer setTimeout todavía se está ejecutando y hará que el mensaje desaparezca muy pronto).
@@ -5835,6 +5837,50 @@ Añadir al carrito
 Añadido
 
 Correcto
+
+
+SOLUCION:
+          <button onclick="
+              estado();
+          ">Añadir al Carrito</button>
+          <p class="js-p"></p>
+
+
+            let tiempo;
+
+
+              function estado(){
+                const dato = document.querySelector('.js-p');
+
+                clearTimeout(tiempo); //cancela el id del setTimeout, si es si entonces elimina ese y crea de nuevo los 2sgs, si no esto lo salta
+
+                    dato.innerHTML = 'Añadido';     
+
+                  tiempo = setTimeout(function() {
+                    dato.innerHTML = '';    
+                  }, 2000);
+              
+
+
+              }
+
+
+
+
+clearTimeout no “verifica” primero.
+Simplemente intenta cancelar el temporizador con ese ID.
+
+Si ese ID:
+
+✅ Existe → lo cancela.
+
+❌ No existe / ya terminó / es undefined → no pasa nada.
+
+Pero no hace un if interno que tú puedas ver.
+Simplemente no genera error.
+
+
+
 
 
 

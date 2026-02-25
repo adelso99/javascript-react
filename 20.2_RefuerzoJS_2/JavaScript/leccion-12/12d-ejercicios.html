@@ -24,21 +24,26 @@
     <!--Carga de JavaScript Interno-->
     <script>
       /*
-      12e. Crea el botón 'Añadir al carrito' que aparece a continuación. Al hacer clic en este botón, muestra el mensaje 'Añadido' debajo del botón. Luego, después de 2 segundos, elimina el mensaje.
-
-        Añadir al carrito
-        Añadido
+      12f. Continuando con 12e, si hacemos clic en el botón, esperamos de 1 a 1.5 segundos y luego volvemos a hacer clic en el botón, observe que la segunda vez, el mensaje desaparece muy rápidamente (porque el primer setTimeout todavía se está ejecutando y hará que el mensaje desaparezca muy pronto).
+        - Modifique el código para que cuando hagamos clic en el botón, se “actualice” el tiempo de espera de 2 segundos (espera 2 segundos de nuevo y elimina el mensaje).
+        - Sugerencia: puede cancelar el setTimeout anterior usando clearTimeout()
       */
+
+     let tiempo;
 
 
       function estado(){
         const dato = document.querySelector('.js-p');
 
+        clearTimeout(tiempo); //cancela el id del setTimeout, si es si entonces elimina ese y crea de nuevo los 2sgs, si no esto lo salta
+
             dato.innerHTML = 'Añadido';     
 
-          setTimeout(function() {
-            dato.innerHTML = '';     
+          tiempo = setTimeout(function() {
+            dato.innerHTML = '';    
           }, 2000);
+      
+
 
       }
 
@@ -54,6 +59,25 @@
 
 
       /*
+        <button onclick="
+            estado();
+        ">Añadir al Carrito</button>
+        <p class="js-p"></p>
+
+        
+      function estado(){
+        const dato = document.querySelector('.js-p');
+
+            dato.innerHTML = 'Añadido';     
+
+          setTimeout(function() {
+            dato.innerHTML = '';     
+          }, 2000);
+
+      }
+
+
+
 
         <button class="js-btn" onclick="
             interruptor();
