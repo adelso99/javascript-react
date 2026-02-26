@@ -6101,3 +6101,20 @@ Atajos en la funcion de Flechas
 
 
 Pasando una función a otra función, usar funciones de flecha
+
+
+
+
+
+Método abreviado en funciones cuando se guardan en objetos
+Ejemplo:
+      const objeto2 = {
+        metodo: () =>{  //Funcion de Flecha
+
+        },
+        metodo(){  //esto es un Método abreviado de funcione en objetos -- es objetos es mejor usar esta sintaxis al guardar funciones
+
+        }
+
+      };
+
