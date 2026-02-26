@@ -6098,3 +6098,6 @@ Atajos en la funcion de Flechas
   const unLinea = () => 2 + 3; ; //cuando en la funcion de flecha solo tiene 1 linea se puede quitar {} y si tiene return tambien
 
   console.log(unLinea()); //en consola 5
+
+
+Pasando una función a otra función, usar funciones de flecha

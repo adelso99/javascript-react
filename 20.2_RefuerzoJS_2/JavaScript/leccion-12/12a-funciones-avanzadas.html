@@ -98,7 +98,7 @@
     "Ver Youtube",
     "Comer Tacos",
     "Ir al Gym"    
-  ].forEach(function(value, index){ //2 parametros valor y index
+  ].forEach( (value, index) => { //2 parametros valor y index
   if(value === "Comer Tacos"){ 
     return;  //funciona casi como continue porque salta este elemento del array
   }
@@ -107,11 +107,11 @@
   });
 
 
-  const funcionNormal = function(){
-    console.log("Funcion Normal");
-  };
+  const funcionNormal = () => console.log("Funcion Normal");
 
   funcionNormal();
+
+  
 
   const funcionFlecha = () => { //en vez de colocar esto: function() -- se coloca esto: () =>
     console.log("Funcion de Flechas");
