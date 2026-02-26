@@ -6081,3 +6081,20 @@ Ejemplo de comparación:
                       };
 
                       funcionFlecha();
+
+
+
+
+Atajos en la funcion de Flechas
+
+  const unParametro = param => { //en la funcion de flechas cuando solo es 1 parametro se pueden quitar los ()
+    console.log(param + 1);
+  };
+
+
+  unParametro(1); //en consola 2
+
+
+  const unLinea = () => 2 + 3; ; //cuando en la funcion de flecha solo tiene 1 linea se puede quitar {} y si tiene return tambien
+
+  console.log(unLinea()); //en consola 5
