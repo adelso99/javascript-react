@@ -22,8 +22,13 @@ let juegoAuto = false;
 let interaloId;
 
 function autoPlay(){
+    /* en el autoPlay mejor no dejarlo como funcion de flecha porque:
+    1. Más fácil de leer
+    2. Izamiento
+    */
+
     if(!juegoAuto){
-       interaloId = setInterval(function(){
+       interaloId = setInterval(() => { //Funcion de Flecha
         const playerMove = pickComputerMove();
         playGame(playerMove);
         }, 1000);

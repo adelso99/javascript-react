@@ -23,7 +23,7 @@ añadirHtml();// llamado de funcion para ver elementos en la web
 function añadirHtml(){
       let listaHtml = "";
 
-      lista.forEach(function(elementoObject, index){
+      lista.forEach( (elementoObject, index) => { //Funcion de Flecha
             const {name, fecha} = elementoObject;
   
             const datoHtml = `
