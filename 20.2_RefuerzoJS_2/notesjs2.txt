@@ -6049,3 +6049,11 @@ SOLUCION 2:
                 clearInterval(intervalId);
                 document.title = 'App';
               }
+
+
+
+
+
+
+
+-------------------------------------------LECCION 12 Parte 2 Funciones Avanzadas --------------------------------------------------------
