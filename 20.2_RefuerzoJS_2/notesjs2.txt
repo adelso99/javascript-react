@@ -6118,3 +6118,10 @@ Ejemplo:
 
       };
 
+
+
+
+
+en vez de usar onclick="" en el HTML mejor .addEventListener() en JavaScript que es mas limpio
+
+
