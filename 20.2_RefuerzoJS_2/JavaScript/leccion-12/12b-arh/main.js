@@ -42,23 +42,28 @@ function autoPlay(){
 
 }
 
+//DOM de Boton Juego Automatico
+const btnAuto = document.querySelector(".js-btn-auto");
+btnAuto.addEventListener("click", () => {
+    autoPlay();
+});
+
+
 
 //DOM de Boton de Piedra
 const btnPiedra = document.querySelector(".js-btn-piedra");
-btnPiedra.addEventListener("click", () => {
-    playGame("piedra");
-});
+btnPiedra.addEventListener("click", () => playGame("piedra"));
 
 //DOM de Boton de Papel
 const btnPapel = document.querySelector(".js-btn-papel");
 btnPapel.addEventListener("click", () =>{
-    playGame("papel")
+    playGame("papel");
 });
 
 //DOM de Boton Tijera
 const btnTijera = document.querySelector(".js-btn-tijera");
 btnTijera.addEventListener("click", ()=> {
-    playGame("tijera")
+    playGame("tijera");
 });
 
 
@@ -141,3 +146,16 @@ function actualizarPuntaje(){ //funcion para actualizar puntaje que se visualice
 
             return computerMove;
 }
+
+
+//DOM de Boton Reinicio
+const btnReinicio = document.querySelector(".js-btn-reinicio");
+btnReinicio.addEventListener("click", ()=> {
+    puntuacion.victorias = 0;
+    puntuacion.derrotas = 0;
+    puntuacion.empates = 0;
+
+    actualizarPuntaje();
+    localStorage.removeItem('puntuacion'); //elimina el valor almacenado
+});
+

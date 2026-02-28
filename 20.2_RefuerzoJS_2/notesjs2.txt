@@ -6166,3 +6166,10 @@ Ejemplo:
 
       1. Añadir varios detectores de eventos
       2. Eliminar un detector de eventos
+
+
+
+
+
+
+uso de otro evento con .addEventListener() que es 'keydown' de tecla

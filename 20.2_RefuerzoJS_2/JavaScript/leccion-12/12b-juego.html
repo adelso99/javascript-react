@@ -34,19 +34,9 @@
   <p class="js-movimientos"></p>
   <p class="js-puntuacion puntaje"></p>
 
-  <button onclick="
-    puntuacion.victorias = 0;
-    puntuacion.derrotas = 0;
-    puntuacion.empates = 0;
+  <button class="reinicio js-btn-reinicio">Reiniciar Puntuacion</button>
 
-    actualizarPuntaje();
-    localStorage.removeItem('puntuacion'); //elimina el valor almacenado
-
-  " class="reinicio">Reiniciar Puntuacion</button>
-
-  <button class="btn-auto" onclick="
-    autoPlay();
-  ">Juego Automatico</button>
+  <button class="btn-auto js-btn-auto">Juego Automatico</button>
 
 
 
