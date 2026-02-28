@@ -6124,4 +6124,23 @@ Ejemplo:
 
 en vez de usar onclick="" en el HTML mejor .addEventListener() en JavaScript que es mas limpio
 
+.addEventListener()
+-nos permite ejecutar código cuando interactuamos con el elemento
+- este tiene 2 parametros
+  1. event --> es el evento o tipo de interraccion que se desea escuchar
+  2. Una función que queremos ejecutar
 
+Ejemplo:
+           <button onclick="" class="js-btn-click">Click</button>
+
+            const btnClick =  document.querySelector(".js-btn-click");
+
+            btnClick.addEventListener("click", () => { //parametro 1 que es el evento -- sera el evento click
+              console.log("click");  // cada vez que se haga click en el boton de click este msj se muestra en consola 
+            }); 
+
+
+
+
+
+1. Múltiples detectores de eventos para un evento
