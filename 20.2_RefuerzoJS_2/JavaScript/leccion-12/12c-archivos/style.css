@@ -19,13 +19,13 @@ body{
 
 .name-input,
 .fecha-input,
-.btn-añadir,
+.btn-add,
 .btn-eliminar{
     font-size: 15px;
     padding: 6px;
 }
 
-.btn-añadir{
+.btn-add{
     background-color: green;
     color: white;
     border: none;

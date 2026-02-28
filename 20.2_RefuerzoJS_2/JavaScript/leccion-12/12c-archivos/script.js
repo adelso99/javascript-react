@@ -17,10 +17,10 @@ if(datosGuardados !== null){
 
 
 
-añadirHtml();// llamado de funcion para ver elementos en la web
+addHtml();// llamado de funcion para ver elementos en la web
 
 
-function añadirHtml(){
+function addHtml(){
       let listaHtml = "";
 
       lista.forEach( (elementoObject, index) => { //Funcion de Flecha
@@ -32,7 +32,7 @@ function añadirHtml(){
               <button onclick="
                     lista.splice(${index}, 1);
                     localStorage.setItem('tareas', JSON.stringify(lista));
-                    añadirHtml();  
+                    addHtml();  
               " class="btn-eliminar" >Eliminar</button>
             `;
   
@@ -46,8 +46,15 @@ function añadirHtml(){
 }
 
 
+//Dom Boton de Añadir
+const btnAdd = document.querySelector(".js-btn-add");
+btnAdd.addEventListener("click", () =>{
+      addLista();
+});
 
-function añadirLista(){
+
+
+function addLista(){
 
       const dato = document.querySelector(".js-dato");
       const name = dato.value;
@@ -68,7 +75,7 @@ function añadirLista(){
       dato.value = "";
 
 
-      añadirHtml();// llamado de funcion para ver actualice los elementos en la web
+      addHtml();// llamado de funcion para ver actualice los elementos en la web
 
       localStorage.setItem("tareas", JSON.stringify(lista));
 

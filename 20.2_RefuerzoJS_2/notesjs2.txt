@@ -6172,4 +6172,35 @@ Ejemplo:
 
 
 
-uso de otro evento con .addEventListener() que es 'keydown' de tecla
+uso de otro evento con .addEventListener() que es 'keydown' de tecla:
+Ejemplo:
+document.body.addEventListener("keydown", () => {
+    console.log("keydown");
+});
+
+
+Pero como sabemos que tecla se esta precionado:
+eso se consigue pasandole el evento como parametro a la funcion del addEventListener
+Ejemplo:
+        document.body.addEventListener("keydown", (event) => {
+            console.log(event.key); //key es la letra en especifico que se esta teclando
+        });
+
+
+Ejemplo 2:
+Juega con el teclado
+  escribe 'r' => jugar piedra
+  escribe 'p' => jugar papel
+  escribe 's' => Juega tijeras
+
+Soucion :
+          document.body.addEventListener("keydown", (event) => {
+              if(event.key === "r"){
+                  playGame("piedra");
+              }else if(event.key === "p"){
+                  playGame("papel");
+              }else if(event.key === "s"){
+                  playGame("tijera");
+              }
+          });
+

@@ -67,6 +67,20 @@ btnTijera.addEventListener("click", ()=> {
 });
 
 
+//Evento de Teclado 
+document.body.addEventListener("keydown", (event) => {
+    if(event.key === "r"){
+        playGame("piedra");
+    }else if(event.key === "p"){
+        playGame("papel");
+    }else if(event.key === "s"){
+        playGame("tijera");
+    }
+});
+
+
+
+
 function playGame(playerMove) {
         const computerMove = pickComputerMove();
 
