@@ -6242,3 +6242,27 @@ Ejemplo con boton de Eliminar:
 
 
 Más características que utilizan funciones como valores
+  2 métodos de matriz más:
+  .filter() y .map()
+
+
+.filter() y la funcion que se realiza en este recibe 2 parametros el valor y el indice
+[1, -3, 5]  --> [1, 5]
+Números negativos eliminados
+-devuelve verdadero si es positivo
+-devuelve falso si es negativo
+
+.filter()  --> numeros mayores que 0 true -- numeros menores que 0 false
+    1. Crea una nueva matriz []
+    2. Devuelve verdadero, => coloca el valor en la matriz
+    3. Devuelve falso, => no coloca el valor en la matriz
+
+solucion:
+        console.log([1, -3, 5].filter((value, index) => {
+          if(value >= 0){
+            return true;
+          }else if(value < 0){
+            return false;
+          }
+
+        }));
