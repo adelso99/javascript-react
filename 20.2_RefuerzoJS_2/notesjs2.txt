@@ -6246,7 +6246,7 @@ Más características que utilizan funciones como valores
   .filter() y .map()
 
 
-.filter() y la funcion que se realiza en este recibe 2 parametros el valor y el indice
+.filter() y la funcion que se realiza en este recibe 2 parametros el valor  del array y el indice del array
 [1, -3, 5]  --> [1, 5]
 Números negativos eliminados
 -devuelve verdadero si es positivo
@@ -6282,4 +6282,36 @@ solucion simplificada:
 
       }));
   
-  
+
+
+
+.map() 
+tenemos un array [1, 1, 3] --> se quiere hacer una copia pero que se multiplique * 2 --> [2, 2, 6]
+tambien la funcion que se crea, recibe 2 parametros el valor  del array y el indice del array
+
+.map()
+  1. Crea una nueva matriz []
+  2. Lo que devolvamos => se añade a la nueva matriz
+
+.map() = transformar una matriz en otra matriz
+
+solucion:
+        console.log([1, 1, 3].map((value, index) => {
+          return value * 2;
+        }));
+
+
+solucion compacta:
+                  console.log([1, 1, 3].map((value, index) => {
+                    return value * 2;
+                  }));
+                  
+                  // misma funcion pero mas compacta con la funcion de flecha
+                  console.log([1, 1, 3].map(value => value * 2));  //se elimina index porque no se usa por ahora solo el valor
+
+
+
+
+Cierre
+  -Si una función tiene acceso a un valor
+  -Siempre tendrá acceso a ese valor
