@@ -6315,3 +6315,99 @@ solucion compacta:
 Cierre
   -Si una función tiene acceso a un valor
   -Siempre tendrá acceso a ese valor
+  -el valor se empaqueta junto (se encierra) con la función
+
+Ejemplo:
+      //DOM Boton de Eliminar
+      const btnDelet = document.querySelectorAll(".js-btn-eliminar");
+      btnDelet.forEach((btnEliminar, index) => {
+            btnEliminar.addEventListener("click", () => {
+                  console.log(index); //aca el valor se empaqueta junto (se encierra) con la función
+                  lista.splice(index, 1);
+                  localStorage.setItem('tareas', JSON.stringify(lista));
+                  addHtml();  
+            });
+      });
+
+
+
+
+
+
+En esta lección:
+1. Las funciones son valores
+2. setTimeout() -- codigo que se ejecuta 1 vez despues de un tiempo, setInterval() codigo que se ejecuta repetido como bucle despues de un tiempo
+3. .forEach() -- mas facil uso de for normal 
+4. Funciones de flecha -- mas compacto, .addEventListener() -- codigo limpio en HTML sin usar onclick
+5. .filter(), .map()  -- temas de recorridos en array
+6. Cierre  --el valor siempre se guarda en una funcion 
+
+
+
+
+
+
+
+
+Lección 12 Ejercicios - Funciones avanzadas
+
+12j. Crea una función de flecha llamada 'multiplicar' que tome 2 números, los multiplique y devuelva el resultado.
+ - multiply(2, 3) => 6
+ - multiply(7, 10) => 70
+
+
+12k. Continuando con el ejercicio 12j, escribe la función de flecha en una línea (si ya lo hiciste, omite este ejercicio).
+
+
+121. Crea una función countPositive(nums) que tome una matriz de números y devuelva cuántos números en la matriz son mayores que 0. Crea esta función usando .forEach() en lugar de un bucle.
+ - countPositive([1, -3, 5]) => 2
+ - countPositive([-2, 3, -5, 7, 10]) => 3
+
+
+12m. Crea una función addNum(array, num) que tome un array de números y devuelva un array donde cada número se incrementa en 'num'. Crea esta función usando .map() en lugar de un bucle.
+ - agregarNum([1, 2, 3], 2) => [3, 4, 5]
+ - agregarNum([-2, -1, 0, 99], 2) => [0, 1, 2, 101]
+   Bono: intenta usar el atajo de una línea en tu solución.
+
+
+12n. Crea una función removeEgg(foods) que tome un array de cadenas y devuelva un array donde se elimina la cadena 'egg'. Crea esta función usando .filter() en lugar de un bucle.
+ - removeEgg(['egg', 'apple', 'egg', 'egg', 'ham']) => ['apple', 'ham']
+
+
+120. Actualiza el ejercicio 12n para eliminar solo los 2 primeros huevos del array.
+De nuevo, usa .filter() en lugar de un bucle
+ - removeEgg(['huevo', 'manzana', 'huevo', 'huevo', 'jamón']) => ['manzana', 'huevo', 'jamón']
+
+
+12p. Regresa a los ejercicios anteriores de la lección 12 (12c - 12i) y cambia el código para usar funciones de flecha. (Al pasar una función a otra, usa funciones de flecha. De lo contrario, puedes usar cualquiera de las dos sintaxis).
+
+12q. Regresa a los ejercicios anteriores de la lección 12 (12c - 12i) y, en lugar de usar onclick="...", cambia el código para usar .addEventListener('click', ...)
+
+
+
+Ejercicios de desafío
+
+Los siguientes ejercicios se basarán en el juego Piedra, papel o tijera.
+
+12r. Haz una copia del juego Piedra, papel o tijera en los archivos 12r.html, 12r.css y 12r.js.
+ - Actualiza los elementos <link> y <script> para cargar 12r.css y 12r.js.
+ - Además, haz una copia de las imágenes y asegúrate de que se carguen correctamente
+
+
+12s. Actualiza el botón «Reproducción automática» para usar .addEventListener('click', ...) en lugar de onclick="..."
+
+
+12t. Actualiza el botón "Reproducción automática" para que, cuando el juego se reproduzca automáticamente, el texto del botón sea "Detener reproducción". De lo contrario, el texto del botón sea "Reproducción automática".
+
+12u. Actualiza el código para que al presionar "a" en el teclado se reproduzca automáticamente el juego.
+
+12v. Actualiza el botón "Restablecer puntuación" para usar .addEventListener('click', ...)
+
+12w. Actualiza el código para que al presionar "Retroceso" se restablezca la puntuación.
+
+12x. Al hacer clic en "Restablecer puntuación" o presionar "Retroceso", en lugar de restablecer la puntuación inmediatamente, se muestre un mensaje de confirmación debajo del botón:
+
+  ¿Estás seguro de que quieres restablecer la puntuación?   Sí    No
+
+  - Al hacer clic en "Sí", se restablecerá la puntuación y se ocultará el mensaje.
+  - Al hacer clic en "No", no se restablecerá la puntuación y se ocultará el mensaje
