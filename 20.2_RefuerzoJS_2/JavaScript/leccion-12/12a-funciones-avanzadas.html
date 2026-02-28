@@ -178,11 +178,15 @@
 
 
   console.log([1, -3, 5].filter((value, index) => {
-    if(value >= 0){
-      return true;
-    }else if(value < 0){
-      return false;
-    }
+
+    /*esto es lo mismo
+      if(value >= 0){
+        return true;
+      }else if(value < 0){
+        return false;
+      }  que hacer esta linea */
+
+     return value >= 0; //hace lo mismo que la declaracion if
 
   }));
   
