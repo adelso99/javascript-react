@@ -6144,3 +6144,25 @@ Ejemplo:
 
 
 1. Múltiples detectores de eventos para un evento
+Ejemplo:
+        <button onclick="" class="js-btn-click">Click</button>
+
+          const btnClick =  document.querySelector(".js-btn-click");
+
+          const funClick = () => { 
+            console.log("click");
+          }
+
+          btnClick.addEventListener("click", funClick) //parametro 1 que es el evento -- sera el evento click
+
+          btnClick.removeEventListener("click", funClick); //eliminar el evento 
+
+          //por lo que solo mostrara este evento en consola porque el otro fue eliminado
+          btnClick.addEventListener("click", () => { //otro evento al mismo boton 
+            console.log("click 2");
+          }); 
+
+  
+
+      1. Añadir varios detectores de eventos
+      2. Eliminar un detector de eventos

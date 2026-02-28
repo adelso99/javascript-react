@@ -43,6 +43,24 @@ function autoPlay(){
 }
 
 
+//DOM de Boton de Piedra
+const btnPiedra = document.querySelector(".js-btn-piedra");
+btnPiedra.addEventListener("click", () => {
+    playGame("piedra");
+});
+
+//DOM de Boton de Papel
+const btnPapel = document.querySelector(".js-btn-papel");
+btnPapel.addEventListener("click", () =>{
+    playGame("papel")
+});
+
+//DOM de Boton Tijera
+const btnTijera = document.querySelector(".js-btn-tijera");
+btnTijera.addEventListener("click", ()=> {
+    playGame("tijera")
+});
+
 
 function playGame(playerMove) {
         const computerMove = pickComputerMove();
