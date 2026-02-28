@@ -29,11 +29,9 @@ function addHtml(){
             const datoHtml = `
             <div>${name}</div>
             <div>${fecha}</div> 
-              <button onclick="
-                    lista.splice(${index}, 1);
-                    localStorage.setItem('tareas', JSON.stringify(lista));
-                    addHtml();  
-              " class="btn-eliminar" >Eliminar</button>
+              <button 
+                  class="btn-eliminar js-btn-eliminar">
+              Eliminar</button>
             `;
   
             listaHtml += datoHtml;
@@ -42,15 +40,26 @@ function addHtml(){
 
       document.querySelector(".js-elementos-lista").innerHTML = listaHtml;
 
+      //DOM Boton de Eliminar
+      const btnDelet = document.querySelectorAll(".js-btn-eliminar");
+      btnDelet.forEach((btnEliminar, index) => {
+            btnEliminar.addEventListener("click", () => {
+                  lista.splice(index, 1);
+                  localStorage.setItem('tareas', JSON.stringify(lista));
+                  addHtml();  
+            });
+      });
 
 }
 
 
-//Dom Boton de Añadir
+//DOM Boton de Añadir
 const btnAdd = document.querySelector(".js-btn-add");
 btnAdd.addEventListener("click", () =>{
       addLista();
 });
+
+
 
 
 

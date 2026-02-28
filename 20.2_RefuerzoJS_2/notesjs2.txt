@@ -6204,3 +6204,41 @@ Soucion :
               }
           });
 
+
+
+
+Ejemplo con boton de Eliminar:
+      lista.forEach( (elementoObject, index) => { //Funcion de Flecha
+            const {name, fecha} = elementoObject;
+  
+            const datoHtml = `
+            <div>${name}</div>
+            <div>${fecha}</div> 
+              <button 
+                  class="btn-eliminar js-btn-eliminar">
+              Eliminar</button>
+            `;
+  
+            listaHtml += datoHtml;
+            
+      });
+
+      document.querySelector(".js-elementos-lista").innerHTML = listaHtml;
+
+      //DOM Boton de Eliminar
+      const btnDelet = document.querySelectorAll(".js-btn-eliminar");
+      btnDelet.forEach((btnEliminar, index) => {
+            btnEliminar.addEventListener("click", () => {
+                  lista.splice(index, 1);
+                  localStorage.setItem('tareas', JSON.stringify(lista));
+                  addHtml();  
+            });
+      });
+
+  NOTA: Repasar este Ejemplo de boton eliminar
+
+
+
+
+
+Más características que utilizan funciones como valores
