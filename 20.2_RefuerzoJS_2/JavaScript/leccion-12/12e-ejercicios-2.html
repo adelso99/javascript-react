@@ -17,12 +17,20 @@
     <!--Carga de JavaScript Interno-->
     <script>
       /*
-        12n. Crea una función removeEgg(foods) que tome un array de cadenas y devuelva un array donde se elimina la cadena 'egg'. Crea esta función usando .filter() en lugar de un bucle.
-        - removeEgg(['egg', 'apple', 'egg', 'egg', 'ham']) => ['apple', 'ham']
+        120. Actualiza el ejercicio 12n para eliminar solo los 2 primeros huevos del array.
+        De nuevo, usa .filter() en lugar de un bucle
+        - removeEgg(['huevo', 'manzana', 'huevo', 'huevo', 'jamón']) => ['manzana', 'huevo', 'jamón']
+
 
       */
 
-      
+      function removeEgg(foods) {
+
+        return foods.filter(value => value !== 'egg' );
+
+      }
+
+      console.log(removeEgg(['egg', 'apple', 'egg', 'egg', 'ham'])); //en consola ['apple', 'ham']
 
 
 
