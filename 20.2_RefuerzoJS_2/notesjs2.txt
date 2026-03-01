@@ -6476,8 +6476,123 @@ SOLUCION 2:
 
 
 12p. Regresa a los ejercicios anteriores de la lección 12 (12c - 12i) y cambia el código para usar funciones de flecha. (Al pasar una función a otra, usa funciones de flecha. De lo contrario, puedes usar cualquiera de las dos sintaxis).
+SOLUCION:
+        //12c
+        function interruptor() {
+            setTimeout(() => {
+              dato.innerHTML = 'Terminado';     
+            }, 1000);
+
+        }
+
+        //12i
+        let messages = 2;
+        
+        let intervalId; // Guardamos el ID del intervalo por si necesitamos cancelarlo.
+      
+        let isDisplayingNotification; // Usaremos esta variable para llevar el control de si estamos mostrando la notificación o no.
+
+        // Empezar a mostrar la notificación en la pestaña cuando la página se cargue por primera vez.
+        displayNotification();
+
+        function displayNotification() {
+            // Si ya estamos mostrando la notificación, detener esta función porque no queremos y crear 2 intervalos al mismo tiempo.
+            if (isDisplayingNotification) {
+              return;
+            }
+
+            isDisplayingNotification = true;
+
+            intervalId = setInterval(() => {
+              if (document.title === 'App') {
+                document.title = `(${messages}) New messages`;
+              } else {
+                document.title = 'App';
+              }
+            }, 1000);
+        }
+
+        function stopNotification() {
+          isDisplayingNotification = false;
+
+          clearInterval(intervalId);
+          document.title = 'App';
+        }
 
 12q. Regresa a los ejercicios anteriores de la lección 12 (12c - 12i) y, en lugar de usar onclick="...", cambia el código para usar .addEventListener('click', ...)
+
+SOLUCION:
+          <button class="js-btn">Inicio</button>
+
+          <button class="js-btn-add">Add</button>
+
+          <button class="js-btn-remove">Remove</button>
+
+
+              const dato = document.querySelector('.js-btn');
+              dato.addEventListener("click", () => {
+                interruptor();
+              });
+
+
+              function interruptor() {
+                  setTimeout(() => {
+                    dato.innerHTML = 'Terminado';     
+                  }, 1000);
+
+              }
+
+              //12i
+              const btnAdd = document.querySelector(".js-btn-add");
+              const btnRemove = document.querySelector(".js-btn-remove");
+              let messages = 2;
+              let intervalId; // Guardamos el ID del intervalo por si necesitamos cancelarlo.
+              let isDisplayingNotification; // Usaremos esta variable para llevar el control de si estamos mostrando la notificación o no.
+
+              // Empezar a mostrar la notificación en la pestaña cuando la página se cargue por primera vez.
+              displayNotification();
+
+              //Boton Agregar
+              btnAdd.addEventListener("click", () => {
+                messages++;
+                displayNotification();
+              });
+
+              //Boton Eliminar
+              btnRemove.addEventListener("click", () => {
+                    if (messages > 0) {
+                      messages--;
+                      if (messages === 0) {
+                        stopNotification();
+                      }
+                    }
+              });
+
+              function displayNotification() {
+                  // Si ya estamos mostrando la notificación, detener esta función porque no queremos y crear 2 intervalos al mismo tiempo.
+                  if (isDisplayingNotification) {
+                    return;
+                  }
+
+                  isDisplayingNotification = true;
+
+                  intervalId = setInterval(() => {
+                    if (document.title === 'App') {
+                      document.title = `(${messages}) New messages`;
+                    } else {
+                      document.title = 'App';
+                    }
+                  }, 1000);
+              }
+
+              function stopNotification() {
+                isDisplayingNotification = false;
+
+                clearInterval(intervalId);
+                document.title = 'App';
+              }
+
+
 
 
 
