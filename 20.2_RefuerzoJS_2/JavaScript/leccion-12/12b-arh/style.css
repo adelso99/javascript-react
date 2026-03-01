@@ -32,12 +32,17 @@ body{
 }
 
 .reinicio,
-.btn-auto{
+.btn-auto,
+.btn-desicion{
   background-color: white;
   border: mone;
   font-size:15px;
   padding: 8px 15px;
   cursor: pointer;
+}
+
+.btn-desicion{
+  margin-left: 10px;
 }
 
 

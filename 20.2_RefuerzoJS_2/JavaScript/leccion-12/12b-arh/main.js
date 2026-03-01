@@ -174,10 +174,29 @@ btnReinicio.addEventListener("click", ()=> {
 
 
 function reinicioPuntaje(){
-    puntuacion.victorias = 0;
-    puntuacion.derrotas = 0;
-    puntuacion.empates = 0;
 
-    actualizarPuntaje();
-    localStorage.removeItem('puntuacion'); //elimina el valor almacenado
+    const btnMsj = document.querySelector(".js-msj");
+    btnMsj.innerHTML = `¿Estás seguro de que quieres restablecer la puntuación? 
+    <button class="btn-desicion" >Si</button>
+    <button class="btn-desicion" >No</button>
+    `;
+
+    //DOM Boton de Eliminar -
+    const btnDesicion = document.querySelectorAll(".btn-desicion");
+    btnDesicion.forEach((boton, index) => {
+        boton.addEventListener("click", () => {
+            if(index === 0){
+                puntuacion.victorias = 0;
+                puntuacion.derrotas = 0;
+                puntuacion.empates = 0;
+            
+                actualizarPuntaje();
+                localStorage.removeItem('puntuacion'); //elimina el valor almacenado
+            }
+
+            btnMsj.innerHTML = "";
+        });
+    });
+
+
 }

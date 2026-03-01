@@ -6699,7 +6699,7 @@ SOLUCION:
           }
 
 
-          
+
 
 12x. Al hacer clic en "Restablecer puntuación" o presionar "Retroceso", en lugar de restablecer la puntuación inmediatamente, se muestre un mensaje de confirmación debajo del botón:
 
@@ -6707,3 +6707,69 @@ SOLUCION:
 
   - Al hacer clic en "Sí", se restablecerá la puntuación y se ocultará el mensaje.
   - Al hacer clic en "No", no se restablecerá la puntuación y se ocultará el mensaje
+
+
+SOLUCION:
+        function reinicioPuntaje(){
+
+            const btnMsj = document.querySelector(".js-msj");
+            btnMsj.innerHTML = `¿Estás seguro de que quieres restablecer la puntuación? 
+            <button class="btn-desicion" >Si</button>
+            <button class="btn-desicion" >No</button>
+            `;
+
+            //DOM Boton de Eliminar - Que Chat GPT explique un poco mas esto
+            const btnDesicion = document.querySelectorAll(".btn-desicion");
+            btnDesicion.forEach((boton, index) => {
+                boton.addEventListener("click", () => {
+                    if(index === 0){
+                        puntuacion.victorias = 0;
+                        puntuacion.derrotas = 0;
+                        puntuacion.empates = 0;
+                    
+                        actualizarPuntaje();
+                        localStorage.removeItem('puntuacion'); //elimina el valor almacenado
+                    }
+
+                    btnMsj.innerHTML = "";
+                });
+            });
+
+
+        }
+  
+  
+
+SOLUCION 2:
+          function showResetConfirmation() {
+            document.querySelector('.js-reset-confirmation')
+              .innerHTML = `
+                Are you sure you want to reset the score?
+                <button class="js-reset-confirm-yes reset-confirm-button">
+                  Yes
+                </button>
+                <button class="js-reset-confirm-no reset-confirm-button">
+                  No
+                </button>
+              `;
+            
+            // You could use onclick="..." in the HTML above,
+            // but it's recommended to use .addEventListener()
+            document.querySelector('.js-reset-confirm-yes')
+              .addEventListener('click', () => {
+                resetScore();
+                hideResetConfirmation();
+              });
+            
+            document.querySelector('.js-reset-confirm-no')
+              .addEventListener('click', () => {
+                hideResetConfirmation();
+              });
+          }
+
+          // A helper function (it helps us reuse the
+          // code for hiding the confirmation message).
+          function hideResetConfirmation() {
+            document.querySelector('.js-reset-confirmation')
+              .innerHTML = '';
+          }
