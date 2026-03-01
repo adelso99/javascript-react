@@ -6603,18 +6603,103 @@ Los siguientes ejercicios se basarán en el juego Piedra, papel o tijera.
 12r. Haz una copia del juego Piedra, papel o tijera en los archivos 12r.html, 12r.css y 12r.js.
  - Actualiza los elementos <link> y <script> para cargar 12r.css y 12r.js.
  - Además, haz una copia de las imágenes y asegúrate de que se carguen correctamente
-
+LISTO :D
 
 12s. Actualiza el botón «Reproducción automática» para usar .addEventListener('click', ...) en lugar de onclick="..."
+SOLUCION:
+        //DOM de Boton Juego Automatico
+        const btnAuto = document.querySelector(".js-btn-auto");
+        btnAuto.addEventListener("click", () => {
+            autoPlay();
+        });
+
 
 
 12t. Actualiza el botón "Reproducción automática" para que, cuando el juego se reproduzca automáticamente, el texto del botón sea "Detener reproducción". De lo contrario, el texto del botón sea "Reproducción automática".
+SOLUCION:
+function autoPlay(){
+    /* en el autoPlay mejor no dejarlo como funcion de flecha porque:
+    1. Más fácil de leer
+    2. Izamiento
+    */
+
+    if(!juegoAuto){
+       interaloId = setInterval(() => { //Funcion de Flecha
+        const playerMove = pickComputerMove();
+        playGame(playerMove);
+        }, 1000);
+
+        juegoAuto = true;
+        btnAuto.innerHTML= "Detener Juego Auto";
+
+    }else {
+        clearInterval(interaloId);
+
+        juegoAuto = false;
+        btnAuto.innerHTML= "Juego Automatico";  
+    }
+
+}
+
+
 
 12u. Actualiza el código para que al presionar "a" en el teclado se reproduzca automáticamente el juego.
+SOLUCION:
+    document.body.addEventListener("keydown", value => {
+        if(value.key === "a"){
+            autoPlay();
+        }
+    });
+
 
 12v. Actualiza el botón "Restablecer puntuación" para usar .addEventListener('click', ...)
+SOLUCION:
+      //DOM de Boton Reinicio
+      const btnReinicio = document.querySelector(".js-btn-reinicio");
+      btnReinicio.addEventListener("click", ()=> {
+          puntuacion.victorias = 0;
+          puntuacion.derrotas = 0;
+          puntuacion.empates = 0;
+
+          actualizarPuntaje();
+          localStorage.removeItem('puntuacion'); //elimina el valor almacenado
+      });
+
+        const btnAuto = document.querySelector(".js-btn-auto");
+        btnAuto.addEventListener("click", () => {
+            autoPlay();
+        });
+
+
 
 12w. Actualiza el código para que al presionar "Retroceso" se restablezca la puntuación.
+SOLUCION:
+          document.body.addEventListener("keydown", event => {
+              if(event.key === "r"){
+                  playGame("piedra");
+              }else if(event.key === "p"){
+                  playGame("papel");
+              }else if(event.key === "s"){
+                  playGame("tijera");
+              }else if(event.key === "a"){
+                  autoPlay();
+              }else if(event.key === "Backspace"){
+                  reinicioPuntaje();
+              }
+          });
+
+
+          function reinicioPuntaje(){
+              puntuacion.victorias = 0;
+              puntuacion.derrotas = 0;
+              puntuacion.empates = 0;
+
+              actualizarPuntaje();
+              localStorage.removeItem('puntuacion'); //elimina el valor almacenado
+          }
+
+
+          
 
 12x. Al hacer clic en "Restablecer puntuación" o presionar "Retroceso", en lugar de restablecer la puntuación inmediatamente, se muestre un mensaje de confirmación debajo del botón:
 

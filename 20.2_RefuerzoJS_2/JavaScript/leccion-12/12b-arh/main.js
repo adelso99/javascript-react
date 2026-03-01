@@ -34,10 +34,13 @@ function autoPlay(){
         }, 1000);
 
         juegoAuto = true;
+        btnAuto.innerHTML= "Detener Juego Auto";
+
     }else {
         clearInterval(interaloId);
 
         juegoAuto = false;
+        btnAuto.innerHTML= "Juego Automatico";  
     }
 
 }
@@ -68,13 +71,17 @@ btnTijera.addEventListener("click", ()=> {
 
 
 //Evento de Teclado 
-document.body.addEventListener("keydown", (event) => {
+document.body.addEventListener("keydown", event => {
     if(event.key === "r"){
         playGame("piedra");
     }else if(event.key === "p"){
         playGame("papel");
     }else if(event.key === "s"){
         playGame("tijera");
+    }else if(event.key === "a"){
+        autoPlay();
+    }else if(event.key === "Backspace"){
+        reinicioPuntaje();
     }
 });
 
@@ -139,9 +146,6 @@ function playGame(playerMove) {
 
 function actualizarPuntaje(){ //funcion para actualizar puntaje que se visualice en la pagina web
         document.querySelector(".js-puntuacion").innerHTML = `Victorias: ${puntuacion.victorias} -- Derrotas: ${puntuacion.derrotas} -- Empates: ${puntuacion.empates}`;
-
-
-
         }
 
 
@@ -165,11 +169,15 @@ function actualizarPuntaje(){ //funcion para actualizar puntaje que se visualice
 //DOM de Boton Reinicio
 const btnReinicio = document.querySelector(".js-btn-reinicio");
 btnReinicio.addEventListener("click", ()=> {
+    reinicioPuntaje();
+});
+
+
+function reinicioPuntaje(){
     puntuacion.victorias = 0;
     puntuacion.derrotas = 0;
     puntuacion.empates = 0;
 
     actualizarPuntaje();
     localStorage.removeItem('puntuacion'); //elimina el valor almacenado
-});
-
+}
