@@ -6433,6 +6433,46 @@ SOLUCION:
 120. Actualiza el ejercicio 12n para eliminar solo los 2 primeros huevos del array.
 De nuevo, usa .filter() en lugar de un bucle
  - removeEgg(['huevo', 'manzana', 'huevo', 'huevo', 'jamón']) => ['manzana', 'huevo', 'jamón']
+ SOLUCION:
+          function removeEgg(foods) {
+            let numero = 0;
+
+          return foods.filter(value => {
+
+                if(value === 'egg' && numero < 2){
+                  numero++;
+                }else{
+                  return value;
+                }
+
+            });
+
+          }
+
+          console.log(removeEgg(['egg', 'apple', 'egg', 'egg', 'ham'])); //en consola ['apple', 'egg', 'ham']
+
+
+
+SOLUCION 2:
+          function removeEgg(foods) {
+            let eggsRemoved = 0;
+
+            return foods.filter((food) => {
+              // If the food is 'egg', we should return false
+              // but only if we haven't removed 2 eggs already.
+              if (food === 'egg' && eggsRemoved < 2) {
+                eggsRemoved++;
+                return false;
+              }
+
+              return true;
+            });
+          }
+
+          console.log(removeEgg(['egg', 'apple', 'egg', 'egg', 'ham']));
+
+
+
 
 
 12p. Regresa a los ejercicios anteriores de la lección 12 (12c - 12i) y cambia el código para usar funciones de flecha. (Al pasar una función a otra, usa funciones de flecha. De lo contrario, puedes usar cualquiera de las dos sintaxis).

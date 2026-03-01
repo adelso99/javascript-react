@@ -17,13 +17,41 @@
     <!--Carga de JavaScript Interno-->
     <script>
       /*
-        120. Actualiza el ejercicio 12n para eliminar solo los 2 primeros huevos del array.
-        De nuevo, usa .filter() en lugar de un bucle
-        - removeEgg(['huevo', 'manzana', 'huevo', 'huevo', 'jamón']) => ['manzana', 'huevo', 'jamón']
+      12p. Regresa a los ejercicios anteriores de la lección 12 (12c - 12i) y cambia el código para usar funciones de flecha. (Al pasar una función a otra, usa funciones de flecha. De lo contrario, puedes usar cualquiera de las dos sintaxis).
+
+      12q. Regresa a los ejercicios anteriores de la lección 12 (12c - 12i) y, en lugar de usar onclick="...", cambia el código para usar .addEventListener('click', ...)
 
 
       */
 
+
+
+
+      
+
+            /*Ejericio 3
+      function removeEgg(foods) {
+        let numero = 0;
+
+      return foods.filter(value => {
+
+            if(value === 'egg' && numero < 2){
+              numero++;
+            }else{
+              return value;
+            }
+
+        });
+
+      }
+
+      console.log(removeEgg(['egg', 'apple', 'egg', 'egg', 'ham'])); //en consola ['apple', 'egg', 'ham']
+      */
+
+
+
+
+      /*Ejericio 3
       function removeEgg(foods) {
 
         return foods.filter(value => value !== 'egg' );
@@ -31,16 +59,7 @@
       }
 
       console.log(removeEgg(['egg', 'apple', 'egg', 'egg', 'ham'])); //en consola ['apple', 'ham']
-
-
-
-
-
-
-
-
-
-
+      */
 
 
 
