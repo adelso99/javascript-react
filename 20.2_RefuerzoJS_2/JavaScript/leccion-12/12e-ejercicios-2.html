@@ -47,10 +47,10 @@
       */
 
       //12c
-      const interruptor = () => {
+      function interruptor() {
         const dato = document.querySelector('.js-btn')
 
-          setTimeout(function() {
+          setTimeout(() => {
             dato.innerHTML = 'Terminado';     
           }, 1000);
 
