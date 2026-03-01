@@ -46,7 +46,8 @@
 
       */
 
-      function interruptor(){
+      //12c
+      const interruptor = () => {
         const dato = document.querySelector('.js-btn')
 
           setTimeout(function() {
@@ -55,36 +56,31 @@
 
       }
 
+      //12i
       let messages = 2;
+      
+      let intervalId; // Guardamos el ID del intervalo por si necesitamos cancelarlo.
+    
+      let isDisplayingNotification; // Usaremos esta variable para llevar el control de si estamos mostrando la notificación o no.
 
-      // Guardamos el ID del intervalo por si necesitamos cancelarlo.
-      let intervalId;
-
-      // Usaremos esta variable para llevar el control
-      // de si estamos mostrando la notificación o no.
-      let isDisplayingNotification;
-
-      // Empezar a mostrar la notificación en la pestaña
-      // cuando la página se cargue por primera vez.
+      // Empezar a mostrar la notificación en la pestaña cuando la página se cargue por primera vez.
       displayNotification();
 
       function displayNotification() {
-        // Si ya estamos mostrando la notificación,
-        // detener esta función porque no queremos
-        // crear 2 intervalos al mismo tiempo.
-        if (isDisplayingNotification) {
-          return;
-        }
-
-        isDisplayingNotification = true;
-
-        intervalId = setInterval(function() {
-          if (document.title === 'App') {
-            document.title = `(${messages}) New messages`;
-          } else {
-            document.title = 'App';
+          // Si ya estamos mostrando la notificación, detener esta función porque no queremos y crear 2 intervalos al mismo tiempo.
+          if (isDisplayingNotification) {
+            return;
           }
-        }, 1000);
+
+          isDisplayingNotification = true;
+
+          intervalId = setInterval(() => {
+            if (document.title === 'App') {
+              document.title = `(${messages}) New messages`;
+            } else {
+              document.title = 'App';
+            }
+          }, 1000);
       }
 
       function stopNotification() {
