@@ -6773,3 +6773,7 @@ SOLUCION 2:
             document.querySelector('.js-reset-confirmation')
               .innerHTML = '';
           }
+
+
+
+-------------------------------------------LECCION 13 Inicio del Proyecto de Amazon --------------------------------------------------------------
