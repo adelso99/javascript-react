@@ -6777,3 +6777,14 @@ SOLUCION 2:
 
 
 -------------------------------------------LECCION 13 Inicio del Proyecto de Amazon --------------------------------------------------------------
+Idea principal de JavaScript
+  1. Guardar los datos
+  2. Generar el HTML
+  3. Hacerlo interactivo
+
+
+1. Guardar los datos
+    datos = información
+    (información sobre nuestros productos)
+
+se usa un array porque es una lista y 1 objeto para guardar los datos de los productos en el aray
