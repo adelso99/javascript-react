@@ -27,9 +27,12 @@ const products = [{
 }
 ];
 
+let productsHTML = "";
 
 products.forEach((product) => {
-  const html = `
+
+  //Patron Acumulador
+  productsHTML += `
     <div class="product-container">
           <div class="product-image-container">
             <img class="product-image"
@@ -80,5 +83,4 @@ products.forEach((product) => {
         </div>
   `;
 
-  console.log(html);
 });
