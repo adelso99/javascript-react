@@ -6912,3 +6912,14 @@ Ejericio resuelto:
 
 
 3. Hacerlo interactivo
+¿Cómo sabemos qué producto añadir?
+Atributo de datos
+- es simplemente otro atributo HTML
+- nos permite adjuntar cualquier información a un elemento
+
+Ejemplo de atributo de datos en HTML:
+                                    <button class="add-to-cart-button button-primary js-add-to-cart"
+                                    data-product-name="${product.name}">  //esta parte es el atrinuto de datos
+                                        Add to Cart
+                                      </button>
+                                    </div>
