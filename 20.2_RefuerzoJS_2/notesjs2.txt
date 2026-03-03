@@ -6860,7 +6860,7 @@ Ejericio resuelto:
                             </div>
 
                             <div class="product-name limit-text-to-2-lines">
-                              "${product.name}"
+                              ${product.name}
                             </div>
 
                             <div class="product-rating-container">
@@ -6872,7 +6872,7 @@ Ejericio resuelto:
                             </div>
 
                             <div class="product-price">
-                              ${(product.priceCents  / 100).toFixed(2)}
+                              $${(product.priceCents  / 100).toFixed(2)}
                             </div>
 
                             <div class="product-quantity-container">
@@ -6905,12 +6905,7 @@ Ejericio resuelto:
 
                   });
 
+                  console.log(productsHTML);
 
-
-
-3. Hacerlo interactivo
-como ya fueron creados los array, obejto y generado el HTML ya es momento de replzarlo y agregarlos en la web con ayuda del DOM
-Ejercicio resuelto:
-                    document.querySelector(".js-products-grid").innerHTML = productsHTML;
-
-
+                  //Con ayuda del DOM se agrega esto en la web directamente
+                  document.querySelector(".js-products-grid").innerHTML = productsHTML;
