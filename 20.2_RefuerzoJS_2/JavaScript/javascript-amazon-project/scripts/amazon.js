@@ -65,6 +65,11 @@ document.querySelector(".js-products-grid").innerHTML = productsHTML;
 //añadiendo evento al boton de agregar para hacerlo interactivo
 document.querySelectorAll(".js-add-to-cart").forEach((button) => {
   button.addEventListener("click", () =>{ 
-      console.log("Hola");
+      const productName = button.dataset.productName;
+      cart.push({
+        productName: productName,
+        quantity: 1
+      });
+      console.log(cart);
   });
 });

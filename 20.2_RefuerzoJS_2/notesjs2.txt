@@ -6923,3 +6923,30 @@ Ejemplo de atributo de datos en HTML:
                                         Add to Cart
                                       </button>
                                     </div>
+
+La sintaxis de un atributo de datos 
+- es solo un atributo HTML
+- tienes que empezar con "datos-"   ---- conocido como "caso kebab"
+- luego dale cualquier nombre
+
+      nombre           valor
+data-product-name="${product.name}">
+
+
+Ejemplo de Ejericicio resuelto:
+                              //añadiendo evento al boton de agregar para hacerlo interactivo
+                              document.querySelectorAll(".js-add-to-cart").forEach((button) => {
+                                button.addEventListener("click", () =>{ 
+                                    const productName = button.dataset.productName; //obtencion de producto
+                                    cart.push({   //carga a un array "cart" en un objeto
+                                      productName: productName,  
+                                      quantity: 1
+                                    });
+                                });
+                              });
+
+
+Pasos
+1. Comprueba si el producto ya está en el carrito.
+2. Si está en el carrito, aumenta la cantidad.
+3. Si no está en el carrito, añádelo
