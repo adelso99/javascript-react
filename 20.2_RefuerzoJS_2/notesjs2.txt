@@ -6905,7 +6905,10 @@ Ejericio resuelto:
 
                   });
 
-                  console.log(productsHTML);
-
                   //Con ayuda del DOM se agrega esto en la web directamente
                   document.querySelector(".js-products-grid").innerHTML = productsHTML;
+
+
+
+
+3. Hacerlo interactivo
