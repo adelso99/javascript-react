@@ -75,13 +75,15 @@ document.querySelectorAll(".js-add-to-cart").forEach((button) => {
             matchingItem = item;
         }
 
+        
       });
 
       if(matchingItem){
 
       }
 
-      
+
+
       cart.push({
         productName: productName,
         quantity: 1
