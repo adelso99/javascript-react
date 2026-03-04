@@ -80,6 +80,7 @@ document.querySelectorAll(".js-add-to-cart").forEach((button) => {
       if(matchingItem){
 
       }
+
       
       cart.push({
         productName: productName,
