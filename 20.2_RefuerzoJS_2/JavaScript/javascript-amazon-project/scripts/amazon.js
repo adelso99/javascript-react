@@ -67,6 +67,7 @@ document.querySelectorAll(".js-add-to-cart").forEach((button) => {
   button.addEventListener("click", () =>{ 
       const productId = button.dataset.productId;
 
+      //Parte de la Logica de la cantidad de Productos que se desean agregar al carrito
       let matchingItem;
 
       cart.forEach((item) => {
@@ -84,6 +85,14 @@ document.querySelectorAll(".js-add-to-cart").forEach((button) => {
         });
       }
 
+      //Parte de la Logica del Carrito de Productos
+      let cartQuantity = 0;
+
+      cart.forEach((item) => {
+        cartQuantity += item.quantity;
+      });
+
+      console.log(cartQuantity);
       console.log(cart);
   });
 });

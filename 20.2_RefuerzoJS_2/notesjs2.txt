@@ -6983,7 +6983,10 @@ Ejericio Solucionado:
 
 
 
-
+Hacer el carrito de los productos Interactivo
+Pasos
+  1. Calcula la cantidad.
+  2. Escribe la cantidad en la página
 
 
 
