@@ -6988,5 +6988,24 @@ Pasos
   1. Calcula la cantidad.
   2. Escribe la cantidad en la página
 
+Ejercicio Solucionado:
+                      let cartQuantity = 0;
 
+                      cart.forEach((item) => {
+                        cartQuantity += item.quantity;
+                      });
+
+                      document.querySelector(".js-cart-quantity").innerHTML = cartQuantity;
+
+
+
+
+
+En esta lección:
+1. Comencé el proyecto final de Amazon
+2. Configuré y aprendí Git
+3. Aprendí la idea principal de JavaScript
+    1) Guardar los datos
+    2) Generar el HTML
+    3) Hacerlo interactivo
 
