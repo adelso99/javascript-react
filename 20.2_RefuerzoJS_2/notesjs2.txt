@@ -6950,3 +6950,4 @@ Pasos
 1. Comprueba si el producto ya está en el carrito.
 2. Si está en el carrito, aumenta la cantidad.
 3. Si no está en el carrito, añádelo
+
