@@ -7034,17 +7034,66 @@ Crearemos el selector de cantidad paso a paso (ver la captura de pantalla a la d
 Al agregar un producto al carrito, en lugar de aumentar la cantidad en 1, aumentaremos la cantidad en el número del selector.
 
 13a. El elemento HTML para un selector desplegable es <select>. Usa Ctrl + F o Cmd + F para encontrarlo en el código (en amazon.js).
+Listo:
+            <select>
+              <option selected value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+
 
 13b. Al generar el HTML, agrega una clase única a <select> para identificar qué producto el menú desplegable es para (clase="js-quantity-selector-${product.id}")
+SOLUCION:
+          <div class="product-quantity-container">
+            <select clase="js-quantity-selector-${product.id}">  //clase agregada
+              <option selected value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+          </div>
+
 
 
 13c. Al hacer clic en el botón «Añadir al carrito», usa el DOM para obtener el selector de cantidad (el elemento <select>) del producto. Sugerencia: usa document.querySelector(`.js-quantity-selector-${productId}`)
+SOLUCION:
+           const quantitySelector = document.querySelector(".js-quantity-selector-${product.id}");
+ 
 
 
 13d. Obtén el valor seleccionado en el selector de cantidad (para obtener el valor de un elemento <select>, puedes usar la propiedad '.value')
+SOLUCION:
+          const quantity = quantitySelector.value;
+
 
 
 13e. Al actualizar el carrito, en lugar de usar una cantidad de 1 cada vez, usa la cantidad que obtuvimos de 13d. Sugerencia: para que las matemáticas funcionen correctamente, primero convierte el valor de 13d en un número usando Number() (ya que los valores que obtenemos del DOM son cadenas por defecto).
+SOLUCION Completa:
+                            const quantitySelector = document.querySelector(".js-quantity-selector-${product.id}");
+                            const quantity = Number(quantitySelector.value);
+                      
+                            if(matchingItem){
+                              matchingItem.quantity += quantity;
+                            }else{
+                              cart.push({
+                              productId: productId,
+                              quantity: quantity
+                              });
+                            }
+
 
 
 13f. Selecciona una cantidad distinta de 1 y haz clic en «Añadir al carrito». El selector de cantidad debería funcionar ahora. Comprueba los cambios de 13a a 13e en Git y confirma los cambios
