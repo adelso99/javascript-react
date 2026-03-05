@@ -7008,4 +7008,78 @@ En esta lección:
     1) Guardar los datos
     2) Generar el HTML
     3) Hacerlo interactivo
+4. Se creó una lista de productos
+5. Se hizo interactivo el botón "Añadir al carrito"
+6. Se hizo interactiva la cantidad del carrito
 
+
+
+
+
+Lección 13 Ejercicios - Iniciar el proyecto de Amazon, Introducción a Git
+
+Para hacer los ejercicios, puedes:
+
+1. Crear una copia de la carpeta 'javascript-amazon-project' (por ejemplo, '13-javascript-amazon-project') y hacer los ejercicios en la copia.
+   - Ventaja: los ejercicios no afectarán a la carpeta original.
+
+2. Hacer los ejercicios directamente en la carpeta 'javascript-amazon-project'.
+   - Ventaja: puedes combinar todo (todo lo que construimos en el curso y todo lo que construimos en los ejercicios).
+   - Desventaja: tu código no coincidirá exactamente con el video.
+
+Recomiendo la Opción 1, ya que es más fácil seguir el video, pero si quieres desafiarte a ti mismo, puedes hacer la Opción 2
+
+
+Crearemos el selector de cantidad paso a paso (ver la captura de pantalla a la derecha).
+Al agregar un producto al carrito, en lugar de aumentar la cantidad en 1, aumentaremos la cantidad en el número del selector.
+
+13a. El elemento HTML para un selector desplegable es <select>. Usa Ctrl + F o Cmd + F para encontrarlo en el código (en amazon.js).
+
+13b. Al generar el HTML, agrega una clase única a <select> para identificar qué producto el menú desplegable es para (clase="js-quantity-selector-${product.id}")
+
+
+13c. Al hacer clic en el botón «Añadir al carrito», usa el DOM para obtener el selector de cantidad (el elemento <select>) del producto. Sugerencia: usa document.querySelector(`.js-quantity-selector-${productId}`)
+
+
+13d. Obtén el valor seleccionado en el selector de cantidad (para obtener el valor de un elemento <select>, puedes usar la propiedad '.value')
+
+
+13e. Al actualizar el carrito, en lugar de usar una cantidad de 1 cada vez, usa la cantidad que obtuvimos de 13d. Sugerencia: para que las matemáticas funcionen correctamente, primero convierte el valor de 13d en un número usando Number() (ya que los valores que obtenemos del DOM son cadenas por defecto).
+
+
+13f. Selecciona una cantidad distinta de 1 y haz clic en «Añadir al carrito». El selector de cantidad debería funcionar ahora. Comprueba los cambios de 13a a 13e en Git y confirma los cambios
+
+
+13g. Añadiremos más productos a la página.
+  -  Dentro de data/products.js, añade más objetos a la matriz.
+  -  Para el ID, usa cualquier ID que desees, como 'id1', 'id2', etc. (solo asegúrate de que sea único).
+  -  Para la imagen, he proporcionado "images/products/backpack.jpg" e "images/products/umbrella.jpg" o busca una imagen tú mismo en línea.
+  -  Para el nombre, la calificación y el precio en centavos, usa los valores que desees.
+
+
+13h. Revisaremos algunos atajos de JavaScript que podemos usar. En amazon.js:
+ - Busca el código 'const productId = button.dataset.productId;' y usa el atajo de desestructuración para simplificarlo.
+ - Busca 'cart.push({' y usa la propiedad abreviada en las 2 líneas debajo de este código
+
+
+Ejercicios de desafío
+Crearemos el mensaje «Añadido» a la derecha. El elemento HTML para esto ya existe:
+<div class="added-to-cart">
+Sin embargo, en el CSS, este elemento tiene opacidad: 0 (es invisible).
+
+
+13i. Agrega una clase única a este elemento (como hicimos en el ejercicio 13b) para identificar a qué producto corresponde.
+
+
+13j. Al hacer clic en "Añadir al carrito", usa el DOM para obtener el elemento de mensaje "Añadido" para el producto (como hicimos en el ejercicio 13c).
+
+
+13k. Agrega una clase al elemento de mensaje usando .classList.add(). Luego, en styles/pages/amazon.css, dale estilo a esta clase para que tenga opacidad: 1;
+
+
+131. Después de 2 segundos (use setTimeout), haga que el mensaje desaparezca eliminando la clase.
+
+
+13 min. Si hacemos clic en "Añadir al carrito", esperamos de 1 a 1,5 segundos y volvemos a hacer clic, el mensaje desaparece rápidamente (ya que el setTimeout anterior sigue ejecutándose y hará que el mensaje desaparezca pronto).
+  -  Modifica el código para que cuando hagamos clic en "Añadir al carrito", se "actualice" el tiempo de espera de 2 segundos (espera 2 segundos de nuevo y el mensaje desaparece).
+  -  Consejo: puedes cancelar el setTimeout anterior usando clearTimeout()
