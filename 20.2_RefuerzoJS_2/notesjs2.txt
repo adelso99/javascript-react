@@ -6946,6 +6946,7 @@ Ejemplo de Ejericicio resuelto:
                               });
 
 
+
 Pasos
 1. Comprueba si el producto ya está en el carrito.
 2. Si está en el carrito, aumenta la cantidad.
@@ -6984,6 +6985,5 @@ Ejericio Solucionado:
 
 
 
-3. Hacerlo interactivo
 
 
