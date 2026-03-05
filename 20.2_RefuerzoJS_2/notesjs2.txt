@@ -6951,3 +6951,39 @@ Pasos
 2. Si está en el carrito, aumenta la cantidad.
 3. Si no está en el carrito, añádelo
 
+Ejericio Solucionado:
+                    //añadiendo evento al boton de agregar para hacerlo interactivo
+                    document.querySelectorAll(".js-add-to-cart").forEach((button) => {
+                      button.addEventListener("click", () =>{ 
+                          const productId = button.dataset.productId;
+
+                          let matchingItem;
+
+                          cart.forEach((item) => {
+                            if(productId === item.productId){
+                                matchingItem = item;
+                            }
+                          });
+
+                          if(matchingItem){
+                            matchingItem.quantity += +1;
+                          }else{
+                            cart.push({
+                            productId: productId,
+                            quantity: 1
+                            });
+                          }
+
+                          console.log(cart);
+                      });
+                    });
+
+
+
+
+
+
+
+3. Hacerlo interactivo
+
+
