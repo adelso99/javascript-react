@@ -7249,3 +7249,28 @@ Ejemplo:
         Sin conflictos
         const cart = [];
         amazon.js
+
+
+<script src="data/cart.js"></script>
+1. Ejecutar todo el código dentro de cart.js
+
+JS cart.js
+const cart = [];  --> al pasar esto al archivo de amazon.js que se tenia esa variable con array no ara conflicto
+
+2. Crear una variable de cart
+3. Provocar un conflicto de nombres
+
+la 2 y 3 ya no se ejecutan porque se quito el scritp de amazon.html
+
+
+
+Crear un módulo:
+    1. Crear un archivo
+    2. No cargue el archivo con <script>
+
+    Cualquier variable que creemos dentro del archivo, estará contenida dentro del archivo
+
+
+
+
+
