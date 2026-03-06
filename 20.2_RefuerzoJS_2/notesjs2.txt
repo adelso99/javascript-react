@@ -7193,16 +7193,42 @@ SOLUCION:
 SOLUCION:
       const addedMessage = document.querySelector(`.js-added-to-cart-${productId}`);
       addedMessage.classList.add("add-cart");
-      
+
         .add-cart{
           opacity: 1;
         }
 
 
-
 131. Después de 2 segundos (use setTimeout), haga que el mensaje desaparezca eliminando la clase.
+SOLUCION:
+      addedMessage.classList.add("add-cart");
+
+      setTimeout(() => {
+        clearTimeout();
+        addedMessage.classList.remove("add-cart");
+      }, 2000);
+      
 
 
 13 min. Si hacemos clic en "Añadir al carrito", esperamos de 1 a 1,5 segundos y volvemos a hacer clic, el mensaje desaparece rápidamente (ya que el setTimeout anterior sigue ejecutándose y hará que el mensaje desaparezca pronto).
   -  Modifica el código para que cuando hagamos clic en "Añadir al carrito", se "actualice" el tiempo de espera de 2 segundos (espera 2 segundos de nuevo y el mensaje desaparece).
   -  Consejo: puedes cancelar el setTimeout anterior usando clearTimeout()
+
+  SOLUCION:
+        const addedMessageTimeouts = {};
+  
+          const addedMessage = document.querySelector(`.js-added-to-cart-${productId}`);
+          
+          addedMessage.classList.add("add-cart");
+
+          setTimeout(() => {
+              const previousTimeoutId = addedMessageTimeouts[productId];
+              if (previousTimeoutId) {
+                clearTimeout(previousTimeoutId);
+              }
+              const timeoutId = setTimeout(() => {
+              addedMessage.classList.remove("add-cart");
+              }, 2000);
+              
+              addedMessageTimeouts[productId] = timeoutId;
+          });

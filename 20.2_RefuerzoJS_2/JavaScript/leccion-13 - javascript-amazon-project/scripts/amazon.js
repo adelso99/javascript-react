@@ -61,44 +61,57 @@ products.forEach((product) => {
 //agregando con ayuda de DOM el HTML generado a la web
 document.querySelector(".js-products-grid").innerHTML = productsHTML;
 
+const addedMessageTimeouts = {};
 
 //añadiendo evento al boton de agregar para hacerlo interactivo
 document.querySelectorAll(".js-add-to-cart").forEach((button) => {
-  button.addEventListener("click", () =>{ 
-      const {productId} = button.dataset; //atajo de desestructuración
+      button.addEventListener("click", () =>{ 
+          const {productId} = button.dataset; //atajo de desestructuración
 
-      //Parte de la Logica de la cantidad de Productos que se desean agregar al carrito
-      let matchingItem;
+          //Parte de la Logica de la cantidad de Productos que se desean agregar al carrito
+          let matchingItem;
 
-      cart.forEach((item) => {
-        if(productId === item.productId){
-            matchingItem = item;
-        }
-      });
+          cart.forEach((item) => {
+            if(productId === item.productId){
+                matchingItem = item;
+            }
+          });
 
-      const quantitySelector = document.querySelector(`.js-quantity-selector-${productId}`);
-      const quantity = Number(quantitySelector.value);
- 
-      if(matchingItem){
-        matchingItem.quantity += quantity;
-      }else{
-        cart.push({
-         productId, // atajo de desestructuración
-         quantity  //atajo de desestructuración
-        });
-      }
+          const quantitySelector = document.querySelector(`.js-quantity-selector-${productId}`);
+          const quantity = Number(quantitySelector.value);
+    
+          if(matchingItem){
+            matchingItem.quantity += quantity;
+          }else{
+            cart.push({
+            productId, // atajo de desestructuración
+            quantity  //atajo de desestructuración
+            });
+          }
 
-      //Parte de la Logica del Carrito de Productos
-      let cartQuantity = 0;
+          //Parte de la Logica del Carrito de Productos
+          let cartQuantity = 0;
 
-      cart.forEach((item) => {
-        cartQuantity += item.quantity;
-      });
+          cart.forEach((item) => {
+            cartQuantity += item.quantity;
+          });
 
-      document.querySelector(".js-cart-quantity").innerHTML = cartQuantity;
+          document.querySelector(".js-cart-quantity").innerHTML = cartQuantity;
 
-      const addedMessage = document.querySelector(`.js-added-to-cart-${productId}`);
-      addedMessage.classList.add("add-cart");
+          const addedMessage = document.querySelector(`.js-added-to-cart-${productId}`);
+          
+          addedMessage.classList.add("add-cart");
 
-  });
+          setTimeout(() => {
+              const previousTimeoutId = addedMessageTimeouts[productId];
+              if (previousTimeoutId) {
+                clearTimeout(previousTimeoutId);
+              }
+              const timeoutId = setTimeout(() => {
+              addedMessage.classList.remove("add-cart");
+              }, 2000);
+              
+              addedMessageTimeouts[productId] = timeoutId;
+          });
+    });
 });
