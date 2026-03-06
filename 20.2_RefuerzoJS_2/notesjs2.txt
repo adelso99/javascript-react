@@ -7173,15 +7173,20 @@ equivale a:
 
 
 Ejercicios de desafío
-Crearemos el mensaje «Añadido» a la derecha. El elemento HTML para esto ya existe:
-<div class="added-to-cart">
+Crearemos el mensaje «Añadido» a la derecha. El elemento HTML para esto ya existe: <div class="added-to-cart">
 Sin embargo, en el CSS, este elemento tiene opacidad: 0 (es invisible).
 
-
 13i. Agrega una clase única a este elemento (como hicimos en el ejercicio 13b) para identificar a qué producto corresponde.
+SOLUCION:
+          <div class="added-to-cart js-added-to-cart-${product.id}">
+            <img src="images/icons/checkmark.png">
+            Added
+          </div>
 
 
 13j. Al hacer clic en "Añadir al carrito", usa el DOM para obtener el elemento de mensaje "Añadido" para el producto (como hicimos en el ejercicio 13c).
+SOLUCION:
+      const addedMessage = document.querySelector(`.js-added-to-cart-${productId}`);
 
 
 13k. Agrega una clase al elemento de mensaje usando .classList.add(). Luego, en styles/pages/amazon.css, dale estilo a esta clase para que tenga opacidad: 1;
