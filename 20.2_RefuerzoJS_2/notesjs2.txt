@@ -7052,7 +7052,7 @@ Listo:
 13b. Al generar el HTML, agrega una clase única a <select> para identificar qué producto el menú desplegable es para (clase="js-quantity-selector-${product.id}")
 SOLUCION:
           <div class="product-quantity-container">
-            <select clase="js-quantity-selector-${product.id}">  //clase agregada
+            <select class="js-quantity-selector-${product.id}">
               <option selected value="1">1</option>
               <option value="2">2</option>
               <option value="3">3</option>
@@ -7065,6 +7065,7 @@ SOLUCION:
               <option value="10">10</option>
             </select>
           </div>
+
 
 
 
