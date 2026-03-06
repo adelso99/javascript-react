@@ -7098,6 +7098,7 @@ SOLUCION Completa:
 
 
 13f. Selecciona una cantidad distinta de 1 y haz clic en «Añadir al carrito». El selector de cantidad debería funcionar ahora. Comprueba los cambios de 13a a 13e en Git y confirma los cambios
+Todo bien Hecho :)
 
 
 13g. Añadiremos más productos a la página.
@@ -7105,6 +7106,21 @@ SOLUCION Completa:
   -  Para el ID, usa cualquier ID que desees, como 'id1', 'id2', etc. (solo asegúrate de que sea único).
   -  Para la imagen, he proporcionado "images/products/backpack.jpg" e "images/products/umbrella.jpg" o busca una imagen tú mismo en línea.
   -  Para el nombre, la calificación y el precio en centavos, usa los valores que desees.
+  SOLUCION:
+            {
+            id: "550e8400-e29b-41d4-a716-446655440000",
+            image: "images/products/backpack.jpg",
+            name: "Black Backpack",
+            rating: {
+              stars: 4,
+              count: 15
+            },
+            priceCents: 1599,
+            keywords: [
+              "backpack",
+              "mens",
+            ]
+          } 
 
 
 13h. Revisaremos algunos atajos de JavaScript que podemos usar. En amazon.js:
