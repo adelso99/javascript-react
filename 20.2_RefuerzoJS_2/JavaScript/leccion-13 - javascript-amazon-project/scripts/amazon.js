@@ -110,8 +110,8 @@ document.querySelectorAll(".js-add-to-cart").forEach((button) => {
               const timeoutId = setTimeout(() => {
               addedMessage.classList.remove("add-cart");
               }, 2000);
-              
-              addedMessageTimeouts[productId] = timeoutId;
+
+              addedMessageTimeouts[productId] = timeoutId; 
           });
     });
 });
