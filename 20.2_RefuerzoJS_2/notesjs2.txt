@@ -7240,4 +7240,12 @@ SOLUCION:
 
 
 -------------------------------------------LECCION 14 Modulos --------------------------------------------------------------
-Modulos en JavaScript
+Modulos en JavaScript = una mejor manera de organizar nuestro código
+Ejemplo:
+        Módulos
+        const cart = [];
+        cart.js
+
+        Sin conflictos
+        const cart = [];
+        amazon.js
