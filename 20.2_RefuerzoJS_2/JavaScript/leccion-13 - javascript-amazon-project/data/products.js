@@ -670,5 +670,19 @@ const products = [
       "backpack",
       "mens",
     ]
-  } 
+  },
+  {
+    id: "749d0000-0194-1005-2e05-08d61613bf2f",
+    image: "images/products/umbrella.jpg",
+    name: "Umbrella",
+    rating: {
+      stars: 4,
+      count: 20
+    },
+    priceCents: 1250,
+    keywords: [
+      "umbrella",
+      "woman"
+    ]
+  }
 ];

@@ -7107,7 +7107,7 @@ Todo bien Hecho :)
   -  Para la imagen, he proporcionado "images/products/backpack.jpg" e "images/products/umbrella.jpg" o busca una imagen tú mismo en línea.
   -  Para el nombre, la calificación y el precio en centavos, usa los valores que desees.
   SOLUCION:
-            {
+          {
             id: "550e8400-e29b-41d4-a716-446655440000",
             image: "images/products/backpack.jpg",
             name: "Black Backpack",
@@ -7120,7 +7120,22 @@ Todo bien Hecho :)
               "backpack",
               "mens",
             ]
-          } 
+          },
+          {
+            id: "749d0000-0194-1005-2e05-08d61613bf2f",
+            image: "images/products/umbrella.jpg",
+            name: "Umbrella",
+            rating: {
+              stars: 4,
+              count: 20
+            },
+            priceCents: 1250,
+            keywords: [
+              "umbrella",
+              "woman"
+            ]
+          }
+
 
 
 13h. Revisaremos algunos atajos de JavaScript que podemos usar. En amazon.js:
