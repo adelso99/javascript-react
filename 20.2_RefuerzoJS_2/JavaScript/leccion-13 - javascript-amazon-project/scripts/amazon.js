@@ -1,4 +1,6 @@
-import {cart} from "../data/cart.js"
+import {cart as myCart} from "../data/cart.js"
+
+const cart = [];
 
 let productsHTML = "";
 
