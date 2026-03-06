@@ -7271,6 +7271,30 @@ Crear un módulo:
     Cualquier variable que creemos dentro del archivo, estará contenida dentro del archivo
 
 
+Obtener una variable de un archivo
+1. Añadir el atributo type="module"
+2. Exportar
+3. Importar
+
+1. Añadir el atributo type="module"
+Ejericico Solucionado:
+   <script type="module" src="./scripts/amazon.js"></script>
+
+atributo type="module"
+Permite que este archivo obtenga variables de otros archivos
+
+2.Exportar el archivo de JavaScript que se utilizara
+Ejercicio Solucionado:
+                      export const cart = [];  //ya definido como exportado
+
+
+3. Importar -- se importara en el archivo de JavaScript Principal para su uso
+Ejercicio solucionado:
+                      import {cart} from "../data/cart.js"
+
+
+2. Necesitamos usar Live Server
+
 
 
 
