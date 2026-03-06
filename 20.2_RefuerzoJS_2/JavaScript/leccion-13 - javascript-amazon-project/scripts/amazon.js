@@ -65,7 +65,7 @@ document.querySelector(".js-products-grid").innerHTML = productsHTML;
 //añadiendo evento al boton de agregar para hacerlo interactivo
 document.querySelectorAll(".js-add-to-cart").forEach((button) => {
   button.addEventListener("click", () =>{ 
-      const productId = button.dataset.productId;
+      const {productId} = button.dataset; //atajo de desestructuración
 
       //Parte de la Logica de la cantidad de Productos que se desean agregar al carrito
       let matchingItem;
@@ -83,8 +83,8 @@ document.querySelectorAll(".js-add-to-cart").forEach((button) => {
         matchingItem.quantity += quantity;
       }else{
         cart.push({
-         productId: productId,
-         quantity: quantity
+         productId, // atajo de desestructuración
+         quantity  //atajo de desestructuración
         });
       }
 

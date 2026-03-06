@@ -7142,6 +7142,35 @@ Todo bien Hecho :)
  - Busca el código 'const productId = button.dataset.productId;' y usa el atajo de desestructuración para simplificarlo.
  - Busca 'cart.push({' y usa la propiedad abreviada en las 2 líneas debajo de este código
 
+SOLUCION:
+        const {productId} = button.dataset; //atajo de desestructuración
+
+        if(matchingItem){
+          matchingItem.quantity += quantity;
+        }else{
+          cart.push({
+          productId, // atajo de desestructuración
+          quantity  //atajo de desestructuración
+          });
+        }
+
+Regla fácil para recordar -- Desestructuración
+const {propiedad} = objeto;
+
+significa:
+variable = objeto.propiedad
+
+Atajo en objetos
+Si la variable y la propiedad se llaman igual:
+{variable}
+
+equivale a:
+{variable: variable}
+
+
+
+
+
 
 Ejercicios de desafío
 Crearemos el mensaje «Añadido» a la derecha. El elemento HTML para esto ya existe:
