@@ -7190,6 +7190,14 @@ SOLUCION:
 
 
 13k. Agrega una clase al elemento de mensaje usando .classList.add(). Luego, en styles/pages/amazon.css, dale estilo a esta clase para que tenga opacidad: 1;
+SOLUCION:
+      const addedMessage = document.querySelector(`.js-added-to-cart-${productId}`);
+      addedMessage.classList.add("add-cart");
+      
+        .add-cart{
+          opacity: 1;
+        }
+
 
 
 131. Después de 2 segundos (use setTimeout), haga que el mensaje desaparezca eliminando la clase.
