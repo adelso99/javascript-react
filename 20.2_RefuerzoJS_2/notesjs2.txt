@@ -7295,11 +7295,15 @@ Ejercicio solucionado:
 
 2. Necesitamos usar Live Server
 
-esto nos ayuda a definir a que las variale llamada no tenga algun conflicto con la nueva variable que se esta creando
+Beneficios de usar Modulos en JavaScript:
+1. esto nos ayuda a definir a que las variale llamada no tenga algun conflicto con la nueva variable que se esta creando
+Ejemplo
           import {cart as myCart} from "../data/cart.js" //al definir "as myCart"
 
           const cart = [];  //no altera esta varible con el mismo nombre que se esta definiendo
 
+
+2. No nos devemos preocupar por el orden de nuestros archivo scripts que se tienen en el HTML
 
 
 
