@@ -1,4 +1,4 @@
-import {cart} from "../data/cart.js";
+import {cart, addToCart} from "../data/cart.js";
 import {products} from "../data/products.js";
 
 
@@ -64,28 +64,6 @@ products.forEach((product) => {
 //agregando con ayuda de DOM el HTML generado a la web
 document.querySelector(".js-products-grid").innerHTML = productsHTML;
 
-
-//Funcion para agregar al carrito
-function addToCart(productId){
-      //Parte de la Logica de la cantidad de Productos que se desean agregar al carrito
-      let matchingItem;
-
-      cart.forEach((cartItem) => {
-        if(productId === cartItem.productId){
-            matchingItem = cartItem;
-        }
-      });
-
-      if(matchingItem){
-        matchingItem.quantity += +1;
-      }else{
-        cart.push({
-          productId: productId,
-          quantity: 1
-        });
-      }
-
-}
 
 
 //funcion de actualizar el carrito

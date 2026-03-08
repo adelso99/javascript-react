@@ -7306,5 +7306,42 @@ Ejemplo
 2. No nos devemos preocupar por el orden de nuestros archivo scripts que se tienen en el HTML
 
 
+Práctica recomendada
+Agrupe el código relacionado en su propio archivo
+Ejemplo:  --cart.js--
+        export const cart = [];
+
+        //Funcion para agregar al carrito
+        export function addToCart(productId){
+          //Parte de la Logica de la cantidad de Productos que se desean agregar al carrito
+          let matchingItem;
+
+          cart.forEach((cartItem) => {
+            if(productId === cartItem.productId){
+                matchingItem = cartItem;
+            }
+          });
+
+          if(matchingItem){
+            matchingItem.quantity += +1;
+          }else{
+            cart.push({
+              productId: productId,
+              quantity: 1
+            });
+          }
+
+        }
 
 
+    --amazon.js--
+    import {cart, addToCart} from "../data/cart.js";  //se pueden importar varias cosas y agregar el nombre en llaves para no importar por separado
+    import {products} from "../data/products.js";
+
+
+pero las importaciones tambien tiene otra forma o manera de importar los archivos al archivo js principal
+import * as cartModule from '../data/cart.js';
+
+y eso hace esto: --lo agrupa dentro de un objeto--
+              cartModule.cart
+              cartModule.addToCart('id');
