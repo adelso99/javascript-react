@@ -65,11 +65,8 @@ products.forEach((product) => {
 document.querySelector(".js-products-grid").innerHTML = productsHTML;
 
 
-//añadiendo evento al boton de agregar para hacerlo interactivo
-document.querySelectorAll(".js-add-to-cart").forEach((button) => {
-  button.addEventListener("click", () =>{ 
-      const productId = button.dataset.productId;
-
+//Funcion para agregar al carrito
+function addToCart(productId){
       //Parte de la Logica de la cantidad de Productos que se desean agregar al carrito
       let matchingItem;
 
@@ -83,11 +80,21 @@ document.querySelectorAll(".js-add-to-cart").forEach((button) => {
         matchingItem.quantity += +1;
       }else{
         cart.push({
-         productId: productId,
-         quantity: 1
+          productId: productId,
+          quantity: 1
         });
       }
 
+}
+
+//añadiendo evento al boton de agregar para hacerlo interactivo
+document.querySelectorAll(".js-add-to-cart").forEach((button) => {
+  button.addEventListener("click", () =>{ 
+      const productId = button.dataset.productId;
+
+      //llamado de funcion para agregar al carrito
+      addToCart(productId);
+    
       //Parte de la Logica del Carrito de Productos
       let cartQuantity = 0;
 
