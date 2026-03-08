@@ -87,6 +87,16 @@ function addToCart(productId){
 
 }
 
+function updateCartQuantity(){
+      let cartQuantity = 0;
+
+      cart.forEach((item) => {
+        cartQuantity += item.quantity;
+      });
+
+      document.querySelector(".js-cart-quantity").innerHTML = cartQuantity;
+}
+
 //añadiendo evento al boton de agregar para hacerlo interactivo
 document.querySelectorAll(".js-add-to-cart").forEach((button) => {
   button.addEventListener("click", () =>{ 
@@ -96,13 +106,7 @@ document.querySelectorAll(".js-add-to-cart").forEach((button) => {
       addToCart(productId);
     
       //Parte de la Logica del Carrito de Productos
-      let cartQuantity = 0;
-
-      cart.forEach((item) => {
-        cartQuantity += item.quantity;
-      });
-
-      document.querySelector(".js-cart-quantity").innerHTML = cartQuantity;
+      updateCartQuantity();
 
   });
 });
