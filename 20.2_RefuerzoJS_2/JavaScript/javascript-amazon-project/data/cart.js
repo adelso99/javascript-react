@@ -1,4 +1,8 @@
-export const cart = [];
+export const cart = [
+
+  
+];
+
 
 //Funcion para agregar al carrito
 export function addToCart(productId){
