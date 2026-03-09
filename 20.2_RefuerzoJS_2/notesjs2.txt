@@ -7345,3 +7345,13 @@ import * as cartModule from '../data/cart.js';
 y eso hace esto: --lo agrupa dentro de un objeto--
               cartModule.cart
               cartModule.addToCart('id');
+
+
+
+
+
+
+Idea principal de JavaScript
+      1. Guardar los datos
+      2. Generar el HTML
+      3. Hacerlo interactivo
