@@ -7530,3 +7530,121 @@ Seccion del carrito del producto
 
 
 Añadir localStorage al carrito
+
+            export let cart = JSON.parse(localStorage.getItem("cart"));
+
+
+              if(!cart){
+                  cart =  [{
+                            productId: "e43638ce-6aa0-4b85-b27f-e1d07eb678c6",
+                            quantity: 2  
+                          }, {
+                            productId: "15b6fc6f-327a-4ec4-896f-486349e85a3d",
+                            quantity: 1  
+                          }];
+                        
+              }
+
+
+            function saveToStorage(){
+              localStorage.setItem("cart", JSON.stringify(cart))
+            }
+
+
+
+
+En esta lección:
+1. Módulos = una mejor manera de organizar nuestro código
+2. Creación de la página de pago
+3. Elementos de enlace HTML y selectores de radio
+4. Creación del enlace de eliminación interactivo
+5. Guardado del carrito en localStorage
+
+
+
+Lección 14 Ejercicios - Módulos
+
+En la página de pago, el encabezado en la parte superior siempre dice "3 artículos".
+Pago (3 artículos)
+
+
+14a. En checkout.html, busca el elemento que muestra "3 artículos" y elimina el texto que contiene. Debería mostrar "Checkout()" cuando se cargue la página.
+
+14b. En checkout.js, cuando se cargue la página, calcula la cantidad real de productos en el carrito y muéstrala en el encabezado: `${quantity} artículos`. Consejos:
+   - En amazon.js, dentro de la función updateCartQuantity(), escribimos código para calcular la cantidad del carrito. Reutiliza este código.
+   - En checkout.html, necesitarás agregar una clase al elemento para poder seleccionarlo con el DOM y cambiar el innerHTML
+
+
+
+14c. Continuando con 14b, también calcula y muestra la cantidad en el encabezado al hacer clic en "eliminar".
+   - Primero, crea una función updateCartQuantity() y coloca el código de 14b dentro
+   - Ejecuta esta función al cargar la página y al hacer clic en "eliminar" (observa que esta función no entra en conflicto con updateCartQuantity en amazon.js porque estamos usando módulos)
+
+
+14d. Si abrimos la página de inicio (amazon.html), observa que la cantidad del carrito en la parte superior derecha siempre comienza en 0.
+   - Elimina el texto "o" (para que la cantidad del carrito comience en blanco) Y Carrito
+   - Cuando se cargue la página, calcula la cantidad del carrito y muéstrala en la parte superior derecha (reutiliza la función updateCartQuantity)
+
+
+14e. Dentro de la función updateCartQuantity, tenemos código que calcula la cantidad del carrito (crea una variable, recorre el carrito y suma todas las cantidades). Observa que este código se repite en checkout.js y amazon.js.
+   - Crea una función calculateCartQuantity() y mueve este código a la función para que podamos reutilizarlo.
+   - Coloca calculateCartQuantity() dentro de cart.js (porque este código se relaciona con el carrito) y usa export/import para compartirlo entre los 2 archivos.
+
+
+
+
+
+Ejercicios de desafío
+
+Haremos que "Actualizar" sea interactivo paso a paso.    Cantidad: 2  Actualizar  Eliminar
+
+14f. En checkout.js, obtén todos los enlaces de "Actualizar" de la página y agrega un detector de eventos "click" a cada enlace. Además, adjunta el productId a cada enlace. Al hacer clic en el enlace, obtén el productId y aplícalo en console.log()
+
+
+14g. Agregue 2 elementos HTML después del enlace "Actualizar":
+   - Un <input class="quantity-input"> (para introducir una nueva cantidad)
+   - Un <span class="save-quantity-link">Guardar</span> (para guardar la cantidad)
+   - Aplique estilo al <input> y establezca su ancho en 30 px (coloque los estilos en el archivo: styles/pages/checkout/checkout.css)
+   - Agregue la clase "link-primary" al <span>
+
+  Cantidad: 2 Actualizar Guardar
+
+
+
+
+14h. Haga que "Guardar" aparezca al hacer clic en "Actualizar"    Cantidad: 2 Actualizar  Eliminar
+    - Al hacer clic en "Actualizar", obtenga el contenedor del artículo del carrito para el producto y agregue la clase "is-editing-quantity" al contenedor (use .classList)
+    - En checkout.css, aplique estilo al enlace <input> y "Guardar" y agregue display: none; (serán invisibles al principio)
+    - El CSS ".is-editing-quantity .quantity-input { ... }" aplica estilo a los elementos con la clase "quantity-input" dentro de un elemento con la clase "is-editing-quantity"
+    - Use esto y "display: initial;" (restablece la propiedad de visualización) para que aparezca <input> al editar la cantidad. Lo mismo ocurre con el enlace "Guardar"
+
+
+14i. Usando selectores CSS similares a los de 14h, haz que la cantidad y el enlace "Actualizar" desaparezcan al editar la cantidad.
+
+Cantidad: 2 Actualizar Eliminar
+
+
+
+14j. Ahora implementaremos el cambio entre "Actualizar" y "Guardar"       ->  Cantidad: Guardar Eliminar
+  Agrega detectores de eventos "click" a todos los enlaces "Guardar". Al hacer clic en "Guardar", haz lo contrario de "Actualizar": obtén el contenedor de artículos del carrito para el producto y elimina la clase "is-editing-quantity". Esto debería revertir todo el estilo que se aplica al editar la cantidad.
+
+
+
+14k. Al hacer clic en "Guardar", usa el DOM para obtener la cantidad <input> del producto y obtén el valor dentro (recuerda convertir este valor a un número). Esta será la nueva cantidad del producto en el carrito
+
+
+
+141. En cart.js, crea una función updateQuantity(productId, newQuantity) que encontrará un productId coincidente en el carrito y actualizará su cantidad a la nueva cantidad (recuerda guardar en el almacenamiento después).
+   - Luego, importa y usa esta función al hacer clic en el enlace "Guardar".
+
+
+
+14m. Ahora que hemos actualizado la cantidad en el carrito, el último paso es actualizar la cantidad en el HTML. Actualiza estos 2 lugares:
+   - Dentro del producto -> Cantidad: 2  Actualizar  Eliminar
+   - En el encabezado en la parte superior  -> Finalizar compra (3 artículos)
+
+
+
+14n. Intenta crear más funciones para agregar al enlace "Actualizar", como:
+   - Agregar validación (comprobar que la nueva cantidad sea >= 0 y < 1000)
+   - Agregar compatibilidad con teclado (permitir la actualización presionando 'Intro')
