@@ -7472,3 +7472,8 @@ Seccion del carrito del producto
        3. Hacerlo interactivo
           1. Retira el producto del carrito
           2. Actualiza el HTML
+
+            Pasos
+              1. Crear una nueva matriz
+              2. Recorrer el carrito
+              3. Añadir cada producto a la nueva matriz, excepto este ID de producto
