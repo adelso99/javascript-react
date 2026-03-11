@@ -7525,3 +7525,8 @@ Seccion del carrito del producto
 
                         });
                     });
+
+
+
+
+Añadir localStorage al carrito
