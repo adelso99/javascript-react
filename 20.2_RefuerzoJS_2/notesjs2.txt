@@ -7473,7 +7473,44 @@ Seccion del carrito del producto
           1. Retira el producto del carrito
           2. Actualiza el HTML
 
+
+          1. Retira el producto del carrito
             Pasos
               1. Crear una nueva matriz
               2. Recorrer el carrito
               3. Añadir cada producto a la nueva matriz, excepto este ID de producto
+
+              export function removeFromCart(productId){
+              const newCart = [];
+
+              cart.forEach((cartItem) => {
+                if(cartItem.productId !== productId){
+                  newCart.push(cartItem);
+                    }
+                  });
+
+                  cart = newCart;
+
+                }
+
+
+              document.querySelectorAll(".js-delete-link").forEach((link) => {
+              link.addEventListener("click", () => {
+                const productId = link.dataset.productId;
+                removeFromCart(productId);
+                  });
+              });
+
+            
+
+
+
+
+
+
+              2. Actualiza el HTML
+                  Pasos
+                  1. Usa el DOM para obtener el elemento a eliminar
+                  2. Usa el método .remove()
+
+
