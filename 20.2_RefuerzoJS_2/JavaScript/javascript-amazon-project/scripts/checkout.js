@@ -108,6 +108,7 @@ document.querySelectorAll(".js-delete-link").forEach((link) => {
 });
 
 
+//parte de aumento del aumento del checkout.html de la cantidad total de productos en el carrito en la parte superior
   let cartQuantity = 0;
 
   cart.forEach((cartItem) => {
@@ -115,4 +116,4 @@ document.querySelectorAll(".js-delete-link").forEach((link) => {
   });
 
 
-      document.querySelector(".js-return-to-home-link").innerHTML = `${cartQuantity} items`;
+  document.querySelector(".js-return-to-home-link").innerHTML = `${cartQuantity} items`;
