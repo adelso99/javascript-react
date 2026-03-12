@@ -7658,7 +7658,53 @@ SOLUCION:
 
 14e. Dentro de la función updateCartQuantity, tenemos código que calcula la cantidad del carrito (crea una variable, recorre el carrito y suma todas las cantidades). Observa que este código se repite en checkout.js y amazon.js.
    - Crea una función calculateCartQuantity() y mueve este código a la función para que podamos reutilizarlo.
-   - Coloca calculateCartQuantity() dentro de cart.js (porque este código se relaciona con el carrito) y usa export/import para compartirlo entre los 2 archivos.
+   - Coloca calculateCartQuantity() dentro de cart.js (porque este código se relaciona con el carrito) y usa export/import para compartirlo entre los 2 archivos. 
+
+   SOLUCION:
+    Creacion de la funcion calculateCartQuantity() en cart.js y exportado
+            //funcion de actualizar el carrito
+            export function calculateCartQuantity(){
+                    let cartQuantity = 0;
+
+                  cart.forEach((cartItem) => {
+                    cartQuantity += cartItem.quantity;
+                  });
+
+                  return cartQuantity
+
+            }
+
+ llamndo de la funcion dentro de la funcion de actualizar el carrito en amazon.js siendo callback
+            //funcion de actualizar el carrito
+            function updateCartQuantity(){
+
+              //llamado de funcion oara el dato de cartQuantity
+                const cartQuantity = calculateCartQuantity();
+
+                document.querySelector(".js-cart-quantity").innerHTML = cartQuantity;
+
+            }
+
+
+            //llamado de funcion para que actualice el total de productos de  una vez ya cuando cargue la pagina
+            updateCartQuantity();
+
+
+ llamndo de la funcion dentro de la funcion de actualizar el carrito en checkout.js siendo callback
+            //parte de aumento del aumento del checkout.html de la cantidad total de productos en el carrito en la parte superior
+            function updateCartQuantity(){
+
+              //llamado de funcion para el dato de cartQuantity
+              const cartQuantity = calculateCartQuantity();
+
+              document.querySelector(".js-return-to-home-link").innerHTML = `${cartQuantity} items`;
+
+            }
+
+            //llamado de funcion cuando carge la pagina para que se visualice el total de productos real
+            updateCartQuantity();
+
+
 
 
 

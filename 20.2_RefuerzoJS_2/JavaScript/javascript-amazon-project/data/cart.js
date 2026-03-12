@@ -62,6 +62,17 @@ export function removeFromCart(productId){
 }
 
 
+//funcion de actualizar el carrito
+export function calculateCartQuantity(){
+        let cartQuantity = 0;
+
+      cart.forEach((cartItem) => {
+        cartQuantity += cartItem.quantity;
+      });
+
+      return cartQuantity
+
+}
 
 
 
