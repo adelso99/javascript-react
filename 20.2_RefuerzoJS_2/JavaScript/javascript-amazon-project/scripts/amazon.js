@@ -76,6 +76,7 @@ function updateCartQuantity(){
       });
 
       document.querySelector(".js-cart-quantity").innerHTML = cartQuantity;
+      document.querySelector(".js-checkout-cart").innerHTML = cartQuantity;
 }
 
 //añadiendo evento al boton de agregar para hacerlo interactivo
