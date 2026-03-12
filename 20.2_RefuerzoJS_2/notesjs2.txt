@@ -7580,6 +7580,21 @@ SOLUCION:
 14b. En checkout.js, cuando se cargue la página, calcula la cantidad real de productos en el carrito y muéstrala en el encabezado: `${quantity} artículos`. Consejos:
    - En amazon.js, dentro de la función updateCartQuantity(), escribimos código para calcular la cantidad del carrito. Reutiliza este código.
    - En checkout.html, necesitarás agregar una clase al elemento para poder seleccionarlo con el DOM y cambiar el innerHTML
+   SOLUCION:
+           <div class="checkout-header-middle-section">
+          Checkout (<a class="return-to-home-link js-return-to-home-link" //clase agregada
+            href="amazon.html"></a>)
+        </div>
+
+        //parte de aumento del aumento del checkout.html de la cantidad total de productos en el carrito en la parte superior
+        let cartQuantity = 0;
+
+        cart.forEach((cartItem) => {
+          cartQuantity += cartItem.quantity;
+        });
+
+
+        document.querySelector(".js-return-to-home-link").innerHTML = `${cartQuantity} items`;
 
 
 

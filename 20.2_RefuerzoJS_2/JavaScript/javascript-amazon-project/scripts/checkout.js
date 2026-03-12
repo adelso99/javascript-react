@@ -104,11 +104,15 @@ document.querySelectorAll(".js-delete-link").forEach((link) => {
       const container = document.querySelector(`.js-cart-item-container-${productId}`);
       container.remove();
 
+      //llamado de funcion que actualice el total de productos
+      updateCartQuantity();
+
     });
 });
 
 
 //parte de aumento del aumento del checkout.html de la cantidad total de productos en el carrito en la parte superior
+function updateCartQuantity(){
   let cartQuantity = 0;
 
   cart.forEach((cartItem) => {
@@ -117,3 +121,8 @@ document.querySelectorAll(".js-delete-link").forEach((link) => {
 
 
   document.querySelector(".js-return-to-home-link").innerHTML = `${cartQuantity} items`;
+
+}
+
+//llamado de funcion cuando carge la pagina para que se visualice el total de productos real
+updateCartQuantity();
