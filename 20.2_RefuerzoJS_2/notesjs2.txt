@@ -7601,11 +7601,59 @@ SOLUCION:
 14c. Continuando con 14b, también calcula y muestra la cantidad en el encabezado al hacer clic en "eliminar".
    - Primero, crea una función updateCartQuantity() y coloca el código de 14b dentro
    - Ejecuta esta función al cargar la página y al hacer clic en "eliminar" (observa que esta función no entra en conflicto con updateCartQuantity en amazon.js porque estamos usando módulos)
+      SOLUCION:
+            //llamado de funcion que actualice el total de productos
+            updateCartQuantity(); //se agrego tambien en la seccion donde se eliminan productos para que se actualice
+
+      //checkout.js
+      //parte de aumento del aumento del checkout.html de la cantidad total de productos en el carrito en la parte superior
+      function updateCartQuantity(){
+        let cartQuantity = 0;
+
+        cart.forEach((cartItem) => {
+          cartQuantity += cartItem.quantity;
+        });
+
+
+        document.querySelector(".js-return-to-home-link").innerHTML = `${cartQuantity} items`;
+
+      }
+
+      //llamado de funcion cuando carge la pagina para que se visualice el total de productos real
+      updateCartQuantity();
+
+
 
 
 14d. Si abrimos la página de inicio (amazon.html), observa que la cantidad del carrito en la parte superior derecha siempre comienza en 0.
    - Elimina el texto "o" (para que la cantidad del carrito comience en blanco) Y Carrito
    - Cuando se cargue la página, calcula la cantidad del carrito y muéstrala en la parte superior derecha (reutiliza la función updateCartQuantity)
+
+SOLUCION:
+
+        <a class="cart-link header-link" href="checkout.html">
+          <img class="cart-icon" src="images/icons/cart-icon.png">
+          <div class="cart-quantity js-cart-quantity"></div>  //total de carrito eliminado y se realiza con JavaScript
+          <div class="cart-text">Carrito</div>
+        </a>
+
+
+       //amazon.js
+        function updateCartQuantity(){
+              let cartQuantity = 0;
+
+              cart.forEach((cartItem) => {
+                cartQuantity += cartItem.quantity;
+              });
+
+              document.querySelector(".js-cart-quantity").innerHTML = cartQuantity;
+
+         }
+
+        //llamado de funcion para que actualice el total de productos de  una vez ya cuando cargue la pagina
+        updateCartQuantity();
+
+
 
 
 14e. Dentro de la función updateCartQuantity, tenemos código que calcula la cantidad del carrito (crea una variable, recorre el carrito y suma todas las cantidades). Observa que este código se repite en checkout.js y amazon.js.

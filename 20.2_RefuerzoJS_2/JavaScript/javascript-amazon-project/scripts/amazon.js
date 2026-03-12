@@ -79,6 +79,10 @@ function updateCartQuantity(){
 
 }
 
+//llamado de funcion para que actualice el total de productos de  una vez ya cuando cargue la pagina
+updateCartQuantity();
+
+
 //añadiendo evento al boton de agregar para hacerlo interactivo
 document.querySelectorAll(".js-add-to-cart").forEach((button) => {
   button.addEventListener("click", () =>{ 
