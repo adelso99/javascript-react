@@ -7569,6 +7569,13 @@ Pago (3 artículos)
 
 
 14a. En checkout.html, busca el elemento que muestra "3 artículos" y elimina el texto que contiene. Debería mostrar "Checkout()" cuando se cargue la página.
+SOLUCION:
+        <div class="checkout-header-middle-section">
+          Checkout (<a class="return-to-home-link"
+            href="amazon.html"></a>)  //En esta parte se elimino los 3 articulos
+        </div>
+
+
 
 14b. En checkout.js, cuando se cargue la página, calcula la cantidad real de productos en el carrito y muéstrala en el encabezado: `${quantity} artículos`. Consejos:
    - En amazon.js, dentro de la función updateCartQuantity(), escribimos código para calcular la cantidad del carrito. Reutiliza este código.
