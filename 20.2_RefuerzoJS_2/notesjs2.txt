@@ -7742,6 +7742,10 @@ SOLUCION:
 
   Cantidad: 2 Actualizar Guardar
   SOLUCION:
+            .quantity-input{
+              width: 30px;
+            }
+
            <span class="update-quantity-link link-primary js-update-link" data-product-id="${matchingProduct.id}">
             Update
           </span>
@@ -7756,6 +7760,7 @@ SOLUCION:
     - En checkout.css, aplique estilo al enlace <input> y "Guardar" y agregue display: none; (serán invisibles al principio)
     - El CSS ".is-editing-quantity .quantity-input { ... }" aplica estilo a los elementos con la clase "quantity-input" dentro de un elemento con la clase "is-editing-quantity"
     - Use esto y "display: initial;" (restablece la propiedad de visualización) para que aparezca <input> al editar la cantidad. Lo mismo ocurre con el enlace "Guardar"
+
 
 
 14i. Usando selectores CSS similares a los de 14h, haz que la cantidad y el enlace "Actualizar" desaparezcan al editar la cantidad.
