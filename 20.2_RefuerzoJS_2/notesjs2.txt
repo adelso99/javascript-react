@@ -7761,6 +7761,20 @@ SOLUCION:
     - El CSS ".is-editing-quantity .quantity-input { ... }" aplica estilo a los elementos con la clase "quantity-input" dentro de un elemento con la clase "is-editing-quantity"
     - Use esto y "display: initial;" (restablece la propiedad de visualización) para que aparezca <input> al editar la cantidad. Lo mismo ocurre con el enlace "Guardar"
 
+    SOLUCION:
+            //parte de actualizar el producto de checkout la cantidad de productos
+              document.querySelectorAll(".cart-item-container").forEach((cartItem) => {
+                cartItem.addEventListener("click", () => {
+                  cartItem.classList.add("is-editing-quantity");
+                });
+              });
+
+            //Parte de CSS de Input y boton Guardar
+            .quantity-input,
+            .save-quantity-link{
+              display: none;
+            }
+
 
 
 14i. Usando selectores CSS similares a los de 14h, haz que la cantidad y el enlace "Actualizar" desaparezcan al editar la cantidad.

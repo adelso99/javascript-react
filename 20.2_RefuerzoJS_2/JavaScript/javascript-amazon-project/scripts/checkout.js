@@ -126,6 +126,14 @@ document.querySelectorAll(".js-delete-link").forEach((link) => {
 });
 
 
+//parte de actualizar el producto de checkout la cantidad de productos
+document.querySelectorAll(".cart-item-container").forEach((cartItem) => {
+  cartItem.addEventListener("click", () => {
+    cartItem.classList.add("is-editing-quantity");
+  });
+});
+
+
 //parte de aumento del aumento del checkout.html de la cantidad total de productos en el carrito en la parte superior
 function updateCartQuantity(){
 
