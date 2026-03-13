@@ -7715,6 +7715,21 @@ Ejercicios de desafío
 Haremos que "Actualizar" sea interactivo paso a paso.    Cantidad: 2  Actualizar  Eliminar
 
 14f. En checkout.js, obtén todos los enlaces de "Actualizar" de la página y agrega un detector de eventos "click" a cada enlace. Además, adjunta el productId a cada enlace. Al hacer clic en el enlace, obtén el productId y aplícalo en console.log()
+SOLUCION:
+          //Se agrego la clase js-update-link y el dato de data-product-id="${matchingProduct.id}" -> va afuera de la clase no dentro
+          <span class="update-quantity-link link-primary js-update-link" data-product-id="${matchingProduct.id}">
+            Update
+          </span>
+
+        //Funcion de obtencion de enlaces para actualizar
+        document.querySelectorAll(".js-update-link").forEach((link) => {
+          link.addEventListener("click", () => {
+            const productId = link.dataset.productId;
+            
+            console.log(productId);
+
+          });
+        });
 
 
 
