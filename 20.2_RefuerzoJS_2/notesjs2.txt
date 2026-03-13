@@ -7717,6 +7717,8 @@ Haremos que "Actualizar" sea interactivo paso a paso.    Cantidad: 2  Actualizar
 14f. En checkout.js, obtén todos los enlaces de "Actualizar" de la página y agrega un detector de eventos "click" a cada enlace. Además, adjunta el productId a cada enlace. Al hacer clic en el enlace, obtén el productId y aplícalo en console.log()
 
 
+
+
 14g. Agregue 2 elementos HTML después del enlace "Actualizar":
    - Un <input class="quantity-input"> (para introducir una nueva cantidad)
    - Un <span class="save-quantity-link">Guardar</span> (para guardar la cantidad)
