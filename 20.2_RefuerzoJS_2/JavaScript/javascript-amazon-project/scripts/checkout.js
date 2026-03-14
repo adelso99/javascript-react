@@ -155,6 +155,14 @@ document.querySelectorAll(".js-save-link").forEach((link) => {
 
     container.classList.remove("is-editing-quantity");
 
+    const dato = document.querySelector(".quantity-input");
+    const valorProducto = Number(dato.value);
+    console.log(valorProducto);
+
   });
+
+
   
 });
+
+
