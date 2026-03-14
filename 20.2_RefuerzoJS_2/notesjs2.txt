@@ -7762,17 +7762,38 @@ SOLUCION:
     - Use esto y "display: initial;" (restablece la propiedad de visualización) para que aparezca <input> al editar la cantidad. Lo mismo ocurre con el enlace "Guardar"
 
     SOLUCION:
-            //parte de actualizar el producto de checkout la cantidad de productos
-              document.querySelectorAll(".cart-item-container").forEach((cartItem) => {
-                cartItem.addEventListener("click", () => {
-                  cartItem.classList.add("is-editing-quantity");
+              //Funcion de obtencion de enlaces para actualizar
+              document.querySelectorAll(".js-update-link").forEach((link) => {
+                link.addEventListener("click", () => {
+                  const productId = link.dataset.productId;
+                  
+                  
+                  //parte de actualizar el producto de checkout la cantidad de productos
+                  const container = document.querySelector(`.js-cart-item-container-${productId}`);
+
+                  container.classList.add("is-editing-quantity");
+
                 });
               });
 
+
+
             //Parte de CSS de Input y boton Guardar
-            .quantity-input,
-            .save-quantity-link{
+            .quantity-input {
+              width: 30px;
+            }
+
+            .save-quantity-link,
+            .quantity-input  {
               display: none;
+            }
+
+            .is-editing-quantity .quantity-input {
+              display: initial;
+            }
+
+            .is-editing-quantity .save-quantity-link {
+              display: initial;
             }
 
 

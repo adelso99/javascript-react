@@ -212,14 +212,14 @@
 
 .quantity-input {
   width: 30px;
+}
+
+.save-quantity-link,
+.quantity-input  {
   display: none;
 }
 
-.save-quantity-link {
-  display: none;
-}
-
-.is-editing-quantity  {
+.is-editing-quantity .quantity-input {
   display: initial;
 }
 
