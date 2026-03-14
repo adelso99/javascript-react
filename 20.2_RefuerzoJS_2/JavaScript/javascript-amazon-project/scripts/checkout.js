@@ -100,17 +100,6 @@ document.querySelector(".js-order-summary").innerHTML = cartSummaryHTML;
 
 
 
-//Funcion de obtencion de enlaces para actualizar
-document.querySelectorAll(".js-update-link").forEach((link) => {
-  link.addEventListener("click", () => {
-    const productId = link.dataset.productId;
-    
-    console.log(productId);
-
-  });
-});
-
-
 document.querySelectorAll(".js-delete-link").forEach((link) => {
     link.addEventListener("click", () => {
       const productId = link.dataset.productId;
@@ -146,3 +135,15 @@ function updateCartQuantity(){
 
 //llamado de funcion cuando carge la pagina para que se visualice el total de productos real
 updateCartQuantity();
+
+//Funcion de obtencion de enlaces para actualizar
+document.querySelectorAll(".js-update-link").forEach((link) => {
+  link.addEventListener("click", () => {
+    const productId = link.dataset.productId;
+    
+    const container = document.querySelector(`.js-cart-item-container-${productId}`);
+
+    container.classList.add("is-editing-quantity");
+
+  });
+});
