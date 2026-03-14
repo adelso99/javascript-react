@@ -7816,6 +7816,23 @@ SOLUCION:
 
 14j. Ahora implementaremos el cambio entre "Actualizar" y "Guardar"       ->  Cantidad: Guardar Eliminar
   Agrega detectores de eventos "click" a todos los enlaces "Guardar". Al hacer clic en "Guardar", haz lo contrario de "Actualizar": obtén el contenedor de artículos del carrito para el producto y elimina la clase "is-editing-quantity". Esto debería revertir todo el estilo que se aplica al editar la cantidad.
+SOLUCION:
+      <span class="save-quantity-link link-primary js-save-link" data-product-id="${matchingProduct.id}">Save</span>
+
+      //Parte de implementacion del cambio entre "Actualizar" y "Guardar" 
+      document.querySelectorAll(".js-save-link").forEach((link) => {
+        link.addEventListener("click", () => {
+
+          const productId = link.dataset.productId;
+
+          const container = document.querySelector(`.js-cart-item-container-${productId}`);
+
+          container.classList.remove("is-editing-quantity");
+
+        });
+        
+      });
+
 
 
 
