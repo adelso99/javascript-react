@@ -7837,7 +7837,13 @@ SOLUCION:
 
 
 14k. Al hacer clic en "Guardar", usa el DOM para obtener la cantidad <input> del producto y obtén el valor dentro (recuerda convertir este valor a un número). Esta será la nueva cantidad del producto en el carrito
+SOLUCION:
+    <input class="quantity-input js-quantity-input-${matchingProduct.id}">
 
+    //Parte de guardar la cantidad que se ingresa
+    const quantityInput  = document.querySelector(`.js-quantity-input-${productId}`);
+    const newQuantity  = Number(quantityInput.value);
+    console.log(newQuantity );
 
 
 141. En cart.js, crea una función updateQuantity(productId, newQuantity) que encontrará un productId coincidente en el carrito y actualizará su cantidad a la nueva cantidad (recuerda guardar en el almacenamiento después).
