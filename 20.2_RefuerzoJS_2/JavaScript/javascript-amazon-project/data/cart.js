@@ -62,7 +62,7 @@ export function removeFromCart(productId){
 }
 
 
-//funcion de actualizar el carrito
+//funcion de calcular la actualizacion del carrito
 export function calculateCartQuantity(){
         let cartQuantity = 0;
 
@@ -76,7 +76,7 @@ export function calculateCartQuantity(){
 
 
 
-//
+//funcion para actualizar el carrito
 function updateQuantity(productId, newQuantity){
-  
+
 }
