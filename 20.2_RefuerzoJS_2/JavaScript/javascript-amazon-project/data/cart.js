@@ -76,4 +76,7 @@ export function calculateCartQuantity(){
 
 
 
-
+//
+function updateQuantity(productId, newQuantity){
+  
+}

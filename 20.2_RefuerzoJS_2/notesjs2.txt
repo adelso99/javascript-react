@@ -7846,6 +7846,8 @@ SOLUCION:
     console.log(newQuantity );
 
 
+
+
 141. En cart.js, crea una función updateQuantity(productId, newQuantity) que encontrará un productId coincidente en el carrito y actualizará su cantidad a la nueva cantidad (recuerda guardar en el almacenamiento después).
    - Luego, importa y usa esta función al hacer clic en el enlace "Guardar".
 
