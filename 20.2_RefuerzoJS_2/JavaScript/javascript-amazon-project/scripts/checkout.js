@@ -145,6 +145,7 @@ document.querySelectorAll(".js-update-link").forEach((link) => {
 
 
 
+
 //Parte de implementacion del cambio entre "Actualizar" y "Guardar" 
 document.querySelectorAll(".js-save-link").forEach((link) => {
   link.addEventListener("click", () => {
@@ -158,7 +159,7 @@ document.querySelectorAll(".js-save-link").forEach((link) => {
     //Parte de guardar la cantidad que se ingresa
     const quantityInput  = document.querySelector(`.js-quantity-input-${productId}`);
     const newQuantity  = Number(quantityInput.value);
-    console.log(newQuantity );
+     console.log(newQuantity );
 
   });
   
