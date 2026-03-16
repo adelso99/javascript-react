@@ -82,12 +82,12 @@ export function updateQuantity(productId, newQuantity){
   let matchingItem;
 
   cart.forEach((cartItem) => {
-    if (productId === cartItem.productId) {
-      matchingItem = cartItem;
-    }
+      if (productId === cartItem.productId) {
+        matchingItem = cartItem;
+      }
   });
 
-  matchingItem.quantity = newQuantity;
+   matchingItem.quantity = newQuantity;
 
   saveToStorage();
 

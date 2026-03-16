@@ -7890,7 +7890,20 @@ SOLUCION:
         
 
 
-
 14n. Intenta crear más funciones para agregar al enlace "Actualizar", como:
    - Agregar validación (comprobar que la nueva cantidad sea >= 0 y < 1000)
    - Agregar compatibilidad con teclado (permitir la actualización presionando 'Intro')
+
+   SOLUCION:
+       //retorno anticipado
+    if (newQuantity < 0 || newQuantity >= 1000) {
+      alert('Quantity must be at least 0 and less than 1000');
+      return;
+    }
+
+    //uso de la funcion creada
+    updateQuantity(productId, newQuantity);
+
+    //se movio para aca el codigo
+    const container = document.querySelector(`.js-cart-item-container-${productId}`);
+    container.classList.remove('is-editing-quantity');
