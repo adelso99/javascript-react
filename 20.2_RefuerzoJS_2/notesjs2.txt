@@ -7883,6 +7883,12 @@ SOLUCION:
             Quantity: <span class="quantity-label js-quantity-label-${matchingProduct.id}">${cartItem.quantity}</span>
           </span>
 
+              //Actulizacion de cantidad del carrito en el HTML
+          const quantityLabel  = document.querySelector(`.js-quantity-label-${productId}`);
+          quantityLabel .innerHTML = newQuantity;
+
+        
+
 
 
 14n. Intenta crear más funciones para agregar al enlace "Actualizar", como:

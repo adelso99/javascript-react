@@ -164,8 +164,8 @@ document.querySelectorAll(".js-save-link").forEach((link) => {
     updateQuantity(productId, newQuantity);
 
     //Actulizacion de cantidad del carrito en el HTML
-    const dato = document.querySelector(`.js-quantity-label-${productId}`);
-    dato.innerHTML = newQuantity;
+    const quantityLabel  = document.querySelector(`.js-quantity-label-${productId}`);
+    quantityLabel .innerHTML = newQuantity;
 
   
   });
