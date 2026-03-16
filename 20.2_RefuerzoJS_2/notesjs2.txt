@@ -7851,6 +7851,27 @@ SOLUCION:
 141. En cart.js, crea una función updateQuantity(productId, newQuantity) que encontrará un productId coincidente en el carrito y actualizará su cantidad a la nueva cantidad (recuerda guardar en el almacenamiento después).
    - Luego, importa y usa esta función al hacer clic en el enlace "Guardar".
 
+   SOLUCION:
+   export function updateQuantity(productId, newQuantity){
+
+      let matchingItem;
+
+      cart.forEach((cartItem) => {
+        if (productId === cartItem.productId) {
+          matchingItem = cartItem;
+        }
+      });
+
+      matchingItem.quantity = newQuantity;
+
+      saveToStorage();
+
+    }
+
+        //uso de la funcion creada
+    updateQuantity(productId, newQuantity);
+
+
 
 
 14m. Ahora que hemos actualizado la cantidad en el carrito, el último paso es actualizar la cantidad en el HTML. Actualiza estos 2 lugares:
