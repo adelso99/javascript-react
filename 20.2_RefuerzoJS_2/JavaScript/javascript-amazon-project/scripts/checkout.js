@@ -158,7 +158,7 @@ document.querySelectorAll(".js-save-link").forEach((link) => {
 
     //retorno anticipado
     if (newQuantity < 0 || newQuantity >= 1000) {
-      alert('Quantity must be at least 0 and less than 1000');
+      alert('La cantidad debe ser al menos 0 y menor que 1000.');
       return;
     }
 
