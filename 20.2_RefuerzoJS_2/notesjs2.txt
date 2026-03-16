@@ -7878,6 +7878,11 @@ SOLUCION:
    - Dentro del producto -> Cantidad: 2  Actualizar  Eliminar
    - En el encabezado en la parte superior  -> Finalizar compra (3 artículos)
 
+   SOLUCION:
+          <span>
+            Quantity: <span class="quantity-label js-quantity-label-${matchingProduct.id}">${cartItem.quantity}</span>
+          </span>
+
 
 
 14n. Intenta crear más funciones para agregar al enlace "Actualizar", como:

@@ -163,11 +163,11 @@ document.querySelectorAll(".js-save-link").forEach((link) => {
     //uso de la funcion creada
     updateQuantity(productId, newQuantity);
 
-
-      const dato = document.querySelector(`.js-quantity-label-`);
+    //Actulizacion de cantidad del carrito en el HTML
+    const dato = document.querySelector(`.js-quantity-label-${productId}`);
+    dato.innerHTML = newQuantity;
 
   
-
   });
   
 });
