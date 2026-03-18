@@ -2,7 +2,10 @@ import {cart, removeFromCart, calculateCartQuantity, updateQuantity} from "../da
 import {products} from "../data/products.js";
 import {formatCurrency} from "./utils/money.js";
 
+
 hello();
+dayjs();
+
 
 let cartSummaryHTML = "";
 
