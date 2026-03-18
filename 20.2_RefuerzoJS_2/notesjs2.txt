@@ -7932,3 +7932,10 @@ Otros desarrolladores
         |
        WWW   JS
   Nuestro proyecto
+
+
+
+Por qué usamos bibliotecas externas
+  - nos permite compartir código
+  - ahorramos tiempo
+  - evitamos duplicar el trabajo
