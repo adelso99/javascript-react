@@ -7957,3 +7957,5 @@ Para obtener estas fechas:
 
 Para ello nos ayudaremos un una biblioteca externa, que es un muy usada en fechas:
 Biblioteca externa DayJS
+
+minificacion --> se llama asi a la compresion de codigo para que al agregarlo a nuestros proyectos la carga sea mas rapida
