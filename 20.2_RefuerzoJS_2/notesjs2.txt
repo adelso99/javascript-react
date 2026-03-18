@@ -7955,5 +7955,5 @@ Para obtener estas fechas:
 3. Muestra la fecha en un formato fácil de leer
 
 
-Para ello nos ayudaremos un una biblioteca externa:
+Para ello nos ayudaremos un una biblioteca externa, que es un muy usada en fechas:
 Biblioteca externa DayJS
