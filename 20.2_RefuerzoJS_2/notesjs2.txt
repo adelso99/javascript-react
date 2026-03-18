@@ -7953,3 +7953,7 @@ Para obtener estas fechas:
 1. Obtén la fecha de hoy
 2. Realiza los cálculos (Suma 7 días, ...)
 3. Muestra la fecha en un formato fácil de leer
+
+
+Para ello nos ayudaremos un una biblioteca externa:
+Biblioteca externa DayJS
