@@ -7978,3 +7978,17 @@ Mejores prácticas
 Cuando necesitamos algo complicado,
 - Intenta encontrar primero una biblioteca externa.
 - Antes de escribir el código nosotros mismos
+
+Uso de Versión ESM
+    ESM = Módulo EcmaScript
+    (EcmaScript = JavaScript)
+
+
+Versión ESM
+Una versión que funciona con módulos JavaScript
+
+Ejemplo del uso de una Biblioteca con el uso de ESM
+https://unpkg.com/supersimpledev@1.0.1/hello.esm.js
+export function hello() {       //esta haciendo uso de la palabra export para no tener conflicto con el codigo que se use o escriba
+  console.log('hello');
+}

@@ -145,7 +145,6 @@ document.querySelectorAll(".js-update-link").forEach((link) => {
     container.classList.add("is-editing-quantity");
 
   });
-
   
 });
 
