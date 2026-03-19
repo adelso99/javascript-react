@@ -2,6 +2,8 @@ import {cart, removeFromCart, calculateCartQuantity, updateQuantity} from "../da
 import {products} from "../data/products.js";
 import {formatCurrency} from "./utils/money.js";
 
+//Importacion de ESM
+import {hello} from "https://unpkg.com/supersimpledev@1.0.1/hello.esm.js";
 
 hello();
 const today = dayjs();

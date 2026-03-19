@@ -7992,3 +7992,5 @@ https://unpkg.com/supersimpledev@1.0.1/hello.esm.js
 export function hello() {       //esta haciendo uso de la palabra export para no tener conflicto con el codigo que se use o escriba
   console.log('hello');
 }
+
+Módulos DayJS + JavaScript
