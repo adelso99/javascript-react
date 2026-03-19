@@ -5,8 +5,8 @@ import {formatCurrency} from "./utils/money.js";
 
 hello();
 const today = dayjs();
-today.add();
-
+today.add(7, "days");  //agrega que faltan 7 dias
+ 
 let cartSummaryHTML = "";
 
 cart.forEach((cartItem) => {
