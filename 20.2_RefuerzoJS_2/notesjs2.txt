@@ -7971,3 +7971,10 @@ minificacion --> se llama asi a la compresion de codigo para que al agregarlo a 
 
 3. Muestra la fecha en un formato fácil de leer
 console.log(deliveryDate.format("dddd, MMMM D")); // dddd->dia, MMM->Mes D->Numero de Fecha de Calendario
+
+
+
+Mejores prácticas
+Cuando necesitamos algo complicado,
+- Intenta encontrar primero una biblioteca externa.
+- Antes de escribir el código nosotros mismos
