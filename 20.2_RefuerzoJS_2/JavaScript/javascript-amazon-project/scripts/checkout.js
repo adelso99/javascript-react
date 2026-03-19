@@ -4,8 +4,8 @@ import {formatCurrency} from "./utils/money.js";
 
 
 hello();
-console.log(dayjs());
-
+const today = dayjs();
+today.add();
 
 let cartSummaryHTML = "";
 
