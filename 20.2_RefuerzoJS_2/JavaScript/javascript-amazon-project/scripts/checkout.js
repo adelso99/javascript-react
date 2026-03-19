@@ -6,7 +6,7 @@ import {formatCurrency} from "./utils/money.js";
 hello();
 const today = dayjs();
 const deliveryDate = today.add(7, "days");  //agrega que faltan 7 dias
-console.log(deliveryDate);
+console.log(deliveryDate.format("dddd, MMMM D"));
  
 let cartSummaryHTML = "";
 
