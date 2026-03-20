@@ -8016,3 +8016,6 @@ Idea principal de JavaScript
   1. Guardar los datos
   2. Generar el HTML
   3. Hacerlo interactivo
+
+
+  1. Guardar los datos
