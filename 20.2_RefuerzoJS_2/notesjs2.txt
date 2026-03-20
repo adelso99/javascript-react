@@ -8019,3 +8019,41 @@ Idea principal de JavaScript
 
 
   1. Guardar los datos
+  deliveryOptions.js
+      const deliveryOptions = [{
+      id: "1",
+      deliveryDays: 7,
+      priceCents: 0
+    },
+    {
+      id: "2",
+      deliveryDays: 3,
+      priceCents: 499
+    },
+    {
+      id: "3",
+      deliveryDays: 1,
+      priceCents: 999
+    }];
+
+
+    cart.js
+          if(!cart){
+          cart =  [{
+                    productId: "e43638ce-6aa0-4b85-b27f-e1d07eb678c6",
+                    quantity: 2,
+                    deliveryOptionId: "1"  
+                  }, {
+                    productId: "15b6fc6f-327a-4ec4-896f-486349e85a3d",
+                    quantity: 1,
+                    deliveryOptionId: "2"
+                  }];      
+      }
+
+        }else{
+        cart.push({
+          productId: productId,
+          quantity: 1,
+          deliveryOptionId: "1"
+        });
+      }
