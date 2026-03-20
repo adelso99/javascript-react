@@ -8057,3 +8057,8 @@ Idea principal de JavaScript
           deliveryOptionId: "1"
         });
       }
+
+
+
+
+  2. Generar el HTML
