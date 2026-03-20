@@ -7994,11 +7994,18 @@ export function hello() {       //esta haciendo uso de la palabra export para no
 }
 
 Módulos DayJS + JavaScript
+  //Importacion de daysj
+  import dayjs from "https://unpkg.com/supersimpledev@8.5.0/dayjs/esm/index.js";
+
 
 Exportación predeterminada
   -otra forma de exportar
   - podemos usarla cuando solo queremos exportar 1 cosa
 
 Ejemplo:
-  //Importacion de daysj
-  import dayjs from "https://unpkg.com/supersimpledev@8.5.0/dayjs/esm/index.js";
+export default formatCurrency;
+
+
+cuando se reliza una exportacion normal y exportacion normal a eso se le conoce como "Exportacion con Nombre"
+Ejemplo:
+  import {formatCurrency} from "./utils/money.js";
