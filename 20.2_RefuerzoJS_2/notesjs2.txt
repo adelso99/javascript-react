@@ -8009,3 +8009,10 @@ export default formatCurrency;
 cuando se reliza una exportacion normal y exportacion normal a eso se le conoce como "Exportacion con Nombre"
 Ejemplo:
   import {formatCurrency} from "./utils/money.js";
+
+
+
+Idea principal de JavaScript
+  1. Guardar los datos
+  2. Generar el HTML
+  3. Hacerlo interactivo
