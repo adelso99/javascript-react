@@ -7994,3 +7994,11 @@ export function hello() {       //esta haciendo uso de la palabra export para no
 }
 
 Módulos DayJS + JavaScript
+
+Exportación predeterminada
+  -otra forma de exportar
+  - podemos usarla cuando solo queremos exportar 1 cosa
+
+Ejemplo:
+  //Importacion de daysj
+  import dayjs from "https://unpkg.com/supersimpledev@8.5.0/dayjs/esm/index.js";

@@ -5,6 +5,9 @@ import {formatCurrency} from "./utils/money.js";
 //Importacion de ESM
 import {hello} from "https://unpkg.com/supersimpledev@1.0.1/hello.esm.js";
 
+//Importacion de daysj
+import dayjs from "https://unpkg.com/supersimpledev@8.5.0/dayjs/esm/index.js";
+
 hello();
 const today = dayjs();
 const deliveryDate = today.add(7, "days");  //agrega que faltan 7 dias
