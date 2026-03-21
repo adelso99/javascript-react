@@ -119,6 +119,8 @@ function deliveryOptionsHTML(){
       "days"
     );
 
+    const dateString = "";
+
     `
     <div class="delivery-option">
       <input type="radio"
