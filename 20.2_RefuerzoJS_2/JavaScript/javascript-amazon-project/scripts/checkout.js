@@ -112,38 +112,40 @@ cart.forEach((cartItem) => {
 
 //Creacion de la opcion de pago gratis, 7 dias o 1 dia
 function deliveryOptionsHTML(){
-  deliveryOptions.forEach((deliveryOption) => {
-    const today = dayjs();
-    const deliveryDate = today.add(
-      deliveryOption.deliveryDays,
-      "days"
-    );
+  let html = "";
+  
+      deliveryOptions.forEach((deliveryOption) => {
+        const today = dayjs();
+        const deliveryDate = today.add(
+          deliveryOption.deliveryDays,
+          "days"
+        );
 
-    const dateString = deliveryDate.format(
-      "dddd, MMMM D"
-    );
+        const dateString = deliveryDate.format(
+          "dddd, MMMM D"
+        );
 
-    const priceString = deliveryOption.priceCents 
-    === 0 
-      ? "FREE"
-      : `${formatCurrency(deliveryOption.priceCents)} -`;
+        const priceString = deliveryOption.priceCents 
+        === 0 
+          ? "FREE"
+          : `${formatCurrency(deliveryOption.priceCents)} -`;
 
-    `
-    <div class="delivery-option">
-      <input type="radio"
-        class="delivery-option-input"
-        name="delivery-option-${matchingProduct.id}">
-       <div>
-          <div class="delivery-option-date">
-            ${dateString}
+        `
+        <div class="delivery-option">
+          <input type="radio"
+            class="delivery-option-input"
+            name="delivery-option-${matchingProduct.id}">
+          <div>
+              <div class="delivery-option-date">
+                ${dateString}
+              </div>
+              <div class="delivery-option-price">
+                ${priceString} Shipping
+              </div>
           </div>
-          <div class="delivery-option-price">
-            ${priceString} Shipping
-          </div>
-       </div>
-    </div>
-    `
-  });
+        </div>
+        `
+      });
 
 }
 
