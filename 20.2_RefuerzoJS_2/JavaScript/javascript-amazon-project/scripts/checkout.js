@@ -119,7 +119,7 @@ function deliveryOptionsHTML(){
       "days"
     );
 
-    const dateString = "";
+    const dateString = deliveryDate.format(7, "days");
 
     `
     <div class="delivery-option">
