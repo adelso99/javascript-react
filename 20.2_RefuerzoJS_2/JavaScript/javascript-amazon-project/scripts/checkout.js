@@ -112,8 +112,22 @@ cart.forEach((cartItem) => {
 
 //Creacion de la opcion de pago gratis, 7 dias o 1 dia
 function deliveryOptionsHTML(){
-  deliveryOptions.forEach( () => {
-    
+  deliveryOptions.forEach((deliveryOption) => {
+    `
+    <div class="delivery-option">
+      <input type="radio"
+        class="delivery-option-input"
+        name="delivery-option-${matchingProduct.id}">
+       <div>
+          <div class="delivery-option-date">
+            Monday, June 13
+          </div>
+          <div class="delivery-option-price">
+            $9.99 - Shipping
+          </div>
+       </div>
+    </div>
+    `
   });
 
 }

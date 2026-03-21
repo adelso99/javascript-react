@@ -8069,6 +8069,10 @@ Idea principal de JavaScript
     function deliveryOptionsHTML(){
               Pasos
           1. Recorrer las opciones de entrega
+            deliveryOptions.forEach((deliveryOption) => {
+
+          });
+          
           2. Para cada opción, generar código HTML
           3. Combinar el código HTML
       
