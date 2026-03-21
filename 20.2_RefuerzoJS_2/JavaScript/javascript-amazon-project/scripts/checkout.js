@@ -8,6 +8,9 @@ import {hello} from "https://unpkg.com/supersimpledev@1.0.1/hello.esm.js";
 //Importacion de daysj
 import dayjs from "https://unpkg.com/supersimpledev@8.5.0/dayjs/esm/index.js";
 
+//Importacion de archivo para el deliveryOptions
+import {deliveryOptions} from "../data/deliveryOptions.js";
+
 hello();
 const today = dayjs();
 const deliveryDate = today.add(7, "days");  //agrega que faltan 7 dias
@@ -106,6 +109,15 @@ cart.forEach((cartItem) => {
   `;
 
 });
+
+//Creacion de la opcion de pago gratis, 7 dias o 1 dia
+function deliveryOptionsHTML(){
+  deliveryOptions.forEach( () => {
+    
+  });
+
+}
+
 
 document.querySelector(".js-order-summary").innerHTML = cartSummaryHTML;
 

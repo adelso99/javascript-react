@@ -8062,3 +8062,14 @@ Idea principal de JavaScript
 
 
   2. Generar el HTML
+    //Importacion de archivo para el deliveryOptions
+    import {deliveryOptions} from "../data/deliveryOptions.js"
+
+    //Creacion de la opcion de pago gratis, 7 dias o 1 dia
+    function deliveryOptionsHTML(){
+              Pasos
+          1. Recorrer las opciones de entrega
+          2. Para cada opción, generar código HTML
+          3. Combinar el código HTML
+      
+    }
