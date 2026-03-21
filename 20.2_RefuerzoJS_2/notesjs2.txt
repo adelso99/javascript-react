@@ -8110,8 +8110,8 @@ Idea principal de JavaScript
               
     }
 
-          3. Combinar el código HTML
-          //Verificacion de Id del Producto para la fecha
+    esto va arriba en la parte superior de lo anteriro para que funcion el HTML pero no copie todo solo lo que se agrego ya que es largo
+              //Verificacion de Id del Producto para la fecha
           const deliveryOptionId = cartItem.deliveryOptionId;
 
           let deliveryOption;
@@ -8139,3 +8139,8 @@ Idea principal de JavaScript
               Delivery date: ${dateString}
             </div>
 
+
+
+
+
+          3. Combinar el código HTML
