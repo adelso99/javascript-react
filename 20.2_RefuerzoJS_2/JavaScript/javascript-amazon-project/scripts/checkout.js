@@ -113,6 +113,12 @@ cart.forEach((cartItem) => {
 //Creacion de la opcion de pago gratis, 7 dias o 1 dia
 function deliveryOptionsHTML(){
   deliveryOptions.forEach((deliveryOption) => {
+    const today = dayjs();
+    const deliveryDate = today.add(
+      deliveryOption.deliveryDays,
+      "days"
+    );
+
     `
     <div class="delivery-option">
       <input type="radio"
