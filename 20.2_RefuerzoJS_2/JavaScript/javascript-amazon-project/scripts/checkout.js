@@ -123,6 +123,11 @@ function deliveryOptionsHTML(){
       "dddd, MMMM D"
     );
 
+    const priceString = deliveryOption.priceCents 
+    === 0 
+      ? "FREE"
+      : `${formatCurrency(deliveryOption.priceCents)} -`;
+
     `
     <div class="delivery-option">
       <input type="radio"
@@ -130,10 +135,10 @@ function deliveryOptionsHTML(){
         name="delivery-option-${matchingProduct.id}">
        <div>
           <div class="delivery-option-date">
-            Monday, June 13
+            ${dateString}
           </div>
           <div class="delivery-option-price">
-            $9.99 - Shipping
+            ${priceString} Shipping
           </div>
        </div>
     </div>
