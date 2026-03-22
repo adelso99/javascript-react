@@ -8198,3 +8198,26 @@ Idea principal de JavaScript
 
 
    Una función puede llamarse/ejecutarse de nuevo a sí misma = recursión
+
+   esta tecnica que se uso para esto
+    1. Actualizar los datos
+    2. Regenerar todo el HTML
+    = MVC <-- es llamada asi MVC que es --> Modelo - Vista - Controlador
+
+
+MVC
+Dividir nuestro código en 3 partes
+1. Modelo = guarda y gestiona los datos
+2. Vista = toma los datos y los muestra en la página.
+3. Controlador = ejecuta algún código cuando interactuamos con la página.
+
+MVC
+
+Modelo — — — —> Vista
+    \           /
+     \         / 
+     Controlador
+
+
+MVC = garantiza que la página siempre coincida con los datos.
+MVC es un patrón de diseño
