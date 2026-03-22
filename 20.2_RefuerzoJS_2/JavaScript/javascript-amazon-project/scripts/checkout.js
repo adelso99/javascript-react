@@ -236,11 +236,15 @@ function renderOrderSummary(){
         element.addEventListener("click", () => {
           const {productId, deliveryOptionId} = element.dataset;
           updateDeliveryOption(productId, deliveryOptionId);
+
+          //Llamado de la funcion para que actualice la pagina
+          renderOrderSummary();
+
         });
       });
 
 }
 
 
-//Llamado de la funcion para que se ejecuta al realizar un cambio y carga de pagina
+//Llamado de la funcion para que se ejecuta al realizar la carga de pagina
 renderOrderSummary();
