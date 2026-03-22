@@ -8144,3 +8144,9 @@ Idea principal de JavaScript
 
 
           3. Combinar el código HTML
+              1. Actualizar deliveryOptionId en el carrito.
+              2. Actualizar la página
+
+                Pasos
+              1. Recorre el carrito y encuentra el producto
+              2. Actualiza el deliveryOptionId del producto

@@ -95,3 +95,23 @@ export function updateQuantity(productId, newQuantity){
   saveToStorage();
 
 }
+
+
+
+//Funcion para la actualizacion de la fecha de la entrega de los productos
+export function updateDeliveryOption(productId, deliveryOptionId){
+    //Conseguir el Id del Producto
+    let matchingItem;
+
+    cart.forEach((cartItem) => {
+      if(productId === cartItem.productId){
+          matchingItem = cartItem;
+      }
+    });
+
+    matchingItem.deliveryOptionId = deliveryOptionId
+
+    //como actualizamos el carrito de la fecha de procutos tambien debemos de guardarlos en localStorage
+    saveToStorage();
+
+}
