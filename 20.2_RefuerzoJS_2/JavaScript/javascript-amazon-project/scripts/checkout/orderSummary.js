@@ -15,12 +15,6 @@ import {deliveryOptions, getDeliveryOption} from "../../data/deliveryOptions.js"
 import {renderPaymentSummary} from "./paymentSummary.js";
 
 
-hello();
-const today = dayjs();
-const deliveryDate = today.add(7, "days");  //agrega que faltan 7 dias
-console.log(deliveryDate.format("dddd, MMMM D"));
- 
-
 //funcion para actualizar el html cuando sufre algun cambio
 export function renderOrderSummary(){
 
