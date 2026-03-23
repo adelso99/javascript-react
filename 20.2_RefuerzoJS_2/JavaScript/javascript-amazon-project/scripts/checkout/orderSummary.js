@@ -11,6 +11,8 @@ import dayjs from "https://unpkg.com/supersimpledev@8.5.0/dayjs/esm/index.js";
 //Importacion de archivo para el deliveryOptions
 import {deliveryOptions, getDeliveryOption} from "../../data/deliveryOptions.js";
 
+//Importar funcion para eliminar, que servira para que actulice la parte de la suma de los produtos
+import {renderPaymentSummary} from "./paymentSummary.js";
 
 
 hello();
@@ -153,6 +155,8 @@ export function renderOrderSummary(){
             //llamado de funcion que actualice el total de productos
             updateCartQuantity();
 
+            //llamado de funcion para que actualice la cantidad sumatoria de productos y impuestos que se tiene en carrito de compra
+            renderPaymentSummary();
           });
       });
 
@@ -232,6 +236,9 @@ export function renderOrderSummary(){
 
           //Llamado de la funcion para que actualice la pagina
           renderOrderSummary();
+
+          //llamado de funcion para que actualice la cantidad sumatoria de productos y impuestos que se tiene en carrito de compra
+          renderPaymentSummary();
 
         });
       });

@@ -8228,7 +8228,7 @@ Construiremos el aparto de sumar los productos para ver cuanto se tiene en total
 Idea principal de JavaScript -- MVC
   1. Guardar los datos (Modelo)
   2. Generar el HTML (Vista)
-  3. Hacerlo interactivo
+  3. Hacerlo interactivo (Controlador)
 
 
   1. Guardar los datos (Modelo)
@@ -8279,7 +8279,7 @@ Idea principal de JavaScript -- MVC
             });
 
             //parte donde calcula la suma del total de productos y total de envios elegidos antes del impuesto
-            const totalBeforeTaxCents = (productPriceCents + shippingPriceCents) / 100;
+            const totalBeforeTaxCents = productPriceCents + shippingPriceCents;
 
             //parte donde calcula el 10% del impuesto sobre el total del producto y envio del producto -- 10% = multiplicar por 10/100
             const taxCents = totalBeforeTaxCents * 0.1; //que el 0.1 es el 10%
@@ -8298,3 +8298,84 @@ Idea principal de JavaScript -- MVC
         export function formatCurrency(priceCents){
         return (Math.round(priceCents) / 100).toFixed(2);
         }
+
+      //parte para generar el HTML
+      const paymentSummaryHTML = `
+              <div class="payment-summary-title">
+                Order Summary
+              </div>
+
+              <div class="payment-summary-row">
+                <div>Items (3):</div>
+                <div class="payment-summary-money">
+                $${formatCurrency(productPriceCents)}
+                </div>
+              </div>
+
+              <div class="payment-summary-row">
+                <div>Shipping &amp; handling:</div>
+                <div class="payment-summary-money">
+                $${formatCurrency(shippingPriceCents)}
+                </div>
+              </div>
+
+              <div class="payment-summary-row subtotal-row">
+                <div>Total before tax:</div>
+                <div class="payment-summary-money">
+                $${formatCurrency(totalBeforeTaxCents)}
+                </div>
+              </div>
+
+              <div class="payment-summary-row">
+                <div>Estimated tax (10%):</div>
+                <div class="payment-summary-money">
+                $${formatCurrency(taxCents)}
+                </div>
+              </div>
+
+              <div class="payment-summary-row total-row">
+                <div>Order total:</div>
+                <div class="payment-summary-money">
+                $${formatCurrency(totalCents)}
+                </div>
+              </div>
+
+              <button class="place-order-button button-primary">
+                Place your order
+              </button>
+          `;
+
+          document.querySelector(".js-payment-summary").innerHTML = paymentSummaryHTML;
+
+  
+
+
+
+    3. Hacerlo interactivo (Controlador)
+    funcion que contiene todo lo anteriro del paso 1 y 2 de Idea principal de JavaScript -- MVC:
+    export function renderPaymentSummary(){codigo de paso 1 y 2 de Idea principal de JavaScript -- MVC}
+
+      //Importar funcion para eliminar, que servira para que actulice la parte de la suma de los produtos
+      import {renderPaymentSummary} from "./paymentSummary.js";
+
+
+     se agrego en la parte de la funcion de eliminar producto:
+      //llamado de funcion para que actualice la cantidad sumatoria de productos y impuestos que se tiene en carrito de compra
+      renderPaymentSummary();
+
+
+      otro ejemplo de esta parte del MVC es agregar tambien esta funcion en la parte donde se elige la opcion de envio del producto
+            //Oyente para la funcion de elegir que opcion de entrega de producto
+      document.querySelectorAll(".js-delivery-option").forEach((element) => {
+        element.addEventListener("click", () => {
+          const {productId, deliveryOptionId} = element.dataset;
+          updateDeliveryOption(productId, deliveryOptionId);
+
+          //Llamado de la funcion para que actualice la pagina
+          renderOrderSummary();
+
+          //llamado de funcion para que actualice la cantidad sumatoria de productos y impuestos que se tiene en carrito de compra -ACA-
+          renderPaymentSummary();
+
+        });
+      });
