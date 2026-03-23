@@ -18,5 +18,13 @@ export function renderPaymentSummary(){
   });
 
   //parte donde calcula la suma del total de productos y total de envios elegidos antes del impuesto
+  const totalBeforeTaxCents = (productPriceCents + shippingPriceCents) / 100;
+
+  //parte donde calcula el 10% del impuesto sobre el total del producto y envio del producto -- 10% = multiplicar por 10/100
+  const taxCents = totalBeforeTaxCents * 0.1; //que el 0.1 es el 10%
+
+  //parte que calcula el total de productos, envio de Producto y el 10% de impuesto
+  const totalCents = totalBeforeTaxCents + taxCents;
+
   
 }
