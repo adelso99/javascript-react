@@ -8229,3 +8229,12 @@ Idea principal de JavaScript
   1. Guardar los datos
   2. Generar el HTML
   3. Hacerlo interactivo
+
+
+
+  1. Guardar los datos
+  Primero Calcularemos el total que cuesta la suma de todos los Productos 
+      Pasos
+        1. Recorre el carrito
+        2. Para cada producto, precio * cantidad
+        3. Suma todo
