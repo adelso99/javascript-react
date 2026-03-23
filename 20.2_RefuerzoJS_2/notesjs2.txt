@@ -8409,13 +8409,30 @@ SOLUCION:
         const fecha = dato2.format("MMMM D")
         console.log(fecha);  --> En consola March 27 -> que es Marzo 27 porque hoy 22
 
-        
+
 
 15b. Calcula 1 mes después de hoy y muéstralo en el mismo formato que 15a.
+SOLUCION:
+          const dato2 = dato.add(1, "month");
+          const fecha = dato2.format("MMMM D")
+          console.log(fecha); --> En consola April 22 -> que es Abril 22
+
+
 
 15c. DayJS tiene un método .subtract(...) que resta tiempo a una fecha. Calcula 1 mes antes de hoy y muéstralo en el mismo formato que 15a.
+SOLUCION:
+        const dato2 = dato.subtract(1, "month");
+        const fecha = dato2.format("MMMM D")
+        console.log(fecha); --> En consola February 22 -> que es Febrero 22
+
+
 
 15d. Obtén una fecha de DayJS y muéstrala en este formato: '<Día de la semana>' (El formato debe ser 'Lunes', 'Martes', etc.)
+      SOLUCION:
+      const dato = dayjs();
+      const fecha = dato.format("dddd")
+      console.log(fecha); --> En consola Sunday -> que es Domingo
+      
 
 15e. Crea una función isWeekend(fecha) que tome un objeto DayJS y devuelva si la fecha es 'Sábado' o 'Domingo' (pista: usa la solución de 15d). Prueba esta función con algunas fechas diferentes
 

@@ -10,6 +10,6 @@ renderOrderSummary();
 renderPaymentSummary();
 
 const dato = dayjs();
-const dato2 = dato.add(5, "days");
-const fecha = dato2.format("MMMM D")
+const dato2 = dato.add(1, "days");
+const fecha = dato.format("dddd")
 console.log(fecha);
