@@ -8399,6 +8399,17 @@ Idea principal de JavaScript -- MVC
 Ejercicios de la Lección 15 - Bibliotecas externas, MVC
 
 15a. Usando DayJS, obtén la fecha 5 días después de hoy y muéstrala en el formato: '<Mes> <Día del mes>'
+SOLUCION:
+        //Importacion de daysj
+        import dayjs from "https://unpkg.com/supersimpledev@8.5.0/dayjs/esm/index.js";
+
+
+        const dato = dayjs();
+        const dato2 = dato.add(5, "days");
+        const fecha = dato2.format("MMMM D")
+        console.log(fecha);  --> En consola March 27 -> que es Marzo 27 porque hoy 22
+
+        
 
 15b. Calcula 1 mes después de hoy y muéstralo en el mismo formato que 15a.
 
