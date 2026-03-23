@@ -8292,5 +8292,9 @@ Idea principal de JavaScript -- MVC
 
   
 
-  
+
     2. Generar el HTML (Vista)
+    funcion que se usara para que se muestre en pagina con centavos
+        export function formatCurrency(priceCents){
+        return (Math.round(priceCents) / 100).toFixed(2);
+        }
