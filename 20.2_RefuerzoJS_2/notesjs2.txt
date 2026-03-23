@@ -8379,3 +8379,95 @@ Idea principal de JavaScript -- MVC
 
         });
       });
+
+
+  
+
+  En esta lección:
+1. Bibliotecas externas = código fuera de nuestro proyecto
+2. Biblioteca externa DayJS
+3. Bibliotecas externas + Módulos JavaScript, exportación predeterminada
+4. Se creó la sección de entrega
+5. MVC = Modelo - Vista - Controlador
+6. Se creó la sección de pago
+
+
+
+
+
+
+Ejercicios de la Lección 15 - Bibliotecas externas, MVC
+
+15a. Usando DayJS, obtén la fecha 5 días después de hoy y muéstrala en el formato: '<Mes> <Día del mes>'
+
+15b. Calcula 1 mes después de hoy y muéstralo en el mismo formato que 15a.
+
+15c. DayJS tiene un método .subtract(...) que resta tiempo a una fecha. Calcula 1 mes antes de hoy y muéstralo en el mismo formato que 15a.
+
+15d. Obtén una fecha de DayJS y muéstrala en este formato: '<Día de la semana>' (El formato debe ser 'Lunes', 'Martes', etc.)
+
+15e. Crea una función isWeekend(fecha) que tome un objeto DayJS y devuelva si la fecha es 'Sábado' o 'Domingo' (pista: usa la solución de 15d). Prueba esta función con algunas fechas diferentes
+
+15f. Mueva isWeekend() a un archivo separado y use la exportación predeterminada. Importe esta función en otro archivo y ejecútela.
+
+15g. También podemos cambiar el nombre de una exportación predeterminada cuando la importamos. En 15f, cuando "importamos isWeekend", cambie el nombre a algo diferente como "importar isSatSun" y use este nuevo nombre para ejecutar la función.
+
+
+
+Mejoraremos el código en el proyecto final de Amazon.
+
+15h. Al eliminar un producto del carrito, en lugar de usar el DOM y actualizar la página directamente con .delete(), regenere el HTML para el resumen del pedido
+
+15i. En el resumen de pago de la derecha, el número de la primera línea "Artículos (3):" debería mostrar la cantidad del carrito. Sin embargo, este número siempre es 3. Reemplace este número con la cantidad real del carrito y asegúrese de que se actualice cada vez que cambiemos el carrito.
+
+Artículos (3):  $42.75
+Envío y manipulación:  $0.00
+Total antes de impuestos:  $42.75
+Impuesto estimado (10%):  $4.28
+Total del pedido:  $47.03
+
+
+
+
+Ejercicios de desafío
+
+Crearemos el encabezado de pago (en la parte superior) usando MVC.
+
+Pago (3 artículos)
+
+15j. Cree un nuevo archivo "checkoutHeader.js" en la carpeta "checkout", cree una función renderCheckoutHeader, genere el HTML y muéstrelo en la página. Nota: inserte la cantidad correcta del carrito en el HTML
+
+
+15k. Después de eliminar un producto del carrito, vuelva a renderizar el encabezado de pago para que la cantidad del carrito esté actualizada. Nota: use MVC en lugar de actualizar la página directamente con el DOM.
+
+Muchas tiendas en línea no realizan entregas los fines de semana (sábado/domingo).
+
+Actualizaremos nuestro código para que las fechas de entrega no sean en fin de semana.
+
+151. En orderSummary.js, tenemos un código en la parte superior que toma una deliveryOption, calcula la fecha de entrega y la formatea. Este código se repite en deliveryOptionsHTML(). Cree una función para reutilizar este código. (Cree la función calculateDeliveryDate(deliveryOption) en deliveryOptions.js, importe y ejecute esta función en orderSummary.js).
+
+
+15m. Al calcular la fecha de entrega, omita todos los sábados y domingos.
+  - Ejemplos: si hoy es viernes, 5 de octubre, y elegimos la entrega en 1 día, la fecha de entrega debería ser el lunes, 8 de octubre (omita el fin de semana).
+  - Viernes, 5 de octubre + 3 días = miércoles, 10 de octubre (omita el fin de semana).
+  - Lunes, 1 de octubre + 3 días = jueves, 4 de octubre (sin fin de semana intermedio).
+  - Viernes, 5 de octubre + 7 días = martes, 16 de octubre (omita 2 fines de semana intermedios).
+
+
+  Sugerencias: Obtenga la cantidad de días que necesita agregar. Use un bucle while y, en cada iteración, agregue 1 día y disminuya los días restantes a agregar.
+  - Si la fecha es fin de semana, omita la disminución de los días restantes. (Puede usar isWeekend() del ejercicio 15e para ayudarle).
+
+
+
+15n. Opcional: en los ejercicios 14f - 14n, hicimos que el enlace "Actualizar" fuera interactivo.
+
+Fecha de entrega: martes, 31 de octubre
+Calcetines deportivos de algodón gris, negro y gris - 6 pares
+Deportivos
+$10.90
+Cantidad: 2 Actualizar Eliminar
+
+
+Si no hiciste esto, puedes copiar la solución o saltarte este ejercicio.
+- Copia el código del enlace "Actualizar" en el código actual.
+- Después de actualizar la cantidad en el carrito, en lugar de usar el DOM para actualizar la página directamente, usa MVC y vuelve a renderizar todas las partes de la página que necesitan actualizarse
