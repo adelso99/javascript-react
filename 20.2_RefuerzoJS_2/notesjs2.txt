@@ -8496,6 +8496,40 @@ SOLUCION:
 
 
 15g. También podemos cambiar el nombre de una exportación predeterminada cuando la importamos. En 15f, cuando "importamos isWeekend", cambie el nombre a algo diferente como "importar isSatSun" y use este nuevo nombre para ejecutar la función.
+      SOLUCION:
+          function isWeekend(dato){
+          const fecha = dato.format("dddd");
+          return fecha === "Saturday" || fecha === "Sunday"
+          };
+
+          export default isWeekend; 
+
+          //importacion de la funcion isWeekend
+          import isSatSun  from "./utils/money.js";
+
+          const dato = dayjs();
+
+          //Fecha 1
+          let dato2 = dato.add(2, "days");
+          let fecha = dato2.format('dddd, MMMM D');
+          console.log(fecha);
+          console.log(isSatSun (dato2));
+
+
+          //Fecha 2
+          dato2 = dato.add(4, "days");
+          fecha = dato2.format('dddd, MMMM D');
+          console.log(fecha);
+          console.log(isSatSun (dato2));
+
+
+          //Fecha 3
+          dato2 = dato.add(5, "days");
+          fecha = dato2.format('dddd, MMMM D');
+          console.log(fecha);
+          console.log(isSatSun (dato2));
+
+
 
 
 

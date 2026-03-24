@@ -10,8 +10,7 @@ renderOrderSummary();
 renderPaymentSummary();
 
 //importacion de la funcion isWeekend
-import {isWeekend} from "./utils/money.js";
-
+import isSatSun  from "./utils/money.js";
 
 const dato = dayjs();
 
@@ -19,19 +18,19 @@ const dato = dayjs();
 let dato2 = dato.add(2, "days");
 let fecha = dato2.format('dddd, MMMM D');
 console.log(fecha);
-console.log(isWeekend(dato2));
+console.log(isSatSun (dato2));
 
 
 //Fecha 2
 dato2 = dato.add(4, "days");
 fecha = dato2.format('dddd, MMMM D');
 console.log(fecha);
-console.log(isWeekend(dato2));
+console.log(isSatSun (dato2));
 
 
 //Fecha 3
 dato2 = dato.add(5, "days");
 fecha = dato2.format('dddd, MMMM D');
 console.log(fecha);
-console.log(isWeekend(dato2));
+console.log(isSatSun (dato2));
 
