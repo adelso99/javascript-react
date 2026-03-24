@@ -11,7 +11,7 @@ export function renderPaymentSummary(){
     //uso de la funcion para sumar todos los productos que fueron elegidos para comprar en el carrito
     const product = getProduct(cartItem.productId);
     productPriceCents += product.priceCents * cartItem.quantity
-
+ 
     //uso de la funcion para sumar el total de envios elegidos para cada producto del carrito
     const deliveryOption = getDeliveryOption(cartItem.deliveryOptionId);
     shippingPriceCents += deliveryOption.priceCents;
@@ -27,6 +27,14 @@ export function renderPaymentSummary(){
   //parte que calcula el total de productos, envio de Producto y el 10% de impuesto
   const totalCents = totalBeforeTaxCents + taxCents;
 
+
+  //Parte de suma de Productos en el carrito 
+  let cartQuantity = 0;
+
+  cart.forEach((cartItem) => {
+    cartQuantity += cartItem.quantity;//parte de suma del cantidad de productos en el carrito
+  });
+
   //parte para generar el HTML
   const paymentSummaryHTML = `
           <div class="payment-summary-title">
@@ -34,7 +42,7 @@ export function renderPaymentSummary(){
           </div>
 
           <div class="payment-summary-row">
-            <div>Items (3):</div>
+            <div>Items (${cartQuantity}):</div>
             <div class="payment-summary-money">
             $${formatCurrency(productPriceCents)}
             </div>
