@@ -18,8 +18,24 @@ function isWeekend(dato){
 
 
 const dato = dayjs();
-const dato2 = dato.add(6, "days");
-const fecha = dato2.format('dddd, MMMM D');
 
+//Fecha 1
+let dato2 = dato.add(2, "days");
+let fecha = dato2.format('dddd, MMMM D');
 console.log(fecha);
 console.log(isWeekend(dato2));
+
+
+//Fecha 2
+dato2 = dato.add(4, "days");
+fecha = dato2.format('dddd, MMMM D');
+console.log(fecha);
+console.log(isWeekend(dato2));
+
+
+//Fecha 3
+dato2 = dato.add(5, "days");
+fecha = dato2.format('dddd, MMMM D');
+console.log(fecha);
+console.log(isWeekend(dato2));
+

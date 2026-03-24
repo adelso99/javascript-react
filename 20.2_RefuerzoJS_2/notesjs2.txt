@@ -8435,7 +8435,37 @@ SOLUCION:
       
 
 15e. Crea una función isWeekend(fecha) que tome un objeto DayJS y devuelva si la fecha es 'Sábado' o 'Domingo' (pista: usa la solución de 15d). Prueba esta función con algunas fechas diferentes
+      SOLUCION:
+          function isWeekend(dato){
+            const fecha = dato.format("dddd");
 
+            return fecha === "Saturday" || fecha === "Sunday"
+          };
+
+
+          const dato = dayjs();
+
+          //Fecha 1
+          let dato2 = dato.add(2, "days");
+          let fecha = dato2.format('dddd, MMMM D');
+          console.log(fecha);
+          console.log(isWeekend(dato2));
+
+
+          //Fecha 2
+          dato2 = dato.add(4, "days");
+          fecha = dato2.format('dddd, MMMM D');
+          console.log(fecha);
+          console.log(isWeekend(dato2));
+
+
+          //Fecha 3
+          dato2 = dato.add(5, "days");
+          fecha = dato2.format('dddd, MMMM D');
+          console.log(fecha);
+
+
+          En consola
 
 
 15f. Mueva isWeekend() a un archivo separado y use la exportación predeterminada. Importe esta función en otro archivo y ejecútela.
