@@ -8436,6 +8436,8 @@ SOLUCION:
 
 15e. Crea una función isWeekend(fecha) que tome un objeto DayJS y devuelva si la fecha es 'Sábado' o 'Domingo' (pista: usa la solución de 15d). Prueba esta función con algunas fechas diferentes
 
+
+
 15f. Mueva isWeekend() a un archivo separado y use la exportación predeterminada. Importe esta función en otro archivo y ejecútela.
 
 15g. También podemos cambiar el nombre de una exportación predeterminada cuando la importamos. En 15f, cuando "importamos isWeekend", cambie el nombre a algo diferente como "importar isSatSun" y use este nuevo nombre para ejecutar la función.

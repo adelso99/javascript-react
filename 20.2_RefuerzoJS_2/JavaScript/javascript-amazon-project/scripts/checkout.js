@@ -9,11 +9,17 @@ renderOrderSummary();
 
 renderPaymentSummary();
 
-const dato = dayjs();
-const dato2 = dato.add(1, "days");
-const fecha = dato.format("dddd")
-console.log(fecha);
 
-function isWeekend(fecha){
-  
+function isWeekend(dato){
+  const fecha = dato.format("dddd");
+  if(fecha === "Saturday" || fecha === "Sunday"){
+  console.log(fecha);
+  }
 };
+
+
+const dato = dayjs();
+const dato2 = dato.add(5, "day");
+const fecha = dato2.format('dddd, MMMM D');
+
+isWeekend(fecha);
