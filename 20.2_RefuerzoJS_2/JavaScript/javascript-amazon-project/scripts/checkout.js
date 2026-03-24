@@ -12,6 +12,7 @@ renderPaymentSummary();
 
 function isWeekend(dato){
   const fecha = dato.format("dddd");
+
   if(fecha === "Saturday" || fecha === "Sunday"){
   console.log(fecha);
   }
@@ -19,7 +20,8 @@ function isWeekend(dato){
 
 
 const dato = dayjs();
-const dato2 = dato.add(5, "day");
+const dato2 = dato.add(6, "days");
 const fecha = dato2.format('dddd, MMMM D');
 
-isWeekend(fecha);
+console.log(fecha);
+isWeekend(dato);
