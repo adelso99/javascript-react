@@ -8465,7 +8465,18 @@ SOLUCION:
           console.log(fecha);
 
 
-          En consola
+          En consola:
+          //Fecha 1
+          Wednesday, March 25
+          false
+          
+          //Fecha 2
+          32 Friday, March 27
+          false
+          
+          //Fecha 3
+          Saturday, March 28
+          40 true
 
 
 15f. Mueva isWeekend() a un archivo separado y use la exportación predeterminada. Importe esta función en otro archivo y ejecútela.
