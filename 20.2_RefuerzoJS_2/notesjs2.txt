@@ -8536,6 +8536,27 @@ SOLUCION:
 Mejoraremos el código en el proyecto final de Amazon.
 
 15h. Al eliminar un producto del carrito, en lugar de usar el DOM y actualizar la página directamente con .delete(), regenere el HTML para el resumen del pedido
+      SOLUCION:
+
+            document.querySelectorAll(".js-delete-link").forEach((link) => {
+                link.addEventListener("click", () => {
+                  const productId = link.dataset.productId;
+                  removeFromCart(productId);
+
+                  //llado de funcion para que cargue todo el html cuando se elimine un producto en el carrito  -ACA-
+                  renderOrderSummary();
+
+                  //llamado de funcion que actualice el total de productos
+                  updateCartQuantity();
+
+                  //llamado de funcion para que actualice la cantidad sumatoria de productos y impuestos que se tiene en carrito de compra
+                  renderPaymentSummary();
+                });
+            });
+
+
+
+
 
 15i. En el resumen de pago de la derecha, el número de la primera línea "Artículos (3):" debería mostrar la cantidad del carrito. Sin embargo, este número siempre es 3. Reemplace este número con la cantidad real del carrito y asegúrese de que se actualice cada vez que cambiemos el carrito.
 

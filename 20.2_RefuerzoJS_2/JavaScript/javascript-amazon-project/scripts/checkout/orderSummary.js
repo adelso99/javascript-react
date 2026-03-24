@@ -143,8 +143,8 @@ export function renderOrderSummary(){
             const productId = link.dataset.productId;
             removeFromCart(productId);
 
-            const container = document.querySelector(`.js-cart-item-container-${productId}`);
-            container.remove();
+            //llado de funcion para que cargue todo el html cuando se elimine un producto en el carrito
+            renderOrderSummary();
 
             //llamado de funcion que actualice el total de productos
             updateCartQuantity();
