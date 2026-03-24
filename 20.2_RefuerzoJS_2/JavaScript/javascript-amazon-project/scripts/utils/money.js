@@ -3,3 +3,10 @@ export function formatCurrency(priceCents){
 }
 
 export default formatCurrency;
+
+
+export function isWeekend(dato){
+  const fecha = dato.format("dddd");
+
+  return fecha === "Saturday" || fecha === "Sunday"
+};

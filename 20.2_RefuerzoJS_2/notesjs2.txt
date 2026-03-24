@@ -8479,7 +8479,21 @@ SOLUCION:
           40 true
 
 
+
+
 15f. Mueva isWeekend() a un archivo separado y use la exportación predeterminada. Importe esta función en otro archivo y ejecútela.
+        SOLUCION:
+            export function isWeekend(dato){
+              const fecha = dato.format("dddd");
+
+              return fecha === "Saturday" || fecha === "Sunday"
+            };
+
+
+            //importacion de la funcion isWeekend
+            import {isWeekend} from "./utils/money.js";
+
+
 
 15g. También podemos cambiar el nombre de una exportación predeterminada cuando la importamos. En 15f, cuando "importamos isWeekend", cambie el nombre a algo diferente como "importar isSatSun" y use este nuevo nombre para ejecutar la función.
 

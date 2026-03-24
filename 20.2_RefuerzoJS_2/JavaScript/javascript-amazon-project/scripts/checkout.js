@@ -9,12 +9,8 @@ renderOrderSummary();
 
 renderPaymentSummary();
 
-
-function isWeekend(dato){
-  const fecha = dato.format("dddd");
-
-  return fecha === "Saturday" || fecha === "Sunday"
-};
+//importacion de la funcion isWeekend
+import {isWeekend} from "./utils/money.js";
 
 
 const dato = dayjs();
