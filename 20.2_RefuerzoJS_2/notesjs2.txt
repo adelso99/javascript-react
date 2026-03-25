@@ -7674,21 +7674,6 @@ SOLUCION:
 
             }
 
- llamndo de la funcion dentro de la funcion de actualizar el carrito en amazon.js siendo callback
-            //funcion de actualizar el carrito
-            function updateCartQuantity(){
-
-              //llamado de funcion oara el dato de cartQuantity
-                const cartQuantity = calculateCartQuantity();
-
-                document.querySelector(".js-cart-quantity").innerHTML = cartQuantity;
-
-            }
-
-
-            //llamado de funcion para que actualice el total de productos de  una vez ya cuando cargue la pagina
-            updateCartQuantity();
-
 
  llamndo de la funcion dentro de la funcion de actualizar el carrito en checkout.js siendo callback
             //parte de aumento del aumento del checkout.html de la cantidad total de productos en el carrito en la parte superior
@@ -8591,7 +8576,6 @@ Ejercicios de desafío
 
 Crearemos el encabezado de pago (en la parte superior) usando MVC.
 Pago (3 artículos)
-
 15j. Cree un nuevo archivo "checkoutHeader.js" en la carpeta "checkout", cree una función renderCheckoutHeader, genere el HTML y muéstrelo en la página. Nota: inserte la cantidad correcta del carrito en el HTML
 
 

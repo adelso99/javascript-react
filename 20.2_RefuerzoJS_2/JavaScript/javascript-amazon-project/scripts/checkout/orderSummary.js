@@ -14,7 +14,6 @@ import {deliveryOptions, getDeliveryOption} from "../../data/deliveryOptions.js"
 //Importar funcion para eliminar, que servira para que actulice la parte de la suma de los produtos
 import {renderPaymentSummary} from "./paymentSummary.js";
 
-
 //funcion para actualizar el html cuando sufre algun cambio
 export function renderOrderSummary(){
 
@@ -236,6 +235,7 @@ export function renderOrderSummary(){
 
         });
       });
+
 
 }
 

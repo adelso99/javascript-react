@@ -69,7 +69,7 @@ document.querySelector(".js-products-grid").innerHTML = productsHTML;
 //funcion de actualizar el carrito
 function updateCartQuantity(){
 
-   //llamado de funcion oara el dato de cartQuantity
+   //llamado de funcion para el dato de cartQuantity
     const cartQuantity = calculateCartQuantity();
 
     document.querySelector(".js-cart-quantity").innerHTML = cartQuantity;
