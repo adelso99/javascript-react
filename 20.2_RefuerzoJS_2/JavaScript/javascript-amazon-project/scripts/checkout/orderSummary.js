@@ -145,8 +145,9 @@ export function renderOrderSummary(){
             //llado de funcion para que cargue todo el html cuando se elimine un producto en el carrito
             renderOrderSummary();
 
-            //llamado de funcion que actualice el total de productos
-            updateCartQuantity();
+            //llamado de funcion que actualice el total de productos --en la seccion 14 tambien lo hicismo con updateCartQuantity pero es con DOM
+            //con checkoutHeaderHTML() es con MVC 
+            checkoutHeaderHTML();
 
             //llamado de funcion para que actualice la cantidad sumatoria de productos y impuestos que se tiene en carrito de compra
             renderPaymentSummary();
