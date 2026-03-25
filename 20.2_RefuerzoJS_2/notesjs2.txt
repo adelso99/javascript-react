@@ -8577,7 +8577,7 @@ Ejercicios de desafío
 Crearemos el encabezado de pago (en la parte superior) usando MVC.
 Pago (3 artículos)
 15j. Cree un nuevo archivo "checkoutHeader.js" en la carpeta "checkout", cree una función renderCheckoutHeader, genere el HTML y muéstrelo en la página. Nota: inserte la cantidad correcta del carrito en el HTML
-SOLUCION:
+        SOLUCION:
           import {cart} from "../../data/cart.js";
 
           export function renderCheckoutHeader(){
@@ -8633,6 +8633,7 @@ SOLUCION:
 
 
 15k. Después de eliminar un producto del carrito, vuelva a renderizar el encabezado de pago para que la cantidad del carrito esté actualizada. Nota: use MVC en lugar de actualizar la página directamente con el DOM.
+
 
 
 
