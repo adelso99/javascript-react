@@ -5,14 +5,18 @@ import {formatCurrency} from "../utils/money.js";
 //Importacion de ESM
 import {hello} from "https://unpkg.com/supersimpledev@1.0.1/hello.esm.js";
 
-//Importacion de daysj
-import dayjs from "https://unpkg.com/supersimpledev@8.5.0/dayjs/esm/index.js";
-
 //Importacion de archivo para el deliveryOptions
 import {deliveryOptions, getDeliveryOption} from "../../data/deliveryOptions.js";
 
+//Importacion de daysj
+import dayjs from "https://unpkg.com/supersimpledev@8.5.0/dayjs/esm/index.js";
+
 //Importar funcion para eliminar, que servira para que actulice la parte de la suma de los produtos
 import {renderPaymentSummary} from "./paymentSummary.js";
+
+
+//Importacion de la funcion que contiene el formato para las fechas
+import { calculateDeliveryDate } from "../../data/deliveryOptions.js";
 
 //funcion para actualizar el html cuando sufre algun cambio
 export function renderOrderSummary(){
@@ -31,14 +35,8 @@ export function renderOrderSummary(){
           //verificacion de la opcion elegida de envio del producto
           const deliveryOption = getDeliveryOption(deliveryOptionId);
 
-          //formato para le fecha exacta actual
-          const today = dayjs();
-          const deliveryDate = today.add(
-            deliveryOption.deliveryDays,
-            "days"
-          );
-
-          const dateString = deliveryDate.format("dddd, MMMM D");
+          //llmado de funcion que contiene el formato para le fecha exacta actual
+          calculateDeliveryDate(deliveryOption);
 
           cartSummaryHTML += `
             <div class="cart-item-container js-cart-item-container-${matchingProduct.id}">
@@ -89,13 +87,9 @@ export function renderOrderSummary(){
         let html = "";
 
             deliveryOptions.forEach((deliveryOption) => {
-              const today = dayjs();
-              const deliveryDate = today.add(
-                deliveryOption.deliveryDays,
-                "days"
-              );
+          //llmado de funcion que contiene el formato para le fecha exacta actual
+          calculateDeliveryDate(deliveryOption);
 
-              const dateString = deliveryDate.format("dddd, MMMM D");
 
               const priceString = deliveryOption.priceCents 
               === 0 
