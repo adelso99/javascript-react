@@ -8,9 +8,6 @@ import {hello} from "https://unpkg.com/supersimpledev@1.0.1/hello.esm.js";
 //Importacion de archivo para el deliveryOptions
 import {deliveryOptions, getDeliveryOption} from "../../data/deliveryOptions.js";
 
-//Importacion de daysj
-import dayjs from "https://unpkg.com/supersimpledev@8.5.0/dayjs/esm/index.js";
-
 //Importar funcion para eliminar, que servira para que actulice la parte de la suma de los produtos
 import {renderPaymentSummary} from "./paymentSummary.js";
 
@@ -36,7 +33,7 @@ export function renderOrderSummary(){
           const deliveryOption = getDeliveryOption(deliveryOptionId);
 
           //llmado de funcion que contiene el formato para le fecha exacta actual
-          calculateDeliveryDate(deliveryOption);
+          const dateString = calculateDeliveryDate(deliveryOption);
 
           cartSummaryHTML += `
             <div class="cart-item-container js-cart-item-container-${matchingProduct.id}">
@@ -88,7 +85,7 @@ export function renderOrderSummary(){
 
             deliveryOptions.forEach((deliveryOption) => {
           //llmado de funcion que contiene el formato para le fecha exacta actual
-          calculateDeliveryDate(deliveryOption);
+          const dateString = calculateDeliveryDate(deliveryOption);
 
 
               const priceString = deliveryOption.priceCents 
