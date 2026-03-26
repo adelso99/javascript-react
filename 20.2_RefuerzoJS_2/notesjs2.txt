@@ -8660,6 +8660,38 @@ Muchas tiendas en línea no realizan entregas los fines de semana (sábado/domin
 Actualizaremos nuestro código para que las fechas de entrega no sean en fin de semana.
 
 151. En orderSummary.js, tenemos un código en la parte superior que toma una deliveryOption, calcula la fecha de entrega y la formatea. Este código se repite en deliveryOptionsHTML(). Cree una función para reutilizar este código. (Cree la función calculateDeliveryDate(deliveryOption) en deliveryOptions.js, importe y ejecute esta función en orderSummary.js).
+      SOLUCION:
+              //Importacion de daysj
+              import dayjs from "https://unpkg.com/supersimpledev@8.5.0/dayjs/esm/index.js";
+
+
+
+              //Funcion para calcular la fecha
+              export function calculateDeliveryDate(deliveryOption){
+                  const today = dayjs();
+                  const deliveryDate = today.add(
+                      deliveryOption.deliveryDays,
+                      "days"
+                    );
+
+                  const dateString = deliveryDate.format("dddd, MMMM D");
+
+                    
+                return dateString;
+
+              }
+
+              
+              en los apartado necesario de orderSummary.js
+              //llamado de funcion que contiene el formato para le fecha exacta actual
+              const dateString = calculateDeliveryDate(deliveryOption);
+
+              //llamado de funcion que contiene el formato para le fecha exacta actual
+              const dateString = calculateDeliveryDate(deliveryOption);
+
+
+
+
 
 
 15m. Al calcular la fecha de entrega, omita todos los sábados y domingos.
