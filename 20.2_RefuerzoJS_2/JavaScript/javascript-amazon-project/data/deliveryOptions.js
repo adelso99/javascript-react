@@ -26,3 +26,10 @@ export function getDeliveryOption(deliveryOptionId){
 
   return deliveryOption || deliveryOptions[0];
 }
+
+
+
+//Funcion para calcular la fecha
+function calculateDeliveryDate(deliveryOption){
+  
+}
