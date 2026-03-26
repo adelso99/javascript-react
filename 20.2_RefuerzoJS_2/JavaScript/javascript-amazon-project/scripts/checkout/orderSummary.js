@@ -6,14 +6,10 @@ import {formatCurrency} from "../utils/money.js";
 import {hello} from "https://unpkg.com/supersimpledev@1.0.1/hello.esm.js";
 
 //Importacion de archivo para el deliveryOptions
-import {deliveryOptions, getDeliveryOption} from "../../data/deliveryOptions.js";
+import {deliveryOptions, getDeliveryOption, calculateDeliveryDate} from "../../data/deliveryOptions.js";
 
 //Importar funcion para eliminar, que servira para que actulice la parte de la suma de los produtos
 import {renderPaymentSummary} from "./paymentSummary.js";
-
-
-//Importacion de la funcion que contiene el formato para las fechas
-import { calculateDeliveryDate } from "../../data/deliveryOptions.js";
 
 //funcion para actualizar el html cuando sufre algun cambio
 export function renderOrderSummary(){
@@ -84,8 +80,8 @@ export function renderOrderSummary(){
         let html = "";
 
             deliveryOptions.forEach((deliveryOption) => {
-          //llmado de funcion que contiene el formato para le fecha exacta actual
-          const dateString = calculateDeliveryDate(deliveryOption);
+            //llamado de funcion que contiene el formato para le fecha exacta actual
+            const dateString = calculateDeliveryDate(deliveryOption);
 
 
               const priceString = deliveryOption.priceCents 
