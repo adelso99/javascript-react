@@ -32,17 +32,35 @@ export function getDeliveryOption(deliveryOptionId){
 
 
 
+//Parte para calcular la fecha
+//Funcion que decide si es sabado o domingo
+function isWeekend(date) {
+  const dayOfWeek = date.format('dddd');
+  return dayOfWeek === 'Saturday' || dayOfWeek === 'Sunday';
+}
+
+
 //Funcion para calcular la fecha
 export function calculateDeliveryDate(deliveryOption){
-    const today = dayjs();
-    const deliveryDate = today.add(
-        deliveryOption.deliveryDays,
-        "days"
-      );
+    let remainingDays = deliveryOption.deliveryDays;
+    let deliveryDate = dayjs();
+  
+    while (remainingDays > 0) {
 
+      // sumar 1 día
+      deliveryDate = deliveryDate.add(1, "days");
+    
+      // verificar si es fin de semana
+      if (!isWeekend(deliveryDate)) {
+        remainingDays--;
+      }
+      // si NO es fin de semana → restar 1 a remainingDays
+    }
+
+    
     const dateString = deliveryDate.format("dddd, MMMM D");
 
-      
+
   return dateString;
 
 }
