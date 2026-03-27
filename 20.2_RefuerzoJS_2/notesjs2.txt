@@ -8755,3 +8755,33 @@ Cantidad: 2 Actualizar Eliminar
 Si no hiciste esto, puedes copiar la solución o saltarte este ejercicio.
 - Copia el código del enlace "Actualizar" en el código actual.
 - Después de actualizar la cantidad en el carrito, en lugar de usar el DOM para actualizar la página directamente, usa MVC y vuelve a renderizar todas las partes de la página que necesitan actualizarse
+
+    NOTA: Se realizaron estos cambios en el codigo para seguir al arquitectura MVC:
+            //Parte de implementacion del cambio entre "Actualizar" y "Guardar" 
+            document.querySelectorAll(".js-save-link").forEach((link) => {
+              link.addEventListener("click", () => {
+
+                const productId = link.dataset.productId;
+
+                const container = document.querySelector(`.js-cart-item-container-${productId}`);
+                container.classList.remove('is-editing-quantity');
+        
+                //Parte de guardar la cantidad que se ingresa
+                const quantityInput  = document.querySelector(`.js-quantity-input-${productId}`);
+                const newQuantity  = Number(quantityInput.value);
+
+
+                //uso de la funcion creada
+                updateQuantity(productId, newQuantity);
+
+                // porque en lugar de usar el DOM para actualizar la página directamente,
+                // podemos usar MVC y volver a renderizar todo. Esto asegurará que
+                // la página siempre coincida con los datos.
+                renderCheckoutHeader();
+                renderOrderSummary();
+                renderPaymentSummary();
+              
+              
+              });
+              
+            });

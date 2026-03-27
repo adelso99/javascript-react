@@ -173,31 +173,25 @@ export function renderOrderSummary(){
         link.addEventListener("click", () => {
 
           const productId = link.dataset.productId;
-        
+
+          const container = document.querySelector(`.js-cart-item-container-${productId}`);
+          container.classList.remove('is-editing-quantity');
+  
           //Parte de guardar la cantidad que se ingresa
           const quantityInput  = document.querySelector(`.js-quantity-input-${productId}`);
           const newQuantity  = Number(quantityInput.value);
 
-          //retorno anticipado
-          if (newQuantity < 0 || newQuantity >= 1000) {
-            alert('La cantidad debe ser al menos 0 y menor que 1000.');
-            return;
-          }
 
           //uso de la funcion creada
           updateQuantity(productId, newQuantity);
 
-          //se movio para aca el codigo
-          const container = document.querySelector(`.js-cart-item-container-${productId}`);
-          container.classList.remove('is-editing-quantity');
-
-
-          //Actulizacion de cantidad del carrito en el HTML
-          const quantityLabel  = document.querySelector(`.js-quantity-label-${productId}`);
-
-          quantityLabel.innerHTML = newQuantity;
-
-          updateCartQuantity();
+          // porque en lugar de usar el DOM para actualizar la página directamente,
+          // podemos usar MVC y volver a renderizar todo. Esto asegurará que
+          // la página siempre coincida con los datos.
+          renderCheckoutHeader();
+          renderOrderSummary();
+          renderPaymentSummary();
+        
         
         });
         
