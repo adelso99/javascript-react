@@ -8825,10 +8825,32 @@ La forma más sencilla de probarlo:
     - Para ello se creo una carpeta llamada tests 
     - se importo y escribio las lineas de codigo necesarias para realizar la prueba automatizadas
 
+    Ejemplo:
+
+        test.html
+                <!DOCTYPE html>
+                <html lang="es">
+                <head>
+                  <meta charset="UTF-8">
+                  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                  <title>Testing</title>
+                </head>
+                <body>
+                  <h1>Pruebas Automatizadas</h1>
+
+                  <!--Carga de JavaScript-->
+                  <script src="moneyTest.js" type="module"></script>
+                </body>
+                </html>
+
+
         moneyTest.js
-          export function formatCurrency(priceCents){
-          return (Math.round(priceCents) / 100).toFixed(2);
-          }
+                  import {formatCurrency} from "../scripts/utils/money.js"
 
-          export default formatCurrency;
+                  if(formatCurrency(2095) === "20.95"){
+                    console.log("Passed");
+                  }else{
+                    console.log("Failed");
+                  }
 
+                  //en consola sale "Passed" -- En esta prueba realizada
