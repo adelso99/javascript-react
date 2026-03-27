@@ -8785,3 +8785,12 @@ Si no hiciste esto, puedes copiar la solución o saltarte este ejercicio.
               });
               
             });
+
+
+
+
+
+
+
+
+-------------------------------------------LECCION 16 Testing (Pruebas) ------------------------------------------------------------------------
