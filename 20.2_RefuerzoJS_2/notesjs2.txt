@@ -8794,3 +8794,20 @@ Si no hiciste esto, puedes copiar la solución o saltarte este ejercicio.
 
 
 -------------------------------------------LECCION 16 Testing (Pruebas) ------------------------------------------------------------------------
+En el resto del curso:
+
+Si recibes un error, pero tu código parece correcto, es posible que tengas datos incorrectos guardados en localStorage.
+      para soluciona resto, puede ejecutar en conola:
+      localStorage.clear()
+
+
+Si es un error de Objeto y objeto. puede ser que se guardo algo en el almacenamiento local, para ello:
+          1. Revisa tu código, siempre usa JSON.stringify() antes de guardar en localStorage.
+          2. localStorage.clear()
+          3. Actualiza la página
+
+
+
+Testing de Codigo para probar como esta el codigo
+La forma más sencilla de probarlo:
+      Abre el sitio web y prueba el código
