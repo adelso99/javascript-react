@@ -8704,6 +8704,43 @@ Actualizaremos nuestro código para que las fechas de entrega no sean en fin de 
   Sugerencias: Obtenga la cantidad de días que necesita agregar. Use un bucle while y, en cada iteración, agregue 1 día y disminuya los días restantes a agregar.
   - Si la fecha es fin de semana, omita la disminución de los días restantes. (Puede usar isWeekend() del ejercicio 15e para ayudarle).
 
+        SOLUCION:
+                  //Parte para calcular la fecha
+                  //Funcion que decide si es sabado o domingo
+                  function isWeekend(date) {
+                    const dayOfWeek = date.format('dddd');
+                    return dayOfWeek === 'Saturday' || dayOfWeek === 'Sunday';
+                  }
+
+
+                  //Funcion para calcular la fecha
+                  export function calculateDeliveryDate(deliveryOption){
+                      let remainingDays = deliveryOption.deliveryDays;
+                      let deliveryDate = dayjs();
+                    
+                      while (remainingDays > 0) {
+
+                        // sumar 1 día
+                        deliveryDate = deliveryDate.add(1, "days");
+                      
+                        // verificar si es fin de semana
+                        if (!isWeekend(deliveryDate)) {
+                          // si NO es fin de semana → restar 1 a remainingDays
+                          remainingDays--;
+                        }
+                      }
+
+                      
+                      const dateString = deliveryDate.format("dddd, MMMM D");
+
+
+                    return dateString;
+
+                  }
+
+
+
+
 
 
 15n. Opcional: en los ejercicios 14f - 14n, hicimos que el enlace "Actualizar" fuera interactivo.

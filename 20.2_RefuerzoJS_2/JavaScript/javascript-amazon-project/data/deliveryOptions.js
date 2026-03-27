@@ -52,9 +52,9 @@ export function calculateDeliveryDate(deliveryOption){
     
       // verificar si es fin de semana
       if (!isWeekend(deliveryDate)) {
+        // si NO es fin de semana → restar 1 a remainingDays
         remainingDays--;
       }
-      // si NO es fin de semana → restar 1 a remainingDays
     }
 
     
