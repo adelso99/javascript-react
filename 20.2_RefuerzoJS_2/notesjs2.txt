@@ -8854,3 +8854,12 @@ La forma más sencilla de probarlo:
                   }
 
                   //en consola sale "Passed" -- En esta prueba realizada
+                  //esto tambien es conocido como situación = caso de prueba
+
+                  if(formatCurrency(0) === "0.00"){
+                    console.log("Passed");
+                  }else{
+                    console.log("Failed");
+                  }
+
+                  //en consola sale "Passed" -- En esta prueba realizada
