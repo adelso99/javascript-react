@@ -8812,4 +8812,10 @@ Si es un error de Objeto y objeto. puede ser que se guardo algo en el almacenami
 Testing de Codigo para probar como esta el codigo
 
 La forma más sencilla de probarlo:
-      Abre el sitio web y prueba el código
+
+ 1.Prueba Manual (Manual Testing)
+     Abre el sitio web y prueba el código -- Esto se llama Prueba Manual (Manual Testing)
+     
+     Desventajas de las pruebas manuales:
+        1. Es difícil probar todas las situaciones
+        2. Es difícil volver a probar
