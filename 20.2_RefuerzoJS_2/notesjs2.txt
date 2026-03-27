@@ -8819,3 +8819,16 @@ La forma más sencilla de probarlo:
      Desventajas de las pruebas manuales:
         1. Es difícil probar todas las situaciones
         2. Es difícil volver a probar
+
+
+2.Pruebas automatizadas = usar código para probar código
+    - Para ello se creo una carpeta llamada tests 
+    - se importo y escribio las lineas de codigo necesarias para realizar la prueba automatizadas
+
+        moneyTest.js
+          export function formatCurrency(priceCents){
+          return (Math.round(priceCents) / 100).toFixed(2);
+          }
+
+          export default formatCurrency;
+
