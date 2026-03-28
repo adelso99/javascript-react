@@ -8961,3 +8961,4 @@ En una Prueba Automatizada Normal:
 
 
 Usaremos el Frameworks de Prueba Jasmine
+1.Pruebas de usando Jasmine
