@@ -8856,10 +8856,25 @@ La forma más sencilla de probarlo:
                   //en consola sale "Passed" -- En esta prueba realizada
                   //esto tambien es conocido como situación = caso de prueba
 
+
                   if(formatCurrency(0) === "0.00"){
                     console.log("Passed");
                   }else{
                     console.log("Failed");
                   }
-
                   //en consola sale "Passed" -- En esta prueba realizada
+
+
+                  if(formatCurrency(2000.5) === "20.01"){
+                    console.log("Passed");
+                  }else{
+                    console.log("Failed");
+                  }
+                   //en consola sale "Passed" -- En esta prueba realizada
+
+
+
+  
+  2 tipos de casos de prueba
+        1. Casos de prueba básicos
+        2. Casos límite
