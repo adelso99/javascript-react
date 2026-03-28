@@ -8944,3 +8944,20 @@ Agrupar pruebas relacionadas
               Passed
               Redondea al centavo más cercano
               Passed
+
+
+
+
+
+-------------------------------------------LECCION 16.1 Testing Frameworks (Pruebas con Frameworks)--------------------------------------------------
+
+Testing Frameworks = biblioteca externa que nos ayuda a escribir pruebas más fácilmente
+
+En una Prueba Automatizada Normal:
+      1. Crear conjunto de pruebas
+      2. Crear pruebas
+      3. Comparar valores y mostrar el resultado
+
+
+
+Usaremos el Frameworks de Prueba Jasmine
