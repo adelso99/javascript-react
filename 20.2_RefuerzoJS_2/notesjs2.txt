@@ -8907,3 +8907,7 @@ La forma más sencilla de probarlo:
 
 
 Siempre intenta probar algo diferente en cada caso de prueba.
+
+Agrupar pruebas relacionadas
+     - Grupo de pruebas relacionadas = conjunto de pruebas
+
