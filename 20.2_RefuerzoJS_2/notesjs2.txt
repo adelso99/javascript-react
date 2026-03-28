@@ -8852,7 +8852,6 @@ La forma más sencilla de probarlo:
                   }else{
                     console.log("Failed");
                   }
-
                   //en consola sale "Passed" -- En esta prueba realizada
                   //esto tambien es conocido como situación = caso de prueba
 
@@ -8876,5 +8875,35 @@ La forma más sencilla de probarlo:
 
   
   2 tipos de casos de prueba
-        1. Casos de prueba básicos
-        2. Casos límite
+        1. Casos de prueba básicos = comprueba si el código funciona
+          Ejemplo:
+          
+                  if(formatCurrency(2095) === "20.95"){ //numeros ingresados faciles de leer
+                    console.log("Passed");
+                  }else{
+                    console.log("Failed");
+                  }
+                  //en consola sale "Passed" -- En esta prueba realizada
+
+        2. Casos límite = prueba con valores complicados
+         Ejemplos:
+                  if(formatCurrency(0) === "0.00"){  //Numeros Ingresados un poco dificiles de leer
+                    console.log("Passed");
+                  }else{
+                    console.log("Failed");
+                  }
+                  //en consola sale "Passed" -- En esta prueba realizada
+
+
+                  if(formatCurrency(2000.5) === "20.01"){  //Numeros Ingresados un poco dificiles de leer
+                    console.log("Passed");
+                  }else{
+                    console.log("Failed");
+                  }
+                   //en consola sale "Passed" -- En esta prueba realizada
+
+
+
+
+
+Siempre intenta probar algo diferente en cada caso de prueba.
