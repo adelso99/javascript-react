@@ -9018,3 +9018,7 @@ Prueba una función diferente usando Jasmine
 Prueba inestable = prueba que a veces pasa y a veces falla
 para ello en Jasmine esta esta funcion:
 Mocks = nos permite reemplazar un método con una versión falsa
+
+spyOn() registra cada vez se utiliza un método
+
+el metod "toHaveBeenCalledTimes()", comprueba cuantas veces el localStorage fue llamado
