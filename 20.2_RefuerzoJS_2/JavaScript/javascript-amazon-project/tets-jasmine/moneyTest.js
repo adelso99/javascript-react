@@ -12,4 +12,9 @@ describe("Conjunto de pruebas: formatCurrency --Formato de Moneda--", () => {
     it("Funciona con 0", () => {
       expect(formatCurrency(0)).toEqual("0.00");
     });
+
+    //Prueba 3
+    it("Redondea al centavo mas cercano", () => {
+      expect(formatCurrency(2000.5)).toEqual("20.01");
+    });
 });
