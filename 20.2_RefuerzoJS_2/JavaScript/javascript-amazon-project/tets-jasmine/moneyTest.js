@@ -2,7 +2,14 @@ import {formatCurrency} from "../scripts/utils/money.js"
 
 
 describe("Conjunto de pruebas: formatCurrency --Formato de Moneda--", () => {
+
+    //Prueba 1
     it("Conversion de Centavos a Dolares", () => {
-    expect(formatCurrency(2095)).toEqual("20.95");
+      expect(formatCurrency(2095)).toEqual("20.95");
+    });
+
+    //Prueba 2
+    it("Funciona con 0", () => {
+      expect(formatCurrency(0)).toEqual("0.00");
     });
 });
