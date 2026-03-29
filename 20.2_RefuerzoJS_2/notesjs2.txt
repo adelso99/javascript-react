@@ -8971,4 +8971,16 @@ para darle un nombre a la prueba se usa la funcion "if()"
 
 en cada prueba que se haga se devera seguir de una funcion anonima luego de darle nombre a la prueba
 
-Jasmine proporciona la funcion "expect()", para que no sea necesario escibir if para probar el codigo
+Jasmine proporciona la funcion "expect()", para que no sea necesario escibir if para probar el codigo, y esto nos proporcioanra un objeto, para comparar ese objeto existen varias formas, una de ellas es con ".toEqual()"
+
+    Ejemplo:
+              import {formatCurrency} from "../scripts/utils/money.js"
+
+
+                describe("Conjunto de pruebas: formatCurrency --Formato de Moneda--", () => {
+                    it("Conversion de Centavos a Dolares", () => {
+                    expect(formatCurrency(2095)).toEqual("20.95");
+                    });
+                });
+
+                
