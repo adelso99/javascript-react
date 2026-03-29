@@ -9006,3 +9006,15 @@ Jasmine proporciona la funcion "expect()", para que no sea necesario escibir if 
                         });
                     });
 
+
+
+Prueba una función diferente usando Jasmine
+  Mejores prácticas
+  Prueba cada condición de una instrucción if
+
+  Cobertura de pruebas = qué porcentaje del código se está probando
+(Intenta maximizar la cobertura de pruebas)
+
+Prueba inestable = prueba que a veces pasa y a veces falla
+para ello en Jasmine esta esta funcion:
+Mocks = nos permite reemplazar un método con una versión falsa
