@@ -8963,3 +8963,8 @@ En una Prueba Automatizada Normal:
 Usaremos el Frameworks de Prueba Jasmine
 1.Pruebas de usando Jasmine
   spec = test
+
+
+en Jasmine para crear un conjunto de prueba se usa la funcion "describe()"
+
+para darle un nombre a la prueba se usa la funcion "if()"
