@@ -9136,4 +9136,12 @@ Prueba de integración = prueba cómo funcionan juntas muchas unidades/fragmento
       
 
         2. Cómo se comporta la página
+        Prueba de integración = prueba cómo funcionan juntas muchas unidades/fragmentos de código
+
+        Hooks --Ganchos-- = nos permite ejecutar algún código para cada prueba
         
+        Hooks en Jasmine
+            beforeEach() = ejecuta el código antes de cada prueba
+            afterEach() = ejecuta el código después de cada prueba
+            beforeAll() = ejecuta el código antes de todas las pruebas
+            afterAll() = ejecuta el código después de todas las pruebas

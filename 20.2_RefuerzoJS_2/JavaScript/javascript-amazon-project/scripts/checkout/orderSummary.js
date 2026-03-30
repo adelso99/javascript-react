@@ -131,7 +131,9 @@ export function renderOrderSummary(){
 
             //llamado de funcion que actualice el total de productos --en la seccion 14 tambien lo hicismo con updateCartQuantity pero es con DOM
             //con checkoutHeaderHTML() es con MVC 
-            //checkoutHeaderHTML();
+
+            //--ELIMINAR EL COMENTADO DE CHECKOU--
+            //checkoutHeaderHTML(); 
 
             //llamado de funcion para que actualice la cantidad sumatoria de productos y impuestos que se tiene en carrito de compra
             renderPaymentSummary();
