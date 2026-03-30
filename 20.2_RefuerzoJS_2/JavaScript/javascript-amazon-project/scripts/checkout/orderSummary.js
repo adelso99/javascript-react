@@ -132,8 +132,7 @@ export function renderOrderSummary(){
             //llamado de funcion que actualice el total de productos --en la seccion 14 tambien lo hicismo con updateCartQuantity pero es con DOM
             //con checkoutHeaderHTML() es con MVC 
 
-            //--ELIMINAR EL COMENTADO DE CHECKOU--
-            //checkoutHeaderHTML(); 
+            checkoutHeaderHTML(); 
 
             //llamado de funcion para que actualice la cantidad sumatoria de productos y impuestos que se tiene en carrito de compra
             renderPaymentSummary();
@@ -150,8 +149,6 @@ export function renderOrderSummary(){
         document.querySelector(".js-return-to-home-link").innerHTML = `${cartQuantity} items`;
 
       }
-
-      /* ----ELIMINAR ESTO COMENTADO DESPUES----
 
       //llamado de funcion cuando carge la pagina para que se visualice el total de productos real
       updateCartQuantity();
@@ -170,7 +167,6 @@ export function renderOrderSummary(){
         
       });
 
-      */
 
 
       //Parte de implementacion del cambio entre "Actualizar" y "Guardar" 
