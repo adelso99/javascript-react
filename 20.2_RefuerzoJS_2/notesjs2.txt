@@ -9230,9 +9230,17 @@ Prueba de integración = prueba cómo funcionan juntas muchas unidades/fragmento
                 
 
 
-
-
 Proceso
 1. Realizar cambios en el código
 2. Volver a ejecutar las pruebas
 3. Guardar en Git
+
+
+
+En esta lección:
+      1. Pruebas manuales y automatizadas
+      2. Casos de prueba y conjuntos de pruebas
+      3. Marco de pruebas = nos ayuda a escribir pruebas más fácilmente
+      4. Simular y espiar métodos
+      5. Probar páginas web usando pruebas de integración
+      6. Ganchos
