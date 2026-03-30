@@ -57,7 +57,8 @@ export function renderOrderSummary(){
                     </span>
                       <input class="quantity-input js-quantity-input-${matchingProduct.id}">
                       <span class="save-quantity-link link-primary js-save-link" data-product-id="${matchingProduct.id}">Save</span>
-                    <span class="delete-quantity-link link-primary js-delete-link" data-product-id="${matchingProduct.id}">
+                    <span class="delete-quantity-link link-primary js-delete-link 
+                    js-delete-link-${matchingProduct.id}" data-product-id="${matchingProduct.id}">
                       Delete
                     </span>
                   </div>
@@ -130,7 +131,7 @@ export function renderOrderSummary(){
 
             //llamado de funcion que actualice el total de productos --en la seccion 14 tambien lo hicismo con updateCartQuantity pero es con DOM
             //con checkoutHeaderHTML() es con MVC 
-            checkoutHeaderHTML();
+            //checkoutHeaderHTML();
 
             //llamado de funcion para que actualice la cantidad sumatoria de productos y impuestos que se tiene en carrito de compra
             renderPaymentSummary();
