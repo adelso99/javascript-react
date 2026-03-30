@@ -9073,3 +9073,10 @@ Ejemplo:
 Cómo crear pruebas más complejas
 
 Prueba de integración = prueba cómo funcionan juntas muchas unidades/fragmentos de código
+
+2 cosas para probar:
+  1. Cómo se ve la página
+  2. Cómo se comporta la página
+
+
+    1. Cómo se ve la página
