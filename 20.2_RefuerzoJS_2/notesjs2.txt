@@ -9367,6 +9367,98 @@ Ejercicios de desafío
    - Cree una prueba: elimine un productId que esté en el carrito.
    - Cree una prueba: elimine un productId que no esté en el carrito (en este caso, la función no debería hacer nada).
    - En cada prueba, compruebe si el carrito tiene el aspecto correcto. Además, compruebe que localStorage.setItem se haya llamado una vez y con los valores correctos
+SOLUCION:
+          describe("Conjunto de Pruebas: removeFromCart --Remover del carrito--", () => {
+            beforeEach(() => {
+              spyOn(localStorage, "setItem");
+            });
+
+            it("Remover Producto del carrito", () => {
+              spyOn(localStorage, "getItem").and.callFake(() => {
+                return JSON.stringify([{
+                  productId: "e43638ce-6aa0-4b85-b27f-e1d07eb678c6",
+                  quantity: 1,
+                  deliveryOptionId: "1"
+                }]); //devuelviendo cadena en el localst  
+              }); 
+
+              loadFromStorage();
+            
+              removeFromCart("e43638ce-6aa0-4b85-b27f-e1d07eb678c6");
+              expect(cart.length).toEqual(0);
+              expect(localStorage.setItem).toHaveBeenCalledTimes(1);
+              expect(localStorage.setItem).toHaveBeenCalledWith("cart", JSON.stringify([]));
+              }); 
+
+              it("si el producto no existe, NO debe Hacer Nada", () => {
+                spyOn(localStorage, "getItem").and.callFake(() => {
+                  return JSON.stringify([{
+                    productId: "e43638ce-6aa0-4b85-b27f-e1d07eb678c6",
+                    quantity: 1,
+                    deliveryOptionId: "1"
+                  }]); //devuelviendo cadena en el localst  
+                }); 
+
+                loadFromStorage();
+                
+                removeFromCart("e4");
+                expect(cart.length).toEqual(1);
+                expect(localStorage.setItem).toHaveBeenCalledTimes(1);
+                expect(localStorage.setItem).toHaveBeenCalledWith("cart", JSON.stringify([{
+                  productId: "e43638ce-6aa0-4b85-b27f-e1d07eb678c6",
+                  quantity: 1,
+                  deliveryOptionId: "1"
+                }]));
+                
+            });
+
+
+          });
+
+
+
+SOLUCION 2:
+          beforeEach(() => {
+            spyOn(localStorage, 'setItem');
+          });
+
+          it('removes a product from the cart', () => {
+            spyOn(localStorage, 'getItem').and.callFake(() => {
+              return JSON.stringify([{
+                productId: 'e43638ce-6aa0-4b85-b27f-e1d07eb678c6',
+                quantity: 1,
+                deliveryOptionId: '1'
+              }]);
+            });
+            loadFromStorage();
+
+            removeFromCart('e43638ce-6aa0-4b85-b27f-e1d07eb678c6');
+            expect(cart.length).toEqual(0);
+            expect(localStorage.setItem).toHaveBeenCalledTimes(1);
+            expect(localStorage.setItem).toHaveBeenCalledWith('cart', JSON.stringify([]));
+          });
+
+          it('does nothing if product is not in the cart', () => {
+            spyOn(localStorage, 'getItem').and.callFake(() => {
+              return JSON.stringify([{
+                productId: 'e43638ce-6aa0-4b85-b27f-e1d07eb678c6',
+                quantity: 1,
+                deliveryOptionId: '1'
+              }]);
+            });
+            loadFromStorage();
+
+            removeFromCart('does-not-exist');
+            expect(cart.length).toEqual(1);
+            expect(cart[0].productId).toEqual('e43638ce-6aa0-4b85-b27f-e1d07eb678c6');
+            expect(cart[0].quantity).toEqual(1);
+            expect(localStorage.setItem).toHaveBeenCalledTimes(1);
+            expect(localStorage.setItem).toHaveBeenCalledWith('cart', JSON.stringify([{
+              productId: 'e43638ce-6aa0-4b85-b27f-e1d07eb678c6',
+              quantity: 1,
+              deliveryOptionId: '1'
+            }]));
+          });
 
 
 
