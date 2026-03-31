@@ -107,3 +107,13 @@ describe("Conjunto de Pruebas: removeFromCart --Remover del carrito--", () => {
   });
 
 });
+
+
+
+/*
+16k. En cartTest.js, agregue un conjunto de pruebas para la función updateDeliveryOption.
+    - Simule localStorage.setItem y localStorage.getItem al inicio.
+    - Cree una prueba básica: actualice la opción de entrega de un producto en el carrito.
+    - Verifique que el carrito se vea correcto.
+    - Verifique que localStorage.setItem se haya llamado una vez con los valores correctos.
+*/
