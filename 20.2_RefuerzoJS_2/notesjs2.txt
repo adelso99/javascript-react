@@ -9470,7 +9470,64 @@ SOLUCION 2:
     - Comprueba que cart.length sea correcto.
     - Comprueba el primer producto en el carrito: productId y deliveryOptionId son correctos (deliveryOptionId debería ser '3' ahora).
     - Después de actualizar la opción de entrega, el resumen de pago debería mostrarse en la página. Obtén el precio de envío y el precio total del resumen de pago y comprueba si son correctos ('$14.98' y '$63.50').
+SOLUCION:
+              html += `
+            <div class="delivery-option js-delivery-option
+             js-delivery-option-${matchingProduct.id}-${deliveryOption.id}"
+              data-product-id="${matchingProduct.id}"
+              data-delivery-option-id="${deliveryOption.id}">
+                <input type="radio"
+                ${isChecked ? "checked" : ""}
+                class="delivery-option-input
+                js-delivery-option-input-${matchingProduct.id}-${deliveryOption.id}"
+                  name="delivery-option-${matchingProduct.id}">
+                <div>
+                    <div class="delivery-option-date">
+                      ${dateString}
+                    </div>
+                    <div class="delivery-option-price">
+                      ${priceString} Shipping
+                    </div>
+                </div>
+              </div>
+              `
+            });
 
+          
+          <div class="payment-summary-row">
+            <div>Shipping &amp; handling:</div>
+             <div class="payment-summary-money js-payment-summary-shipping">
+            $${formatCurrency(shippingPriceCents)}
+            </div>
+          </div>
+
+          
+          <div class="payment-summary-row total-row">
+            <div>Order total:</div>
+            <div class="payment-summary-money js-payment-summary-total">
+            $${formatCurrency(totalCents)}
+            </div>
+          </div>
+
+            it('Conjunto de Pruebas: Actualizar la opción de entrega', () => {
+            document.querySelector(`.js-delivery-option-${productId1}-3`).click();
+
+            expect(
+              document.querySelector(`.js-delivery-option-input-${productId1}-3`).checked
+            ).toEqual(true);
+
+            expect(cart.length).toEqual(2);
+            expect(cart[0].productId).toEqual(productId1);
+            expect(cart[0].deliveryOptionId).toEqual('3');
+
+            expect(
+              document.querySelector('.js-payment-summary-shipping').innerText
+            ).toEqual('$14.98');
+            expect(
+              document.querySelector('.js-payment-summary-total').innerText
+            ).toEqual('$63.50');
+          });
+  
 
 
 
