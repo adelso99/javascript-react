@@ -9251,10 +9251,41 @@ En esta lección:
 Ejercicios de la Lección 16 - Pruebas
 
 16a. En moneyTest.js, agregue un caso de prueba para formatCurrency(2000.4). Esta prueba verifica si el código redondea hacia abajo al centavo más cercano. Después de crear el caso de prueba, vuelva a ejecutar todas las pruebas para ver si su código es correcto.
+SOLUCION:
+    //prueba 4
+    it("Redondeo 2 del centavo mas cercano", () => {
+      expect(formatCurrency(2000.4)).toEqual("20.00");
+    });
+
+
 
 16b. Agregue otro caso de prueba para formatCurrency() y pruebe con un número negativo (usted decide qué número usar). Vuelva a ejecutar todas las pruebas después.
   - tiene otro método que podemos usar: toHaveBeenCalledWith(). Este método verifica qué valores recibió un método simulado. Por ejemplo:
   - expect(localStorage.setItem).toHaveBeenCalledWith('cart', '[]') Verifica si el código llamó a localstorage.setItem('cart', '[]') en algún momento
+SOLUCION 1:
+          export function formatCurrency(priceCents){
+            if (priceCents < 0) {
+              return "0.00";
+            }else{
+                return (Math.round(priceCents) / 100).toFixed(2);
+            }
+          }
+          export default formatCurrency;
+
+
+          //Prueba 5
+          it("Redeondeo de un numero negativo", ()  => {
+            expect(formatCurrency(-1)).toEqual("0.00");
+          });
+
+
+
+SOLUCION 2:
+          it('works with negative numbers', () => {
+            expect(formatCurrency(-500)).toEqual('-5.00');
+          });
+
+
 
 
 16c. En cartTest.js, en la primera prueba, agregue un expect(localStorage.setItem) y verifique si setItem recibió los valores correctos. El primer valor debe ser 'cart' y el segundo valor debe ser el array cart que se guardó (convierta el array cart en una cadena usando JSON.stringify ya que localStorage solo admite guardar cadenas).
@@ -9269,6 +9300,7 @@ Ejercicios de la Lección 16 - Pruebas
 16g. En orderSummaryTest.js, en cada prueba, compruebe si el nombre del producto se muestra correctamente en la página. (En orderSummary.js, deberá agregar una clase al elemento name para obtenerlo de la página).
 
 16h. En orderSummaryTest.js, compruebe si los precios de los productos se muestran correctamente en la página. Cada precio debe tener un signo $ delante.
+
 
 Ejercicios de desafío
 
@@ -9311,6 +9343,6 @@ Ejercicios de desafío
     - Compruebe que el carrito se vea correcto y verifique que no se haya llamado a localStorage.setItem.
     moneyTest.js y cart.js cartTest.js
 
-    
+
 
 16n. (Opcional) Generalmente, creamos pruebas para cada archivo de código. Ejemplos: money.js. Si desea practicar más, elija otros archivos como products.js o paymentSummary.js y cree pruebas para estos. (Nota: crear pruebas lleva tiempo, por lo que este ejercicio es opcional. No hay código de solución para este ejercicio, pero puede verificar su código volviendo a ejecutar las pruebas).

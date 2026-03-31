@@ -17,4 +17,14 @@ describe("Conjunto de pruebas: formatCurrency --Formato de Moneda--", () => {
     it("Redondea al centavo mas cercano", () => {
       expect(formatCurrency(2000.5)).toEqual("20.01");
     });
+
+    //prueba 4
+    it("Redondeo 2 del centavo mas cercano", () => {
+      expect(formatCurrency(2000.4)).toEqual("20.00");
+    });
+
+    //Prueba 5
+    it("Redeondeo de un numero negativo", ()  => {
+      expect(formatCurrency(-1)).toEqual("0.00");
+    });
 });
