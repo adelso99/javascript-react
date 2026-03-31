@@ -9260,8 +9260,6 @@ SOLUCION:
 
 
 16b. Agregue otro caso de prueba para formatCurrency() y pruebe con un número negativo (usted decide qué número usar). Vuelva a ejecutar todas las pruebas después.
-  - tiene otro método que podemos usar: toHaveBeenCalledWith(). Este método verifica qué valores recibió un método simulado. Por ejemplo:
-  - expect(localStorage.setItem).toHaveBeenCalledWith('cart', '[]') Verifica si el código llamó a localstorage.setItem('cart', '[]') en algún momento
 SOLUCION 1:
           export function formatCurrency(priceCents){
             if (priceCents < 0) {
@@ -9287,17 +9285,36 @@ SOLUCION 2:
 
 
 
-
+- tiene otro método que podemos usar: toHaveBeenCalledWith(). Este método verifica qué valores recibió un método simulado. Por ejemplo:
+- expect(localStorage.setItem).toHaveBeenCalledWith('cart', '[]') Verifica si el código llamó a localstorage.setItem('cart', '[]') en algún momento
 16c. En cartTest.js, en la primera prueba, agregue un expect(localStorage.setItem) y verifique si setItem recibió los valores correctos. El primer valor debe ser 'cart' y el segundo valor debe ser el array cart que se guardó (convierta el array cart en una cadena usando JSON.stringify ya que localStorage solo admite guardar cadenas).
+SOLUCION:
+      expect(localStorage.setItem).toHaveBeenCalledWith("cart", JSON.stringify([{
+        productId: 'e43638ce-6aa0-4b85-b27f-e1d07eb678c6',
+        quantity: 2,
+        deliveryOptionId: '1'
+      }]));
+
+
 
 16d. En la segunda prueba en cartTest.js, verifique también si localStorage.setItem() recibió los valores correctos.
+SOLUCION:
+      expect(localStorage.setItem).toHaveBeenCalledWith("cart", JSON.stringify([{
+        productId: 'e43638ce-6aa0-4b85-b27f-e1d07eb678c6',
+        quantity: 1,
+        deliveryOptionId: '1'
+      }]));
+
+
 
 16e. En cartTest.js, cree un hook beforeEach(). Mueva el código de configuración spyon(localStorage, 'setItem'); dentro de este hook para compartir este código entre las dos pruebas.
+
 
 16f. En orderSummaryTest.js, cree un hook afterEach(). Mueva el código de limpieza document.querySelector('.js-test-container')...inside
 
 
 16g. En orderSummaryTest.js, en cada prueba, compruebe si el nombre del producto se muestra correctamente en la página. (En orderSummary.js, deberá agregar una clase al elemento name para obtenerlo de la página).
+
 
 16h. En orderSummaryTest.js, compruebe si los precios de los productos se muestran correctamente en la página. Cada precio debe tener un signo $ delante.
 
