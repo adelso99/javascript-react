@@ -9308,15 +9308,56 @@ SOLUCION:
 
 
 16e. En cartTest.js, cree un hook beforeEach(). Mueva el código de configuración spyon(localStorage, 'setItem'); dentro de este hook para compartir este código entre las dos pruebas.
+SOLUCION:
+        //uso de hook 
+        beforeEach(() => {
+          //spyOn nos proporciona un objeto que queremos cambiar
+          spyOn(localStorage, "setItem"); 
+        });
+
 
 
 16f. En orderSummaryTest.js, cree un hook afterEach(). Mueva el código de limpieza document.querySelector('.js-test-container')...inside
+SOLUCION:
+        //uso de Hooks o Ganchos con afterEach()    
+          afterEach(() => {
+            document.querySelector(".js-test-container").innerHTML = "";
+          }); 
 
+
+          
 
 16g. En orderSummaryTest.js, en cada prueba, compruebe si el nombre del producto se muestra correctamente en la página. (En orderSummary.js, deberá agregar una clase al elemento name para obtenerlo de la página).
+SOLUCION:
+        expect(
+          document.querySelector(`.js-product-name-${productId1}`).innerText
+        ).toEqual('Black and Gray Athletic Cotton Socks - 6 Pairs');
+        expect(
+          document.querySelector(`.js-product-name-${productId2}`).innerText
+        ).toEqual('Intermediate Size Basketball');
+
+
+        //Prueba de remover 
+        expect(
+          document.querySelector(`.js-product-name-${productId2}`).innerText
+        ).toEqual('Intermediate Size Basketball');
 
 
 16h. En orderSummaryTest.js, compruebe si los precios de los productos se muestran correctamente en la página. Cada precio debe tener un signo $ delante.
+SOLUCION:
+          document.querySelector(`.js-product-price-${productId1}`).innerText
+        ).toEqual('$10.90');
+        expect(
+          document.querySelector(`.js-product-price-${productId2}`).innerText
+        ).toEqual('$20.95');
+
+        //Prueba de remover
+        expect(
+          document.querySelector(`.js-product-price-${productId2}`).innerText
+        ).toEqual('$20.95');
+
+
+
 
 
 Ejercicios de desafío
