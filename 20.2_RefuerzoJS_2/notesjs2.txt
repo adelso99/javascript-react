@@ -9244,3 +9244,73 @@ En esta lección:
       4. Simular y espiar métodos
       5. Probar páginas web usando pruebas de integración
       6. Ganchos
+
+
+
+
+Ejercicios de la Lección 16 - Pruebas
+
+16a. En moneyTest.js, agregue un caso de prueba para formatCurrency(2000.4). Esta prueba verifica si el código redondea hacia abajo al centavo más cercano. Después de crear el caso de prueba, vuelva a ejecutar todas las pruebas para ver si su código es correcto.
+
+16b. Agregue otro caso de prueba para formatCurrency() y pruebe con un número negativo (usted decide qué número usar). Vuelva a ejecutar todas las pruebas después.
+  - tiene otro método que podemos usar: toHaveBeenCalledWith(). Este método verifica qué valores recibió un método simulado. Por ejemplo:
+  - expect(localStorage.setItem).toHaveBeenCalledWith('cart', '[]') Verifica si el código llamó a localstorage.setItem('cart', '[]') en algún momento
+
+
+16c. En cartTest.js, en la primera prueba, agregue un expect(localStorage.setItem) y verifique si setItem recibió los valores correctos. El primer valor debe ser 'cart' y el segundo valor debe ser el array cart que se guardó (convierta el array cart en una cadena usando JSON.stringify ya que localStorage solo admite guardar cadenas).
+
+16d. En la segunda prueba en cartTest.js, verifique también si localStorage.setItem() recibió los valores correctos.
+
+16e. En cartTest.js, cree un hook beforeEach(). Mueva el código de configuración spyon(localStorage, 'setItem'); dentro de este hook para compartir este código entre las dos pruebas.
+
+16f. En orderSummaryTest.js, cree un hook afterEach(). Mueva el código de limpieza document.querySelector('.js-test-container')...inside
+
+
+16g. En orderSummaryTest.js, en cada prueba, compruebe si el nombre del producto se muestra correctamente en la página. (En orderSummary.js, deberá agregar una clase al elemento name para obtenerlo de la página).
+
+16h. En orderSummaryTest.js, compruebe si los precios de los productos se muestran correctamente en la página. Cada precio debe tener un signo $ delante.
+
+Ejercicios de desafío
+
+16i. En cartTest.js, cree un conjunto de pruebas para la función removeFromCart().
+   - Simule localStorage.setItem y localStorage.getItem al principio.
+   - Cree una prueba: elimine un productId que esté en el carrito.
+   - Cree una prueba: elimine un productId que no esté en el carrito (en este caso, la función no debería hacer nada).
+   - En cada prueba, compruebe si el carrito tiene el aspecto correcto. Además, compruebe que localStorage.setItem se haya llamado una vez y con los valores correctos
+
+
+
+16j. En orderSummaryTest.js, crea una prueba para actualizar la opción de entrega.
+    - En orderSummary.js, agrega una clase a cada elemento de opción de entrega (inserta productId y deliveryOptionId en esta clase).
+    - Usando el DOM, obtén la tercera opción de entrega para el primer producto y haz clic en ella.
+    - Usando el DOM, obtén el <input> dentro de esta tercera opción de entrega (sugerencia: agrega una clase al <input> con productId y deliveryOptionId).
+    - Comprueba que este <input> ahora esté marcado (la propiedad .checked es verdadera).
+    - Comprueba que cart.length sea correcto.
+    - Comprueba el primer producto en el carrito: productId y deliveryOptionId son correctos (deliveryOptionId debería ser '3' ahora).
+    - Después de actualizar la opción de entrega, el resumen de pago debería mostrarse en la página. Obtén el precio de envío y el precio total del resumen de pago y comprueba si son correctos ('$14.98' y '$63.50').
+
+
+
+
+16k. En cartTest.js, agregue un conjunto de pruebas para la función updateDeliveryOption.
+    - Simule localStorage.setItem y localStorage.getItem al inicio.
+    - Cree una prueba básica: actualice la opción de entrega de un producto en el carrito.
+    - Verifique que el carrito se vea correcto.
+    - Verifique que localStorage.setItem se haya llamado una vez con los valores correctos.
+
+
+
+161. En cart.js, modifique updateDeliveryOption() para que si le damos un productId que no está en el carrito, la función regrese y no haga nada (no actualiza el carrito ni guarda en localStorage).
+    - Cree una prueba de caso límite: actualice la opción de entrega de un productId que no está en el carrito.
+    - Verifique que el carrito se vea correcto y verifique que no se haya llamado a localStorage.setItem
+
+
+
+16m. Modifique updateDeliveryOption() para que, si le proporcionamos un deliveryOptionId que no existe, la función no devuelva nada.
+    - Cree una prueba de caso límite: utilice un deliveryOptionId que no exista.
+    - Compruebe que el carrito se vea correcto y verifique que no se haya llamado a localStorage.setItem.
+    moneyTest.js y cart.js cartTest.js
+
+    
+
+16n. (Opcional) Generalmente, creamos pruebas para cada archivo de código. Ejemplos: money.js. Si desea practicar más, elija otros archivos como products.js o paymentSummary.js y cree pruebas para estos. (Nota: crear pruebas lleva tiempo, por lo que este ejercicio es opcional. No hay código de solución para este ejercicio, pero puede verificar su código volviendo a ejecutar las pruebas).
