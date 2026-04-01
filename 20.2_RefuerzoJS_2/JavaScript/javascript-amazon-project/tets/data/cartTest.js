@@ -147,6 +147,12 @@ describe("Conjunto de Pruebas: updateDeliveryOption --Actualizar opción de entr
   });
 
 
+  /*
+16l. En cart.js, modifique updateDeliveryOption() para que si le damos un productId que no está en el carrito, la función regrese y no haga nada (no actualiza el carrito ni guarda en localStorage).
+    - Cree una prueba de caso límite: actualice la opción de entrega de un productId que no está en el carrito.
+    - Verifique que el carrito se vea correcto y verifique que no se haya llamado a localStorage.setItem
+
+*/
   it('No debe hacer nada si el producto no existe', () => {
     spyOn(localStorage, 'getItem').and.callFake(() => {
       return JSON.stringify([{
@@ -166,12 +172,25 @@ describe("Conjunto de Pruebas: updateDeliveryOption --Actualizar opción de entr
   });
 
 
+  it('no hace nada si no existe la opción de entrega.', () => {
+    spyOn(localStorage, 'getItem').and.callFake(() => {
+      return JSON.stringify([{
+        productId: 'e43638ce-6aa0-4b85-b27f-e1d07eb678c6',
+        quantity: 1,
+        deliveryOptionId: '1'
+      }]);
+    });
+    loadFromStorage();
+
+    updateDeliveryOption('e43638ce-6aa0-4b85-b27f-e1d07eb678c6', 'does-not-exist');
+    expect(cart.length).toEqual(1);
+    expect(cart[0].productId).toEqual('e43638ce-6aa0-4b85-b27f-e1d07eb678c6');
+    expect(cart[0].quantity).toEqual(1);
+    expect(cart[0].deliveryOptionId).toEqual('1');
+    expect(localStorage.setItem).toHaveBeenCalledTimes(0);
+  });
+
+
 });
 
 
-/*
-16l. En cart.js, modifique updateDeliveryOption() para que si le damos un productId que no está en el carrito, la función regrese y no haga nada (no actualiza el carrito ni guarda en localStorage).
-    - Cree una prueba de caso límite: actualice la opción de entrega de un productId que no está en el carrito.
-    - Verifique que el carrito se vea correcto y verifique que no se haya llamado a localStorage.setItem
-
-*/

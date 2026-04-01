@@ -84,3 +84,13 @@ export function renderPaymentSummary(){
   document.querySelector(".js-payment-summary").innerHTML = paymentSummaryHTML;
 
 }
+
+
+
+export function calculateShipping(cart) {
+  return cart.reduce((total, item) => total + item.shippingCost, 0);
+}
+
+export function calculateTotal(cart) {
+  return cart.reduce((total, item) => total + item.price * item.quantity + item.shippingCost, 0);
+}
