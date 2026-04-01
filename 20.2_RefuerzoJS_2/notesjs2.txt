@@ -9536,12 +9536,123 @@ SOLUCION:
     - Cree una prueba básica: actualice la opción de entrega de un producto en el carrito.
     - Verifique que el carrito se vea correcto.
     - Verifique que localStorage.setItem se haya llamado una vez con los valores correctos.
+    SOLUCION:
+            describe("Conjunto de Pruebas: updateDeliveryOption --Actualizar opción de entrega--", () => {
+              beforeEach(() => {
+                spyOn(localStorage, 'setItem');
+              });
+
+              it('Actualizar opcion de entrega', () => {
+                spyOn(localStorage, 'getItem').and.callFake(() => {
+                  return JSON.stringify([{
+                    productId: 'e43638ce-6aa0-4b85-b27f-e1d07eb678c6',
+                    quantity: 1,
+                    deliveryOptionId: '1'
+                  }]);
+                });
+
+                loadFromStorage();
+
+                updateDeliveryOption('e43638ce-6aa0-4b85-b27f-e1d07eb678c6', "3");
+                expect(cart.length).toEqual(1);
+                expect(cart[0].deliveryOptionId).toEqual('3');
+                expect(localStorage.setItem).toHaveBeenCalledTimes(1);
+                expect(localStorage.setItem).toHaveBeenCalledWith('cart', JSON.stringify([{
+                  productId: 'e43638ce-6aa0-4b85-b27f-e1d07eb678c6',
+                  quantity: 1,
+                  deliveryOptionId: '3'
+                }]));
+              });
+
+            });
+
+SOLUCION 2:
+      describe('test suite: updateDeliveryOption', () => {
+        beforeEach(() => {
+          spyOn(localStorage, 'setItem');
+        });
+
+        it('updates the delivery option', () => {
+          spyOn(localStorage, 'getItem').and.callFake(() => {
+            return JSON.stringify([{
+              productId: 'e43638ce-6aa0-4b85-b27f-e1d07eb678c6',
+              quantity: 1,
+              deliveryOptionId: '1'
+            }]);
+          });
+          loadFromStorage();
+
+          updateDeliveryOption('e43638ce-6aa0-4b85-b27f-e1d07eb678c6', '3');
+          expect(cart.length).toEqual(1);
+          expect(cart[0].productId).toEqual('e43638ce-6aa0-4b85-b27f-e1d07eb678c6');
+          expect(cart[0].quantity).toEqual(1);
+          expect(cart[0].deliveryOptionId).toEqual('3');
+
+          expect(localStorage.setItem).toHaveBeenCalledTimes(1);
+          expect(localStorage.setItem).toHaveBeenCalledWith('cart', JSON.stringify([{
+            productId: 'e43638ce-6aa0-4b85-b27f-e1d07eb678c6',
+            quantity: 1,
+            deliveryOptionId: '3'
+          }]));
+        });
+
 
 
 
 161. En cart.js, modifique updateDeliveryOption() para que si le damos un productId que no está en el carrito, la función regrese y no haga nada (no actualiza el carrito ni guarda en localStorage).
     - Cree una prueba de caso límite: actualice la opción de entrega de un productId que no está en el carrito.
     - Verifique que el carrito se vea correcto y verifique que no se haya llamado a localStorage.setItem
+
+
+SOLUCION:
+          //Parte del cart.js que se modifico de la funcion
+                    if(!matchingItem){
+                      return;  
+                    }
+
+              it('No debe hacer nada si el producto no existe', () => {
+            
+                spyOn(localStorage, 'getItem').and.callFake(() => {
+                  return JSON.stringify([{
+                    productId: 'producto-real',
+                    quantity: 1,
+                    deliveryOptionId: '1'
+                  }]);
+                });
+            
+                loadFromStorage();
+            
+                // 🚨 ID que NO existe
+                updateDeliveryOption('producto-falso', '3');
+            
+                // ✅ El carrito sigue igual
+                expect(cart.length).toEqual(1);
+                expect(cart[0].deliveryOptionId).toEqual('1');
+            
+                // ✅ NO se guardó nada
+                expect(localStorage.setItem).not.toHaveBeenCalled();
+            
+              });
+
+
+              SOLUCION 2:
+                it('No debe hacer nada si el producto no existe', () => {
+                  spyOn(localStorage, 'getItem').and.callFake(() => {
+                    return JSON.stringify([{
+                      productId: 'e43638ce-6aa0-4b85-b27f-e1d07eb678c6',
+                      quantity: 1,
+                      deliveryOptionId: '1'
+                    }]);
+                  });
+                  loadFromStorage();
+
+                  updateDeliveryOption('does-not-exist', '3');
+                  expect(cart.length).toEqual(1);
+                  expect(cart[0].productId).toEqual('e43638ce-6aa0-4b85-b27f-e1d07eb678c6');
+                  expect(cart[0].quantity).toEqual(1);
+                  expect(cart[0].deliveryOptionId).toEqual('1');
+                  expect(localStorage.setItem).toHaveBeenCalledTimes(0);
+                });
 
 
 

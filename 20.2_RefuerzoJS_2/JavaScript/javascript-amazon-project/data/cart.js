@@ -114,6 +114,10 @@ export function updateDeliveryOption(productId, deliveryOptionId){
       }
     });
 
+    if(!matchingItem){
+      return;  
+    }
+
     matchingItem.deliveryOptionId = deliveryOptionId
 
     //como actualizamos el carrito de la fecha de procutos tambien debemos de guardarlos en localStorage
