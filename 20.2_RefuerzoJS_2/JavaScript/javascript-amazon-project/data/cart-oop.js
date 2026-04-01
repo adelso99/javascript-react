@@ -26,7 +26,7 @@ function Cart(localStorageKey){ //el parametro "localStorageKey", servira para q
 
       //aremos uso al atajo de funcion que tiene metodos en vez de hacer esto -- Acceso directo para: saveToStorage: function() {
       saveToStorage(){
-        localStorage.setItem(localStorageKey, JSON.stringify(this.cartItems))
+        localStorage.setItem(localStorageKey, JSON.stringify(this.cartItems));
       },
 
 

@@ -10126,3 +10126,41 @@ Pero ahora tenemos mucho codigo copiado, necesitamos realizar una funcion para q
 Use PascalCase para las cosas que generan objetos
     PascalCase = comienza cada palabra con mayúscula
 
+Ejemplo:
+        function Cart(localStorageKey){ //el parametro "localStorageKey", servira para cada carrito creado sea distinto y no una copia del anterior
+          //Programacio Orientada a Objetos
+           const cart = {
+              ...
+              loadFromStorage(){
+                  this.cartItems = JSON.parse(localStorage.getItem(localStorageKey)); //uso del parametro
+                  ...
+                },
+
+              saveToStorage(){
+                localStorage.setItem(localStorageKey, JSON.stringify(this.cartItems)); //uso del parametro
+                },
+
+              ...
+            };
+
+            return cart; //devuele el objeto del carrito para usarlo fuera de la funcion
+          }
+
+
+          //Comprobando y Usando la funcion para crear objetos de carrito
+          const cart = Cart("cart-oop");  //carrito diferente
+          const businessCart = Cart("cart-business"); //carrito diferente
+
+          //se esta llamando a una funcion que esta dentro de un objeto se usa "this" para llemar al objeto y el nombre la funcion (ahora es metodo),
+          //pero como lo estamos llamando fuera del objeto se usara cart porque es el nombre del objeto
+          cart.loadFromStorage();
+          businessCart.loadFromStorage();
+
+          //Verificacion de carrito
+          console.log(cart); //Muestra 3 Items
+          console.log(businessCart);  //Muestra 2 Items
+
+
+          Asi no se tiene duplicidad de carritos y cada una tiene su propio carrito, llamando desde un objeto usando --OOP--
+
+
