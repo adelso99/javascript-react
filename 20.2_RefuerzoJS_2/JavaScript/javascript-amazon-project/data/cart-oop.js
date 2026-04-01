@@ -1,15 +1,15 @@
-import {validDeliveryOption} from "./deliveryOptions.js";
+//Programacio Orientada a Objetos
+const cart = {
+  cartItems: undefined,
 
-export let cart;
+  //cuando se tiene una funcion dentro de un objeto, se llama metodo
+  //aremos uso del metodo "this" ya que si se cambia el nombre del objeto con this no tenemos problema
+  //aremos uso al atajo de funcion que tiene metodos en vez de hacer esto -- Acceso directo para: loadFromStorage: function() {
+  loadFromStorage(){
+    this.cartItems = JSON.parse(localStorage.getItem("cart-oop"));
 
-loadFromStorage();
-
-export function loadFromStorage(){
-      cart = JSON.parse(localStorage.getItem("cart"));
-
-
-      if(!cart){
-          cart =  [{
+      if(!this.cartItems){
+          this.cartItems =  [{
                     productId: "e43638ce-6aa0-4b85-b27f-e1d07eb678c6",
                     quantity: 2,
                     deliveryOptionId: "1"  
@@ -17,16 +17,24 @@ export function loadFromStorage(){
                     productId: "15b6fc6f-327a-4ec4-896f-486349e85a3d",
                     quantity: 1,
                     deliveryOptionId: "2"
-                  }];
-                
+                  }];   
       }
-    
+  },
+
+  //aremos uso al atajo de funcion que tiene metodos en vez de hacer esto -- Acceso directo para: saveToStorage: function() {
+  saveToStorage(){
+    localStorage.setItem("cart-oop", JSON.stringify(this.cartItems))
   }
 
 
-function saveToStorage(){
-  localStorage.setItem("cart", JSON.stringify(cart))
-}
+};
+
+
+loadFromStorage();
+
+
+
+
 
 
 //Funcion para agregar al carrito
@@ -115,14 +123,6 @@ export function updateDeliveryOption(productId, deliveryOptionId){
           matchingItem = cartItem;
       }
     });
-
-    if(!matchingItem){
-      return;  
-    }
-
-    if (!validDeliveryOption(deliveryOptionId)) {
-      return;
-    }
 
     matchingItem.deliveryOptionId = deliveryOptionId
 

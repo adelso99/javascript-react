@@ -9762,3 +9762,5 @@ Programación Orientada a Objetos (POO) = organizar nuestro código en objetos
 
 el que hemos estado trabajando es --> Programación procedimental
 Procedimiento = un conjunto de instrucciones paso a paso = una función
+
+tambien se cuenta con el metodo "this" que sirve para obtener el objeto que contiene una funcion
