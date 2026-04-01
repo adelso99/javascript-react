@@ -114,6 +114,7 @@ const cart = {
       matchingItem.deliveryOptionId = deliveryOptionId
 
       //como actualizamos el carrito de la fecha de procutos tambien debemos de guardarlos en localStorage
+      //como se esta llamando a una funcion que esta dentro de un objeto se usa "this" para llemar al objeto y el nombre la funcion (ahora es metodo)
       this.saveToStorage();
 
     }
@@ -121,13 +122,14 @@ const cart = {
 
 };
 
-
-loadFromStorage();
-
-
-
+//como se esta llamando a una funcion que esta dentro de un objeto se usa "this" para llemar al objeto y el nombre la funcion (ahora es metodo),
+//pero como lo estamos llamando fuera del objeto se usara cart porque es el nombre del objeto
+cart.loadFromStorage();
 
 
+
+//Prueba de funcion del carrito-OOP
+console.log(cart);
 
 
 
