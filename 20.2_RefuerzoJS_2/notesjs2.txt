@@ -9939,3 +9939,17 @@ Ejemplo:
             removeFromCart(productId) { //eliminar del carrito
             }
         };
+
+
+
+
+La OPP, tambien es fácil de crear múltiples objetos
+Ejemplo:
+        //Primer carrito
+        const cart = { 
+          .....
+        };
+
+        cart.loadFromStorage();
+
+        //segundo carrito
