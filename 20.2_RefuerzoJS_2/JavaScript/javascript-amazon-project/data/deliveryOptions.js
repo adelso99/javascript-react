@@ -31,6 +31,20 @@ export function getDeliveryOption(deliveryOptionId){
 }
 
 
+export function validDeliveryOption(deliveryOptionId) {
+  let found = false;
+
+  deliveryOptions.forEach((option) => {
+    if (option.id === deliveryOptionId) {
+      found = true;
+    }
+  });
+
+  return found;
+
+
+}
+
 
 //Parte para calcular la fecha
 //Funcion que decide si es sabado o domingo
@@ -66,16 +80,3 @@ export function calculateDeliveryDate(deliveryOption){
 }
 
 
-export function validDeliveryOption(deliveryOptionId) {
-  let found = false;
-
-  deliveryOptions.forEach((option) => {
-    if (option.id === deliveryOptionId) {
-      found = true;
-    }
-  });
-
-  return found;
-
-
-}

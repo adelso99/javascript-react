@@ -9707,3 +9707,39 @@ SOLUCION:
 
 
 16n. (Opcional) Generalmente, creamos pruebas para cada archivo de código. Ejemplos: money.js. Si desea practicar más, elija otros archivos como products.js o paymentSummary.js y cree pruebas para estos. (Nota: crear pruebas lleva tiempo, por lo que este ejercicio es opcional. No hay código de solución para este ejercicio, pero puede verificar su código volviendo a ejecutar las pruebas).
+SOLUCION:
+        export function calculateShipping(cart) {
+          return cart.reduce((total, item) => total + item.shippingCost, 0);
+        }
+
+        export function calculateTotal(cart) {
+          return cart.reduce((total, item) => total + item.price * item.quantity + item.shippingCost, 0);
+        }
+
+
+        import {calculateShipping, calculateTotal} from "../../scripts/checkout/paymentSummary";
+
+        //Testing Opcional
+        describe("Conjunto de Pruebas: paymentSummary", () => {
+
+          it('Debe calcular correctamente el envío', () => {
+            const cart = [
+              { price: 10, quantity: 2, shippingCost: 5 },
+              { price: 20, quantity: 1, shippingCost: 10 }
+            ];
+
+            const shipping = calculateShipping(cart);
+            expect(shipping).toEqual(15); // 5 + 10
+          });
+
+          it('Debe calcular correctamente el total del carrito', () => {
+            const cart = [
+              { price: 10, quantity: 2, shippingCost: 5 },
+              { price: 20, quantity: 1, shippingCost: 10 }
+            ];
+
+            const total = calculateTotal(cart);
+            expect(total).toEqual(45); // (10*2+5) + (20*1+10)
+          });
+
+        });
