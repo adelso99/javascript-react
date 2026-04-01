@@ -9754,3 +9754,11 @@ SOLUCION:
 
 
 -------------------------------------------LECCION 17 Programación orientada a objetos--------------------------------------------------
+Programación Orientada a Objetos (POO)
+- otro estilo de programación (otra forma de escribir nuestro código)
+
+Programación Orientada a Objetos (POO) = organizar nuestro código en objetos
+
+
+el que hemos estado trabajando es --> Programación procedimental
+Procedimiento = un conjunto de instrucciones paso a paso = una función
