@@ -7,13 +7,14 @@ class Cart {
     //Definiremos un contructor --Al constructor tambien se le pueden dar parametros y ahi se le dara el localStorageKey
     constructor(localStorageKey){
       this.#localStorageKey = localStorageKey; //igual para acceder a esa propiedad como es privada se debe de usar "#"
-      this.loadFromStorage();
+      this.#loadFromStorage(); //para acceder a los metodos privados tambien se usa "#"
     }
     
     //cuando se tiene una funcion dentro de un objeto, se llama metodo
     //aremos uso del metodo "this" ya que si se cambia el nombre del objeto con this no tenemos problema
     //aremos uso al atajo de funcion que tiene metodos en vez de hacer esto -- Acceso directo para: loadFromStorage: function() {
-      loadFromStorage(){
+    //metodos privados tambien usando "#"
+      #loadFromStorage(){
         this.cartItems = JSON.parse(localStorage.getItem(this.#localStorageKey)); //usamos this para apuntar al objeto que creamos antes
 
           if(!this.cartItems){

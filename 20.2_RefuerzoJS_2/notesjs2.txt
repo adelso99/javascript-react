@@ -10501,4 +10501,45 @@ clase = mejor manera de generar objetos en la programación orientada a objetos
 
 
 Propiedades y métodos privados
-   - Privado = solo se puede acceder a él dentro de la clase.
+   1. Privado = solo se puede acceder a él dentro de la clase.
+
+   Ejemplo:
+   class Cart {
+      #localStorageKey; //"propiedad privado" de la clase se usa "#", eso la vuelve privada de la clase
+
+      constructor(localStorageKey){
+        this.#localStorageKey = localStorageKey; //igual para acceder a esa propiedad como es privada se debe de usar "#"
+        ...
+      }
+      
+        loadFromStorage(){
+          this.cartItems = JSON.parse(localStorage.getItem(this.#localStorageKey)); //usamos this para apuntar al objeto que creamos antes
+          ...
+        }
+
+        saveToStorage(){
+          localStorage.setItem(this.#localStorageKey, JSON.stringify(this.cartItems)); //usamos this para apuntar al objeto que creamos antes
+        }
+        ...
+   }
+
+  si quisieramos acceder fuera de la clase
+  cart.#localStorageKey = "tets"; //en consola da error porque esto es una propiedad privada
+
+
+
+
+
+
+ 2. Métodos Privados
+    Ejemplo:
+    class Cart {
+        constructor(localStorageKey){
+          this.#loadFromStorage(); //para acceder a los metodos privados tambien se usa "#"
+        }
+        
+        //metodos privados tambien usando "#" --NOTA: una funcion es un metodo cuando se guarda dentro de un objeto--
+          #loadFromStorage(){
+            this.cartItems = JSON.parse(localStorage.getItem(this.#localStorageKey)); //usamos this para apuntar al objeto que creamos antes
+          }
+    }    
