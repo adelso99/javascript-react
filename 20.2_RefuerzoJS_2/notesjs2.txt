@@ -10164,3 +10164,16 @@ Ejemplo:
           Asi no se tiene duplicidad de carritos y cada una tiene su propio carrito, llamando desde un objeto usando --OOP--
 
 
+
+
+
+
+-------------------------------------------LECCION 17.1 Programación orientada a objetos --Classes--  ------------------------------------------------
+Una forma aún mejor de generar objetos, con:
+    - class = generador de objetos
+
+Ejemplo:
+        //OOP pero usando "class"  class NombreDeClase { ...codigo...}
+        class Cart {
+            ...
+        }
