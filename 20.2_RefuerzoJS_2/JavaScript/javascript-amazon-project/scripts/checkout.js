@@ -3,7 +3,7 @@ import {renderOrderSummary} from "./checkout/orderSummary.js";
 import {renderPaymentSummary } from "./checkout/paymentSummary.js";
 
 //Importacion de carrito pero usando OOP --Programacion Orientada a Objetos--
-import "../data/cart-oop.js";
+import "../data/cart-class.js";
 
 //llamdo de funcion del aparto de Chekout head
 renderCheckoutHeader();

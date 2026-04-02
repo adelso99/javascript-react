@@ -8,7 +8,7 @@ class Cart {
     //aremos uso del metodo "this" ya que si se cambia el nombre del objeto con this no tenemos problema
     //aremos uso al atajo de funcion que tiene metodos en vez de hacer esto -- Acceso directo para: loadFromStorage: function() {
       loadFromStorage(){
-        this.cartItems = JSON.parse(localStorage.getItem(localStorageKey));
+        this.cartItems = JSON.parse(localStorage.getItem(this.localStorageKey)); //usamos this para apuntar al objeto que creamos antes
 
           if(!this.cartItems){
               this.cartItems =  [{
@@ -25,7 +25,7 @@ class Cart {
 
     //aremos uso al atajo de funcion que tiene metodos en vez de hacer esto -- Acceso directo para: saveToStorage: function() {
       saveToStorage(){
-        localStorage.setItem(localStorageKey, JSON.stringify(this.cartItems));
+        localStorage.setItem(this.localStorageKey, JSON.stringify(this.cartItems)); //usamos this para apuntar al objeto que creamos antes
       }
 
     //Funcion para agregar al carrito
@@ -122,20 +122,14 @@ class Cart {
 
 }
 
-//Creacion de funcion para que cree multiples objetos
-function Cart(localStorageKey){ //el parametro "localStorageKey", servira para que cada carrito creado sea distinto y no una copia del anterior
-  //Programacio Orientada a Objetos
-    const cart = {
-
-
-    };
-
-    return cart; //devuele el objeto del carrito para usarlo fuera de la funcion
-}
 
 //Comprobando y Usando la funcion para crear objetos de carrito
-const cart = Cart("cart-oop");
-const businessCart = Cart("cart-business");
+const cart = new Cart(); //para crear ese carrio usando la clase Cart usamos la palabra "new"
+const businessCart = new Cart();
+
+//para arreglar el parametro "localStorageKey" que se usama para dar el nombre definimos lo siguiente
+cart.localStorageKey = "cart-oop";
+businessCart.localStorageKey = "cart-business";
 
 //como se esta llamando a una funcion que esta dentro de un objeto se usa "this" para llemar al objeto y el nombre la funcion (ahora es metodo),
 //pero como lo estamos llamando fuera del objeto se usara cart porque es el nombre del objeto
@@ -147,6 +141,8 @@ console.log(cart);
 console.log(businessCart);
 
 
+//Comprobacion si el objeto fue generado a partir de una clase --instance--
+console.log(businessCart instanceof Cart); //esto dara true en consola
 
 
 
