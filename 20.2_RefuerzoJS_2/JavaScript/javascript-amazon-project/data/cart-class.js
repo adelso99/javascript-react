@@ -1,8 +1,8 @@
 //OOP pero usando "class"  class NombreDeClase { ...codigo...}
 class Cart {
     // en clases para poder definir una propiedad se debe de ser "namePropiedad = undefined;"
-    cartItems = undefined;
-    localStorageKey = undefined;
+    cartItems;
+    localStorageKey;
 
     //Definiremos un contructor --Al constructor tambien se le pueden dar parametros y ahi se le dara el localStorageKey
     constructor(localStorageKey){
