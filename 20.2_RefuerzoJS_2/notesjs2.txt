@@ -10334,4 +10334,15 @@ Ejemplo 2:
 
 
 Programación Orientada a Objetos = organizar nuestro código en objetos (intenta representar el mundo real)
-Clase = nos ayuda a generar estos objetos
+Clase = nos ayuda a generar estos objetos --> Generador de Objetos
+
+
+Beneficios de las clases
+  - Una clase se parece al objeto que genera.
+  - Las clases tienen características adicionales para la programación orientada a objetos.
+      * Constructor = nos permite ejecutar el código de configuración
+      * El constructor nos permite colocar este código de configuración dentro de la clase.
+
+
+
+

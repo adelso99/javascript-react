@@ -3,6 +3,12 @@ class Cart {
     // en clases para poder definir una propiedad se debe de ser "namePropiedad = undefined;"
     cartItems = undefined;
     localStorageKey = undefined;
+
+    //Definiremos un contructor --Al constructor tambien se le pueden dar parametros y ahi se le dara el localStorageKey
+    constructor(localStorageKey){
+      this.localStorageKey = localStorageKey;
+      this.loadFromStorage();
+    }
     
     //cuando se tiene una funcion dentro de un objeto, se llama metodo
     //aremos uso del metodo "this" ya que si se cambia el nombre del objeto con this no tenemos problema
@@ -124,20 +130,12 @@ class Cart {
 
 
 //Comprobando y Usando la funcion para crear objetos de carrito
-const cart = new Cart(); //para crear ese carrio usando la clase Cart usamos la palabra "new"
-const businessCart = new Cart();
+const cart = new Cart("cart-oop"); //para crear ese carrio usando la clase Cart usamos la palabra "new"
+const businessCart = new Cart("cart-business");  //los parametros que le estamos dano a la clase se usaran en el constructor
 
-//para arreglar el parametro "localStorageKey" que se usama para dar el nombre definimos lo siguiente
-cart.localStorageKey = "cart-oop";
-businessCart.localStorageKey = "cart-business";
-
-//como se esta llamando a una funcion que esta dentro de un objeto se usa "this" para llemar al objeto y el nombre la funcion (ahora es metodo),
-//pero como lo estamos llamando fuera del objeto se usara cart porque es el nombre del objeto
-cart.loadFromStorage();
-businessCart.loadFromStorage();
 
 //Verificacion de carrito
-console.log(cart);
+console.log(cart); 
 console.log(businessCart);
 
 
