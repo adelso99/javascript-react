@@ -2,11 +2,11 @@
 class Cart {
     // en clases para poder definir una propiedad se debe de ser "namePropiedad = undefined;"
     cartItems;
-    localStorageKey;
+    #localStorageKey; //"propiedad privado" de la clase se usa "#", eso la vuelve privada de la clase
 
     //Definiremos un contructor --Al constructor tambien se le pueden dar parametros y ahi se le dara el localStorageKey
     constructor(localStorageKey){
-      this.localStorageKey = localStorageKey;
+      this.#localStorageKey = localStorageKey; //igual para acceder a esa propiedad como es privada se debe de usar "#"
       this.loadFromStorage();
     }
     
@@ -14,7 +14,7 @@ class Cart {
     //aremos uso del metodo "this" ya que si se cambia el nombre del objeto con this no tenemos problema
     //aremos uso al atajo de funcion que tiene metodos en vez de hacer esto -- Acceso directo para: loadFromStorage: function() {
       loadFromStorage(){
-        this.cartItems = JSON.parse(localStorage.getItem(this.localStorageKey)); //usamos this para apuntar al objeto que creamos antes
+        this.cartItems = JSON.parse(localStorage.getItem(this.#localStorageKey)); //usamos this para apuntar al objeto que creamos antes
 
           if(!this.cartItems){
               this.cartItems =  [{
@@ -31,7 +31,7 @@ class Cart {
 
     //aremos uso al atajo de funcion que tiene metodos en vez de hacer esto -- Acceso directo para: saveToStorage: function() {
       saveToStorage(){
-        localStorage.setItem(this.localStorageKey, JSON.stringify(this.cartItems)); //usamos this para apuntar al objeto que creamos antes
+        localStorage.setItem(this.#localStorageKey, JSON.stringify(this.cartItems)); //usamos this para apuntar al objeto que creamos antes
       }
 
     //Funcion para agregar al carrito
@@ -133,11 +133,9 @@ class Cart {
 const cart = new Cart("cart-oop"); //para crear ese carrio usando la clase Cart usamos la palabra "new"
 const businessCart = new Cart("cart-business");  //los parametros que le estamos dano a la clase se usaran en el constructor
 
-
 //Verificacion de carrito
 console.log(cart); 
 console.log(businessCart);
-
 
 //Comprobacion si el objeto fue generado a partir de una clase --instance--
 console.log(businessCart instanceof Cart); //esto dara true en consola
