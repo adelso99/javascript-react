@@ -42,7 +42,9 @@ class Product {
 }
 
 //Crearemos OPP en Herencia
-
+class Clothing {
+  
+}
 
 export const products = [
  {
