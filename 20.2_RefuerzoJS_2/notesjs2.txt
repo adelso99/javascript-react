@@ -10543,3 +10543,19 @@ Propiedades y métodos privados
             this.cartItems = JSON.parse(localStorage.getItem(this.#localStorageKey)); //usamos this para apuntar al objeto que creamos antes
           }
     }    
+
+
+
+
+
+Convertir un objeto en una clase
+Ejemplo:
+          class Product {
+                id: "
+                imagen:
+                nombre: "...",
+                ...
+          }
+
+
+El mismo objeto que antes, pero una versión mejorada. (Tiene algunas características adicionales)
