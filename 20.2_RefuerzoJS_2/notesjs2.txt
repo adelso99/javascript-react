@@ -10617,10 +10617,12 @@ Ejemplo:
 
 
 
--------------------------------------------LECCION 17.1 Programación orientada a objetos --Herencia-- -----------------------------------------------
+-------------------------------------------LECCION 17.2 Programación orientada a objetos --Herencia-- -----------------------------------------------
 
 Herencia = nos permite reutilizar código entre clases
 
+Ejemplo:
+        Agregar propiedades y métodos más específicos
 
 
 
