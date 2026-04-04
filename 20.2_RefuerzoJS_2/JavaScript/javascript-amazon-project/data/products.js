@@ -39,6 +39,11 @@ class Product {
     return ` $${formatCurrency(this.priceCents)}`;
   }
 
+  //sera el metodo para cargar la imagen de tallas a los productos que sea necesarios --Pero este para que no ocurra error en las que no se usen
+  extraInfoHTML(){
+    return "";
+  }
+
 }
 
 //Crearemos OPP en Herencia
