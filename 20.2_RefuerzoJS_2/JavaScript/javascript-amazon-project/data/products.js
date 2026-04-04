@@ -54,7 +54,9 @@ class Clothing extends Product{
     //sera el metodo para cargar la imagen de tallas a los productos que sea necesarios
     extraInfoHTML(){
       return `
-      <a href="">Size Chart</a>
+      <a href="${this.sizeChartLink}" target="_blank">
+      Size Chart
+      </a>
       `;
     }
 }
