@@ -10780,3 +10780,23 @@ Ejemplo:
                         // Instrucciones de descarga
                       }
                     }
+
+
+
+
+Más detalles sobre las clases
+  1. Cómo probar las clases
+   Probar las clases es lo mismo que las pruebas normales
+   Ejemplo:
+    describe('Conjunto de Pruebas: Product', () => {
+      it('Tiene correctas propiedades y metodos', () => {
+
+        const product = new Product({ ... });
+        expect(product.name).toEqual('basketball'); expect(product.getPrice()).toEqual('$20.95');
+        
+      })
+    });
+
+
+    2. Clases integradas = clases que proporciona el lenguaje
+
