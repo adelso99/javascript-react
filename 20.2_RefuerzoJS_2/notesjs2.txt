@@ -10702,3 +10702,41 @@ Ejemplo:
 
 
 Si tenemos una sección de ropa, muestre un enlace a la tabla de tallas.
+Ejemplo:
+      //creacion de clase para poder generar todos los productos
+      class Product {
+        ...
+
+        //sera el metodo para cargar la imagen de tallas a los productos que sea necesarios --Pero este para que no ocurra error en las que no se usen
+        extraInfoHTML(){
+          return "";
+        }
+
+      }
+
+
+      //Crearemos OPP en Herencia
+      class Clothing extends Product{
+          ...
+
+          //sera el metodo para cargar la imagen de tallas a los productos que sea necesarios
+          extraInfoHTML(){
+            return `
+            <a href="${this.sizeChartLink}" target="_blank">
+            Size Chart
+            </a>
+            `;
+          }
+      }
+
+
+      export const products = [...
+      ].map((productDetails) => {
+        //uso de un if para filatrar el tipo de producto con herencia
+        if(productDetails.type === "clothing"){
+          return new Clothing(productDetails); 
+        }
+
+        //conversion de cada producto del array en una nueva clase
+        return new Product(productDetails);
+      });
