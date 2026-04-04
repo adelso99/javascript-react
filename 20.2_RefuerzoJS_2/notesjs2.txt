@@ -10740,3 +10740,43 @@ Ejemplo:
         //conversion de cada producto del array en una nueva clase
         return new Product(productDetails);
       });
+
+
+
+      Sobrescribir/reemplazar el método del padre --> Sobrescritura de métodos
+
+      en el HTML que amazon.js que se genera solo se llama el metodo
+      products.forEach((product) => {
+        //Patron Acumulador
+        productsHTML += `
+          ...
+                ${product.extraInfoHTML()}
+          ...
+        `;
+
+      });
+
+
+      Polimorfismo = usar un método sin conocer la clase.
+
+
+      Ejemplo de Referencia:
+                    Sentencias condicionales / Operador ternario
+
+                    ${
+                      product instanceof Clothing
+                      ¿`<a href="${product.sizeChartLink}">Size Chart</a>`
+                      : ""
+
+                    }
+
+                    Polimorfismo
+                    ${product.extraInfoHTML()}
+
+                    La clase determinará qué hace este método, si se agrega otra
+                    class Appliance extends Product {
+                      ...
+                      extraInfoHTML() {
+                        // Instrucciones de descarga
+                      }
+                    }
