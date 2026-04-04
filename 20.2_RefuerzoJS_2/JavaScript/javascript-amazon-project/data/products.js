@@ -43,7 +43,13 @@ class Product {
 
 //Crearemos OPP en Herencia
 class Clothing extends Product{
+    sizeChartLink;
 
+    //uso de contructor para establecer el valor --uso de "super" para llamar al constructor PADRE de la clase anterior
+    constructor(productDetails) {
+      super(productDetails);
+      this.sizeChartLink = productDetails.sizeChartLink;
+    }
 }
 
 //tambien se usa la palabra "new"
