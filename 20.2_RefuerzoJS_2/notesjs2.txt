@@ -10699,3 +10699,6 @@ Ejemplo:
                   console.log(tshirt);
                   console.log(tshirt.getPrice());
 
+
+
+Si tenemos una sección de ropa, muestre un enlace a la tabla de tallas.

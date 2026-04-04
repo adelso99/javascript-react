@@ -50,6 +50,13 @@ class Clothing extends Product{
       super(productDetails);
       this.sizeChartLink = productDetails.sizeChartLink;
     }
+
+    //sera el metodo para cargar la imagen de tallas a los productos que sea necesarios
+    extraInfoHTML(){
+      return `
+      <a href="">Size Chart</a>
+      `;
+    }
 }
 
 //tambien se usa la palabra "new"
@@ -738,7 +745,9 @@ export const products = [
   }
 ].map((productDetails) => {
   //uso de un if para filatrar el tipo de producto con herencia
-  if(){}
+  if(productDetails.type === "clothing"){
+    return new Clothing(productDetails); 
+  }
 
   //conversion de cada producto del array en una nueva clase
   return new Product(productDetails);
