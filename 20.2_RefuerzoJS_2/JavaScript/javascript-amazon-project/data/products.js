@@ -737,6 +737,9 @@ export const products = [
     ]
   }
 ].map((productDetails) => {
+  //uso de un if para filatrar el tipo de producto con herencia
+  if(){}
+
   //conversion de cada producto del array en una nueva clase
   return new Product(productDetails);
 });
