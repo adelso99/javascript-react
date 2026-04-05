@@ -10884,21 +10884,77 @@ Ejercicios de la Lección 17 - Programación Orientada a Objetos (POO)
               marca;
               modelo;
 
-              constructor(dato1, dato2){
-                this.marca = dato1;
-                this.modelo = dato2;
+              constructor(carDetalle){
+                this.marca = carDetalle.marca;
+                this.modelo = carDetalle.modelo;
               }
             }
 
-            const carro1 = new Car("Toyota", "Corolla");
-            const carro2 = new Car("Tesla", "Modelo 3");
+            const carro1 = new Car({
+              marca: "Toyota", 
+              modelo: "Corolla"
+
+            });
+            const carro2 = new Car({
+              marca: "Tesla", 
+              modelo: "Modelo 3"
+
+            });
 
             console.log(carro1);
             console.log(carro2);
 
 
 
+
+      SOLUCION 2:
+                  class Car {
+                    brand;
+                    model;
+
+                    constructor(carDetails) {
+                      this.brand = carDetails.brand;
+                      this.model = carDetails.model;
+                    }
+                  }
+
+                  const car1 = new Car({
+                    brand: 'Toyota',
+                    model: 'Corolla'
+                  });
+                  const car2 = new Car({
+                    brand: 'Tesla',
+                    model: 'Model 3'
+                  });
+
+                  console.log(car1);
+                  console.log(car2);
+
+
+                
+
 17b. Agrega un método displayInfo() que muestre en la consola `${brand} ${model}`. Ejecuta displayInfo() para cada auto y verifica la consola.
+SOLUCION:
+          class Car{
+            ...
+            //metod agregado
+            displayInfo(){
+              return `${this.marca} ${this.modelo}`;
+            }
+          }
+
+          const carro1 = new Car({
+            marca: "Toyota", 
+            modelo: "Corolla"
+          });
+
+          const carro2 = new Car({
+            marca: "Tesla", 
+            modelo: "Modelo 3"
+          });
+
+          console.log(carro1.displayInfo());  //En consola --> Toyota Corolla
+          console.log(carro2.displayInfo());  //En Consola --> Tesla Modelo 3
 
 
 

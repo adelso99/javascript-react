@@ -12,20 +12,38 @@
   - muestra los objetos de coche en la consola.
   - En checkout.js, carga data/car.js usando la sintaxis import '...'; y revisa la consola
 
+
+  17b. Agrega un método displayInfo() que muestre en la consola `${brand} ${model}`. Ejecuta displayInfo() para cada auto y verifica la consola.
+
 */
 
 class Car{
   marca;
   modelo;
 
-  constructor(dato1, dato2){
-    this.marca = dato1;
-    this.modelo = dato2;
+  constructor(carDetalle){
+    this.marca = carDetalle.marca;
+    this.modelo = carDetalle.modelo;
+  }
+
+  //metod agregado
+  displayInfo(){
+    return `${this.marca} ${this.modelo}`;
   }
 }
 
-const carro1 = new Car("Toyota", "Corolla");
-const carro2 = new Car("Tesla", "Modelo 3");
+const carro1 = new Car({
+  marca: "Toyota", 
+  modelo: "Corolla"
+});
+
+const carro2 = new Car({
+  marca: "Tesla", 
+  modelo: "Modelo 3"
+});
 
 console.log(carro1);
 console.log(carro2);
+
+console.log(carro1.displayInfo());
+console.log(carro2.displayInfo());
