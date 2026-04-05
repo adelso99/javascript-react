@@ -2,21 +2,21 @@
 //Ejericios
 
 class Car{
-  marca;
-  modelo;
+  #marca;
+  #modelo;
   velocidad = 0;
   isTrunkopen = false;
 
   constructor(carDetalle){
-    this.marca = carDetalle.marca;
-    this.modelo = carDetalle.modelo;
+    this.#marca = carDetalle.marca;
+    this.#modelo = carDetalle.modelo;
   }
 
   //metod agregado
   displayInfo(){
-    const maletero = this.isTrunkOpen ? 'Abierto' : 'Cerrado';
-    console.log(`${this.marca} ${this.modelo}`);
-    console.log(`${this.marca} ${this.modelo}, Velocidad: ${this.velocidad} km/h, Maletero: ${maletero}`);
+    const maletero = this.isTrunkopen ? 'Abierto' : 'Cerrado';
+
+    console.log(`${this.#marca} ${this.#modelo}, Velocidad: ${this.velocidad} km/h, Maletero: ${maletero}`);
   }
 
   //metodos de velocidades
@@ -108,20 +108,44 @@ carro2.displayInfo();
 */
 
 class RaceCar extends Car{
-  sizeChartLink;
+    acceleration;
 
-  //uso de contructor para establecer el valor --uso de "super" para llamar al constructor PADRE de la clase anterior
-  constructor(productDetails) {
-    super(productDetails);
-    this.sizeChartLink = productDetails.sizeChartLink;
-  }
+    //uso de contructor para establecer el valor --uso de "super" para llamar al constructor PADRE de la clase anterior
+    constructor(carDetalle) {
+      super(carDetalle);
+      this.acceleration = carDetalle.acceleration;
+    }
 
-  //sera el metodo para cargar la imagen de tallas a los productos que sea necesarios
-  extraInfoHTML(){
-    return `
-    <a href="${this.sizeChartLink}" target="_blank">
-    Size Chart
-    </a>
-    `;
-  }
+    go(){
+        this.velocidad += this.acceleration;
+
+        if (this.velocidad > 300){
+          this.velocidad = 300;
+        }
+    }
+
+    openTrunk(){
+        console.log("Este auto no tiene maletero");
+      }
+
+      closeTrunk(){
+        console.log("Este auto no tiene maletero");
+    }
+ 
 }
+
+
+const carro3 = new RaceCar({
+  marca: 'McLaren',
+  modelo: 'F1', 
+  acceleration: 20 
+});
+
+console.log(carro3);
+
+carro3.go();
+carro3.go();
+carro3.displayInfo();
+
+carro3.openTrunk();
+

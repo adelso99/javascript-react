@@ -11255,11 +11255,115 @@ SOLUCION:
    - Los autos de carreras van más rápido que los autos normales, por lo que Racecar tiene una propiedad adicional llamada acceleration. Al usar go(), aumenta la velocidad en acceleration en lugar de 5, y actualiza la velocidad máxima a 300.
    - Los autos de carreras no tienen maletero. Actualiza openTrunk() y closeTrunk().
    - Crea un auto de carreras { marca: 'McLaren', modelo: 'F1', aceleración: 20 } y prueba el código
+SOLUCION:
+          class RaceCar extends Car{
+                  acceleration;
+
+                  //uso de contructor para establecer el valor --uso de "super" para llamar al constructor PADRE de la clase anterior
+                  constructor(carDetalle) {
+                    super(carDetalle);
+                    this.acceleration = carDetalle.acceleration;
+                  }
+
+                  go(){
+                      this.velocidad += this.acceleration;
+
+                      if (this.velocidad > 300){
+                        this.velocidad = 300;
+                      }
+                  }
+
+                  openTrunk(){
+                      console.log("Este auto no tiene maletero");
+                    }
+
+                    closeTrunk(){
+                      console.log("Este auto no tiene maletero");
+                  }
+              
+              }
+
+
+              const carro3 = new RaceCar({
+                marca: 'McLaren',
+                modelo: 'F1', 
+                acceleration: 20 
+              });
+
+              console.log(carro3);
+
+              carro3.go();
+              carro3.go();
+              carro3.displayInfo();
+
+              carro3.openTrunk();
+
 
 
 
 17f. Haz que las propiedades de marca y modelo sean privadas (¡al igual que en la vida real, no deberíamos poder cambiar la marca y el modelo de un coche!).
   - Actualiza displayInfo() con las propiedades privadas y prueba el código.
+SOLUCION:
+          class Car{
+            #marca;
+            #modelo;
+            velocidad = 0;
+            isTrunkopen = false;
+
+            constructor(carDetalle){
+              this.#marca = carDetalle.marca;
+              this.#modelo = carDetalle.modelo;
+            }
+
+            //metod agregado
+            displayInfo(){
+              const maletero = this.isTrunkopen ? 'Abierto' : 'Cerrado';
+
+              console.log(`${this.#marca} ${this.#modelo}, Velocidad: ${this.velocidad} km/h, Maletero: ${maletero}`);
+            }
+
+            //metodos de velocidades
+            go(){
+              if(this.velocidad < 200){
+                  if (!this.isTrunkopen) {
+                    this.velocidad += 5;
+                  }else {
+                    console.log("No puedes avanzar con el maletero abierto");
+                  }
+
+                //limite maximo de velocidad
+                if (this.velocidad > 200) {
+                  this.velocidad = 200;
+                }
+              }
+            }
+
+            brake(){
+              this.velocidad -= 5;
+
+              //limite minimo de velocidad
+              if (this.velocidad < 0) {
+                this.velocidad = 0;
+              }
+            }
+
+
+            //metodos del maletero.
+            openTrunk(){
+              if(this.velocidad === 0){
+                this.isTrunkopen = true;
+              }
+
+            }
+
+            closeTrunk(){
+              if(this.isTrunkopen === true){
+                this.isTrunkopen = false;
+              }
+
+            }
+
+          }
 
 
 
