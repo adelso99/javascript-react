@@ -46,6 +46,7 @@ class Product {
 
 }
 
+
 //Crearemos OPP en Herencia
 class Clothing extends Product{
     sizeChartLink;
