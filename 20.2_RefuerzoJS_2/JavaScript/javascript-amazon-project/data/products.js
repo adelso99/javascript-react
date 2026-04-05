@@ -68,6 +68,15 @@ class Clothing extends Product{
 }
 
 
+//Ejericios de Desafio L17
+class Appliance extends Product{
+  constructor(productDetails) {
+    super(productDetails);
+    this.instructionsLink = productDetails.instructionsLink;
+    this.warrantyLink = productDetails.warrantyLink;
+  }
+}
+
 /*
 //Creacion de clase para verificar clases integradas
 const date = new Date();
