@@ -10850,4 +10850,103 @@ Más detalles sobre las clases
                         }
                       };
               
-              
+
+
+
+En esta lección:
+      1. Programación Orientada a Objetos (POO) = organizar nuestro código en objetos
+      2. Usar una función para generar objetos
+      3. Clases
+      4. Propiedades y métodos privados
+      5. Herencia
+      6. Sobreescritura de métodos y polimorfismo
+      7. Más detalles sobre "this"
+
+
+
+
+
+Ejercicios de la Lección 17 - Programación Orientada a Objetos (POO)
+
+17a. Practiquemos la POO creando una clase que represente un coche.
+  - Crea un nuevo archivo data/car.js y crea una clase Car {}
+  - Dale a la clase Car 2 propiedades: marca y modelo. Luego, crea un constructor que establezca estas 2 propiedades.
+  - Mantén todas las propiedades públicas por ahora (aprenderemos por qué en un ejercicio posterior).
+  - Usa esta clase para generar algunos objetos de coche:
+    { marca: 'Toyota', modelo: 'Corolla' }
+    { marca: 'Tesla', modelo: 'Modelo 3' }
+
+  - muestra los objetos de coche en la consola.
+  - En checkout.js, carga data/car.js usando la sintaxis import '...'; y revisa la consola
+
+
+17b. Agrega un método displayInfo() que muestre en la consola `${brand} ${model}`. Ejecuta displayInfo() para cada auto y verifica la consola.
+
+
+
+17c. Agrega una propiedad de velocidad, que representa qué tan rápido va el auto.
+  - La velocidad debe comenzar en 0.
+  - Agrega 2 métodos go() (aumenta la velocidad en 5) y brake() (disminuye la velocidad en 5).
+  - La velocidad debe estar limitada entre 0 y 200.
+  - Actualiza displayInfo() para mostrar la velocidad al final: `${brand} ${model}, Velocidad: ${speed} km/h`
+  - Llama a go() y brake() varias veces para cada auto, llama a displayInfo() y verifica la consola para confirmar que el código funciona
+
+
+
+17d. Agrega la propiedad isTrunkopen, que rastrea si el maletero del auto está abierto.
+   - Debe ser una propiedad booleana (verdadero = abierto, falso = cerrado).
+   - Crea openTrunk() y closeTrunk(), que abren/cierran el maletero.
+   - openTrunk() no debería funcionar si el auto se está moviendo.
+   - go() no debería funcionar si el maletero está abierto.
+   - Actualiza displayInfo() para mostrar información del maletero al final. Prueba el código.
+
+
+17e. Crea una nueva clase Racecar que extienda Car.
+   - Los autos de carreras van más rápido que los autos normales, por lo que Racecar tiene una propiedad adicional llamada acceleration. Al usar go(), aumenta la velocidad en acceleration en lugar de 5, y actualiza la velocidad máxima a 300.
+   - Los autos de carreras no tienen maletero. Actualiza openTrunk() y closeTrunk().
+   - Crea un auto de carreras { marca: 'McLaren', modelo: 'F1', aceleración: 20 } y prueba el código
+
+
+
+17f. Haz que las propiedades de marca y modelo sean privadas (¡al igual que en la vida real, no deberíamos poder cambiar la marca y el modelo de un coche!).
+  - Actualiza displayInfo() con las propiedades privadas y prueba el código.
+
+
+
+17g. Ahora, intenta hacer que la propiedad de velocidad sea privada.
+    - Actualiza el resto del código y prueba el código.
+    - Observa que el código no funciona porque la clase RaceCar no puede acceder a la propiedad privada #speed (a las propiedades privadas solo se puede acceder dentro de la misma clase. No se puede acceder a ellas en una clase hija).
+    - Por lo tanto, tendremos que volver a hacer pública la propiedad speed.
+    - En otros lenguajes, una propiedad puede ser pública, privada o protegida (protegida = se puede acceder a ella dentro de una clase y sus clases hijas).
+    - La programación orientada a objetos es menos popular en JavaScript porque carece de algunas características de la POO, como las propiedades protegidas
+
+
+
+
+
+Ejercicios de desafío
+17 h. En el proyecto Amazon, crea una clase Appliance {}
+   - Un electrodoméstico es un tipo específico de producto (extiende Product).
+   - Tiene 2 propiedades adicionales: instructionsLink y warrantyLink.
+   - En el array de productos, agrega type, instructionsLink y warrantyLink a la tostadora (el cuarto producto). Si lo necesitas, descarga las imágenes de: supersimple.dev/images/appliance-instructions.png, supersimple.dev/images/appliance-warranty.png
+   - Convierta la tostadora en un electrodoméstico en lugar de un producto.
+   - Al mostrar información adicional, muestre las instrucciones y la garantía. Siga el diseño de la derecha:
+   - Busque otros productos que sean electrodomésticos (hervidor, licuadora, etc.) y conviértalos a la clase de electrodoméstico
+
+          2197
+        $18.99
+        1
+        Instrucciones Garantía
+
+
+
+17i. Crea pruebas para las clases Producto, Ropa y Electrodomésticos.
+   - Crea un nuevo archivo de prueba data/productsTest.js y cárgalo en tests.html
+   - Crea un conjunto de pruebas para cada clase y crea pruebas para cada clase. (Exporta las clases, genera objetos usando cada clase y verifica si las propiedades y los métodos son correctos).
+   - Al probar extraInfoHTML, puedes usar expect(...).toContain(...) para verificar si el resultado contiene una cadena determinada.
+
+Nota: Es posible que desees crear una copia del código del proyecto para el ejercicio 17j.
+
+17j. Reemplaza todos los usos del array cart con la clase cart.
+    - En data/cart-class.js, exporta el objeto cart. Reemplaza todos los usos de import ... data/cart.js con import ... data/cart-class.js
+    - Actualiza el código y las pruebas para que todo vuelva a funcionar. Sugerencia: en las pruebas, en lugar de simular localStorage.getItem, puedes establecer directamente cart.cartItems = [...]
