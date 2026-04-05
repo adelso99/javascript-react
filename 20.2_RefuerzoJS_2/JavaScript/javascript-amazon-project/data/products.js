@@ -71,7 +71,7 @@ class Clothing extends Product{
 //Creacion de clase para verificar clases integradas
 const date = new Date();
 console.log(date);
-console.log(date.toLocaleTimeString());
+console.log(date.toLocaleTimeString());  //hora actual : 23:58:00
 
 export const products = [
  {

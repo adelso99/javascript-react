@@ -10807,4 +10807,5 @@ Más detalles sobre las clases
 
 
             .toLocaleTimeString() = da la hora actual
+            console.log(date.toLocaleTimeString());  //hora actual : 23:58:00
 
