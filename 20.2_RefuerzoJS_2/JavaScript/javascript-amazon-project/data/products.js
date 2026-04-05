@@ -69,8 +69,8 @@ class Clothing extends Product{
 
 
 //Creacion de clase para verificar clases integradas
-new Date();
-
+const date = new Date();
+console.log(date);
 
 export const products = [
  {
