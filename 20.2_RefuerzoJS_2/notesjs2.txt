@@ -10809,3 +10809,45 @@ Más detalles sobre las clases
             .toLocaleTimeString() = da la hora actual
             console.log(date.toLocaleTimeString());  //hora actual : 23:58:00
 
+      
+    3. Más detalles sobre “this”
+    “this” se puede usar en cualquier parte de nuestro código.
+    Ejemplo:
+            console.log(this);
+            No hay ningún objeto al que "this" pueda apuntar --->en consola this = indefinido
+
+
+    Ejemplo 2:
+              const objeto2 = {
+                a: 2,
+                b: this.a
+              };
+
+              No hay ningún objeto al que apuntar  --> this = indefinido
+
+    
+
+    4. Usar "this" dentro de una función
+              No está dentro de ningún objeto, por lo que no hay nada a lo que "this" pueda apuntar.
+              this = indefinido
+              Ejemplo:
+                      function logThis(){
+                        console.log(this);
+                      }
+                      logThis();
+
+              Dentro de una función, podemos cambiar "esto" por lo que queramos.
+
+              uso de metod ".call()" de las funciones
+              logThis.call("Hola"); //podemos establacer el valor de this dentro de la funcion
+
+              Las funciones flecha no cambian el valor de "this".
+              Ejemplo:
+                      this   //"this" conserva el valor que tenía fuera de la función flecha.
+                      const objeto3 = {
+                        metodo: () => {
+                          console.log(this); //"this" tendrá el mismo valor que fuera de la función flecha.
+                        }
+                      };
+              
+              

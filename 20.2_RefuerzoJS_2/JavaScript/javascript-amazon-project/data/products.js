@@ -68,10 +68,38 @@ class Clothing extends Product{
 }
 
 
+/*
 //Creacion de clase para verificar clases integradas
 const date = new Date();
 console.log(date);
 console.log(date.toLocaleTimeString());  //hora actual : 23:58:00
+*/
+
+/*
+console.log(this);
+
+const objeto2 = {
+  a: 2,
+  b: this.a
+};
+*/
+
+/*
+function logThis(){
+  console.log(this);
+}
+logThis();
+logThis.call("Hola"); //podemos establacer el valor de this dentro de la funcion
+
+this
+const objeto3 = {
+  metodo: () => {
+    console.log(this);
+  }
+};
+
+objeto3.metodo();
+*/
 
 export const products = [
  {
