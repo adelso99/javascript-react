@@ -10964,6 +10964,80 @@ SOLUCION:
   - La velocidad debe estar limitada entre 0 y 200.
   - Actualiza displayInfo() para mostrar la velocidad al final: `${brand} ${model}, Velocidad: ${speed} km/h`
   - Llama a go() y brake() varias veces para cada auto, llama a displayInfo() y verifica la consola para confirmar que el código funciona
+SOLUCION:
+          class Car{
+          marca;
+          modelo;
+          velocidad = 0;
+
+          constructor(carDetalle){
+            this.marca = carDetalle.marca;
+            this.modelo = carDetalle.modelo;
+          }
+
+          //metod agregado
+          displayInfo(){
+            console.log(`${this.marca} ${this.modelo}`);
+            console.log(`${this.marca} ${this.modelo}, Velocidad: ${this.velocidad} km/h`);
+          }
+
+          //metodos de velocidades
+          go(){
+            if(this.velocidad < 200){
+              this.velocidad += 5;
+
+              //limite maximo de velocidad
+              if (this.velocidad > 200) {
+                this.velocidad = 200;
+              }
+            }
+          }
+
+          break(){
+            this.velocidad -= 5;
+
+            //limite minimo de velocidad
+            if (this.velocidad < 0) {
+              this.velocidad = 0;
+            }
+          }
+
+
+
+        }
+
+        const carro1 = new Car({
+          marca: "Toyota", 
+          modelo: "Corolla"
+        });
+
+        const carro2 = new Car({
+          marca: "Tesla", 
+          modelo: "Modelo 3"
+        });
+
+        console.log(carro1);
+        console.log(carro2);
+
+        carro1.go();
+        carro2.go();
+
+        carro1.go();
+        carro2.go();
+
+        carro1.break();
+        carro2.break();
+
+        carro1.displayInfo();
+        carro2.displayInfo();
+
+        En consola:
+                  Toyota Corolla
+                  Toyota Corolla, Velocidad: 5 km/h
+                  Tesla Modelo 3
+                  Tesla Modelo 3, Velocidad: 5 km/h
+
+
 
 
 
@@ -10973,6 +11047,208 @@ SOLUCION:
    - openTrunk() no debería funcionar si el auto se está moviendo.
    - go() no debería funcionar si el maletero está abierto.
    - Actualiza displayInfo() para mostrar información del maletero al final. Prueba el código.
+SOLUCION:
+          class Car{
+          marca;
+          modelo;
+          velocidad = 0;
+          isTrunkopen = false;
+
+          constructor(carDetalle){
+            this.marca = carDetalle.marca;
+            this.modelo = carDetalle.modelo;
+          }
+
+          //metod agregado
+          displayInfo(){
+            console.log(`${this.marca} ${this.modelo}`);
+            console.log(`${this.marca} ${this.modelo}, Velocidad: ${this.velocidad} km/h`);
+            console.log(`${this.isTrunkopen ? 'Abierto' : 'Cerrado'} `);
+          }
+
+          //metodos de velocidades
+          go(){
+            if(this.velocidad < 200){
+                if (!this.isTrunkopen) {
+                  this.velocidad += 5;
+                }else {
+                  console.log("No puedes avanzar con el maletero abierto");
+                }
+
+              //limite maximo de velocidad
+              if (this.velocidad > 200) {
+                this.velocidad = 200;
+              }
+            }
+          }
+
+          brake(){
+            this.velocidad -= 5;
+
+            //limite minimo de velocidad
+            if (this.velocidad < 0) {
+              this.velocidad = 0;
+            }
+          }
+
+
+          //metodos del maletero.
+          openTrunk(){
+            if(this.velocidad === 0){
+              this.isTrunkopen = true;
+            }
+
+          }
+
+          closeTrunk(){
+            if(this.isTrunkopen === true){
+              this.isTrunkopen = false;
+            }
+
+          }
+
+        }
+
+        const carro1 = new Car({
+          marca: "Toyota", 
+          modelo: "Corolla"
+        });
+
+        const carro2 = new Car({
+          marca: "Tesla", 
+          modelo: "Modelo 3"
+        });
+
+        console.log(carro1);
+        console.log(carro2);
+
+        carro1.displayInfo();
+        carro2.displayInfo();
+
+        carro1.go();
+        carro2.go();
+
+        carro1.go();
+        carro2.go();
+
+        carro1.brake();
+        carro2.brake();
+        carro2.brake();
+
+        carro1.openTrunk();
+        carro1.go();
+
+
+        carro2.openTrunk();
+        carro2.go();
+        carro2.go();
+
+        carro1.displayInfo();
+        carro2.displayInfo();
+
+
+      
+      SOLUCION 2:
+                  class Car{
+                  marca;
+                  modelo;
+                  velocidad = 0;
+                  isTrunkopen = false;
+
+                  constructor(carDetalle){
+                    this.marca = carDetalle.marca;
+                    this.modelo = carDetalle.modelo;
+                  }
+
+                  //metod agregado
+                  displayInfo(){
+                    const maletero = this.isTrunkOpen ? 'Abierto' : 'Cerrado';
+                    console.log(`${this.marca} ${this.modelo}`);
+                    console.log(`${this.marca} ${this.modelo}, Velocidad: ${this.velocidad} km/h, Maletero: ${maletero}`);
+                  }
+
+                  //metodos de velocidades
+                  go(){
+                    if(this.velocidad < 200){
+                        if (!this.isTrunkopen) {
+                          this.velocidad += 5;
+                        }else {
+                          console.log("No puedes avanzar con el maletero abierto");
+                        }
+
+                      //limite maximo de velocidad
+                      if (this.velocidad > 200) {
+                        this.velocidad = 200;
+                      }
+                    }
+                  }
+
+                  brake(){
+                    this.velocidad -= 5;
+
+                    //limite minimo de velocidad
+                    if (this.velocidad < 0) {
+                      this.velocidad = 0;
+                    }
+                  }
+
+
+                  //metodos del maletero.
+                  openTrunk(){
+                    if(this.velocidad === 0){
+                      this.isTrunkopen = true;
+                    }
+
+                  }
+
+                  closeTrunk(){
+                    if(this.isTrunkopen === true){
+                      this.isTrunkopen = false;
+                    }
+
+                  }
+
+                }
+
+                const carro1 = new Car({
+                  marca: "Toyota", 
+                  modelo: "Corolla"
+                });
+
+                const carro2 = new Car({
+                  marca: "Tesla", 
+                  modelo: "Modelo 3"
+                });
+
+                console.log(carro1);
+                console.log(carro2);
+
+                carro1.displayInfo();
+                carro2.displayInfo();
+
+                carro1.go();
+                carro2.go();
+
+                carro1.go();
+                carro2.go();
+
+                carro1.brake();
+                carro2.brake();
+
+                carro1.openTrunk();
+                carro1.go();
+
+
+                carro2.openTrunk();
+                carro2.go();
+                carro2.go();
+
+                carro1.displayInfo();
+                carro2.displayInfo();
+
+
+
+
 
 
 17e. Crea una nueva clase Racecar que extienda Car.
