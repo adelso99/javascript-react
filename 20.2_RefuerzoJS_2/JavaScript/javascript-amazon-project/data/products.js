@@ -68,6 +68,10 @@ class Clothing extends Product{
 }
 
 
+//Creacion de clase para verificar clases integradas
+new Date();
+
+
 export const products = [
  {
     id: "e43638ce-6aa0-4b85-b27f-e1d07eb678c6",
