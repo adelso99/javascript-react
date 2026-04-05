@@ -10801,4 +10801,10 @@ Más detalles sobre las clases
     2. Clases integradas = clases que proporciona el lenguaje
     Ejemplo:
             new Date() = genera un objeto que representa la fecha actual.
+            //Creacion de clase para verificar clases integradas
+            const date = new Date();
+            console.log(date);
+
+
+            .toLocaleTimeString() = da la hora actual
 
