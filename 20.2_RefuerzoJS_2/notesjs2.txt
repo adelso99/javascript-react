@@ -11620,3 +11620,21 @@ HTTP = Protocolo de transferencia de hipertexto
 
 se usa la clase "XMLHttpRequest"
 Esta es una clase integrada (proporcionada por JavaScript)
+
+Tipos de solicitudes:
+                    GET
+                    POST
+                    PUT
+                    DELETE
+
+
+URL = Localizador Uniforme de Recursos
+      - Como una dirección, pero para Internet.
+      - Nos ayuda a localizar otro ordenador en Internet
+
+
+URL = Localizador Uniforme de Recursos  --http: comunicacion con el ordenador -- la "s" que este despues del http, que es una version segura--
+                                        --lo que sigue despues de // es ya es el dominio que apunta a un ordenador de internet de esa pagina
+      https://amazon.com
+      https://youtube.com
+      https://supersimple.dev
