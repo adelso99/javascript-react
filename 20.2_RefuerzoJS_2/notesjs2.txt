@@ -1,7 +1,7 @@
 
 Refuerzo 2 JavaScript
 
- -------------------------------------------LECCION 1 Fundamentos de JavaScript -------------------------------------------------------------------------
+ -------------------------------------------LECCION 1 Fundamentos de JavaScript ----------------------------------------------------------------------
 
 Fundamentos de JavaScript
     - dar instrucciones a una computadora (código)
@@ -410,7 +410,7 @@ SOLUCION: `Impuesto estimado (10%): $${Math.round((2095*2+799*2+499*2) * 0.10) /
 
 
 
--------------------------------------------LECCION 4 Revisión de HTML y CSS, console.log----------------------------------------------------------------
+-------------------------------------------LECCION 4 Revisión de HTML y CSS, console.log--------------------------------------------------------------
 1. HTML = crea el contenido
 2. CSS = cambia la apariencia
 3. JavaScript = lo hace interactivo
@@ -11612,4 +11612,11 @@ SOLUCION:
 
 
 -------------------------------------------LECCION 18. Backend, Callbacks, Promises y Async Await -----------------------------------------------
+Backend
+¿Qué es el backend? = otra computadora que administra los datos de un sitio web
 
+Comunicacion de Fron-end ---http-> Back-end
+HTTP = Protocolo de transferencia de hipertexto
+
+se usa la clase "XMLHttpRequest"
+Esta es una clase integrada (proporcionada por JavaScript)
