@@ -11392,7 +11392,51 @@ Ejercicios de desafío
         1
         Instrucciones Garantía
 
+SOLUCION:
+          class Appliance extends Product{
+            constructor(productDetails) {
+              super(productDetails);
+              this.instructionsLink = productDetails.instructionsLink;
+              this.warrantyLink = productDetails.warrantyLink;
+            }
 
+            extraInfoHTML() {
+              return `
+                <a href="${this.instructionsLink}" target="_blank">
+                  Instrucciones
+                </a>
+                <a href="${this.warrantyLink}" target="_blank">
+                  Garantía
+                </a>
+              `;
+            }
+            
+          }
+
+
+        //Se le agrego esta esto en cada producto que fue correspondido
+          type: 'appliance',
+          instructionsLink: 'images/appliance-instructions.png',
+          warrantyLink: 'images/appliance-warranty.png'
+
+
+        export const products = [...
+        ].map((productDetails) => {
+        //uso de un if para filatrar el tipo de producto con herencia
+        if(productDetails.type === "clothing"){
+          return new Clothing(productDetails); 
+        }
+
+        if (productDetails.type === 'appliance') {
+          return new Appliance(productDetails);
+        } 
+
+        //conversion de cada producto del array en una nueva clase
+        return new Product(productDetails);
+      });
+
+
+      
 
 17i. Crea pruebas para las clases Producto, Ropa y Electrodomésticos.
    - Crea un nuevo archivo de prueba data/productsTest.js y cárgalo en tests.html
