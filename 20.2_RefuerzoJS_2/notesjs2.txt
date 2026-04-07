@@ -11638,3 +11638,32 @@ URL = Localizador Uniforme de Recursos  --http: comunicacion con el ordenador --
       https://amazon.com
       https://youtube.com
       https://supersimple.dev
+
+Ciclo de solicitud-respuesta = 1 solicitud, 1 respuesta
+Ejemplo:
+          //Practica para comunicacion entre front-ent y back-end con HTTP
+
+          //creacion de msj http con el uso de la clase "XMLHttpRequest"
+          const xhr = new XMLHttpRequest();
+
+          //confuracion de msj
+          //se debe de configurar 2 parametros: P1. define el tipo de menaje http se envia y el P2. indica a la compu donde enviar ese mensaje http
+          xhr.open("get", "https://supersimplebackend.dev"); //get: info del servidor -- URL es la comunicacion con el ordenador que se desea
+
+          //enviar mensaje
+          xhr.send();
+
+          Networks
+              Headers:
+                      Request URL                   https://supersimplebackend.dev/
+                      Request Method                GET
+                      Status Code                   304 Not Modified
+                      Remote Address                216.24.57.1:443
+                      Referrer Policy               strict-origin-when-cross-origin
+
+
+              Preview:
+                      Hello! This is SuperSimpleDev's backend.
+
+                      Documentation page:
+                      https://supersimplebackend.dev/documentation
