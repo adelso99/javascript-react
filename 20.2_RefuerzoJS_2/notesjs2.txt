@@ -11688,3 +11688,16 @@ xhr.open("get", "https://supersimplebackend.dev"); //get: info del servidor -- U
 //enviar mensaje
 xhr.send();
 
+
+
+
+Rutas URL = La ruta URL es la parte que aparece después del nombre de dominio  "/".
+
+    https://supersimplebackend.dev/hello --> /hello
+
+    https://supersimplebackend.dev/products/first  --> /products/first
+
+    https://supersimplebackend.dev  -->  En esta URL, si no hay una ruta URL, la ruta URL es una barra diagonal.
+
+   
+Cada ruta URL nos dará una respuesta diferente.
