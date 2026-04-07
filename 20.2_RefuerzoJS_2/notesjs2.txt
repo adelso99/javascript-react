@@ -11767,3 +11767,47 @@ Comienza con 2 (200, 201, 204) = éxito
 
 
 ¿Cómo sabemos qué rutas URL son compatibles?
+No existe forma de saberlos, algunas Backends proporcionana documentacion y otras no
+
+
+API de backend
+  API = interfaz de programación de aplicaciones
+    Cómo interactuamos con algo
+
+
+
+El backend puede responder con diferentes tipos de datos.  --> 
+    - como texto
+            Ejemplo:
+                    const xhr = new XMLHttpRequest();
+  
+                    xhr.addEventListener("load", () => {
+                      console.log(xhr.response);
+                    });
+
+                    xhr.open("get", "https://supersimplebackend.dev/hello"); 
+
+                    xhr.send();
+
+                    debe de mostrar que el tipo de contenido es texto
+    
+    
+    
+    - tambien como JSON
+            Ejemplo:
+                    const xhr = new XMLHttpRequest();
+
+                    xhr.addEventListener("load", () => {
+                      console.log(xhr.response);
+                    });
+
+                    xhr.open("get", "https://supersimplebackend.dev/products/first"); 
+
+                    xhr.send();
+
+
+                    debe de mostrar que el tipo de aplicacion JSON
+    
+
+
+
