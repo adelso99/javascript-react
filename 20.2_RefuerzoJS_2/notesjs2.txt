@@ -11852,3 +11852,56 @@ Cuando escribimos una URL en el navegador, en realidad se envía una solicitud G
 Usando el navegador = haciendo una solicitud GET
 
 
+Ejemplo:
+      1. Coloca este código en una función
+      2. Pasa esta función a loadProducts()
+
+        products.js:
+      //Carga de Productos desde el servidor o Back-end
+        export let products = [];
+
+        export function loadProducts(fun){ //que basicamente cuando una funcion se pasa otra funcion como parametro es conocido como "callback"
+          const xhr = new XMLHttpRequest();
+
+          xhr.addEventListener("load", ()=> {
+            products = JSON.parse(xhr.response).map((productDetails) => {
+                          //uso de un if para filatrar el tipo de producto con herencia
+                          if(productDetails.type === "clothing"){
+                            return new Clothing(productDetails); 
+                          }
+                        
+                          if (productDetails.type === 'appliance') {
+                            return new Appliance(productDetails);
+                          } 
+                        
+                          //conversion de cada producto del array en una nueva clase
+                          return new Product(productDetails);
+                        });
+
+              console.log("load products");
+
+              //aca se ejecuta la funcion que se le esta dando como parametro que es un valor para que muestre con ello los productos
+              fun();
+
+          });
+
+          xhr.open("GET", "https://supersimplebackend.dev/products");
+          xhr.send();
+
+        }
+
+
+        amazon.js:
+        //para llamar a todos los productos ya que ahora se esta llamando desde Back-end, se hizo la funcion  renderProductsGrid
+        loadProducts(renderProductsGrid); //recuerda que en js las funciones son valores, por ello se puede usar como parametro en otra funcion
+
+        function renderProductsGrid(){
+          ...
+        }
+
+
+
+
+Callback
+- una función que se ejecutará en el futuro
+

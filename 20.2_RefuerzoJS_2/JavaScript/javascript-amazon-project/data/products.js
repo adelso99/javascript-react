@@ -124,6 +124,37 @@ objeto3.metodo();
 
 
 //Carga de Productos desde el servidor o Back-end
+export let products = [];
+
+export function loadProducts(fun){ //que basicamente cuando una funcion se pasa otra funcion como parametro es conocido como "callback"
+  const xhr = new XMLHttpRequest();
+
+  xhr.addEventListener("load", ()=> {
+    products = JSON.parse(xhr.response).map((productDetails) => {
+                  //uso de un if para filatrar el tipo de producto con herencia
+                  if(productDetails.type === "clothing"){
+                    return new Clothing(productDetails); 
+                  }
+                
+                  if (productDetails.type === 'appliance') {
+                    return new Appliance(productDetails);
+                  } 
+                
+                  //conversion de cada producto del array en una nueva clase
+                  return new Product(productDetails);
+                });
+
+      console.log("load products");
+
+      //aca se ejecuta la funcion que se le esta dando como parametro que es un valor para que muestre con ello los productos
+      fun();
+
+  });
+
+  xhr.open("GET", "https://supersimplebackend.dev/products");
+  xhr.send();
+
+}
 
 
 
