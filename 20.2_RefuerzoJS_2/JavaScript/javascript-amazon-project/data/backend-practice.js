@@ -3,8 +3,10 @@
 //creacion de msj http con el uso de la clase "XMLHttpRequest"
 const xhr = new XMLHttpRequest();
 
-//evento para esperar la respuesta ya que esta no es inmediata
-xhr.addEventListener
+//Para Obtener la respuesta del mensaje enviado es necesario un evento para esperar la respuesta ya que esta no es inmediata
+xhr.addEventListener("load", () => {
+  console.log(xhr.response);
+});
 
 //confuracion de msj
 //se debe de configurar 2 parametros: P1. define el tipo de menaje http se envia y el P2. indica a la compu donde enviar ese mensaje http
@@ -13,5 +15,3 @@ xhr.open("get", "https://supersimplebackend.dev"); //get: info del servidor -- U
 //enviar mensaje
 xhr.send();
 
-//Obtener la respuesta del mensaje enviado
-xhr.response
