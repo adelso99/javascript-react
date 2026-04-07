@@ -11807,6 +11807,9 @@ El backend puede responder con diferentes tipos de datos.  -->
 
 
                     debe de mostrar que el tipo de aplicacion JSON
+                    Con ello podemos usar JSON.parce() y convertirlo en un objeto de JavaScript
+
+                    Esto nos permite enviar objetos JavaScript a través de Internet, al servidor.
     
 
 
