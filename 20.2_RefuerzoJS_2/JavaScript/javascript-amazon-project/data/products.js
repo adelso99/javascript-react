@@ -122,6 +122,14 @@ const objeto3 = {
 objeto3.metodo();
 */
 
+
+//Carga de Productos desde el servidor o Back-end
+
+
+
+
+/*Carga de Productos de forma Local
+
 export const products = [
  {
     id: "e43638ce-6aa0-4b85-b27f-e1d07eb678c6",
@@ -807,3 +815,4 @@ export const products = [
   return new Product(productDetails);
 });
 
+*/

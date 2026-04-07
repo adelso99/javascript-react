@@ -5,7 +5,7 @@ import {renderPaymentSummary } from "./checkout/paymentSummary.js";
 //Importacion de carrito pero usando OOP --Programacion Orientada a Objetos--
 //import "../data/car.js";
 
-import "../data/backend-practice.js"
+//import "../data/backend-practice.js"
 
 //llamdo de funcion del aparto de Chekout head
 renderCheckoutHeader();
