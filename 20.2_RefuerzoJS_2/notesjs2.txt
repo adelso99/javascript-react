@@ -11701,3 +11701,29 @@ Rutas URL = La ruta URL es la parte que aparece después del nombre de dominio  
 
    
 Cada ruta URL nos dará una respuesta diferente.
+
+Ejemplo:  
+        const xhr = new XMLHttpRequest();
+
+        //Para Obtener la respuesta del mensaje enviado es necesario un evento para esperar la respuesta ya que esta no es inmediata
+        xhr.addEventListener("load", () => {
+          console.log(xhr.response);  //en consola muestra lo mismo que en Preview
+        });
+
+        //confuracion de msj
+        //se debe de configurar 2 parametros: P1. define el tipo de menaje http se envia y el P2. indica a la compu donde enviar ese mensaje http
+        xhr.open("get", "https://supersimplebackend.dev/hello"); //cambio de ruta
+
+        //enviar mensaje
+        xhr.send();
+
+        Headers:
+                Request URL                https://supersimplebackend.dev/hello
+                Request Method             GET
+                Status Code                304 Not Modified
+                Remote Address             216.24.57.1:443
+                Referrer Policy            strict-origin-when-cross-origin
+
+        Preview:
+                This is the URL path /hello
+
