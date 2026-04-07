@@ -11754,6 +11754,16 @@ Ejemplo:
         Headers:
         Request URL        https://supersimplebackend.dev/not-supported
         Request Method     GET
-        Status Code        404 Not Found
+        Status Code        404 Not Found   -->Esto de 404 es el estado del codigo
         Remote Address     216.24.57.1:443
         Referrer Policy    strict-origin-when-cross-origin
+
+
+Código de estado
+Comienza con 4 o 5 (400, 404, 500) = fallido
+    - Si comienza con 4 significa que es Nuestro problema
+    - Si comienza con 5 significa que es Problema del Backend o servidor
+Comienza con 2 (200, 201, 204) = éxito
+
+
+¿Cómo sabemos qué rutas URL son compatibles?
