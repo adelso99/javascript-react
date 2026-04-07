@@ -11812,5 +11812,43 @@ El backend puede responder con diferentes tipos de datos.  -->
                     Esto nos permite enviar objetos JavaScript a través de Internet, al servidor.
     
 
+    - Tambien HTML
+            Ejemplo:
+                  const xhr = new XMLHttpRequest();
+                  
+                  xhr.addEventListener("load", () => {
+                    console.log(xhr.response);
+                  });
+
+                  xhr.open("GET", "https://supersimplebackend.dev/documentation"); 
+
+                  xhr.send();
+
+                  debe de mostrar que el tipo de text/html;
+
+
+
+
+    - tambien puede ser una imagen 
+            Ejemplo:
+                  const xhr = new XMLHttpRequest();
+                  
+                  xhr.addEventListener("load", () => {
+                    console.log(xhr.response);
+                  });
+
+                  xhr.open("GET", "https://supersimplebackend.dev/images/apple.jpg"); 
+
+                  xhr.send();
+
+                  debe de mostrar que el tipo es image/jpeg
+
+
+
+El backend puede responder con diferentes tipos de datos.
+
+Cuando escribimos una URL en el navegador, en realidad se envía una solicitud GET.
+
+Usando el navegador = haciendo una solicitud GET
 
 

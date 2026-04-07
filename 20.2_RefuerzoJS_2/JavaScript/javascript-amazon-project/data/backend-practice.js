@@ -10,7 +10,7 @@ xhr.addEventListener("load", () => {
 
 //confuracion de msj
 //se debe de configurar 2 parametros: P1. define el tipo de menaje http se envia y el P2. indica a la compu donde enviar ese mensaje http
-xhr.open("GET", "https://supersimplebackend.dev/products/first"); //get: info del servidor -- URL es la comunicacion con el ordenador que se desea
+xhr.open("GET", "https://supersimplebackend.dev"); //get: info del servidor -- URL es la comunicacion con el ordenador que se desea
 
 //enviar mensaje
 xhr.send();
