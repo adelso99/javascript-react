@@ -11945,4 +11945,11 @@ Pruebas con un backend
 
 
 
--------------------------------------------LECCION 18.1 Backend, Callbacks, Promises y Async Await -----------------------------------------------
+-------------------------------------------LECCION 18.1 Promises ---------------------------------------------------------------------------------
+Promesas
+  - mejor manera de manejar código asíncrono
+  - similar a la función done()
+  - esperamos a que termine algún código antes de pasar al siguiente paso
+
+
+

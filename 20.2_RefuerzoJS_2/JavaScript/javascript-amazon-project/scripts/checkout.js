@@ -8,9 +8,26 @@ import {loadProducts} from "../data/products.js";
 
 //import "../data/backend-practice.js"
 
+
+
+
+//Practica con Promesas
+new Promise(() => {
+  console.log("Promesa");
+});
+
+
+
+
+
+
+
+
+
+
 //Carga de productos que fueron llamados por el back-end
 loadProducts(() => {
-  
+
 
       //llamdo de funcion del aparto de Chekout head
     renderCheckoutHeader();
