@@ -11906,4 +11906,43 @@ Ejemplo:
 
 
 
+
+Tipos de mensajes (IMPORTANTE)
+GET → pedir datos
+POST → enviar datos
+PUT → actualizar
+DELETE → eliminar
+
+
+🔗 3. ¿QUÉ ES UNA URL?
+👉 Es la dirección del servidor
+Ejemplo:
+
+https://supersimplebackend.dev/products
+
+💥 Partes:
+https → conexión segura
+supersimplebackend.dev → servidor
+/products → ruta
+
+
+
+
 Pruebas con un backend
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-------------------------------------------LECCION 18.1 Backend, Callbacks, Promises y Async Await -----------------------------------------------
