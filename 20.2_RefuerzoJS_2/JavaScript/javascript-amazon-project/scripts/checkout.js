@@ -10,19 +10,52 @@ import {loadCart} from "../data/cart.js";
 //import "../data/backend-practice.js"
 
 
+//Practica de ejecucion de varias promesas al mismo tiempo
+Promise.all([
+  //Practica con Promesas --parametro resolve para que se ejecute
+  new Promise((resolve) => {
+    loadProducts(() => {
+      resolve("valor1");  //se le puede dar un valor a la resolucion
+    });
+  }),
+  new Promise((resolve) => { //podemos ejecutar varias promesas al mismo tiempo  --con Promise.all()
+    loadCart(() => {
+      resolve();
+    });
+  })
+
+]).then((values) => {
+    console.log(values);
+    
+    //redenrizar la pagina
+    //llamdo de funcion del aparto de Chekout head
+    renderCheckoutHeader();
+
+    //Llamado de la funcion para que se ejecuta al realizar la carga de pagina, de los productos seleccionados
+    renderOrderSummary();
+
+    //llamdo de funcion para la parte de suma de producto, envio de productos, porcentaje de envio
+    renderPaymentSummary()
+});
 
 
+
+/*
 //Practica con Promesas --parametro resolve para que se ejecute
 new Promise((resolve) => {
   loadProducts(() => {
-    resolve();
+    resolve("valor1");  //se le puede dar un valor a la resolucion
   });
-}).then(() => { //para agregar el siguiente paso de una promesa se usa el siguiente metodo "then()"
-  return new Promise((resolve) => {
+
+}).then((value) => { //para agregar el siguiente paso de una promesa se usa el siguiente metodo "then()"
+  console.log(value);
+  
+  return new Promise((resolve) => { //podemos ejecutar varias promesas al mismo tiempo  --con Promise.all()
     loadCart(() => {
       resolve();
     });
   });
+
 }).then(() => {
     //redenrizar la pagina
     //llamdo de funcion del aparto de Chekout head
@@ -34,7 +67,7 @@ new Promise((resolve) => {
     //llamdo de funcion para la parte de suma de producto, envio de productos, porcentaje de envio
     renderPaymentSummary();
 });   
-
+*/
 
 
 

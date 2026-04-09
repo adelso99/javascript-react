@@ -12081,3 +12081,11 @@ Ejemplo con agregar productos al carrito nuevamente pero usando promesas:
                               //llamdo de funcion para la parte de suma de producto, envio de productos, porcentaje de envio
                               renderPaymentSummary();
                           });   
+
+
+
+
+uso del metodo "Promise.all()", para ejecutar varias promesas al mismo tiempo
+Promise.all()
+  - nos permite ejecutar varias promesas al mismo tiempo
+  - y esperar a que todas terminen
