@@ -126,6 +126,14 @@ objeto3.metodo();
 //Carga de Productos desde el servidor o Back-end
 export let products = [];
 
+
+//uso de fetch
+function loadProductsFetch(){
+  //por defecto al usar "fetch()" realizar una solicitud de GET, por lo que solo necesita el URL
+  fetch("https://supersimplebackend.dev/products");
+}
+
+
 export function loadProducts(fun){ //que basicamente cuando una funcion se pasa otra funcion como parametro es conocido como "callback"
   const xhr = new XMLHttpRequest();
 

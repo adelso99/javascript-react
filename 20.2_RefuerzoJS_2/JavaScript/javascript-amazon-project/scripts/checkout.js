@@ -20,13 +20,13 @@ Promise.all([
   }),
   new Promise((resolve) => { //podemos ejecutar varias promesas al mismo tiempo  --con Promise.all()
     loadCart(() => {
-      resolve();
+      resolve();  //aca no se dio un valor por eso el segundo elemento del array es undefined
     });
   })
 
 ]).then((values) => {
-    console.log(values);
-    
+    console.log(values);  //en cosnsola muestra un array con los valores ["valor1", undefined]
+
     //redenrizar la pagina
     //llamdo de funcion del aparto de Chekout head
     renderCheckoutHeader();

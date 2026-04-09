@@ -12089,3 +12089,39 @@ uso del metodo "Promise.all()", para ejecutar varias promesas al mismo tiempo
 Promise.all()
   - nos permite ejecutar varias promesas al mismo tiempo
   - y esperar a que todas terminen
+
+  Ejemplo:
+          //Practica de ejecucion de varias promesas al mismo tiempo
+          Promise.all([
+            //Practica con Promesas --parametro resolve para que se ejecute
+            new Promise((resolve) => {
+              loadProducts(() => {
+                resolve("valor1");  //se le puede dar un valor a la resolucion
+              });
+            }),
+            new Promise((resolve) => { //podemos ejecutar varias promesas al mismo tiempo  --con Promise.all()
+              loadCart(() => {
+                resolve();  //aca no se dio un valor por eso el segundo elemento del array es undefined
+              });
+            })
+
+          ]).then((values) => {
+              console.log(values);  //en cosnsola muestra un array con los valores ["valor1", undefined]
+
+              //redenrizar la pagina
+              //llamdo de funcion del aparto de Chekout head
+              renderCheckoutHeader();
+
+              //Llamado de la funcion para que se ejecuta al realizar la carga de pagina, de los productos seleccionados
+              renderOrderSummary();
+
+              //llamdo de funcion para la parte de suma de producto, envio de productos, porcentaje de envio
+              renderPaymentSummary()
+          });
+
+
+
+
+
+uso de la características "fetch()"
+fetch() = mejor manera de hacer solicitudes HTTP
