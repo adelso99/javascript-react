@@ -18,6 +18,13 @@ new Promise((resolve) => {
     resolve();
   });
 }).then(() => { //para agregar el siguiente paso de una promesa se usa el siguiente metodo "then()"
+  return new Promise((resolve) => {
+    loadCart(() => {
+      resolve();
+    });
+  });
+}).then(() => {
+    //redenrizar la pagina
     //llamdo de funcion del aparto de Chekout head
     renderCheckoutHeader();
 
