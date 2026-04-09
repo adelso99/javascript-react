@@ -12125,3 +12125,5 @@ Promise.all()
 
 uso de la características "fetch()"
 fetch() = mejor manera de hacer solicitudes HTTP
+
+response.json() es asíncrono, devuelve una promesa.

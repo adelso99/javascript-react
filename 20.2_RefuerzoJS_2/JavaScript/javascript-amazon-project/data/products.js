@@ -130,8 +130,15 @@ export let products = [];
 //uso de fetch
 function loadProductsFetch(){
   //por defecto al usar "fetch()" realizar una solicitud de GET, por lo que solo necesita el URL
-  fetch("https://supersimplebackend.dev/products");
+  //para obtener la respuesta no se usa una funcion de callback, se usan promesas
+  fetch("https://supersimplebackend.dev/products").then((response) => {
+    return response.json();
+  }).then((productsData) =>{
+    console.log(productsData);
+  });
 }
+
+loadProductsFetch();
 
 
 export function loadProducts(fun){ //que basicamente cuando una funcion se pasa otra funcion como parametro es conocido como "callback"
