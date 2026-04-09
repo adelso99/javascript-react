@@ -11943,8 +11943,6 @@ Pruebas con un backend
 
 
 
-
-
 -------------------------------------------LECCION 18.1 Promises ---------------------------------------------------------------------------------
 Promesas
   - mejor manera de manejar código asíncrono
@@ -11952,4 +11950,25 @@ Promesas
   - esperamos a que termine algún código antes de pasar al siguiente paso
 
 
+Permite que JavaScript realice varias tareas al mismo tiempo.
+Ejemplo:
+        //Practica con Promesas --parametro resolve para que se ejcute
+        new Promise((resolve) => {
+          loadProducts(() => {
+            resolve();
+          });
+        });
 
+       //Carga de productos que fueron llamados por el back-end
+        loadProducts(() => {
+
+              //llamdo de funcion del aparto de Chekout head
+            renderCheckoutHeader();
+
+            //Llamado de la funcion para que se ejecuta al realizar la carga de pagina, de los productos seleccionados
+            renderOrderSummary();
+
+            //llamdo de funcion para la parte de suma de producto, envio de productos, porcentaje de envio
+            renderPaymentSummary();
+
+        });

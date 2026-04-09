@@ -11,9 +11,11 @@ import {loadProducts} from "../data/products.js";
 
 
 
-//Practica con Promesas
-new Promise(() => {
-  console.log("Promesa");
+//Practica con Promesas --parametro resolve para que se ejcute
+new Promise((resolve) => {
+  loadProducts(() => {
+    resolve();
+  });
 });
 
 
@@ -27,7 +29,6 @@ new Promise(() => {
 
 //Carga de productos que fueron llamados por el back-end
 loadProducts(() => {
-
 
       //llamdo de funcion del aparto de Chekout head
     renderCheckoutHeader();
