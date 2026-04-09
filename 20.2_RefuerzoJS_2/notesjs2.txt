@@ -12010,4 +12010,4 @@ Ejemplo 3:
 
 
 ¿Se ve mas complicado usar promesas que funciones, porque no usar solo funciones de callback y no promesas?
-Múltiples devoluciones de llamada causan mucho anidamiento
+Múltiples devoluciones de llamada causan mucho anidamiento --osea Codigo dentro de codigo

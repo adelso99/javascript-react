@@ -132,3 +132,35 @@ export function updateDeliveryOption(productId, deliveryOptionId){
 }
 
 
+
+
+//Funcion para cargar los productos del Carrito desde e Back-end
+export function loadCart(fun){ //que basicamente cuando una funcion se pasa otra funcion como parametro es conocido como "callback"
+  const xhr = new XMLHttpRequest();
+
+  xhr.addEventListener("load", ()=> {
+    products = JSON.parse(xhr.response).map((productDetails) => {
+                  //uso de un if para filatrar el tipo de producto con herencia
+                  if(productDetails.type === "clothing"){
+                    return new Clothing(productDetails); 
+                  }
+                
+                  if (productDetails.type === 'appliance') {
+                    return new Appliance(productDetails);
+                  } 
+                
+                  //conversion de cada producto del array en una nueva clase
+                  return new Product(productDetails);
+                });
+
+      console.log("load products");
+
+      //aca se ejecuta la funcion que se le esta dando como parametro que es un valor para que muestre con ello los productos
+      fun();
+
+  });
+
+  xhr.open("GET", "https://supersimplebackend.dev/cart");
+  xhr.send();
+
+}
