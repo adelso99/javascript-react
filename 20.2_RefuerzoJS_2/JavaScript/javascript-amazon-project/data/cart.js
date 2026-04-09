@@ -139,24 +139,10 @@ export function loadCart(fun){ //que basicamente cuando una funcion se pasa otra
   const xhr = new XMLHttpRequest();
 
   xhr.addEventListener("load", ()=> {
-    products = JSON.parse(xhr.response).map((productDetails) => {
-                  //uso de un if para filatrar el tipo de producto con herencia
-                  if(productDetails.type === "clothing"){
-                    return new Clothing(productDetails); 
-                  }
-                
-                  if (productDetails.type === 'appliance') {
-                    return new Appliance(productDetails);
-                  } 
-                
-                  //conversion de cada producto del array en una nueva clase
-                  return new Product(productDetails);
-                });
+    console.log(xhr.response);
 
-      console.log("load products");
-
-      //aca se ejecuta la funcion que se le esta dando como parametro que es un valor para que muestre con ello los productos
-      fun();
+    //aca se ejecuta la funcion que se le esta dando como parametro que es un valor para que muestre con ello los productos
+    fun();
 
   });
 
