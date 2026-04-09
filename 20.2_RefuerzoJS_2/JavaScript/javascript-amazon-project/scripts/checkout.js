@@ -16,7 +16,16 @@ new Promise((resolve) => {
   loadProducts(() => {
     resolve();
   });
-});
+}).then(() => { //para agregar el siguiente paso de una promesa se usa el siguiente metodo "then()"
+    //llamdo de funcion del aparto de Chekout head
+    renderCheckoutHeader();
+
+    //Llamado de la funcion para que se ejecuta al realizar la carga de pagina, de los productos seleccionados
+    renderOrderSummary();
+
+    //llamdo de funcion para la parte de suma de producto, envio de productos, porcentaje de envio
+    renderPaymentSummary();
+});   
 
 
 
@@ -25,11 +34,10 @@ new Promise((resolve) => {
 
 
 
-
+/*
 
 //Carga de productos que fueron llamados por el back-end
 loadProducts(() => {
-
       //llamdo de funcion del aparto de Chekout head
     renderCheckoutHeader();
 
@@ -38,6 +46,6 @@ loadProducts(() => {
 
     //llamdo de funcion para la parte de suma de producto, envio de productos, porcentaje de envio
     renderPaymentSummary();
-
 });
 
+*/

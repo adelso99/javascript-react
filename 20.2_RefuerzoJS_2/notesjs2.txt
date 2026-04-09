@@ -11972,3 +11972,42 @@ Ejemplo:
             renderPaymentSummary();
 
         });
+
+
+Ejemplo 2:
+          //Practica con Promesas --parametro resolve para que se ejcute
+          new Promise((resolve) => {
+            console.log("Incio de Promesa");
+            loadProducts(() => {
+              console.log("Terminado de Cargar");
+              resolve();
+            });
+          }).then(() => { //para agregar el siguiente paso de una promesa se usa el siguiente metodo "then()"
+            console.log("Siguiente Paso");
+          });   
+
+
+              
+
+Ejemplo 3:
+            //Practica con Promesas --parametro resolve para que se ejcute
+            new Promise((resolve) => {
+              loadProducts(() => {
+                resolve();
+              });
+            }).then(() => { //para agregar el siguiente paso de una promesa se usa el siguiente metodo "then()"
+                //llamdo de funcion del aparto de Chekout head
+                renderCheckoutHeader();
+
+                //Llamado de la funcion para que se ejecuta al realizar la carga de pagina, de los productos seleccionados
+                renderOrderSummary();
+
+                //llamdo de funcion para la parte de suma de producto, envio de productos, porcentaje de envio
+                renderPaymentSummary();
+            });   
+
+
+
+
+¿Se ve mas complicado usar promesas que funciones, porque no usar solo funciones de callback y no promesas?
+Múltiples devoluciones de llamada causan mucho anidamiento
