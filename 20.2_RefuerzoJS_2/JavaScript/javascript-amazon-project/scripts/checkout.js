@@ -1,7 +1,7 @@
 import {renderCheckoutHeader} from "./checkout/checkoutHeader.js";
 import {renderOrderSummary} from "./checkout/orderSummary.js";
 import {renderPaymentSummary } from "./checkout/paymentSummary.js";
-import {loadProducts} from "../data/products.js";
+import {loadProducts, loadProductsFetch} from "../data/products.js";
 import {loadCart} from "../data/cart.js";
 
 //Importacion de carrito pero usando OOP --Programacion Orientada a Objetos--
@@ -12,12 +12,8 @@ import {loadCart} from "../data/cart.js";
 
 //Practica de ejecucion de varias promesas al mismo tiempo
 Promise.all([
-  //Practica con Promesas --parametro resolve para que se ejecute
-  new Promise((resolve) => {
-    loadProducts(() => {
-      resolve("valor1");  //se le puede dar un valor a la resolucion
-    });
-  }),
+  //Practica con Promesas pero usando fetch
+  loadProductsFetch(),
   new Promise((resolve) => { //podemos ejecutar varias promesas al mismo tiempo  --con Promise.all()
     loadCart(() => {
       resolve();  //aca no se dio un valor por eso el segundo elemento del array es undefined

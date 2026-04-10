@@ -128,7 +128,7 @@ export let products = [];
 
 
 //uso de fetch
-function loadProductsFetch(){
+export function loadProductsFetch(){
   //por defecto al usar "fetch()" realizar una solicitud de GET, por lo que solo necesita el URL
   //para obtener la respuesta no se usa una funcion de callback, se usan promesas
   const promise =  fetch("https://supersimplebackend.dev/products").then((response) => {
