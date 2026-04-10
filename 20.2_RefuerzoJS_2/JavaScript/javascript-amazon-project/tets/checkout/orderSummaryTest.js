@@ -1,6 +1,6 @@
 import {renderOrderSummary} from "../../scripts/checkout/orderSummary.js";
 import {loadFromStorage, cart} from "../../data/cart.js";
-import {loadProducts} from "../../data/products.js";
+import {loadProducts, loadProductsFetch} from "../../data/products.js";
 
 
 describe("Conjunto de Pruebas: renderOrderSummary --Resumen del Pedido--", () => {
@@ -11,7 +11,7 @@ const name1 = "Black and Gray Athletic Cotton Socks - 6 Pairs";
 
   //uso de gancho para as pruebas ya que nuestros productos ahora vienen de back-end
   beforeAll((done) => { //jasmin tiene una funcion done() que espera que el codigo cargue para ejecutar la funcion
-    loadProducts(() => {
+    loadProductsFetch().then(() => {
       done();
     });
   });
