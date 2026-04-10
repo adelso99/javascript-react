@@ -154,10 +154,11 @@ function loadProductsFetch(){
   return promise;
 }
 
+/*
 loadProductsFetch().then(() => {
   console.log("Siguiente Paso");
 });
-
+*/
 
 export function loadProducts(fun){ //que basicamente cuando una funcion se pasa otra funcion como parametro es conocido como "callback"
   const xhr = new XMLHttpRequest();
