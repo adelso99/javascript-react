@@ -12158,3 +12158,16 @@ Ejemplo:
           loadProductsFetch().then(() => {
             console.log("Siguiente Paso");
           });
+
+
+
+
+
+
+
+
+
+
+-------------------------------------------LECCION 18.2 Async Await  ---------------------------------------------------------------------------------
+
+Async Await = una forma aún mejor de manejar código asíncrono
