@@ -12171,3 +12171,14 @@ Ejemplo:
 -------------------------------------------LECCION 18.2 Async Await  ---------------------------------------------------------------------------------
 
 Async Await = una forma aún mejor de manejar código asíncrono
+Ejemplo:
+      async function loadPage(){
+        console.log("Carga de Pagina");
+        return "valor2";
+      }
+      loadPage().then((value) => {
+        console.log("Siguiente Paso");
+        console.log(value);
+      });
+
+async = hace que una función devuelva una promesa
