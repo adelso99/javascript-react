@@ -12182,3 +12182,6 @@ Ejemplo:
       });
 
 async = hace que una función devuelva una promesa
+
+¿Cuál es el propósito de esta función?
+= async nos permite usar await
