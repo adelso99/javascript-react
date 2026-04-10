@@ -131,14 +131,32 @@ export let products = [];
 function loadProductsFetch(){
   //por defecto al usar "fetch()" realizar una solicitud de GET, por lo que solo necesita el URL
   //para obtener la respuesta no se usa una funcion de callback, se usan promesas
-  fetch("https://supersimplebackend.dev/products").then((response) => {
+  const promise =  fetch("https://supersimplebackend.dev/products").then((response) => {
     return response.json();
-  }).then((productsData) =>{
-    console.log(productsData);
+    }).then((productsData) =>{
+       products = productsData.map((productDetails) => {
+          //uso de un if para filatrar el tipo de producto con herencia
+          if(productDetails.type === "clothing"){
+            return new Clothing(productDetails); 
+          }
+        
+          if (productDetails.type === 'appliance') {
+            return new Appliance(productDetails);
+          } 
+        
+          //conversion de cada producto del array en una nueva clase
+          return new Product(productDetails);
+        });
+
+        console.log("load products");
   });
+
+  return promise;
 }
 
-loadProductsFetch();
+loadProductsFetch().then(() => {
+  console.log("Siguiente Paso");
+});
 
 
 export function loadProducts(fun){ //que basicamente cuando una funcion se pasa otra funcion como parametro es conocido como "callback"
