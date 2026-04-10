@@ -12,6 +12,11 @@ import {loadCart} from "../data/cart.js";
 
 async function loadPage(){
   console.log("Carga de Pagina");
+
+  //promesa 
+  await loadProductsFetch();
+
+  
   return "valor2";
 }
 loadPage().then((value) => {
