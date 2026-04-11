@@ -9,7 +9,7 @@ import {loadCart} from "../data/cart.js";
 
 //import "../data/backend-practice.js"
 
-
+//Practica con async
 async function loadPage(){
   console.log("Carga de Pagina");
 
@@ -23,8 +23,6 @@ loadPage().then((value) => {
   console.log("Siguiente Paso");
   console.log(value);
 });
-
-
 
 
 
