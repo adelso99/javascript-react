@@ -12187,3 +12187,19 @@ async = hace que una función devuelva una promesa
 = async nos permite usar await
 
 await = esperemos a que una promesa termine,
+
+Ejemplo: 
+        //Practica con async
+        async function loadPage(){
+          console.log("Carga de Pagina");
+
+          //promesa 
+          await loadProductsFetch();
+
+          
+          return "valor2";
+        }
+        loadPage().then((value) => {
+          console.log("Siguiente Paso");
+          console.log(value);
+        });
