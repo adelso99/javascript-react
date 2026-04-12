@@ -12203,3 +12203,6 @@ Ejemplo:
           console.log("Siguiente Paso");
           console.log(value);
         });
+
+
+Solo podemos usar await cuando estamos dentro de una función asíncrona.
