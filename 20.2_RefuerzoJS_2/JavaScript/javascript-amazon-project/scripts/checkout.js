@@ -23,7 +23,17 @@ async function loadPage(){
       resolve();  //aca no se dio un valor por eso el segundo elemento del array es undefined
     });
   });
-  
+
+    //redenrizar la pagina
+  //llamdo de funcion del aparto de Chekout head
+  renderCheckoutHeader();
+
+  //Llamado de la funcion para que se ejecuta al realizar la carga de pagina, de los productos seleccionados
+  renderOrderSummary();
+
+  //llamdo de funcion para la parte de suma de producto, envio de productos, porcentaje de envio
+  renderPaymentSummary();
+
   return "valor2";
 }
 loadPage().then((value) => {
@@ -56,7 +66,7 @@ Promise.all([
     renderOrderSummary();
 
     //llamdo de funcion para la parte de suma de producto, envio de productos, porcentaje de envio
-    renderPaymentSummary()
+    renderPaymentSummary();
 });
 
 
