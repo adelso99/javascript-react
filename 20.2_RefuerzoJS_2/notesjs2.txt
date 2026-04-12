@@ -12232,3 +12232,10 @@ Ejemplo Terminado:
 
                     }
                     loadPage();
+
+
+
+
+Más detalles sobre async/await
+    - Solo podemos usar await dentro de una función asíncrona.
+    - La función más cercana tiene que ser asíncrona
