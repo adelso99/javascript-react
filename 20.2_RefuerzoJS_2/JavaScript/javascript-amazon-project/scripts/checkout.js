@@ -18,6 +18,11 @@ async function loadPage(){
   //promesa 
   await loadProductsFetch();
 
+  await new Promise((resolve) => { //podemos ejecutar varias promesas al mismo tiempo  --con Promise.all()
+    loadCart(() => {
+      resolve();  //aca no se dio un valor por eso el segundo elemento del array es undefined
+    });
+  });
   
   return "valor2";
 }
