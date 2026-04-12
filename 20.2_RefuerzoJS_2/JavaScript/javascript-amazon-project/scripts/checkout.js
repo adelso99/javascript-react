@@ -13,7 +13,6 @@ import {loadCart} from "../data/cart.js";
 
 //Practica con async
 async function loadPage(){
-  console.log("Carga de Pagina");
 
   //promesa 
   await loadProductsFetch();
@@ -34,12 +33,8 @@ async function loadPage(){
   //llamdo de funcion para la parte de suma de producto, envio de productos, porcentaje de envio
   renderPaymentSummary();
 
-  return "valor2";
 }
-loadPage().then((value) => {
-  console.log("Siguiente Paso");
-  console.log(value);
-});
+loadPage();
 
 
 

@@ -12206,3 +12206,29 @@ Ejemplo:
 
 
 Solo podemos usar await cuando estamos dentro de una función asíncrona.
+
+Ejemplo Terminado:
+                    //Practica con async
+                    async function loadPage(){
+
+                      //promesa 
+                      await loadProductsFetch();
+
+                      await new Promise((resolve) => { //podemos ejecutar varias promesas al mismo tiempo  --con Promise.all()
+                        loadCart(() => {
+                          resolve();  //aca no se dio un valor por eso el segundo elemento del array es undefined
+                        });
+                      });
+
+                        //redenrizar la pagina
+                      //llamdo de funcion del aparto de Chekout head
+                      renderCheckoutHeader();
+
+                      //Llamado de la funcion para que se ejecuta al realizar la carga de pagina, de los productos seleccionados
+                      renderOrderSummary();
+
+                      //llamdo de funcion para la parte de suma de producto, envio de productos, porcentaje de envio
+                      renderPaymentSummary();
+
+                    }
+                    loadPage();
