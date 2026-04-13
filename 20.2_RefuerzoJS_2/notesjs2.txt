@@ -12240,11 +12240,17 @@ Más detalles sobre async/await
     - Solo podemos usar await dentro de una función asíncrona.
     - La función más cercana tiene que ser asíncrona
 
+        async await
+            = atajo para promesas
+            = nos permite escribir código asíncrono como código normal
 
-async await
-    = atajo para promesas
-    = nos permite escribir código asíncrono como código normal
+        Usar async await, en lugar de promesas y devoluciones de llamada
 
 
 
-Usar async await, en lugar de promesas y devoluciones de llamada
+
+
+
+Manejo de errores
+Cuando enviamos solicitudes HTTP, podríamos obtener errores inesperados
+
