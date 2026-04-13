@@ -14,14 +14,21 @@ import {loadCart} from "../data/cart.js";
 //Practica con async
 async function loadPage(){
 
-  //promesa 
-  await loadProductsFetch();
+  try {
+    //promesa 
+    await loadProductsFetch();
 
-  const valor = await new Promise((resolve) => { //podemos ejecutar varias promesas al mismo tiempo  --con Promise.all()
-    loadCart(() => {
-      resolve("valor3");  //aca no se dio un valor por eso el segundo elemento del array es undefined
+    const valor = await new Promise((resolve) => { //podemos ejecutar varias promesas al mismo tiempo  --con Promise.all()
+      loadCart(() => {
+        resolve("valor3");  //aca no se dio un valor por eso el segundo elemento del array es undefined
+      });
     });
-  });
+    
+  } catch (error) { //el parametro de error contiene informacion del error por si se necesita
+    console.log("Un error Inesperado. Intentelo mas tarde");
+  }
+
+  
 
     //redenrizar la pagina
   //llamdo de funcion del aparto de Chekout head

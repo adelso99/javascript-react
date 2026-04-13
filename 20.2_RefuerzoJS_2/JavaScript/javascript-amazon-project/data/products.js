@@ -149,6 +149,8 @@ export function loadProductsFetch(){
         });
 
         console.log("load products");
+  }).catch((error) => {  //es para ver si la solicitud tuvo un error aca lo muestra
+    console.log("Un error Inesperado. Intentelo mas tarde");
   });
 
   return promise;
