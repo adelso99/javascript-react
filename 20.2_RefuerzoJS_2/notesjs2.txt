@@ -12245,4 +12245,6 @@ async await
     = atajo para promesas
     = nos permite escribir código asíncrono como código normal
 
-    
+
+
+Usar async await, en lugar de promesas y devoluciones de llamada
