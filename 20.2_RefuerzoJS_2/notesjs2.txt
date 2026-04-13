@@ -12270,3 +12270,9 @@ Ejemplo:
         }
 
         loadProducts();  //en consola muestra el error del evento que se creo
+
+
+
+
+
+Manejar errores en las promesas
