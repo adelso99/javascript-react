@@ -39,7 +39,7 @@ loadPage();
 
 
 
-
+/*
 //Practica de ejecucion de varias promesas al mismo tiempo
 Promise.all([
   //Practica con Promesas pero usando fetch
@@ -63,7 +63,7 @@ Promise.all([
     //llamdo de funcion para la parte de suma de producto, envio de productos, porcentaje de envio
     renderPaymentSummary();
 });
-
+*/
 
 
 /*
