@@ -12254,3 +12254,4 @@ Más detalles sobre async/await
 Manejo de errores
 Cuando enviamos solicitudes HTTP, podríamos obtener errores inesperados
 
+Configurar una función de devolución de llamada independiente solo para errores

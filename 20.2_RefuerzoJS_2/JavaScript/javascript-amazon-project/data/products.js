@@ -185,7 +185,11 @@ export function loadProducts(fun){ //que basicamente cuando una funcion se pasa 
 
   });
 
-  xhr.open("GET", "https://supersimplebackend.dev/products");
+  xhr.addEventListener("error", () => {
+    console.log("Un error Inesperado. Intentelo mas tarde");
+  });
+
+  xhr.open("GET", "https://error.supersimplebackend.dev/products");
   xhr.send();
 
 }
