@@ -12315,3 +12315,8 @@ Ejemplo:
           ...
           }
           loadPage();
+
+
+
+
+Más detalles sobre try/catch
