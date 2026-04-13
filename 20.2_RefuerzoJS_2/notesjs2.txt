@@ -12255,3 +12255,18 @@ Manejo de errores
 Cuando enviamos solicitudes HTTP, podríamos obtener errores inesperados
 
 Configurar una función de devolución de llamada independiente solo para errores
+
+Ejemplo:
+          export function loadProducts(fun){ //que basicamente cuando una funcion se pasa otra funcion como parametro es conocido como "callback"
+          ...
+
+          xhr.addEventListener("error", (error) => {
+            console.log("Un error Inesperado. Intentelo mas tarde");
+          });
+
+          xhr.open("GET", "https://error.supersimplebackend.dev/products");  // se cambio la url para que diera un error de llamado
+          xhr.send();
+
+        }
+
+        loadProducts();  //en consola muestra el error del evento que se creo

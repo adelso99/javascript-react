@@ -185,7 +185,7 @@ export function loadProducts(fun){ //que basicamente cuando una funcion se pasa 
 
   });
 
-  xhr.addEventListener("error", () => {
+  xhr.addEventListener("error", (error) => {
     console.log("Un error Inesperado. Intentelo mas tarde");
   });
 
@@ -193,6 +193,8 @@ export function loadProducts(fun){ //que basicamente cuando una funcion se pasa 
   xhr.send();
 
 }
+
+loadProducts();
 
 
 
