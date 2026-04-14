@@ -12320,3 +12320,43 @@ Ejemplo:
 
 
 Más detalles sobre try/catch
+Podemos usar try/catch con código síncrono (o código normal).
+
+Podemos usar try/catch para capturar errores en el código normal.
+
+¿Por qué no usamos try/catch en todas partes?
+      -Está diseñado para manejar errores inesperados (el código es correcto, pero está fuera de nuestro control)
+
+
+Para la creacion de un error usamos el metodo "throw"
+Ejemplo:
+          //Practica con async
+            async function loadPage(){
+
+              try {
+                //creacion de un error propio
+                throw "error1";
+
+
+                //promesa 
+                await loadProductsFetch();
+
+                const valor = await new Promise((resolve) => { //podemos ejecutar varias promesas al mismo tiempo  --con Promise.all()
+                  loadCart(() => {
+                    resolve("valor3");  //aca no se dio un valor por eso el segundo elemento del array es undefined
+                  });
+                });
+                
+              } catch (error) { //el parametro de error contiene informacion del error por si se necesita
+                console.log("Un error Inesperado. Intentelo mas tarde"); //EN CONSOLA MUESTRA ESTE ERROR
+              }
+
+              ...
+
+            }
+            loadPage();  
+
+
+
+
+Si utilizamos Promises, hay dos maneras de crear un error manualmente.

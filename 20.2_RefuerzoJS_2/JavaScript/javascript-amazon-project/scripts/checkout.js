@@ -15,6 +15,10 @@ import {loadCart} from "../data/cart.js";
 async function loadPage(){
 
   try {
+    //creacion de un error propio
+    //throw "error1";
+
+
     //promesa 
     await loadProductsFetch();
 
