@@ -12387,4 +12387,7 @@ Ejemplo:
 
 
 
+
+
+
 Segunda forma de crear un error en una promesa.
