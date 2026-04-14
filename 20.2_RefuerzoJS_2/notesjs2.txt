@@ -12360,4 +12360,24 @@ Ejemplo:
 
 
 Si utilizamos Promises, hay dos maneras de crear un error manualmente.
+Ejemplo:
+          //Practica con async
+async function loadPage(){
 
+  ...
+
+    const valor = await new Promise((resolve) => { //podemos ejecutar varias promesas al mismo tiempo  --con Promise.all()
+      throw "error2"; //--ACA--
+      loadCart(() => {
+        resolve("valor3");  //aca no se dio un valor por eso el segundo elemento del array es undefined
+      });
+    });
+    
+  } catch (error) { //el parametro de error contiene informacion del error por si se necesita
+    console.log("Un error Inesperado. Intentelo mas tarde");
+  }
+
+  ...
+
+}
+loadPage();
