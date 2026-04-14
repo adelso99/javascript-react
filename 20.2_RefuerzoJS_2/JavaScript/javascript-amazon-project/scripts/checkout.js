@@ -23,6 +23,7 @@ async function loadPage(){
     await loadProductsFetch();
 
     const valor = await new Promise((resolve) => { //podemos ejecutar varias promesas al mismo tiempo  --con Promise.all()
+      throw "error2";
       loadCart(() => {
         resolve("valor3");  //aca no se dio un valor por eso el segundo elemento del array es undefined
       });

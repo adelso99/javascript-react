@@ -12360,3 +12360,4 @@ Ejemplo:
 
 
 Si utilizamos Promises, hay dos maneras de crear un error manualmente.
+
