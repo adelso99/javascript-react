@@ -12430,3 +12430,21 @@ Vamos a usar el backend para crear un pedido.
     se realiza una solicitud al backend para crear el pedido
 
     Necesitamos enviar algunos datos al backend. (Necesitamos enviar nuestro carrito)
+
+
+    Para enviar datos en una solicitud, necesitamos utilizar un tipo de solicitud diferente.
+    
+    4 tipos de solicitudes
+      GET = obtener algo del backend
+        Las solicitudes GET realmente no nos permiten enviar datos al backend
+
+      POST = crear algo
+        El método POST nos permite enviar datos al servidor.
+        Los encabezados proporcionan al servidor más información sobre nuestra solicitud.
+
+      PUT = actualizar algo
+      DELETE = eliminar algo
+
+
+      No podemos enviar un objeto directamente.
+      Necesitamos convertirlo en una cadena JSON

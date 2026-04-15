@@ -85,7 +85,15 @@ export function renderPaymentSummary(){
   document.querySelector(".js-payment-summary").innerHTML = paymentSummaryHTML;
 
   document.querySelector(".js-place-order").addEventListener("click", () => {
-    fetch("https://supersimplebackend.dev/orders");
+    fetch("https://supersimplebackend.dev/orders", {
+      method: "POST",
+      headers: {
+        "Content-Type": "aplication/json" //indica el tipo de dato que se esta enviando en el request
+      },
+      body: JSON.stringify({
+        cart: cart
+      })
+    });
 
   });
 
