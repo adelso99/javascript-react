@@ -12389,10 +12389,30 @@ Ejemplo:
 
 Si necesitamos crear un error en el futuro, entonces necesitamos usar un código diferente
 
-
-
-
-
-
-
 Segunda forma de crear un error en una promesa.
+
+reject() es una función
+-nos permite crear un error en el futuro
+
+Ejemplo:   
+          //Practica con async
+          async function loadPage(){
+
+            try {
+            ...
+
+              const valor = await new Promise((resolve, reject) => { //podemos ejecutar varias promesas al mismo tiempo  --con Promise.all()
+                //throw "error2"; --Este es el un error comentado que se guarda para mostrarlo en consola cuando ocurre un error
+                loadCart(() => {
+                  reject("error3");
+                  //resolve("valor3");  //aca no se dio un valor por eso el segundo elemento del array es undefined
+                });
+              });
+              
+            } catch (error) { //el parametro de error contiene informacion del error por si se necesita
+              console.log("Un error Inesperado. Intentelo mas tarde");
+            }
+
+            ...
+          }
+          loadPage();

@@ -22,9 +22,10 @@ async function loadPage(){
     //promesa 
     await loadProductsFetch();
 
-    const valor = await new Promise((resolve) => { //podemos ejecutar varias promesas al mismo tiempo  --con Promise.all()
+    const valor = await new Promise((resolve, reject) => { //podemos ejecutar varias promesas al mismo tiempo  --con Promise.all()
       //throw "error2"; --Este es el un error comentado que se guarda para mostrarlo en consola cuando ocurre un error
       loadCart(() => {
+        //reject("error3");
         resolve("valor3");  //aca no se dio un valor por eso el segundo elemento del array es undefined
       });
     });
