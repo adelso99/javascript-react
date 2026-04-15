@@ -12426,3 +12426,7 @@ Ahora que hemos aprendido sobre backend, promesas y async await,
 vamos a usarlos en nuestro proyecto
 
 Vamos a usar el backend para crear un pedido.
+    Cuando hacemos clic en este botón,
+    se realiza una solicitud al backend para crear el pedido
+
+    Necesitamos enviar algunos datos al backend. (Necesitamos enviar nuestro carrito)
