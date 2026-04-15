@@ -12387,6 +12387,8 @@ Ejemplo:
 
 
 
+Si necesitamos crear un error en el futuro, entonces necesitamos usar un código diferente
+
 
 
 
