@@ -12416,3 +12416,13 @@ Ejemplo:
             ...
           }
           loadPage();
+
+
+
+
+
+
+Ahora que hemos aprendido sobre backend, promesas y async await,
+vamos a usarlos en nuestro proyecto
+
+Vamos a usar el backend para crear un pedido.
