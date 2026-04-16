@@ -3,4 +3,10 @@ export const orders = [];
 
 function addOrder(order){
   orders.unshift(order); //se agreaga la orden al principio del array
+  saveToStorage();
+}
+
+
+function saveToStorage(){
+  localStorage.setItem("ordes", JSON.stringify(orders));
 }
