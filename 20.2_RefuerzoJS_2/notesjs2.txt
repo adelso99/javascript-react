@@ -12448,3 +12448,30 @@ Vamos a usar el backend para crear un pedido.
 
       No podemos enviar un objeto directamente.
       Necesitamos convertirlo en una cadena JSON
+
+      Ejemplo:
+        //parte para generar el HTML
+        const paymentSummaryHTML = `
+        ...
+                  <button class="place-order-button button-primary
+            js-place-order">  //clase agregada
+              Place your order
+            </button>
+            `;
+
+          document.querySelector(".js-payment-summary").innerHTML = paymentSummaryHTML;  //clase usada
+
+          document.querySelector(".js-place-order").addEventListener("click", async () => {
+            const response = await fetch("https://supersimplebackend.dev/orders", {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/json" //indica el tipo de dato que se esta enviando en el request
+              },
+              body: JSON.stringify({
+                cart: cart
+              })
+            });
+
+            const order = await response.json();
+            console.log(order);  // en consola muestra el array de productos que se estan comprando en checkout
+          });
