@@ -12475,3 +12475,37 @@ Vamos a usar el backend para crear un pedido.
             const order = await response.json();
             console.log(order);  // en consola muestra el array de productos que se estan comprando en checkout
           });
+
+
+
+
+          en Headers para verificacion de resultado es:
+          Request URL          https://supersimplebackend.dev/orders
+          Request Method       POST
+          Status Code          200 OK
+          Remote Address       216.24.57.1:443
+          Referrer Policy      strict-origin-when-cross-origin
+
+          Responseve Headers:
+          access-control-allow-origin      http://127.0.0.1:5501
+          alt-svc                          h3=":443"; ma=86400
+          cf-cache-status                  DYNAMIC
+          cf-ray                           9ed0a5745a5692ff-SJO
+          content-encoding                 br
+          content-length                   209
+          content-type                     application/json; charset=utf-8
+
+
+          en paylot aparece lo que estamos mandando al backend:
+          {cart: [{productId: "e43638ce-6aa0-4b85-b27f-e1d07eb678c6", quantity: 2, deliveryOptionId: "3"},…]}
+          cart          : 
+          [{productId: "e43638ce-6aa0-4b85-b27f-e1d07eb678c6", quantity: 2, deliveryOptionId: "3"},…]
+          0
+          :{productId: "e43638ce-6aa0-4b85-b27f-e1d07eb678c6", quantity: 2, deliveryOptionId: "3"}
+          1
+          :{productId: "15b6fc6f-327a-4ec4-896f-486349e85a3d", quantity: 1, deliveryOptionId: "3"}
+
+
+
+
+Guardar en un sitio la orden creada
