@@ -1,2 +1,6 @@
 //para guardar los datos de backend
-const orders = [];
+export const orders = [];
+
+function addorder(){
+  
+}
