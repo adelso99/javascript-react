@@ -12670,8 +12670,31 @@ SOLUCION:
 
 
 18b. Usando fetch(), haga la misma solicitud GET a /greeting y muestre la respuesta en la consola. Nota: esta ruta URL responde con algo de texto, así que en lugar de usar response.json(), use response.text().
+SOLUCION: 
+       const xhr = new XMLHttpRequest();
+
+       fetch("https://supersimplebackend.dev/greeting").then((response) => {
+            return response.text();
+       }).then((text) => {
+        console.log(text);
+       });
+
+
+
 
 18c. Haga la misma solicitud GET a /greeting que en 18b, pero usando fetch() y async await. Nota: para usar await, primero coloque su código dentro de una función asíncrona y luego ejecute la función
+SOLUCION:
+        async function datoFun(){
+            const xhr = new XMLHttpRequest();
+            const response = await fetch("https://supersimplebackend.dev/greeting");
+            const text = await response.text();
+                
+            console.log(text);
+        }
+        datoFun();
+
+
+        
 
 
 18d. Usando fetch() y async await, crea una solicitud POST a /greeting. En tu solicitud, envía el JSON { name: "tu_nombre" } (envía tu propio nombre en lugar de tu_nombre). Muestra la respuesta en la consola.
