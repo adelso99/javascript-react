@@ -12633,3 +12633,99 @@ Ejemplo de Optecion de 2 parametros:
         const url = new URL(window.location.href);
       console.log(url.searchParams.get("orderId"));  //nos da los parametros de "123" que le estamos pasando a "?orderId=123"
       console.log(url.searchParams.get("productId"));  //nos el 2do parametro de "456" que le estamos pasando a "&productId=456"
+
+
+
+
+
+
+En esta lección:
+  1. Backend y HTTP
+  2. XMLHTTPRequest y fetch()
+  3. Código asíncrono: Callbacks, promesas, async await
+  4. Cómo probar código asíncrono
+  5. Manejo de errores
+  6. Uso del backend en nuestro proyecto
+  7. Parámetros de URL
+
+
+
+
+Ejercicios de la Lección 18 - Backend, Promesas, Async Await
+
+Para los primeros ejercicios, coloque su código en un archivo llamado “lesson18.html”. Use la URL del backend: https://supersimplebackend.dev
+
+18a. Usando XMLHttpRequest, haga una solicitud GET a /greeting y muestre la respuesta en la consola.
+
+18b. Usando fetch(), haga la misma solicitud GET a /greeting y muestre la respuesta en la consola. Nota: esta ruta URL responde con algo de texto, así que en lugar de usar response.json(), use response.text().
+
+18c. Haga la misma solicitud GET a /greeting que en 18b, pero usando fetch() y async await. Nota: para usar await, primero coloque su código dentro de una función asíncrona y luego ejecute la función
+
+
+18d. Usando fetch() y async await, crea una solicitud POST a /greeting. En tu solicitud, envía el JSON { name: "tu_nombre" } (envía tu propio nombre en lugar de tu_nombre). Muestra la respuesta en la consola.
+
+Observa que, aunque GET /greeting y POST /greeting usan la misma ruta URL /greeting, hacen cosas diferentes.
+
+18e. Intenta hacer una solicitud GET a https://amazon.com. Obtendrás un error conocido como error CORS (Uso compartido de recursos de origen cruzado). Esto significa que la URL en la que se ejecuta tu código (probablemente http://127.0.0.1:5500) es diferente de https://amazon.com, por lo que el backend de Amazon bloqueó tu solicitud por razones de seguridad. Tu código es correcto, Amazon necesita cambiar algunas configuraciones en su backend para permitir tus solicitudes
+
+
+18f. Agrega manejo de errores a 18e. Cuando haya un error, muestra 'Error CORS. Tu solicitud fue bloqueada por el backend' en la consola.
+
+18g. Haz una solicitud POST /greeting a https://supersimplebackend.dev, pero no envíes ningún dato (no envíes un cuerpo). Mi backend devolverá un error 400 (solicitud no válida). fetch() no genera un error para los errores 400 (solo errores de red), así que crearemos un error manualmente:
+  - Verifica si (response.status >= 400) y crea manualmente un error usando throw response;
+  - Agrega manejo de errores para capturar este error manual. Cuando se capture el error, verifica si (error.status === 400) y muestra el JSON adjunto a la respuesta en la consola: await error.json()
+  - De lo contrario, muestra 'Error de red. Inténtalo de nuevo más tarde'
+
+
+El resto de estos ejercicios se realizarán en el código del proyecto.
+
+18h. En data/cart.js, crea una función asíncrona loadCartFetch() y crea una versión asíncrona await de loadCart().console.log() el texto adjunto a la respuesta. En scripts/checkout.js, dentro de loadPage(), reemplaza loadCart() con loadCartFetch().
+
+18i. En checkout.js, usa Promise.all para ejecutar loadProductsFetch() y loadCartFetch() al mismo tiempo. Nota: pasa las promesas directamente a Promise.all (no las esperes, de lo contrario se ejecutarán una a la vez). Luego, usa await Promise.all(...) para esperar a que Promise.all termine.
+
+18j. En orderSummaryTest.js, en el hook beforeAll, en lugar de usar una función done, haz que la función interna sea asíncrona y usa await para esperar a que loadProductsFetch() termine
+
+18k. (Opcional) Si hiciste los ejercicios de las lecciones anteriores, es posible que tengas algunas pruebas fallidas. Corrige esas pruebas fallidas (si las hay).
+
+
+
+
+
+Ejercicios de desafío
+
+Nota: en los siguientes ejercicios, crearás páginas y funciones completas de forma independiente, para que puedas practicar resolviendo las cosas por ti mismo. ¡Buena suerte!
+
+181. Terminaremos la página de pedidos. Crea un nuevo archivo scripts/orders.js para crear la página de pedidos y cárgalo en orders.html. Usando la matriz de pedidos en data/orders.js, genera el HTML para esta página.
+
+18m. Haz que la página de pedidos sea interactiva:
+  - El botón "Comprar de nuevo" debe agregar el producto al carrito.
+  - El botón "Rastrear paquete" debe abrir la página de seguimiento (recuerda insertar orderid y productId en los parámetros de la URL).
+
+
+18n. Terminaremos la página de seguimiento. Crea un nuevo archivo scripts/tracking.js y cárgalo en tracking.html. Luego, ve a la página de pedidos y haz clic en "Rastrear paquete" para ir a la página de seguimiento. Esto guardará el orderId y el productId en los parámetros de la URL (asegúrate de que la URL siempre tenga estos 2 parámetros; de lo contrario, la página de seguimiento no funcionará).
+
+  - Usa orderId y productId de los parámetros de la URL para obtener el pedido y el producto a rastrear. Usa estos datos para generar el HTML de esta página.
+
+
+180. Haz que la página de seguimiento sea interactiva:
+  - Calcula el porcentaje de progreso de la entrega:
+   ((currentTime - orderTime) / (deliveryTime - orderTime)) * 100
+  - Establece el ancho de la barra de progreso verde a este porcentaje. Sugerencia: agrega el atributo style: style="width: _%;"
+  - Establezca el estado correcto encima de la barra de progreso en verde (0% - 49% = Preparando, 50% - 99% = Enviado, 100% o más = Entregado).
+
+
+
+18p. En la parte superior de la página de inicio (amazon.html) hay una barra de búsqueda:
+   - Cuando escribes en la barra de búsqueda y presionas el botón de búsqueda, debería ir a la página de inicio (amazon.html) y también guardar tu búsqueda en un parámetro URL
+        parámetro: amazon.html?search=your_search?search=tu_búsqueda
+  - En la página de inicio, verifica si hay un parámetro URL llamado search. Si existe, filtra los productos en la página de inicio y muestra solo  los productos cuyo nombre contenga lo que buscaste (pista: usa.includes()).
+
+
+
+18q. Mejoraremos la función de búsqueda del 18p:
+  - Haz que la búsqueda no distinga entre mayúsculas y minúsculas (las mayúsculas no importan).
+  - Cada producto tiene una propiedad llamada "palabras clave". Agrega esta propiedad a la clase Product. Al filtrar los productos, también verifica si una de las palabras clave contiene lo que buscaste (sin distinción entre mayúsculas y minúsculas).
+
+
+
+18r. Agrega algunas funciones más a este proyecto que creas que tienen sentido
