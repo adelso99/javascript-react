@@ -2,6 +2,7 @@ import {cart} from "../../data/cart.js";
 import {getProduct} from "../../data/products.js";
 import {getDeliveryOption} from "../../data/deliveryOptions.js";
 import {formatCurrency} from "../utils/money.js";
+import {addOrder} from "../../data/orders.js";
 
 export function renderPaymentSummary(){
   let productPriceCents = 0;
@@ -96,7 +97,7 @@ export function renderPaymentSummary(){
     });
 
     const order = await response.json();
-    console.log(order);
+    addOrder(order); //cuando ejecutamos esto en consola aparece la order que se genero: localStorage.getItem("orders")
   });
 
 }
