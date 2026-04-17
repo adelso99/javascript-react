@@ -12615,3 +12615,21 @@ Ejemplo:
         {
           orderId: "123"
         }
+
+Ejemplo 2:
+      const url = new URL(window.location.href);
+      console.log(url.searchParams.get("orderId"));  //nos da los parametros de "123" que le estamos pasando a "?orderId=123"
+
+
+Para darle otro parametro en la URL usamos "&" 
+Ejemplo: 
+        http://127.0.0.1:5501/20.2_RefuerzoJS_2/JavaScript/javascript-amazon-project/tracking.html?orderId=123&productId=456
+
+        esta parte: ?orderId=123&productId=456
+
+
+
+Ejemplo de Optecion de 2 parametros:
+        const url = new URL(window.location.href);
+      console.log(url.searchParams.get("orderId"));  //nos da los parametros de "123" que le estamos pasando a "?orderId=123"
+      console.log(url.searchParams.get("productId"));  //nos el 2do parametro de "456" que le estamos pasando a "&productId=456"

@@ -88,5 +88,12 @@
         </div>
       </div>
     </div>
+
+    <!--Carga de JavaScript-->
+    <script>
+      const url = new URL(window.location.href);
+      console.log(url.searchParams.get("orderId"));  //nos da los parametros de "123" que le estamos pasando a "?orderId=123"
+      console.log(url.searchParams.get("productId"));  //nos el 2do parametro de "456" que le estamos pasando a "&productId=456"
+    </script>
   </body>
 </html>
