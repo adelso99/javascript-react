@@ -12561,10 +12561,57 @@ Agregar manejo de errores
 Después de crear un pedido, vaya a la página de pedidos.
  Para ello usaremos un objeto llamado "window.location"
 
+Ejemplo:
+        //parte para generar el HTML
+        const paymentSummaryHTML = `
+        ...
+                  <button class="place-order-button button-primary
+            js-place-order">  //clase agregada
+              Place your order
+            </button>
+            `;
+          document.querySelector(".js-payment-summary").innerHTML = paymentSummaryHTML;
 
+          document.querySelector(".js-place-order").addEventListener("click", async () => {
+            try{ 
+              const response = await fetch("https://supersimplebackend.dev/orders", {
+                method: "POST",
+                headers: {
+                  "Content-Type": "application/json" //indica el tipo de dato que se esta enviando en el request
+                },
+                body: JSON.stringify({
+                  cart: cart
+                })
+              });
+          
+              const order = await response.json();
+              addOrder(order); //cuando ejecutamos esto en consola aparece la order que se genero: localStorage.getItem("orders")
+
+            } catch (error) {
+              console.log("Ocurrio un Errro Inesperado Intentelo de nuevo mas Tarde");
+            }
+
+            window.location.href = "orders.html";
+          });
+
+        }
 
 
 Idea principal de JavaScript
     1. Guardar los datos
     2. Generar el HTML
     3. Hacerlo interactivo
+
+
+
+Parámetros de URL = nos permite guardar los datos directamente en la URL
+Ejemplo: 
+        http://127.0.0.1:5501/20.2_RefuerzoJS_2/JavaScript/javascript-amazon-project/tracking.html?orderId=123
+
+        en esta parte cuando se coloca el signo de interrogracion ? es cuando indica que se le esta pasando un Parametro
+        a esa URL = ?orderId=123
+
+        es como un objeto:
+        {
+          orderId: "123"
+        }
