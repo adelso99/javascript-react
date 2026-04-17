@@ -86,18 +86,25 @@ export function renderPaymentSummary(){
   document.querySelector(".js-payment-summary").innerHTML = paymentSummaryHTML;
 
   document.querySelector(".js-place-order").addEventListener("click", async () => {
-    const response = await fetch("https://supersimplebackend.dev/orders", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json" //indica el tipo de dato que se esta enviando en el request
-      },
-      body: JSON.stringify({
-        cart: cart
-      })
-    });
+    try{
+      const response = await fetch("https://supersimplebackend.dev/orders", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json" //indica el tipo de dato que se esta enviando en el request
+        },
+        body: JSON.stringify({
+          cart: cart
+        })
+      });
+  
+      const order = await response.json();
+      addOrder(order); //cuando ejecutamos esto en consola aparece la order que se genero: localStorage.getItem("orders")
 
-    const order = await response.json();
-    addOrder(order); //cuando ejecutamos esto en consola aparece la order que se genero: localStorage.getItem("orders")
+    } catch (error) {
+      console.log("Ocurrio un Errro Inesperado Intentelo de nuevo mas Tarde");
+    }
+
+    window.location.href = "orders.html";
   });
 
 }

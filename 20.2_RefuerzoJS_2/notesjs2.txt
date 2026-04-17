@@ -12553,3 +12553,18 @@ Ejemplo:
           function saveToStorage(){
             localStorage.setItem("orders", JSON.stringify(orders));
           }
+
+
+
+
+Agregar manejo de errores
+Después de crear un pedido, vaya a la página de pedidos.
+ Para ello usaremos un objeto llamado "window.location"
+
+
+
+
+Idea principal de JavaScript
+    1. Guardar los datos
+    2. Generar el HTML
+    3. Hacerlo interactivo
