@@ -1,7 +1,7 @@
 //para guardar los datos de backend
-export const orders = [];
+export const orders = JSON.parse(localStorage.getItem("orders")) || [];
 
-function addOrder(order){
+export function addOrder(order){
   orders.unshift(order); //se agreaga la orden al principio del array
   saveToStorage();
 }
