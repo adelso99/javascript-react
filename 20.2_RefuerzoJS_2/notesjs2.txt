@@ -12694,11 +12694,10 @@ SOLUCION:
         datoFun();
 
 
-        
+
 
 
 18d. Usando fetch() y async await, crea una solicitud POST a /greeting. En tu solicitud, envía el JSON { name: "tu_nombre" } (envía tu propio nombre en lugar de tu_nombre). Muestra la respuesta en la consola.
-
 Observa que, aunque GET /greeting y POST /greeting usan la misma ruta URL /greeting, hacen cosas diferentes.
 
 18e. Intenta hacer una solicitud GET a https://amazon.com. Obtendrás un error conocido como error CORS (Uso compartido de recursos de origen cruzado). Esto significa que la URL en la que se ejecuta tu código (probablemente http://127.0.0.1:5500) es diferente de https://amazon.com, por lo que el backend de Amazon bloqueó tu solicitud por razones de seguridad. Tu código es correcto, Amazon necesita cambiar algunas configuraciones en su backend para permitir tus solicitudes
