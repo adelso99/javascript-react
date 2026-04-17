@@ -12652,10 +12652,22 @@ En esta lección:
 
 
 Ejercicios de la Lección 18 - Backend, Promesas, Async Await
-
 Para los primeros ejercicios, coloque su código en un archivo llamado “lesson18.html”. Use la URL del backend: https://supersimplebackend.dev
 
 18a. Usando XMLHttpRequest, haga una solicitud GET a /greeting y muestre la respuesta en la consola.
+SOLUCION:
+       const xhr = new XMLHttpRequest();
+       
+       xhr.addEventListener("load", () => {
+        console.log(xhr.response);
+       });
+
+       xhr.open("GET", "https://supersimplebackend.dev/greeting");
+
+       xhr.send();
+
+
+
 
 18b. Usando fetch(), haga la misma solicitud GET a /greeting y muestre la respuesta en la consola. Nota: esta ruta URL responde con algo de texto, así que en lugar de usar response.json(), use response.text().
 

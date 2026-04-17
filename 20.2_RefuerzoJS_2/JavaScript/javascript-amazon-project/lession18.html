@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejericios de la Leccion 18</title>
+</head>
+<body>
+    <h1>Ejercicios de la Leccion 18</h1>
+
+    <!--Carga de JavaScript-->
+    <script>
+       const xhr = new XMLHttpRequest();
+       
+       xhr.addEventListener("load", () => {
+        console.log(xhr.response);
+       });
+
+       xhr.open("GET", "https://supersimplebackend.dev/greeting");
+
+       xhr.send();
+
+
+
+      
+
+    </script>
+</body>
+</html>
