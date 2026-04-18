@@ -41,6 +41,34 @@
         }
         getAmazon();
 
+        async function testError() {
+            try {
+                const response = await fetch('https://supersimplebackend.dev/greeting', {
+                    method: 'POST',
+                    headers: {
+                    'Content-Type': 'application/json'
+                    }
+                });
+
+                if (response.status >= 400) {
+                throw response;
+                }
+
+                const text = await response.text();
+                console.log(text);
+
+            } catch (error) {
+                if (error.status === 400) {
+                    const data = await error.json();
+                    console.log(data);
+                } else {
+                    console.log("Error de red. Inténtalo de nuevo más tarde");
+                }
+            }
+        }
+
+        testError();
+
         /*
        const xhr = new XMLHttpRequest();
 
