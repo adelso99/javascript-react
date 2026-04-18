@@ -12722,9 +12722,38 @@ SOLUCION:
 
 
 18e. Intenta hacer una solicitud GET a https://amazon.com. Obtendrás un error conocido como error CORS (Uso compartido de recursos de origen cruzado). Esto significa que la URL en la que se ejecuta tu código (probablemente http://127.0.0.1:5500) es diferente de https://amazon.com, por lo que el backend de Amazon bloqueó tu solicitud por razones de seguridad. Tu código es correcto, Amazon necesita cambiar algunas configuraciones en su backend para permitir tus solicitudes
+SOLUCION:
+         async function getAmazon() {
+            const response = await fetch('https://amazon.com');
+            const text = await response.text();
+            console.log(text);
+        }
+        getAmazon();
+
+        Esto en consola muestra que no se puede acceder porque Amazon lo tiene Bloqueado:
+
+        lession18.html:1 Access to fetch at 'https://amazon.com/' from origin 'http://127.0.0.1:5501' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+
+
+
 
 
 18f. Agrega manejo de errores a 18e. Cuando haya un error, muestra 'Error CORS. Tu solicitud fue bloqueada por el backend' en la consola.
+SOLUCION:
+                  async function getAmazon() {
+            try {
+                const response = await fetch('https://amazon.com');
+                const text = await response.text();
+                console.log(text);
+
+            } catch (error) {
+            console.log("Error CORS. Tu solicitud fue bloqueada por el backend");
+            }
+        }
+        getAmazon();
+
+
+        
 
 18g. Haz una solicitud POST /greeting a https://supersimplebackend.dev, pero no envíes ningún dato (no envíes un cuerpo). Mi backend devolverá un error 400 (solicitud no válida). fetch() no genera un error para los errores 400 (solo errores de red), así que crearemos un error manualmente:
   - Verifica si (response.status >= 400) y crea manualmente un error usando throw response;
