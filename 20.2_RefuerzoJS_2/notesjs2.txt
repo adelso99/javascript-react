@@ -12795,11 +12795,15 @@ SOLUCION:
 
 El resto de estos ejercicios se realizarán en el código del proyecto.
 
+
 18h. En data/cart.js, crea una función asíncrona loadCartFetch() y crea una versión asíncrona await de loadCart().console.log() el texto adjunto a la respuesta. En scripts/checkout.js, dentro de loadPage(), reemplaza loadCart() con loadCartFetch().
+
 
 18i. En checkout.js, usa Promise.all para ejecutar loadProductsFetch() y loadCartFetch() al mismo tiempo. Nota: pasa las promesas directamente a Promise.all (no las esperes, de lo contrario se ejecutarán una a la vez). Luego, usa await Promise.all(...) para esperar a que Promise.all termine.
 
+
 18j. En orderSummaryTest.js, en el hook beforeAll, en lugar de usar una función done, haz que la función interna sea asíncrona y usa await para esperar a que loadProductsFetch() termine
+
 
 18k. (Opcional) Si hiciste los ejercicios de las lecciones anteriores, es posible que tengas algunas pruebas fallidas. Corrige esas pruebas fallidas (si las hay).
 
