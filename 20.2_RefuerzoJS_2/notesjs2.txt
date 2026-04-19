@@ -12818,14 +12818,17 @@ Nota: en los siguientes ejercicios, crearás páginas y funciones completas de f
 
 181. Terminaremos la página de pedidos. Crea un nuevo archivo scripts/orders.js para crear la página de pedidos y cárgalo en orders.html. Usando la matriz de pedidos en data/orders.js, genera el HTML para esta página.
 
+
 18m. Haz que la página de pedidos sea interactiva:
   - El botón "Comprar de nuevo" debe agregar el producto al carrito.
   - El botón "Rastrear paquete" debe abrir la página de seguimiento (recuerda insertar orderid y productId en los parámetros de la URL).
 
 
+
 18n. Terminaremos la página de seguimiento. Crea un nuevo archivo scripts/tracking.js y cárgalo en tracking.html. Luego, ve a la página de pedidos y haz clic en "Rastrear paquete" para ir a la página de seguimiento. Esto guardará el orderId y el productId en los parámetros de la URL (asegúrate de que la URL siempre tenga estos 2 parámetros; de lo contrario, la página de seguimiento no funcionará).
 
   - Usa orderId y productId de los parámetros de la URL para obtener el pedido y el producto a rastrear. Usa estos datos para generar el HTML de esta página.
+
 
 
 180. Haz que la página de seguimiento sea interactiva:
