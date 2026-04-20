@@ -154,7 +154,7 @@ export function loadCart(fun){ //que basicamente cuando una funcion se pasa otra
 
 //Practica de Ultimo Ejercicio
 export async function loadCartFetch() {
-  const response = await fetch(URL);
+  const response = await fetch("https://supersimplebackend.dev/cart");
   const text = await response.text();
   console.log(text);
 
