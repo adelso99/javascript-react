@@ -20,9 +20,10 @@ async function loadPage(){
 
 
     //promesa 
-    await loadProductsFetch();
-
-    await loadCartFetch();
+    await Promise.all([
+      loadProductsFetch(),
+      loadCartFetch()
+    ]);
     
   } catch (error) { //el parametro de error contiene informacion del error por si se necesita
     console.log("Un error Inesperado. Intentelo mas tarde");

@@ -12839,7 +12839,46 @@ SOLUCION:
           loadPage();
 
 
+
+
+
 18i. En checkout.js, usa Promise.all para ejecutar loadProductsFetch() y loadCartFetch() al mismo tiempo. Nota: pasa las promesas directamente a Promise.all (no las esperes, de lo contrario se ejecutarán una a la vez). Luego, usa await Promise.all(...) para esperar a que Promise.all termine.
+SOLUCION: 
+          //Practica con async
+          async function loadPage(){
+
+            try {
+              //creacion de un error propio
+              //throw "error1";
+
+
+              //promesa   //ACA
+              await Promise.all([
+                loadProductsFetch(),
+                loadCartFetch()
+              ]); //HASTA ACA
+              
+            } catch (error) { //el parametro de error contiene informacion del error por si se necesita
+              console.log("Un error Inesperado. Intentelo mas tarde");
+            }
+
+            
+
+              //redenrizar la pagina
+            //llamdo de funcion del aparto de Chekout head
+            renderCheckoutHeader();
+
+            //Llamado de la funcion para que se ejecuta al realizar la carga de pagina, de los productos seleccionados
+            renderOrderSummary();
+
+            //llamdo de funcion para la parte de suma de producto, envio de productos, porcentaje de envio
+            renderPaymentSummary();
+
+          }
+          loadPage();
+
+
+
 
 
 18j. En orderSummaryTest.js, en el hook beforeAll, en lugar de usar una función done, haz que la función interna sea asíncrona y usa await para esperar a que loadProductsFetch() termine
