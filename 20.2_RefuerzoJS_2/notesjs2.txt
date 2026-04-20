@@ -12797,6 +12797,46 @@ El resto de estos ejercicios se realizarán en el código del proyecto.
 
 
 18h. En data/cart.js, crea una función asíncrona loadCartFetch() y crea una versión asíncrona await de loadCart().console.log() el texto adjunto a la respuesta. En scripts/checkout.js, dentro de loadPage(), reemplaza loadCart() con loadCartFetch().
+SOLUCION:
+          //Practica de Ultimo Ejercicio
+          export async function loadCartFetch() {
+            const response = await fetch("https://supersimplebackend.dev/cart");
+            const text = await response.text();
+            console.log(text);
+
+          }
+
+          //Practica con async
+          async function loadPage(){
+
+            try {
+              //creacion de un error propio
+              //throw "error1";
+
+
+              //promesa 
+              await loadProductsFetch();
+
+              await loadCartFetch();
+              
+            } catch (error) { //el parametro de error contiene informacion del error por si se necesita
+              console.log("Un error Inesperado. Intentelo mas tarde");
+            }
+
+            
+
+              //redenrizar la pagina
+            //llamdo de funcion del aparto de Chekout head
+            renderCheckoutHeader();
+
+            //Llamado de la funcion para que se ejecuta al realizar la carga de pagina, de los productos seleccionados
+            renderOrderSummary();
+
+            //llamdo de funcion para la parte de suma de producto, envio de productos, porcentaje de envio
+            renderPaymentSummary();
+
+          }
+          loadPage();
 
 
 18i. En checkout.js, usa Promise.all para ejecutar loadProductsFetch() y loadCartFetch() al mismo tiempo. Nota: pasa las promesas directamente a Promise.all (no las esperes, de lo contrario se ejecutarán una a la vez). Luego, usa await Promise.all(...) para esperar a que Promise.all termine.
