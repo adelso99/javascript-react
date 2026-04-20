@@ -2,7 +2,7 @@ import {renderCheckoutHeader} from "./checkout/checkoutHeader.js";
 import {renderOrderSummary} from "./checkout/orderSummary.js";
 import {renderPaymentSummary } from "./checkout/paymentSummary.js";
 import {loadProducts, loadProductsFetch} from "../data/products.js";
-import {loadCart} from "../data/cart.js";
+import {loadCart, loadCartFetch} from "../data/cart.js";
 
 //Importacion de carrito pero usando OOP --Programacion Orientada a Objetos--
 //import "../data/car.js";
@@ -22,13 +22,7 @@ async function loadPage(){
     //promesa 
     await loadProductsFetch();
 
-    const valor = await new Promise((resolve, reject) => { //podemos ejecutar varias promesas al mismo tiempo  --con Promise.all()
-      //throw "error2"; --Este es el un error comentado que se guarda para mostrarlo en consola cuando ocurre un error
-      loadCart(() => {
-        //reject("error3");
-        resolve("valor3");  //aca no se dio un valor por eso el segundo elemento del array es undefined
-      });
-    });
+    await loadCartFetch();
     
   } catch (error) { //el parametro de error contiene informacion del error por si se necesita
     console.log("Un error Inesperado. Intentelo mas tarde");
