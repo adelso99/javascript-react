@@ -12816,7 +12816,11 @@ El resto de estos ejercicios se realizarán en el código del proyecto.
 Ejercicios de desafío
 Nota: en los siguientes ejercicios, crearás páginas y funciones completas de forma independiente, para que puedas practicar resolviendo las cosas por ti mismo. ¡Buena suerte!
 
+
+
 181. Terminaremos la página de pedidos. Crea un nuevo archivo scripts/orders.js para crear la página de pedidos y cárgalo en orders.html. Usando la matriz de pedidos en data/orders.js, genera el HTML para esta página.
+
+
 
 
 18m. Haz que la página de pedidos sea interactiva:
@@ -12825,9 +12829,11 @@ Nota: en los siguientes ejercicios, crearás páginas y funciones completas de f
 
 
 
+
 18n. Terminaremos la página de seguimiento. Crea un nuevo archivo scripts/tracking.js y cárgalo en tracking.html. Luego, ve a la página de pedidos y haz clic en "Rastrear paquete" para ir a la página de seguimiento. Esto guardará el orderId y el productId en los parámetros de la URL (asegúrate de que la URL siempre tenga estos 2 parámetros; de lo contrario, la página de seguimiento no funcionará).
 
   - Usa orderId y productId de los parámetros de la URL para obtener el pedido y el producto a rastrear. Usa estos datos para generar el HTML de esta página.
+
 
 
 
@@ -12839,6 +12845,7 @@ Nota: en los siguientes ejercicios, crearás páginas y funciones completas de f
 
 
 
+
 18p. En la parte superior de la página de inicio (amazon.html) hay una barra de búsqueda:
    - Cuando escribes en la barra de búsqueda y presionas el botón de búsqueda, debería ir a la página de inicio (amazon.html) y también guardar tu búsqueda en un parámetro URL
         parámetro: amazon.html?search=your_search?search=tu_búsqueda
@@ -12846,9 +12853,11 @@ Nota: en los siguientes ejercicios, crearás páginas y funciones completas de f
 
 
 
+
 18q. Mejoraremos la función de búsqueda del 18p:
   - Haz que la búsqueda no distinga entre mayúsculas y minúsculas (las mayúsculas no importan).
   - Cada producto tiene una propiedad llamada "palabras clave". Agrega esta propiedad a la clase Product. Al filtrar los productos, también verifica si una de las palabras clave contiene lo que buscaste (sin distinción entre mayúsculas y minúsculas).
+
 
 
 
