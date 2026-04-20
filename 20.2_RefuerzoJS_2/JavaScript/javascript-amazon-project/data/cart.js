@@ -150,3 +150,9 @@ export function loadCart(fun){ //que basicamente cuando una funcion se pasa otra
   xhr.send();
 
 }
+
+
+//Practica de Ultimo Ejercicio
+export async function loadCartFetch() {
+
+}
