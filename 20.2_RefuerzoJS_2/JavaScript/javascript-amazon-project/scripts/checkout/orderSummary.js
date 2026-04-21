@@ -34,7 +34,7 @@ export function renderOrderSummary(){
           cartSummaryHTML += `
             <div class="cart-item-container js-cart-item-container js-cart-item-container-${matchingProduct.id}">
             <div class="delivery-date">
-              Delivery date: ${dateString}
+              Fecha de entrega: ${dateString}
             </div>
 
               <div class="cart-item-details-grid">
@@ -50,23 +50,23 @@ export function renderOrderSummary(){
                   </div>
                   <div class="product-quantity js-product-quantity-${matchingProduct.id}">
                     <span>
-                      Quantity: <span class="quantity-label js-quantity-label-${matchingProduct.id}">${cartItem.quantity}</span>
+                      Cantidad: <span class="quantity-label js-quantity-label-${matchingProduct.id}">${cartItem.quantity}</span>
                     </span>
                     <span class="update-quantity-link link-primary js-update-link" data-product-id="${matchingProduct.id}">
-                      Update
+                      Actualizar
                     </span>
                       <input class="quantity-input js-quantity-input-${matchingProduct.id}">
                       <span class="save-quantity-link link-primary js-save-link" data-product-id="${matchingProduct.id}">Save</span>
                     <span class="delete-quantity-link link-primary js-delete-link 
                     js-delete-link-${matchingProduct.id}" data-product-id="${matchingProduct.id}">
-                      Delete
+                      Eliminar
                     </span>
                   </div>
                 </div>
 
                 <div class="delivery-options">
                   <div class="delivery-options-title">
-                    Choose a delivery option:
+                    Elige una opción de entrega:
                   </div>
                   ${deliveryOptionsHTML(matchingProduct, cartItem)}
                 </div>
@@ -87,7 +87,7 @@ export function renderOrderSummary(){
 
               const priceString = deliveryOption.priceCents 
               === 0 
-                ? "FREE"
+                ? "GRATIS"
                 : `${formatCurrency(deliveryOption.priceCents)} -`;
 
                 const isChecked = deliveryOption.id === cartItem.deliveryOptionId; 
@@ -149,7 +149,7 @@ export function renderOrderSummary(){
         //llamado de funcion para el dato de cartQuantity
         const cartQuantity = calculateCartQuantity();
 
-        document.querySelector(".js-return-to-home-link").innerHTML = `${cartQuantity} items`;
+        document.querySelector(".js-return-to-home-link").innerHTML = `${cartQuantity} Elementos`;
 
       }
 

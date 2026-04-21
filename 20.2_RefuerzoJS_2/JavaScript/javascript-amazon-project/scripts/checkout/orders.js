@@ -17,7 +17,7 @@ async function loadPage() {
         <div class="order-header">
           <div class="order-header-left-section">
             <div class="order-date">
-              <div class="order-header-label">Order Placed:</div>
+              <div class="order-header-label">Pedido realizado:</div>
               <div>${orderTimeString}</div>
             </div>
             <div class="order-total">
@@ -27,7 +27,7 @@ async function loadPage() {
           </div>
 
           <div class="order-header-right-section">
-            <div class="order-header-label">Order ID:</div>
+            <div class="order-header-label">Orden ID:</div>
             <div>${order.id}</div>
           </div>
         </div>
@@ -55,7 +55,7 @@ async function loadPage() {
             ${product.name}
           </div>
           <div class="product-delivery-date">
-            Arriving on: ${
+           Llegada el: ${
               dayjs(productDetails.estimatedDeliveryTime).format('MMMM D')
             }
           </div>
@@ -72,7 +72,7 @@ async function loadPage() {
         <div class="product-actions">
           <a href="tracking.html?orderId=${order.id}&productId=${product.id}">
             <button class="track-package-button button-secondary">
-              Track package
+              Paquete de seguimiento
             </button>
           </a>
         </div>
@@ -90,7 +90,7 @@ async function loadPage() {
 
       // (Optional) display a message that the product was added,
       // then change it back after a second.
-      button.innerHTML = 'Added';
+      button.innerHTML = 'Agregada';
       setTimeout(() => {
         button.innerHTML = `
           <img class="buy-again-icon" src="images/icons/buy-again.png">
@@ -99,7 +99,7 @@ async function loadPage() {
       }, 1000);
     });
   });
-  
+
 }
 
 loadPage();

@@ -39,39 +39,39 @@ export function renderPaymentSummary(){
   //parte para generar el HTML
   const paymentSummaryHTML = `
           <div class="payment-summary-title">
-            Order Summary
+            Resumen del pedido
           </div>
 
           <div class="payment-summary-row">
-            <div>Items (${cartQuantity}):</div>
+            <div>Elementos (${cartQuantity}):</div>
             <div class="payment-summary-money">
             $${formatCurrency(productPriceCents)}
             </div>
           </div>
 
           <div class="payment-summary-row">
-            <div>Shipping &amp; handling:</div>
+            <div>Envío y manipulacion:</div>
              <div class="payment-summary-money js-payment-summary-shipping">
             $${formatCurrency(shippingPriceCents)}
             </div>
           </div>
 
           <div class="payment-summary-row subtotal-row">
-            <div>Total before tax:</div>
+            <div>Total antes de impuestos:</div>
             <div class="payment-summary-money">
             $${formatCurrency(totalBeforeTaxCents)}
             </div>
           </div>
 
           <div class="payment-summary-row">
-            <div>Estimated tax (10%):</div>
+            <div>Estimado de impuesto (10%):</div>
             <div class="payment-summary-money">
             $${formatCurrency(taxCents)}
             </div>
           </div>
 
           <div class="payment-summary-row total-row">
-            <div>Order total:</div>
+            <div>Total de Orden:</div>
             <div class="payment-summary-money js-payment-summary-total">
             $${formatCurrency(totalCents)}
             </div>
@@ -79,7 +79,7 @@ export function renderPaymentSummary(){
 
           <button class="place-order-button button-primary
           js-place-order">
-            Place your order
+            Realiza tu pedido
           </button>
   `;
 
