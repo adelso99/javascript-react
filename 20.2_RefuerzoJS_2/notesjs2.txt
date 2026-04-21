@@ -12882,6 +12882,14 @@ SOLUCION:
 
 
 18j. En orderSummaryTest.js, en el hook beforeAll, en lugar de usar una función done, haz que la función interna sea asíncrona y usa await para esperar a que loadProductsFetch() termine
+SOLUCION:   
+        //uso de gancho para as pruebas ya que nuestros productos ahora vienen de back-end
+        beforeAll( async () => { //jasmin tiene una funcion done() que espera que el codigo cargue para ejecutar la funcion
+          await loadProductsFetch();
+        });
+
+
+
 
 
 18k. (Opcional) Si hiciste los ejercicios de las lecciones anteriores, es posible que tengas algunas pruebas fallidas. Corrige esas pruebas fallidas (si las hay).
