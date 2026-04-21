@@ -12900,10 +12900,10 @@ Todo Correcto :)
 
 
 
+
+
 Ejercicios de desafío
 Nota: en los siguientes ejercicios, crearás páginas y funciones completas de forma independiente, para que puedas practicar resolviendo las cosas por ti mismo. ¡Buena suerte!
-
-
 
 181. Terminaremos la página de pedidos. Crea un nuevo archivo scripts/orders.js para crear la página de pedidos y cárgalo en orders.html. Usando la matriz de pedidos en data/orders.js, genera el HTML para esta página.
 
