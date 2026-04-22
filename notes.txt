@@ -5896,6 +5896,9 @@ Node.js
 
 
 ----------------------------------Video 194 Instalar Node.js en Windows--------------------------
+Uso de la Version de Node : 
+$ node -v
+v18.16.0
 
 
 
