@@ -5937,6 +5937,12 @@ Ejemplo:
 Leer-->Evaluar-->Imprimir
 
 
+Pero Node es un runtime de JavaScript asi que se pude escribir codigo de js dentro de la consola de node
+Ejemplo: 
+        > let a = 4;
+        undefined
+        > a+15;
+        19
 
 
 
