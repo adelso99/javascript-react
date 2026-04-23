@@ -5946,6 +5946,14 @@ Ejemplo:
 
 
 
+Ejmeplo de uso de Node en un archivo de JavaScript:
+        Archivo de index.js 
+        const dato = console.log("Hola desde Node.js");
+
+        USUARIO@Adelso99 MINGW64 /f/Documents/Programacion/JavaScript-React/21.Node/2.1 Using Node (main)
+        $ node index.js
+        Hola desde Node.js
+
 
 
 NOTA:
