@@ -5906,6 +5906,11 @@ v18.16.0
 Uso de 
 Node Read Eval Print Loop
 
+Ejemplo:
+             node
+            Welcome to Node.js v18.16.0.
+            Type ".help" for more information.
+            >
 
 
 
