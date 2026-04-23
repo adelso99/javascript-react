@@ -1,0 +1,1 @@
+const dato = console.log("Hola desde Node.js");
