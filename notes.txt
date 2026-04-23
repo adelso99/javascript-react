@@ -5927,6 +5927,20 @@ Algunos de los mas importantes son:
                                     >
 
 
+Uso de 
+Node Read Eval Print Loop
+Ejemplo:
+        > 5+8
+        13
+
+
+Leer-->Evaluar-->Imprimir
+
+
+
+
+
+
 
 NOTA:
 
