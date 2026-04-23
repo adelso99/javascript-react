@@ -5903,6 +5903,8 @@ v18.16.0
 
 
 
+----------------------------------Video 195 Uso de  Node.js en Windows--------------------------
+
 Uso de 
 Node Read Eval Print Loop
 
@@ -5953,6 +5955,15 @@ Ejmeplo de uso de Node en un archivo de JavaScript:
         USUARIO@Adelso99 MINGW64 /f/Documents/Programacion/JavaScript-React/21.Node/2.1 Using Node (main)
         $ node index.js
         Hola desde Node.js
+
+
+
+
+----------------------------------Video 194 196. Cómo usar los módulos nativos de Node.--------------------------
+
+
+
+
 
 
 
