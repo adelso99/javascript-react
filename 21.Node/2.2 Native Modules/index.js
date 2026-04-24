@@ -7,7 +7,7 @@ fs.writeFile("message.txt", "Hola con Node.js", (err) => {
   fs.readFile('message.txt', "utf8",(err, data) => {
     if (err) throw err;
       // 1. crear nuevo contenido
-      let data = "Hola con un Cambio";
+      let nuevo = data.replace("Hola con Node.js", "Hola con un Cambio");
   
       // 2. guardar el cambio
       fs.writeFile('message.txt', nuevo, (err) => {
