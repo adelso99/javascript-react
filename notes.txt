@@ -5981,6 +5981,46 @@ Ejemplo:
                 Hola con Node,js
 
 
+Ejemplo 2, haciendo cambios en archivos creados con node:
+        const fs = require("fs");
+
+        fs.writeFile("message.txt", "Hola con Node.js", (err) => {
+        if (err) throw err;
+        console.log('El Archivo se ha Guadado!');
+
+        fs.readFile('message.txt', "utf8",(err, data) => {
+            if (err) throw err;
+            // 1. crear nuevo contenido
+            let nuevo = data.replace("Hola con Node.js", "Hola con un Cambio");
+        
+            // 2. guardar el cambio
+            fs.writeFile('message.txt', nuevo, (err) => {
+                if (err) throw err;
+                console.log("Cambio exitoso");
+            });
+        }); 
+        
+        }); 
+
+
+        en el archivo "message.txt":
+                                    PRIMERO:
+                                    Hola con Node.js
+
+                                    LUEGO CAMBIA Y DEJA AL FINAL:
+                                    Hola con un Cambio
+
+
+        En la terminal:
+                        $ node index.js
+                        El Archivo se ha Guadado!
+                        Cambio exitoso
+
+
+
+
+
+
 
 
 
