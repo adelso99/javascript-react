@@ -5963,7 +5963,22 @@ Ejmeplo de uso de Node en un archivo de JavaScript:
 
 Modulos nativos
 
+Uso de "fs.writeFile"
+Ejemplo:
+        const fs = require("fs");
 
+        fs.writeFile("message.txt", "Hola con Node,js", (err) => {
+        if (err) throw err;
+        console.log('El Archivo se ha Guadado!');
+        }); 
+
+        En consola:
+                    USUARIO@Adelso99 MINGW64 /f/Documents/Programacion/JavaScript-React/21.Node/2.2 Native Modules (main)
+                    $ node index.js
+                    El Archivo se ha Guadado!
+
+        y en la carperta se creo el txt de "message.txt" que dice:
+                Hola con Node,js
 
 
 
