@@ -6045,7 +6045,7 @@ NPM --> ya viene instalado con Node.js
 
 Inicializacion de npm initial
         Nos deja este package.json:
-        
+
         {
         "name": "learning-npm",
         "version": "1.0.0",
@@ -6061,6 +6061,9 @@ Inicializacion de npm initial
 
 
 
+instalación de paquete de npm
+comando: 
+            npm install "nombre del paquete"
 
 
 
