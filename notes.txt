@@ -6043,6 +6043,21 @@ const nombre = superhéroes.random ( ) ;
 
 NPM --> ya viene instalado con Node.js
 
+Inicializacion de npm initial
+        Nos deja este package.json:
+        
+        {
+        "name": "learning-npm",
+        "version": "1.0.0",
+        "description": "Aprendizaje",
+        "main": "index.js",
+        "scripts": {
+            "test": "echo \"Error: no test specified\" && exit 1"
+        },
+        "author": "Adelso",
+        "license": "ISC"
+        }
+
 
 
 
