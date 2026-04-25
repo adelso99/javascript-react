@@ -5959,7 +5959,7 @@ Ejmeplo de uso de Node en un archivo de JavaScript:
 
 
 
-----------------------------------Video 194 196. Cómo usar los módulos nativos de Node.--------------------------
+----------------------------------Video 196. Cómo usar los módulos nativos de Node.--------------------------
 
 Modulos nativos
 
@@ -6015,6 +6015,33 @@ Ejemplo 2, haciendo cambios en archivos creados con node:
                         $ node index.js
                         El Archivo se ha Guadado!
                         Cambio exitoso
+
+
+
+
+
+
+
+
+
+----------------------------------Video 198. El gestor de paquetes NPM y la instalación de módulos externos de Node.--------------------------
+
+
+
+
+Usa:
+import { randomSuperhero } from "superheroes" ;   
+const nombre = superhéroealeatorio ();
+
+
+En lugar de:
+importar superhéroes de "superheroes" ; 
+const nombre = superhéroes.random ( ) ;
+
+
+
+
+
 
 
 
