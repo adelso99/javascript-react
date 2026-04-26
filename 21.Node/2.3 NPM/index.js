@@ -5,7 +5,7 @@ import superheroes from 'superheroes';
 
 
 var sillyName = generateName();
-var superHeroes = superheroes.name;
+const superHeroes = superheroes.random();
 
 console.log(`Mi nombre es ${sillyName}.`);
 console.log(`Mi nombre de Super Heroe es ${superHeroes}.`);
