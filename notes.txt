@@ -6094,6 +6094,18 @@ En nuestro paquete estan las dependecias:
 
 
 
+Ejemplo usando sillyname:
+                            var generateName = require('sillyname');
+                            var sillyName = generateName();
+
+                            console.log(`Mi nombre es ${sillyName}, `);
+
+
+
+En la terminal con la ejecucion aparece lo siguiente:
+                                                      $ node index.js
+                                                      Mi nombre es Pollenflier Collar,  
+
 
 
 
