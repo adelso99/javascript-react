@@ -6070,6 +6070,30 @@ comando:
 
 
 paquete de busqueda de "sillyname"
+Instalacion del Paquete:
+                        npm i sillyname
+
+En nuestro paquete estan las dependecias:
+                                        {
+                                            "name": "learning-npm",
+                                            "version": "1.0.0",
+                                            "description": "Aprendizaje",
+                                            "main": "index.js",
+                                            "scripts": {
+                                                "test": "echo \"Error: no test specified\" && exit 1"
+                                            },
+                                            "author": "Adelso",
+                                            "license": "ISC",
+                                            "dependencies": {
+                                                "sillyname": "^0.1.0"
+                                            }
+                                        }
+
+
+
+
+
+
 
 
 
