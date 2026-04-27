@@ -6153,8 +6153,9 @@ Uso de modulos de ECMACScript:
 Creacion de Codig QR
 
 Para ellos ocupamos instalar paquetes de NPM
- 1. inquirer
-
+    1. Usa el paquete npm `inquirer` para obtener la entrada del usuario.
+    2. Usa el paquete npm `qr-image` para convertir la URL ingresada por el usuario en una imagen de código QR.
+    3. Crea un archivo de texto para guardar la entrada del usuario usando el módulo nativo `fs` de Node.
 
 
 
