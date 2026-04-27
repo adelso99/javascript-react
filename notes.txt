@@ -6150,7 +6150,7 @@ Uso de modulos de ECMACScript:
 
 -----------------------------------------------Video 199. [Proyecto] Generador de códigos QR.-----------------------------------------------
 
-
+Creacion de Codig QR
 
 
 
