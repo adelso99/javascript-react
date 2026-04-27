@@ -6152,6 +6152,9 @@ Uso de modulos de ECMACScript:
 
 Creacion de Codig QR
 
+Para ellos ocupamos instalar paquetes de NPM
+ 1. inquirer
+
 
 
 
