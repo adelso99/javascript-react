@@ -6,7 +6,7 @@
 
 const fs = require("fs");
 
-fs.writeFile("message.txt", "Hola con Node.js", (err) => {
+fs.writeFile("message.txt", process.stdin, (err) => {
   if (err) throw err;
   console.log('El Archivo se ha Guadado!');
 }); 
