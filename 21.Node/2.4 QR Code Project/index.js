@@ -9,8 +9,8 @@ import inquirer from 'inquirer'; //1.Importacion del paquete para el uso del eje
 //2. Use the qr-image npm package to turn the user entered URL into a QR code image.
 import qr from "qr-image";
 
-var qr = require('qr-image');
-//import fs from "fs";
+//3. uso del fs
+import fs from "fs";
 
 //1. Use the inquirer npm package to get user input.
 
@@ -24,7 +24,7 @@ inquirer
   .then((answers) => {
     const url = answers.URL;
     var qr_svg = qr.image(url);
-    qr_svg.pipe(require('fs').createWriteStream('qr_img.png'));
+    qr_svg.pipe(fs.createWriteStream('qr_img.png'));
 
   })
   .catch((error) => {
@@ -37,8 +37,6 @@ inquirer
 
 
 
- 
-var svg_string = qr.imageSync('I love QR!', { type: 'svg' });
 
 
   /*
