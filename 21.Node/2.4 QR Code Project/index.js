@@ -10,10 +10,13 @@ import fs from "fs";
 
 inquirer
   .prompt([
-    {"message": "Cual es tu Tipo de URL: "}
+    {
+      "message": "Cual es tu Tipo de URL: ", 
+      "name": "URL"
+    },
   ])
   .then((answers) => {
-    // Use user feedback for... whatever!!
+    console.log(answers);
   })
   .catch((error) => {
     if (error.isTtyError) {
@@ -25,6 +28,7 @@ inquirer
 
 
 
+  /*
 process.stdin.on("data", (input) => {
 
   let dato = input.toString();
@@ -36,6 +40,6 @@ process.stdin.on("data", (input) => {
 
 
 });
-
+*/
 
 
