@@ -5,11 +5,16 @@
 */
 
 const fs = require("fs");
+process.stdin.on("data", (input) => {
 
-fs.writeFile("message.txt", process.stdin, (err) => {
-  if (err) throw err;
-  console.log('El Archivo se ha Guadado!');
-}); 
-  
+  let dato = toString(input);
+
+  fs.writeFile("message.txt", dato, (err) => {
+    if (err) throw err;
+    console.log('El Archivo se ha Guadado!');
+  }); 
+    
+});
+
 
 
