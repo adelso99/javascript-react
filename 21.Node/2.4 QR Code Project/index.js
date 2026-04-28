@@ -4,9 +4,7 @@
 3. Create a txt file to save the user input using the native fs node module.
 */
 import inquirer from 'inquirer';
-
-import fs from "fs";
-
+//import fs from "fs";
 
 inquirer
   .prompt([
@@ -16,7 +14,7 @@ inquirer
     },
   ])
   .then((answers) => {
-    console.log(answers);
+    const url = answers.URL;
   })
   .catch((error) => {
     if (error.isTtyError) {
