@@ -10,7 +10,7 @@ import fs from "fs";
 
 inquirer
   .prompt([
-    /* Pass your questions in here */
+    {"message": "Cual es tu Tipo de URL: "}
   ])
   .then((answers) => {
     // Use user feedback for... whatever!!
@@ -23,7 +23,7 @@ inquirer
     }
   });
 
-  
+
 
 process.stdin.on("data", (input) => {
 
