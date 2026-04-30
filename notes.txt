@@ -6198,7 +6198,9 @@ Ejericicio resulto:
                         });
 
 
-                        
+                        Con esto ya se tiene todo lo que se requiere:
+                        se crea la imagen del QR: qr_img.png
+                        se crea el txt que tiene el link: URL.txt
 
 
 
