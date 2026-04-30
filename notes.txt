@@ -6257,7 +6257,7 @@ Introduccion a Express :)
 ----------------------------------------202. Creando nuestro primer servidor con Express-----------------------------
 
 Pasos para la creacion de un servidor con el Framework de Express
-1. Creación de Directorio 
+1. Creación de un Folder o Directorio  
 2. Creación del archivo index.js
 3. Iniciar el NPM
 4. Instalar el paquete de Express
