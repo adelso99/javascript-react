@@ -28,7 +28,7 @@ import fs from "fs";
 
       fs.writeFile('URL.txt', url, (err) => {
         if (err) throw err;
-        console.log('The file has been saved!');
+        console.log('El archivo se ha guardado!');
       }); 
 
     })
