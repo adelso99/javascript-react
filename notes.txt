@@ -6203,7 +6203,48 @@ Ejericicio resulto:
                         se crea el txt que tiene el link: URL.txt
 
 
-NOTA: Explicar esto
+prompt()
+Pregunta
+
+then()
+Cuando ya tengo respuesta, hago algo
+
+catch()
+Si falla, capturo error
+
+pipe()
+Enviar flujo a archivo
+
+writeFile()
+Guardar texto
+
+
+Flujo visual:
+<Usuario
+  ↓
+inquirer
+  ↓
+answers
+  ↓
+url
+  ↓
+qr.image()
+  ↓
+pipe()
+  ↓
+qr_img.png
+
+
+
+y aparte:
+url
+ ↓
+writeFile()
+ ↓
+URL.txt
+
+
+
 
 
 
