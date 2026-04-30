@@ -26,6 +26,11 @@ import fs from "fs";
       var qr_svg = qr.image(url);
       qr_svg.pipe(fs.createWriteStream('qr_img.png'));
 
+      writeFile('message.txt', data, (err) => {
+        if (err) throw err;
+        console.log('The file has been saved!');
+      }); 
+
     })
     .catch((error) => {
       if (error.isTtyError) {
