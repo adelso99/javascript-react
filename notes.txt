@@ -6250,6 +6250,20 @@ URL.txt
 
 ----------------------------------------------SECCION 24 Express.js con Node.js-------------------------------------------------
 ----------------------------------Video 201 ¿Qué es Express.js?--------------------------
+Introduccion a Express :)
+
+
+
+----------------------------------------202. Creando nuestro primer servidor con Express-----------------------------
+
+Pasos para la creacion de un servidor con el Framework de Express
+1. Creación de Directorio 
+2. Creación del archivo index.js
+3. Iniciar el NPM
+4. Instalar el paquete de Express
+5. Escribe la aplicación del servidor en index.js
+6. Iniciar el Servicio
+
 
 
 
