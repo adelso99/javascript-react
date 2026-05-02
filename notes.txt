@@ -6266,6 +6266,15 @@ Pasos para la creacion de un servidor con el Framework de Express
 
 
 
+Ejercico resuelto:
+                    import express from "express";
+                    const app = express();
+                    const port = 3000;
+
+                    app.listen(port, () => {
+                    console.log(`Conexion en el Puerto ${port}`);
+                    });
+
 
 
 
