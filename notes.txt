@@ -6278,6 +6278,46 @@ Ejercico resuelto:
 
 
 
+Para le verificacion de que puerta se esta usando puede ser:
+netstat -ano | findstr "LISTENING"
+
+
+express()
+Crear app
+
+app
+Servidor
+
+port
+Puerta lógica
+
+listen()
+Encender servidor y escuchar
+
+localhost:3000
+Entrar al servidor local
+
+
+
+
+
+
+-----------------------------------------------203. Solicitudes HTTP----------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
