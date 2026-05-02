@@ -6306,8 +6306,12 @@ Entrar al servidor local
 Protocolo de tranferencia 
 
 HTTP
-
-
+Peticiones:
+- GET
+- POST
+- PUT
+- PATCH
+- DELETE
 
 
 
