@@ -6307,7 +6307,7 @@ Protocolo de tranferencia
 
 HTTP
 Peticiones:
-- GET
+- GET  --> Obtencion de un recurso
 - POST
 - PUT
 - PATCH
