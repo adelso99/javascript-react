@@ -13,6 +13,15 @@ app.get("/", (req, res) => {
 });
 
 
+//peticion GET
+app.get("/about", (req, res) => {
+    //console.log(req.rawHeaders);
+
+    //envio de msj
+    res.send("<h1>Uso de Endpoint</h1>");
+});
+
+
 
 app.listen(port, () => {
   console.log(`Servidor corrigiendo en el puerto ${port}`);
