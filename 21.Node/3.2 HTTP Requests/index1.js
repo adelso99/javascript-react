@@ -9,7 +9,7 @@ app.get("/", (req, res) => {
 
 
     //envio de msj
-    res.send("Hola desde Express");
+    res.send("<h1>Hello from Nodemon</h1>");
 });
 
 

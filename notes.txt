@@ -6335,6 +6335,10 @@ Peticion usando GET:
 
 
 
+uso de Nodemon para ver cambios en tiempo real sin estar apagando e iniciando el servidor
+Ejemplo:
+        
+
 
 
 
