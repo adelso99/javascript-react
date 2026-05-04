@@ -6338,6 +6338,53 @@ Peticion usando GET:
 uso de Nodemon para ver cambios en tiempo real sin estar apagando e iniciando el servidor
 Ejemplo:
         
+//peticion GET
+                app.get("/", (req, res) => {
+                    //console.log(req.rawHeaders);
+
+
+                    //envio de msj
+                    res.send("<h1>Hello from Nodemon</h1>");  //peticion de un "h1"
+                });
+
+
+
+                app.listen(port, () => {
+                console.log(`Servidor corrigiendo en el puerto ${port}`);
+                });
+
+
+                en la terminal, estuvo pediente a los cambios:
+                        $ nodemon index1.js
+                            [nodemon] 2.0.22
+                            [nodemon] to restart at any time, enter `rs`
+                            [nodemon] watching path(s): *.*
+                            [nodemon] watching extensions: js,mjs,json
+                            [nodemon] starting `node index1.js`
+                            Servidor corrigiendo en el puerto 3000
+                            ┌───────────────────────────────────┐
+                            │ New version of nodemon available! │
+                            │ Current Version: 2.0.22           │
+                            │ Latest Version: 3.1.14            │
+                            └───────────────────────────────────┘
+                            [nodemon] restarting due to changes...
+                            [nodemon] starting `node index1.js`
+                            Servidor corrigiendo en el puerto 3000
+                            [nodemon] restarting due to changes...
+                            [nodemon] starting `node index1.js`
+                            Servidor corrigiendo en el puerto 3000
+                            [nodemon] restarting due to changes...
+                            [nodemon] starting `node index1.js`
+                            Servidor corrigiendo en el puerto 3000
+                            [nodemon] restarting due to changes...
+                            [nodemon] starting `node index1.js`
+                            Servidor corrigiendo en el puerto 3000
+                            [nodemon] restarting due to changes...
+                            [nodemon] starting `node index1.js`
+                            Servidor corrigiendo en el puerto 3000
+
+
+
 
 
 
