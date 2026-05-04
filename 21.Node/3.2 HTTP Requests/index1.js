@@ -7,13 +7,12 @@ const port = 3000;
 app.get("/", (req, res) => {
     //console.log(req.rawHeaders);
 
-
     //envio de msj
     res.send("<h1>Hello from Nodemon</h1>");
 });
 
 
-//peticion GET
+//peticion GET 2
 app.get("/about", (req, res) => {
     //console.log(req.rawHeaders);
 
@@ -21,10 +20,12 @@ app.get("/about", (req, res) => {
     res.send("<h1>Hola desde Sobre Mi</h1>");
 });
 
-
+//peticion GET 3
 app.get("/contact", (req, res) => {
   res.send("<h1>Hola desde Contactame</h1>");
 });
+
+
 
 app.listen(port, () => {
   console.log(`Servidor corrigiendo en el puerto ${port}`);
