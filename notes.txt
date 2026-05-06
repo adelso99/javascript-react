@@ -6435,6 +6435,7 @@ Ejemplo:
 
 
 
+
 -----------------------------------------------204. Postman----------------------------------------------------
 Formato de respuesta de HTTP:
                                 100–199: respuestas informativas.
@@ -6442,6 +6443,8 @@ Formato de respuesta de HTTP:
                                 300–399: redirecciones.
                                 400–499: errores del cliente.
                                 500–599: errores del servidor.
+
+
 
 
 
