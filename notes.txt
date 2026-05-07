@@ -6452,8 +6452,6 @@ Formato de respuesta de HTTP:
 
 
 
-
-
 Respuesta 201:
                 peticion get
 
