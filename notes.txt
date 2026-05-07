@@ -6463,6 +6463,9 @@ Respuesta 201:
 Error de 404 es muy problable el ingreso a una URL que no existe, posiblemente un error de escritura en la URL
 
 
+codigo 301 
+
+
 
 
 
