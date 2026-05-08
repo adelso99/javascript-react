@@ -7,7 +7,7 @@ const port = 3000;
 // Then test the 5 different routes below with Postman. Open a separate tab for each request.
 // Check that for each route you’re getting the correct status code returned to you from your server.
 // You should not get any 404s or 500 status codes.
-//Ejericiio
+//Ejericicio
 // *********************
 
 app.get("/", (req, res) => {
