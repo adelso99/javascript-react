@@ -13,6 +13,7 @@ app.get("/", (req, res) => {
   res.send("<h1>Home Page</h1>");
 });
 
+//conexion
 app.post("/register", (req, res) => {
   //Do something with the data
   res.sendStatus(201);
