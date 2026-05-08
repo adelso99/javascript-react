@@ -6465,13 +6465,16 @@ codigo 301
 
 
 
-Peticiones 
+Peticiones:
+            - GET  --> Obtencion de un recurso
+            - POST
+            - PUT
+            - PATCH
+            - DELETE
 
 
 
-
-
-
+ 
 
 
 
