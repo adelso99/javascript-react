@@ -6474,7 +6474,7 @@ Peticiones:
 
 
 
- Uso de Postman -->  Para verificacion de peticiones  
+ Uso de Postman -->  Para verificacion de peticiones segun codigo
 
 
 
