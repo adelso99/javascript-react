@@ -6303,7 +6303,7 @@ Entrar al servidor local
 
 
 -----------------------------------------------203. Solicitudes HTTP----------------------------------------------------
-Protocolo de tranferencia  -- Repaso de secccion
+Protocolo de tranferencia  -- Repaso de secccion de contenido
 
 HTTP
 Peticiones:
