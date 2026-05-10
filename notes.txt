@@ -6308,10 +6308,10 @@ Protocolo de tranferencia  -- Repaso
 HTTP
 Peticiones:
 - GET  --> Obtencion de un recurso
-- POST
-- PUT
-- PATCH
-- DELETE
+- POST -->
+- PUT  -->
+- PATCH -->
+- DELETE -->
 
 
 
