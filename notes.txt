@@ -6384,9 +6384,6 @@ Ejemplo:
 
 
 
-
-
-
 uso de Endpoints "/"
 es paractamente el destino final a donde se quiere llegar
 Ejemplo:
