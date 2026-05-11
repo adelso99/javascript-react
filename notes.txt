@@ -6443,9 +6443,6 @@ Formato de respuesta de HTTP:
 
 
 
-
-
-
 Respuesta 201:
                 peticion get
 
@@ -6460,11 +6457,11 @@ codigo 301
 
 
 Peticiones:
-            - GET  --> Obtencion de un recurso
-            - POST
-            - PUT
-            - PATCH
-            - DELETE
+            - GET    --> Obtencion de un recurso
+            - POST   -->
+            - PUT    -->
+            - PATCH  -->
+            - DELETE -->
 
 
 
