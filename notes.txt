@@ -6314,8 +6314,6 @@ Peticiones:
 - DELETE -->
 
 
-
-
 Peticion usando GET:
                     //peticion GET
                     app.get("/", (req, res) => {
@@ -6331,7 +6329,6 @@ Peticion usando GET:
                     app.listen(port, () => {
                     console.log(`Servidor corrigiendo en el puerto ${port}`);
                     });
-
 
 
 
