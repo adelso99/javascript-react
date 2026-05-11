@@ -6314,6 +6314,7 @@ Peticiones:
 - DELETE -->
 
 
+Ejericios para peticiones:
 Peticion usando GET:
                     //peticion GET
                     app.get("/", (req, res) => {
