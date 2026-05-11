@@ -6383,8 +6383,7 @@ Ejemplo:
 
 
 
-
-uso de Endpoints "/"
+Navegacion son el uso de: uso de Endpoints "/"
 es paractamente el destino final a donde se quiere llegar
 Ejemplo:
         si queremos mandar una carta y estamos en guatemala y el destino es Europa
