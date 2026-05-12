@@ -6465,11 +6465,17 @@ Peticiones:
 
 
 
- Uso de Postman -->  Para verificacion de peticiones segun codigo
+Uso de Postman -->  Para verificacion de peticiones segun codigo
 
-Rapasar esta secccion 5:10
+Ejemplo de peticion de GET: http://localhost:3000/  esto en Postman
 
+estado 200 ok 
+<h1>Home Page</h1>
 
+Ejemplo de peticion de POST:  
+
+estado 201 created
+Created
 
 
 
