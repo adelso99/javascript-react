@@ -15,7 +15,7 @@ app.get("/", (req, res) => {
   res.send("<h1>Home Page</h1>");
 });
 
-//conexion para realizar la prueba de testing en Postman
+//conexion para realizar la prueba de testing en Postman de los diferentes estados
 app.post("/register", (req, res) => {
   //Do something with the data
   res.sendStatus(201);
