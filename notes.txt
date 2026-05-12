@@ -6458,7 +6458,7 @@ codigo 301
 
 Peticiones:
             - GET    --> Obtencion de un recurso
-            - POST   -->
+            - POST   --> regularmente desde un formulario HTML
             - PUT    -->
             - PATCH  -->
             - DELETE -->
