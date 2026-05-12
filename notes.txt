@@ -6303,19 +6303,18 @@ Entrar al servidor local
 
 
 -----------------------------------------------203. Solicitudes HTTP----------------------------------------------------
-Protocolo de tranferencia 
+Protocolo de tranferencia  -- Repaso de secccion de contenido para recapitulacion --
 
 HTTP
 Peticiones:
 - GET  --> Obtencion de un recurso
-- POST
-- PUT
-- PATCH
-- DELETE
+- POST -->
+- PUT  -->
+- PATCH -->
+- DELETE -->
 
 
-
-
+Ejericios para peticiones:
 Peticion usando GET:
                     //peticion GET
                     app.get("/", (req, res) => {
@@ -6331,7 +6330,6 @@ Peticion usando GET:
                     app.listen(port, () => {
                     console.log(`Servidor corrigiendo en el puerto ${port}`);
                     });
-
 
 
 
@@ -6385,11 +6383,7 @@ Ejemplo:
 
 
 
-
-
-
-
-uso de Endpoints "/"
+Navegacion son el uso de: uso de Endpoints "/"
 es paractamente el destino final a donde se quiere llegar
 Ejemplo:
         si queremos mandar una carta y estamos en guatemala y el destino es Europa
@@ -6449,9 +6443,6 @@ Formato de respuesta de HTTP:
 
 
 
-
-
-
 Respuesta 201:
                 peticion get
 
@@ -6466,17 +6457,41 @@ codigo 301
 
 
 Peticiones:
+<<<<<<< HEAD
             - GET  --> Obtencion de un recurso
             - POST
             - PUT
             - PATCH
             - DELETE 
+=======
+            - GET    --> Obtencion de un recurso
+            - POST   --> regularmente desde un formulario HTML
+            - PUT    -->
+            - PATCH  -->
+            - DELETE -->
 
 
 
+npm install para que descargue las dependecias del poryecto que se esta descargando
+>>>>>>> b2cba7ff23b346f5901c4fdb8418414e89f0ef05
 
 
 
+Uso de Postman -->  Para verificacion de peticiones segun codigo
+
+Ejemplo de peticion de GET: http://localhost:3000/  esto en Postman
+
+estado 200 ok 
+<h1>Home Page</h1>
+
+Ejemplo de peticion de POST:  
+
+estado 201 created
+Created
+
+
+
+     
 
 
 
