@@ -6467,7 +6467,8 @@ Peticiones:
 
  Uso de Postman -->  Para verificacion de peticiones segun codigo
 
-Rapasar esta secccion 5.10
+Rapasar esta secccion 5:10
+
 
 
 
