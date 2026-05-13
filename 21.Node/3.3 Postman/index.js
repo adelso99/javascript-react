@@ -7,6 +7,7 @@ const port = 3000;
 // Then test the 5 different routes below with Postman. Open a separate tab for each request.
 // Check that for each route you’re getting the correct status code returned to you from your server.
 // You should not get any 404s or 500 status codes.
+
 //Ejericicio
 // Practiquemos con Postman. Asegúrate de que tu servidor esté funcionando con nodemon.
 // Luego, prueba las 5 rutas que se muestran a continuación con Postman. Abre una pestaña diferente para cada solicitud.
@@ -15,7 +16,7 @@ const port = 3000;
 
 // *********************
 
-//Testeo en Postamn
+//Testeo en Postamn -- de cada codigo 
 app.get("/", (req, res) => {
   res.send("<h1>Home Page</h1>");
 });
