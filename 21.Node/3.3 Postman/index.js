@@ -8,6 +8,11 @@ const port = 3000;
 // Check that for each route you’re getting the correct status code returned to you from your server.
 // You should not get any 404s or 500 status codes.
 //Ejericicio
+// Practiquemos con Postman. Asegúrate de que tu servidor esté funcionando con nodemon.
+// Luego, prueba las 5 rutas que se muestran a continuación con Postman. Abre una pestaña diferente para cada solicitud.
+// Verifica que para cada ruta recibas el código de estado correcto de tu servidor.
+// No deberías recibir ningún código de estado 404 ni 500.
+
 // *********************
 
 //Testeo en Postamn
