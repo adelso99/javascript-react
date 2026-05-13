@@ -32,6 +32,7 @@ app.put("/user/angela", (req, res) => {
   res.sendStatus(200);
 });
 
+//Registro de de Actualizacion de datos 
 app.patch("/user/angela", (req, res) => {
   res.sendStatus(200);
 });
