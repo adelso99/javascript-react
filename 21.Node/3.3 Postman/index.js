@@ -16,7 +16,7 @@ const port = 3000;
 
 // *********************
 
-//Testeo en Postamn -- de cada codigo 
+//Testeo en Postamn -- de cada codigo respuesta desde HTML
 app.get("/", (req, res) => {
   res.send("<h1>Home Page</h1>");
 });
