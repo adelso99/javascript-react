@@ -27,7 +27,7 @@ app.post("/register", (req, res) => {
   res.sendStatus(201);
 });
 
-
+//respuesta de codigo en Postman 
 app.put("/user/angela", (req, res) => {
   res.sendStatus(200);
 });
