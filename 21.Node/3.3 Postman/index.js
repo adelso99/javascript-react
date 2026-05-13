@@ -42,6 +42,7 @@ app.delete("/user/angela", (req, res) => {
   res.sendStatus(200);
 });
 
+//verifiacion de servicio de respuesat de puerto 3000
 app.listen(port, () => {
   console.log(`Server started on port ${port}`);
 });
