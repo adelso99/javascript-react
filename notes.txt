@@ -6479,22 +6479,45 @@ npm install para que descargue las dependecias del poryecto que se esta descarga
 
 Uso de Postman -->  Para verificacion de peticiones segun codigo
 
-Ejemplo de peticion de GET: http://localhost:3000/  esto en Postman
 
-estado 200 ok 
-<h1>Home Page</h1>
+
+Ejemplo de peticion de GET: http://localhost:3000/  esto en Postman  siempre usando el puerto 3000
+//Testeo en Postamn -- de cada codigo respuesta desde HTML
+                            app.get("/", (req, res) => {
+                            res.send("<h1>Home Page</h1>");
+                            });
+
+                            estado 200 ok 
+                            <h1>Home Page</h1>
+
 
 Ejemplo de peticion de POST:  
+                        app.post("/register", (req, res) => {
+                        //Do something with the data
+                        res.sendStatus(201);
+                        });
 
-estado 201 created
-Created
+                        estado 201 created
+                        Created
+
+
+Ejemplo de PUT:
+                app.put("/user/adelso", (req, res) => {
+                res.sendStatus(200);
+                });
+
+                estado 200 ok
+                OK
 
 
 
-     
+Ejemplo de PATCH:
+                app.patch("/user/adelso", (req, res) => {
+                res.sendStatus(200);
+                });
 
-
-
+                estado 200 ok
+                OK
 
 
 

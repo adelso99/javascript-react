@@ -23,21 +23,21 @@ app.post("/register", (req, res) => {
 });
 
 //respuesta de codigo en Postman -- de ambos codigos esperados que se quiere 
-app.put("/user/angela", (req, res) => {
+app.put("/user/adelso", (req, res) => {
   res.sendStatus(200);
 });
 
 //Registro de de Actualizacion de datos 
-app.patch("/user/angela", (req, res) => {
+app.patch("/user/adelso", (req, res) => {
   res.sendStatus(200);
 });
 
-app.delete("/user/angela", (req, res) => {
+app.delete("/user/adelso", (req, res) => {
   //Deleting
   res.sendStatus(200);
 });
 
 //verifiacion de servicio de respuesat de puerto 3000
 app.listen(port, () => {
-  console.log(`Server started on port ${port}`);
+  console.log(`El servicio esta corriendo en el puerto ${port}`);
 });
