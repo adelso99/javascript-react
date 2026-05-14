@@ -6520,6 +6520,14 @@ Ejemplo de PATCH:
                 OK
 
 
+Ejemplo de DELETE:
+                 app.delete("/user/adelso", (req, res) => {
+                //Deleting
+                res.sendStatus(200);
+                });
+
+                estado 200 ok
+                OK
 
 
 
