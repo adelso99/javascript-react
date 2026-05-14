@@ -6532,6 +6532,64 @@ Ejemplo de DELETE:
 
 
 
+
+
+
+Datos a conciderar en las Peticiones que se vayan realizando
+
+req y res
+Esto también suele confundir:
+                            req
+                            lo que cliente manda
+                            Ejemplo:
+                            body
+                            params
+                            headers
+
+                            res
+                            lo que servidor responde
+                            Ejemplo:
+                            HTML
+                            JSON
+                            status
+
+
+
+Resumen mental
+GET leer
+POST crear
+PUT reemplazar todo
+PATCH editar parte
+DELETE borrar
+
+            Flujo completo
+            Postman
+            ↓
+            manda request
+            ↓
+            Express recibe
+            ↓
+            ruta correcta
+            ↓
+            response
+            ↓
+            status code
+
+
+
+
+-----------------------------------------------205. Introduccion a Middlewares----------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
 NOTA:
 
 Repasar:
