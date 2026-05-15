@@ -6599,6 +6599,7 @@ DELETE borrar
 
 Middlewares de Body Parser
 
+metodo de uso: res.sendFile --> este requiere una ruta exacta para saber que archvio va a devolver 
 
 
 
