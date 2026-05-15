@@ -6578,7 +6578,26 @@ DELETE borrar
 
 
 
+        GET    = obtener
+        POST   = crear
+        PUT    = reemplazar
+        PATCH  = actualizar parcial
+        DELETE = eliminar
+
+        Verificacin de estados de codigo de estado esperado 
+
+            200 ok
+            201 creado
+            404 no encontrado
+            500 error servidor
+
+
+
+
+
 -----------------------------------------------205. Introduccion a Middlewares----------------------------------------------------
+
+
 
 
 
