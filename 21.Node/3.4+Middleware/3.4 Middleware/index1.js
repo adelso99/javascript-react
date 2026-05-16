@@ -17,6 +17,7 @@ app.use(
 
 const port = 3000;
 
+//endpoint usado
 app.post("/submit", (req, res) => {
   console.log(req.body);
 });
