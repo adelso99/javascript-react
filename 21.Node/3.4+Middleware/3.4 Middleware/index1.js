@@ -7,6 +7,7 @@ import bodyParser from "body-parser";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
+//uso del middleware
 const app = express();
 app.use(
    bodyParser.urlencoded({
