@@ -22,7 +22,7 @@ const port = 3000;
 
 //endpoint usado para verifiacion en Postman
 app.post("/submit", (req, res) => {
-  console.log(req.body);
+  console.log(req.body);  //en consola de verificacion de datos del formulario
 });
 
 app.get("/", (req, res) => {
