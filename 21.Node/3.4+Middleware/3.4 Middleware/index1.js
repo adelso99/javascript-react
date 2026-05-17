@@ -18,7 +18,7 @@ app.use(
 //puerto usado que es
 const port = 3000;
 
-//endpoint usado
+//endpoint usado para verifiacion
 app.post("/submit", (req, res) => {
   console.log(req.body);
 });
