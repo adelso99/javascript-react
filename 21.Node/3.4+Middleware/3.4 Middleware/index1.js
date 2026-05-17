@@ -15,7 +15,7 @@ app.use(
    })
 );
 
-//puerto usado
+//puerto usado que es
 const port = 3000;
 
 //endpoint usado
