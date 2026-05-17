@@ -6601,8 +6601,70 @@ Middlewares de Body Parser
 
 metodo de uso: res.sendFile --> este requiere una ruta exacta para saber que archvio va a devolver 
 
+Ejemplo:
+            HTML usado
+            <!DOCTYPE html>
+            <html lang="en">
+
+            <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Nombre del Generador de Banda</title>
+            </head>
+
+            <body>
+            <h1>Nombre del Generador de Banda</h1>
+            <form action="/submit" method="POST">
+                <label for="street">Street Name:</label>
+                <input type="text" name="street" required>
+                <label for="pet">Pet Name:</label>
+                <input type="text" name="pet" required>
+                <input type="submit" value="Submit">
+            </form>
+            </body>
+
+            </html>
 
 
+
+            INDEX1.JS usado
+            //uso del middleware con importacion de bodyParser
+            const app = express();
+
+            //uso de express con bodyparser
+            app.use(
+            bodyParser.urlencoded({
+                extended: true
+            })
+            );
+
+            //puerto usado que es
+            const port = 3000;
+
+            //endpoint usado para verifiacion en Postman
+            app.post("/submit", (req, res) => {
+            console.log(req.body);  //en consola de verificacion de datos del formulario
+            });
+
+            app.get("/", (req, res) => {
+            console.log(__dirname + "/public/index.html");
+            res.sendFile(__dirname + "/public/index.html");
+            });
+
+            //salida en consola sobre el puerto en uso
+            app.listen(port, () => {
+            console.log(`Listening on port ${port}`);
+            });
+
+
+            en consola muestra los datos registrados 
+
+
+
+
+
+
+-----------------------------------------------205. Middlewares Personalizados----------------------------------------------------
 
 
 
