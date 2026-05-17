@@ -3,7 +3,7 @@ import express from "express";
 const app = express();
 const port = 3000;
 
-//Ejericio de seccion 
+//Ejericio de seccion, de verificacion de modulo de morgan
 
 app.get("/", (req, res) => {
   res.send("Hello");
