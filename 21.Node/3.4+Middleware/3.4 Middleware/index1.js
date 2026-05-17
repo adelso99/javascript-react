@@ -30,6 +30,7 @@ app.get("/", (req, res) => {
   res.sendFile(__dirname + "/public/index.html");
 });
 
+//salida en consola sobre el puerto en uso
 app.listen(port, () => {
   console.log(`Listening on port ${port}`);
 });
