@@ -6667,6 +6667,7 @@ Ejemplo:
 -----------------------------------------------205. Middlewares Personalizados----------------------------------------------------
 
 Uso de Middleware Morgan
+Es un middleware de registro
 
 
 
