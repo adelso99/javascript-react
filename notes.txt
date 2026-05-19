@@ -6669,7 +6669,7 @@ Ejemplo:
 Uso de Middleware Morgan
 Es un middleware de registro
 
-Uso de morgan en un ejercicio  con morgan --
+Uso de morgan en un ejercicio  con morgan 
 
 
 
