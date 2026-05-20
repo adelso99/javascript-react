@@ -7,8 +7,12 @@ const port = 3000;
 
 //Ejericio de seccion, de verificacion de modulo de morgan pasos a verificar .--
 app.use(
-  morgan("_____")
+  morgan("dev")
 );
+
+app.post("/submit", (req, res) => {
+  
+});
 
 app.get("/", (req, res) => {
   res.send("Hello, ");
