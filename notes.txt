@@ -6669,8 +6669,12 @@ Ejemplo:
 Uso de Middleware Morgan
 Es un middleware de registro
 
-Uso de morgan en un ejercicio  con morgan 
-
+Uso de morgan en un ejercicio 
+1. Usa npm para instalar el paquete morgan.
+2. Ejecuta index2.js con nodemon.
+3. Importa el módulo morgan.
+4. Monta el middleware usando el método .use() de Express.
+5. Prueba el registro en localhost y con Postman.
 
 
 
