@@ -6,6 +6,9 @@ const app = express();
 const port = 3000;
 
 //Ejericio de seccion, de verificacion de modulo de morgan pasos a verificar .--
+app.use(
+  morgan("_____")
+);
 
 app.get("/", (req, res) => {
   res.send("Hello, ");
