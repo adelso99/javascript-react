@@ -10,9 +10,6 @@ app.use(
   morgan("dev")
 );
 
-app.post("/submit", (req, res) => {
-  
-});
 
 app.get("/", (req, res) => {
   res.send("Hello, ");

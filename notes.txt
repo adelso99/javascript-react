@@ -6676,6 +6676,33 @@ Uso de morgan en un ejercicio
 4. Monta el middleware usando el método .use() de Express.
 5. Prueba el registro en localhost y con Postman.
 
+Ejericicio solucionado:
+                        import express from "express";
+                        //importacion de Morgan 
+                        import morgan from "morgan";
+
+                        const app = express();
+                        const port = 3000;
+
+                        //Ejericio de seccion, de verificacion de modulo de morgan pasos a verificar .--
+                        app.use(
+                        morgan("dev")
+                        );
+
+
+                        app.get("/", (req, res) => {
+                        res.send("Hello, ");
+                        });
+
+                        //verificacion
+                        app.listen(port, () => {
+                        console.log(`Listening on port ${port}`);
+                        });
+
+                        En consola:
+                                    Listening on port 3000
+                                    GET / 200 2.015 ms - 7
+
 
 
 
