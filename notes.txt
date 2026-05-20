@@ -6705,6 +6705,36 @@ Ejericicio solucionado:
 
 
 
+Ejericio de morgan pero usando tiny
+                            import express from "express";
+                            //importacion de Morgan 
+                            import morgan from "morgan";
+
+                            const app = express();
+                            const port = 3000;
+
+                            //Ejericio de seccion, de verificacion de modulo de morgan pasos a verificar .--
+                            app.use(
+                            morgan("tiny")
+                            );
+
+
+                            app.get("/", (req, res) => {
+                            res.send("Hello, ");
+                            });
+
+                            //verificacion
+                            app.listen(port, () => {
+                            console.log(`Listening on port ${port}`);
+                            });
+
+
+                            Una vez realizado la peticion GET en Postman:
+                                    Listening on port 3000
+                                    GET / 200 7 - 2.033 ms
+
+
+
 
 NOTA:
 
