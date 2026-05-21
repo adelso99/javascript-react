@@ -6736,6 +6736,8 @@ Ejericio de morgan pero usando tiny
 
 
 
+
+
 NOTA:
 
 Repasar:
