@@ -6736,7 +6736,7 @@ Ejericio de morgan pero usando tiny
 
 
 Uso de morgan para los demas Ejericios
-
+Con Postman
 
 
 NOTA:
