@@ -6736,9 +6736,12 @@ Ejericio de morgan pero usando tiny
 
 
 Uso de morgan para los demas Ejericios
-Con Postman
-verificacion de get y post 
-verficacion de endpoint
+1. Ejecuta index3.js con nodemon.
+2. Crea tu propia función llamada logger(req, res, next).
+3. Dentro de tu función, muestra en la consola el método y la URL de la solicitud.
+4. Recuerda llamar a next().
+5. Monta tu función middleware usando el método .use() de Express.
+6. Prueba el registro en localhost y con Postman.
 
 
 
