@@ -5,6 +5,9 @@ import express from "express";
 const app = express();
 const port = 3000;
 
+//creacion de funcion logger
+const logger = (req, res, next)
+
 app.use(logger);
 
 app.get("/", (req, res) => {
@@ -12,5 +15,5 @@ app.get("/", (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log(`Listening on port ${port}`);
+  console.log(`Puerto en uso ${port}`);
 });
