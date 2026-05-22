@@ -6,7 +6,11 @@ const app = express();
 const port = 3000;
 
 //creacion de funcion logger
-const logger = (req, res, next)
+const logger = (req, res, next) => {
+  console.log(req.method)
+  console.log(req.url)
+  next()
+}
 
 app.use(logger);
 
