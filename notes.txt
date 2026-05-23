@@ -6781,7 +6781,7 @@ Ejercicio resuelto:
 
 Creacion de generador de nombres
 
-ejericicio
+ejericicio -- Practica
 
 
 
