@@ -7,6 +7,7 @@ const port = 3000;
 
 //Uso de aplicaciones
 //uso de app
+//uso de postamn
 
 app.listen(port, () => {
   console.log(`Listening on port ${port}`);
