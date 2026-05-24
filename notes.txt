@@ -6787,8 +6787,7 @@ ejericicio -- Practica
 - Mostrar datos en consola de la terminal
 - Tambien mostrar los datos cuando se hace el submit en la web en h2
 
-
-
+corre el index4.js
 
 
 
