@@ -1,6 +1,6 @@
 import express from "express";
 
-//importacion de madllwares
+//importacion de middlewares
 
 const app = express();
 const port = 3000;
