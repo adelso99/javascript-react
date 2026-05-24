@@ -6786,6 +6786,7 @@ ejericicio -- Practica
 - Guardar datos del formulario enviado desde la Pagina web
 - Mostrar datos en consola de la terminal
 - Tambien mostrar los datos cuando se hace el submit en la web en h2
+- Tambien verificar el endpoint en Postman
 
 corre el index4.js
 
