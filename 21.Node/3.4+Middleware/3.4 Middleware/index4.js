@@ -1,4 +1,5 @@
 import express from "express";
+//importacion de madllwares
 
 const app = express();
 const port = 3000;
