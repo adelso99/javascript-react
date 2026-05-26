@@ -6804,6 +6804,9 @@ console.log(req.body)
 ↓
 mostrar resultado en navegador en un h2
 
+
+
+
 corre el index4.js
 
 
