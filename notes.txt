@@ -6789,6 +6789,7 @@ ejericicio -- Practica
     - Tambien verificar el endpoint en Postman
     - localhost usando es el 3000
  
+ 
 
 usuario abre página
         ↓
