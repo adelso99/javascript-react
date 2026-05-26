@@ -6791,18 +6791,18 @@ ejericicio -- Practica
 
 
 usuario abre página
-↓
-ve formulario
-↓
-escribe datos
-↓
-submit
-↓
-servidor recibe datos
-↓
-console.log(req.body)
-↓
-mostrar resultado en navegador en un h2
+    ↓
+    ve formulario
+    ↓
+    escribe datos
+    ↓
+    submit
+    ↓
+    servidor recibe datos
+    ↓
+    console.log(req.body)
+    ↓
+    mostrar resultado en navegador en un h2
 
 
 
