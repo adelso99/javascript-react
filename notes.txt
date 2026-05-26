@@ -6782,13 +6782,13 @@ Ejercicio resuelto:
 Creacion de generador de nombres
 
 ejericicio -- Practica
-- Importacion de Middlewares
-- Guardar datos del formulario enviado desde la Pagina web
-- Mostrar datos en consola de la terminal
-- Tambien mostrar los datos cuando se hace el submit en la web en h2
-- Tambien verificar el endpoint en Postman
-- localhost usando es el 3000
-
+    - Importacion de Middlewares
+    - Guardar datos del formulario enviado desde la Pagina web
+    - Mostrar datos en consola de la terminal
+    - Tambien mostrar los datos cuando se hace el submit en la web en h2
+    - Tambien verificar el endpoint en Postman
+    - localhost usando es el 3000
+ 
 
 usuario abre página
         ↓
