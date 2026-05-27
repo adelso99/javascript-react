@@ -14,8 +14,10 @@ app.use(
   })
 )
 
-//uso de app
-//uso de postamn
+//uso de edpoint /submit
+app.post("/submit", (req, res) => {
+  console.log(req.body);
+});
 
 app.listen(port, () => {
   console.log(`Listening on port ${port}`);
