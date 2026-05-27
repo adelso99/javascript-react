@@ -30,6 +30,7 @@ app.get("/", (req, res) => {
 //uso de edpoint /submit
 app.post("/submit", (req, res) => {
   console.log(req.body);
+  res.send(`<h2>${req.body.street} ${req.body.pet}</h2>`);
 });
 
 
