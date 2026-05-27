@@ -7,6 +7,13 @@ const app = express();
 const port = 3000;
 
 //Uso de aplicaciones
+//uso de express con bodyparser
+app.use(
+  bodyParser.urlencoded({
+    extended: true
+  })
+)
+
 //uso de app
 //uso de postamn
 
