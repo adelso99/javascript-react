@@ -21,11 +21,16 @@ app.use(
   })
 )
 
+//uso de edpoint get para peticion de HTML
+app.get("/", (req, res) => {
+    console.log(__dirname + "/public/index.html");
+    res.sendFile(__dirname + "/public/index.html");
+});
+
 //uso de edpoint /submit
 app.post("/submit", (req, res) => {
   console.log(req.body);
 });
-
 
 
 app.listen(port, () => {
