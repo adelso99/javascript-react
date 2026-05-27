@@ -13,7 +13,6 @@ const port = 3000;
 //variable de dirname
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
-//Uso de aplicaciones
 //uso de express con bodyparser
 app.use(
   bodyParser.urlencoded({
@@ -37,5 +36,3 @@ app.post("/submit", (req, res) => {
 app.listen(port, () => {
   console.log(`Listening on port ${port}`);
 });
-
-//verificacion de edpoint
