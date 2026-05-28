@@ -11,7 +11,7 @@ import {dirname} from "path";
 import {fileURLToPath} from "url";
 
 //variables
-const app = express;
+const app = express();
 const port = 3000;
 
 
