@@ -6664,7 +6664,7 @@ Ejemplo:
 
 
 
------------------------------------------------205. Middlewares Personalizados----------------------------------------------------
+-----------------------------------------------206. Middlewares Personalizados----------------------------------------------------
 
 Uso de Middleware Morgan
 Es un middleware de registro
@@ -6888,6 +6888,40 @@ Solucion 2 de este ejericio:
                             console.log(`Listening on port ${port}`);
                             });
 
+
+
+
+
+Resumen ULTRA claro:
+                    req  -->      lo que entra
+                    res  -->      lo que sale
+                    Middleware -->     función intermedia
+                    next()  -->        continuar flujo
+                    Morgan  -->        middleware de logs
+                    body-parser  -->   middleware que interpreta formularios
+                    app.get  -->       responder GET
+                    app.post  -->      responder POST
+                    res.sendFile  -->  enviar HTML
+                    res.send      -->  enviar texto/HTML
+
+
+
+
+
+
+
+
+-----------------------------------------------207. Proyecto de Acceso a Secretos----------------------------------------------------
+
+Ejercicio:
+        - El ejercicio se debe de llenar el formulario con la Contraseña correcta, para poder acceder al html Secreto
+        - Si la contraseña es incorrecta entonces solo vuelve a cargar el html donde pide la contraseña y no deja entrar al html secreto
+    
+Contraseña:
+            ILoveProgramming
+
+
+ 
 
 
 
