@@ -15,7 +15,13 @@ const app = express;
 const port = 3000;
 
 
+//verificacion de puerto en uso en consola
+app.listen(port, () =>{
+  console.log(`Puerto en uso ${port}`);
+});
+
 /*
+
 //variable de dirname
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
@@ -39,8 +45,6 @@ app.post("/submit", (req, res) => {
 });
 
 
-app.listen(port, () => {
-  console.log(`Listening on port ${port}`);
-});
+
 
 */
