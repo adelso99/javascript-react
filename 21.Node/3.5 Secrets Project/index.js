@@ -29,6 +29,9 @@ app.get("/", (req, res) => {
 });
 
 //uso de edpoint para la peticion de POST
+app.post("/check", (req, res) => {
+  
+});
 
 
 //verificacion de puerto en uso en consola
