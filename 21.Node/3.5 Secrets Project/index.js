@@ -15,6 +15,12 @@ const app = express();
 const port = 3000;
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
+//aplicacion de uso
+app.use(
+  bodyParser.urlencoded({
+    extended: true
+  })
+)
 
 //verificacion de puerto en uso en consola
 app.listen(port, () =>{
@@ -22,14 +28,6 @@ app.listen(port, () =>{
 });
 
 /*
-
-//uso de express con bodyparser
-app.use(
-  bodyParser.urlencoded({
-    extended: true
-  })
-)
-
 //uso de edpoint get para peticion de HTML
 app.get("/", (req, res) => {
     console.log(__dirname + "/public/index.html");
