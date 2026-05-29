@@ -28,6 +28,8 @@ app.get("/", (req, res) => {
   res.sendFile(__dirname + "/public/index.html");
 });
 
+//uso de edpoint para la peticion de POST
+
 
 //verificacion de puerto en uso en consola
 app.listen(port, () =>{
