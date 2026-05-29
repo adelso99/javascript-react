@@ -13,6 +13,7 @@ import {fileURLToPath} from "url";
 //variables
 const app = express();
 const port = 3000;
+const __dirname = dirname(fileURLToPath(import.meta.url));
 
 
 //verificacion de puerto en uso en consola
@@ -21,9 +22,6 @@ app.listen(port, () =>{
 });
 
 /*
-
-//variable de dirname
-const __dirname = dirname(fileURLToPath(import.meta.url));
 
 //uso de express con bodyparser
 app.use(
