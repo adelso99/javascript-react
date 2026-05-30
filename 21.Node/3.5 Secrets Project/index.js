@@ -45,15 +45,3 @@ app.listen(port, () =>{
   console.log(`Puerto en uso ${port}`);
 });
 
-/*
-
-//uso de edpoint /submit
-app.post("/submit", (req, res) => {
-  console.log(req.body);
-  res.send(`<h2>${req.body.street} ${req.body.pet}</h2>`);
-});
-
-
-
-
-*/
