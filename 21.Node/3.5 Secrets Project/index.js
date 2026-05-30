@@ -30,8 +30,8 @@ app.get("/", (req, res) => {
 
 //uso de edpoint para la peticion de POST
 app.post("/check", (req, res) => {
-  console.log(req.body.password);
-  
+  console.log(req.body.password); //verificacion de contraseña
+
   if (req.body.password === "ILoveProgramming"){
     res.sendFile(__dirname + "/public/secret.html");
   }else{
