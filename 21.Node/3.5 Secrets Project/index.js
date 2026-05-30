@@ -2,6 +2,7 @@
 //Asegúrate de haber instalado todas las dependencias con "npm i".
 //La contraseña es ILoveProgramming
 
+
 //importacion de formularios
 import express from "express";
 import bodyParser from "body-parser";
@@ -43,6 +44,7 @@ app.post("/check", (req, res) => {
     res.sendFile(__dirname + "/public/index.html")
   }
 });
+
 
 
 //verificacion de puerto en uso en consola
