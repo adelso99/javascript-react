@@ -31,6 +31,7 @@ app.get("/", (req, res) => {
   res.sendFile(__dirname + "/public/index.html");
 });
 
+
 //uso de edpoint para la peticion de POST
 app.post("/check", (req, res) => {
   console.log(req.body.password); //verificacion de contraseña
