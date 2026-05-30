@@ -41,7 +41,6 @@ app.post("/check", (req, res) => {
 });
 
 
-
 //verificacion de puerto en uso en consola
 app.listen(port, () =>{
   console.log(`Puerto en uso ${port}`);
