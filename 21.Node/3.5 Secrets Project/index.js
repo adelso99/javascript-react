@@ -10,6 +10,7 @@ import bodyParser from "body-parser";
 import {dirname} from "path";
 import {fileURLToPath} from "url";
 
+
 //variables a usar
 const app = express();
 const port = 3000;
