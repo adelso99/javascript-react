@@ -32,6 +32,7 @@ app.get("/", (req, res) => {
 app.post("/check", (req, res) => {
   console.log(req.body.password); //verificacion de contraseña
 
+  //verificacion de contraseña con un if
   if (req.body.password === "ILoveProgramming"){
     res.sendFile(__dirname + "/public/secret.html");
   }else{
