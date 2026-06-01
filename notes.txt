@@ -7015,7 +7015,19 @@ SOLUCION 2 DEL EJERCICIO:
                                 
 
 
-
+Usuario entra a la página
+↓
+Ve formulario
+↓
+Escribe contraseña
+↓
+Submit
+↓
+Servidor revisa contraseña   --> Contraseña Valida: ILoveProgramming
+↓
+¿Es correcta?
+    Sí → secret.html
+    No → index.html
 
 
 -----------------------------------------------209. EJS----------------------------------------------------
