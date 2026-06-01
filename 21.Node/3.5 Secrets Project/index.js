@@ -43,8 +43,6 @@ app.post("/check", (req, res) => {
   }else{
     res.sendFile(__dirname + "/public/index.html")
   }
-
-  next();
 });
 
 
