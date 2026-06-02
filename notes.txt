@@ -7042,6 +7042,8 @@ separacion:
 
 en JavaScript es EJS --> JavaScript Incustrado
 
+
+
 Ejemplo:
         <body>
             <ul>
