@@ -7030,7 +7030,12 @@ Servidor revisa contraseña   --> Contraseña Valida: ILoveProgramming
     No → index.html
 
 
+
+
+
 -----------------------------------------------209. EJS----------------------------------------------------
+Uso de plantillas 
+
 
 
 
