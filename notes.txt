@@ -7044,6 +7044,8 @@ en JavaScript es EJS --> JavaScript Incustrado
 
 
 
+
+
 Ejemplo:
         <body>
             <ul>
@@ -7054,6 +7056,7 @@ Ejemplo:
                 <% } %> 
             </ul>
         </body>
+
 
 
 
