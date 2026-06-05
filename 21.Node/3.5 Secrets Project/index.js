@@ -23,14 +23,11 @@ app.use(
   })
 )
 
-
 //uso de edpoint para peticion GET
 app.get("/", (req, res) => {
   console.log(__dirname + "/public/index.html");
   res.sendFile(__dirname + "/public/index.html");
 });
-
-
 
 
 //uso de edpoint para la peticion de POST
@@ -44,10 +41,6 @@ app.post("/check", (req, res) => {
     res.sendFile(__dirname + "/public/index.html")
   }
 });
-
-
-
-
 
 //verificacion de puerto en uso en consola
 app.listen(port, () =>{
