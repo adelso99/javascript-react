@@ -2,16 +2,13 @@
 //Asegúrate de haber instalado todas las dependencias con "npm i".
 //La contraseña es ILoveProgramming
 
-
 //importacion de formularios
 import express from "express";
 import bodyParser from "body-parser";
 
-
 //importacion para peticiones
 import {dirname} from "path";
 import {fileURLToPath} from "url";
-
 
 //variables a usar
 const app = express();
