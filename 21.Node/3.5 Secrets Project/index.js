@@ -30,6 +30,7 @@ app.get("/", (req, res) => {
 });
 
 
+
 //uso de edpoint para la peticion de POST
 app.post("/check", (req, res) => {
   console.log(req.body.password); //verificacion de contraseña
