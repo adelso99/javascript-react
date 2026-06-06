@@ -7070,6 +7070,9 @@ capturacion de datos html desde formulario, eso envaidno hasat el backenda para 
 
 
 
+
+
+
  
 
 
