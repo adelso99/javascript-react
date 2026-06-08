@@ -7045,6 +7045,7 @@ separacion:
 en JavaScript es EJS --> JavaScript Incustrado
 
 Lenguaje de Plantillas con EJS -- es mas usado con Express y Node JS
+es modulo que puede incrustrar cotenido de JavaScript dentro
 
 Ejemplo:
         <body>
