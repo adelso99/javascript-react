@@ -7044,7 +7044,7 @@ separacion:
 
 en JavaScript es EJS --> JavaScript Incustrado
 
-
+Lenguaje de Plantillas con EJS
 
 Ejemplo:
         <body>
