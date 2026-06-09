@@ -7046,6 +7046,7 @@ en JavaScript es EJS --> JavaScript Incustrado
 
 Lenguaje de Plantillas con EJS -- es mas usado con Express y Node JS
 es modulo de javascript que puede incrustrar cotenido de JavaScript dentro 
+pero esto tiene que estar en un archivo HTML que termine en .ejs --> html.ejs
 
 Ejemplo:
         <ul>
@@ -7056,7 +7057,9 @@ Ejemplo:
             <% } %> 
         </ul>
 
-        
+
+en el servidor debemos usar formato res.render
+
 
 
 capturacion de datos html desde formulario, eso enviado hasta el backenda para que s guarden los datos que se registraron
