@@ -7045,23 +7045,26 @@ separacion:
 en JavaScript es EJS --> JavaScript Incustrado
 
 Lenguaje de Plantillas con EJS -- es mas usado con Express y Node JS
-es modulo que puede incrustrar cotenido de JavaScript dentro 
+es modulo de javascript que puede incrustrar cotenido de JavaScript dentro 
 
 Ejemplo:
-        <body>
-            <ul>
-                <% for (let i=0; i<items.length; i++) { %>
-                <li>
-                    <%= items[i] %>
-                </li>
-                <% } %> 
-            </ul>
-        </body>
+        <ul>
+            <% for (let i=0; i<items.length; i++) { %>
+            <li>
+                <%= items[i] %>
+            </li>
+            <% } %> 
+        </ul>
 
+        
 
 
 capturacion de datos html desde formulario, eso enviado hasta el backenda para que s guarden los datos que se registraron
  
+
+
+
+
 
 
 
