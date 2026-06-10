@@ -7074,7 +7074,6 @@ capturacion de datos html desde formulario, eso enviado hasta el backenda para q
 
 
 
-
 NOTA:
 
 Repasar:
