@@ -7068,7 +7068,7 @@ usa un plugin de EJS
 capturacion de datos html desde formulario, eso enviado hasta el backenda para que s guarden los datos que se registraron
  
 
-
+Ejercicio de practica
 1. Crea una nueva carpeta llamada "4.0 EJS".
 2. Inicializa NPM e instala Express y EJS.
 3. Crea los siguientes archivos y carpetas: index.js y views/index.ejs.
