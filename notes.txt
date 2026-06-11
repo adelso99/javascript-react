@@ -7069,7 +7069,10 @@ capturacion de datos html desde formulario, eso enviado hasta el backenda para q
  
 
 
-
+1. Crea una nueva carpeta llamada "4.0 EJS".
+2. Inicializa NPM e instala Express y EJS.
+3. Crea los siguientes archivos y carpetas: index.js y views/index.ejs.
+4. Usa el método getDay() de JavaScript para crear un sitio web que ofrezca consejos según el día de la semana.
 
 
 
