@@ -7074,7 +7074,10 @@ Ejercicio de practica
 3. Crea los siguientes archivos y carpetas: index.js y views/index.ejs.
 4. Usa el método getDay() de JavaScript para crear un sitio web que ofrezca consejos según el día de la semana.
 
-
+lo que la pagina debe hacer:
+                Si hoy es lunes → "Es día laboral, mantente enfocado."
+                Si hoy es sábado → "¡Disfruta tu fin de semana!"
+                Si hoy es domingo → "Descansa y prepárate para la semana."
 
 
 
