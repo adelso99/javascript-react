@@ -7039,6 +7039,7 @@ Servidor revisa contraseña   --> Contraseña Valida: ILoveProgramming
 
 
 
+
 -----------------------------------------------209. EJS----------------------------------------------------
 
 Uso de plantillas 
@@ -7081,6 +7082,7 @@ lo que la pagina debe hacer:
                 Si hoy es lunes → "Es día laboral, mantente enfocado."
                 Si hoy es sábado → "¡Disfruta tu fin de semana!"
                 Si hoy es domingo → "Descansa y prepárate para la semana."
+
 
 
 
