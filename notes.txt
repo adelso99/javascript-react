@@ -7068,6 +7068,8 @@ capturacion de datos html desde formulario, eso enviado hasta el backenda para q
 
 
 
+
+
 Ejercicio de practica
 1. Crea una nueva carpeta llamada "4.0 EJS".
 2. Inicializa NPM e instala Express y EJS.
@@ -7078,6 +7080,7 @@ lo que la pagina debe hacer:
                 Si hoy es lunes → "Es día laboral, mantente enfocado."
                 Si hoy es sábado → "¡Disfruta tu fin de semana!"
                 Si hoy es domingo → "Descansa y prepárate para la semana."
+
 
 
 
