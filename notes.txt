@@ -7083,6 +7083,22 @@ lo que la pagina debe hacer:
 
 
 
+Flujo del ejericio 
+                Usuario abre localhost:3000
+                        ↓
+                Express recibe GET /
+                        ↓
+                Obtiene la fecha actual
+                        ↓
+                Obtiene el día con getDay()
+                        ↓
+                Decide qué mensaje corresponde
+                        ↓
+                Renderiza index.ejs
+                        ↓
+                Envía el mensaje
+                        ↓
+                El navegador muestra el consejo
 
 
 
