@@ -7035,6 +7035,8 @@ Servidor revisa contraseña   --> Contraseña Valida: ILoveProgramming
 
 
 
+
+
 -----------------------------------------------209. EJS----------------------------------------------------
 
 Uso de plantillas 
@@ -7095,6 +7097,8 @@ Flujo del ejericio:
                 Envía el mensaje
                         ↓
                 El navegador muestra el consejo
+
+
 
 
 
