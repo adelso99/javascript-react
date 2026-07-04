@@ -7079,7 +7079,7 @@ lo que la pagina debe hacer:
 
 
 
-Flujo del ejericio 
+Flujo del ejericio: 
                 Usuario abre localhost:3000
                         ↓
                 Express recibe GET /
