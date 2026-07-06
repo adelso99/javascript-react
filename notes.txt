@@ -7079,8 +7079,6 @@ lo que la pagina debe hacer:
                 Si hoy es domingo → "Descansa y prepárate para la semana."
 
 
-
-
 Flujo del ejericio: 
                 Usuario abre localhost:3000
                         ↓
