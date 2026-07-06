@@ -1,4 +1,6 @@
 //Importacion de paquetes para uso de servidor
 import day from "Day";
+import express from "express";
 
-getDay();
+let fecha = getDay();
+console.log(fecha);
