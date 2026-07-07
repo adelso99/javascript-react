@@ -7084,7 +7084,7 @@ Flujo del ejericio:
                         ↓
                 Express recibe GET /
                         ↓
-                Obtiene la fecha actual
+                Obtiene la fecha actual  --> da un numero
                         ↓
                 Obtiene el día con getDay()
                         ↓
