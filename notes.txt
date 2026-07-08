@@ -7086,7 +7086,7 @@ Flujo del ejericio:
                         ↓
                 Obtiene la fecha actual  --> da un numero
                         ↓
-                Obtiene el día con getDay()
+                Obtiene el día con getDay() --> variable definida
                         ↓
                 Decide qué mensaje corresponde
                         ↓
