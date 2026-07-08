@@ -14,6 +14,5 @@ console.log(dato.getDay());
 
 //uso de if o switch
 if(1==1){
-
 }
 
