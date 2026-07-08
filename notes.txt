@@ -7059,10 +7059,10 @@ Ejemplo:
             </li>
             <% } %> 
         </ul>
-
-
+        
 en el servidor debemos usar formato res.render
 usa un plugin de EJS
+
 
 
 capturacion de datos html desde formulario, eso enviado hasta el backenda para que s guarden los datos que se registraron
