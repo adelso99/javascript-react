@@ -7,10 +7,8 @@ const app = express();
 
 //vaiables de fecha
 let fecha = new Date();
-let dato = new Date();
 
 console.log(fecha.getDay());
-console.log(dato.getDay());
 
 //uso de if o switch
 if(1==1){
