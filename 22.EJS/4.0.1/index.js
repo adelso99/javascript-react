@@ -8,6 +8,7 @@ const app = express();
 //vaiables de fecha
 let fecha = new Date();
 
+
 console.log(fecha.getDay());
 
 
