@@ -12,5 +12,4 @@ let fecha = new Date();
 console.log(fecha.getDay());
 
 
-
 //uso de if o switch
