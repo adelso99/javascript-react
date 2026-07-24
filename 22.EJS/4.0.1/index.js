@@ -11,5 +11,4 @@ let fecha = new Date();
 //verificacion en consola
 console.log(fecha.getDay());
 
-
 //uso de if o switch
