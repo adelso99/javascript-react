@@ -1,7 +1,6 @@
 //Importacion de paquetes para uso de servidor
 import express from "express";
 
-
 //variabale para uso de express
 const app = express();
 
