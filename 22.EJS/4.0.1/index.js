@@ -16,5 +16,4 @@ console.log(fecha.getDay());
 
 
 
-
 //uso de if o switch
