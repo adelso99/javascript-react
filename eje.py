@@ -12,6 +12,7 @@ def protected_data():
         return jsonify({"error": "Token inválido"}), 401
     return jsonify({"data": "Acceso autorizado"})
 
+
 #Hola x-----1
 #Hola x-----1
 
