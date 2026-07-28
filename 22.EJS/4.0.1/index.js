@@ -10,6 +10,7 @@ const app = express();
 let fecha = new Date();
 
 
+
 //verificacion en consola
 console.log(fecha.getDay());
 
