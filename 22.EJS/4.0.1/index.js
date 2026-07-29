@@ -6,9 +6,20 @@ const app = express();
 
 //vaiables de fecha
 let fecha = new Date();
-let fecha2 = new Date();
 
 //verificacion en consola
 console.log(fecha.getDay());
 
+let dia = fecha.getDay();
+
+console.log(dia);
+
 //uso de if o switchz en este ejericicio
+
+
+
+
+
+
+
+
