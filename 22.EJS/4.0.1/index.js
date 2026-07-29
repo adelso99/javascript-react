@@ -11,4 +11,4 @@ let fecha2 = new Date();
 //verificacion en consola
 console.log(fecha.getDay());
 
-//uso de if o switchz
+//uso de if o switchz en este ejericicio
