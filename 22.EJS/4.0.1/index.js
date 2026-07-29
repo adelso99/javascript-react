@@ -3,6 +3,7 @@ import express from "express";
 
 //variabale para uso de express
 const app = express();
+const app2 = express();
 
 //vaiables de fecha
 let fecha = new Date();
