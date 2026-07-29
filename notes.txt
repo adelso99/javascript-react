@@ -7079,7 +7079,13 @@ lo que la pagina debe hacer:
                 Si hoy es domingo → "Descansa y prepárate para la semana."
 
 
+<<<<<<< HEAD
 Flujo del ejericio, se debe de usar el res.render: 
+=======
+
+
+Flujo del ejericio: 
+>>>>>>> c307a62febb9cf29a00079d6fb2aa3024a2d33b9
                 Usuario abre localhost:3000
                         ↓
                 Express recibe GET /
@@ -7095,9 +7101,6 @@ Flujo del ejericio, se debe de usar el res.render:
                 Envía el mensaje
                         ↓
                 El navegador muestra el consejo
-
-
-
 
 
 
