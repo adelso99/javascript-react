@@ -4,7 +4,7 @@
   "description": "",  
   "main": "index.js",
   "type": "module",
-  "dependencies": {
+  "dependencies": {   
     "ejs": "^6.0.1",
     "express": "^5.2.1"
   },
