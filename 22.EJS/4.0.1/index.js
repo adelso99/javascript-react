@@ -13,8 +13,8 @@ console.log(dia);
 
 //uso de if o switchz en este ejericicio 
 if(dia = 1){ console.log("Es día laboral, mantente enfocado"); 
-  }else if( dia === 6){ 
-    console.log("¡Disfruta tu fin de semana!"); 
+  }else if( dia === 6){   
+    console.log("¡Disfruta tu fin de semana!");   
   }else if(dia === 0){
      console.log("Descansa y prepárate para la semana."); 
     }
