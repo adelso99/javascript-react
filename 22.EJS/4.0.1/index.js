@@ -5,7 +5,7 @@ import express from "express";
 const app = express(); 
 
 //vaiables de fecha 
-let fecha = new Date(); 
+let fecha = new Date();     
 
 //verificacion en consola 
 let dia = fecha.getDay(); 
