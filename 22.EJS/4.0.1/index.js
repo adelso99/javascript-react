@@ -20,6 +20,7 @@ if(dia = 1){ console.log("Es día laboral, mantente enfocado");
     }
 
 //verificacion en terminal de comandos
+//en visual
 
 
 
