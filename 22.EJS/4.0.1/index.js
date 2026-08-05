@@ -30,4 +30,4 @@ if(dia = 1){
 //verificacion 5
 //verificacion 6
 //verificacion 7
-//verificacion 8
+
