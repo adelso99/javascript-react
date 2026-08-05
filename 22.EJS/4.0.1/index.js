@@ -23,4 +23,5 @@ if(dia = 1){
     console.log("Descansa y prepárate para la semana."); 
 }
 
-//veruifucaion
+//verificacion 1
+//verificacion 2
