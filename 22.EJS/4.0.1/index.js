@@ -31,3 +31,5 @@ if(dia = 1){
 //verificacion 6
 //verificacion 7
 //verificacion 8
+//verificacion 9
+//verificacion 10
