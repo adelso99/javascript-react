@@ -22,3 +22,5 @@ if(dia = 1){
 }else if(dia === 0){ 
     console.log("Descansa y prepárate para la semana."); 
 }
+
+//veruifucaion
