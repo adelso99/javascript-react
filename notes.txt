@@ -7098,7 +7098,8 @@ Flujo del ejericio, se debe de usar el res.render:
 
 
 
-
+Nota 
+ 
 NOTA:
 
 Repasar:
