@@ -2,7 +2,7 @@
   "name": "4.0.1",              
   "version": "1.0.0", 
   "description": "",   
-  "main": "index.js", 
+  "main": "index.js",               
   "type": "module", 
   "dependencies": {     
     "ejs": "^6.0.1",  
