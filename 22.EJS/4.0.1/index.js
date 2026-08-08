@@ -28,5 +28,6 @@ if(dia = 1){
 //verificacion 3
 //verificacion 4
 //verificacion 5
+//verificacion 6
 
 
