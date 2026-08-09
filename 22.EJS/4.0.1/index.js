@@ -34,6 +34,5 @@ if(dia = 1){
 }else if( dia === 6){ 
     console.log("¡Disfruta tu fin de semana!"); 
 }else if(dia === 0){ 
-    console.log("Descansa y prepárate para la semana."); 
-}
+
 */
