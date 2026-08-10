@@ -31,5 +31,4 @@ if(dia = 1){
 /*
 if(dia = 1){ 
     console.log("Es día laboral, mantente enfocado"); 
-}else if( dia === 6){ 
 */
