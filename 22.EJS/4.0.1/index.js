@@ -33,4 +33,5 @@ if(dia = 1){
     console.log("Es día laboral, mantente enfocado"); 
     console.log("Es día laboral, mantente enfocado"); 
     console.log("Es día laboral, mantente enfocado"); 
+    console.log("Es día laboral, mantente enfocado"); 
 */
