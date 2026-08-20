@@ -5,3 +5,4 @@ var dos = 2;
 suma = nuevo + dos;
 
 console.log(suma);
+console.log(nuevo);
