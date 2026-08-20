@@ -4,4 +4,4 @@ var dos = 2;
 
 suma = nuevo + dos;
 
-console.log();
+console.log(suma);
