@@ -7098,7 +7098,7 @@ Flujo del ejericio, se debe de usar el res.render:
 
 
 
-Seguimiento de proyecto
+Seguimiento de proyecto -- a finalizar
 
 
 
