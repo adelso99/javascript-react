@@ -7099,7 +7099,7 @@ Flujo del ejericio, se debe de usar el res.render:
 
 
 Seguimiento de proyecto -- a finalizar
-
+Proceso -- 1
 
 
 NOTA:
