@@ -24,6 +24,7 @@ if(dia = 1){
 }
 
 //verificacion 1
+//verificacion 2
 
 /*
 if(dia = 1){ 
