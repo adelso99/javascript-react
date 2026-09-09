@@ -9,3 +9,7 @@ console.log(nuevo);
 
 console.log(dos);
 console.log(nuevo);
+
+/*
+Verificacion 1
+*/
