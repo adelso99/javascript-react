@@ -13,5 +13,4 @@ console.log(nuevo);
 /*
 Verificacion 1
 Verificacion 2
-Verificacion 3
 */
